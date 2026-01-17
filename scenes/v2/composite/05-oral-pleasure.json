@@ -1,0 +1,253 @@
+{
+  "id": "oral_pleasure_giving",
+  "slug": "oral-pleasure-giving",
+  "version": 2,
+  "role_variant": "mutual",
+
+  "title": {
+    "ru": "Оральные удовольствия",
+    "en": "Oral Pleasures"
+  },
+  "description": {
+    "ru": "Она стоит на коленях между его ног, смотрит снизу вверх с желанием. Он откинулся назад, одна рука в её волосах. Интимный момент полного внимания.",
+    "en": "She kneels between his legs, looking up with desire. He leans back, one hand in her hair. An intimate moment of complete attention."
+  },
+  "image_prompt": "intimate oral scene, woman kneeling between man's legs looking up at him adoringly, he sitting on edge of bed leaning back, his hand gently in her hair not forcing, eye contact between them, soft bedroom lighting, tasteful sensual composition, faces visible, chemistry obvious",
+
+  "intensity": 3,
+  "relevant_for": { "gender": "any", "interested_in": "any" },
+  "congruent_cluster": "oral",
+  "tags": ["oral", "blowjob", "cunnilingus", "kneeling", "worship", "eye_contact", "hair_holding", "deepthroat", "facesitting"],
+
+  "elements": [
+    {
+      "id": "giving_oral",
+      "label": { "ru": "Делать оральный секс", "en": "Giving oral" },
+      "tag_ref": "oral",
+      "follow_ups": [
+        {
+          "id": "giving_enjoyment",
+          "type": "scale",
+          "question": { "ru": "Насколько нравится делать оральный секс?", "en": "How much do you enjoy giving oral?" },
+          "config": {
+            "min_label": { "ru": "Не особо, но делаю", "en": "Not really, but I do it" },
+            "max_label": { "ru": "Обожаю, это для меня удовольствие", "en": "Love it, it's pleasure for me" }
+          }
+        },
+        {
+          "id": "giving_style",
+          "type": "multi_select",
+          "question": { "ru": "Какой стиль предпочитаешь?", "en": "What style?" },
+          "config": {
+            "options": [
+              { "id": "slow_sensual", "label": { "ru": "Медленный, чувственный", "en": "Slow, sensual" } },
+              { "id": "enthusiastic", "label": { "ru": "Энергичный, с энтузиазмом", "en": "Energetic, enthusiastic" } },
+              { "id": "teasing", "label": { "ru": "Дразнящий", "en": "Teasing" } },
+              { "id": "worship", "label": { "ru": "Как поклонение", "en": "Like worship" } },
+              { "id": "service", "label": { "ru": "Как служение", "en": "Like service" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "receiving_oral",
+      "label": { "ru": "Получать оральный секс", "en": "Receiving oral" },
+      "tag_ref": "oral",
+      "follow_ups": [
+        {
+          "id": "receiving_comfort",
+          "type": "scale",
+          "question": { "ru": "Насколько комфортно получать оральный секс?", "en": "How comfortable receiving oral?" },
+          "config": {
+            "min_label": { "ru": "Стесняюсь, сложно расслабиться", "en": "Self-conscious, hard to relax" },
+            "max_label": { "ru": "Полностью расслабляюсь и наслаждаюсь", "en": "Fully relax and enjoy" }
+          }
+        },
+        {
+          "id": "receiving_duration",
+          "type": "single_select",
+          "question": { "ru": "Предпочтительная длительность?", "en": "Preferred duration?" },
+          "config": {
+            "options": [
+              { "id": "foreplay", "label": { "ru": "Как прелюдия", "en": "As foreplay" } },
+              { "id": "extended", "label": { "ru": "Долго, до оргазма", "en": "Extended, to orgasm" } },
+              { "id": "main_event", "label": { "ru": "Основное событие", "en": "Main event" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "deepthroat",
+      "label": { "ru": "Глубокий минет", "en": "Deepthroat" },
+      "tag_ref": "deepthroat",
+      "follow_ups": [
+        {
+          "id": "deepthroat_interest",
+          "type": "scale",
+          "question": { "ru": "Интерес к глубокому минету?", "en": "Interest in deepthroat?" },
+          "config": {
+            "min_label": { "ru": "Не интересует", "en": "Not interested" },
+            "max_label": { "ru": "Очень нравится/хочу научиться", "en": "Love it / want to learn" }
+          }
+        },
+        {
+          "id": "deepthroat_aspects",
+          "type": "multi_select",
+          "question": { "ru": "Что привлекает в этом?", "en": "What appeals?" },
+          "show_if": { "interest_level": { "min": 30 } },
+          "config": {
+            "options": [
+              { "id": "skill", "label": { "ru": "Демонстрация навыка", "en": "Showing skill" } },
+              { "id": "submission", "label": { "ru": "Элемент подчинения", "en": "Submission element" } },
+              { "id": "sounds", "label": { "ru": "Звуки (gagging)", "en": "Sounds (gagging)" } },
+              { "id": "intensity", "label": { "ru": "Интенсивность ощущений", "en": "Intensity" } },
+              { "id": "messy", "label": { "ru": "Небрежность (слюни)", "en": "Messiness (drool)" } }
+            ]
+          }
+        },
+        {
+          "id": "deepthroat_role",
+          "type": "role",
+          "question": { "ru": "В какой роли?", "en": "Your role?" },
+          "config": {
+            "options": [
+              { "id": "give", "label": { "ru": "Делать", "en": "Give" } },
+              { "id": "receive", "label": { "ru": "Получать", "en": "Receive" } },
+              { "id": "both", "label": { "ru": "Оба", "en": "Both" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "facesitting",
+      "label": { "ru": "Сидеть на лице", "en": "Facesitting" },
+      "tag_ref": "face_sitting",
+      "follow_ups": [
+        {
+          "id": "facesitting_interest",
+          "type": "scale",
+          "question": { "ru": "Интерес к facesitting?", "en": "Interest in facesitting?" },
+          "config": {
+            "min_label": { "ru": "Не интересует", "en": "Not interested" },
+            "max_label": { "ru": "Очень нравится", "en": "Love it" }
+          }
+        },
+        {
+          "id": "facesitting_control",
+          "type": "single_select",
+          "question": { "ru": "Уровень контроля?", "en": "Control level?" },
+          "show_if": { "interest_level": { "min": 30 } },
+          "config": {
+            "options": [
+              { "id": "light", "label": { "ru": "Лёгкое сидение, есть доступ воздуха", "en": "Light sitting, air access" } },
+              { "id": "full", "label": { "ru": "Полный контакт", "en": "Full contact" } },
+              { "id": "smothering", "label": { "ru": "С элементом смотеринга", "en": "With smothering element" } }
+            ]
+          }
+        },
+        {
+          "id": "facesitting_role",
+          "type": "role",
+          "question": { "ru": "В какой роли?", "en": "Your role?" },
+          "config": {
+            "options": [
+              { "id": "sit", "label": { "ru": "Сидеть", "en": "Sit" } },
+              { "id": "under", "label": { "ru": "Быть под", "en": "Be under" } },
+              { "id": "both", "label": { "ru": "Оба", "en": "Both" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "eye_contact_oral",
+      "label": { "ru": "Зрительный контакт", "en": "Eye contact" },
+      "tag_ref": "eye_contact",
+      "follow_ups": [
+        {
+          "id": "eye_contact_importance",
+          "type": "scale",
+          "question": { "ru": "Важен ли зрительный контакт при оральном сексе?", "en": "Is eye contact important during oral?" },
+          "config": {
+            "min_label": { "ru": "Не важен / неловко", "en": "Not important / awkward" },
+            "max_label": { "ru": "Очень важен, добавляет интимности", "en": "Very important, adds intimacy" }
+          }
+        }
+      ]
+    },
+    {
+      "id": "hair_control",
+      "label": { "ru": "Рука в волосах", "en": "Hand in hair" },
+      "tag_ref": "hair_pulling",
+      "follow_ups": [
+        {
+          "id": "hair_during_oral",
+          "type": "single_select",
+          "question": { "ru": "Рука в волосах при оральном сексе?", "en": "Hand in hair during oral?" },
+          "config": {
+            "options": [
+              { "id": "none", "label": { "ru": "Не нужно, сама контролирую", "en": "No, I control" } },
+              { "id": "gentle", "label": { "ru": "Нежно придерживать", "en": "Hold gently" } },
+              { "id": "guide", "label": { "ru": "Направлять", "en": "Guide" } },
+              { "id": "control", "label": { "ru": "Контролировать движения", "en": "Control movements" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "finish_oral",
+      "label": { "ru": "Финиш при оральном", "en": "Finish during oral" },
+      "tag_ref": "swallowing",
+      "follow_ups": [
+        {
+          "id": "cum_location",
+          "type": "multi_select",
+          "question": { "ru": "Куда финишировать? (если давать минет)", "en": "Where to finish? (if giving BJ)" },
+          "config": {
+            "options": [
+              { "id": "mouth", "label": { "ru": "В рот", "en": "In mouth" } },
+              { "id": "swallow", "label": { "ru": "Проглотить", "en": "Swallow" } },
+              { "id": "face", "label": { "ru": "На лицо", "en": "On face" } },
+              { "id": "chest", "label": { "ru": "На грудь", "en": "On chest" } },
+              { "id": "pull_out", "label": { "ru": "Вынуть перед", "en": "Pull out before" } }
+            ]
+          }
+        },
+        {
+          "id": "finish_female",
+          "type": "multi_select",
+          "question": { "ru": "Финиш при куннилингусе?", "en": "Finish during cunnilingus?" },
+          "config": {
+            "options": [
+              { "id": "orgasm", "label": { "ru": "Оргазм от языка", "en": "Orgasm from tongue" } },
+              { "id": "squirt", "label": { "ru": "Сквирт", "en": "Squirt" } },
+              { "id": "foreplay", "label": { "ru": "Перейти к другому до оргазма", "en": "Move on before orgasm" } }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что тебе нравится из этого?",
+      "en": "What appeals to you here?"
+    },
+    "min_selections": 0
+  },
+
+  "ai_context": {
+    "tests_primary": ["oral_sex", "giving_receiving", "comfort_level"],
+    "tests_secondary": ["facesitting", "deepthroat", "finish_preferences"],
+    "emotional_range": {
+      "positive": ["loves oral", "enthusiastic giver/receiver", "comfortable with intimacy"],
+      "negative": ["not into oral", "prefers penetration", "uncomfortable"]
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "id": "rough_primal_mdom",
+  "slug": "rough-primal-play",
+  "version": 2,
+  "role_variant": "m_dom",
+  "related_scene": "rough_primal_fdom",
+
+  "title": {
+    "ru": "Грубый и первобытный секс",
+    "en": "Rough & Primal Play"
+  },
+  "description": {
+    "ru": "Он прижал её к стене, одной рукой держит за горло, другой — за волосы. Её платье порвано. На шее следы укусов. Взгляды полны страсти.",
+    "en": "He pins her against the wall, one hand on her throat, the other gripping her hair. Her dress is torn. Bite marks on her neck. Eyes locked with raw passion."
+  },
+  "image_prompt": "intense passionate scene, man pinning woman against dark wall, his hand gently on her throat not choking just holding, other hand gripping her hair, her black dress torn at shoulder, visible bite marks and light scratches on her neck and shoulder, both faces showing raw desire and passion, her back arched into him, dramatic side lighting, primal energy",
+
+  "intensity": 4,
+  "relevant_for": { "gender": "any", "interested_in": "any" },
+  "congruent_cluster": "rough_primal",
+  "tags": ["rough", "primal", "hair_pulling", "biting", "scratching", "pinned_down", "torn_clothes", "choking", "passionate", "aggressive"],
+
+  "elements": [
+    {
+      "id": "hair_pulling",
+      "label": { "ru": "Хватка за волосы", "en": "Hair pulling" },
+      "tag_ref": "hair_pulling",
+      "follow_ups": [
+        {
+          "id": "hair_intensity",
+          "type": "intensity",
+          "question": { "ru": "Насколько сильно?", "en": "How hard?" },
+          "config": {
+            "min_label": { "ru": "Придерживать, направлять", "en": "Hold, guide" },
+            "max_label": { "ru": "Тянуть с силой", "en": "Pull hard" }
+          }
+        },
+        {
+          "id": "hair_when",
+          "type": "multi_select",
+          "question": { "ru": "Когда тянуть за волосы?", "en": "When to pull hair?" },
+          "config": {
+            "options": [
+              { "id": "doggy", "label": { "ru": "Во время секса сзади", "en": "During doggy" } },
+              { "id": "oral", "label": { "ru": "Во время орала", "en": "During oral" } },
+              { "id": "kissing", "label": { "ru": "Во время поцелуев", "en": "While kissing" } },
+              { "id": "control", "label": { "ru": "Для контроля головы", "en": "To control head" } }
+            ]
+          }
+        },
+        {
+          "id": "hair_role",
+          "type": "role",
+          "question": { "ru": "В какой роли?", "en": "Your role?" },
+          "config": {
+            "options": [
+              { "id": "receive", "label": { "ru": "Чтобы меня тянули", "en": "Have mine pulled" } },
+              { "id": "give", "label": { "ru": "Тянуть партнёра", "en": "Pull partner's" } },
+              { "id": "both", "label": { "ru": "Оба", "en": "Both" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "throat_hold",
+      "label": { "ru": "Рука на горле", "en": "Hand on throat" },
+      "tag_ref": "hand_choking",
+      "follow_ups": [
+        {
+          "id": "choke_type",
+          "type": "single_select",
+          "question": { "ru": "Какой тип?", "en": "What type?" },
+          "config": {
+            "options": [
+              { "id": "hold_only", "label": { "ru": "Просто держать (без давления)", "en": "Hold only (no pressure)" }, "description": { "ru": "Рука на горле, но не сжимает", "en": "Hand there but not squeezing" } },
+              { "id": "light", "label": { "ru": "Лёгкое сжатие", "en": "Light squeeze" } },
+              { "id": "breath_play", "label": { "ru": "Ограничение дыхания", "en": "Breath restriction" }, "description": { "ru": "Осторожно! Требует опыта", "en": "Careful! Requires experience" } }
+            ]
+          }
+        },
+        {
+          "id": "choke_appeal",
+          "type": "multi_select",
+          "question": { "ru": "Что нравится в этом?", "en": "What appeals?" },
+          "config": {
+            "options": [
+              { "id": "control", "label": { "ru": "Ощущение контроля/подчинения", "en": "Feeling of control/submission" } },
+              { "id": "vulnerability", "label": { "ru": "Уязвимость и доверие", "en": "Vulnerability and trust" } },
+              { "id": "intensity", "label": { "ru": "Интенсивность момента", "en": "Intensity of moment" } },
+              { "id": "primal", "label": { "ru": "Первобытность", "en": "Primal feeling" } }
+            ]
+          }
+        },
+        {
+          "id": "choke_role",
+          "type": "role",
+          "question": { "ru": "В какой роли?", "en": "Your role?" },
+          "config": {
+            "options": [
+              { "id": "receive", "label": { "ru": "Чтобы меня держали", "en": "Be held" } },
+              { "id": "give", "label": { "ru": "Держать партнёра", "en": "Hold partner" } },
+              { "id": "both", "label": { "ru": "Оба", "en": "Both" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "biting",
+      "label": { "ru": "Укусы", "en": "Biting" },
+      "tag_ref": "biting",
+      "follow_ups": [
+        {
+          "id": "bite_intensity",
+          "type": "intensity",
+          "question": { "ru": "Насколько сильно кусать?", "en": "How hard to bite?" },
+          "config": {
+            "min_label": { "ru": "Нежные покусывания", "en": "Gentle nibbles" },
+            "max_label": { "ru": "Оставляющие следы", "en": "Leaving marks" }
+          }
+        },
+        {
+          "id": "bite_where",
+          "type": "body_map",
+          "question": { "ru": "Где можно кусать?", "en": "Where can you bite?" },
+          "config": {
+            "gender": "both",
+            "allow_multiple": true
+          }
+        },
+        {
+          "id": "bite_marks",
+          "type": "single_select",
+          "question": { "ru": "Отношение к следам от укусов?", "en": "Feelings about bite marks?" },
+          "config": {
+            "options": [
+              { "id": "love", "label": { "ru": "Обожаю, напоминание", "en": "Love them, reminders" } },
+              { "id": "ok_hidden", "label": { "ru": "Ок, если скрыты одеждой", "en": "OK if hidden by clothes" } },
+              { "id": "avoid", "label": { "ru": "Лучше избегать", "en": "Better avoid" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "scratching",
+      "label": { "ru": "Царапины", "en": "Scratching" },
+      "tag_ref": "scratching",
+      "follow_ups": [
+        {
+          "id": "scratch_intensity",
+          "type": "intensity",
+          "question": { "ru": "Насколько сильно царапать?", "en": "How hard to scratch?" },
+          "config": {
+            "min_label": { "ru": "Провести ногтями", "en": "Run nails lightly" },
+            "max_label": { "ru": "Оставляющие красные полосы", "en": "Leaving red marks" }
+          }
+        },
+        {
+          "id": "scratch_where",
+          "type": "body_map",
+          "question": { "ru": "Где можно царапать?", "en": "Where can you scratch?" },
+          "config": {
+            "gender": "both",
+            "allow_multiple": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "torn_clothes",
+      "label": { "ru": "Порванная одежда", "en": "Torn clothes" },
+      "tag_ref": "torn_clothes",
+      "follow_ups": [
+        {
+          "id": "torn_appeal",
+          "type": "multi_select",
+          "question": { "ru": "Что нравится в этом?", "en": "What appeals?" },
+          "config": {
+            "options": [
+              { "id": "urgency", "label": { "ru": "Срочность, не могу ждать", "en": "Urgency, can't wait" } },
+              { "id": "rough", "label": { "ru": "Грубость, сила", "en": "Roughness, force" } },
+              { "id": "primal", "label": { "ru": "Первобытность", "en": "Primal feeling" } },
+              { "id": "cnc", "label": { "ru": "Элемент \"взятия\"", "en": "Element of being 'taken'" } }
+            ]
+          }
+        },
+        {
+          "id": "torn_practical",
+          "type": "single_select",
+          "question": { "ru": "На практике?", "en": "In practice?" },
+          "config": {
+            "options": [
+              { "id": "yes_cheap", "label": { "ru": "Да, на дешёвой одежде", "en": "Yes, on cheap clothes" } },
+              { "id": "fantasy", "label": { "ru": "Фантазия, не реально рвать", "en": "Fantasy, not actually tear" } },
+              { "id": "pull_aside", "label": { "ru": "Отодвигать/стягивать агрессивно", "en": "Pull aside aggressively" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "pinned_wall",
+      "label": { "ru": "Прижата к стене", "en": "Pinned to wall" },
+      "tag_ref": "pinned_down",
+      "follow_ups": [
+        {
+          "id": "pinned_where",
+          "type": "multi_select",
+          "question": { "ru": "К чему прижимать?", "en": "Pin against what?" },
+          "config": {
+            "options": [
+              { "id": "wall", "label": { "ru": "Стена", "en": "Wall" } },
+              { "id": "bed", "label": { "ru": "Кровать", "en": "Bed" } },
+              { "id": "floor", "label": { "ru": "Пол", "en": "Floor" } },
+              { "id": "furniture", "label": { "ru": "Мебель (стол, диван)", "en": "Furniture" } },
+              { "id": "door", "label": { "ru": "Дверь", "en": "Door" } }
+            ]
+          }
+        },
+        {
+          "id": "struggle",
+          "type": "single_select",
+          "question": { "ru": "Сопротивление?", "en": "Resistance?" },
+          "config": {
+            "options": [
+              { "id": "none", "label": { "ru": "Сразу сдаюсь", "en": "Surrender immediately" } },
+              { "id": "playful", "label": { "ru": "Игривое сопротивление", "en": "Playful resistance" } },
+              { "id": "struggle", "label": { "ru": "Борьба (CNC)", "en": "Real struggle (CNC)" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "primal_sounds",
+      "label": { "ru": "Рычание и звуки", "en": "Growling & sounds" },
+      "tag_ref": "growling",
+      "follow_ups": [
+        {
+          "id": "primal_sounds_types",
+          "type": "multi_select",
+          "question": { "ru": "Какие звуки нравятся?", "en": "Which sounds appeal?" },
+          "config": {
+            "options": [
+              { "id": "growl", "label": { "ru": "Рычание", "en": "Growling" } },
+              { "id": "grunt", "label": { "ru": "Стоны и вздохи", "en": "Grunts and moans" } },
+              { "id": "primal_screams", "label": { "ru": "Громкие крики", "en": "Loud cries" } },
+              { "id": "commands", "label": { "ru": "Грубые команды", "en": "Rough commands" } },
+              { "id": "dirty_talk", "label": { "ru": "Грязные слова", "en": "Dirty talk" } }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что тебе нравится на этой сцене?",
+      "en": "What appeals to you in this scene?"
+    },
+    "min_selections": 0
+  },
+
+  "ai_context": {
+    "tests_primary": ["rough_sex", "primal", "intensity"],
+    "tests_secondary": ["cnc", "marking", "physical_dominance"],
+    "emotional_range": {
+      "positive": ["loves rough play", "primal attraction", "intensity seeker"],
+      "negative": ["too aggressive", "scary", "prefers gentle"]
+    }
+  }
+}

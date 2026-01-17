@@ -1,0 +1,268 @@
+{
+  "id": "dirty_talk_verbal",
+  "slug": "dirty-talk-verbal-play",
+  "version": 2,
+  "role_variant": "mutual",
+
+  "title": {
+    "ru": "Грязные разговоры",
+    "en": "Dirty Talk"
+  },
+  "description": {
+    "ru": "Он шепчет ей на ухо, прижавшись сзади. Её глаза закрыты, губы приоткрыты. Его слова явно действуют — она вся напряглась от возбуждения.",
+    "en": "He whispers in her ear, pressed behind her. Her eyes closed, lips parted. His words clearly affecting her — she's tense with arousal."
+  },
+  "image_prompt": "intimate scene, man behind woman whispering in her ear, his lips close to her ear, her eyes closed head tilted, expression of arousal and pleasure, both dressed elegantly, his hand on her waist, soft lighting, sensual atmosphere, clear chemistry between them",
+
+  "intensity": 2,
+  "relevant_for": { "gender": "any", "interested_in": "any" },
+  "congruent_cluster": "verbal",
+  "tags": ["dirty_talk", "verbal", "whispering", "arousal", "intimate", "commands", "praise", "degradation"],
+
+  "elements": [
+    {
+      "id": "praise_words",
+      "label": { "ru": "Хвалящие слова", "en": "Praising words" },
+      "tag_ref": "praise",
+      "follow_ups": [
+        {
+          "id": "praise_types",
+          "type": "multi_select",
+          "question": { "ru": "Какая похвала нравится?", "en": "What praise?" },
+          "config": {
+            "options": [
+              {
+                "id": "appearance",
+                "label": { "ru": "Про внешность", "en": "About appearance" },
+                "examples": { "ru": "Ты такая красивая, сексуальная" }
+              },
+              {
+                "id": "skill",
+                "label": { "ru": "Про умения", "en": "About skill" },
+                "examples": { "ru": "Как хорошо ты это делаешь" }
+              },
+              {
+                "id": "sounds",
+                "label": { "ru": "Про звуки", "en": "About sounds" },
+                "examples": { "ru": "Обожаю как ты стонешь" }
+              },
+              {
+                "id": "body_reaction",
+                "label": { "ru": "Про реакцию тела", "en": "About body reaction" },
+                "examples": { "ru": "Ты вся мокрая / Как ты напрягся" }
+              },
+              {
+                "id": "good_girl",
+                "label": { "ru": "\"Хорошая девочка/мальчик\"", "en": "\"Good girl/boy\"" }
+              }
+            ]
+          }
+        },
+        {
+          "id": "praise_role",
+          "type": "role",
+          "question": { "ru": "В какой роли?", "en": "Your role?" },
+          "config": {
+            "options": [
+              { "id": "hear", "label": { "ru": "Слышать похвалу", "en": "Hear praise" } },
+              { "id": "speak", "label": { "ru": "Хвалить партнёра", "en": "Give praise" } },
+              { "id": "both", "label": { "ru": "И то и другое", "en": "Both" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "degrading_words",
+      "label": { "ru": "Унизительные слова", "en": "Degrading words" },
+      "tag_ref": "degradation",
+      "follow_ups": [
+        {
+          "id": "degrading_types",
+          "type": "multi_select",
+          "question": { "ru": "Какие унизительные слова ок?", "en": "Which degrading words are OK?" },
+          "config": {
+            "options": [
+              { "id": "slut", "label": { "ru": "Шлюха/шлюшка", "en": "Slut" } },
+              { "id": "whore", "label": { "ru": "Блядь", "en": "Whore" } },
+              { "id": "dirty", "label": { "ru": "Грязная девочка/мальчик", "en": "Dirty girl/boy" } },
+              { "id": "toy", "label": { "ru": "Игрушка/дырка", "en": "Toy/hole" } },
+              { "id": "cumslut", "label": { "ru": "Спермоприёмник", "en": "Cumslut" } },
+              { "id": "bitch", "label": { "ru": "Сучка", "en": "Bitch" } }
+            ],
+            "allow_custom": true
+          }
+        },
+        {
+          "id": "degrading_intensity",
+          "type": "intensity",
+          "question": { "ru": "Насколько жёстко?", "en": "How harsh?" },
+          "config": {
+            "min_label": { "ru": "Мягко, игриво", "en": "Soft, playful" },
+            "max_label": { "ru": "Жёстко, унизительно", "en": "Hard, humiliating" }
+          }
+        },
+        {
+          "id": "degrading_role",
+          "type": "role",
+          "question": { "ru": "В какой роли?", "en": "Your role?" },
+          "config": {
+            "options": [
+              { "id": "hear", "label": { "ru": "Слышать", "en": "Hear it" } },
+              { "id": "speak", "label": { "ru": "Говорить", "en": "Say it" } },
+              { "id": "both", "label": { "ru": "Оба", "en": "Both" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "commands",
+      "label": { "ru": "Команды", "en": "Commands" },
+      "tag_ref": "commands",
+      "follow_ups": [
+        {
+          "id": "command_types",
+          "type": "multi_select",
+          "question": { "ru": "Какие команды нравятся?", "en": "Which commands?" },
+          "config": {
+            "options": [
+              { "id": "pace", "label": { "ru": "Про темп (быстрее, медленнее)", "en": "About pace" } },
+              { "id": "position", "label": { "ru": "Про позицию (повернись, наклонись)", "en": "About position" } },
+              { "id": "look", "label": { "ru": "Смотри на меня", "en": "Look at me" } },
+              { "id": "sounds", "label": { "ru": "Про звуки (громче, тише)", "en": "About sounds" } },
+              { "id": "beg", "label": { "ru": "Попроси", "en": "Beg for it" } },
+              { "id": "permission", "label": { "ru": "Спроси разрешения", "en": "Ask permission" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "possessive",
+      "label": { "ru": "Собственнические слова", "en": "Possessive words" },
+      "tag_ref": "ownership",
+      "follow_ups": [
+        {
+          "id": "possessive_examples",
+          "type": "multi_select",
+          "question": { "ru": "Какие собственнические фразы?", "en": "Which possessive phrases?" },
+          "config": {
+            "options": [
+              { "id": "mine", "label": { "ru": "Ты моя/мой", "en": "You're mine" } },
+              { "id": "only", "label": { "ru": "Только для меня", "en": "Only for me" } },
+              { "id": "belong", "label": { "ru": "Ты мне принадлежишь", "en": "You belong to me" } },
+              { "id": "body", "label": { "ru": "Это моё тело (про партнёра)", "en": "This is my body" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "begging",
+      "label": { "ru": "Умоляющие слова", "en": "Begging words" },
+      "tag_ref": "begging",
+      "follow_ups": [
+        {
+          "id": "begging_for",
+          "type": "multi_select",
+          "question": { "ru": "О чём умолять?", "en": "Beg for what?" },
+          "config": {
+            "options": [
+              { "id": "more", "label": { "ru": "Ещё, не останавливайся", "en": "More, don't stop" } },
+              { "id": "permission", "label": { "ru": "Разрешение кончить", "en": "Permission to cum" } },
+              { "id": "harder", "label": { "ru": "Сильнее/быстрее", "en": "Harder/faster" } },
+              { "id": "please", "label": { "ru": "Пожалуйста...", "en": "Please..." } }
+            ]
+          }
+        },
+        {
+          "id": "begging_role",
+          "type": "role",
+          "question": { "ru": "В какой роли?", "en": "Your role?" },
+          "config": {
+            "options": [
+              { "id": "beg", "label": { "ru": "Умолять", "en": "Beg" } },
+              { "id": "make_beg", "label": { "ru": "Заставлять умолять", "en": "Make beg" } },
+              { "id": "both", "label": { "ru": "Оба", "en": "Both" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "describing",
+      "label": { "ru": "Описание действий", "en": "Describing actions" },
+      "tag_ref": "dirty_talk",
+      "follow_ups": [
+        {
+          "id": "describe_what",
+          "type": "multi_select",
+          "question": { "ru": "Что описывать?", "en": "What to describe?" },
+          "config": {
+            "options": [
+              { "id": "doing", "label": { "ru": "Что делаю", "en": "What I'm doing" } },
+              { "id": "feeling", "label": { "ru": "Что чувствую", "en": "What I feel" } },
+              { "id": "going_to", "label": { "ru": "Что собираюсь сделать", "en": "What I'm going to do" } },
+              { "id": "partner_body", "label": { "ru": "Тело партнёра", "en": "Partner's body" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "body_names",
+      "label": { "ru": "Названия частей тела", "en": "Body part names" },
+      "tag_ref": "dirty_talk",
+      "follow_ups": [
+        {
+          "id": "cock_names",
+          "type": "text_with_suggestions",
+          "question": { "ru": "Как называть мужской орган?", "en": "What to call male genitals?" },
+          "config": {
+            "suggestions": [
+              { "ru": "Член", "en": "Cock" },
+              { "ru": "Хуй", "en": "Dick" },
+              { "ru": "Писька (игриво)", "en": "Prick" }
+            ],
+            "allow_custom": true,
+            "placeholder": { "ru": "Свои варианты...", "en": "Your words..." }
+          }
+        },
+        {
+          "id": "pussy_names",
+          "type": "text_with_suggestions",
+          "question": { "ru": "Как называть женский орган?", "en": "What to call female genitals?" },
+          "config": {
+            "suggestions": [
+              { "ru": "Киска", "en": "Pussy" },
+              { "ru": "Пизда", "en": "Cunt" },
+              { "ru": "Дырочка", "en": "Hole" },
+              { "ru": "Щёлка", "en": "Slit" }
+            ],
+            "allow_custom": true,
+            "placeholder": { "ru": "Свои варианты...", "en": "Your words..." }
+          }
+        }
+      ]
+    }
+  ],
+
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие виды грязных разговоров тебе нравятся?",
+      "en": "What types of dirty talk appeal to you?"
+    },
+    "min_selections": 0
+  },
+
+  "ai_context": {
+    "tests_primary": ["dirty_talk", "verbal_arousal", "communication"],
+    "tests_secondary": ["degradation", "praise", "dominance"],
+    "emotional_range": {
+      "positive": ["loves verbal play", "words arouse", "communicative in bed"],
+      "negative": ["prefers silence", "awkward with talk", "actions over words"]
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "id": "romantic_intimate_bedroom",
+  "slug": "romantic-intimate-bedroom",
+  "version": 2,
+  "role_variant": "mutual",
+
+  "title": {
+    "ru": "Романтическая близость",
+    "en": "Romantic Intimacy"
+  },
+  "description": {
+    "ru": "Пара в спальне при свечах. Он нежно целует её шею, она запрокинула голову. Мягкий свет, шёлковое бельё, переплетённые пальцы.",
+    "en": "Couple in candlelit bedroom. He gently kisses her neck, she tilts her head back. Soft light, silk lingerie, intertwined fingers."
+  },
+  "image_prompt": "romantic bedroom scene, soft candlelight, couple on silk sheets, man kissing woman's neck tenderly, her head tilted back eyes closed in pleasure, their fingers intertwined, she wearing delicate silk lingerie, warm intimate atmosphere, rose petals scattered, soft focus",
+
+  "intensity": 1,
+  "relevant_for": { "gender": "any", "interested_in": "any" },
+  "congruent_cluster": "romantic_gentle",
+  "tags": ["romantic", "gentle", "kissing", "neck", "lingerie", "candles", "intimate", "tender"],
+
+  "elements": [
+    {
+      "id": "neck_kissing",
+      "label": { "ru": "Поцелуи в шею", "en": "Neck kissing" },
+      "tag_ref": "neck",
+      "follow_ups": [
+        {
+          "id": "neck_zones",
+          "type": "body_map",
+          "question": { "ru": "Где тебе нравится, когда целуют?", "en": "Where do you like being kissed?" },
+          "config": {
+            "gender": "both",
+            "allow_multiple": true,
+            "zones": ["neck_side", "neck_back", "ear", "collarbone", "shoulder"]
+          }
+        },
+        {
+          "id": "kiss_intensity",
+          "type": "intensity",
+          "question": { "ru": "Насколько интенсивно?", "en": "How intense?" },
+          "config": {
+            "min_label": { "ru": "Нежные касания губами", "en": "Soft lip touches" },
+            "max_label": { "ru": "С засосами и укусами", "en": "With hickeys and bites" }
+          }
+        }
+      ]
+    },
+    {
+      "id": "candle_atmosphere",
+      "label": { "ru": "Свечи и атмосфера", "en": "Candles & atmosphere" },
+      "tag_ref": "romantic",
+      "follow_ups": [
+        {
+          "id": "atmosphere_importance",
+          "type": "scale",
+          "question": { "ru": "Насколько важна атмосфера для секса?", "en": "How important is atmosphere for sex?" },
+          "config": {
+            "min_label": { "ru": "Не важна, главное страсть", "en": "Not important, passion matters" },
+            "max_label": { "ru": "Критически важна", "en": "Critically important" }
+          }
+        },
+        {
+          "id": "atmosphere_elements",
+          "type": "multi_select",
+          "question": { "ru": "Какие элементы атмосферы нравятся?", "en": "Which atmosphere elements?" },
+          "config": {
+            "options": [
+              { "id": "candles", "label": { "ru": "Свечи", "en": "Candles" } },
+              { "id": "music", "label": { "ru": "Музыка", "en": "Music" } },
+              { "id": "dim_light", "label": { "ru": "Приглушённый свет", "en": "Dim lighting" } },
+              { "id": "flowers", "label": { "ru": "Цветы", "en": "Flowers" } },
+              { "id": "scent", "label": { "ru": "Ароматы", "en": "Scents" } },
+              { "id": "clean_sheets", "label": { "ru": "Чистое постельное", "en": "Fresh sheets" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "silk_lingerie",
+      "label": { "ru": "Шёлковое бельё", "en": "Silk lingerie" },
+      "tag_ref": "lingerie",
+      "follow_ups": [
+        {
+          "id": "lingerie_style",
+          "type": "multi_select",
+          "question": { "ru": "Какой стиль белья нравится?", "en": "What lingerie style?" },
+          "config": {
+            "options": [
+              { "id": "silk", "label": { "ru": "Шёлк/атлас", "en": "Silk/satin" } },
+              { "id": "lace", "label": { "ru": "Кружево", "en": "Lace" } },
+              { "id": "sheer", "label": { "ru": "Прозрачное", "en": "Sheer" } },
+              { "id": "cotton", "label": { "ru": "Простое хлопковое", "en": "Simple cotton" } },
+              { "id": "matching_set", "label": { "ru": "Комплект (лиф+трусики)", "en": "Matching set" } },
+              { "id": "bodysuit", "label": { "ru": "Боди", "en": "Bodysuit" } }
+            ]
+          }
+        },
+        {
+          "id": "lingerie_role",
+          "type": "role",
+          "question": { "ru": "В какой роли?", "en": "Your role?" },
+          "config": {
+            "options": [
+              { "id": "wear", "label": { "ru": "Носить", "en": "Wear it" } },
+              { "id": "admire", "label": { "ru": "Любоваться на партнёре", "en": "Admire on partner" } },
+              { "id": "both", "label": { "ru": "И то и другое", "en": "Both" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "hand_holding",
+      "label": { "ru": "Переплетённые пальцы", "en": "Intertwined fingers" },
+      "tag_ref": "intimate",
+      "follow_ups": [
+        {
+          "id": "connection_importance",
+          "type": "scale",
+          "question": { "ru": "Важна ли эмоциональная связь во время секса?", "en": "Is emotional connection important during sex?" },
+          "config": {
+            "min_label": { "ru": "Секс может быть чисто физическим", "en": "Sex can be purely physical" },
+            "max_label": { "ru": "Без связи не интересно", "en": "No interest without connection" }
+          }
+        }
+      ]
+    },
+    {
+      "id": "gentle_pace",
+      "label": { "ru": "Медленный темп", "en": "Slow pace" },
+      "tag_ref": "gentle",
+      "follow_ups": [
+        {
+          "id": "pace_preference",
+          "type": "single_select",
+          "question": { "ru": "Какой темп обычно предпочитаешь?", "en": "What pace do you usually prefer?" },
+          "config": {
+            "options": [
+              { "id": "slow", "label": { "ru": "Медленный, растягивать удовольствие", "en": "Slow, savoring" } },
+              { "id": "varied", "label": { "ru": "Разный, зависит от настроения", "en": "Varies with mood" } },
+              { "id": "fast", "label": { "ru": "Быстрый, интенсивный", "en": "Fast, intense" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "eye_contact",
+      "label": { "ru": "Зрительный контакт", "en": "Eye contact" },
+      "tag_ref": "intimate",
+      "follow_ups": [
+        {
+          "id": "eye_contact_comfort",
+          "type": "scale",
+          "question": { "ru": "Насколько комфортен зрительный контакт во время секса?", "en": "How comfortable is eye contact during sex?" },
+          "config": {
+            "min_label": { "ru": "Избегаю, смущает", "en": "Avoid, feels awkward" },
+            "max_label": { "ru": "Обожаю, очень интимно", "en": "Love it, very intimate" }
+          }
+        }
+      ]
+    }
+  ],
+
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что тебе нравится на этой сцене?",
+      "en": "What appeals to you in this scene?"
+    },
+    "min_selections": 0
+  },
+
+  "ai_context": {
+    "tests_primary": ["romance", "tenderness", "emotional_connection"],
+    "tests_secondary": ["lingerie", "atmosphere", "slow_pace"],
+    "emotional_range": {
+      "positive": ["romantic at heart", "values connection", "likes gentle sex"],
+      "negative": ["too slow", "prefers intensity", "doesn't need romance"]
+    }
+  }
+}
