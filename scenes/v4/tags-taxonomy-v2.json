@@ -1,0 +1,760 @@
+{
+  "version": "4.0",
+  "description": "Expanded tags taxonomy for Discovery v2 - comprehensive kink coverage",
+  "tag_categories": {
+    "acts_basic": {
+      "description": "Basic sexual acts",
+      "tags": [
+        {"tag": "vaginal", "aliases": ["piv", "intercourse", "sex"], "count": 180},
+        {"tag": "oral", "aliases": ["blowjob", "cunnilingus", "head"], "count": 85},
+        {"tag": "blowjob", "aliases": ["bj", "sucking", "fellatio"], "count": 45},
+        {"tag": "deepthroat", "aliases": ["deep_throat", "throat_fuck"], "count": 20},
+        {"tag": "facefuck", "aliases": ["face_fuck", "throat_fucking"], "count": 15},
+        {"tag": "cunnilingus", "aliases": ["eating_out", "going_down", "licking"], "count": 40},
+        {"tag": "69", "aliases": ["sixty_nine", "mutual_oral"], "count": 8},
+        {"tag": "handjob", "aliases": ["stroking", "jerking"], "count": 20},
+        {"tag": "fingering", "aliases": ["finger_fucking"], "count": 25},
+        {"tag": "fisting", "aliases": ["fist"], "count": 5},
+        {"tag": "masturbation", "aliases": ["solo", "self_pleasure"], "count": 30},
+        {"tag": "mutual_masturbation", "aliases": ["watching_each_other"], "count": 15},
+        {"tag": "dry_humping", "aliases": ["grinding", "clothed_grinding"], "count": 10},
+        {"tag": "tribbing", "aliases": ["scissoring"], "count": 5}
+      ]
+    },
+    "acts_anal": {
+      "description": "Anal-related acts",
+      "tags": [
+        {"tag": "anal", "aliases": ["anal_sex", "backdoor"], "count": 45},
+        {"tag": "rimming", "aliases": ["analingus", "ass_licking", "tossing_salad"], "count": 12},
+        {"tag": "anal_fingering", "aliases": ["finger_in_ass"], "count": 15},
+        {"tag": "anal_plug", "aliases": ["butt_plug"], "count": 18},
+        {"tag": "anal_beads", "aliases": ["beads"], "count": 8},
+        {"tag": "tail_plug", "aliases": ["animal_tail", "fox_tail", "bunny_tail"], "count": 10},
+        {"tag": "prostate", "aliases": ["p_spot", "prostate_massage"], "count": 10},
+        {"tag": "pegging", "aliases": ["strapon_anal"], "count": 15},
+        {"tag": "double_penetration", "aliases": ["dp", "both_holes"], "count": 8},
+        {"tag": "double_anal", "aliases": ["dap", "two_in_ass"], "count": 3},
+        {"tag": "gaping", "aliases": ["stretched"], "count": 5},
+        {"tag": "anal_training", "aliases": ["stretching", "size_training"], "count": 8}
+      ]
+    },
+    "positions": {
+      "description": "Sexual positions",
+      "tags": [
+        {"tag": "missionary", "aliases": ["face_to_face"], "count": 15},
+        {"tag": "doggy", "aliases": ["from_behind", "doggy_style"], "count": 25},
+        {"tag": "cowgirl", "aliases": ["woman_on_top", "riding"], "count": 20},
+        {"tag": "reverse_cowgirl", "aliases": ["reverse_riding"], "count": 12},
+        {"tag": "spooning", "aliases": ["side_by_side"], "count": 10},
+        {"tag": "standing", "aliases": ["against_wall", "standing_sex"], "count": 15},
+        {"tag": "bent_over", "aliases": ["leaning_over"], "count": 18},
+        {"tag": "legs_up", "aliases": ["ankles_up", "spread_legs"], "count": 12},
+        {"tag": "face_sitting", "aliases": ["sitting_on_face", "queening"], "count": 15},
+        {"tag": "prone_bone", "aliases": ["flat_on_stomach"], "count": 8},
+        {"tag": "amazon", "aliases": ["amazon_position"], "count": 5},
+        {"tag": "lotus", "aliases": ["sitting_embrace"], "count": 6},
+        {"tag": "pile_driver", "aliases": ["folded"], "count": 4},
+        {"tag": "wheelbarrow", "aliases": ["lifted_legs"], "count": 4}
+      ]
+    },
+    "bdsm_bondage": {
+      "description": "Bondage and restraint",
+      "tags": [
+        {"tag": "bondage", "aliases": ["tied", "restrained"], "count": 60},
+        {"tag": "handcuffs", "aliases": ["cuffs", "wrist_restraints"], "count": 15},
+        {"tag": "rope", "aliases": ["rope_bondage", "tied_up"], "count": 25},
+        {"tag": "shibari", "aliases": ["japanese_bondage", "kinbaku"], "count": 12},
+        {"tag": "suspension", "aliases": ["hanging", "suspended"], "count": 8},
+        {"tag": "spread_eagle", "aliases": ["spread", "stretched_out"], "count": 10},
+        {"tag": "hogtie", "aliases": ["hogtied"], "count": 6},
+        {"tag": "blindfold", "aliases": ["blind", "eyes_covered"], "count": 25},
+        {"tag": "gag", "aliases": ["ball_gag", "gagged"], "count": 15},
+        {"tag": "ring_gag", "aliases": ["o_ring_gag", "open_mouth"], "count": 8},
+        {"tag": "tape_gag", "aliases": ["duct_tape", "mouth_taped"], "count": 5},
+        {"tag": "collar", "aliases": ["collared", "neck_collar"], "count": 20},
+        {"tag": "leash", "aliases": ["leashed", "on_leash"], "count": 15},
+        {"tag": "mummification", "aliases": ["wrapped", "plastic_wrap"], "count": 5},
+        {"tag": "armbinder", "aliases": ["mono_glove"], "count": 4},
+        {"tag": "spreader_bar", "aliases": ["leg_spreader"], "count": 8},
+        {"tag": "chastity", "aliases": ["chastity_belt", "chastity_cage"], "count": 10},
+        {"tag": "predicament_bondage", "aliases": ["dilemma_bondage"], "count": 5}
+      ]
+    },
+    "bdsm_gear": {
+      "description": "BDSM equipment and accessories",
+      "tags": [
+        {"tag": "harness", "aliases": ["body_harness", "chest_harness"], "count": 15},
+        {"tag": "nipple_clamps", "aliases": ["clamps", "nipple_clamps"], "count": 12},
+        {"tag": "clover_clamps", "aliases": ["japanese_clamps"], "count": 6},
+        {"tag": "tweezer_clamps", "aliases": ["adjustable_clamps"], "count": 5},
+        {"tag": "nipple_chain", "aliases": ["connected_clamps"], "count": 5},
+        {"tag": "nipple_weights", "aliases": ["weighted_clamps"], "count": 4},
+        {"tag": "nipple_suction", "aliases": ["nipple_cups"], "count": 5},
+        {"tag": "clit_clamp", "aliases": ["clit_jewelry"], "count": 4},
+        {"tag": "hood", "aliases": ["leather_hood", "latex_hood"], "count": 5},
+        {"tag": "posture_collar", "aliases": ["high_collar"], "count": 4},
+        {"tag": "o_ring", "aliases": ["o_ring_collar"], "count": 6},
+        {"tag": "cuffs_leather", "aliases": ["leather_restraints"], "count": 10},
+        {"tag": "cuffs_metal", "aliases": ["steel_cuffs"], "count": 8},
+        {"tag": "ankle_cuffs", "aliases": ["leg_cuffs"], "count": 8},
+        {"tag": "thigh_cuffs", "aliases": ["thigh_restraints"], "count": 5},
+        {"tag": "bed_restraints", "aliases": ["under_bed_system"], "count": 8},
+        {"tag": "sex_swing", "aliases": ["swing"], "count": 6},
+        {"tag": "st_andrews_cross", "aliases": ["x_cross"], "count": 5},
+        {"tag": "spanking_bench", "aliases": ["punishment_bench"], "count": 6},
+        {"tag": "cage", "aliases": ["human_cage", "slave_cage"], "count": 4}
+      ]
+    },
+    "bdsm_impact": {
+      "description": "Impact play",
+      "tags": [
+        {"tag": "spanking", "aliases": ["spank", "slapping_ass"], "count": 35},
+        {"tag": "hand_spanking", "aliases": ["bare_hand"], "count": 20},
+        {"tag": "slapping", "aliases": ["face_slapping", "slap"], "count": 15},
+        {"tag": "breast_slapping", "aliases": ["tit_slapping"], "count": 8},
+        {"tag": "pussy_slapping", "aliases": ["cunt_slapping"], "count": 6},
+        {"tag": "whipping", "aliases": ["whip", "flogging"], "count": 12},
+        {"tag": "single_tail", "aliases": ["bull_whip"], "count": 5},
+        {"tag": "flogger", "aliases": ["cat_o_nine"], "count": 10},
+        {"tag": "caning", "aliases": ["cane"], "count": 8},
+        {"tag": "paddling", "aliases": ["paddle"], "count": 10},
+        {"tag": "cropping", "aliases": ["riding_crop"], "count": 8},
+        {"tag": "belt", "aliases": ["belt_spanking"], "count": 12},
+        {"tag": "hairbrush", "aliases": ["brush_spanking"], "count": 6},
+        {"tag": "bastinado", "aliases": ["foot_beating"], "count": 3},
+        {"tag": "switch", "aliases": ["birching"], "count": 4}
+      ]
+    },
+    "bdsm_power": {
+      "description": "Power dynamics",
+      "tags": [
+        {"tag": "dominant", "aliases": ["dom", "domme", "dominating"], "count": 80},
+        {"tag": "submissive", "aliases": ["sub", "submission"], "count": 75},
+        {"tag": "femdom", "aliases": ["female_domination", "dominatrix"], "count": 45},
+        {"tag": "maledom", "aliases": ["male_domination"], "count": 40},
+        {"tag": "gentle_femdom", "aliases": ["gfd", "soft_femdom"], "count": 15},
+        {"tag": "switch", "aliases": ["switching", "vers"], "count": 15},
+        {"tag": "service", "aliases": ["service_sub", "serving"], "count": 20},
+        {"tag": "worship", "aliases": ["worshipping", "adoration"], "count": 35},
+        {"tag": "obedience", "aliases": ["obedient", "following_orders"], "count": 25},
+        {"tag": "punishment", "aliases": ["punished", "discipline"], "count": 30},
+        {"tag": "reward", "aliases": ["rewarded"], "count": 10},
+        {"tag": "training", "aliases": ["slave_training", "sub_training"], "count": 15},
+        {"tag": "protocol", "aliases": ["rules", "rituals"], "count": 8},
+        {"tag": "positions_bdsm", "aliases": ["present", "kneel"], "count": 10},
+        {"tag": "ownership", "aliases": ["property", "belonging"], "count": 12},
+        {"tag": "24_7", "aliases": ["total_power_exchange", "tpe"], "count": 5}
+      ]
+    },
+    "bdsm_psychological": {
+      "description": "Psychological BDSM",
+      "tags": [
+        {"tag": "humiliation", "aliases": ["humiliated", "degrading"], "count": 25},
+        {"tag": "degradation", "aliases": ["degraded", "verbal_abuse"], "count": 20},
+        {"tag": "objectification", "aliases": ["human_furniture", "dehumanization"], "count": 10},
+        {"tag": "praise", "aliases": ["praised", "good_girl", "good_boy"], "count": 25},
+        {"tag": "teasing", "aliases": ["tease", "denial"], "count": 35},
+        {"tag": "edging", "aliases": ["edge", "orgasm_control"], "count": 20},
+        {"tag": "orgasm_denial", "aliases": ["denied", "no_cumming"], "count": 15},
+        {"tag": "ruined_orgasm", "aliases": ["ruined", "stopped_orgasm"], "count": 8},
+        {"tag": "forced_orgasm", "aliases": ["made_to_cum", "overstimulation"], "count": 12},
+        {"tag": "multiple_orgasms", "aliases": ["forced_multiples"], "count": 10},
+        {"tag": "begging", "aliases": ["pleading", "beg"], "count": 18},
+        {"tag": "predicament", "aliases": ["dilemma", "impossible_choice"], "count": 5},
+        {"tag": "fear_play", "aliases": ["scary", "intimidation"], "count": 8},
+        {"tag": "mind_fuck", "aliases": ["psychological_games"], "count": 5},
+        {"tag": "blackmail_fantasy", "aliases": ["coercion_fantasy"], "count": 6}
+      ]
+    },
+    "bdsm_extreme": {
+      "description": "Extreme BDSM practices",
+      "tags": [
+        {"tag": "breath_play", "aliases": ["choking", "asphyxiation"], "count": 10},
+        {"tag": "hand_choking", "aliases": ["manual_choking"], "count": 15},
+        {"tag": "cbt", "aliases": ["cock_ball_torture"], "count": 8},
+        {"tag": "ball_busting", "aliases": ["ball_kicking"], "count": 5},
+        {"tag": "electrostim", "aliases": ["electricity", "violet_wand"], "count": 5},
+        {"tag": "tens", "aliases": ["tens_unit"], "count": 4},
+        {"tag": "figging", "aliases": ["ginger"], "count": 3},
+        {"tag": "needle_play", "aliases": ["needles"], "count": 3},
+        {"tag": "wax_play", "aliases": ["hot_wax", "candle"], "count": 10},
+        {"tag": "ice_play", "aliases": ["cold_play", "temperature_play"], "count": 8},
+        {"tag": "fire_play", "aliases": ["fire_cupping"], "count": 3},
+        {"tag": "knife_play", "aliases": ["blade_play"], "count": 4},
+        {"tag": "branding", "aliases": ["burn_mark"], "count": 2},
+        {"tag": "piercing_play", "aliases": ["temporary_piercing"], "count": 3}
+      ]
+    },
+    "cnc_primal": {
+      "description": "Consensual non-consent and primal play",
+      "tags": [
+        {"tag": "cnc", "aliases": ["consensual_non_consent", "rape_play", "ravishment"], "count": 15},
+        {"tag": "struggle", "aliases": ["fighting_back", "resistance"], "count": 12},
+        {"tag": "pinned_down", "aliases": ["held_down", "overpowered"], "count": 18},
+        {"tag": "taken", "aliases": ["taken_forcefully", "claimed"], "count": 15},
+        {"tag": "primal", "aliases": ["primal_play", "animalistic"], "count": 12},
+        {"tag": "chase", "aliases": ["hunt", "prey"], "count": 8},
+        {"tag": "growling", "aliases": ["animalistic_sounds"], "count": 6},
+        {"tag": "biting", "aliases": ["bite_marks", "marking"], "count": 20},
+        {"tag": "scratching", "aliases": ["clawing", "nails"], "count": 15},
+        {"tag": "hair_pulling", "aliases": ["grabbing_hair"], "count": 25},
+        {"tag": "rough_handling", "aliases": ["manhandling", "throwing_around"], "count": 20},
+        {"tag": "free_use", "aliases": ["use_anytime", "always_available"], "count": 10},
+        {"tag": "sleepy_sex", "aliases": ["somnophilia", "waking_up_to_sex"], "count": 8},
+        {"tag": "surprise_sex", "aliases": ["ambush", "unexpected"], "count": 10}
+      ]
+    },
+    "pet_play": {
+      "description": "Pet play and animal roleplay",
+      "tags": [
+        {"tag": "pet_play", "aliases": ["animal_roleplay"], "count": 12},
+        {"tag": "puppy_play", "aliases": ["dog_play"], "count": 8},
+        {"tag": "kitten_play", "aliases": ["cat_play", "kitty"], "count": 10},
+        {"tag": "pony_play", "aliases": ["horse_play"], "count": 5},
+        {"tag": "bunny_play", "aliases": ["rabbit"], "count": 6},
+        {"tag": "fox_play", "aliases": ["vixen"], "count": 4},
+        {"tag": "cow_play", "aliases": ["hucow"], "count": 4},
+        {"tag": "pet_ears", "aliases": ["animal_ears", "headband_ears"], "count": 8},
+        {"tag": "pet_tail", "aliases": ["tail_plug", "wearable_tail"], "count": 10},
+        {"tag": "pet_collar", "aliases": ["bell_collar"], "count": 8},
+        {"tag": "pet_bowl", "aliases": ["eating_from_bowl"], "count": 4},
+        {"tag": "crawling", "aliases": ["on_all_fours", "walking_on_knees"], "count": 8},
+        {"tag": "barking", "aliases": ["animal_sounds"], "count": 4},
+        {"tag": "pet_cage", "aliases": ["kennel"], "count": 4}
+      ]
+    },
+    "group": {
+      "description": "Group sex scenarios",
+      "tags": [
+        {"tag": "threesome", "aliases": ["three_way", "menage"], "count": 25},
+        {"tag": "ffm", "aliases": ["two_girls", "mff"], "count": 12},
+        {"tag": "mmf", "aliases": ["two_guys", "mfm"], "count": 12},
+        {"tag": "foursome", "aliases": ["four_way"], "count": 8},
+        {"tag": "orgy", "aliases": ["group_sex", "sex_party"], "count": 10},
+        {"tag": "gangbang", "aliases": ["gang_bang"], "count": 8},
+        {"tag": "bukkake", "aliases": ["cum_shower"], "count": 5},
+        {"tag": "swingers", "aliases": ["swinging", "wife_swap"], "count": 8},
+        {"tag": "hotwife", "aliases": ["hot_wife"], "count": 6},
+        {"tag": "cuckold", "aliases": ["cuckolding", "cuck"], "count": 8},
+        {"tag": "cuckquean", "aliases": ["female_cuckold"], "count": 5},
+        {"tag": "spitroast", "aliases": ["spit_roast", "both_ends"], "count": 6},
+        {"tag": "daisy_chain", "aliases": ["chain"], "count": 4},
+        {"tag": "sharing", "aliases": ["passed_around"], "count": 8}
+      ]
+    },
+    "voyeur_exhib": {
+      "description": "Voyeurism and exhibitionism",
+      "tags": [
+        {"tag": "voyeur", "aliases": ["watching", "peeping"], "count": 20},
+        {"tag": "exhibitionism", "aliases": ["showing_off", "flashing"], "count": 18},
+        {"tag": "public", "aliases": ["public_sex", "in_public"], "count": 25},
+        {"tag": "semi_public", "aliases": ["risk_of_caught"], "count": 20},
+        {"tag": "caught", "aliases": ["getting_caught", "discovered"], "count": 12},
+        {"tag": "watched", "aliases": ["being_watched", "audience"], "count": 15},
+        {"tag": "filmed", "aliases": ["recording", "video"], "count": 20},
+        {"tag": "photos", "aliases": ["pictures", "nudes"], "count": 18},
+        {"tag": "mirror", "aliases": ["watching_in_mirror", "mirror_sex"], "count": 12},
+        {"tag": "window", "aliases": ["by_window", "can_be_seen"], "count": 8},
+        {"tag": "anonymous", "aliases": ["glory_hole", "unknown_partner"], "count": 6},
+        {"tag": "streamer", "aliases": ["cam_model", "live_stream"], "count": 5},
+        {"tag": "instructed", "aliases": ["told_what_to_do", "directed"], "count": 10}
+      ]
+    },
+    "roleplay": {
+      "description": "Roleplay scenarios",
+      "tags": [
+        {"tag": "boss", "aliases": ["employer", "ceo"], "count": 10},
+        {"tag": "secretary", "aliases": ["assistant"], "count": 8},
+        {"tag": "teacher", "aliases": ["professor", "instructor"], "count": 10},
+        {"tag": "student", "aliases": ["schoolgirl_aesthetic"], "count": 10},
+        {"tag": "doctor", "aliases": ["medical"], "count": 8},
+        {"tag": "nurse", "aliases": ["medical_staff"], "count": 8},
+        {"tag": "patient", "aliases": ["examination"], "count": 6},
+        {"tag": "maid", "aliases": ["servant", "housekeeper"], "count": 10},
+        {"tag": "butler", "aliases": ["male_servant"], "count": 4},
+        {"tag": "stranger", "aliases": ["anonymous", "unknown"], "count": 15},
+        {"tag": "massage", "aliases": ["masseuse", "happy_ending"], "count": 12},
+        {"tag": "escort", "aliases": ["paid", "professional"], "count": 8},
+        {"tag": "delivery", "aliases": ["pizza", "delivery_person"], "count": 6},
+        {"tag": "photographer", "aliases": ["model_shoot"], "count": 8},
+        {"tag": "coach", "aliases": ["trainer", "gym"], "count": 6},
+        {"tag": "babysitter", "aliases": ["nanny"], "count": 5},
+        {"tag": "step_family", "aliases": ["step_sibling", "step_parent"], "count": 8},
+        {"tag": "landlord", "aliases": ["rent"], "count": 4},
+        {"tag": "hitchhiker", "aliases": ["picked_up"], "count": 5},
+        {"tag": "intruder", "aliases": ["break_in", "burglar"], "count": 6},
+        {"tag": "captor", "aliases": ["kidnapper", "hostage"], "count": 5},
+        {"tag": "vampire", "aliases": ["biting_neck"], "count": 6},
+        {"tag": "royalty", "aliases": ["king_queen", "princess"], "count": 5},
+        {"tag": "alien", "aliases": ["sci_fi", "tentacles"], "count": 4}
+      ]
+    },
+    "clothing_states": {
+      "description": "Clothing states and scenarios",
+      "tags": [
+        {"tag": "fully_clothed", "aliases": ["dressed", "all_clothes_on"], "count": 12},
+        {"tag": "partially_clothed", "aliases": ["half_dressed", "some_clothes"], "count": 20},
+        {"tag": "naked", "aliases": ["nude", "fully_nude"], "count": 50},
+        {"tag": "underwear_only", "aliases": ["just_underwear"], "count": 15},
+        {"tag": "torn_clothes", "aliases": ["ripped_clothes", "clothes_ripped_off"], "count": 10},
+        {"tag": "clothes_pulled_aside", "aliases": ["panties_aside", "pushed_aside"], "count": 15},
+        {"tag": "undressing", "aliases": ["stripping", "taking_off"], "count": 18},
+        {"tag": "dressed_undressed", "aliases": ["cfnm", "cmnf"], "count": 12},
+        {"tag": "forced_undressing", "aliases": ["stripped_forcefully"], "count": 8},
+        {"tag": "wet_clothes", "aliases": ["see_through_wet"], "count": 6},
+        {"tag": "messy_clothes", "aliases": ["cum_on_clothes"], "count": 5}
+      ]
+    },
+    "clothing_fetish": {
+      "description": "Clothing and fashion fetishes",
+      "tags": [
+        {"tag": "lingerie", "aliases": ["underwear", "sexy_underwear"], "count": 40},
+        {"tag": "stockings", "aliases": ["thigh_highs", "nylons"], "count": 25},
+        {"tag": "garter_belt", "aliases": ["suspender_belt"], "count": 12},
+        {"tag": "heels", "aliases": ["high_heels", "stilettos"], "count": 20},
+        {"tag": "boots", "aliases": ["leather_boots", "thigh_boots"], "count": 12},
+        {"tag": "latex", "aliases": ["rubber"], "count": 15},
+        {"tag": "leather", "aliases": ["leather_outfit"], "count": 15},
+        {"tag": "pvc", "aliases": ["vinyl"], "count": 8},
+        {"tag": "uniform", "aliases": ["costume"], "count": 25},
+        {"tag": "suit", "aliases": ["business_suit", "formal"], "count": 10},
+        {"tag": "dress", "aliases": ["cocktail_dress", "evening_dress"], "count": 15},
+        {"tag": "corset", "aliases": ["corseted"], "count": 12},
+        {"tag": "bodystocking", "aliases": ["fishnet_body"], "count": 8},
+        {"tag": "bodysuit", "aliases": ["one_piece"], "count": 10},
+        {"tag": "babydoll", "aliases": ["negligee"], "count": 10},
+        {"tag": "panties", "aliases": ["underwear"], "count": 15},
+        {"tag": "thong", "aliases": ["g_string"], "count": 12},
+        {"tag": "bra", "aliases": ["brassiere"], "count": 12},
+        {"tag": "cupless_bra", "aliases": ["open_cup"], "count": 6},
+        {"tag": "crotchless", "aliases": ["crotchless_panties"], "count": 8},
+        {"tag": "choker", "aliases": ["neck_choker"], "count": 15},
+        {"tag": "glasses", "aliases": ["spectacles"], "count": 8},
+        {"tag": "mask", "aliases": ["eye_mask", "masquerade"], "count": 10},
+        {"tag": "jewelry", "aliases": ["body_jewelry"], "count": 8},
+        {"tag": "nipple_jewelry", "aliases": ["nipple_rings", "nipple_chains"], "count": 6}
+      ]
+    },
+    "male_clothing": {
+      "description": "Male-specific clothing and presentation",
+      "tags": [
+        {"tag": "male_lingerie", "aliases": ["mens_lingerie"], "count": 8},
+        {"tag": "jockstrap", "aliases": ["athletic_supporter"], "count": 6},
+        {"tag": "briefs", "aliases": ["tight_underwear"], "count": 10},
+        {"tag": "boxer_briefs", "aliases": ["fitted_boxers"], "count": 12},
+        {"tag": "harness_male", "aliases": ["chest_harness_m"], "count": 8},
+        {"tag": "collar_male", "aliases": ["male_collar"], "count": 6},
+        {"tag": "cock_cage", "aliases": ["male_chastity"], "count": 8},
+        {"tag": "cock_ring", "aliases": ["penis_ring"], "count": 10},
+        {"tag": "suit_tie", "aliases": ["business_attire"], "count": 12},
+        {"tag": "shirtless", "aliases": ["topless_male"], "count": 15},
+        {"tag": "crossdressing_male", "aliases": ["feminized", "sissy"], "count": 8}
+      ]
+    },
+    "body_parts": {
+      "description": "Body part focus",
+      "tags": [
+        {"tag": "breasts", "aliases": ["boobs", "tits", "chest"], "count": 45},
+        {"tag": "nipples", "aliases": ["nips"], "count": 25},
+        {"tag": "ass", "aliases": ["butt", "booty", "behind"], "count": 50},
+        {"tag": "pussy", "aliases": ["vagina", "cunt"], "count": 40},
+        {"tag": "clit", "aliases": ["clitoris"], "count": 20},
+        {"tag": "cock", "aliases": ["dick", "penis"], "count": 35},
+        {"tag": "balls", "aliases": ["testicles", "scrotum"], "count": 15},
+        {"tag": "feet", "aliases": ["foot", "toes"], "count": 20},
+        {"tag": "soles", "aliases": ["bottom_of_feet"], "count": 8},
+        {"tag": "legs", "aliases": ["thighs"], "count": 15},
+        {"tag": "inner_thighs", "aliases": ["thigh_gap"], "count": 10},
+        {"tag": "neck", "aliases": ["throat"], "count": 10},
+        {"tag": "ears", "aliases": ["earlobes"], "count": 6},
+        {"tag": "back", "aliases": ["spine"], "count": 8},
+        {"tag": "lower_back", "aliases": ["above_ass"], "count": 6},
+        {"tag": "stomach", "aliases": ["belly", "abs"], "count": 10},
+        {"tag": "hips", "aliases": ["waist"], "count": 12},
+        {"tag": "hands", "aliases": ["fingers"], "count": 12},
+        {"tag": "mouth", "aliases": ["lips", "tongue"], "count": 25},
+        {"tag": "hair", "aliases": ["pulling_hair"], "count": 15},
+        {"tag": "armpit", "aliases": ["underarm"], "count": 5},
+        {"tag": "navel", "aliases": ["belly_button"], "count": 5}
+      ]
+    },
+    "body_worship": {
+      "description": "Body worship specific",
+      "tags": [
+        {"tag": "foot_worship", "aliases": ["foot_fetish", "kissing_feet"], "count": 15},
+        {"tag": "foot_massage", "aliases": ["rubbing_feet"], "count": 10},
+        {"tag": "toe_sucking", "aliases": ["sucking_toes"], "count": 8},
+        {"tag": "footjob", "aliases": ["foot_sex"], "count": 10},
+        {"tag": "ass_worship", "aliases": ["butt_worship"], "count": 15},
+        {"tag": "breast_worship", "aliases": ["tit_worship"], "count": 12},
+        {"tag": "cock_worship", "aliases": ["dick_worship"], "count": 10},
+        {"tag": "pussy_worship", "aliases": ["cunt_worship"], "count": 10},
+        {"tag": "muscle_worship", "aliases": ["body_admiration"], "count": 8},
+        {"tag": "armpit_worship", "aliases": ["smelling_armpits"], "count": 4}
+      ]
+    },
+    "fluids": {
+      "description": "Body fluids",
+      "tags": [
+        {"tag": "cum", "aliases": ["semen", "jizz", "load"], "count": 50},
+        {"tag": "facial", "aliases": ["cum_on_face"], "count": 15},
+        {"tag": "creampie", "aliases": ["cum_inside", "internal"], "count": 18},
+        {"tag": "anal_creampie", "aliases": ["cum_in_ass"], "count": 10},
+        {"tag": "swallowing", "aliases": ["swallow", "drinking_cum"], "count": 15},
+        {"tag": "cum_play", "aliases": ["playing_with_cum", "snowballing"], "count": 8},
+        {"tag": "cum_on_body", "aliases": ["body_shot"], "count": 12},
+        {"tag": "cum_on_tits", "aliases": ["pearl_necklace"], "count": 10},
+        {"tag": "cum_on_ass", "aliases": ["ass_shot"], "count": 8},
+        {"tag": "multiple_loads", "aliases": ["many_cum"], "count": 6},
+        {"tag": "squirting", "aliases": ["squirt", "female_ejaculation"], "count": 12},
+        {"tag": "lactation", "aliases": ["breast_milk", "nursing"], "count": 5},
+        {"tag": "watersports", "aliases": ["golden_shower", "pee"], "count": 8},
+        {"tag": "spit", "aliases": ["spitting", "drool"], "count": 10},
+        {"tag": "drooling", "aliases": ["sloppy", "saliva"], "count": 8}
+      ]
+    },
+    "toys_equipment": {
+      "description": "Sex toys and equipment",
+      "tags": [
+        {"tag": "vibrator", "aliases": ["vibe"], "count": 20},
+        {"tag": "wand", "aliases": ["magic_wand", "hitachi"], "count": 15},
+        {"tag": "bullet", "aliases": ["small_vibe"], "count": 10},
+        {"tag": "rabbit", "aliases": ["rabbit_vibe"], "count": 8},
+        {"tag": "dildo", "aliases": ["fake_cock"], "count": 18},
+        {"tag": "realistic_dildo", "aliases": ["lifelike"], "count": 10},
+        {"tag": "fantasy_dildo", "aliases": ["dragon", "alien_toy"], "count": 6},
+        {"tag": "double_dildo", "aliases": ["double_ended"], "count": 5},
+        {"tag": "strapon", "aliases": ["strap_on", "harness"], "count": 20},
+        {"tag": "plug", "aliases": ["butt_plug", "anal_plug"], "count": 18},
+        {"tag": "cock_ring", "aliases": ["ring"], "count": 8},
+        {"tag": "penis_pump", "aliases": ["vacuum_pump"], "count": 5},
+        {"tag": "pussy_pump", "aliases": ["vulva_pump"], "count": 4},
+        {"tag": "fucking_machine", "aliases": ["sex_machine"], "count": 6},
+        {"tag": "sybian", "aliases": ["riding_machine"], "count": 4},
+        {"tag": "remote_toy", "aliases": ["remote_control", "app_controlled"], "count": 10},
+        {"tag": "lovense", "aliases": ["bluetooth_toy"], "count": 6},
+        {"tag": "sex_doll", "aliases": ["love_doll"], "count": 4}
+      ]
+    },
+    "locations": {
+      "description": "Sex locations",
+      "tags": [
+        {"tag": "bedroom", "aliases": ["bed"], "count": 200},
+        {"tag": "bathroom", "aliases": ["shower", "bath"], "count": 25},
+        {"tag": "bathtub", "aliases": ["tub", "jacuzzi"], "count": 10},
+        {"tag": "shower", "aliases": ["shower_sex"], "count": 15},
+        {"tag": "kitchen", "aliases": ["counter"], "count": 12},
+        {"tag": "living_room", "aliases": ["couch", "sofa"], "count": 15},
+        {"tag": "floor", "aliases": ["on_floor", "carpet"], "count": 12},
+        {"tag": "against_wall", "aliases": ["wall_sex"], "count": 15},
+        {"tag": "office", "aliases": ["desk", "workplace"], "count": 15},
+        {"tag": "car", "aliases": ["backseat", "vehicle"], "count": 12},
+        {"tag": "parking", "aliases": ["parking_lot", "garage"], "count": 8},
+        {"tag": "outdoors", "aliases": ["outside", "nature"], "count": 20},
+        {"tag": "forest", "aliases": ["woods", "trees"], "count": 8},
+        {"tag": "rooftop", "aliases": ["roof", "terrace"], "count": 5},
+        {"tag": "balcony", "aliases": ["veranda"], "count": 6},
+        {"tag": "hotel", "aliases": ["hotel_room"], "count": 12},
+        {"tag": "pool", "aliases": ["swimming_pool"], "count": 8},
+        {"tag": "beach", "aliases": ["seaside"], "count": 8},
+        {"tag": "club", "aliases": ["nightclub", "bar"], "count": 10},
+        {"tag": "bathroom_club", "aliases": ["club_toilet", "restroom"], "count": 6},
+        {"tag": "elevator", "aliases": ["lift"], "count": 5},
+        {"tag": "stairwell", "aliases": ["stairs"], "count": 5},
+        {"tag": "dungeon", "aliases": ["playroom", "sex_dungeon"], "count": 25},
+        {"tag": "bdsm_club", "aliases": ["fetish_club"], "count": 8},
+        {"tag": "swingers_club", "aliases": ["sex_club"], "count": 6},
+        {"tag": "airplane", "aliases": ["mile_high", "plane"], "count": 4},
+        {"tag": "train", "aliases": ["railway"], "count": 4},
+        {"tag": "fitting_room", "aliases": ["changing_room"], "count": 6},
+        {"tag": "storage_room", "aliases": ["closet", "supply_room"], "count": 5}
+      ]
+    },
+    "relationship": {
+      "description": "Relationship contexts",
+      "tags": [
+        {"tag": "couple", "aliases": ["partners", "lovers"], "count": 150},
+        {"tag": "married", "aliases": ["husband_wife", "spouse"], "count": 25},
+        {"tag": "long_term", "aliases": ["established", "years_together"], "count": 15},
+        {"tag": "new_relationship", "aliases": ["dating", "early_stages"], "count": 12},
+        {"tag": "affair", "aliases": ["cheating", "infidelity"], "count": 15},
+        {"tag": "ex", "aliases": ["ex_partner", "former"], "count": 8},
+        {"tag": "friends", "aliases": ["friends_to_lovers", "fwb"], "count": 12},
+        {"tag": "stranger", "aliases": ["one_night", "pickup"], "count": 20},
+        {"tag": "coworker", "aliases": ["colleague", "office_romance"], "count": 10},
+        {"tag": "neighbor", "aliases": ["next_door"], "count": 6},
+        {"tag": "roommate", "aliases": ["housemate"], "count": 6},
+        {"tag": "first_time", "aliases": ["new_partner", "debut"], "count": 10},
+        {"tag": "reunion", "aliases": ["reconnecting"], "count": 5},
+        {"tag": "makeup_sex", "aliases": ["after_fight"], "count": 6},
+        {"tag": "goodbye_sex", "aliases": ["last_time"], "count": 4},
+        {"tag": "anniversary", "aliases": ["special_occasion"], "count": 5}
+      ]
+    },
+    "emotions_mood": {
+      "description": "Emotional context and mood",
+      "tags": [
+        {"tag": "romantic", "aliases": ["loving", "tender"], "count": 40},
+        {"tag": "passionate", "aliases": ["intense", "heated"], "count": 60},
+        {"tag": "playful", "aliases": ["fun", "teasing"], "count": 35},
+        {"tag": "rough", "aliases": ["hard", "aggressive"], "count": 45},
+        {"tag": "gentle", "aliases": ["soft", "slow"], "count": 35},
+        {"tag": "urgent", "aliases": ["desperate", "needy"], "count": 25},
+        {"tag": "lazy", "aliases": ["relaxed", "slow_pace"], "count": 15},
+        {"tag": "angry", "aliases": ["makeup_sex"], "count": 5},
+        {"tag": "nervous", "aliases": ["anxious", "first_time"], "count": 10},
+        {"tag": "confident", "aliases": ["assured"], "count": 20},
+        {"tag": "vulnerable", "aliases": ["exposed", "open"], "count": 15},
+        {"tag": "dominant_mood", "aliases": ["in_charge"], "count": 20},
+        {"tag": "submissive_mood", "aliases": ["surrendering"], "count": 18},
+        {"tag": "reverent", "aliases": ["worshipful", "adoring"], "count": 10},
+        {"tag": "primal_mood", "aliases": ["animalistic", "raw"], "count": 15},
+        {"tag": "loving", "aliases": ["caring", "affectionate"], "count": 25},
+        {"tag": "lustful", "aliases": ["horny", "craving"], "count": 30},
+        {"tag": "taboo_thrill", "aliases": ["forbidden", "wrong"], "count": 15}
+      ]
+    },
+    "timing": {
+      "description": "Time-related tags",
+      "tags": [
+        {"tag": "morning", "aliases": ["wake_up", "dawn"], "count": 12},
+        {"tag": "afternoon", "aliases": ["midday"], "count": 8},
+        {"tag": "night", "aliases": ["evening", "late_night"], "count": 25},
+        {"tag": "quickie", "aliases": ["fast", "rushed"], "count": 15},
+        {"tag": "marathon", "aliases": ["long", "extended"], "count": 10},
+        {"tag": "spontaneous", "aliases": ["unplanned", "spur_of_moment"], "count": 20},
+        {"tag": "planned", "aliases": ["scheduled", "date_night"], "count": 15},
+        {"tag": "teasing_buildup", "aliases": ["all_day_teasing"], "count": 10},
+        {"tag": "afterglow", "aliases": ["post_sex", "cuddling"], "count": 8}
+      ]
+    },
+    "verbal": {
+      "description": "Verbal and audio elements",
+      "tags": [
+        {"tag": "dirty_talk", "aliases": ["talking_dirty", "verbal"], "count": 30},
+        {"tag": "moaning", "aliases": ["vocal", "loud"], "count": 25},
+        {"tag": "screaming", "aliases": ["loud_moans"], "count": 12},
+        {"tag": "quiet", "aliases": ["silent", "hushed"], "count": 10},
+        {"tag": "whimpering", "aliases": ["soft_moans"], "count": 12},
+        {"tag": "begging_verbal", "aliases": ["please"], "count": 15},
+        {"tag": "commands", "aliases": ["orders", "instructions"], "count": 18},
+        {"tag": "praise_verbal", "aliases": ["good_girl_boy"], "count": 20},
+        {"tag": "degradation_verbal", "aliases": ["insults", "name_calling"], "count": 15},
+        {"tag": "counting", "aliases": ["count_the_spanks"], "count": 8},
+        {"tag": "asking_permission", "aliases": ["may_i"], "count": 12},
+        {"tag": "thank_you", "aliases": ["thanking"], "count": 8},
+        {"tag": "gagging_sounds", "aliases": ["choking_sounds"], "count": 10},
+        {"tag": "asmr_sex", "aliases": ["whispers", "tingles"], "count": 5}
+      ]
+    },
+    "sensory": {
+      "description": "Sensory experiences",
+      "tags": [
+        {"tag": "sensory_deprivation", "aliases": ["blindfolded"], "count": 15},
+        {"tag": "temperature_play", "aliases": ["hot_cold"], "count": 8},
+        {"tag": "ice", "aliases": ["ice_cubes"], "count": 6},
+        {"tag": "hot_wax", "aliases": ["candle_wax"], "count": 8},
+        {"tag": "feather", "aliases": ["tickling_feather"], "count": 6},
+        {"tag": "pinwheel", "aliases": ["wartenberg_wheel"], "count": 5},
+        {"tag": "scratching", "aliases": ["nails_on_skin"], "count": 12},
+        {"tag": "tickling", "aliases": ["tickle"], "count": 8},
+        {"tag": "massage_sensual", "aliases": ["oil_massage"], "count": 15},
+        {"tag": "food_play", "aliases": ["feeding", "chocolate"], "count": 8},
+        {"tag": "blindfolded_taste", "aliases": ["guessing_food"], "count": 4},
+        {"tag": "smell", "aliases": ["scent", "perfume"], "count": 5}
+      ]
+    },
+    "aftercare": {
+      "description": "Aftercare and comfort",
+      "tags": [
+        {"tag": "aftercare", "aliases": ["after_scene"], "count": 15},
+        {"tag": "cuddling", "aliases": ["snuggling", "holding"], "count": 20},
+        {"tag": "blanket", "aliases": ["wrapped_up", "cozy"], "count": 10},
+        {"tag": "water", "aliases": ["hydration", "drink"], "count": 8},
+        {"tag": "snacks", "aliases": ["food_after"], "count": 5},
+        {"tag": "praise_aftercare", "aliases": ["reassurance"], "count": 12},
+        {"tag": "checking_in", "aliases": ["are_you_ok"], "count": 10},
+        {"tag": "cleaning_up", "aliases": ["wiping_down"], "count": 8},
+        {"tag": "bath_after", "aliases": ["shower_together"], "count": 8},
+        {"tag": "pillow_talk", "aliases": ["talking_after"], "count": 10}
+      ]
+    }
+  },
+  "filter_groups": {
+    "intensity_filter": {
+      "gentle": ["romantic", "tender", "gentle", "slow", "lazy", "loving"],
+      "moderate": ["passionate", "playful", "teasing", "confident"],
+      "intense": ["rough", "hard", "aggressive", "urgent", "primal_mood"],
+      "extreme": ["brutal", "extreme", "violent", "cnc"]
+    },
+    "dynamic_filter": {
+      "equal": ["mutual", "equal", "both", "together"],
+      "dominant": ["dominant", "controlling", "leading", "taking", "maledom", "femdom"],
+      "submissive": ["submissive", "receiving", "serving", "obeying"],
+      "switching": ["switch", "taking_turns", "vers"]
+    },
+    "comfort_filter": {
+      "vanilla": ["romantic", "gentle", "missionary", "oral", "cuddling", "loving"],
+      "adventurous": ["public", "threesome", "toys", "roleplay", "semi_public"],
+      "kinky": ["bdsm", "bondage", "spanking", "dominance", "collar", "leash"],
+      "extreme": ["extreme", "cbt", "breath_play", "degradation", "cnc", "needle_play"]
+    },
+    "role_filter": {
+      "active_male": ["maledom", "active_male", "giving_male"],
+      "passive_male": ["submissive_male", "receiving_male", "pegged"],
+      "active_female": ["femdom", "active_female", "giving_female"],
+      "passive_female": ["submissive_female", "receiving_female"]
+    }
+  },
+  "tag_relationships": {
+    "implies": {
+      "femdom": ["dominant", "female"],
+      "maledom": ["dominant", "male"],
+      "gentle_femdom": ["femdom", "gentle", "caring"],
+      "pegging": ["strapon", "anal", "femdom"],
+      "shibari": ["bondage", "rope", "artistic"],
+      "bukkake": ["facial", "group", "cum", "multiple_loads"],
+      "cuckold": ["watching", "hotwife", "humiliation"],
+      "cuckquean": ["watching", "female_humiliation"],
+      "gangbang": ["group", "multiple_partners"],
+      "spitroast": ["group", "oral", "penetration"],
+      "cnc": ["rough", "struggle", "power_dynamic"],
+      "primal": ["biting", "scratching", "rough", "animalistic"],
+      "pet_play": ["collar", "crawling", "obedience"],
+      "puppy_play": ["pet_play", "collar", "crawling"],
+      "kitten_play": ["pet_play", "playful", "teasing"],
+      "pony_play": ["pet_play", "harness", "training"],
+      "suspension": ["bondage", "advanced", "rope"],
+      "predicament_bondage": ["bondage", "predicament", "dilemma"],
+      "mummification": ["bondage", "immobile", "wrapped"],
+      "free_use": ["available", "submissive", "used"],
+      "24_7": ["tpe", "ownership", "lifestyle"]
+    },
+    "often_together": {
+      "blindfold": ["bondage", "teasing", "sensory_deprivation", "surprise"],
+      "spanking": ["punishment", "dominant", "ass", "bent_over", "over_knee"],
+      "collar": ["leash", "submissive", "ownership", "pet_play", "kneeling"],
+      "stockings": ["lingerie", "heels", "legs", "garter_belt"],
+      "harness": ["bondage", "collar", "leather", "chest_exposure"],
+      "nipple_clamps": ["breast_play", "pain", "teasing", "chains"],
+      "gag": ["bondage", "drooling", "helpless", "muffled"],
+      "wax_play": ["candles", "sensation", "marks", "dripping"],
+      "rope": ["shibari", "marks", "artistic", "suspension"],
+      "handcuffs": ["wrist_bondage", "behind_back", "spread_eagle"],
+      "tail_plug": ["pet_play", "anal", "costume", "crawling"],
+      "choking": ["dominant", "rough", "breath_control", "hand_on_throat"],
+      "hair_pulling": ["rough", "doggy", "control", "primal"],
+      "slapping": ["face", "degradation", "rough", "assertive"],
+      "degradation": ["humiliation", "verbal", "submissive", "kneeling"],
+      "praise": ["reward", "good_girl", "submissive", "aftercare"],
+      "edging": ["teasing", "denial", "begging", "control"],
+      "forced_orgasm": ["vibrator", "overstimulation", "bondage", "helpless"],
+      "cum_on_face": ["facial", "kneeling", "open_mouth", "degradation"],
+      "creampie": ["internal", "bare", "breeding", "deep"],
+      "anal": ["plug", "training", "lube", "slow"],
+      "public": ["risk", "adrenaline", "quick", "semi_dressed"],
+      "mirror": ["watching", "voyeur", "self_view", "positions"],
+      "dungeon": ["equipment", "bdsm", "professional", "atmosphere"],
+      "threesome": ["sharing", "mmf_or_ffm", "jealousy", "watching"],
+      "roleplay": ["costume", "scenario", "character", "dialogue"],
+      "cnc": ["struggle", "pinned", "forced", "resistance"],
+      "primal": ["chase", "biting", "scratching", "animalistic"],
+      "worship": ["kneeling", "reverence", "service", "adoration"],
+      "feet": ["worship", "smell", "stockings", "heels"],
+      "latex": ["shiny", "tight", "fetish", "heels"],
+      "leather": ["smell", "bdsm", "boots", "harness"],
+      "lingerie": ["undressing", "reveal", "seduction", "tease"],
+      "torn_clothes": ["cnc", "rough", "urgent", "primal"],
+      "cowgirl": ["control", "riding", "view", "grinding"],
+      "doggy": ["hair_pulling", "spanking", "deep", "rough"],
+      "missionary": ["eye_contact", "intimate", "kissing", "romantic"],
+      "69": ["mutual", "oral", "simultaneous", "intimate"]
+    },
+    "mutually_exclusive": {
+      "dominant": ["submissive"],
+      "rough": ["gentle"],
+      "quickie": ["marathon"],
+      "quiet": ["screaming"],
+      "public": ["bedroom"],
+      "clothed": ["naked"],
+      "romantic": ["degradation"],
+      "stranger": ["married"]
+    },
+    "congruent_clusters": {
+      "romantic_gentle": {
+        "description": "Romantic and gentle elements that go well together",
+        "tags": ["romantic", "gentle", "tender", "loving", "missionary", "eye_contact", "cuddling", "slow", "passionate", "kissing", "praise", "aftercare"]
+      },
+      "rough_primal": {
+        "description": "Rough and primal play elements",
+        "tags": ["rough", "primal", "biting", "scratching", "hair_pulling", "pinned_down", "growling", "chase", "struggle", "torn_clothes", "urgent", "aggressive"]
+      },
+      "bdsm_bondage": {
+        "description": "BDSM bondage scene elements",
+        "tags": ["bondage", "rope", "handcuffs", "blindfold", "gag", "collar", "harness", "spread_eagle", "helpless", "restrained", "dungeon"]
+      },
+      "bdsm_impact": {
+        "description": "Impact play elements",
+        "tags": ["spanking", "paddling", "whipping", "caning", "cropping", "punishment", "marks", "counting", "bent_over", "red_marks"]
+      },
+      "bdsm_psychological": {
+        "description": "Psychological BDSM elements",
+        "tags": ["degradation", "humiliation", "praise", "obedience", "service", "worship", "begging", "commands", "protocol", "training"]
+      },
+      "sensory_play": {
+        "description": "Sensory stimulation elements",
+        "tags": ["blindfold", "sensory_deprivation", "ice", "wax_play", "feather", "tickling", "pinwheel", "temperature_play", "massage"]
+      },
+      "pet_play_cluster": {
+        "description": "Pet play elements",
+        "tags": ["pet_play", "collar", "leash", "crawling", "pet_ears", "tail_plug", "pet_bowl", "barking", "obedience", "treats"]
+      },
+      "latex_leather": {
+        "description": "Fetish material elements",
+        "tags": ["latex", "leather", "pvc", "boots", "corset", "harness", "shiny", "tight", "fetish_wear"]
+      },
+      "lingerie_tease": {
+        "description": "Lingerie and teasing elements",
+        "tags": ["lingerie", "stockings", "garter_belt", "heels", "undressing", "striptease", "reveal", "seduction", "bra", "panties"]
+      },
+      "power_femdom": {
+        "description": "Female domination elements",
+        "tags": ["femdom", "face_sitting", "pegging", "foot_worship", "cbt", "chastity", "humiliation", "strap_on", "worship", "service"]
+      },
+      "power_maledom": {
+        "description": "Male domination elements",
+        "tags": ["maledom", "rough", "hair_pulling", "pinned_down", "commands", "choking", "face_fuck", "used", "taken"]
+      },
+      "orgasm_control": {
+        "description": "Orgasm control elements",
+        "tags": ["edging", "orgasm_denial", "forced_orgasm", "ruined_orgasm", "teasing", "begging", "multiple_orgasms", "vibrator", "overstimulation"]
+      },
+      "cnc_scenario": {
+        "description": "CNC scene elements",
+        "tags": ["cnc", "struggle", "pinned_down", "taken", "resistance", "forced", "helpless", "rough", "torn_clothes", "intruder"]
+      },
+      "exhibitionism": {
+        "description": "Exhibitionism elements",
+        "tags": ["public", "semi_public", "watched", "filmed", "photos", "mirror", "window", "risk", "caught"]
+      },
+      "group_play": {
+        "description": "Group sex elements",
+        "tags": ["threesome", "gangbang", "orgy", "spitroast", "sharing", "watching", "bukkake", "multiple_partners"]
+      },
+      "worship_service": {
+        "description": "Worship and service elements",
+        "tags": ["worship", "foot_worship", "ass_worship", "cock_worship", "service", "kneeling", "reverence", "adoration", "devotion"]
+      }
+    }
+  },
+  "search_shortcuts": {
+    "beginner_friendly": ["romantic", "gentle", "oral", "missionary", "massage", "cuddling", "praise"],
+    "most_popular": ["doggy", "blowjob", "lingerie", "spanking", "cowgirl", "choking_light", "dirty_talk"],
+    "advanced_bdsm": ["shibari", "suspension", "cbt", "electrostim", "predicament", "needle_play"],
+    "emotional": ["romantic", "passionate", "reunion", "first_time", "makeup_sex", "loving"],
+    "rough_play": ["rough", "hair_pulling", "choking", "slapping", "pinned_down", "primal"],
+    "power_exchange": ["dominant", "submissive", "collar", "leash", "service", "worship", "obedience"],
+    "sensory": ["blindfold", "wax_play", "ice", "feather", "sensory_deprivation", "tickling"],
+    "public_thrill": ["public", "semi_public", "car", "fitting_room", "outdoor", "risk"]
+  }
+}
