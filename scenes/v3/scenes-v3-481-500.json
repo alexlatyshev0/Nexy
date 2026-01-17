@@ -1,0 +1,1068 @@
+{
+  "version": "3.0",
+  "scene_range": "481-500",
+  "total_scenes": 20,
+  "category": "additional_scenes",
+  "scenes": [
+    {
+      "id": "scene_481",
+      "priority": 1,
+      "intensity": 2,
+      "generation_prompt": "soft morning bedroom scene with couple in lazy morning sex, both still half-asleep tangled in white sheets, warm sunlight streaming through windows, slow gentle movements no rush anywhere to be, her hair messy on pillow his stubble against her neck, the intimate comfort of waking up together and connecting before fully awake, drowsy tender morning lovemaking scene",
+      "user_description": {
+        "en": "A man and woman have lazy morning sex, still half-asleep in tangled sheets with sunlight streaming in.",
+        "ru": "Мужчина и женщина занимаются ленивым утренним сексом, ещё полусонные в спутанных простынях, солнце светит в окно."
+      },
+      "ai_context": {
+        "description": "Lazy morning sex - drowsy intimate connection in morning light",
+        "tests": {
+          "primary_kink": "morning_sex",
+          "secondary_kinks": ["lazy_pace", "half_asleep", "sunlight", "intimate_comfort"],
+          "power_dynamic": "mutual_tender",
+          "gender_role_aspect": "equal_waking_together"
+        },
+        "question_angles": {
+          "direct": "Does lazy morning sex appeal?",
+          "fantasy_framing": "Would half-asleep intimacy feel cozy?",
+          "relational": "Is waking up to sex romantic?"
+        },
+        "emotional_range": {
+          "positive": ["morning sex wonderful", "lazy pace perfect", "intimate cozy", "sunlight romantic"],
+          "negative": ["need coffee first", "morning breath concern", "prefer evening"],
+          "curious": ["morning intriguing", "lazy pace curious", "might be nice"]
+        },
+        "profile_signals": {
+          "if_positive": ["morning_sex_lover", "lazy_pace_fan", "intimacy_seeker", "romantic_connection"],
+          "if_negative": ["evening_preferred", "morning_reluctant", "fully_awake_needed"],
+          "if_curious": ["morning_curious", "lazy_exploring", "comfort_intrigued"]
+        },
+        "correlations": {
+          "positive": ["romantic_sex", "slow_pace", "comfort_intimacy", "relationship_sex"],
+          "negative": ["high_energy_preference", "evening_only", "quick_encounters"]
+        },
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": "Morning breath, appearance before shower",
+          "normalization": "Morning sex is beloved by many couples - the drowsy intimacy creates unique tender connection."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["morning_sex", "lazy", "half_asleep", "sunlight", "tender"],
+      "tags": ["morning", "lazy", "tender", "sunlight", "intimate"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_482",
+      "priority": 2,
+      "intensity": 3,
+      "generation_prompt": "bedroom scene with morning wood situation, she wakes to find him hard against her, decides to take advantage of his morning erection, climbing on top while he's still waking up, riding him as consciousness returns, his surprised pleasure at waking to her already moving on him, using his natural morning state for mutual pleasure, morning wood wake up sex scene",
+      "user_description": {
+        "en": "A woman wakes up to find her man hard, and climbs on top to ride him while he's still waking up.",
+        "ru": "Женщина просыпается и обнаруживает, что её мужчина возбуждён, и садится сверху, пока он ещё просыпается."
+      },
+      "ai_context": {
+        "description": "Morning wood - she takes advantage of his natural morning erection",
+        "tests": {
+          "primary_kink": "morning_wood",
+          "secondary_kinks": ["wake_up_sex", "she_initiates", "riding_asleep", "surprise_pleasure"],
+          "power_dynamic": "she_takes_initiative",
+          "gender_role_aspect": "female_initiating_on_sleeping_male"
+        },
+        "question_angles": {
+          "direct": "Does morning wood wake-up sex appeal?",
+          "fantasy_framing": "Would waking to her riding feel amazing?",
+          "relational": "Is using morning erection exciting?"
+        },
+        "emotional_range": {
+          "positive": ["morning wood perfect", "waking to sex amazing", "she initiates hot", "natural use exciting"],
+          "negative": ["need consent discussion", "prefer fully awake", "too sudden"],
+          "curious": ["morning wood intriguing", "wake up curious", "might enjoy"]
+        },
+        "profile_signals": {
+          "if_positive": ["morning_wood_fan", "wake_up_lover", "female_initiative_appreciator", "surprise_sex_enjoyer"],
+          "if_negative": ["consent_focused", "fully_awake_preferred", "gradual_needed"],
+          "if_curious": ["morning_curious", "initiative_exploring", "surprise_intrigued"]
+        },
+        "correlations": {
+          "positive": ["morning_sex", "female_initiation", "surprise_pleasure", "spontaneous"],
+          "negative": ["planned_preference", "consent_discussion_always", "gradual_arousal"]
+        },
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": "Consent while sleeping (requires prior agreement)",
+          "normalization": "Morning wood sex is common in relationships with established consent - many men love waking to pleasure."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["morning_wood", "wake_up", "she_initiates", "riding", "surprise"],
+      "tags": ["morning", "erection", "initiative", "riding", "waking"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_483",
+      "priority": 2,
+      "intensity": 3,
+      "generation_prompt": "bathroom morning scene with shower sex to start the day, steam filling the space as water cascades over both bodies, her back against cool tiles as he lifts her, or him pressing her against glass door, the energizing combination of hot water and morning passion, washing each other becoming foreplay becoming sex, starting the day with shower intimacy scene",
+      "user_description": {
+        "en": "A man and woman have sex in the shower, her back against the tiles or glass as steam fills the bathroom.",
+        "ru": "Мужчина и женщина занимаются сексом в душе, её спина прижата к плитке или стеклу, ванная наполнена паром."
+      },
+      "ai_context": {
+        "description": "Morning shower sex - energizing intimacy under hot water",
+        "tests": {
+          "primary_kink": "shower_sex",
+          "secondary_kinks": ["morning_energy", "steam", "wet_bodies", "tiles_glass"],
+          "power_dynamic": "mutual_energizing",
+          "gender_role_aspect": "variable_positions"
+        },
+        "question_angles": {
+          "direct": "Does morning shower sex appeal?",
+          "fantasy_framing": "Would hot water intimacy feel energizing?",
+          "relational": "Is shower together sexy?"
+        },
+        "emotional_range": {
+          "positive": ["shower sex hot", "steam exciting", "energizing start", "wet bodies arousing"],
+          "negative": ["slippery dangerous", "water logistics", "prefer bed"],
+          "curious": ["shower intriguing", "morning water curious", "might work"]
+        },
+        "profile_signals": {
+          "if_positive": ["shower_sex_lover", "morning_energy_fan", "water_play_enjoyer", "spontaneous_location"],
+          "if_negative": ["safety_concerned", "bed_preferred", "logistics_worried"],
+          "if_curious": ["shower_curious", "water_exploring", "location_intrigued"]
+        },
+        "correlations": {
+          "positive": ["location_variety", "morning_sex", "water_play", "spontaneous"],
+          "negative": ["bed_only", "safety_first", "comfort_priority"]
+        },
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": "Slipping, water as lubricant issues",
+          "normalization": "Shower sex is popular morning activity - proper positioning makes it safe and the steam creates sensual atmosphere."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["shower_sex", "morning", "steam", "wet", "energizing"],
+      "tags": ["shower", "morning", "water", "steam", "energizing"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_484",
+      "priority": 2,
+      "intensity": 4,
+      "generation_prompt": "emotional bedroom scene with make-up sex after a fight, the tension from argument channeled into passionate aggressive sex, angry energy transformed into raw desire, pushing each other against walls kissing hard, clothes torn off roughly, fucking with the intensity of unresolved emotions, the cathartic release of fighting then fucking, make-up sex angry passion scene",
+      "user_description": {
+        "en": "A man and woman have intense sex after a fight, channeling their anger into rough passion.",
+        "ru": "Мужчина и женщина занимаются интенсивным сексом после ссоры, направляя злость в грубую страсть."
+      },
+      "ai_context": {
+        "description": "Make-up sex - fight tension transformed into passionate intensity",
+        "tests": {
+          "primary_kink": "makeup_sex",
+          "secondary_kinks": ["angry_passion", "tension_release", "rough_emotional", "cathartic"],
+          "power_dynamic": "mutual_aggressive",
+          "gender_role_aspect": "both_channeling_anger"
+        },
+        "question_angles": {
+          "direct": "Does make-up sex after fighting appeal?",
+          "fantasy_framing": "Would channeling anger to passion feel cathartic?",
+          "relational": "Is fighting then fucking exciting?"
+        },
+        "emotional_range": {
+          "positive": ["make-up sex intense", "anger to passion hot", "cathartic amazing", "tension release needed"],
+          "negative": ["prefer resolve first", "angry sex uncomfortable", "emotions separate"],
+          "curious": ["make-up intriguing", "tension curious", "might be intense"]
+        },
+        "profile_signals": {
+          "if_positive": ["makeup_sex_lover", "intensity_seeker", "emotional_channeler", "catharsis_fan"],
+          "if_negative": ["resolution_first", "calm_preferred", "emotions_separated"],
+          "if_curious": ["makeup_curious", "intensity_exploring", "emotional_intrigued"]
+        },
+        "correlations": {
+          "positive": ["intense_sex", "emotional_connection", "rough_sex", "passion"],
+          "negative": ["calm_preference", "separate_emotions", "gentle_only"]
+        },
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": "Using sex to avoid resolution, unhealthy patterns",
+          "normalization": "Make-up sex is common relationship dynamic - the intensity comes from emotional charge seeking physical release."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["makeup_sex", "angry", "passionate", "rough", "cathartic"],
+      "tags": ["makeup", "fight", "angry", "passionate", "intense"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_485",
+      "priority": 1,
+      "intensity": 3,
+      "generation_prompt": "rushed hallway scene with quickie before leaving, both partially dressed she bent over console table or pressed against door, him behind her skirt hiked up pants barely down, the urgency of needing each other right now despite time pressure, fast hard desperate knowing they only have minutes, the thrill of stolen time quick satisfaction, quickie before work urgent scene",
+      "user_description": {
+        "en": "A man and woman have a rushed quickie before leaving — she's bent over the table, both still half-dressed.",
+        "ru": "Мужчина и женщина быстро занимаются сексом перед уходом — она согнута над столом, оба ещё полуодеты."
+      },
+      "ai_context": {
+        "description": "Quickie before work - urgent fast sex with time pressure",
+        "tests": {
+          "primary_kink": "quickie",
+          "secondary_kinks": ["time_pressure", "partially_dressed", "urgent_need", "fast_hard"],
+          "power_dynamic": "mutual_desperate",
+          "gender_role_aspect": "both_needing_quickly"
+        },
+        "question_angles": {
+          "direct": "Does rushed quickie appeal?",
+          "fantasy_framing": "Would time pressure add excitement?",
+          "relational": "Is urgent need arousing?"
+        },
+        "emotional_range": {
+          "positive": ["quickie exciting", "urgency hot", "stolen time thrilling", "fast satisfying"],
+          "negative": ["prefer taking time", "rushed uncomfortable", "need buildup"],
+          "curious": ["quickie intriguing", "urgency curious", "might be fun"]
+        },
+        "profile_signals": {
+          "if_positive": ["quickie_lover", "urgency_fan", "spontaneous_seeker", "efficiency_appreciator"],
+          "if_negative": ["slow_preferred", "buildup_needed", "rushed_uncomfortable"],
+          "if_curious": ["quickie_curious", "urgency_exploring", "speed_intrigued"]
+        },
+        "correlations": {
+          "positive": ["spontaneous", "time_pressure", "urgent_sex", "efficiency"],
+          "negative": ["slow_buildup", "extended_sessions", "time_needed"]
+        },
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": "Not enough foreplay, satisfaction concerns",
+          "normalization": "Quickies are healthy part of busy lives - the urgency itself creates arousal and stolen moments feel thrilling."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["quickie", "urgent", "fast", "partially_dressed", "time_pressure"],
+      "tags": ["quickie", "urgent", "fast", "rushed", "before_work"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_486",
+      "priority": 2,
+      "intensity": 3,
+      "generation_prompt": "party scene with quickie in bathroom or closet, sneaking away from gathering for urgent private moment, her dress pulled up him unzipped in cramped space, trying to be quiet while others just outside, the risk of being caught the excitement of stealing away, fast satisfaction then returning to party flushed, quickie at party sneaking away scene",
+      "user_description": {
+        "en": "A man and woman sneak away from a party for a quick fuck in the bathroom, trying to stay quiet.",
+        "ru": "Мужчина и женщина ускользают с вечеринки ради быстрого секса в ванной, стараясь не шуметь."
+      },
+      "ai_context": {
+        "description": "Party quickie - sneaking away for urgent sex with discovery risk",
+        "tests": {
+          "primary_kink": "party_quickie",
+          "secondary_kinks": ["sneaking_away", "staying_quiet", "discovery_risk", "return_flushed"],
+          "power_dynamic": "mutual_conspiring",
+          "gender_role_aspect": "both_sneaking"
+        },
+        "question_angles": {
+          "direct": "Does sneaking away at party appeal?",
+          "fantasy_framing": "Would quickie with others nearby feel thrilling?",
+          "relational": "Is secret moment exciting?"
+        },
+        "emotional_range": {
+          "positive": ["party quickie thrilling", "sneaking exciting", "risk arousing", "secret hot"],
+          "negative": ["disrespectful to host", "too risky", "prefer privacy"],
+          "curious": ["party quickie intriguing", "sneaking curious", "might try"]
+        },
+        "profile_signals": {
+          "if_positive": ["party_quickie_lover", "risk_seeker", "sneaking_fan", "exhibitionist_adjacent"],
+          "if_negative": ["privacy_needed", "respect_prioritized", "risk_avoided"],
+          "if_curious": ["sneaking_curious", "party_exploring", "risk_intrigued"]
+        },
+        "correlations": {
+          "positive": ["public_adjacent", "risk_excitement", "spontaneous", "quickie"],
+          "negative": ["privacy_required", "planned_preference", "propriety"]
+        },
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": "Being caught, disrespecting host",
+          "normalization": "Party quickies are common adventure - the secrecy and risk create excitement many couples enjoy."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["party_quickie", "sneaking", "quiet", "risk", "secret"],
+      "tags": ["party", "quickie", "sneaking", "bathroom", "risk"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_487",
+      "priority": 2,
+      "intensity": 3,
+      "generation_prompt": "lunch break scene with quickie during work day, meeting at home or car or nearby hotel for fast midday sex, the interruption of normal workday for urgent physical need, still in work clothes loosened just enough, the secret rendezvous breaking up mundane day, knowing you have to go back to work after, lunch break quickie midday escape scene",
+      "user_description": {
+        "en": "A man and woman meet for a lunchtime quickie — still in work clothes, sneaking away from the office.",
+        "ru": "Мужчина и женщина встречаются для быстрого секса в обед — ещё в рабочей одежде, сбежав из офиса."
+      },
+      "ai_context": {
+        "description": "Lunch break quickie - midday escape from work for secret sex",
+        "tests": {
+          "primary_kink": "lunch_break_sex",
+          "secondary_kinks": ["midday_escape", "work_clothes", "secret_meeting", "time_limited"],
+          "power_dynamic": "mutual_sneaking",
+          "gender_role_aspect": "both_escaping_work"
+        },
+        "question_angles": {
+          "direct": "Does lunch break quickie appeal?",
+          "fantasy_framing": "Would midday escape feel exciting?",
+          "relational": "Is secret rendezvous arousing?"
+        },
+        "emotional_range": {
+          "positive": ["lunch quickie exciting", "escape thrilling", "secret meeting hot", "breaking routine arousing"],
+          "negative": ["work priority", "rushed not enjoyable", "prefer after work"],
+          "curious": ["lunch intriguing", "escape curious", "might be fun"]
+        },
+        "profile_signals": {
+          "if_positive": ["lunch_quickie_lover", "midday_escape_fan", "routine_breaker", "spontaneous_seeker"],
+          "if_negative": ["work_focused", "after_hours_preferred", "routine_maintained"],
+          "if_curious": ["lunch_curious", "escape_exploring", "routine_questioning"]
+        },
+        "correlations": {
+          "positive": ["quickie", "spontaneous", "secret_meetings", "breaking_routine"],
+          "negative": ["work_priority", "schedule_adherence", "evening_preference"]
+        },
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": "Being late back to work, being caught",
+          "normalization": "Lunch break quickies are exciting escape - the midday interruption makes ordinary days memorable."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["lunch_break", "quickie", "midday", "escape", "work_clothes"],
+      "tags": ["lunch", "quickie", "midday", "escape", "secret"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_488",
+      "priority": 2,
+      "intensity": 1,
+      "generation_prompt": "intimate bedroom scene of post-coital tenderness, both lying tangled together after sex, his fingers tracing patterns on her skin her head on his chest, the quiet intimate conversation in afterglow, gentle kisses to forehead soft murmured words, the emotional connection deepening in vulnerable post-sex moments, basking in each other after intimacy, post-coital cuddle afterglow scene",
+      "user_description": {
+        "en": "A man and woman lie cuddled together after sex, her head on his chest, enjoying the quiet intimacy.",
+        "ru": "Мужчина и женщина лежат в обнимку после секса, её голова у него на груди, наслаждаются тихой близостью."
+      },
+      "ai_context": {
+        "description": "Post-coital intimacy - emotional connection in afterglow",
+        "tests": {
+          "primary_kink": "afterglow",
+          "secondary_kinks": ["cuddling", "skin_tracing", "soft_conversation", "emotional_connection"],
+          "power_dynamic": "mutual_vulnerable",
+          "gender_role_aspect": "both_tender"
+        },
+        "question_angles": {
+          "direct": "Does post-sex cuddling matter to you?",
+          "fantasy_framing": "Would afterglow intimacy feel important?",
+          "relational": "Is emotional connection after sex valued?"
+        },
+        "emotional_range": {
+          "positive": ["afterglow essential", "cuddling wonderful", "connection deepening", "tender beautiful"],
+          "negative": ["prefer space after", "too clingy", "sleep instead"],
+          "curious": ["afterglow interesting", "connection curious", "might matter"]
+        },
+        "profile_signals": {
+          "if_positive": ["afterglow_lover", "cuddler", "emotional_connection_seeker", "tenderness_appreciator"],
+          "if_negative": ["space_after_needed", "independent", "physical_only"],
+          "if_curious": ["afterglow_curious", "connection_exploring", "tenderness_intrigued"]
+        },
+        "correlations": {
+          "positive": ["emotional_sex", "relationship_focused", "intimacy_priority", "tenderness"],
+          "negative": ["physical_only", "independence", "casual_preference"]
+        },
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": "Vulnerability, expectations mismatch",
+          "normalization": "Post-coital intimacy is cherished by many - the vulnerable afterglow often creates deepest emotional connection."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["afterglow", "cuddling", "tender", "emotional", "intimate"],
+      "tags": ["afterglow", "cuddling", "tender", "emotional", "post_sex"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_489",
+      "priority": 2,
+      "intensity": 2,
+      "generation_prompt": "bedroom scene with pillow talk intimacy, lying face to face sharing secrets and fantasies after sex, the vulnerable space of post-orgasm openness, confessing desires they haven't shared before, learning new things about each other in quiet dark, the deep communication that flows after physical intimacy, pillow talk confessions after sex scene",
+      "user_description": {
+        "en": "A man and woman lie face to face after sex, sharing secrets and fantasies in the quiet darkness.",
+        "ru": "Мужчина и женщина лежат лицом к лицу после секса, делятся секретами и фантазиями в тихой темноте."
+      },
+      "ai_context": {
+        "description": "Pillow talk - sharing secrets and desires in post-sex vulnerability",
+        "tests": {
+          "primary_kink": "pillow_talk",
+          "secondary_kinks": ["sharing_secrets", "vulnerability", "confessing_desires", "deep_communication"],
+          "power_dynamic": "mutual_vulnerable_open",
+          "gender_role_aspect": "both_sharing"
+        },
+        "question_angles": {
+          "direct": "Does pillow talk appeal to you?",
+          "fantasy_framing": "Would sharing secrets after feel intimate?",
+          "relational": "Is post-sex communication valued?"
+        },
+        "emotional_range": {
+          "positive": ["pillow talk important", "sharing intimate", "vulnerability beautiful", "communication valued"],
+          "negative": ["prefer quiet after", "too vulnerable", "save for other times"],
+          "curious": ["pillow talk interesting", "sharing curious", "might open up"]
+        },
+        "profile_signals": {
+          "if_positive": ["pillow_talk_lover", "secret_sharer", "vulnerability_embracer", "communicator"],
+          "if_negative": ["quiet_preferred", "privacy_maintained", "other_times_better"],
+          "if_curious": ["pillow_talk_curious", "sharing_exploring", "vulnerability_considering"]
+        },
+        "correlations": {
+          "positive": ["emotional_intimacy", "communication", "vulnerability", "deep_connection"],
+          "negative": ["privacy", "quiet_preference", "surface_interaction"]
+        },
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": "Saying too much, vulnerability hangover",
+          "normalization": "Pillow talk is treasured intimacy ritual - the post-orgasm openness facilitates deep authentic communication."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["pillow_talk", "secrets", "vulnerability", "communication", "intimate"],
+      "tags": ["pillow_talk", "secrets", "sharing", "vulnerable", "communication"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_490",
+      "priority": 2,
+      "intensity": 3,
+      "generation_prompt": "split screen scene with video call sex, she on her bed phone propped showing her body as she touches herself, he watching on his phone screen stroking as he watches her, both directing each other what to do through the screen, the intimacy of watching each other masturbate live, technology bridging physical distance for mutual pleasure, video chat mutual masturbation scene",
+      "user_description": {
+        "en": "A man and woman masturbate together on a video call, watching and directing each other through the screen.",
+        "ru": "Мужчина и женщина мастурбируют вместе по видеосвязи, наблюдая и направляя друг друга через экран."
+      },
+      "ai_context": {
+        "description": "Video call sex - mutual masturbation through live video",
+        "tests": {
+          "primary_kink": "video_sex",
+          "secondary_kinks": ["mutual_watching", "directing_each_other", "technology_intimacy", "live_performance"],
+          "power_dynamic": "mutual_directing",
+          "gender_role_aspect": "both_performing_watching"
+        },
+        "question_angles": {
+          "direct": "Does video call sex appeal?",
+          "fantasy_framing": "Would watching each other live feel intimate?",
+          "relational": "Is technology sex satisfying?"
+        },
+        "emotional_range": {
+          "positive": ["video sex hot", "watching exciting", "directing arousing", "technology intimate"],
+          "negative": ["prefer in person", "camera shy", "technology barrier"],
+          "curious": ["video intriguing", "watching curious", "might try"]
+        },
+        "profile_signals": {
+          "if_positive": ["video_sex_lover", "exhibitionist_voyeur", "technology_embracer", "long_distance_adapter"],
+          "if_negative": ["in_person_preferred", "camera_shy", "technology_uncomfortable"],
+          "if_curious": ["video_curious", "watching_exploring", "technology_intrigued"]
+        },
+        "correlations": {
+          "positive": ["exhibitionism", "voyeurism", "technology", "long_distance"],
+          "negative": ["in_person_only", "camera_avoidance", "technology_rejection"]
+        },
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": "Recording without consent, privacy of video",
+          "normalization": "Video sex is modern intimacy tool - the live mutual experience creates real connection across any distance."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["video_sex", "mutual_watching", "directing", "technology", "live"],
+      "tags": ["video", "call", "watching", "mutual", "technology"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_491",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "futuristic scene with VR sex experience, both wearing VR headsets in separate locations but experiencing shared virtual environment, their avatars touching in virtual space while their real bodies respond, the technology creating immersive shared sexual experience, haptic feedback making virtual touches feel real, exploring impossible scenarios in virtual reality, VR virtual reality sex scene",
+      "user_description": {
+        "en": "A man and woman have sex in virtual reality, wearing VR headsets while their avatars touch in a shared digital space.",
+        "ru": "Мужчина и женщина занимаются сексом в виртуальной реальности, в VR-шлемах, пока их аватары касаются друг друга в цифровом пространстве."
+      },
+      "ai_context": {
+        "description": "VR sex - immersive virtual reality sexual experience",
+        "tests": {
+          "primary_kink": "vr_sex",
+          "secondary_kinks": ["virtual_environment", "avatars", "haptic_feedback", "impossible_scenarios"],
+          "power_dynamic": "virtual_defined",
+          "gender_role_aspect": "avatar_defined"
+        },
+        "question_angles": {
+          "direct": "Does VR sex concept appeal?",
+          "fantasy_framing": "Would virtual immersion feel exciting?",
+          "relational": "Is technology-enhanced intimacy interesting?"
+        },
+        "emotional_range": {
+          "positive": ["VR exciting", "virtual intriguing", "possibilities unlimited", "future hot"],
+          "negative": ["prefer real", "technology cold", "not authentic"],
+          "curious": ["VR curious", "virtual interesting", "future exploring"]
+        },
+        "profile_signals": {
+          "if_positive": ["vr_enthusiast", "technology_embracer", "future_explorer", "possibility_seeker"],
+          "if_negative": ["reality_preferred", "technology_skeptic", "authenticity_valued"],
+          "if_curious": ["vr_curious", "future_exploring", "technology_intrigued"]
+        },
+        "correlations": {
+          "positive": ["technology", "fantasy_exploration", "innovation", "long_distance"],
+          "negative": ["traditional_preference", "physical_only", "technology_avoidance"]
+        },
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": "Replacing real intimacy, addiction potential",
+          "normalization": "VR sex is emerging technology - the immersive possibilities allow exploration of fantasies impossible in physical reality."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["vr_sex", "virtual", "avatars", "haptic", "immersive"],
+      "tags": ["VR", "virtual", "technology", "future", "immersive"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_492",
+      "priority": 1,
+      "intensity": 2,
+      "generation_prompt": "scene showing sexting exchange, close up of phone screens showing increasingly explicit messages being typed, descriptions of what they'd do to each other, maybe photos being exchanged, building arousal through words and images throughout the day, the anticipation created by text teasing, sexting text message flirtation scene",
+      "user_description": {
+        "en": "A man and woman exchange increasingly explicit texts and photos throughout the day, building anticipation.",
+        "ru": "Мужчина и женщина обмениваются всё более откровенными сообщениями и фото в течение дня, нагнетая предвкушение."
+      },
+      "ai_context": {
+        "description": "Sexting - erotic text/photo exchange building anticipation",
+        "tests": {
+          "primary_kink": "sexting",
+          "secondary_kinks": ["text_arousal", "photo_exchange", "anticipation_building", "throughout_day"],
+          "power_dynamic": "mutual_teasing",
+          "gender_role_aspect": "both_texting"
+        },
+        "question_angles": {
+          "direct": "Does sexting throughout day appeal?",
+          "fantasy_framing": "Would building anticipation via text feel exciting?",
+          "relational": "Is text flirtation arousing?"
+        },
+        "emotional_range": {
+          "positive": ["sexting hot", "anticipation exciting", "photos arousing", "buildup thrilling"],
+          "negative": ["prefer in person", "photos risky", "words not enough"],
+          "curious": ["sexting intriguing", "buildup curious", "might try"]
+        },
+        "profile_signals": {
+          "if_positive": ["sexting_lover", "anticipation_builder", "photo_exchanger", "text_flirter"],
+          "if_negative": ["in_person_preferred", "photo_private", "direct_preferred"],
+          "if_curious": ["sexting_curious", "anticipation_exploring", "text_intrigued"]
+        },
+        "correlations": {
+          "positive": ["anticipation", "teasing", "technology", "buildup"],
+          "negative": ["immediate_preference", "privacy_concerns", "in_person_only"]
+        },
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": "Photos getting leaked, work phone risks",
+          "normalization": "Sexting is mainstream modern foreplay - the anticipation built throughout day makes eventual meeting explosively satisfying."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["sexting", "text", "photos", "anticipation", "teasing"],
+      "tags": ["sexting", "text", "photos", "anticipation", "flirting"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_493",
+      "priority": 2,
+      "intensity": 2,
+      "generation_prompt": "intimate scene with ASMR-style sensory focus, extreme close-up attention to sounds and sensations, whispered words directly into ear creating tingles, soft sounds of kisses gentle touches amplified, the hyperfocus on minute sensations creating intense arousal, fingertips barely touching skin shivers from whispers, ASMR sensory intimate whisper scene",
+      "user_description": {
+        "en": "A man whispers intimately into a woman's ear, fingertips barely grazing her skin, creating intense sensory tingles.",
+        "ru": "Мужчина интимно шепчет женщине на ухо, кончики пальцев едва касаются её кожи, создавая интенсивные сенсорные мурашки."
+      },
+      "ai_context": {
+        "description": "ASMR intimacy - hyperfocused sensory attention with whispers and tingles",
+        "tests": {
+          "primary_kink": "asmr_intimacy",
+          "secondary_kinks": ["whispers", "tingles", "hyperfocus", "soft_sounds"],
+          "power_dynamic": "giver_creates_sensation",
+          "gender_role_aspect": "neutral_sensory"
+        },
+        "question_angles": {
+          "direct": "Does ASMR-style intimacy appeal?",
+          "fantasy_framing": "Would whisper tingles feel arousing?",
+          "relational": "Is hyperfocused attention exciting?"
+        },
+        "emotional_range": {
+          "positive": ["ASMR tingles amazing", "whispers arousing", "hyperfocus intense", "sensation beautiful"],
+          "negative": ["whispers annoying", "too slow", "prefer direct"],
+          "curious": ["ASMR intriguing", "tingles curious", "might respond"]
+        },
+        "profile_signals": {
+          "if_positive": ["asmr_lover", "tingle_seeker", "sensation_focused", "whisper_appreciator"],
+          "if_negative": ["direct_preferred", "whispers_uncomfortable", "slow_frustrating"],
+          "if_curious": ["asmr_curious", "tingles_exploring", "sensation_intrigued"]
+        },
+        "correlations": {
+          "positive": ["sensory_focus", "slow_buildup", "sound_sensitive", "gentle_touch"],
+          "negative": ["direct_approach", "fast_preference", "sound_insensitive"]
+        },
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": "Not everyone experiences ASMR",
+          "normalization": "ASMR intimacy combines tingle response with eroticism - those sensitive to ASMR find it intensely arousing."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["asmr", "whispers", "tingles", "sensory", "soft"],
+      "tags": ["ASMR", "whispers", "tingles", "sensory", "soft"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_494",
+      "priority": 2,
+      "intensity": 2,
+      "generation_prompt": "intimate scene with temperature play focus, ice cube trailed across hot skin the contrast making nerves sing, warm massage oil drizzled then cool breath blown across it, alternating hot and cold sensations keeping body guessing, the heightened sensitivity from temperature contrast, goosebumps from cold followed by warming touch, temperature sensation play scene",
+      "user_description": {
+        "en": "A man traces ice across a woman's skin, then follows with warm oil — alternating hot and cold sensations.",
+        "ru": "Мужчина проводит льдом по коже женщины, затем следует тёплое масло — чередование горячих и холодных ощущений."
+      },
+      "ai_context": {
+        "description": "Temperature play - hot and cold contrasts heightening sensation",
+        "tests": {
+          "primary_kink": "temperature_play",
+          "secondary_kinks": ["ice", "warm_oil", "contrast", "heightened_sensitivity"],
+          "power_dynamic": "giver_controls_temperature",
+          "gender_role_aspect": "neutral_sensory"
+        },
+        "question_angles": {
+          "direct": "Does temperature play appeal?",
+          "fantasy_framing": "Would hot/cold contrast feel exciting?",
+          "relational": "Is sensation variety arousing?"
+        },
+        "emotional_range": {
+          "positive": ["temperature play exciting", "contrast thrilling", "ice hot", "sensation heightened"],
+          "negative": ["cold uncomfortable", "prefer consistent", "temperature sensitive"],
+          "curious": ["temperature intriguing", "contrast curious", "might try"]
+        },
+        "profile_signals": {
+          "if_positive": ["temperature_lover", "sensation_seeker", "contrast_fan", "variety_appreciator"],
+          "if_negative": ["consistent_preferred", "temperature_sensitive", "comfort_valued"],
+          "if_curious": ["temperature_curious", "contrast_exploring", "sensation_intrigued"]
+        },
+        "correlations": {
+          "positive": ["sensation_play", "variety", "heightened_senses", "teasing"],
+          "negative": ["comfort_priority", "consistency_preferred", "sensitivity_issues"]
+        },
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": "Too cold/hot, discomfort",
+          "normalization": "Temperature play is sensory enhancement - the contrast between hot and cold awakens nerve endings for heightened pleasure."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["temperature_play", "ice", "warm", "contrast", "sensory"],
+      "tags": ["temperature", "ice", "hot", "cold", "sensation"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_495",
+      "priority": 2,
+      "intensity": 3,
+      "generation_prompt": "bedroom scene with older woman younger man dynamic, she confident experienced in her 40s or 50s knowing exactly what she wants, he eager to learn from her experience, the MILF or cougar energy of experienced woman teaching younger lover, her confidence and sexual knowledge combined with his enthusiasm, age gap attraction older woman younger man scene",
+      "user_description": {
+        "en": "A confident older woman in her 40s has sex with a younger man, teaching him with her experience.",
+        "ru": "Уверенная зрелая женщина за 40 занимается сексом с молодым мужчиной, обучая его своим опытом."
+      },
+      "ai_context": {
+        "description": "MILF/cougar - older experienced woman with younger eager man",
+        "tests": {
+          "primary_kink": "milf_cougar",
+          "secondary_kinks": ["age_gap", "experience_teaching", "female_confidence", "male_eagerness"],
+          "power_dynamic": "experienced_teaches_eager",
+          "gender_role_aspect": "older_female_younger_male"
+        },
+        "question_angles": {
+          "direct": "Does older woman/younger man appeal?",
+          "fantasy_framing": "Would experienced woman feel exciting?",
+          "relational": "Is age gap dynamic arousing?"
+        },
+        "emotional_range": {
+          "positive": ["MILF hot", "experience exciting", "confidence arousing", "teaching wanted"],
+          "negative": ["prefer same age", "age gap uncomfortable", "dynamic not appealing"],
+          "curious": ["MILF intriguing", "experience curious", "age gap exploring"]
+        },
+        "profile_signals": {
+          "if_positive": ["milf_attracted", "experience_seeker", "older_women_fan", "confidence_appreciator"],
+          "if_negative": ["same_age_preferred", "age_gap_avoided", "dynamic_uninteresting"],
+          "if_curious": ["milf_curious", "experience_exploring", "age_intrigued"]
+        },
+        "correlations": {
+          "positive": ["age_gap", "experience_valued", "confidence_attraction", "teaching_dynamic"],
+          "negative": ["same_age_preference", "peer_attraction", "youth_focus"]
+        },
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": "Social judgment, age gap stigma",
+          "normalization": "Older woman/younger man attraction is common - experience and confidence create powerful sexual dynamic."
+        }
+      },
+      "participants": ["older_woman", "younger_man"],
+      "dimensions": ["milf", "cougar", "age_gap", "experience", "confidence"],
+      "tags": ["MILF", "cougar", "older", "younger", "experience"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_496",
+      "priority": 2,
+      "intensity": 3,
+      "generation_prompt": "bedroom scene with older man younger woman dynamic, he distinguished experienced in his 40s or 50s with confident sexuality, she attracted to his maturity and experience, the silver fox or DILF energy of older man's appeal, his patience and skill from years of experience combined with her youth, age gap attraction older man younger woman scene",
+      "user_description": {
+        "en": "A distinguished older man in his 40s-50s has sex with a younger woman, who is attracted to his maturity and experience.",
+        "ru": "Представительный зрелый мужчина за 40-50 занимается сексом с молодой женщиной, которую привлекает его зрелость и опыт."
+      },
+      "ai_context": {
+        "description": "DILF/silver fox - older experienced man with younger woman",
+        "tests": {
+          "primary_kink": "dilf_silver_fox",
+          "secondary_kinks": ["age_gap", "male_experience", "maturity", "confidence"],
+          "power_dynamic": "experienced_leads",
+          "gender_role_aspect": "older_male_younger_female"
+        },
+        "question_angles": {
+          "direct": "Does older man/younger woman appeal?",
+          "fantasy_framing": "Would maturity and experience feel attractive?",
+          "relational": "Is age gap dynamic arousing?"
+        },
+        "emotional_range": {
+          "positive": ["DILF hot", "maturity attractive", "experience valued", "confidence sexy"],
+          "negative": ["prefer same age", "age gap uncomfortable", "dynamic not appealing"],
+          "curious": ["DILF intriguing", "maturity curious", "experience exploring"]
+        },
+        "profile_signals": {
+          "if_positive": ["dilf_attracted", "maturity_seeker", "older_men_fan", "experience_appreciator"],
+          "if_negative": ["same_age_preferred", "age_gap_avoided", "youth_valued"],
+          "if_curious": ["dilf_curious", "maturity_exploring", "age_intrigued"]
+        },
+        "correlations": {
+          "positive": ["age_gap", "experience_valued", "maturity_attraction", "confidence"],
+          "negative": ["same_age_preference", "youth_attraction", "peer_focus"]
+        },
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": "Social judgment, power dynamics",
+          "normalization": "Older man/younger woman attraction is classic dynamic - maturity and experience create compelling sexual presence."
+        }
+      },
+      "participants": ["older_man", "younger_woman"],
+      "dimensions": ["dilf", "silver_fox", "age_gap", "maturity", "experience"],
+      "tags": ["DILF", "silver_fox", "older", "younger", "maturity"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_497",
+      "priority": 2,
+      "intensity": 3,
+      "generation_prompt": "bedroom scene with same-age mature couple, both in their 40s-50s with years of experience together or apart, confident comfortable sexuality that comes with age, knowing their bodies and what they want, no insecurity just pleasure, the beauty of mature sexuality and experienced lovers, mature couple confident sex scene",
+      "user_description": {
+        "en": "A mature couple in their 40s-50s have confident, experienced sex — they know exactly what they want.",
+        "ru": "Зрелая пара 40-50 лет занимается уверенным опытным сексом — они точно знают, чего хотят."
+      },
+      "ai_context": {
+        "description": "Mature couple - confident experienced sexuality at 40s-50s",
+        "tests": {
+          "primary_kink": "mature_sex",
+          "secondary_kinks": ["experience", "confidence", "self_knowledge", "no_insecurity"],
+          "power_dynamic": "mutual_confident",
+          "gender_role_aspect": "both_experienced"
+        },
+        "question_angles": {
+          "direct": "Does mature couple sexuality appeal?",
+          "fantasy_framing": "Would experienced confident sex feel satisfying?",
+          "relational": "Is mature sexuality attractive?"
+        },
+        "emotional_range": {
+          "positive": ["mature sex beautiful", "confidence attractive", "experience valued", "no games nice"],
+          "negative": ["prefer youth", "mature not attractive", "different preference"],
+          "curious": ["mature intriguing", "experience curious", "confidence exploring"]
+        },
+        "profile_signals": {
+          "if_positive": ["mature_appreciator", "experience_valuer", "confidence_attracted", "anti_ageist"],
+          "if_negative": ["youth_preferred", "mature_uninterested", "different_age_focused"],
+          "if_curious": ["mature_curious", "experience_exploring", "confidence_intrigued"]
+        },
+        "correlations": {
+          "positive": ["experience", "confidence", "self_knowledge", "anti_ageism"],
+          "negative": ["youth_focus", "inexperience_attraction", "age_bias"]
+        },
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": "Ageism in sexuality, body changes",
+          "normalization": "Mature sexuality is often better sex - experience brings skill, confidence, and self-knowledge for deeper pleasure."
+        }
+      },
+      "participants": ["mature_man", "mature_woman"],
+      "dimensions": ["mature", "experienced", "confident", "self_aware", "no_insecurity"],
+      "tags": ["mature", "experienced", "confident", "40s", "50s"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_498",
+      "priority": 1,
+      "intensity": 2,
+      "generation_prompt": "romantic bedroom scene with slow sensual lovemaking, candles creating warm glow soft music playing, eye contact maintained throughout showing deep connection, slow thrusts feeling every sensation no rush to finish, hands intertwined whispered I love yous, the difference between fucking and making love visible in tenderness, romantic slow lovemaking scene",
+      "user_description": {
+        "en": "A man and woman make slow, romantic love by candlelight, maintaining eye contact and whispering to each other.",
+        "ru": "Мужчина и женщина медленно и романтично занимаются любовью при свечах, сохраняя зрительный контакт и шепча друг другу."
+      },
+      "ai_context": {
+        "description": "Romantic lovemaking - slow tender sex with deep emotional connection",
+        "tests": {
+          "primary_kink": "romantic_lovemaking",
+          "secondary_kinks": ["eye_contact", "slow_pace", "emotional_connection", "tenderness"],
+          "power_dynamic": "mutual_loving",
+          "gender_role_aspect": "both_tender"
+        },
+        "question_angles": {
+          "direct": "Does slow romantic lovemaking appeal?",
+          "fantasy_framing": "Would deep eye contact during feel intimate?",
+          "relational": "Is tender lovemaking valued?"
+        },
+        "emotional_range": {
+          "positive": ["lovemaking beautiful", "slow perfect", "eye contact intimate", "tenderness wanted"],
+          "negative": ["too slow", "prefer intensity", "eye contact awkward"],
+          "curious": ["lovemaking intriguing", "slow curious", "tenderness exploring"]
+        },
+        "profile_signals": {
+          "if_positive": ["romantic_lover", "slow_appreciator", "emotional_connector", "tenderness_seeker"],
+          "if_negative": ["intensity_preferred", "fast_paced", "casual_preference"],
+          "if_curious": ["romantic_curious", "slow_exploring", "tenderness_intrigued"]
+        },
+        "correlations": {
+          "positive": ["emotional_sex", "romance", "connection", "slow_pace"],
+          "negative": ["fast_preference", "casual_sex", "emotional_avoidance"]
+        },
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": "Vulnerability, emotional exposure",
+          "normalization": "Romantic lovemaking is foundational intimacy - the slow pace and eye contact create deepest connection."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["romantic", "slow", "lovemaking", "eye_contact", "tender"],
+      "tags": ["romantic", "slow", "lovemaking", "tender", "love"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_499",
+      "priority": 1,
+      "intensity": 2,
+      "generation_prompt": "intimate scene with first time together, two people having sex for the first time with each other, the nervous excitement of new partner, discovering each other's bodies learning what they like, the fumbling beautiful uncertainty of first time intimacy, checking in asking what feels good, nervous but eager first time together scene",
+      "user_description": {
+        "en": "A man and woman have sex for the first time together, nervously discovering each other's bodies.",
+        "ru": "Мужчина и женщина занимаются сексом впервые вместе, нервно открывая тела друг друга."
+      },
+      "ai_context": {
+        "description": "First time together - nervous excited discovery with new partner",
+        "tests": {
+          "primary_kink": "first_time_together",
+          "secondary_kinks": ["new_partner", "discovery", "nervous_excitement", "learning_each_other"],
+          "power_dynamic": "mutual_discovering",
+          "gender_role_aspect": "both_learning"
+        },
+        "question_angles": {
+          "direct": "Does first time with new partner excite you?",
+          "fantasy_framing": "Would discovering new body feel thrilling?",
+          "relational": "Is new partner excitement arousing?"
+        },
+        "emotional_range": {
+          "positive": ["first time exciting", "discovery thrilling", "nervousness cute", "learning fun"],
+          "negative": ["prefer familiar", "awkward uncomfortable", "known better"],
+          "curious": ["first time intriguing", "discovery curious", "newness exploring"]
+        },
+        "profile_signals": {
+          "if_positive": ["first_time_lover", "discovery_seeker", "novelty_appreciator", "exploration_fan"],
+          "if_negative": ["familiar_preferred", "awkwardness_avoided", "known_partners"],
+          "if_curious": ["first_time_curious", "discovery_exploring", "novelty_intrigued"]
+        },
+        "correlations": {
+          "positive": ["novelty", "discovery", "new_relationship_energy", "exploration"],
+          "negative": ["familiarity_preference", "established_relationship", "routine_comfort"]
+        },
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": "Performance anxiety, not knowing preferences",
+          "normalization": "First time excitement is unique energy - the discovery and nervousness create memorable intimate moments."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["first_time", "new_partner", "discovery", "nervous", "learning"],
+      "tags": ["first_time", "new", "discovery", "nervous", "exciting"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    },
+    {
+      "id": "scene_500",
+      "priority": 1,
+      "intensity": 3,
+      "generation_prompt": "passionate bedroom scene with reunion sex after time apart, couple reuniting after weeks or months apart, the desperate hungry need to reconnect physically, tearing clothes off unable to wait, the intensity of built-up desire finally released, making up for lost time with passionate urgent sex, reunion sex after absence scene",
+      "user_description": {
+        "en": "A man and woman reunite after weeks apart, tearing off each other's clothes in desperate, passionate sex.",
+        "ru": "Мужчина и женщина воссоединяются после недель разлуки, срывая друг с друга одежду в отчаянном страстном сексе."
+      },
+      "ai_context": {
+        "description": "Reunion sex - passionate reconnection after time apart",
+        "tests": {
+          "primary_kink": "reunion_sex",
+          "secondary_kinks": ["time_apart", "desperate_need", "built_up_desire", "urgent_reconnection"],
+          "power_dynamic": "mutual_desperate",
+          "gender_role_aspect": "both_needing"
+        },
+        "question_angles": {
+          "direct": "Does reunion sex after time apart appeal?",
+          "fantasy_framing": "Would built-up desire feel explosive?",
+          "relational": "Is desperate reconnection arousing?"
+        },
+        "emotional_range": {
+          "positive": ["reunion amazing", "buildup intense", "desperate hot", "reconnection beautiful"],
+          "negative": ["prefer consistency", "absence hard", "routine preferred"],
+          "curious": ["reunion intriguing", "buildup curious", "absence exploring"]
+        },
+        "profile_signals": {
+          "if_positive": ["reunion_lover", "buildup_appreciator", "intensity_seeker", "reconnection_fan"],
+          "if_negative": ["consistency_preferred", "routine_valued", "presence_prioritized"],
+          "if_curious": ["reunion_curious", "buildup_exploring", "intensity_intrigued"]
+        },
+        "correlations": {
+          "positive": ["intensity", "buildup", "long_distance_capable", "passionate"],
+          "negative": ["consistency_need", "routine_preference", "presence_required"]
+        },
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": "Performance pressure after buildup",
+          "normalization": "Reunion sex is explosive release of built-up desire - the anticipation makes reconnection intensely satisfying."
+        }
+      },
+      "participants": ["man", "woman"],
+      "dimensions": ["reunion", "time_apart", "desperate", "buildup", "passionate"],
+      "tags": ["reunion", "apart", "desperate", "intense", "reconnection"],
+      "relevant_for": {
+        "gender": "any",
+        "interested_in": "any"
+      },
+      "question_type": {
+        "type": "interest_scale"
+      }
+    }
+  ]
+}

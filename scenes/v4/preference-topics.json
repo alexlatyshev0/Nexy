@@ -1,0 +1,1601 @@
+{
+  "version": "1.0",
+  "description": "Centralized preference topics - asked once, used across all related scenes",
+  "topics": {
+    "dirty_talk": {
+      "id": "dirty_talk",
+      "name": {"en": "Dirty Talk", "ru": "Грязные разговоры"},
+      "related_tags": ["dirty_talk", "verbal_arousal", "degradation", "praise"],
+      "related_kinks": ["dirty_talk", "female_dirty_talk", "verbal_humiliation", "begging"],
+      "questions": {
+        "types": {
+          "question": {"en": "What kind of words turn you on?", "ru": "Какие слова тебя возбуждают?"},
+          "type": "multi_choice_drilldown",
+          "options": [
+            {
+              "id": "praising",
+              "label": {"en": "Praising", "ru": "Хвалящие"},
+              "drilldown": {
+                "question": {"en": "What kind of praise?", "ru": "Какая похвала?"},
+                "type": "multi_choice",
+                "options": [
+                  {"id": "appearance", "label": {"en": "About appearance", "ru": "Про внешность"}, "examples": {"ru": "Ты такая красивая, сексуальная"}},
+                  {"id": "skill", "label": {"en": "About skill", "ru": "Про умения"}, "examples": {"ru": "Как хорошо ты это делаешь"}},
+                  {"id": "sounds", "label": {"en": "About sounds", "ru": "Про звуки"}, "examples": {"ru": "Обожаю как ты стонешь"}},
+                  {"id": "body_reaction", "label": {"en": "About body reaction", "ru": "Про реакцию тела"}, "examples": {"ru": "Ты вся мокрая / Как ты напрягся"}}
+                ]
+              }
+            },
+            {
+              "id": "possessive",
+              "label": {"en": "Possessive", "ru": "Собственнические"},
+              "examples": {"ru": "Ты моя, только моя"},
+              "drilldown": null
+            },
+            {
+              "id": "commanding",
+              "label": {"en": "Commanding", "ru": "Командующие"},
+              "examples": {"ru": "Не останавливайся, быстрее, смотри на меня"},
+              "drilldown": null
+            },
+            {
+              "id": "descriptive",
+              "label": {"en": "Descriptive", "ru": "Описательные"},
+              "examples": {"ru": "Рассказывает что делает и чувствует"},
+              "drilldown": null
+            },
+            {
+              "id": "begging",
+              "label": {"en": "Begging", "ru": "Умоляющие"},
+              "examples": {"ru": "Пожалуйста, ещё, мне нужно..."},
+              "drilldown": null
+            },
+            {
+              "id": "degrading",
+              "label": {"en": "Degrading", "ru": "Унизительные"},
+              "drilldown": {
+                "question": {"en": "Which degrading words are OK?", "ru": "Какие унизительные слова ок?"},
+                "type": "multi_choice",
+                "options": [
+                  {"id": "slut", "label": {"en": "Slut", "ru": "Шлюха/шлюшка"}},
+                  {"id": "whore", "label": {"en": "Whore", "ru": "Блядь"}},
+                  {"id": "dirty_girl", "label": {"en": "Dirty girl", "ru": "Грязная девочка"}},
+                  {"id": "hole", "label": {"en": "Hole/fucktoy", "ru": "Дырка/игрушка"}},
+                  {"id": "cumslut", "label": {"en": "Cumslut", "ru": "Спермоприёмник"}},
+                  {"id": "pet_names", "label": {"en": "Pet degrading names", "ru": "Сучка, тварь"}}
+                ],
+                "allow_custom": true
+              }
+            }
+          ]
+        },
+        "intensity": {
+          "question": {"en": "How explicit?", "ru": "Насколько откровенно?"},
+          "type": "scale",
+          "min": {"en": "Soft hints", "ru": "Мягкие намёки"},
+          "max": {"en": "Very explicit and dirty", "ru": "Очень откровенно и грязно"}
+        },
+        "role": {
+          "question": {"en": "Your preference?", "ru": "Что тебе ближе?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "hear", "label": {"en": "Hear it", "ru": "Слышать"}},
+            {"id": "speak", "label": {"en": "Say it", "ru": "Говорить"}},
+            {"id": "both", "label": {"en": "Both", "ru": "И то и другое"}}
+          ]
+        }
+      },
+      "experience": {
+        "show": true,
+        "question": {"en": "Your experience with dirty talk?", "ru": "Твой опыт с грязными разговорами?"},
+        "options": [
+          {"id": "regular", "label": {"ru": "Регулярно практикую"}},
+          {"id": "sometimes", "label": {"ru": "Иногда"}},
+          {"id": "tried", "label": {"ru": "Пробовал(а)"}},
+          {"id": "not_tried", "label": {"ru": "Не пробовал(а)"}}
+        ]
+      }
+    },
+
+    "impact_play": {
+      "id": "impact_play",
+      "name": {"en": "Impact Play", "ru": "Удары и шлепки"},
+      "related_tags": ["spanking", "slapping", "whipping", "caning", "paddling", "cropping"],
+      "related_kinks": ["spanking", "face_slapping", "impact_marks", "paddle", "crop", "caning"],
+      "questions": {
+        "interest": {
+          "question": {"en": "Interested in impact play?", "ru": "Интересуют шлепки/удары?"},
+          "type": "yes_maybe_no"
+        },
+        "where": {
+          "show_if": ["yes", "maybe"],
+          "question": {"en": "Where?", "ru": "Куда?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "ass", "label": {"en": "Ass", "ru": "Попа"}},
+            {"id": "thighs", "label": {"en": "Thighs", "ru": "Бёдра"}},
+            {"id": "feet", "label": {"en": "Feet/soles", "ru": "Стопы"}},
+            {"id": "pussy", "label": {"en": "Pussy", "ru": "Киска"}},
+            {"id": "cock_balls", "label": {"en": "Cock/balls", "ru": "Член/яйца"}},
+            {"id": "breasts", "label": {"en": "Breasts", "ru": "Грудь"}},
+            {"id": "face", "label": {"en": "Face", "ru": "Лицо"}},
+            {"id": "back", "label": {"en": "Back", "ru": "Спина"}}
+          ]
+        },
+        "intensity": {
+          "show_if": ["yes", "maybe"],
+          "question": {"en": "How hard?", "ru": "Как сильно?"},
+          "type": "scale",
+          "min": {"en": "Playful, light", "ru": "Игриво, легко"},
+          "max": {"en": "Hard, leaves marks", "ru": "Сильно, чтоб следы"}
+        },
+        "tools": {
+          "show_if": ["yes", "maybe"],
+          "question": {"en": "With what?", "ru": "Чем?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "hand", "label": {"en": "Hand", "ru": "Рукой"}},
+            {"id": "belt", "label": {"en": "Belt", "ru": "Ремнём"}},
+            {"id": "paddle", "label": {"en": "Paddle", "ru": "Паддл"}},
+            {"id": "crop", "label": {"en": "Crop", "ru": "Стек"}},
+            {"id": "flogger", "label": {"en": "Flogger", "ru": "Плеть"}},
+            {"id": "cane", "label": {"en": "Cane", "ru": "Трость"}},
+            {"id": "whip", "label": {"en": "Whip", "ru": "Кнут"}}
+          ]
+        },
+        "role": {
+          "show_if": ["yes", "maybe"],
+          "question": {"en": "Your role?", "ru": "Твоя роль?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "receive", "label": {"en": "Receive", "ru": "Получать"}},
+            {"id": "give", "label": {"en": "Give", "ru": "Давать"}},
+            {"id": "both", "label": {"en": "Both", "ru": "Оба"}}
+          ]
+        }
+      },
+      "experience": {
+        "show_if": ["yes", "maybe"],
+        "tried": {
+          "question": {"ru": "Пробовал(а)?"},
+          "options": [
+            {"id": "regular", "label": {"ru": "Практикую"}},
+            {"id": "tried", "label": {"ru": "Пробовал(а)"}},
+            {"id": "not_tried", "label": {"ru": "Не пробовал(а)"}}
+          ]
+        }
+      }
+    },
+
+    "bondage": {
+      "id": "bondage",
+      "name": {"en": "Bondage", "ru": "Связывание"},
+      "related_tags": ["bondage", "rope", "handcuffs", "shibari", "restraint", "tied"],
+      "related_kinks": ["soft_bondage", "rope_bondage", "shibari", "cuffs", "spread_eagle"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует связывание?"},
+          "type": "yes_maybe_no"
+        },
+        "material": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Чем?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "hands", "label": {"ru": "Руками (удержание)"}},
+            {"id": "silk", "label": {"ru": "Шёлк/шарфы"}},
+            {"id": "rope", "label": {"ru": "Верёвка"}},
+            {"id": "cuffs", "label": {"ru": "Наручники"}},
+            {"id": "leather", "label": {"ru": "Кожаные ремни"}},
+            {"id": "tape", "label": {"ru": "Скотч"}},
+            {"id": "shibari", "label": {"ru": "Шибари (японское)"}}
+          ]
+        },
+        "body_parts": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Что связывать?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "wrists_front", "label": {"ru": "Руки спереди"}},
+            {"id": "wrists_back", "label": {"ru": "Руки за спиной"}},
+            {"id": "ankles", "label": {"ru": "Лодыжки"}},
+            {"id": "spread", "label": {"ru": "Растяжка (spread eagle)"}},
+            {"id": "hogtie", "label": {"ru": "Хогтай (руки+ноги сзади)"}},
+            {"id": "full_body", "label": {"ru": "Всё тело"}}
+          ]
+        },
+        "tightness": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Насколько туго?"},
+          "type": "scale",
+          "min": {"ru": "Символически, можно освободиться"},
+          "max": {"ru": "Полная неподвижность"}
+        },
+        "role": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Роль?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "tied", "label": {"ru": "Быть связанным"}},
+            {"id": "tie", "label": {"ru": "Связывать"}},
+            {"id": "both", "label": {"ru": "Оба"}}
+          ]
+        }
+      }
+    },
+
+    "anal": {
+      "id": "anal",
+      "name": {"en": "Anal Play", "ru": "Анальные практики"},
+      "related_tags": ["anal", "rimming", "anal_fingering", "anal_plug", "prostate", "pegging"],
+      "related_kinks": ["anal", "rimming", "pegging", "prostate_play", "butt_plug"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует анальный секс / игры?"},
+          "type": "yes_maybe_no"
+        },
+        "activities": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Какие активности?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "fingering", "label": {"ru": "Пальцы"}},
+            {"id": "rimming", "label": {"ru": "Римминг (язык)"}},
+            {"id": "plug", "label": {"ru": "Пробка"}},
+            {"id": "beads", "label": {"ru": "Шарики/бусы"}},
+            {"id": "penetration", "label": {"ru": "Проникновение (член)"}},
+            {"id": "pegging", "label": {"ru": "Пеггинг (страпон)"}},
+            {"id": "prostate", "label": {"ru": "Массаж простаты"}}
+          ]
+        },
+        "role": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "В какой роли?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "receive", "label": {"ru": "Получать"}},
+            {"id": "give", "label": {"ru": "Давать"}},
+            {"id": "both", "label": {"ru": "Оба"}}
+          ]
+        },
+        "preparation": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Подготовка?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "spontaneous", "label": {"ru": "Спонтанно ок"}},
+            {"id": "some_prep", "label": {"ru": "Минимальная подготовка"}},
+            {"id": "planned", "label": {"ru": "Только запланированно"}}
+          ]
+        },
+        "pace": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Темп?"},
+          "type": "scale",
+          "min": {"ru": "Очень медленно, нежно"},
+          "max": {"ru": "Можно жёстко"}
+        }
+      },
+      "experience": {
+        "show_if": ["yes", "maybe"],
+        "question": {"ru": "Опыт?"},
+        "options": [
+          {"id": "regular", "label": {"ru": "Регулярно"}},
+          {"id": "sometimes", "label": {"ru": "Иногда"}},
+          {"id": "tried", "label": {"ru": "Пробовал(а)"}},
+          {"id": "not_tried", "label": {"ru": "Не пробовал(а)"}}
+        ]
+      }
+    },
+
+    "oral_giving": {
+      "id": "oral_giving",
+      "name": {"en": "Giving Oral", "ru": "Оральный секс (давать)"},
+      "related_tags": ["oral", "blowjob", "cunnilingus", "deepthroat"],
+      "related_kinks": ["blowjob", "cunnilingus", "deepthroat", "oral_service"],
+      "questions": {
+        "enjoyment": {
+          "question": {"ru": "Нравится делать оральный секс?"},
+          "type": "scale",
+          "min": {"ru": "Не особо"},
+          "max": {"ru": "Обожаю"}
+        },
+        "style": {
+          "question": {"ru": "Какой стиль?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "teasing", "label": {"ru": "Дразнящий, медленный"}},
+            {"id": "devoted", "label": {"ru": "С полной отдачей"}},
+            {"id": "messy", "label": {"ru": "Грязный, мокрый"}},
+            {"id": "controlled", "label": {"ru": "Партнёр контролирует"}}
+          ]
+        },
+        "depth": {
+          "question": {"ru": "Глубина?"},
+          "type": "scale",
+          "min": {"ru": "Поверхностно"},
+          "max": {"ru": "Глубокая глотка"}
+        },
+        "extras": {
+          "question": {"ru": "Дополнительно?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "hands", "label": {"ru": "С руками"}},
+            {"id": "eye_contact", "label": {"ru": "Зрительный контакт"}},
+            {"id": "sounds", "label": {"ru": "Звуки удовольствия"}},
+            {"id": "face_fuck", "label": {"ru": "Партнёр двигает бёдрами"}}
+          ]
+        }
+      }
+    },
+
+    "oral_receiving": {
+      "id": "oral_receiving",
+      "name": {"en": "Receiving Oral", "ru": "Оральный секс (получать)"},
+      "related_tags": ["oral", "blowjob", "cunnilingus"],
+      "related_kinks": ["blowjob_devoted", "oral_worship"],
+      "questions": {
+        "enjoyment": {
+          "question": {"ru": "Нравится получать оральный секс?"},
+          "type": "scale",
+          "min": {"ru": "Не особо"},
+          "max": {"ru": "Обожаю"}
+        },
+        "style": {
+          "question": {"ru": "Как нравится?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "gentle", "label": {"ru": "Нежно, медленно"}},
+            {"id": "intense", "label": {"ru": "Интенсивно"}},
+            {"id": "teasing", "label": {"ru": "Дразняще"}},
+            {"id": "worship", "label": {"ru": "Как поклонение"}}
+          ]
+        },
+        "finish": {
+          "question": {"ru": "Финиш?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "mouth", "label": {"ru": "В рот"}},
+            {"id": "face", "label": {"ru": "На лицо"}},
+            {"id": "body", "label": {"ru": "На тело"}},
+            {"id": "inside", "label": {"ru": "Внутрь (вагинально)"}},
+            {"id": "switch", "label": {"ru": "Переключиться на секс"}}
+          ]
+        }
+      }
+    },
+
+    "power_dynamic": {
+      "id": "power_dynamic",
+      "name": {"en": "Power Dynamics", "ru": "Динамика власти"},
+      "related_tags": ["dominant", "submissive", "femdom", "maledom", "switch"],
+      "related_kinks": ["male_dominance", "female_dominance", "submission", "power_exchange"],
+      "questions": {
+        "preference": {
+          "question": {"ru": "Что тебе ближе в сексе?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "dominant", "label": {"ru": "Доминировать"}},
+            {"id": "submissive", "label": {"ru": "Подчиняться"}},
+            {"id": "switch", "label": {"ru": "Меняться ролями"}},
+            {"id": "equal", "label": {"ru": "Равные партнёры"}},
+            {"id": "depends", "label": {"ru": "Зависит от партнёра/настроения"}}
+          ]
+        },
+        "dom_style": {
+          "show_if_preference": ["dominant", "switch"],
+          "question": {"ru": "Какой стиль доминирования?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "caring", "label": {"ru": "Заботливый (daddy/mommy)"}},
+            {"id": "strict", "label": {"ru": "Строгий"}},
+            {"id": "playful", "label": {"ru": "Игривый"}},
+            {"id": "sadistic", "label": {"ru": "Садистичный"}}
+          ]
+        },
+        "sub_style": {
+          "show_if_preference": ["submissive", "switch"],
+          "question": {"ru": "Какой стиль подчинения?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "obedient", "label": {"ru": "Послушный"}},
+            {"id": "bratty", "label": {"ru": "Брат (сопротивляюсь)"}},
+            {"id": "service", "label": {"ru": "Служить, угождать"}},
+            {"id": "painslut", "label": {"ru": "Люблю боль"}}
+          ]
+        },
+        "elements": {
+          "show_if_preference": ["dominant", "submissive", "switch"],
+          "question": {"ru": "Какие элементы?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "verbal", "label": {"ru": "Словесный контроль"}},
+            {"id": "physical", "label": {"ru": "Физический контроль"}},
+            {"id": "rules", "label": {"ru": "Правила"}},
+            {"id": "punishment", "label": {"ru": "Наказания"}},
+            {"id": "rewards", "label": {"ru": "Награды"}},
+            {"id": "protocols", "label": {"ru": "Ритуалы/протоколы"}}
+          ]
+        },
+        "intensity": {
+          "show_if_preference": ["dominant", "submissive", "switch"],
+          "question": {"ru": "Глубина?"},
+          "type": "scale",
+          "min": {"ru": "Только в спальне"},
+          "max": {"ru": "24/7 динамика"}}
+      }
+    },
+
+    "humiliation": {
+      "id": "humiliation",
+      "name": {"en": "Humiliation & Degradation", "ru": "Унижение и деградация"},
+      "related_tags": ["humiliation", "degradation", "verbal_abuse"],
+      "related_kinks": ["verbal_humiliation", "degradation", "objectification"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует унижение в сексе?"},
+          "type": "yes_maybe_no_hardlimit"
+        },
+        "types": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Какие виды?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "verbal", "label": {"ru": "Словесное (обзывания)"}},
+            {"id": "objectification", "label": {"ru": "Объективация (как вещь)"}},
+            {"id": "service", "label": {"ru": "Унизительный сервис"}},
+            {"id": "physical", "label": {"ru": "Физическое (на коленях, плевки)"}},
+            {"id": "public_adjacent", "label": {"ru": "При риске быть услышанным"}}
+          ]
+        },
+        "physical_acts": {
+          "show_if_types": ["physical"],
+          "question": {"ru": "Какие физические?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "kneeling", "label": {"ru": "На коленях"}},
+            {"id": "crawling", "label": {"ru": "Ползать"}},
+            {"id": "face_slap", "label": {"ru": "Пощёчины"}},
+            {"id": "spitting", "label": {"ru": "Плевки"}},
+            {"id": "foot_on", "label": {"ru": "Нога на лице/теле"}},
+            {"id": "bowl", "label": {"ru": "Еда из миски"}}
+          ]
+        },
+        "intensity": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Интенсивность?"},
+          "type": "scale",
+          "min": {"ru": "Лёгкое поддразнивание"},
+          "max": {"ru": "Тяжёлое унижение"}
+        },
+        "role": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Роль?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "receive", "label": {"ru": "Быть униженным"}},
+            {"id": "give", "label": {"ru": "Унижать"}},
+            {"id": "both", "label": {"ru": "Оба"}}
+          ]
+        }
+      }
+    },
+
+    "roleplay": {
+      "id": "roleplay",
+      "name": {"en": "Roleplay", "ru": "Ролевые игры"},
+      "related_tags": ["roleplay", "boss", "teacher", "doctor", "nurse", "stranger"],
+      "related_kinks": ["teacher_student", "boss_employee", "cop_roleplay", "stranger_fantasy"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересуют ролевые игры?"},
+          "type": "yes_maybe_no"
+        },
+        "themes": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Какие темы?"},
+          "type": "multi_choice_drilldown",
+          "options": [
+            {
+              "id": "authority",
+              "label": {"ru": "Власть/авторитет"},
+              "drilldown": {
+                "question": {"ru": "Какие роли?"},
+                "options": [
+                  {"id": "boss", "label": {"ru": "Босс/подчинённый"}},
+                  {"id": "teacher", "label": {"ru": "Учитель/ученик"}},
+                  {"id": "cop", "label": {"ru": "Полицейский/задержанный"}},
+                  {"id": "doctor", "label": {"ru": "Врач/пациент"}},
+                  {"id": "military", "label": {"ru": "Военный/рядовой"}}
+                ]
+              }
+            },
+            {
+              "id": "service",
+              "label": {"ru": "Обслуживание"},
+              "drilldown": {
+                "question": {"ru": "Какие роли?"},
+                "options": [
+                  {"id": "maid", "label": {"ru": "Горничная"}},
+                  {"id": "butler", "label": {"ru": "Дворецкий"}},
+                  {"id": "nurse", "label": {"ru": "Медсестра"}},
+                  {"id": "secretary", "label": {"ru": "Секретарь"}}
+                ]
+              }
+            },
+            {
+              "id": "strangers",
+              "label": {"ru": "Незнакомцы"},
+              "drilldown": {
+                "question": {"ru": "Какие сценарии?"},
+                "options": [
+                  {"id": "bar_pickup", "label": {"ru": "Съём в баре"}},
+                  {"id": "hotel", "label": {"ru": "Встреча в отеле"}},
+                  {"id": "anonymous", "label": {"ru": "Полностью анонимно"}}
+                ]
+              }
+            },
+            {
+              "id": "forbidden",
+              "label": {"ru": "Запретное"},
+              "drilldown": {
+                "question": {"ru": "Какие сценарии?"},
+                "options": [
+                  {"id": "affair", "label": {"ru": "Измена (игра)"}},
+                  {"id": "neighbor", "label": {"ru": "Сосед/соседка"}},
+                  {"id": "coworker", "label": {"ru": "Коллега"}},
+                  {"id": "best_friends_partner", "label": {"ru": "Партнёр друга"}}
+                ]
+              }
+            },
+            {
+              "id": "age_dynamic",
+              "label": {"ru": "Возрастная динамика"},
+              "drilldown": {
+                "question": {"ru": "Какие роли?"},
+                "options": [
+                  {"id": "daddy", "label": {"ru": "Дэдди"}},
+                  {"id": "mommy", "label": {"ru": "Мамочка"}},
+                  {"id": "older_younger", "label": {"ru": "Старший/младший"}}
+                ]
+              }
+            },
+            {
+              "id": "fantasy",
+              "label": {"ru": "Фантазийные"},
+              "drilldown": {
+                "question": {"ru": "Какие?"},
+                "options": [
+                  {"id": "vampire", "label": {"ru": "Вампир"}},
+                  {"id": "royalty", "label": {"ru": "Король/королева"}},
+                  {"id": "kidnapping", "label": {"ru": "Похищение (CNC)"}}
+                ]
+              }
+            }
+          ]
+        },
+        "my_role": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Какую роль предпочитаешь?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "power", "label": {"ru": "Властную"}},
+            {"id": "submissive", "label": {"ru": "Подчинённую"}},
+            {"id": "depends", "label": {"ru": "Зависит от сценария"}}
+          ]
+        },
+        "depth": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Насколько глубоко погружаться?"},
+          "type": "scale",
+          "min": {"ru": "Просто обращения/имена"},
+          "max": {"ru": "Полная сцена с костюмами"}
+        },
+        "costumes": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Костюмы?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "essential", "label": {"ru": "Обязательно"}},
+            {"id": "nice", "label": {"ru": "Приятный бонус"}},
+            {"id": "not_needed", "label": {"ru": "Не нужны"}}
+          ]
+        }
+      }
+    },
+
+    "group_sex": {
+      "id": "group_sex",
+      "name": {"en": "Group Sex", "ru": "Групповой секс"},
+      "related_tags": ["threesome", "ffm", "mmf", "orgy", "gangbang", "swingers"],
+      "related_kinks": ["threesome_MFM", "threesome_FMF", "orgy", "gangbang"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует групповой секс?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "yes", "label": {"ru": "Да"}},
+            {"id": "fantasy", "label": {"ru": "Только как фантазия"}},
+            {"id": "maybe", "label": {"ru": "Может быть"}},
+            {"id": "no", "label": {"ru": "Нет"}}
+          ]
+        },
+        "configurations": {
+          "show_if": ["yes", "fantasy", "maybe"],
+          "question": {"ru": "Какие конфигурации интересуют?"},
+          "type": "multi_choice_interest_level",
+          "options": [
+            {"id": "mfm", "label": {"ru": "МЖМ (два мужчины, одна женщина)"}},
+            {"id": "fmf", "label": {"ru": "ЖМЖ (две женщины, один мужчина)"}},
+            {"id": "mfmf", "label": {"ru": "МЖМЖ (свинг, две пары)"}},
+            {"id": "mmf_bi", "label": {"ru": "МЖМ с би контактом между М"}},
+            {"id": "fff", "label": {"ru": "ЖЖЖ"}},
+            {"id": "mmm", "label": {"ru": "МММ"}},
+            {"id": "orgy", "label": {"ru": "Оргия (больше 4)"}},
+            {"id": "gangbang", "label": {"ru": "Гэнгбэнг"}}
+          ]
+        },
+        "my_role": {
+          "show_if": ["yes", "fantasy", "maybe"],
+          "question": {"ru": "Твоя роль?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "center", "label": {"ru": "В центре внимания"}},
+            {"id": "participant", "label": {"ru": "Один из участников"}},
+            {"id": "watch_partner", "label": {"ru": "Смотреть на партнёра"}},
+            {"id": "be_watched", "label": {"ru": "Чтобы смотрели на меня"}}
+          ]
+        },
+        "same_sex_contact": {
+          "show_if": ["yes", "fantasy", "maybe"],
+          "question": {"ru": "Однополый контакт?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "yes", "label": {"ru": "Да, интересует"}},
+            {"id": "maybe", "label": {"ru": "Может быть"}},
+            {"id": "no", "label": {"ru": "Нет"}}
+          ]
+        },
+        "partner_with_others": {
+          "show_if": ["yes", "fantasy", "maybe"],
+          "question": {"ru": "Партнёр с другими?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "yes_hot", "label": {"ru": "Да, это горячо"}},
+            {"id": "ok", "label": {"ru": "Нормально"}},
+            {"id": "only_with_me", "label": {"ru": "Только если я участвую"}},
+            {"id": "no", "label": {"ru": "Нет"}}
+          ]
+        },
+        "with_partner_present": {
+          "show_if": ["yes", "fantasy", "maybe"],
+          "question": {"ru": "Только с партнёром или можно без?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "only_together", "label": {"ru": "Только вместе"}},
+            {"id": "prefer_together", "label": {"ru": "Лучше вместе"}},
+            {"id": "either", "label": {"ru": "Без разницы"}}
+          ]
+        }
+      },
+      "experience": {
+        "show_if": ["yes", "maybe"],
+        "question": {"ru": "Опыт?"},
+        "options": [
+          {"id": "regular", "label": {"ru": "Есть опыт"}},
+          {"id": "once", "label": {"ru": "Один раз было"}},
+          {"id": "not_tried", "label": {"ru": "Не пробовал(а)"}}
+        ]
+      }
+    },
+
+    "locations": {
+      "id": "locations",
+      "name": {"en": "Locations", "ru": "Места для секса"},
+      "related_tags": ["bedroom", "bathroom", "car", "outdoor", "public", "office"],
+      "questions": {
+        "home": {
+          "question": {"ru": "Дома где?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "bedroom", "label": {"ru": "Спальня"}},
+            {"id": "bathroom", "label": {"ru": "Ванная/душ"}},
+            {"id": "kitchen", "label": {"ru": "Кухня"}},
+            {"id": "living_room", "label": {"ru": "Гостиная"}},
+            {"id": "balcony", "label": {"ru": "Балкон"}},
+            {"id": "hallway", "label": {"ru": "Прихожая"}}
+          ]
+        },
+        "semi_public": {
+          "question": {"ru": "Полу-публичные места?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "car", "label": {"ru": "Машина"}},
+            {"id": "hotel", "label": {"ru": "Отель"}},
+            {"id": "office", "label": {"ru": "Офис"}},
+            {"id": "dressing_room", "label": {"ru": "Примерочная"}},
+            {"id": "stairwell", "label": {"ru": "Подъезд/лестница"}},
+            {"id": "elevator", "label": {"ru": "Лифт"}},
+            {"id": "restroom", "label": {"ru": "Туалет в заведении"}}
+          ]
+        },
+        "public_risk": {
+          "question": {"ru": "Публичные с риском?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "park", "label": {"ru": "Парк/лес"}},
+            {"id": "beach", "label": {"ru": "Пляж"}},
+            {"id": "pool", "label": {"ru": "Бассейн"}},
+            {"id": "club", "label": {"ru": "Клуб"}},
+            {"id": "restaurant", "label": {"ru": "Ресторан (под столом)"}},
+            {"id": "cinema", "label": {"ru": "Кинотеатр"}}
+          ]
+        },
+        "risk_tolerance": {
+          "question": {"ru": "Отношение к риску быть замеченным?"},
+          "type": "scale",
+          "min": {"ru": "Никакого риска"},
+          "max": {"ru": "Адреналин от риска"}
+        }
+      }
+    },
+
+    "toys": {
+      "id": "toys",
+      "name": {"en": "Sex Toys", "ru": "Секс-игрушки"},
+      "related_tags": ["vibrator", "dildo", "plug", "cock_ring", "fucking_machine"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Используешь игрушки?"},
+          "type": "yes_maybe_no"
+        },
+        "types": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Какие?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "vibrator", "label": {"ru": "Вибратор"}},
+            {"id": "dildo", "label": {"ru": "Дилдо"}},
+            {"id": "plug", "label": {"ru": "Анальная пробка"}},
+            {"id": "beads", "label": {"ru": "Анальные шарики"}},
+            {"id": "cock_ring", "label": {"ru": "Эрекционное кольцо"}},
+            {"id": "clamps", "label": {"ru": "Зажимы для сосков"}},
+            {"id": "wand", "label": {"ru": "Вонд-массажёр"}},
+            {"id": "strapon", "label": {"ru": "Страпон"}},
+            {"id": "machine", "label": {"ru": "Секс-машина"}}
+          ]
+        },
+        "use_context": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Как использовать?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "solo", "label": {"ru": "Соло"}},
+            {"id": "foreplay", "label": {"ru": "В прелюдии"}},
+            {"id": "during_sex", "label": {"ru": "Во время секса"}},
+            {"id": "partner_controls", "label": {"ru": "Партнёр управляет"}},
+            {"id": "remote_public", "label": {"ru": "Дистанционно в публичном месте"}}
+          ]
+        }
+      }
+    },
+
+    "voyeur_exhib": {
+      "id": "voyeur_exhib",
+      "name": {"en": "Voyeurism & Exhibitionism", "ru": "Вуайеризм и эксгибиционизм"},
+      "related_tags": ["voyeur", "exhibitionism", "watched", "watching", "filmed"],
+      "questions": {
+        "watching": {
+          "question": {"ru": "Нравится смотреть?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "partner_solo", "label": {"ru": "Как партнёр мастурбирует"}},
+            {"id": "partner_with_other", "label": {"ru": "Партнёр с кем-то другим"}},
+            {"id": "porn_together", "label": {"ru": "Порно вместе"}},
+            {"id": "strangers", "label": {"ru": "Незнакомцы (в клубе и т.п.)"}}
+          ]
+        },
+        "being_watched": {
+          "question": {"ru": "Нравится когда смотрят?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "partner_watches", "label": {"ru": "Партнёр смотрит на меня"}},
+            {"id": "mirror", "label": {"ru": "Смотреть на себя в зеркало"}},
+            {"id": "others_watch", "label": {"ru": "Другие смотрят на нас"}},
+            {"id": "camera", "label": {"ru": "На камеру"}}
+          ]
+        },
+        "risk_level": {
+          "question": {"ru": "Насколько публично?"},
+          "type": "scale",
+          "min": {"ru": "Только наедине"},
+          "max": {"ru": "Риск что увидят"}
+        }
+      }
+    },
+
+    "cum_preferences": {
+      "id": "cum_preferences",
+      "name": {"en": "Cum Preferences", "ru": "Предпочтения по сперме"},
+      "related_tags": ["cum", "facial", "creampie", "swallowing"],
+      "questions": {
+        "where": {
+          "question": {"ru": "Куда финишировать?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "inside_vaginal", "label": {"ru": "Внутрь (вагинально)"}},
+            {"id": "inside_anal", "label": {"ru": "Внутрь (анально)"}},
+            {"id": "mouth", "label": {"ru": "В рот"}},
+            {"id": "face", "label": {"ru": "На лицо"}},
+            {"id": "breasts", "label": {"ru": "На грудь"}},
+            {"id": "stomach", "label": {"ru": "На живот"}},
+            {"id": "ass", "label": {"ru": "На попу"}},
+            {"id": "back", "label": {"ru": "На спину"}}
+          ]
+        },
+        "swallowing": {
+          "question": {"ru": "Глотать?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "yes", "label": {"ru": "Да"}},
+            {"id": "sometimes", "label": {"ru": "Иногда"}},
+            {"id": "no", "label": {"ru": "Нет"}}
+          ]
+        },
+        "cum_play": {
+          "question": {"ru": "Игры со спермой?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "none", "label": {"ru": "Не интересует"}},
+            {"id": "snowball", "label": {"ru": "Сноубол (передача изо рта в рот)"}},
+            {"id": "creampie_eat", "label": {"ru": "Слизывание кримпая"}},
+            {"id": "cum_kiss", "label": {"ru": "Поцелуй со спермой"}},
+            {"id": "cleanup", "label": {"ru": "Вылизывание после"}}
+          ]
+        }
+      }
+    },
+
+    "worship": {
+      "id": "worship",
+      "name": {"en": "Body Worship", "ru": "Поклонение телу"},
+      "related_tags": ["worship", "foot", "ass", "cock", "pussy"],
+      "questions": {
+        "worship_giving": {
+          "question": {"ru": "Каким частям тела хочешь поклоняться?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "feet", "label": {"ru": "Стопы"}},
+            {"id": "ass", "label": {"ru": "Попа"}},
+            {"id": "cock", "label": {"ru": "Член"}},
+            {"id": "pussy", "label": {"ru": "Киска"}},
+            {"id": "breasts", "label": {"ru": "Грудь"}},
+            {"id": "legs", "label": {"ru": "Ноги"}},
+            {"id": "neck", "label": {"ru": "Шея"}},
+            {"id": "hands", "label": {"ru": "Руки"}},
+            {"id": "muscles", "label": {"ru": "Мускулы"}}
+          ]
+        },
+        "worship_receiving": {
+          "question": {"ru": "Каким частям твоего тела хочешь чтобы поклонялись?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "feet", "label": {"ru": "Стопы"}},
+            {"id": "ass", "label": {"ru": "Попа"}},
+            {"id": "cock", "label": {"ru": "Член"}},
+            {"id": "pussy", "label": {"ru": "Киска"}},
+            {"id": "breasts", "label": {"ru": "Грудь"}},
+            {"id": "legs", "label": {"ru": "Ноги"}},
+            {"id": "all_body", "label": {"ru": "Всё тело"}}
+          ]
+        },
+        "style": {
+          "question": {"ru": "Стиль поклонения?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "kissing", "label": {"ru": "Поцелуи"}},
+            {"id": "licking", "label": {"ru": "Вылизывание"}},
+            {"id": "massage", "label": {"ru": "Массаж"}},
+            {"id": "verbal", "label": {"ru": "Словесное восхваление"}}
+          ]
+        }
+      }
+    },
+
+    "clothing_fetish": {
+      "id": "clothing_fetish",
+      "name": {"en": "Clothing & Fetish Wear", "ru": "Одежда и фетиш"},
+      "related_tags": ["lingerie", "stockings", "latex", "leather", "uniform"],
+      "questions": {
+        "turn_ons": {
+          "question": {"ru": "Что возбуждает на партнёре?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "lingerie", "label": {"ru": "Красивое бельё"}},
+            {"id": "stockings", "label": {"ru": "Чулки"}},
+            {"id": "heels", "label": {"ru": "Каблуки"}},
+            {"id": "latex", "label": {"ru": "Латекс"}},
+            {"id": "leather", "label": {"ru": "Кожа"}},
+            {"id": "uniform", "label": {"ru": "Униформа"}},
+            {"id": "suit", "label": {"ru": "Костюм"}},
+            {"id": "corset", "label": {"ru": "Корсет"}},
+            {"id": "collar", "label": {"ru": "Ошейник"}},
+            {"id": "nothing", "label": {"ru": "Голышом лучше всего"}}
+          ]
+        },
+        "lingerie_details": {
+          "show_if_turn_ons": ["lingerie"],
+          "question": {"ru": "Какое бельё?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "lace", "label": {"ru": "Кружевное"}},
+            {"id": "sheer", "label": {"ru": "Прозрачное"}},
+            {"id": "crotchless", "label": {"ru": "С вырезом"}},
+            {"id": "garter", "label": {"ru": "Пояс для чулок"}},
+            {"id": "bodysuit", "label": {"ru": "Боди"}}
+          ]
+        },
+        "sex_in_clothes": {
+          "question": {"ru": "Секс в одежде?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "prefer", "label": {"ru": "Люблю, не снимая"}},
+            {"id": "sometimes", "label": {"ru": "Иногда горячо"}},
+            {"id": "naked", "label": {"ru": "Предпочитаю голышом"}}
+          ]
+        }
+      }
+    },
+
+    "positions": {
+      "id": "positions",
+      "name": {"en": "Positions", "ru": "Позы"},
+      "related_tags": ["missionary", "doggy", "cowgirl", "spooning", "standing"],
+      "questions": {
+        "favorites": {
+          "question": {"ru": "Любимые позы?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "missionary", "label": {"ru": "Миссионерская"}},
+            {"id": "doggy", "label": {"ru": "Догги-стайл"}},
+            {"id": "cowgirl", "label": {"ru": "Сверху (cowgirl)"}},
+            {"id": "reverse_cowgirl", "label": {"ru": "Обратная наездница"}},
+            {"id": "spooning", "label": {"ru": "На боку (ложки)"}},
+            {"id": "standing", "label": {"ru": "Стоя"}},
+            {"id": "prone", "label": {"ru": "Лёжа на животе"}},
+            {"id": "face_sitting", "label": {"ru": "Сидя на лице"}},
+            {"id": "69", "label": {"ru": "69"}},
+            {"id": "lotus", "label": {"ru": "Лотос"}},
+            {"id": "legs_up", "label": {"ru": "Ноги на плечах"}}
+          ]
+        },
+        "control": {
+          "question": {"ru": "Кто контролирует движение?"},
+          "type": "scale",
+          "min": {"ru": "Я контролирую"},
+          "max": {"ru": "Партнёр контролирует"}
+        },
+        "eye_contact": {
+          "question": {"ru": "Зрительный контакт?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "important", "label": {"ru": "Важен"}},
+            {"id": "nice", "label": {"ru": "Приятно, но не обязательно"}},
+            {"id": "not_important", "label": {"ru": "Не важен"}}
+          ]
+        },
+        "variety": {
+          "question": {"ru": "Менять позы?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "many", "label": {"ru": "Много разных за раз"}},
+            {"id": "few", "label": {"ru": "2-3 позы"}},
+            {"id": "one", "label": {"ru": "Одна любимая"}}
+          ]
+        }
+      }
+    },
+
+    "pace_mood": {
+      "id": "pace_mood",
+      "name": {"en": "Pace & Mood", "ru": "Темп и настроение"},
+      "related_tags": ["romantic", "rough", "passionate", "gentle", "playful"],
+      "questions": {
+        "preferred_styles": {
+          "question": {"ru": "Какой секс предпочитаешь?"},
+          "type": "multi_choice_frequency",
+          "options": [
+            {"id": "romantic", "label": {"ru": "Романтичный, нежный"}},
+            {"id": "passionate", "label": {"ru": "Страстный, интенсивный"}},
+            {"id": "rough", "label": {"ru": "Грубый, жёсткий"}},
+            {"id": "playful", "label": {"ru": "Игривый, весёлый"}},
+            {"id": "lazy", "label": {"ru": "Ленивый, расслабленный"}},
+            {"id": "quickie", "label": {"ru": "Быстрый"}}
+          ]
+        },
+        "variety": {
+          "question": {"ru": "Разнообразие?"},
+          "type": "scale",
+          "min": {"ru": "Люблю стабильность"},
+          "max": {"ru": "Всегда по-разному"}
+        }
+      }
+    },
+
+    "primal": {
+      "id": "primal",
+      "name": {"en": "Primal Play", "ru": "Первобытная страсть"},
+      "related_tags": ["biting", "scratching", "hair_pulling", "primal"],
+      "questions": {
+        "elements": {
+          "question": {"ru": "Что нравится?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "biting", "label": {"ru": "Укусы"}},
+            {"id": "scratching", "label": {"ru": "Царапины"}},
+            {"id": "hair_pulling", "label": {"ru": "Таскать за волосы"}},
+            {"id": "growling", "label": {"ru": "Рычание/звуки"}},
+            {"id": "wrestling", "label": {"ru": "Борьба/возня"}},
+            {"id": "pinning", "label": {"ru": "Прижимать к поверхности"}},
+            {"id": "chasing", "label": {"ru": "Преследование"}}
+          ]
+        },
+        "biting_where": {
+          "show_if_elements": ["biting"],
+          "question": {"ru": "Куда кусать?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "neck", "label": {"ru": "Шея"}},
+            {"id": "shoulder", "label": {"ru": "Плечо"}},
+            {"id": "ear", "label": {"ru": "Ухо"}},
+            {"id": "lip", "label": {"ru": "Губа"}},
+            {"id": "thighs", "label": {"ru": "Бёдра"}},
+            {"id": "ass", "label": {"ru": "Попа"}}
+          ]
+        },
+        "marks_ok": {
+          "question": {"ru": "Следы на теле?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "yes", "label": {"ru": "Да, нравятся"}},
+            {"id": "hidden", "label": {"ru": "Только где не видно"}},
+            {"id": "no", "label": {"ru": "Нет"}}
+          ]
+        },
+        "role": {
+          "question": {"ru": "Роль?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "predator", "label": {"ru": "Хищник"}},
+            {"id": "prey", "label": {"ru": "Добыча"}},
+            {"id": "both", "label": {"ru": "Оба"}}
+          ]
+        }
+      }
+    },
+
+    "tech_sex": {
+      "id": "tech_sex",
+      "name": {"en": "Technology & Distance", "ru": "Технологии и дистанция"},
+      "related_tags": ["sexting", "video_call", "phone_sex", "filming"],
+      "questions": {
+        "activities": {
+          "question": {"ru": "Какие активности?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "sexting", "label": {"ru": "Секстинг (текст)"}},
+            {"id": "voice", "label": {"ru": "Голосовые сообщения"}},
+            {"id": "phone_sex", "label": {"ru": "Секс по телефону"}},
+            {"id": "video_call", "label": {"ru": "Видеозвонок"}},
+            {"id": "send_nudes", "label": {"ru": "Отправлять фото"}},
+            {"id": "receive_nudes", "label": {"ru": "Получать фото"}},
+            {"id": "filming", "label": {"ru": "Снимать вместе"}},
+            {"id": "watch_together", "label": {"ru": "Смотреть порно вместе"}}
+          ]
+        },
+        "face_visible": {
+          "show_if_activities": ["send_nudes", "filming"],
+          "question": {"ru": "Лицо на фото/видео?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "yes", "label": {"ru": "Да"}},
+            {"id": "partner_only", "label": {"ru": "Только для партнёра"}},
+            {"id": "no", "label": {"ru": "Никогда"}}
+          ]
+        },
+        "storage": {
+          "show_if_activities": ["send_nudes", "filming"],
+          "question": {"ru": "Хранение?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "delete", "label": {"ru": "Сразу удалять"}},
+            {"id": "keep_private", "label": {"ru": "Можно хранить приватно"}},
+            {"id": "archive_ok", "label": {"ru": "Архив ок"}}
+          ]
+        }
+      }
+    },
+
+    "breath_play": {
+      "id": "breath_play",
+      "name": {"en": "Breath Play", "ru": "Контроль дыхания"},
+      "related_tags": ["choking", "breath_play", "asphyxiation"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "yes", "label": {"ru": "Да"}},
+            {"id": "light_only", "label": {"ru": "Только лёгкое (рука на горле)"}},
+            {"id": "maybe", "label": {"ru": "Может быть"}},
+            {"id": "no", "label": {"ru": "Нет"}},
+            {"id": "hard_limit", "label": {"ru": "Жёсткое нет"}}
+          ]
+        },
+        "type": {
+          "show_if": ["yes", "light_only"],
+          "question": {"ru": "Какой тип?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "hand_presence", "label": {"ru": "Рука на горле (без давления)"}},
+            {"id": "light_pressure", "label": {"ru": "Лёгкое давление"}},
+            {"id": "controlled", "label": {"ru": "Контролируемое сжатие"}}
+          ]
+        },
+        "role": {
+          "show_if": ["yes", "light_only"],
+          "question": {"ru": "Роль?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "receive", "label": {"ru": "Получать"}},
+            {"id": "give", "label": {"ru": "Делать"}},
+            {"id": "both", "label": {"ru": "Оба"}}
+          ]
+        }
+      }
+    },
+
+    "orgasm_control": {
+      "id": "orgasm_control",
+      "name": {"en": "Orgasm Control", "ru": "Контроль оргазма"},
+      "related_tags": ["edging", "orgasm_denial", "forced_orgasm", "ruined_orgasm"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует контроль оргазма?"},
+          "type": "yes_maybe_no"
+        },
+        "types": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Какие практики?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "edging", "label": {"ru": "Эджинг (на грани)"}},
+            {"id": "denial", "label": {"ru": "Запрет оргазма"}},
+            {"id": "forced", "label": {"ru": "Принудительный оргазм"}},
+            {"id": "multiple", "label": {"ru": "Множественные оргазмы"}},
+            {"id": "ruined", "label": {"ru": "Испорченный оргазм"}},
+            {"id": "counting", "label": {"ru": "Считать оргазмы"}}
+          ]
+        },
+        "role": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Роль?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "controlled", "label": {"ru": "Меня контролируют"}},
+            {"id": "controller", "label": {"ru": "Я контролирую"}},
+            {"id": "both", "label": {"ru": "Оба"}}
+          ]
+        },
+        "duration": {
+          "show_if_types": ["denial"],
+          "question": {"ru": "Как долго?"},
+          "type": "scale",
+          "min": {"ru": "Минуты"},
+          "max": {"ru": "Дни/недели"}}
+      }
+    },
+
+    "squirting": {
+      "id": "squirting",
+      "name": {"en": "Squirting", "ru": "Сквирт"},
+      "related_tags": ["squirting", "female_ejaculation"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Отношение к сквирту?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "love", "label": {"ru": "Очень нравится"}},
+            {"id": "curious", "label": {"ru": "Любопытно"}},
+            {"id": "neutral", "label": {"ru": "Нейтрально"}},
+            {"id": "not_into", "label": {"ru": "Не моё"}}
+          ]
+        },
+        "experience": {
+          "question": {"ru": "Опыт?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "can_do", "label": {"ru": "Умею/получается"}},
+            {"id": "learning", "label": {"ru": "Учусь/хочу научиться"}},
+            {"id": "partner", "label": {"ru": "Партнёр умеет"}},
+            {"id": "neither", "label": {"ru": "Нет опыта"}}
+          ]
+        },
+        "activities": {
+          "show_if_interest": ["love", "curious"],
+          "question": {"ru": "Что интересует?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "during_oral", "label": {"ru": "Во время орала"}},
+            {"id": "during_sex", "label": {"ru": "Во время секса"}},
+            {"id": "on_face", "label": {"ru": "На лицо"}},
+            {"id": "drinking", "label": {"ru": "Пить"}}
+          ]
+        }
+      }
+    },
+
+    "watersports": {
+      "id": "watersports",
+      "name": {"en": "Watersports", "ru": "Водные игры (моча)"},
+      "related_tags": ["watersports", "golden_shower", "pee"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "yes", "label": {"ru": "Да"}},
+            {"id": "curious", "label": {"ru": "Любопытно"}},
+            {"id": "no", "label": {"ru": "Нет"}},
+            {"id": "hard_limit", "label": {"ru": "Жёсткое нет"}}
+          ]
+        },
+        "role": {
+          "show_if": ["yes", "curious"],
+          "question": {"ru": "В какой роли?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "give", "label": {"ru": "Писать на партнёра"}},
+            {"id": "receive", "label": {"ru": "Партнёр писает на меня"}},
+            {"id": "watch", "label": {"ru": "Смотреть"}}
+          ]
+        },
+        "context": {
+          "show_if": ["yes", "curious"],
+          "question": {"ru": "В каком контексте?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "shower", "label": {"ru": "Только в душе"}},
+            {"id": "body", "label": {"ru": "На тело"}},
+            {"id": "mouth", "label": {"ru": "В рот"}},
+            {"id": "drinking", "label": {"ru": "Пить"}},
+            {"id": "degradation", "label": {"ru": "Как элемент унижения"}}
+          ]
+        }
+      }
+    },
+
+    "chastity": {
+      "id": "chastity",
+      "name": {"en": "Chastity", "ru": "Пояс верности"},
+      "related_tags": ["chastity", "denial", "cage"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует?"},
+          "type": "yes_maybe_no"
+        },
+        "role": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Роль?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "wear", "label": {"ru": "Носить"}},
+            {"id": "control", "label": {"ru": "Контролировать партнёра"}},
+            {"id": "both", "label": {"ru": "Оба"}}
+          ]
+        },
+        "duration": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Длительность?"},
+          "type": "scale",
+          "min": {"ru": "Часы"},
+          "max": {"ru": "Дни/недели"}
+        },
+        "elements": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Какие элементы?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "teasing", "label": {"ru": "Дразнить в клетке"}},
+            {"id": "key_holding", "label": {"ru": "Держать ключ"}},
+            {"id": "release_reward", "label": {"ru": "Освобождение как награда"}}
+          ]
+        }
+      }
+    },
+
+    "cuckold": {
+      "id": "cuckold",
+      "name": {"en": "Cuckold / Hotwife", "ru": "Куколд / Хотвайф"},
+      "related_tags": ["cuckold", "hotwife", "watching"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "yes", "label": {"ru": "Да"}},
+            {"id": "fantasy", "label": {"ru": "Только как фантазия"}},
+            {"id": "maybe", "label": {"ru": "Может быть"}},
+            {"id": "no", "label": {"ru": "Нет"}}
+          ]
+        },
+        "role": {
+          "show_if": ["yes", "fantasy", "maybe"],
+          "question": {"ru": "Какая роль?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "cuck", "label": {"ru": "Куколд (смотрю)"}},
+            {"id": "hotwife", "label": {"ru": "Хотвайф (меня смотрят)"}},
+            {"id": "bull", "label": {"ru": "Бык (третий)"}}
+          ]
+        },
+        "elements": {
+          "show_if": ["yes", "fantasy", "maybe"],
+          "question": {"ru": "Какие элементы?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "watching", "label": {"ru": "Смотреть"}},
+            {"id": "humiliation", "label": {"ru": "Унижение"}},
+            {"id": "denial", "label": {"ru": "Отказ куколду"}},
+            {"id": "cleanup", "label": {"ru": "Вылизывание после"}},
+            {"id": "comparison", "label": {"ru": "Сравнение"}},
+            {"id": "reclaiming", "label": {"ru": "Секс после (reclaiming)"}}
+          ]
+        }
+      }
+    },
+
+    "cnc": {
+      "id": "cnc",
+      "name": {"en": "CNC (Consensual Non-Consent)", "ru": "CNC (игра в принуждение)"},
+      "related_tags": ["cnc", "rape_fantasy", "resistance"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует CNC (игровое принуждение)?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "yes", "label": {"ru": "Да"}},
+            {"id": "fantasy", "label": {"ru": "Только как фантазия"}},
+            {"id": "maybe", "label": {"ru": "Может быть"}},
+            {"id": "no", "label": {"ru": "Нет"}},
+            {"id": "hard_limit", "label": {"ru": "Жёсткое нет"}}
+          ]
+        },
+        "role": {
+          "show_if": ["yes", "fantasy", "maybe"],
+          "question": {"ru": "Роль?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "aggressor", "label": {"ru": "Нападающий"}},
+            {"id": "victim", "label": {"ru": "Жертва"}},
+            {"id": "both", "label": {"ru": "Оба"}}
+          ]
+        },
+        "scenarios": {
+          "show_if": ["yes", "fantasy", "maybe"],
+          "question": {"ru": "Какие сценарии?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "resistance", "label": {"ru": "Сопротивление"}},
+            {"id": "capture", "label": {"ru": "Захват/похищение"}},
+            {"id": "break_in", "label": {"ru": "Вторжение"}},
+            {"id": "sleep", "label": {"ru": "Во сне"}}
+          ]
+        },
+        "intensity": {
+          "show_if": ["yes", "fantasy", "maybe"],
+          "question": {"ru": "Интенсивность?"},
+          "type": "scale",
+          "min": {"ru": "Лёгкое сопротивление"},
+          "max": {"ru": "Полная сцена"}
+        }
+      }
+    },
+
+    "pet_play": {
+      "id": "pet_play",
+      "name": {"en": "Pet Play", "ru": "Пет-плей"},
+      "related_tags": ["pet_play", "puppy", "kitten", "collar", "leash"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует?"},
+          "type": "yes_maybe_no"
+        },
+        "animal": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Какое животное?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "puppy", "label": {"ru": "Щенок"}},
+            {"id": "kitten", "label": {"ru": "Котёнок"}},
+            {"id": "bunny", "label": {"ru": "Зайка"}},
+            {"id": "pony", "label": {"ru": "Пони"}},
+            {"id": "fox", "label": {"ru": "Лиса"}}
+          ]
+        },
+        "role": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Роль?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "pet", "label": {"ru": "Питомец"}},
+            {"id": "owner", "label": {"ru": "Хозяин"}},
+            {"id": "both", "label": {"ru": "Оба"}}
+          ]
+        },
+        "elements": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Какие элементы?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "collar", "label": {"ru": "Ошейник"}},
+            {"id": "leash", "label": {"ru": "Поводок"}},
+            {"id": "ears", "label": {"ru": "Ушки"}},
+            {"id": "tail", "label": {"ru": "Хвост (пробка)"}},
+            {"id": "bowl", "label": {"ru": "Миска"}},
+            {"id": "commands", "label": {"ru": "Команды"}},
+            {"id": "petting", "label": {"ru": "Поглаживание"}}
+          ]
+        },
+        "depth": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Глубина?"},
+          "type": "scale",
+          "min": {"ru": "Только аксессуары"},
+          "max": {"ru": "Полное погружение в роль"}
+        }
+      }
+    },
+
+    "feminization": {
+      "id": "feminization",
+      "name": {"en": "Feminization / Crossdressing", "ru": "Феминизация / Переодевание"},
+      "related_tags": ["feminization", "crossdressing", "sissy"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует?"},
+          "type": "yes_maybe_no"
+        },
+        "role": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Роль?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "feminize", "label": {"ru": "Феминизировать партнёра"}},
+            {"id": "be_feminized", "label": {"ru": "Быть феминизированным"}}
+          ]
+        },
+        "elements": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Какие элементы?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "panties", "label": {"ru": "Женские трусики"}},
+            {"id": "lingerie", "label": {"ru": "Бельё"}},
+            {"id": "full_outfit", "label": {"ru": "Полный наряд"}},
+            {"id": "makeup", "label": {"ru": "Макияж"}},
+            {"id": "names", "label": {"ru": "Женские имена/обращения"}},
+            {"id": "pronouns", "label": {"ru": "Женские местоимения"}}
+          ]
+        },
+        "depth": {
+          "show_if": ["yes", "maybe"],
+          "question": {"ru": "Глубина?"},
+          "type": "scale",
+          "min": {"ru": "Только одежда"},
+          "max": {"ru": "Полная трансформация"}
+        }
+      }
+    },
+
+    "sensory_play": {
+      "id": "sensory_play",
+      "name": {"en": "Sensory Play", "ru": "Сенсорная игра"},
+      "related_tags": ["blindfold", "ice", "wax", "feather", "sensory_deprivation"],
+      "questions": {
+        "types": {
+          "question": {"ru": "Какие виды?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "blindfold", "label": {"ru": "Повязка на глаза"}},
+            {"id": "ice", "label": {"ru": "Лёд"}},
+            {"id": "wax", "label": {"ru": "Воск"}},
+            {"id": "feather", "label": {"ru": "Перо"}},
+            {"id": "wartenberg", "label": {"ru": "Колёсико Вартенберга"}},
+            {"id": "temperature", "label": {"ru": "Контраст температур"}},
+            {"id": "earplugs", "label": {"ru": "Беруши (сенсорная депривация)"}}
+          ]
+        },
+        "intensity": {
+          "question": {"ru": "Интенсивность?"},
+          "type": "scale",
+          "min": {"ru": "Нежно"},
+          "max": {"ru": "Интенсивно"}
+        }
+      }
+    },
+
+    "age_dynamics": {
+      "id": "age_dynamics",
+      "name": {"en": "Age Dynamics", "ru": "Возрастная динамика"},
+      "related_tags": ["milf", "dilf", "cougar", "silver_fox"],
+      "questions": {
+        "attraction": {
+          "question": {"ru": "К кому влечёт?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "same_age", "label": {"ru": "Ровесники"}},
+            {"id": "younger", "label": {"ru": "Младше"}},
+            {"id": "older", "label": {"ru": "Старше"}},
+            {"id": "milf_dilf", "label": {"ru": "MILF/DILF"}},
+            {"id": "silver", "label": {"ru": "Серебряные виски/зрелость"}}
+          ]
+        },
+        "gap_comfort": {
+          "question": {"ru": "Комфортная разница в возрасте?"},
+          "type": "scale",
+          "min": {"ru": "Только ровесники"},
+          "max": {"ru": "Большая разница ок"}
+        },
+        "dynamic": {
+          "question": {"ru": "Какая динамика?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "teach", "label": {"ru": "Учить менее опытного"}},
+            {"id": "learn", "label": {"ru": "Учиться у более опытного"}},
+            {"id": "equal", "label": {"ru": "На равных"}}
+          ]
+        }
+      }
+    },
+
+    "free_use": {
+      "id": "free_use",
+      "name": {"en": "Free Use", "ru": "Свободное использование"},
+      "related_tags": ["free_use", "available", "anytime"],
+      "questions": {
+        "interest": {
+          "question": {"ru": "Интересует концепция 'free use'?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "yes", "label": {"ru": "Да"}},
+            {"id": "fantasy", "label": {"ru": "Только как фантазия"}},
+            {"id": "maybe", "label": {"ru": "Может быть"}},
+            {"id": "no", "label": {"ru": "Нет"}}
+          ]
+        },
+        "role": {
+          "show_if": ["yes", "fantasy", "maybe"],
+          "question": {"ru": "Роль?"},
+          "type": "single_choice",
+          "options": [
+            {"id": "available", "label": {"ru": "Быть доступным"}},
+            {"id": "user", "label": {"ru": "Использовать"}},
+            {"id": "both", "label": {"ru": "Оба"}}
+          ]
+        },
+        "boundaries": {
+          "show_if": ["yes", "fantasy", "maybe"],
+          "question": {"ru": "Какие границы?"},
+          "type": "multi_choice",
+          "options": [
+            {"id": "wake_up", "label": {"ru": "Будить сексом ок"}},
+            {"id": "interrupt", "label": {"ru": "Прерывать занятия ок"}},
+            {"id": "anywhere_home", "label": {"ru": "В любом месте дома"}},
+            {"id": "quick_use", "label": {"ru": "Быстрое использование без прелюдии"}}
+          ]
+        }
+      }
+    }
+  }
+}

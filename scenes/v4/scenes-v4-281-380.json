@@ -1,0 +1,1153 @@
+{
+  "$schema": "./scenes-schema.json",
+  "version": 4,
+  "range": "281-380",
+  "categories": [
+    "Squirt & Female Ejaculation",
+    "Male Anal Play & Prostate",
+    "Remote Control & Public Teasing",
+    "Public Exhibition",
+    "Chastity & Denial",
+    "Pet Play",
+    "Emotional Context Sex",
+    "Positions & Locations"
+  ],
+  "scenes": [
+    {
+      "id": "scene_281",
+      "priority": 3,
+      "intensity": 4,
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "squirt",
+        "question": {
+          "en": "Does receiving squirt on face during oral appeal?",
+          "ru": "Привлекает ли получить сквирт на лицо во время орала?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "bedroom scene with woman squirting directly onto man's face while he performs oral on her, she lies on her back legs spread wide over his shoulders, he has his mouth on her when suddenly she erupts spraying her ejaculation across his face, clear fluid coating his forehead cheeks nose and chin, he keeps his eyes closed as she soaks him mouth still working through her orgasm, she grips his hair with one hand the other clutching sheets, her back arches off the bed body convulsing with intense climax, his face glistening wet dripping with her squirt, she moans loudly as wave after wave releases onto his receiving face, warm bedroom lighting capturing the wet glisten",
+      "user_description": {
+        "en": "A woman squirts on a man's face while he performs oral sex, he keeps going as she releases.",
+        "ru": "Женщина сквиртует на лицо мужчины пока он делает куннилингус, он продолжает пока она кончает."
+      },
+      "ai_context": {
+        "description": "Squirt facial during oral - she ejaculates on his face while he performs cunnilingus, continues through her orgasm",
+        "tests": {
+          "primary_kink": "squirt_facial",
+          "secondary_kinks": ["female_ejaculation", "oral_receiving", "wet_play", "face_soaking"],
+          "power_dynamic": "she_releases_he_receives",
+          "gender_role_aspect": "female_ejaculation_celebrated"
+        },
+        "emotional_range": {
+          "positive": ["love getting soaked", "squirt on face hot", "keep going through it", "proud made her squirt"],
+          "negative": ["too wet", "prefer avoiding face", "messy not appealing"],
+          "curious": ["might be hot", "never experienced", "interested"]
+        },
+        "profile_signals": {
+          "if_positive": ["squirt_facial_lover", "wet_face_enjoyer", "female_ejaculation_fan", "oral_through_squirt"],
+          "if_negative": ["prefers_controlled", "face_avoiding", "less_wet_preferred"],
+          "if_curious": ["squirt_curious", "might_enjoy", "wants_to_try"]
+        },
+        "taboo_context": {
+          "level": 3,
+          "normalization": "Squirt facials during oral are celebrated expressions of female pleasure - many find causing/receiving this release deeply satisfying."
+        }
+      },
+      "participants": ["squirting_female", "receiving_male"],
+      "dimensions": ["squirt_facial", "female_ejaculation", "wet_face", "oral"],
+      "tags": ["squirt", "facial", "oral", "wet", "female_ejaculation"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_283",
+      "priority": 4,
+      "intensity": 5,
+      "question_config": {
+        "type": "yes_maybe_no",
+        "topic_ref": "squirt",
+        "question": {
+          "en": "Does drinking/catching squirt in mouth appeal?",
+          "ru": "Привлекает ли пить/ловить сквирт ртом?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "intimate scene with woman positioned over man's face but elevated her hips above his mouth, she squirts and he catches the stream in his open waiting mouth, his tongue extended to receive her ejaculation, she aims her spray directly at his mouth watching it arc into him, clear fluid flowing from her into him some splashing on his chin and cheeks, he swallows repeatedly drinking her squirt, his hands on her thighs holding her in position to catch the flow, her expression shows pleasure at him receiving her so intimately, his eyes looking up at her devotedly while drinking what she gives, the taboo intimacy of squirt drinking, warm bedroom lighting",
+      "user_description": {
+        "en": "A man catches and drinks a woman's squirt in his open mouth as she ejaculates toward him.",
+        "ru": "Мужчина ловит и пьёт сквирт женщины открытым ртом, пока она эякулирует в его направлении."
+      },
+      "ai_context": {
+        "description": "Squirt drinking - catching and swallowing her ejaculation, she aims into his open receiving mouth",
+        "tests": {
+          "primary_kink": "squirt_drinking",
+          "secondary_kinks": ["catching_squirt", "swallowing", "mouth_receiving", "fluid_consumption"],
+          "power_dynamic": "she_gives_he_receives_drinks",
+          "gender_role_aspect": "consuming_female_pleasure"
+        },
+        "taboo_context": {
+          "level": 4,
+          "normalization": "Squirt drinking is celebrated as intimate devotional act - consuming her pleasure directly, nothing more intimate."
+        }
+      },
+      "participants": ["squirting_female", "drinking_male"],
+      "dimensions": ["squirt_drinking", "mouth", "swallowing", "catching"],
+      "tags": ["squirt", "drinking", "mouth", "swallowing", "catching"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_289",
+      "priority": 3,
+      "intensity": 4,
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "male_anal_play",
+        "question": {
+          "en": "Does receiving rimming (analingus) appeal?",
+          "ru": "Привлекает ли получать римминг (анилингус)?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "bedroom scene with woman performing rimming on man, he lies flat on his stomach with legs slightly parted exposing his ass, she kneels behind him face buried between his cheeks her tongue working circles around his hole, her hands spread his cheeks apart for better access, he grips pillow beneath his head face turned sideways mouth open moaning, her tongue flicks and probes his tight entrance, his back muscles tense with pleasure at this intimate stimulation, she alternates between broad flat licks and pointed probing, his hips involuntarily push back against her mouth wanting more, warm bedroom lighting intimate male receiving scene",
+      "user_description": {
+        "en": "A woman performs rimming on a man lying on his stomach, her tongue working on his hole.",
+        "ru": "Женщина делает римминг мужчине лежащему на животе, её язык работает на его дырке."
+      },
+      "ai_context": {
+        "description": "Female rimming male - she performs analingus on him as he lies on stomach, tongue circling and probing his hole",
+        "tests": {
+          "primary_kink": "male_rimming_receiving",
+          "secondary_kinks": ["analingus_male", "tongue_on_hole", "prone_receiving", "ass_worship_male"],
+          "power_dynamic": "she_gives_he_receives_anal",
+          "gender_role_aspect": "male_receiving_anal_pleasure"
+        },
+        "taboo_context": {
+          "level": 4,
+          "normalization": "Male rimming is increasingly normalized pleasure - nerve endings there exist regardless of gender, many men discover intense pleasure."
+        }
+      },
+      "participants": ["rimming_female", "receiving_male"],
+      "dimensions": ["rimming_male", "analingus", "tongue", "ass_worship"],
+      "tags": ["rimming", "male", "analingus", "tongue", "ass"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_291",
+      "priority": 4,
+      "intensity": 5,
+      "question_config": {
+        "type": "yes_maybe_no",
+        "topic_ref": "prostate",
+        "question": {
+          "en": "Does hands-free prostate orgasm appeal?",
+          "ru": "Привлекает ли оргазм простаты без рук?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "bedroom scene capturing man experiencing hands-free prostate orgasm, he lies on his back legs pulled up and spread while she kneels beside him fingers deep inside him massaging his prostate, his untouched cock standing hard and twitching as cum begins to pulse out without any stimulation on his shaft, the cum flowing out in rhythmic waves rather than shooting as his prostate releases, his face shows overwhelming sensation eyes rolled back mouth open in silent scream, her fingers clearly visible working inside him making the come gesture against his prostate, his whole body trembles and shakes with this intense internal orgasm, hands gripping sheets as waves crash through him, intimate lighting capturing this intense prostate-only release",
+      "user_description": {
+        "en": "A man experiences a hands-free prostate orgasm - he cums without his cock being touched, only from her prostate stimulation.",
+        "ru": "Мужчина испытывает оргазм простаты без рук - он кончает без прикосновения к члену, только от её стимуляции простаты."
+      },
+      "ai_context": {
+        "description": "Hands-free prostate orgasm - cumming from prostate stimulation alone without cock being touched, intense internal release",
+        "tests": {
+          "primary_kink": "hands_free_prostate_orgasm",
+          "secondary_kinks": ["prostate_only_cum", "no_cock_touch", "internal_release", "p_spot_mastery"],
+          "power_dynamic": "she_unlocks_internal_orgasm",
+          "gender_role_aspect": "male_internal_orgasm"
+        },
+        "taboo_context": {
+          "level": 4,
+          "normalization": "Hands-free prostate orgasm is described as most intense male orgasm possible - whole body waves compared to localized cock orgasm."
+        }
+      },
+      "participants": ["stimulating_female", "orgasming_male"],
+      "dimensions": ["prostate_orgasm", "hands_free", "no_touch", "intense"],
+      "tags": ["prostate", "orgasm", "hands_free", "intense", "no_touch"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_293",
+      "priority": 3,
+      "intensity": 4,
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "prostate",
+        "question": {
+          "en": "Interest in prostate toy/massager play?",
+          "ru": "Интерес к игрушкам/массажёрам для простаты?"
+        }
+      },
+      "generation_prompt": "bedroom scene showing woman using prostate massager on man, he lies on his back legs spread and pulled up exposing himself to her, curved prostate toy visible inserted inside him as she holds the base controlling depth and angle, she presses and rotates the toy finding his prostate making him gasp and squirm, his cock hard and twitching untouched reacting to the internal stimulation, she watches his reactions adjusting the toy to maximize his pleasure, his hands grip his own thighs holding himself open for her, face contorted in intense pleasure as she hits his spot repeatedly, she smiles enjoying the power of making him writhe with this toy, warm bedroom lighting intimate prostate play scene",
+      "user_description": {
+        "en": "A woman uses a curved prostate massager toy on a man, controlling depth and angle as he squirms.",
+        "ru": "Женщина использует изогнутый массажёр простаты на мужчине, контролируя глубину и угол пока он извивается."
+      },
+      "ai_context": {
+        "description": "Prostate toy play - she uses prostate massager on him, controlling angle and depth to hit his spot",
+        "tests": {
+          "primary_kink": "prostate_toy",
+          "secondary_kinks": ["massager_use", "toy_control", "angle_finding", "spot_hitting"],
+          "power_dynamic": "she_controls_his_toy",
+          "gender_role_aspect": "male_receiving_toy_play"
+        },
+        "taboo_context": {
+          "level": 3,
+          "normalization": "Prostate toys are designed specifically for male pleasure anatomy - curved shape hits the spot that fingers might miss."
+        }
+      },
+      "participants": ["using_toy_female", "receiving_male"],
+      "dimensions": ["prostate_toy", "massager", "control", "squirming"],
+      "tags": ["prostate", "toy", "massager", "control", "squirming"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_297",
+      "priority": 2,
+      "intensity": 3,
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "remote_toys",
+        "question": {
+          "en": "Does remote vibrator play in public appeal?",
+          "ru": "Привлекает ли игра с дистанционным вибратором в публичном месте?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "upscale restaurant scene with couple at dinner table, she sits across from him wearing elegant dress with remote controlled vibrator hidden inside her panties, he holds his phone under the table controlling the app with slight smirk, her voice catches mid-sentence as he increases intensity, she grips her wine glass tightly trying to maintain composure as vibrations surge, her cheeks flushed her breath catching mid-conversation, she shifts in her seat crossing and uncrossing legs as he increases intensity, the tablecloth hiding her squirming lower body, other diners visible in background unaware, she gives him a pleading look as the vibrations pulse, he casually takes a bite of food watching her struggle, restaurant ambient lighting",
+      "user_description": {
+        "en": "A woman wears a remote-controlled vibrator at a fancy restaurant while her partner controls it from his phone.",
+        "ru": "Женщина носит дистанционно управляемый вибратор в изысканном ресторане пока партнёр управляет им с телефона."
+      },
+      "ai_context": {
+        "description": "Remote vibrator public tease - app-controlled vibrator in restaurant, she struggles to maintain composure while he controls intensity",
+        "tests": {
+          "primary_kink": "remote_vibrator_public",
+          "secondary_kinks": ["app_control", "restaurant_tease", "public_secret", "composure_struggle"],
+          "power_dynamic": "he_controls_her_public_pleasure",
+          "gender_role_aspect": "female_secret_stimulation"
+        },
+        "taboo_context": {
+          "level": 2,
+          "normalization": "Remote vibrator dinner dates are popular couple activity - the secret shared adds exciting layer to normal outings."
+        }
+      },
+      "participants": ["controlling_male", "wearing_female"],
+      "dimensions": ["remote_vibe", "public", "restaurant", "app_control", "hiding"],
+      "tags": ["remote", "vibrator", "public", "restaurant", "app"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_298",
+      "priority": 3,
+      "intensity": 4,
+      "question_config": {
+        "type": "yes_maybe_no",
+        "topic_ref": "remote_toys",
+        "question": {
+          "en": "Does wearing remote prostate vibe in public appeal?",
+          "ru": "Привлекает ли носить дистанционный вибратор простаты в публичном месте?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "cocktail party scene with man in dress pants and shirt standing among other guests, she stands across the room in elegant dress phone in hand controlling his hidden prostate vibrator, he holds a drink trying desperately to maintain normal conversation while the toy pulses inside him, his stance slightly awkward legs pressed together, she watches him from distance with knowing smile adjusting intensity when he seems to relax, his face twitches trying to hide reactions from people around him, sweat visible on his brow as the vibrations intensify, he shoots her a look across the room begging for mercy, she just sips her drink and turns the dial up, party lighting ambient background noise",
+      "user_description": {
+        "en": "A man wears a remote-controlled prostate vibrator at a party while a woman controls it from across the room.",
+        "ru": "Мужчина носит дистанционно управляемый вибратор простаты на вечеринке пока женщина управляет им с другого конца комнаты."
+      },
+      "ai_context": {
+        "description": "Remote prostate vibe at party - she controls his hidden toy from across room while he tries to maintain composure",
+        "tests": {
+          "primary_kink": "male_remote_prostate_public",
+          "secondary_kinks": ["party_tease", "femdom_control", "public_prostate", "across_room"],
+          "power_dynamic": "she_controls_him_publicly",
+          "gender_role_aspect": "male_public_toy_receiver"
+        },
+        "taboo_context": {
+          "level": 4,
+          "normalization": "Male remote toy play at events is increasingly popular - the role reversal of him being secretly controlled adds exciting dimension."
+        }
+      },
+      "participants": ["controlling_female", "wearing_male"],
+      "dimensions": ["remote_prostate", "public", "party", "hiding", "tease"],
+      "tags": ["remote", "prostate", "public", "party", "tease"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_305",
+      "priority": 2,
+      "intensity": 3,
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "exhibitionism",
+        "question": {
+          "en": "Does going commando with intentional flash appeal?",
+          "ru": "Привлекает ли ходить без белья с намеренным показом?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "outdoor public scene with woman in short flirty summer dress intentionally showing she wears nothing underneath, she bends slightly or the wind catches her hem revealing bare ass or pussy to him who watches nearby, her hand pretends to fix her dress while actually lifting it higher giving him a clear view, mischievous smile on her face knowing the risk of being caught, he looks around nervously excited watching her bold display, the thrill of public exposure visible in her eyes, other people visible in background unaware of her secret flash, her bare skin visible under the lifted fabric, daytime outdoor lighting risky public setting",
+      "user_description": {
+        "en": "A woman in a short dress with nothing underneath flashes her partner in public when wind or bending reveals her.",
+        "ru": "Женщина в коротком платье без белья показывает партнёру в публичном месте когда ветер или наклон открывает её."
+      },
+      "ai_context": {
+        "description": "No panties public flash - short dress, nothing underneath, intentional reveal to partner in public setting",
+        "tests": {
+          "primary_kink": "no_panties_flash",
+          "secondary_kinks": ["public_exposure", "short_dress", "risky_reveal", "secret_show"],
+          "power_dynamic": "she_exposes_for_him",
+          "gender_role_aspect": "female_exhibitionist_tease"
+        },
+        "taboo_context": {
+          "level": 2,
+          "normalization": "Going commando with strategic flashing is playful exhibitionism - controlled risk that adds excitement to outings."
+        }
+      },
+      "participants": ["flashing_female", "watching_male"],
+      "dimensions": ["no_panties", "flash", "public", "short_dress", "risky"],
+      "tags": ["no_panties", "flash", "public", "dress", "risky"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_307",
+      "priority": 3,
+      "intensity": 3,
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "plug_wearing",
+        "question": {
+          "en": "Interest in wearing butt plug to events/public?",
+          "ru": "Интерес к ношению анальной пробки на мероприятиях/в публичных местах?"
+        }
+      },
+      "generation_prompt": "elegant dinner party or fancy restaurant scene with woman in stunning evening gown secretly wearing butt plug throughout, she sits down carefully adjusting to the plug inside her, slight shift in her expression as she settles in the chair feeling it press deeper, she makes small talk with dinner companions while hyper-aware of the toy filling her, crosses her legs carefully each movement shifting the plug, he sits nearby sharing knowing glances with her, she picks up her wine glass hand slightly trembling from the constant awareness, her secret invisible under the elegant gown only she knows, upscale ambient lighting fancy table setting",
+      "user_description": {
+        "en": "A woman wears a butt plug under her elegant gown at a fancy dinner party, constantly aware of it inside her.",
+        "ru": "Женщина носит анальную пробку под вечерним платьем на изысканном ужине, постоянно ощущая её внутри."
+      },
+      "ai_context": {
+        "description": "Formal event plug wearing - butt plug under elegant gown at fancy dinner, constant awareness throughout",
+        "tests": {
+          "primary_kink": "formal_plug_wearing",
+          "secondary_kinks": ["dinner_plug", "elegant_secret", "constant_awareness", "sitting_carefully"],
+          "power_dynamic": "secret_submission_in_formal",
+          "gender_role_aspect": "elegant_woman_secretly_filled"
+        },
+        "taboo_context": {
+          "level": 2,
+          "normalization": "Plug wearing at formal events is elegant secret - the contrast of fancy exterior and naughty secret adds frisson to any occasion."
+        }
+      },
+      "participants": ["wearing_female"],
+      "dimensions": ["plug_dinner", "fancy", "secret", "careful_sitting"],
+      "tags": ["butt_plug", "dinner", "fancy", "secret", "public"],
+      "relevant_for": {"gender": "any", "interested_in": "female"}
+    },
+    {
+      "id": "scene_312",
+      "priority": 3,
+      "intensity": 4,
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "public_play",
+        "question": {
+          "en": "Interest in sexual touch in semi-public places (theater, etc)?",
+          "ru": "Интерес к сексуальным прикосновениям в полу-публичных местах (кинотеатр и т.д.)?"
+        }
+      },
+      "generation_prompt": "dark movie theater scene with couple in seats his hand hidden under her skirt in the darkness, she wears no panties his fingers directly on her wet pussy, movie screen provides only light illuminating their faces in the dark row, she bites lip staring at screen trying not to react visibly as his fingers work her, her hand grips the armrest other moviegoers visible in nearby seats oblivious, his hand moves rhythmically under her skirt fingering her slowly, she spreads her legs slightly wider giving him better access while staying discreet, the movie audio covers any wet sounds, her breath quickens trying to stay quiet as he brings her close, dark theater ambient movie glow",
+      "user_description": {
+        "en": "A man fingers a woman under her skirt in a dark movie theater, other moviegoers nearby oblivious.",
+        "ru": "Мужчина ласкает женщину пальцами под юбкой в тёмном кинотеатре, другие зрители рядом ничего не замечают."
+      },
+      "ai_context": {
+        "description": "Movie theater fingering - his hand under her skirt in dark theater, no panties, other moviegoers nearby oblivious",
+        "tests": {
+          "primary_kink": "theater_fingering",
+          "secondary_kinks": ["dark_play", "no_panties_access", "public_fingering", "staying_quiet"],
+          "power_dynamic": "he_controls_in_darkness",
+          "gender_role_aspect": "public_discreet_pleasure"
+        },
+        "taboo_context": {
+          "level": 3,
+          "normalization": "Movie theater play is classic public sexuality - the darkness provides cover while proximity to others adds excitement."
+        }
+      },
+      "participants": ["fingering_male", "receiving_female"],
+      "dimensions": ["movie_theater", "no_panties", "dark", "fingering", "discreet"],
+      "tags": ["movie", "theater", "no_panties", "fingering", "dark"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_313",
+      "priority": 4,
+      "intensity": 4,
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "chastity",
+        "question": {
+          "en": "Does male chastity cage appeal?",
+          "ru": "Привлекает ли мужская клетка целомудрия?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "bedroom scene with man wearing metal chastity cage on his cock clearly visible locked and secure, woman dangles the small key between her fingers tauntingly, his cock strains against the cage trying to get hard but constrained by the device, he looks at her desperately hands clasped pleading for release, she smiles cruelly waving the key just out of reach, the lock visible on the cage showing he cannot free himself, he's on his knees before her begging while she stands over him with power, his balls hanging below the cage full and aching, she traces a finger along the cage making him whimper, warm bedroom lighting power exchange visible",
+      "user_description": {
+        "en": "A man is locked in a chastity cage while a woman holds the key, he begs for release but she teases him.",
+        "ru": "Мужчина заперт в клетке целомудрия пока женщина держит ключ, он умоляет об освобождении но она дразнит его."
+      },
+      "ai_context": {
+        "description": "Male chastity cage - locked device preventing erection, she holds key, he begs for release, keyholder power dynamic",
+        "tests": {
+          "primary_kink": "male_chastity_cage",
+          "secondary_kinks": ["keyholder", "locked_denial", "begging", "device_control"],
+          "power_dynamic": "she_holds_key_to_his_pleasure",
+          "gender_role_aspect": "male_pleasure_controlled"
+        },
+        "taboo_context": {
+          "level": 4,
+          "normalization": "Male chastity is increasingly popular power exchange - the device makes denial concrete and the key meaningful."
+        }
+      },
+      "participants": ["keyholder_female", "locked_male"],
+      "dimensions": ["chastity_cage", "locked", "key", "denial", "begging"],
+      "tags": ["chastity", "cage", "key", "locked", "denial"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_315",
+      "priority": 3,
+      "intensity": 4,
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "chastity",
+        "question": {
+          "en": "Interest in the chastity release moment after denial?",
+          "ru": "Интерес к моменту освобождения после периода отказа?"
+        }
+      },
+      "generation_prompt": "bedroom scene capturing the moment of chastity release after extended denial, she turns the key in his cage lock clicking it open, he gasps as the cage comes off his cock immediately swelling to full hardness for first time in days or weeks, the sensation of freedom overwhelming him making him moan, she gently touches his newly freed cock and he shudders violently at first contact, his cock hyper-sensitive from denial twitching at the slightest touch, tears of relief in his eyes from the intensity of finally being free, she strokes him once and he nearly cums immediately, the removed cage visible nearby, the overwhelming sensation of first touch after denial captured, intimate bedroom lighting",
+      "user_description": {
+        "en": "A woman unlocks a man's chastity cage after days of denial - he nearly cums from the first touch due to overwhelming sensitivity.",
+        "ru": "Женщина открывает клетку целомудрия мужчины после дней отказа - он почти кончает от первого прикосновения из-за переполняющей чувствительности."
+      },
+      "ai_context": {
+        "description": "Chastity release moment - cage unlocked after extended denial, overwhelming sensitivity, nearly orgasms from first touch",
+        "tests": {
+          "primary_kink": "chastity_release",
+          "secondary_kinks": ["unlocking_moment", "hypersensitivity", "denial_payoff", "overwhelming_freedom"],
+          "power_dynamic": "she_grants_freedom",
+          "gender_role_aspect": "release_reward"
+        },
+        "taboo_context": {
+          "level": 3,
+          "normalization": "Chastity release is the payoff - the hypersensitivity after denial makes even light touch overwhelming in the best way."
+        }
+      },
+      "participants": ["unlocking_female", "released_male"],
+      "dimensions": ["unlocking", "release", "overwhelming", "relief", "first_touch"],
+      "tags": ["chastity", "unlocking", "release", "relief", "overwhelming"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_317",
+      "priority": 5,
+      "intensity": 5,
+      "question_config": {
+        "type": "yes_maybe_no",
+        "topic_ref": "chastity",
+        "question": {
+          "en": "Does orgasming while still caged (prostate orgasm) appeal?",
+          "ru": "Привлекает ли оргазм в клетке (оргазм простаты)?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "bedroom scene with man in chastity cage being pegged by woman with strapon, he's on all fours or on back as she thrusts into his ass with the dildo, his caged cock hangs limp but suddenly begins leaking cum in a continuous flow, prostate orgasm triggered by her strapon hitting his spot, cum drips out of his cage without full erection an unusual hands-free release, his face shows overwhelming sensation as he cums while still locked, she keeps fucking him through his prostate orgasm milking more out, the cage fills with his cum as it has nowhere else to go, his body shakes as she unlocks the deepest pleasure while keeping him denied, strapon visible thrusting warm lighting",
+      "user_description": {
+        "en": "A woman pegs a man while he's still in his chastity cage - he cums from prostate stimulation without an erection.",
+        "ru": "Женщина пегает мужчину пока он ещё в клетке целомудрия - он кончает от стимуляции простаты без эрекции."
+      },
+      "ai_context": {
+        "description": "Caged prostate orgasm during pegging - cum drips out without erection while locked, she pegs him to prostate orgasm",
+        "tests": {
+          "primary_kink": "caged_prostate_orgasm",
+          "secondary_kinks": ["pegging_locked", "dripping_cum", "no_erection_orgasm", "chastity_pegging"],
+          "power_dynamic": "she_unlocks_prostate_keeps_cage",
+          "gender_role_aspect": "male_internal_orgasm_only"
+        },
+        "taboo_context": {
+          "level": 5,
+          "normalization": "Prostate orgasm while caged represents advanced play - the ability to cum internally while denied externally is unique experience."
+        }
+      },
+      "participants": ["fucking_female", "locked_fucked_male"],
+      "dimensions": ["chastity_pegging", "cage_orgasm", "prostate", "no_erection"],
+      "tags": ["chastity", "pegging", "cage", "prostate", "orgasm"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_319",
+      "priority": 3,
+      "intensity": 3,
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "pet_play",
+        "question": {
+          "en": "Does puppy play appeal?",
+          "ru": "Привлекает ли паппи плей (игра в щенка)?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "living room or bedroom scene with woman in puppy play headspace wearing leather collar with tag and cute puppy ear headband, she's on all fours looking up at him with eager happy expression tongue out panting, he stands over her as her owner commanding her to sit or stay, she wears just the collar and ears otherwise naked or in minimal clothing, her ass up tail plug visible wagging, she nuzzles against his leg seeking pets and praise, he reaches down to scratch behind her ear and she melts with happiness, her body language fully embracing the puppy role playful and obedient, warm cozy room lighting pet play atmosphere",
+      "user_description": {
+        "en": "A woman in puppy play mode wears a collar and ears, on all fours panting and responding to his commands while seeking pets and praise.",
+        "ru": "Женщина в режиме паппи плей носит ошейник и ушки, на четвереньках тяжело дыша и выполняя его команды, ища поглаживаний и похвалы."
+      },
+      "ai_context": {
+        "description": "Female puppy play - collar, ears, tail plug, on all fours responding to commands, seeking pets and praise",
+        "tests": {
+          "primary_kink": "female_puppy_play",
+          "secondary_kinks": ["collar_ears", "commands", "tail_plug", "pets_praise"],
+          "power_dynamic": "owner_pet",
+          "gender_role_aspect": "female_pet_role"
+        },
+        "taboo_context": {
+          "level": 3,
+          "normalization": "Puppy play is popular pet play - the playful energy and simple commands create freeing headspace for many."
+        }
+      },
+      "participants": ["owner_male", "puppy_female"],
+      "dimensions": ["puppy_play", "collar", "ears", "commands", "all_fours"],
+      "tags": ["puppy", "pet_play", "collar", "ears", "commands"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_320",
+      "priority": 3,
+      "intensity": 3,
+      "question_config": {
+        "type": "what_appeals",
+        "question": {
+          "en": "Which pet play role appeals?",
+          "ru": "Какая роль в пет плей привлекает?"
+        },
+        "context_options": [
+          {"id": "pet", "label": {"en": "Being the pet", "ru": "Быть питомцем"}},
+          {"id": "owner", "label": {"en": "Being the owner", "ru": "Быть хозяином"}},
+          {"id": "switch", "label": {"en": "Both/switch", "ru": "Оба/свитч"}},
+          {"id": "not_interested", "label": {"en": "Not interested", "ru": "Не интересует"}}
+        ]
+      },
+      "generation_prompt": "living room scene with man in puppy play role wearing leather collar with leash attached and optional puppy ear headband, he's on all fours at her feet fetching a toy she threw bringing it back in his mouth, she sits on couch or chair holding his leash in one hand, he drops the toy at her feet looking up eagerly waiting for praise, she reaches down to pet his head scratching behind his ears as reward good boy, he wears only the collar and optional knee pads otherwise naked, his expression shows happiness at pleasing his owner, tail plug visible wagging with his movements, she commands him to come or stay and he obeys immediately, warm room lighting male submission pet play",
+      "user_description": {
+        "en": "A man in puppy play fetches toys and obeys commands from a woman holding his leash, earning pets and 'good boy' praise as reward.",
+        "ru": "Мужчина в паппи плей приносит игрушки и слушается команды женщины, держащей его поводок, получая поглаживания и похвалу 'хороший мальчик' как награду."
+      },
+      "ai_context": {
+        "description": "Male puppy play - he fetches and obeys her commands, collar and leash, pets and praise as reward",
+        "tests": {
+          "primary_kink": "male_puppy_play",
+          "secondary_kinks": ["fetch_obey", "leash_control", "good_boy_praise", "male_pet"],
+          "power_dynamic": "female_owner_male_pet",
+          "gender_role_aspect": "male_pet_role"
+        },
+        "taboo_context": {
+          "level": 3,
+          "normalization": "Male puppy play is valid submission expression - the headspace is freeing and the dynamic playful."
+        }
+      },
+      "participants": ["owner_female", "puppy_male"],
+      "dimensions": ["male_puppy", "owner", "fetch", "reward", "petting"],
+      "tags": ["puppy", "male", "pet_play", "collar", "leash"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_321",
+      "priority": 3,
+      "intensity": 2,
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "pet_play",
+        "question": {
+          "en": "Interest in kitten play specifically?",
+          "ru": "Интерес конкретно к киттен плей (игра в кошечку)?"
+        }
+      },
+      "generation_prompt": "cozy room scene with woman in kitten play wearing cute cat ear headband and collar with small bell that jingles when she moves, she rubs her head and body against his leg like a cat seeking affection, her movements graceful and feline arching her back stretching, she meows softly looking up at him with big eyes wanting attention, he reaches down to pet her and she purrs leaning into his touch, she's on all fours or curled up at his feet in minimal clothing or lingerie, cat tail butt plug visible swishing, her playful kitten energy mixed with seductive cat-like grace, she bats at something playfully before returning to rub against him, soft warm lighting cute but sensual kitten play",
+      "user_description": {
+        "en": "A woman in kitten play wears cat ears and a bell collar, meowing softly and rubbing against him with graceful feline movements.",
+        "ru": "Женщина в киттен плей носит кошачьи ушки и ошейник с колокольчиком, тихо мяукая и грациозно трясь об него."
+      },
+      "ai_context": {
+        "description": "Kitten play - cat ears, bell collar, graceful feline movements, meowing and rubbing against him, seeking attention",
+        "tests": {
+          "primary_kink": "kitten_play",
+          "secondary_kinks": ["cat_ears_bell", "graceful_feline", "meowing", "rubbing_affection"],
+          "power_dynamic": "owner_kitten",
+          "gender_role_aspect": "female_kitten_role"
+        },
+        "taboo_context": {
+          "level": 2,
+          "normalization": "Kitten play offers more graceful, sensual alternative to puppy - the feline energy is different but equally valid pet headspace."
+        }
+      },
+      "participants": ["owner_male", "kitten_female"],
+      "dimensions": ["kitten_play", "cat_ears", "bell", "meowing", "rubbing"],
+      "tags": ["kitten", "cat", "pet_play", "ears", "bell"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_322",
+      "priority": 4,
+      "intensity": 4,
+      "question_config": {
+        "type": "yes_maybe_no",
+        "topic_ref": "pet_play",
+        "question": {
+          "en": "Does pet bowl feeding degradation appeal?",
+          "ru": "Привлекает ли кормление из миски как унижение питомца?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "kitchen floor scene with woman on all fours wearing collar eating or drinking from metal dog bowl on the floor, her face down in the bowl lapping up contents like a pet, he stands or sits nearby watching her degradation with satisfaction, she's naked except for collar fully committed to her pet role, her ass raised as she bends to reach the bowl, bowl has her name written on it marking her as his pet, she looks up at him between bites seeking approval face messy from eating, the humiliation and submission visible in her position, he may pat her head praising good girl, cold kitchen floor beneath her knees, harsh lighting emphasizing the degrading nature",
+      "user_description": {
+        "en": "A woman in pet play eats from a dog bowl on the floor while wearing only a collar, with a man watching and praising her.",
+        "ru": "Женщина в пет плей ест из собачьей миски на полу, надев только ошейник, пока мужчина наблюдает и хвалит её."
+      },
+      "ai_context": {
+        "description": "Bowl feeding degradation - eating from dog bowl on floor like pet, watched by owner, humiliation element",
+        "tests": {
+          "primary_kink": "bowl_feeding_degradation",
+          "secondary_kinks": ["floor_eating", "pet_humiliation", "watched_degradation", "good_girl"],
+          "power_dynamic": "degrading_pet_treatment",
+          "gender_role_aspect": "female_degraded_pet"
+        },
+        "taboo_context": {
+          "level": 4,
+          "normalization": "Bowl feeding is intense pet play - combines degradation and pet treatment for those who find freedom in extreme submission."
+        }
+      },
+      "participants": ["watching_male", "eating_female"],
+      "dimensions": ["bowl_feeding", "floor", "degradation", "pet_play"],
+      "tags": ["bowl", "feeding", "floor", "pet_play", "degradation"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_323",
+      "priority": 4,
+      "intensity": 4,
+      "question_config": {
+        "type": "yes_maybe_no",
+        "topic_ref": "pet_play",
+        "question": {
+          "en": "Does elaborate pony play with gear appeal?",
+          "ru": "Привлекает ли пони плей с экипировкой?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "outdoor stable or indoor play space scene with woman in full pony play gear, she wears leather harness across chest bit gag in mouth with reins attached, large fluffy tail plug visible from behind, optional hoof boots on feet, she stands proud in pony posture head held high despite the gag, he holds the reins leading her in a walk making her prance and trot, her legs lift high in trained pony gait, she follows his commands turning where he directs, optional blinders limiting her vision, he uses crop to tap her flank making her move, sweat glistening on her body from the exertion of pony training, stable or dungeon lighting authentic pony play scene",
+      "user_description": {
+        "en": "A woman in full pony play gear with bit gag, reins and tail plug prances and trots as a man leads her with a crop.",
+        "ru": "Женщина в полной экипировке для пони плей с кляпом-удилами, поводьями и пробкой-хвостом выступает и бежит рысью, пока мужчина ведёт её стеком."
+      },
+      "ai_context": {
+        "description": "Pony play - full gear with bit gag, reins, tail plug, prancing/trotting, trainer leads with crop",
+        "tests": {
+          "primary_kink": "pony_play",
+          "secondary_kinks": ["bit_gag_reins", "pony_training", "tail_plug", "crop_direction"],
+          "power_dynamic": "trainer_pony",
+          "gender_role_aspect": "female_pony_role"
+        },
+        "taboo_context": {
+          "level": 4,
+          "normalization": "Pony play is elaborate but deeply satisfying for enthusiasts - the gear and training create unique headspace."
+        }
+      },
+      "participants": ["trainer_male", "pony_female"],
+      "dimensions": ["pony_play", "bit_gag", "tail", "reins", "training"],
+      "tags": ["pony", "play", "bit", "tail", "reins"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_324",
+      "priority": 4,
+      "intensity": 4,
+      "question_config": {
+        "type": "yes_maybe_no",
+        "topic_ref": "pet_play",
+        "question": {
+          "en": "Does sleeping in a cage as pet appeal?",
+          "ru": "Привлекает ли спать в клетке как питомец?"
+        },
+        "show_experience": true
+      },
+      "generation_prompt": "bedroom corner scene with large metal dog crate containing woman curled up inside for the night, she wears just her collar curled in fetal position on soft blanket inside the cage, he crouches beside the cage sliding the lock closed for the night, she looks up at him through the bars accepting her pet status, the cage door clearly locked with padlock keeping her contained, she has water bowl and small pillow inside her enclosure, the intimacy of being caged by her owner visible in her peaceful expression, he reaches through bars to give her final goodnight pet, she settles in accepting her sleeping place, dim bedroom nighttime lighting intimate cage sleep scene",
+      "user_description": {
+        "en": "A woman curls up inside a large dog cage for the night while a man locks the door, keeping her contained as his pet.",
+        "ru": "Женщина сворачивается калачиком в большой собачьей клетке на ночь, пока мужчина запирает дверь, содержа её как своего питомца."
+      },
+      "ai_context": {
+        "description": "Cage sleeping - locked in large dog cage for the night, pet enclosure, accepting confinement",
+        "tests": {
+          "primary_kink": "cage_sleeping",
+          "secondary_kinks": ["locked_overnight", "pet_enclosure", "containment", "accepting_place"],
+          "power_dynamic": "he_contains_her",
+          "gender_role_aspect": "female_caged_pet"
+        },
+        "taboo_context": {
+          "level": 4,
+          "normalization": "Cage sleeping is intense pet play expression - for those who enjoy it, confinement feels secure rather than scary."
+        }
+      },
+      "participants": ["locking_male", "caged_female"],
+      "dimensions": ["cage_sleeping", "locked", "dog_cage", "night"],
+      "tags": ["cage", "sleeping", "pet_play", "locked", "night"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_327",
+      "priority": 2,
+      "intensity": 4,
+      "question_config": {
+        "type": "scale",
+        "question": {
+          "en": "Interest in angry/aggressive sex (fight to fuck)?",
+          "ru": "Интерес к злому/агрессивному сексу (от ссоры к сексу)?"
+        }
+      },
+      "generation_prompt": "living room scene with couple mid-argument suddenly grabbing each other aggressively, their fight turning to furious passionate fucking, he slams her against the wall one hand gripping her jaw the other tearing at her shirt buttons scattering, she claws at his back pulling him closer even as she yells at him, clothes being torn and pulled aside rather than removed properly, her skirt hiked up panties ripped aside as he enters her hard still angry, she wraps leg around him pulling deeper scratching his shoulders, both faces showing anger mixed with desperate lust channeling aggression into rough sex, marks and scratches visible on skin, against wall aggressive passionate scene",
+      "user_description": {
+        "en": "A man and woman turn their argument into rough passionate sex, slamming against the wall with clothes being torn off.",
+        "ru": "Мужчина и женщина превращают ссору в грубый страстный секс, прижимая друг друга к стене и срывая одежду."
+      },
+      "ai_context": {
+        "description": "Angry sex - argument turns to passionate rough fucking, aggression channeled into physical intensity",
+        "tests": {
+          "primary_kink": "angry_sex",
+          "secondary_kinks": ["fight_to_fuck", "aggression_passion", "torn_clothes", "wall_sex"],
+          "power_dynamic": "mutual_aggressive",
+          "gender_role_aspect": "mutual_aggression_passion"
+        },
+        "taboo_context": {
+          "level": 2,
+          "normalization": "Angry sex channels intense emotions into physical passion - for some couples it's powerful release and reconnection."
+        }
+      },
+      "participants": ["angry_male", "angry_female"],
+      "dimensions": ["angry_sex", "fighting", "rough", "aggression", "torn_clothes"],
+      "tags": ["angry", "fighting", "rough", "aggression", "passionate"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_328",
+      "priority": 1,
+      "intensity": 2,
+      "question_config": {
+        "type": "scale",
+        "question": {
+          "en": "Interest in tender makeup sex after arguments?",
+          "ru": "Интерес к нежному примирительному сексу после ссор?"
+        }
+      },
+      "generation_prompt": "bedroom scene with couple in tender aftermath of argument making love slowly and gently, tear tracks still visible on her cheeks as he kisses them away, his forehead pressed to hers whispering apologies between soft kisses, their bodies pressed together in missionary him moving slowly inside her, her arms wrapped around his neck holding him close needing the closeness, his hand cups her face thumb wiping away last tear as they reconnect physically and emotionally, gentle slow thrusts focused on intimacy not intensity, eye contact constant as they heal through tender lovemaking, soft bedroom lighting emotional reconnection scene",
+      "user_description": {
+        "en": "A man and woman make slow tender love after an argument, wiping away tears and whispering apologies between gentle kisses.",
+        "ru": "Мужчина и женщина медленно и нежно занимаются любовью после ссоры, вытирая слёзы и шепча извинения между нежными поцелуями."
+      },
+      "ai_context": {
+        "description": "Makeup sex - tender reconnection after argument, emotional healing through gentle intimate lovemaking",
+        "tests": {
+          "primary_kink": "makeup_sex",
+          "secondary_kinks": ["tender_after_fight", "emotional_healing", "slow_reconnection", "tear_wiping"],
+          "power_dynamic": "mutual_healing",
+          "gender_role_aspect": "emotional_reconnection"
+        },
+        "taboo_context": {
+          "level": 1,
+          "normalization": "Makeup sex is valid reconnection - physical intimacy can help couples reconnect emotionally after conflict."
+        }
+      },
+      "participants": ["reconnecting_male", "reconnecting_female"],
+      "dimensions": ["makeup_sex", "tender", "sorry", "reconnection", "emotional"],
+      "tags": ["makeup", "tender", "apologetic", "reconnection", "gentle"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_330",
+      "priority": 2,
+      "intensity": 4,
+      "question_config": {
+        "type": "scale",
+        "question": {
+          "en": "Interest in desperate reunion sex after separation?",
+          "ru": "Интерес к отчаянному сексу при воссоединении после разлуки?"
+        }
+      },
+      "generation_prompt": "entrance hallway scene with couple reuniting after months apart, suitcase dropped forgotten at door as they grab each other desperately, kissing frantically hands everywhere at once trying to touch everything they've missed, clothes pulled off urgently scattered from door to bedroom trail of garments, she jumps up wrapping legs around him as he carries her, both talking over each other missed you so much between desperate kisses, he pins her to nearest surface unable to wait for bedroom, entering her immediately both crying out at finally being connected again, pace urgent almost frantic making up for lost time, her nails dig into his back holding on tight, desperate passionate reunion scene",
+      "user_description": {
+        "en": "A couple reunites after months apart, grabbing each other desperately at the door and can't wait to reach the bedroom.",
+        "ru": "Пара воссоединяется после месяцев разлуки, отчаянно хватая друг друга у двери и не в силах дождаться спальни."
+      },
+      "ai_context": {
+        "description": "Reunion sex - desperate reconnection after long separation, frantic passion making up for lost time",
+        "tests": {
+          "primary_kink": "reunion_sex",
+          "secondary_kinks": ["separation_buildup", "desperate_reconnection", "cant_wait", "frantic_passion"],
+          "power_dynamic": "mutual_desperate_need",
+          "gender_role_aspect": "mutual_longing_fulfilled"
+        },
+        "taboo_context": {
+          "level": 1,
+          "normalization": "Reunion sex is powerful reconnection - the buildup of absence makes the coming together intensely passionate."
+        }
+      },
+      "participants": ["reuniting_male", "reuniting_female"],
+      "dimensions": ["reunion", "desperate", "separation", "finally", "need"],
+      "tags": ["reunion", "desperate", "separation", "need", "finally"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_331",
+      "priority": 3,
+      "intensity": 3,
+      "question_config": {
+        "type": "scale",
+        "question": {
+          "en": "Interest in anonymous one-night stand encounters?",
+          "ru": "Интерес к анонимным встречам на одну ночь?"
+        }
+      },
+      "generation_prompt": "anonymous hotel room scene with two strangers who met at bar hours ago, still learning each other's bodies no emotional baggage just pure physical attraction, she's in matching underwear she wore hoping for this he still in unbuttoned shirt pants around ankles too eager to fully undress, hotel room generic impersonal just a bed for strangers to use, names exchanged might be real might be fake doesn't matter, pure chemistry driving them together mouths and hands exploring new territory, she pulls him onto the hotel bed spreading for him no shyness with a stranger, raw anonymous passion no expectations no complications, hotel room ambient lighting one night stand scene",
+      "user_description": {
+        "en": "Two strangers who met at a bar have anonymous sex in a hotel room, pure physical attraction with no strings attached.",
+        "ru": "Двое незнакомцев, встретившихся в баре, занимаются анонимным сексом в номере отеля, чистое физическое влечение без обязательств."
+      },
+      "ai_context": {
+        "description": "One night stand with stranger - anonymous hotel encounter, pure physical attraction without emotional attachment",
+        "tests": {
+          "primary_kink": "anonymous_sex",
+          "secondary_kinks": ["stranger_encounter", "no_strings", "physical_only", "hotel_hookup"],
+          "power_dynamic": "equal_strangers",
+          "gender_role_aspect": "mutual_use"
+        },
+        "taboo_context": {
+          "level": 2,
+          "normalization": "One night stands between consenting adults can be fun, liberating experiences - pure physical connection without obligation."
+        }
+      },
+      "participants": ["stranger_male", "stranger_female"],
+      "dimensions": ["one_night", "strangers", "hotel", "no_strings", "physical"],
+      "tags": ["one_night", "strangers", "bar", "hotel", "no_strings"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_332",
+      "priority": 3,
+      "intensity": 3,
+      "question_config": {
+        "type": "yes_maybe_no",
+        "question": {
+          "en": "Does forbidden affair fantasy appeal?",
+          "ru": "Привлекает ли фантазия о запретной связи?"
+        }
+      },
+      "generation_prompt": "scene capturing forbidden affair between two people who shouldn't be together, stolen moment in private space knowing they don't have long, clothes half-removed quickly urgently no time for proper undressing, she checks phone nervously before pulling him close needing this despite the risk, hushed voices and stifled moans staying quiet, the thrill of the forbidden visible in their desperate clutching, his hand over her mouth as she comes keeping her quiet, guilt and desire mixing in their expressions but unable to stop, rushed frantic coupling maximizing their stolen time, looking at watches knowing separation comes soon, secret illicit scene",
+      "user_description": {
+        "en": "Two people who shouldn't be together share stolen moments in a forbidden affair, staying hushed and hidden.",
+        "ru": "Двое людей, которым не следует быть вместе, делят украденные моменты в запретной связи, оставаясь тихими и скрытными."
+      },
+      "ai_context": {
+        "description": "Forbidden affair - stolen moments between people who shouldn't be together, thrill of secrecy and risk",
+        "tests": {
+          "primary_kink": "forbidden_affair",
+          "secondary_kinks": ["secrecy_thrill", "stolen_moments", "illicit_passion", "risk_excitement"],
+          "power_dynamic": "mutual_forbidden",
+          "gender_role_aspect": "shared_secret"
+        },
+        "taboo_context": {
+          "level": 4,
+          "normalization": "As fantasy, forbidden affair explores the psychology of taboo attraction - the thrill of what's off-limits."
+        }
+      },
+      "participants": ["forbidden_male", "forbidden_female"],
+      "dimensions": ["affair", "forbidden", "stolen", "illicit", "sneaking"],
+      "tags": ["affair", "forbidden", "sneaking", "illicit", "stolen"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_335",
+      "priority": 2,
+      "intensity": 2,
+      "question_config": {
+        "type": "scale",
+        "question": {
+          "en": "Interest in comfort sex when sad or needing support?",
+          "ru": "Интерес к утешающему сексу когда грустно или нужна поддержка?"
+        }
+      },
+      "generation_prompt": "bedroom scene with her seeking comfort through physical closeness after a hard day, she's been crying her eyes still red as she reaches for him needing to feel connected, he holds her first just holding then gentle kisses on her forehead temples cheeks, slowly undressing her with tender care each piece of clothing removed with soft kisses, she clings to him needing his warmth his presence his body against hers, he enters her slowly gently this isn't about passion it's about comfort, steady slow rhythm his body surrounding hers protectively, she buries her face in his neck feeling safe and held, whispered reassurances between gentle thrusts making her feel loved, soft lighting emotional comfort scene",
+      "user_description": {
+        "en": "A man makes gentle, tender love to a woman who is sad and needs to feel held and comforted.",
+        "ru": "Мужчина нежно и ласково занимается любовью с женщиной, которой грустно и нужно чувствовать себя защищённой и утешенной."
+      },
+      "ai_context": {
+        "description": "Comfort sex - tender physical closeness when emotionally needing support and reassurance",
+        "tests": {
+          "primary_kink": "comfort_sex",
+          "secondary_kinks": ["emotional_support", "tender_care", "protective_closeness", "reassurance"],
+          "power_dynamic": "protective_caring",
+          "gender_role_aspect": "nurturer_supported"
+        },
+        "taboo_context": {
+          "level": 1,
+          "normalization": "Comfort sex is beautiful expression of intimacy - using physical closeness to provide emotional support and reassurance."
+        }
+      },
+      "participants": ["comforting_male", "needing_female"],
+      "dimensions": ["comfort_sex", "sad", "tender", "emotional", "support"],
+      "tags": ["comfort", "sad", "tender", "emotional", "support"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_337",
+      "priority": 3,
+      "intensity": 3,
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "femdom",
+        "question": {
+          "en": "Interest in amazon position (role-reversal, her dominant)?",
+          "ru": "Интерес к позе амазонки (обмен ролями, она доминирует)?"
+        }
+      },
+      "generation_prompt": "bedroom scene with amazon position role reversal, he lies on his back with legs pulled up and apart like a woman would be positioned, she squats over him facing his feet or face depending on variant, her strong thighs doing the work as she bounces on his cock from above, his legs held up by her or resting on her shoulders completely reversing typical dynamics, she controls depth speed and angle while he's in vulnerable receiving posture, her hands grip his thighs or ankles keeping his legs spread, dominant expression on her face as she takes what she wants, his face shows vulnerability and pleasure at being taken, athletic female dominant amazon position",
+      "user_description": {
+        "en": "A woman in the amazon position squats over a man with his legs up, thrusting down into him in a role-reversal pose.",
+        "ru": "Женщина в позиции амазонки приседает над мужчиной с поднятыми ногами, двигаясь в него в позе с обратными ролями."
+      },
+      "ai_context": {
+        "description": "Amazon position - female dominant role reversal with his legs up and her thrusting down",
+        "tests": {
+          "primary_kink": "amazon_position",
+          "secondary_kinks": ["female_dominant", "male_receiving", "role_reversal", "legs_up_male"],
+          "power_dynamic": "female_dominant",
+          "gender_role_aspect": "reversed_positions"
+        },
+        "taboo_context": {
+          "level": 2,
+          "normalization": "Amazon position is athletic role reversal - both partners can enjoy the shifted power dynamics and unique sensations."
+        }
+      },
+      "participants": ["receiving_male", "dominant_female"],
+      "dimensions": ["amazon", "legs_up", "female_dominant", "role_reversal"],
+      "tags": ["amazon", "position", "legs_up", "dominant", "reversal"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_338",
+      "priority": 2,
+      "intensity": 3,
+      "question_config": {
+        "type": "scale",
+        "question": {
+          "en": "Interest in deep penetration positions (legs on shoulders)?",
+          "ru": "Интерес к позам для глубокого проникновения (ноги на плечах)?"
+        }
+      },
+      "generation_prompt": "bedroom scene with her legs on his shoulders position for maximum depth, she lies on her back as he kneels before her lifting her legs onto his shoulders her ankles near his ears, her body folded nearly in half allowing deepest possible penetration angle, he leans forward pressing her legs back further as he thrusts down into her, her hands grip the sheets or his forearms for stability, face showing intensity of the deep angle hitting spots normally unreached, he watches her reactions adjusting angle for maximum depth, her flexibility on display as she takes him as deep as possible, athletic deep penetration position scene",
+      "user_description": {
+        "en": "A man has sex with a woman in legs-on-shoulders position, her ankles by his ears for maximum depth penetration.",
+        "ru": "Мужчина занимается сексом с женщиной в позиции ноги на плечах, её лодыжки у его ушей для максимально глубокого проникновения."
+      },
+      "ai_context": {
+        "description": "Legs on shoulders - deep penetration position with maximum depth and intensity",
+        "tests": {
+          "primary_kink": "legs_on_shoulders",
+          "secondary_kinks": ["deep_penetration", "folded_position", "intensity_lovers", "depth_seekers"],
+          "power_dynamic": "he_controls_depth",
+          "gender_role_aspect": "she_receives_deep"
+        },
+        "taboo_context": {
+          "level": 1,
+          "normalization": "Legs on shoulders is classic deep penetration position - the angle allows maximum depth for intense sensation."
+        }
+      },
+      "participants": ["thrusting_male", "folded_female"],
+      "dimensions": ["legs_shoulders", "ankles_ears", "deep", "folded"],
+      "tags": ["legs", "shoulders", "deep", "folded", "ankles"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_340",
+      "priority": 2,
+      "intensity": 3,
+      "question_config": {
+        "type": "scale",
+        "question": {
+          "en": "Interest in spontaneous furniture/location sex?",
+          "ru": "Интерес к спонтанному сексу на мебели/в разных местах?"
+        }
+      },
+      "generation_prompt": "living room scene with her bent over the armrest of the couch, she's draped across the padded arm her torso resting on seat cushions ass elevated at perfect height, skirt flipped up or pants pulled down just enough for access, he stands behind her the armrest positioning her at ideal height no adjustment needed, his hands grip her hips pulling her back onto him with each thrust, she grips the couch cushions face pressed into the seat, the spontaneous nature of using furniture as they found it, her feet might not quite touch the floor dangling slightly, convenient height furniture sex in the living room",
+      "user_description": {
+        "en": "A woman bends over the couch armrest while a man takes her from behind, using the furniture for spontaneous living room sex.",
+        "ru": "Женщина перегибается через подлокотник дивана, пока мужчина берёт её сзади, используя мебель для спонтанного секса в гостиной."
+      },
+      "ai_context": {
+        "description": "Bent over couch arm - spontaneous furniture sex with perfect height armrest positioning",
+        "tests": {
+          "primary_kink": "furniture_sex",
+          "secondary_kinks": ["bent_over", "spontaneous_location", "couch_use", "living_room_sex"],
+          "power_dynamic": "he_behind_in_control",
+          "gender_role_aspect": "she_bent_receiving"
+        },
+        "taboo_context": {
+          "level": 1,
+          "normalization": "Furniture sex is wonderfully spontaneous - using convenient surfaces adds variety and excitement to intimacy."
+        }
+      },
+      "participants": ["behind_male", "bent_female"],
+      "dimensions": ["couch_arm", "bent_over", "furniture", "living_room"],
+      "tags": ["couch", "arm", "bent", "furniture", "behind"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_350",
+      "priority": 2,
+      "intensity": 3,
+      "question_config": {
+        "type": "scale",
+        "question": {
+          "en": "Interest in shower sex?",
+          "ru": "Интерес к сексу в душе?"
+        }
+      },
+      "generation_prompt": "bathroom shower scene with couple having sex under the running water, steam filling the glass enclosure, water streaming over their bodies as they move together, she has one leg lifted and braced against the shower wall for support, his hands grip her wet slippery hip and her raised thigh, careful balance on the wet floor their movements controlled but passionate, water cascading over their joined bodies, her back against the cool tile for contrast with the hot water, his forehead pressed to hers as they rock together, the intimacy of shared shower space, steam and water droplets on the glass enclosure, warm bathroom lighting through the steam",
+      "user_description": {
+        "en": "A couple has sex in the shower, water streaming over their bodies as she braces one leg against the wall.",
+        "ru": "Пара занимается сексом в душе, вода струится по их телам, пока она упирается одной ногой в стену."
+      },
+      "ai_context": {
+        "description": "Shower sex - intimacy under running water, steam and wetness adding sensory dimension",
+        "tests": {
+          "primary_kink": "shower_sex",
+          "secondary_kinks": ["water_play", "standing_sex", "wet_bodies", "steam_intimacy"],
+          "power_dynamic": "mutual_balance",
+          "gender_role_aspect": "equal_wet_pleasure"
+        },
+        "taboo_context": {
+          "level": 1,
+          "normalization": "Shower sex is intimate classic - the water and steam create unique sensory experience, though balance takes practice."
+        }
+      },
+      "participants": ["supporting_male", "braced_female"],
+      "dimensions": ["shower", "water", "standing", "wet", "steam"],
+      "tags": ["shower", "water", "standing", "wet", "bathroom"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_360",
+      "priority": 2,
+      "intensity": 2,
+      "question_config": {
+        "type": "scale",
+        "question": {
+          "en": "Interest in outdoor nature sex (beach, forest, etc)?",
+          "ru": "Интерес к сексу на природе (пляж, лес и т.д.)?"
+        }
+      },
+      "generation_prompt": "secluded outdoor scene with couple having sex in nature, she sits on a large fallen log or smooth rock in a forest clearing, skirt hiked up around her waist, he stands between her spread legs entering her, surrounded by trees and nature sounds, dappled sunlight filtering through leaves onto their skin, the thrill of outdoor exposure mixed with privacy of secluded spot, her hands brace behind her on the natural surface, his hands cup her ass pulling her to the edge for better angle, fresh air on their skin birds singing somewhere above, the primal connection of sex in nature, golden hour lighting through trees romantic outdoor scene",
+      "user_description": {
+        "en": "A couple has sex outdoors in a secluded forest clearing, she sits on a fallen log while he stands between her legs.",
+        "ru": "Пара занимается сексом на природе в уединённой лесной поляне, она сидит на поваленном дереве пока он стоит между её ног."
+      },
+      "ai_context": {
+        "description": "Outdoor forest sex - primal connection in nature, secluded spot with natural setting",
+        "tests": {
+          "primary_kink": "outdoor_nature_sex",
+          "secondary_kinks": ["forest_clearing", "natural_setting", "primal_connection", "secluded_spot"],
+          "power_dynamic": "mutual_adventure",
+          "gender_role_aspect": "shared_outdoor_experience"
+        },
+        "taboo_context": {
+          "level": 2,
+          "normalization": "Outdoor sex connects to primal instincts - nature settings add freedom and adventure to intimacy."
+        }
+      },
+      "participants": ["standing_male", "seated_female"],
+      "dimensions": ["outdoor", "forest", "nature", "secluded", "primal"],
+      "tags": ["outdoor", "nature", "forest", "secluded", "primal"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_370",
+      "priority": 2,
+      "intensity": 3,
+      "question_config": {
+        "type": "scale",
+        "question": {
+          "en": "Interest in car sex?",
+          "ru": "Интерес к сексу в машине?"
+        }
+      },
+      "generation_prompt": "parked car scene at night in secluded location, backseat sex with her straddling him in the cramped space, windows fogged from their breath and body heat, her hands braced on the ceiling or seat behind his head for leverage, his hands grip her hips guiding her movements in the confined area, her head ducking to avoid hitting the roof, the intimacy of the small private space creating closeness, his back against the leather seat, parking lot or lookout point visible through steamy windows, the nostalgia and excitement of car sex despite the awkward space, dim interior lighting intimate car scene",
+      "user_description": {
+        "en": "A couple has sex in a car's backseat at night, windows fogged as she rides him in the cramped intimate space.",
+        "ru": "Пара занимается сексом на заднем сиденье машины ночью, окна запотели пока она скачет на нём в тесном интимном пространстве."
+      },
+      "ai_context": {
+        "description": "Car sex - backseat intimacy in confined space, fogged windows, nostalgic excitement",
+        "tests": {
+          "primary_kink": "car_sex",
+          "secondary_kinks": ["backseat", "cramped_space", "fogged_windows", "public_adjacent"],
+          "power_dynamic": "she_on_top_cramped",
+          "gender_role_aspect": "equal_cramped_adventure"
+        },
+        "taboo_context": {
+          "level": 2,
+          "normalization": "Car sex has nostalgic appeal - the cramped space creates forced intimacy and the semi-public nature adds excitement."
+        }
+      },
+      "participants": ["sitting_male", "riding_female"],
+      "dimensions": ["car", "backseat", "cramped", "fogged", "night"],
+      "tags": ["car", "backseat", "night", "fogged", "cramped"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    },
+    {
+      "id": "scene_380",
+      "priority": 3,
+      "intensity": 3,
+      "question_config": {
+        "type": "scale",
+        "question": {
+          "en": "Interest in quickie/standing against wall sex?",
+          "ru": "Интерес к быстрому сексу стоя у стены?"
+        }
+      },
+      "generation_prompt": "hallway or any room scene with urgent standing wall sex, she's pressed against the wall face first or facing him legs wrapped around his waist, he holds her up with strength hands under her thighs, her back against the hard surface his body pressing into hers, clothes not fully removed just pushed aside enough for access, the urgency clear they couldn't wait to get to bed, her fingers claw at the wall or grip his shoulders, his powerful thrusts pinning her harder against the surface, both still partially dressed skirt hiked underwear aside his pants just lowered, desperate urgent wall fucking, harsh hallway lighting urgent passionate scene",
+      "user_description": {
+        "en": "A man pins a woman against the wall for urgent quickie sex, clothes pushed aside, unable to wait for the bedroom.",
+        "ru": "Мужчина прижимает женщину к стене для срочного быстрого секса, одежда сдвинута в сторону, не в силах дождаться спальни."
+      },
+      "ai_context": {
+        "description": "Wall sex quickie - urgent standing sex against wall, clothes pushed aside, can't wait desperation",
+        "tests": {
+          "primary_kink": "wall_sex",
+          "secondary_kinks": ["quickie", "standing_urgent", "clothes_pushed_aside", "cant_wait"],
+          "power_dynamic": "he_pins_she_receives",
+          "gender_role_aspect": "urgent_mutual_need"
+        },
+        "taboo_context": {
+          "level": 1,
+          "normalization": "Wall sex quickies are pure desire expression - the urgency of not being able to wait is flattering and exciting."
+        }
+      },
+      "participants": ["pinning_male", "pinned_female"],
+      "dimensions": ["wall_sex", "quickie", "standing", "urgent", "clothed"],
+      "tags": ["wall", "quickie", "standing", "urgent", "pinned"],
+      "relevant_for": {"gender": "any", "interested_in": "any"}
+    }
+  ]
+}

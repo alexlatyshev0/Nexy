@@ -1,0 +1,440 @@
+{
+  "$schema": "../scene-schema-v3.md",
+  "version": 3,
+  "range": "051-100",
+  "categories": ["Impact Play", "Sensory Play", "Locations", "Group Dynamics", "Roleplay", "Solo & Fetishes"],
+  "scenes": [
+    {
+      "id": "scene_051",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "couple standing in passionate embrace, man behind woman biting her left shoulder where it meets neck, his teeth pressed into her skin, visible red bite marks from previous bites on her shoulder and neck, she tilting her head back to the right eyes closed mouth open in pleasure expression, her right hand reaching back gripping his hip, both nude visible from waist up, his arms wrapped around her torso hands on her stomach, dramatic lighting casting shadows, passionate intensity primal marking",
+      "user_description": {
+        "en": "A man passionately bites his partner's shoulder while standing behind her in an embrace, visible bite marks from his primal marking.",
+        "ru": "Мужчина страстно кусает плечо партнёрши, стоя позади неё в объятиях, видны следы укусов от его первобытной маркировки."
+      },
+      "ai_context": {
+        "description": "Biting and marking. Primal passion. Tests interest in biting/being bitten.",
+        "tests": { "primary_kink": "biting", "secondary_kinks": ["marking", "primal", "pain_pleasure"], "power_dynamic": "primal_male", "gender_role_aspect": "male marking female" },
+        "question_angles": { "receiving": "Do you enjoy being bitten?", "giving": "Do you enjoy biting your partner?", "marks": "How do you feel about bite marks?" },
+        "emotional_range": { "positive": ["love biting", "marks are hot", "primal and exciting"], "negative": ["too painful", "don't want marks"], "curious": ["light biting ok", "might try"] },
+        "profile_signals": { "if_positive": ["biting_enjoys", "marks_ok", "primal_likes"], "if_negative": ["biting_no", "marks_avoid"], "if_curious": ["biting_curious"] },
+        "correlations": { "positive": ["scratching", "rough_sex", "primal_play"], "negative": ["gentle_only", "pain_averse"] },
+        "taboo_context": { "level": 2, "common_concerns": ["visible marks", "pain level"], "normalization": "Biting is common expression of passion - communication about intensity important" }
+      },
+      "participants": [{ "role": "biting", "gender": "male", "action": "bites shoulder" }, { "role": "receiving", "gender": "female", "action": "receives, enjoys" }],
+      "dimensions": ["biting", "marking", "passion", "pain_pleasure", "intensity"],
+      "tags": ["biting", "shoulder", "marks", "passionate", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_052",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "woman pressing her mouth to man's bare muscular chest biting his pectoral muscle, her teeth creating indentation in his skin, visible red bite marks scattered across his chest from previous bites, his right hand on back of her head fingers in her hair pressing her closer encouraging the bite, his head tilted back eyes closed expression of intense pleasure from pain, she looking up at him while biting with intensity in her eyes, both standing intimate angle, dramatic lighting",
+      "user_description": {
+        "en": "A woman bites her male partner's chest as he holds her head there encouraging her, both enjoying the passionate pain-pleasure.",
+        "ru": "Женщина кусает грудь партнёра, пока он держит её голову, поощряя её, оба наслаждаются страстным ощущением боли-удовольствия."
+      },
+      "ai_context": {
+        "description": "Female biting male. Role reversal marking. Tests comfort with receiving bites.",
+        "tests": { "primary_kink": "female_biting", "secondary_kinks": ["male_receiving_pain", "marking", "encouragement"], "power_dynamic": "female_marking", "gender_role_aspect": "female marks male" },
+        "question_angles": { "as_man": "Do you enjoy being bitten by a woman?", "as_woman": "Do you enjoy biting a man?", "encouragement": "Does being encouraged to bite harder appeal?" },
+        "emotional_range": { "positive": ["love her biting me", "encouragement is hot", "great dynamic"], "negative": ["prefer to bite", "don't like pain"], "curious": ["might enjoy", "with right intensity"] },
+        "profile_signals": { "if_positive": ["receiving_bites_enjoys", "female_primal_likes"], "if_negative": ["giving_only", "pain_receiving_no"], "if_curious": ["open_to_try"] },
+        "correlations": { "positive": ["pain_pleasure", "femdom_lite", "primal"], "negative": ["always_active", "pain_averse"] },
+        "taboo_context": { "level": 2, "common_concerns": null, "normalization": "Men enjoying pain from partners is normal - primal connection" }
+      },
+      "participants": [{ "role": "biting", "gender": "female", "action": "bites chest" }, { "role": "receiving", "gender": "male", "action": "receives, encourages" }],
+      "dimensions": ["biting", "marking", "male_receiving_pain", "intensity"],
+      "tags": ["biting", "chest", "marks", "pain", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_053",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "intimate close-up, man's large hand wrapped around woman's throat, fingers on sides of neck thumb on other side, grip firm but not squeezing not choking, applying control not pressure, she looking up at him with complete trust in her eyes lips parted, intense eye contact between them faces close, she lying on back he hovering above, both nude visible shoulders, his expression dominant but caring, her expression surrendered trusting, breath play power exchange visible in their connection",
+      "user_description": {
+        "en": "A man's hand rests lightly on his partner's throat in a controlling but not choking grip, their intense eye contact showing complete trust.",
+        "ru": "Рука мужчины легко лежит на горле партнёрши в контролирующем, но не удушающем захвате, их интенсивный зрительный контакт показывает полное доверие."
+      },
+      "ai_context": {
+        "description": "Light choking/throat hold. Control not suffocation. Tests interest in breath play lite.",
+        "tests": { "primary_kink": "choking_light", "secondary_kinks": ["breath_play", "control", "trust", "intensity"], "power_dynamic": "male_controlling", "gender_role_aspect": "male controls breath" },
+        "question_angles": { "as_receiver": "Does hand on throat excite you?", "as_giver": "Would you hold a partner's throat?", "trust": "Does this level of control/trust appeal?" },
+        "emotional_range": { "positive": ["so intense", "ultimate trust", "love it"], "negative": ["scary", "too dangerous", "uncomfortable"], "curious": ["intriguing", "with trust"] },
+        "profile_signals": { "if_positive": ["choking_enjoys", "breath_play_curious", "intense_trust"], "if_negative": ["choking_no", "safety_first"], "if_curious": ["choking_curious"] },
+        "correlations": { "positive": ["intensity", "trust_high", "edge_play"], "negative": ["safety_paramount", "vanilla"] },
+        "taboo_context": { "level": 4, "common_concerns": ["safety", "accidental harm"], "normalization": "Light throat hold is about control not choking - requires trust and communication" }
+      },
+      "participants": [{ "role": "controlling", "gender": "male", "action": "hand on throat" }, { "role": "trusting", "gender": "female", "action": "allows, trusts" }],
+      "dimensions": ["breath_play", "choking_light", "trust", "control", "intensity"],
+      "tags": ["throat", "choking", "control", "trust", "intense"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_054",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman straddling man on bed in dominant position, her right hand placed on his throat fingers wrapped around neck applying light controlling pressure not choking, she sitting upright on his hips looking down at him with dominant expression, he lying on back looking up at her with complete trust eyes locked on hers, his hands at his sides not resisting allowing her control, both nude her breasts visible from angle, intense eye contact power exchange visible, moody bedroom lighting female dominance",
+      "user_description": {
+        "en": "A woman straddles her partner with her hand on his throat, controlling the moment while he looks up at her with complete trust.",
+        "ru": "Женщина оседлала партнёра, её рука на его горле, контролирует момент, пока он смотрит на неё с полным доверием."
+      },
+      "ai_context": {
+        "description": "Female choking male - role reversal. Femdom breath play. Tests comfort with female control of breath.",
+        "tests": { "primary_kink": "femdom_choking", "secondary_kinks": ["female_control", "male_submission", "trust"], "power_dynamic": "female_controlling", "gender_role_aspect": "female controls male" },
+        "question_angles": { "as_man": "Would you let a woman hold your throat?", "as_woman": "Would you hold a man's throat this way?", "dynamic": "How does femdom breath play feel?" },
+        "emotional_range": { "positive": ["love her control", "intense trust", "so hot"], "negative": ["too vulnerable", "don't trust anyone that much"], "curious": ["intriguing", "might try"] },
+        "profile_signals": { "if_positive": ["femdom_choking_enjoys", "complete_surrender_ok"], "if_negative": ["never_that_vulnerable"], "if_curious": ["femdom_curious"] },
+        "correlations": { "positive": ["femdom", "total_submission", "trust_extreme"], "negative": ["must_control", "safety_first"] },
+        "taboo_context": { "level": 4, "common_concerns": ["masculinity", "vulnerability"], "normalization": "Surrendering breath control to a woman requires enormous trust - deeply intimate" }
+      },
+      "participants": [{ "role": "controlling", "gender": "female", "action": "hand on throat, on top" }, { "role": "trusting", "gender": "male", "action": "allows, trusts" }],
+      "dimensions": ["breath_play", "female_dominance", "trust", "control", "woman_on_top"],
+      "tags": ["throat", "femdom", "control", "trust", "intense"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_055",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "woman lying on back on white sheets, black silk blindfold covering her eyes, man's hand holding melting ice cube tracing slowly down center of her stomach leaving wet trail with water droplets, visible goosebumps raised on her skin from cold sensation, her abdominal muscles tensing in reaction, she wearing only matching nude panties, her hands gripping sheets at her sides, lips parted in gasp expression reacting to cold, her back slightly arched, soft warm lighting contrasting with cold sensation, temperature play sensory focus",
+      "user_description": {
+        "en": "A man traces an ice cube down his blindfolded partner's stomach, watching goosebumps rise on her skin from the cold sensation.",
+        "ru": "Мужчина ведёт кубиком льда по животу партнёрши с завязанными глазами, наблюдая, как мурашки появляются на её коже от холода."
+      },
+      "ai_context": {
+        "description": "Ice play - temperature sensation. Blindfolded heightens touch. Tests interest in temperature play.",
+        "tests": { "primary_kink": "ice_play", "secondary_kinks": ["temperature", "sensory", "blindfold", "surprise"], "power_dynamic": "receiving_sensation", "gender_role_aspect": "female receives" },
+        "question_angles": { "sensation": "Does cold sensation during sex appeal?", "contrast": "Hot/cold contrast - exciting?", "blindfold": "Does not seeing enhance sensation?" },
+        "emotional_range": { "positive": ["love temperature play", "ice is exciting", "heightens everything"], "negative": ["too cold", "uncomfortable"], "curious": ["might try", "sounds interesting"] },
+        "profile_signals": { "if_positive": ["temperature_play_enjoys", "ice_likes"], "if_negative": ["temperature_no", "comfort_prefers"], "if_curious": ["sensory_curious"] },
+        "correlations": { "positive": ["sensory_play", "blindfold", "novelty"], "negative": ["vanilla", "predictable_prefers"] },
+        "taboo_context": { "level": 2, "common_concerns": null, "normalization": "Temperature play is gentle sensation exploration - ice very popular" }
+      },
+      "participants": [{ "role": "receiving", "gender": "female", "action": "feels ice, blindfolded" }],
+      "dimensions": ["temperature_play", "ice", "sensory", "blindfold", "anticipation"],
+      "tags": ["ice", "temperature", "blindfold", "sensory", "goosebumps"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_056",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "man lying on back on dark sheets, black satin blindfold covering his eyes, woman's delicate hand holding melting ice cube pressing and tracing down his bare muscular chest following the line between his pectorals, water droplets trailing behind ice on his skin, visible goosebumps on his arms and chest, his muscles tensing shivering from cold, she sitting beside him wearing black lace bra visible, his expression gasping from cold sensation head tilted back, temperature play sensory teasing contrast of her warm fingers and cold ice",
+      "user_description": {
+        "en": "A woman traces an ice cube down her blindfolded male partner's chest, watching him shiver from the cold temperature play.",
+        "ru": "Женщина ведёт кубиком льда по груди партнёра с завязанными глазами, наблюдая, как он дрожит от холодной температурной игры."
+      },
+      "ai_context": {
+        "description": "Ice on male - role reversal sensation. She teases him with temperature.",
+        "tests": { "primary_kink": "male_temperature_play", "secondary_kinks": ["female_teasing", "ice", "male_receiving"], "power_dynamic": "female_gives_sensation", "gender_role_aspect": "male receives teasing" },
+        "question_angles": { "as_man": "Would you enjoy ice play on you?", "as_woman": "Would you enjoy teasing a man with ice?", "sensation": "How does cold sensation feel to you?" },
+        "emotional_range": { "positive": ["love being teased", "ice is exciting", "great sensation"], "negative": ["too cold", "prefer warmth"], "curious": ["might enjoy", "interesting"] },
+        "profile_signals": { "if_positive": ["male_sensory_enjoys", "being_teased_likes"], "if_negative": ["temperature_no"], "if_curious": ["sensory_curious"] },
+        "correlations": { "positive": ["sensory_play", "submission_lite", "female_control"], "negative": ["active_only", "comfort_needs"] },
+        "taboo_context": { "level": 2, "common_concerns": null, "normalization": null }
+      },
+      "participants": [{ "role": "giving", "gender": "female", "action": "uses ice" }, { "role": "receiving", "gender": "male", "action": "feels ice, blindfolded" }],
+      "dimensions": ["temperature_play", "ice", "sensory", "blindfold", "teasing"],
+      "tags": ["ice", "temperature", "blindfold", "male_receiving", "sensory"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_057",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "woman lying face down on dark sheets, her back bare and exposed, splashes and trails of deep red candle wax already dried on her skin in artistic pattern across her shoulder blades and lower back, fresh hot wax dripping from red candle held above her creating new drops, she arching her back in reaction to heat sensation, her face turned to side expression mixing pain and pleasure eyes squeezed shut, dark room lit only by multiple candles creating dramatic shadows, BDSM wax play temperature sensation",
+      "user_description": {
+        "en": "Hot red wax drips onto a woman's bare back as she arches in reaction, dried wax patterns already decorating her skin in a candlelit room.",
+        "ru": "Горячий красный воск капает на обнажённую спину женщины, пока она выгибается в реакции, узоры застывшего воска уже украшают её кожу в комнате при свечах."
+      },
+      "ai_context": {
+        "description": "Wax play. Hot temperature sensation. Tests interest in wax/heat play.",
+        "tests": { "primary_kink": "wax_play", "secondary_kinks": ["heat", "pain_pleasure", "marks", "BDSM"], "power_dynamic": "receiving_pain", "gender_role_aspect": "female receives" },
+        "question_angles": { "sensation": "Does hot wax appeal to you?", "aesthetics": "Do you like the visual of wax on skin?", "pain": "Is this level of pain-pleasure appealing?" },
+        "emotional_range": { "positive": ["love wax play", "beautiful and intense", "exciting sensation"], "negative": ["too hot", "don't like burns"], "curious": ["might try", "looks interesting"] },
+        "profile_signals": { "if_positive": ["wax_play_enjoys", "heat_likes"], "if_negative": ["wax_no", "heat_averse"], "if_curious": ["temperature_curious"] },
+        "correlations": { "positive": ["temperature_play", "BDSM", "marking"], "negative": ["vanilla", "pain_averse"] },
+        "taboo_context": { "level": 3, "common_concerns": ["burns", "wrong candle type"], "normalization": "Wax play is safe with proper candles - paraffin at right height" }
+      },
+      "participants": [{ "role": "receiving", "gender": "female", "action": "receives wax" }],
+      "dimensions": ["wax_play", "temperature", "pain_pleasure", "sensation", "marks"],
+      "tags": ["wax", "candle", "hot", "sensation", "bdsm"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_058",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "man lying on back on dark sheets, his bare muscular chest exposed, trails and pools of black candle wax already hardened on his pectorals and abs in decorative pattern, woman sitting beside him holding lit black candle tilted letting fresh hot wax drip onto his skin, he tensing his abdominal muscles jaw clenched expression of controlled pain-pleasure, she wearing black corset looking down at her work with focused artistic expression, dark moody lighting from candles only, BDSM wax play",
+      "user_description": {
+        "en": "A woman drips hot wax from a candle onto her male partner's chest as he tenses his muscles, black wax trails already visible on his skin.",
+        "ru": "Женщина капает горячий воск со свечи на грудь партнёра, пока он напрягает мышцы, следы чёрного воска уже видны на его коже."
+      },
+      "ai_context": {
+        "description": "Wax on male. Woman giving wax play. Tests interest in receiving wax.",
+        "tests": { "primary_kink": "male_wax_play", "secondary_kinks": ["femdom_sensation", "male_receiving_pain", "artistry"], "power_dynamic": "female_gives_pain", "gender_role_aspect": "male receives" },
+        "question_angles": { "as_man": "Would you enjoy wax play on you?", "as_woman": "Would you enjoy dripping wax on a man?", "control": "Does she controlling the sensation appeal?" },
+        "emotional_range": { "positive": ["love receiving wax", "she has all control", "exciting"], "negative": ["too painful", "prefer giving"], "curious": ["might try", "looks intense"] },
+        "profile_signals": { "if_positive": ["male_wax_enjoys", "receiving_pain_ok"], "if_negative": ["giving_only", "pain_receiving_no"], "if_curious": ["wax_curious"] },
+        "correlations": { "positive": ["femdom", "pain_pleasure", "surrender"], "negative": ["active_only", "pain_averse"] },
+        "taboo_context": { "level": 3, "common_concerns": null, "normalization": null }
+      },
+      "participants": [{ "role": "giving", "gender": "female", "action": "drips wax" }, { "role": "receiving", "gender": "male", "action": "receives wax" }],
+      "dimensions": ["wax_play", "temperature", "male_receiving", "sensation", "female_control"],
+      "tags": ["wax", "candle", "male_receiving", "sensation", "femdom"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_059",
+      "priority": 2,
+      "intensity": 1,
+      "generation_prompt": "woman lying on back on white satin sheets, eyes closed with soft smile, large white ostrich feather being traced slowly along her bare stomach and side by unseen hand, visible goosebumps on her skin from ticklish sensation, she wearing only matching cream lace panties, her body slightly squirming from light ticklish touch, one arm above her head other hand loosely gripping sheets, soft diffused lighting creating dreamy atmosphere, light teasing sensory play pleasure visible in her expression",
+      "user_description": {
+        "en": "A soft feather slides across a woman's body as she lies with eyes closed, her skin showing goosebumps from the teasing light touch.",
+        "ru": "Мягкое перо скользит по телу женщины, лежащей с закрытыми глазами, на её коже видны мурашки от дразнящего лёгкого прикосновения."
+      },
+      "ai_context": {
+        "description": "Feather teasing. Light sensory play. Tests interest in gentle sensation play.",
+        "tests": { "primary_kink": "feather_play", "secondary_kinks": ["tickling", "light_touch", "teasing"], "power_dynamic": "receiving_sensation", "gender_role_aspect": "female receives" },
+        "question_angles": { "sensation": "Does light feather touch appeal?", "tickling": "Do you enjoy ticklish sensations?", "teasing": "Is slow teasing exciting?" },
+        "emotional_range": { "positive": ["love being teased", "feather feels amazing", "so sensual"], "negative": ["too ticklish", "annoying"], "curious": ["might enjoy", "never tried"] },
+        "profile_signals": { "if_positive": ["feather_enjoys", "light_touch_likes"], "if_negative": ["ticklish_averse"], "if_curious": ["sensory_curious"] },
+        "correlations": { "positive": ["sensory_play", "teasing", "foreplay"], "negative": ["intensity_prefers", "direct_only"] },
+        "taboo_context": { "level": 1, "common_concerns": null, "normalization": null }
+      },
+      "participants": [{ "role": "receiving", "gender": "female", "action": "feels feather" }],
+      "dimensions": ["feather", "tickling", "teasing", "light_touch", "sensation"],
+      "tags": ["feather", "tickle", "soft", "teasing", "sensory"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_060",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "close-up of woman's inner thigh with metal Wartenberg pinwheel being rolled slowly along sensitive skin leaving temporary indentation marks from the tiny spikes, her thigh muscle tensing from pinprick sensation, she lying on back biting her lower lip in anticipation mixed sensation, visible goosebumps around the wheel path, man's hand holding the medical tool handle with control, she wearing only black panties visible at top of frame, soft focused lighting BDSM sensory tool play",
+      "user_description": {
+        "en": "A Wartenberg pinwheel rolls along a woman's inner thigh as she bites her lip in anticipation, the tiny spikes creating intense pinprick sensations.",
+        "ru": "Колесо Вартенберга катится по внутренней стороне бедра женщины, пока она кусает губу в предвкушении, крошечные шипы создают интенсивные ощущения мелких уколов."
+      },
+      "ai_context": {
+        "description": "Wartenberg wheel. Medical play sensation. Tests interest in BDSM tools.",
+        "tests": { "primary_kink": "wartenberg", "secondary_kinks": ["pinprick", "BDSM_tools", "medical_aesthetic"], "power_dynamic": "tool_wielder", "gender_role_aspect": "male uses tool" },
+        "question_angles": { "sensation": "Does pinprick sensation appeal?", "tools": "Do BDSM tools interest you?", "medical": "Does medical aesthetic appeal?" },
+        "emotional_range": { "positive": ["love the sensation", "tools are exciting", "intense feeling"], "negative": ["too painful", "don't like tools"], "curious": ["looks interesting", "would try"] },
+        "profile_signals": { "if_positive": ["wartenberg_enjoys", "tools_likes"], "if_negative": ["tools_no", "pain_averse"], "if_curious": ["tools_curious"] },
+        "correlations": { "positive": ["BDSM_gear", "medical_play", "sensation"], "negative": ["vanilla", "gear_free"] },
+        "taboo_context": { "level": 3, "common_concerns": ["pain level"], "normalization": "Wartenberg wheels provide unique sensation - popular BDSM tool" }
+      },
+      "participants": [{ "role": "receiving", "gender": "female", "action": "feels wheel" }],
+      "dimensions": ["wartenberg", "pinprick", "sensation", "anticipation", "bdsm_tools"],
+      "tags": ["wartenberg", "sensation", "thigh", "bdsm", "tool"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_063",
+      "priority": 2,
+      "intensity": 3,
+      "generation_prompt": "couple in backseat of car making out passionately, she straddling his lap facing him, her hands on his face pulling him into kiss, his hands on her hips under her hiked up skirt, car windows completely fogged steamy from their breath and body heat, dim parking lot lights visible blurred through foggy glass, confined space creating intimacy, she wearing unbuttoned blouse showing bra underneath, he in loosened tie shirt untucked, night time urgent stolen moment in parking lot",
+      "user_description": {
+        "en": "A couple makes out passionately in a car backseat at night, windows fogged from their heat, parking lot lights blurred through misty glass.",
+        "ru": "Пара страстно целуется на заднем сиденье машины ночью, окна запотели от их жара, огни парковки размыты сквозь туманное стекло."
+      },
+      "ai_context": {
+        "description": "Car sex. Confined space intimacy. Tests interest in car/location variety.",
+        "tests": { "primary_kink": "car_sex", "secondary_kinks": ["confined_space", "public_adjacent", "spontaneous"], "power_dynamic": "equal", "gender_role_aspect": "mutual passion" },
+        "question_angles": { "location": "Does car sex appeal to you?", "risk": "Is the slight risk exciting?", "nostalgia": "Any positive car sex memories/fantasies?" },
+        "emotional_range": { "positive": ["love car sex", "steamy and urgent", "exciting memories"], "negative": ["too cramped", "uncomfortable"], "curious": ["might try", "sounds exciting"] },
+        "profile_signals": { "if_positive": ["car_sex_enjoys", "location_variety_likes"], "if_negative": ["comfort_needs", "bed_only"], "if_curious": ["adventurous"] },
+        "correlations": { "positive": ["spontaneous", "exhibitionism_lite", "adventure"], "negative": ["comfort_priority", "routine"] },
+        "taboo_context": { "level": 2, "common_concerns": ["getting caught", "comfort"], "normalization": "Car sex is extremely common - nostalgic for many" }
+      },
+      "participants": [{ "role": "equal", "gender": "male", "action": "in car" }, { "role": "equal", "gender": "female", "action": "in car" }],
+      "dimensions": ["car_sex", "confined_space", "steamy", "risky", "spontaneous"],
+      "tags": ["car", "backseat", "steamy", "parking", "night"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_064",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "couple against large oak tree in forest, woman's back pressed against rough bark, man pressing against her front pinning her to tree, her legs wrapped around his waist he supporting her with hands under her thighs, her sundress hiked up around her waist panties pulled aside, he in jeans pushed down, dappled sunlight filtering through leaves creating patterns on their skin, secluded forest clearing but sense of risk someone could walk by, her arms around his neck both lost in passion surrounded by nature",
+      "user_description": {
+        "en": "A couple has sex against a tree in a forest clearing, dappled sunlight on their skin, the risk of being discovered adding to the thrill.",
+        "ru": "Пара занимается сексом у дерева на лесной поляне, пятнистый солнечный свет на их коже, риск быть обнаруженными добавляет остроты."
+      },
+      "ai_context": {
+        "description": "Outdoor nature sex. Risk and beauty combined. Tests interest in outdoor sex.",
+        "tests": { "primary_kink": "outdoor_sex", "secondary_kinks": ["nature", "risk", "spontaneous", "exhibitionism_lite"], "power_dynamic": "equal_passion", "gender_role_aspect": "mutual" },
+        "question_angles": { "nature": "Does sex in nature appeal?", "risk": "Is potential of being seen exciting?", "spontaneous": "Would you have spontaneous outdoor sex?" },
+        "emotional_range": { "positive": ["love outdoor sex", "nature is sexy", "thrill of risk"], "negative": ["bugs/discomfort", "too risky"], "curious": ["sounds exciting", "might try"] },
+        "profile_signals": { "if_positive": ["outdoor_sex_enjoys", "nature_lover", "risk_enjoys"], "if_negative": ["indoor_only", "privacy_strict"], "if_curious": ["adventurous"] },
+        "correlations": { "positive": ["exhibitionism", "spontaneous", "adventure"], "negative": ["comfort_needs", "privacy_paramount"] },
+        "taboo_context": { "level": 2, "common_concerns": ["getting caught", "legal issues"], "normalization": "Outdoor sex is common fantasy - secluded spots reduce risk" }
+      },
+      "participants": [{ "role": "equal", "gender": "male", "action": "presses to tree" }, { "role": "equal", "gender": "female", "action": "pressed to tree" }],
+      "dimensions": ["outdoor_sex", "nature", "risk", "exhibitionism", "spontaneous"],
+      "tags": ["forest", "outdoor", "tree", "nature", "risky"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_065",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "corporate office after hours, woman sitting on large wooden desk her pencil skirt hiked up thighs visible, legs spread with man standing between them, her blouse unbuttoned showing black lace bra, his suit jacket off tie loosened shirt partially untucked, her hands pulling him closer by his loosened tie, floor-to-ceiling windows behind them showing city lights at night, desk lamp only light source creating intimate pool of light, scattered papers pushed aside on desk, forbidden workplace romance tension",
+      "user_description": {
+        "en": "A couple has a forbidden encounter in an office after hours, she sitting on the desk with him between her legs, city lights visible behind them.",
+        "ru": "Пара предаётся запретной близости в офисе после работы, она сидит на столе, он между её ног, огни города видны за ними."
+      },
+      "ai_context": {
+        "description": "Office desk sex. Workplace fantasy. Tests interest in office/forbidden roleplay.",
+        "tests": { "primary_kink": "office_sex", "secondary_kinks": ["forbidden", "desk", "workplace", "after_hours"], "power_dynamic": "equal_forbidden", "gender_role_aspect": "coworker fantasy" },
+        "question_angles": { "location": "Does office sex appeal?", "forbidden": "Is the forbidden aspect exciting?", "fantasy": "Office sex fantasy?" },
+        "emotional_range": { "positive": ["office fantasy is hot", "forbidden is exciting", "desk sex yes"], "negative": ["too risky", "unprofessional"], "curious": ["interesting fantasy", "might in right situation"] },
+        "profile_signals": { "if_positive": ["office_sex_enjoys", "forbidden_likes"], "if_negative": ["boundaries_strict"], "if_curious": ["roleplay_open"] },
+        "correlations": { "positive": ["roleplay", "risk", "location_variety"], "negative": ["professional_strict", "routine"] },
+        "taboo_context": { "level": 3, "common_concerns": ["job risk", "ethics"], "normalization": "Office sex is top fantasy - afterhours with partner reduces risk" }
+      },
+      "participants": [{ "role": "active", "gender": "male", "action": "stands between legs" }, { "role": "seated", "gender": "female", "action": "sits on desk" }],
+      "dimensions": ["office_sex", "forbidden", "desk", "after_hours", "workplace"],
+      "tags": ["office", "desk", "after_hours", "forbidden", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_073",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "MFM threesome on large bed with white sheets, woman in center lying on her side, one man behind her spooning position his hand on her hip, second man in front of her face to face, both men completely nude muscular builds, she completely nude sandwiched between them, all three bodies intertwined, both men focused on her looking at her face and body, she eyes closed in pleasure being center of attention, intimate bedroom with warm lighting, three-way passionate moment",
+      "user_description": {
+        "en": "A woman lies sandwiched between two men in an MFM threesome, both focused entirely on her pleasure as the center of attention.",
+        "ru": "Женщина лежит между двумя мужчинами в тройничке МЖМ, оба полностью сосредоточены на её удовольствии как центре внимания."
+      },
+      "ai_context": {
+        "description": "MFM threesome. Woman as center. Tests interest in MFM group sex.",
+        "tests": { "primary_kink": "MFM_threesome", "secondary_kinks": ["center_of_attention", "multiple_partners", "group"], "power_dynamic": "woman_center", "gender_role_aspect": "female worshipped" },
+        "question_angles": { "as_woman": "Would MFM appeal to you?", "as_man": "Would you share a woman with another man?", "dynamic": "How does this group dynamic feel?" },
+        "emotional_range": { "positive": ["ultimate fantasy", "love attention", "exciting"], "negative": ["too many people", "jealousy concerns"], "curious": ["intriguing", "might try with right people"] },
+        "profile_signals": { "if_positive": ["MFM_enjoys", "group_positive"], "if_negative": ["monogamy_only", "jealousy_issue"], "if_curious": ["group_curious"] },
+        "correlations": { "positive": ["group_sex", "exhibitionism", "attention_enjoys"], "negative": ["monogamy_strict", "jealousy"] },
+        "taboo_context": { "level": 4, "common_concerns": ["jealousy", "relationship impact"], "normalization": "MFM is common fantasy - requires communication and trust" }
+      },
+      "participants": [{ "role": "giving", "gender": "male", "action": "pleasures" }, { "role": "giving", "gender": "male", "action": "pleasures" }, { "role": "receiving", "gender": "female", "action": "center of attention" }],
+      "dimensions": ["mfm_threesome", "center_of_attention", "multiple_partners", "pleasure_focus"],
+      "tags": ["threesome", "mfm", "two_men", "center_attention", "group"],
+      "relevant_for": { "gender": "any", "interested_in": "both" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_074",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "FMF threesome on large bed, man lying on back in center completely nude, two women on either side of him both kneeling on bed leaning over him, one woman kissing his neck her hand on his chest, other woman lower kissing his hip her hand on his thigh, both women in matching black lingerie, he looking up with pleasure expression arms spread relaxed surrendering to attention, both women focused entirely on pleasuring him, warm intimate bedroom lighting king-size bed",
+      "user_description": {
+        "en": "A man lies between two women in an FMF threesome, both women focused on pleasuring him as the center of attention.",
+        "ru": "Мужчина лежит между двумя женщинами в тройничке ЖМЖ, обе женщины сосредоточены на его удовольствии как центре внимания."
+      },
+      "ai_context": {
+        "description": "FMF threesome. Man as center. Tests interest in FMF group sex.",
+        "tests": { "primary_kink": "FMF_threesome", "secondary_kinks": ["center_of_attention", "multiple_partners", "male_fantasy"], "power_dynamic": "man_center", "gender_role_aspect": "male worshipped" },
+        "question_angles": { "as_man": "Is FMF fantasy appealing?", "as_woman": "Would you share a man with another woman?", "dynamic": "How does this group dynamic feel?" },
+        "emotional_range": { "positive": ["classic fantasy", "love attention", "exciting"], "negative": ["too much", "jealousy", "not interested"], "curious": ["intriguing", "might with right people"] },
+        "profile_signals": { "if_positive": ["FMF_enjoys", "group_positive"], "if_negative": ["monogamy_only"], "if_curious": ["group_curious"] },
+        "correlations": { "positive": ["group_sex", "attention_enjoys"], "negative": ["monogamy_strict", "jealousy"] },
+        "taboo_context": { "level": 4, "common_concerns": ["jealousy", "relationship impact"], "normalization": "FMF is top male fantasy - requires enthusiastic consent from all" }
+      },
+      "participants": [{ "role": "giving", "gender": "female", "action": "pleasures" }, { "role": "giving", "gender": "female", "action": "pleasures" }, { "role": "receiving", "gender": "male", "action": "center of attention" }],
+      "dimensions": ["fmf_threesome", "center_of_attention", "multiple_partners", "male_fantasy"],
+      "tags": ["threesome", "fmf", "two_women", "center_attention", "group"],
+      "relevant_for": { "gender": "any", "interested_in": "both" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_089",
+      "priority": 2,
+      "intensity": 2,
+      "generation_prompt": "woman alone in bed masturbating, lying on back on white tangled sheets, eyes closed head tilted back on pillow expression of pleasure, her left hand on her breast squeezing nipple, right hand between her spread legs fingers on clitoris in circular motion, completely nude body arched slightly, soft warm lamp light from bedside, intimate private solo moment of self pleasure, no partner just her own pleasure focus, bedroom atmosphere peaceful and sensual",
+      "user_description": {
+        "en": "A woman masturbates alone in bed with eyes closed and sheets tangled, enjoying an intimate private moment of self-pleasure.",
+        "ru": "Женщина мастурбирует одна в кровати с закрытыми глазами и смятыми простынями, наслаждаясь интимным уединённым моментом самоудовлетворения."
+      },
+      "ai_context": {
+        "description": "Female solo masturbation. Self-pleasure. Tests comfort watching/being watched solo.",
+        "tests": { "primary_kink": "female_masturbation", "secondary_kinks": ["solo", "self_pleasure", "voyeurism_adjacent"], "power_dynamic": "solo", "gender_role_aspect": "female self-pleasure" },
+        "question_angles": { "watching": "Do you enjoy watching a woman masturbate?", "being_watched": "Would you masturbate for a partner?", "mutual": "Is mutual masturbation appealing?" },
+        "emotional_range": { "positive": ["love watching", "would perform", "very intimate"], "negative": ["private act", "uncomfortable watching"], "curious": ["might enjoy", "with right person"] },
+        "profile_signals": { "if_positive": ["watching_masturbation_enjoys", "exhibitionism_ok"], "if_negative": ["private_act"], "if_curious": ["mutual_curious"] },
+        "correlations": { "positive": ["voyeurism", "exhibitionism", "mutual_masturbation"], "negative": ["privacy_strict"] },
+        "taboo_context": { "level": 2, "common_concerns": ["vulnerability"], "normalization": "Sharing masturbation is deeply intimate - common in relationships" }
+      },
+      "participants": [{ "role": "solo", "gender": "female", "action": "masturbates" }],
+      "dimensions": ["masturbation", "solo", "self_pleasure", "female_solo"],
+      "tags": ["solo", "masturbation", "female", "bed", "self_pleasure"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_094",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "man kneeling on floor at woman's feet, both hands cradling her bare foot lifted to his face, his lips pressed to her arch or toes in reverent kiss, looking up at her with devoted adoring expression, she sitting in elegant armchair wearing silk robe legs crossed other foot dangling, looking down at him with satisfied superior expression, her toenails painted red, soft bedroom lighting, foot worship devotional position clear submission and adoration, intimate fetish moment",
+      "user_description": {
+        "en": "A man kneels to kiss a woman's foot in devoted worship as she sits in an armchair looking down at him with satisfaction.",
+        "ru": "Мужчина становится на колени, чтобы поцеловать ногу женщины в преданном поклонении, пока она сидит в кресле, глядя на него с удовлетворением."
+      },
+      "ai_context": {
+        "description": "Foot worship. Classic fetish scene. Tests interest in foot fetish.",
+        "tests": { "primary_kink": "foot_fetish", "secondary_kinks": ["worship", "devotion", "femdom_lite"], "power_dynamic": "worshipper_worshipped", "gender_role_aspect": "male worships female" },
+        "question_angles": { "feet": "Are feet erotic to you?", "worship": "Does foot worship appeal (giving or receiving)?", "fetish": "Is foot fetish part of your sexuality?" },
+        "emotional_range": { "positive": ["love feet", "worship is hot", "great fetish"], "negative": ["feet don't appeal", "not into it"], "curious": ["interesting", "might try"] },
+        "profile_signals": { "if_positive": ["foot_fetish_has", "worship_enjoys"], "if_negative": ["foot_neutral"], "if_curious": ["foot_curious"] },
+        "correlations": { "positive": ["worship", "femdom", "devotion"], "negative": ["vanilla", "no_fetishes"] },
+        "taboo_context": { "level": 3, "common_concerns": ["judgment", "shame"], "normalization": "Foot fetish is one of most common fetishes - nothing to be ashamed of" }
+      },
+      "participants": [{ "role": "worshipping", "gender": "male", "action": "kisses feet" }, { "role": "worshipped", "gender": "female", "action": "receives worship" }],
+      "dimensions": ["foot_fetish", "worship", "kneeling", "devotion", "submission"],
+      "tags": ["feet", "worship", "kneeling", "fetish", "devotion"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_100",
+      "priority": 1,
+      "intensity": 1,
+      "generation_prompt": "intimate aftercare moment post-scene, couple cuddling in bed wrapped in soft grey blanket, she curled against his chest in fetal position, he spooning her protectively arms wrapped around her, both looking peaceful and connected coming down from intensity, her eyes closed safe expression, his chin resting on top of her head protective, visible marks or rope impressions on her skin suggesting earlier BDSM play, soft warm lamp light, emotional tenderness and safety, intimate recovery together",
+      "user_description": {
+        "en": "A couple cuddles under a blanket in tender aftercare after intensity, emotionally connected as they come down together in soft light.",
+        "ru": "Пара обнимается под пледом в нежном aftercare после интенсивности, эмоционально связанные, пока вместе спускаются в мягком свете."
+      },
+      "ai_context": {
+        "description": "Aftercare post-BDSM. Recovery and connection. Tests value of aftercare.",
+        "tests": { "primary_kink": "aftercare", "secondary_kinks": ["tenderness", "recovery", "emotional_connection"], "power_dynamic": "caring", "gender_role_aspect": "mutual care" },
+        "question_angles": { "importance": "How important is aftercare to you?", "giving": "Do you enjoy providing aftercare?", "receiving": "Do you need aftercare after intensity?" },
+        "emotional_range": { "positive": ["aftercare is essential", "love this tenderness", "necessary"], "negative": ["don't need it", "prefer space"], "curious": ["probably important", "haven't experienced much"] },
+        "profile_signals": { "if_positive": ["aftercare_essential", "emotional_connection_values"], "if_negative": ["aftercare_optional", "independence_after"], "if_curious": ["aftercare_learning"] },
+        "correlations": { "positive": ["BDSM", "intensity", "emotional_intelligence"], "negative": ["detached", "quick_exit"] },
+        "taboo_context": { "level": 1, "common_concerns": null, "normalization": "Aftercare is crucial part of BDSM - responsible play includes recovery" }
+      },
+      "participants": [{ "role": "caring", "gender": "male", "action": "holds, protects" }, { "role": "cared_for", "gender": "female", "action": "receives care, recovers" }],
+      "dimensions": ["aftercare", "tenderness", "emotional_connection", "coming_down", "safety"],
+      "tags": ["aftercare", "cuddling", "blanket", "tender", "emotional"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ]
+}

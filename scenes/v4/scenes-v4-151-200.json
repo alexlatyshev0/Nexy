@@ -1,0 +1,431 @@
+{
+  "$schema": "../scenes-manifest.json",
+  "version": 4,
+  "range": "151-200",
+  "categories": ["Intense Oral", "Facesitting & Queening", "Degradation", "Exhibitionism & Voyeurism", "Rough Sex"],
+  "scenes": [
+    {
+      "id": "scene_151",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman on knees on hardwood floor between man's spread legs, he sits on edge of grey upholstered armchair, her face pressed against his pelvis taking him fully into throat, both her hands gripping his thighs for balance fingers digging into denim of his jeans pushed down to mid-thigh, her eyes looking up at him watering with tears streaming down cheeks, black mascara running in thin lines down her face, saliva coating her chin dripping down onto her bare chest, wearing only black lace panties nothing else, back arched head tilted back to align throat, his right hand resting on top of her head not pushing just present, left hand gripping armrest knuckles white, expression of concentration and dedication on her face despite discomfort, warm amber lighting from floor lamp",
+      "user_description": {
+        "en": "A woman gives deep throat oral to her male partner with visible effort, her eyes watering and mascara running from the intensity.",
+        "ru": "Женщина делает глубокий минет партнёру с видимым усилием, её глаза слезятся и тушь течёт от интенсивности."
+      },
+      "ai_context": {
+        "description": "Deep throat oral sex with visible physical challenge. Tears, gagging, dedication.",
+        "tests": { "primary_kink": "deepthroat", "secondary_kinks": ["intense_oral", "submission", "dedication", "messy"], "power_dynamic": "giving_submission", "gender_role_aspect": "female_giving" },
+        "emotional_range": { "positive": ["dedicated", "aroused", "serving", "intense"], "negative": ["uncomfortable", "too_much", "concerning"], "curious": ["intrigued", "uncertain"] },
+        "profile_signals": { "if_positive": ["deepthroat", "intense_oral", "dedication"], "if_negative": ["gentle_oral_only", "comfort_priority"], "if_curious": ["intense_curious"] },
+        "correlations": { "positive": ["messy_oral", "gagging", "submission"], "negative": ["gentle_only"] },
+        "taboo_context": { "level": 4, "common_concerns": "discomfort, pressure", "normalization": "When consensual, intense oral can be deeply satisfying for givers who enjoy the challenge" }
+      },
+      "participants": ["receiving_male", "giving_female"],
+      "dimensions": ["deepthroat", "intense_oral", "submission", "dedication", "tears"],
+      "tags": ["deepthroat", "oral", "intense", "mascara", "submission"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "oral_giving",
+        "question": {
+          "en": "Does intense/deepthroat oral appeal?",
+          "ru": "Привлекает ли интенсивный/глубокий оральный секс?"
+        },
+        "show_experience": true
+      }
+    },
+    {
+      "id": "scene_152",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "man standing beside bed legs shoulder-width apart wearing nothing but dark boxer briefs pulled down below hips, both hands cupping woman's head fingers threaded through her long brown hair gripping firmly at sides, she kneels on bed mattress face level with his groin, her hands resting passively on her own bare thighs palms up in submissive posture, completely nude, he guides her head forward and back in slow controlled rhythm, her jaw relaxed mouth open accepting his pace, eyes closed in trust and surrender, his expression focused and intense watching her face, her shoulders relaxed showing willingness to be controlled, soft grey sheets beneath her knees, diffused daylight through sheer curtains",
+      "user_description": {
+        "en": "A man controls his partner's head during oral sex, guiding her pace with gentle but firm face fucking.",
+        "ru": "Мужчина контролирует голову партнёрши во время орального секса, направляя её темп нежным, но твёрдым фейсфаком."
+      },
+      "ai_context": {
+        "description": "Controlled oral - he guides her head. Power exchange through pace control.",
+        "tests": { "primary_kink": "oral_control", "secondary_kinks": ["facefuck", "head_holding", "power_exchange"], "power_dynamic": "male_control", "gender_role_aspect": "controlled_oral" },
+        "emotional_range": { "positive": ["surrendered", "controlled", "trusting"], "negative": ["forced", "uncomfortable", "loss_of_control"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["oral_control", "facefuck", "surrender"], "if_negative": ["self_paced", "control_need"], "if_curious": ["control_curious"] },
+        "correlations": { "positive": ["submission", "trust", "being_used"], "negative": ["independence", "self_control"] },
+        "taboo_context": { "level": 3, "common_concerns": "loss of control, being used", "normalization": "Consensual control during oral is about trust and surrendering to partner's rhythm" }
+      },
+      "participants": ["controlling_male", "allowing_female"],
+      "dimensions": ["facefuck", "head_control", "oral_control", "power_exchange"],
+      "tags": ["facefuck", "head_holding", "control", "oral", "power"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "yes_maybe_no",
+        "topic_ref": "power_dynamic",
+        "question": {
+          "en": "Does having oral pace controlled appeal?",
+          "ru": "Привлекает ли когда контролируют темп орального секса?"
+        }
+      }
+    },
+    {
+      "id": "scene_153",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "close view of woman's face during intense oral act, thick strands of saliva connecting her lips to him and dripping down her chin onto her collarbone, tears at corners of her eyes from gag reflex, cheeks hollowed with effort, her left hand wrapped around base of his shaft steadying, right hand flat on his bare stomach feeling his muscles tense, she wears dark red lipstick now smeared around her mouth, mascara streaking, hair disheveled falling across her face, man's right hand on back of her head fingers tangled in hair applying gentle pressure, his left hand reaching down to wipe tear from her cheek tenderly contrasting with intensity, her eyes looking up at him showing determination through discomfort, messy intimate authentic moment, bedroom shadows and single bedside lamp glow",
+      "user_description": {
+        "en": "A woman gives messy oral with saliva and tears, visibly gagging but continuing with determination to please her partner.",
+        "ru": "Женщина делает грязный минет со слюной и слезами, заметно давится, но продолжает с решимостью доставить удовольствие партнёру."
+      },
+      "ai_context": {
+        "description": "Messy, intense oral - gagging, saliva, tears. Pushing through discomfort.",
+        "tests": { "primary_kink": "messy_oral", "secondary_kinks": ["gagging", "saliva", "pushing_through"], "power_dynamic": "giving_intensely", "gender_role_aspect": "dedicated_giving" },
+        "emotional_range": { "positive": ["intense", "dedicated", "raw"], "negative": ["too_much", "concerning", "gross"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["messy_oral", "gagging", "intensity"], "if_negative": ["clean_only", "gentle_only"], "if_curious": ["messy_curious"] },
+        "correlations": { "positive": ["deepthroat", "intensity", "dedication"], "negative": ["neat_only"] },
+        "taboo_context": { "level": 3, "common_concerns": "looks uncomfortable", "normalization": "Messy oral is often a sign of enthusiasm and dedication" }
+      },
+      "participants": ["receiving_male", "giving_female"],
+      "dimensions": ["gagging", "messy_oral", "drool", "dedication"],
+      "tags": ["gagging", "messy", "drool", "blowjob", "intense"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "oral_giving",
+        "question": {
+          "en": "How much does messy/intense oral appeal?",
+          "ru": "Насколько привлекает грязный/интенсивный оральный секс?"
+        }
+      }
+    },
+    {
+      "id": "scene_154",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman kneeling on plush cream carpet hands clasped behind her back wrists crossed in submissive pose, spine straight posture perfect, completely nude skin glowing, head tilted back at 45 degrees looking up, mouth open wide tongue extended flat over lower lip, eyes half-lidded with anticipation and desire, man standing directly in front of her one step away, wearing grey dress trousers unbuckled and unzipped hanging open, white dress shirt untucked and rumpled, his right hand slowly stroking himself inches from her waiting mouth, left hand reaching down to cup her chin tilting her face up toward him, her chest rising and falling with quickened breath nipples hard with arousal, expression of eager submissive anticipation, living room at dusk soft golden hour light through window",
+      "user_description": {
+        "en": "A woman kneels with her mouth open and tongue out, waiting submissively for her partner to use her mouth.",
+        "ru": "Женщина стоит на коленях с открытым ртом и высунутым языком, покорно ожидая, когда партнёр воспользуется её ртом."
+      },
+      "ai_context": {
+        "description": "Oral readiness pose - mouth open, tongue out, waiting. Submissive anticipation.",
+        "tests": { "primary_kink": "oral_submission", "secondary_kinks": ["waiting", "tongue_out", "anticipation"], "power_dynamic": "submissive_waiting", "gender_role_aspect": "female_ready" },
+        "emotional_range": { "positive": ["eager", "submissive", "anticipating"], "negative": ["degrading", "objectifying"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["oral_submission", "presentation", "waiting"], "if_negative": ["equality", "active_role"], "if_curious": ["submission_curious"] },
+        "correlations": { "positive": ["submission", "service", "anticipation"], "negative": ["equal_participation"] },
+        "taboo_context": { "level": 3, "common_concerns": "degradation", "normalization": "Submission poses can be empowering expressions of desire" }
+      },
+      "participants": ["standing_male", "waiting_female"],
+      "dimensions": ["oral_readiness", "tongue_out", "waiting", "submission"],
+      "tags": ["kneeling", "mouth_open", "tongue", "waiting", "submission"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "yes_maybe_no",
+        "topic_ref": "power_dynamic",
+        "question": {
+          "en": "Does submissive presentation/waiting appeal?",
+          "ru": "Привлекает ли покорная презентация/ожидание?"
+        }
+      }
+    },
+    {
+      "id": "scene_155",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman straddling man's face on king-size bed with white sheets, she sits upright torso vertical knees planted on either side of his head, her full weight pressing down onto his mouth and nose, both her hands gripping black metal headboard bars above for leverage and balance, head thrown back eyes closed mouth open in pleasure, wearing only black garter belt and thigh-high stockings nothing else, man lying flat on his back beneath her arms stretched out to sides gripping sheets, his nose and mouth completely covered by her pressed against him, only his chin and jaw visible below, her hips grinding small circles against his face taking her pleasure, thigh muscles flexed with effort, his hands not touching her showing her complete control, dim bedroom lighting from candles on nightstand, dominant feminine energy",
+      "user_description": {
+        "en": "A woman sits on her male partner's face taking her pleasure dominantly, with a smothering element as she grinds against him.",
+        "ru": "Женщина сидит на лице партнёра, доминантно получая удовольствие, с элементом удушения, пока она трётся о него."
+      },
+      "ai_context": {
+        "description": "Dominant facesitting - she takes her pleasure using his face. Smothering element.",
+        "tests": { "primary_kink": "facesitting", "secondary_kinks": ["smothering", "female_dominance", "using"], "power_dynamic": "female_using", "gender_role_aspect": "female_taking" },
+        "emotional_range": { "positive": ["dominant", "taking", "using"], "negative": ["too_much", "suffocating"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["facesitting", "smothering", "female_dominance"], "if_negative": ["breathing_concern", "equality"], "if_curious": ["facesitting_curious"] },
+        "correlations": { "positive": ["femdom", "using_partner", "oral_receiving"], "negative": ["male_control"] },
+        "taboo_context": { "level": 3, "common_concerns": "breathing, control", "normalization": "Safe facesitting involves signals and awareness of partner's breathing" }
+      },
+      "participants": ["dominant_female", "serving_male"],
+      "dimensions": ["smothering", "facesitting_dominant", "female_control", "taking_pleasure"],
+      "tags": ["smothering", "facesitting", "femdom", "control", "using"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "oral_receiving",
+        "question": {
+          "en": "Does dominant facesitting appeal?",
+          "ru": "Привлекает ли доминантный фейсситтинг?"
+        },
+        "show_experience": true
+      }
+    },
+    {
+      "id": "scene_160",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman lying flat on back on bed completely nude, man straddling her chest sitting on her sternum facing her, his knees pressing into the mattress on either side of her torso, both hands gripping the headboard above her for leverage, she tilts her head back opening mouth wide taking him in as he controls the rhythm, her hands placed flat on his muscular thighs not resisting, his weight partially supported by headboard partially on her, her eyes looking up at him through lashes showing surrender, his expression intense focused looking down at her face, intimate bedroom lighting casting dramatic shadows across their bodies, throat position",
+      "user_description": {
+        "en": "A man straddles a woman's chest and uses her mouth from above while she lies beneath him.",
+        "ru": "Мужчина оседлал грудь женщины и использует её рот сверху, пока она лежит под ним."
+      },
+      "ai_context": {
+        "description": "Mounted oral position - he above, she beneath. Complete surrender of position.",
+        "tests": { "primary_kink": "mounted_oral", "secondary_kinks": ["position_control", "lying_beneath", "surrender"], "power_dynamic": "total_positional_control", "gender_role_aspect": "pinned_beneath" },
+        "emotional_range": { "positive": ["dominated", "used", "surrendered"], "negative": ["trapped", "overwhelming"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["position_dominance", "being_mounted", "surrender"], "if_negative": ["freedom_need", "equality"], "if_curious": ["position_curious"] },
+        "correlations": { "positive": ["facefuck", "pinning", "dominance"], "negative": ["equal_positions"] },
+        "taboo_context": { "level": 4, "common_concerns": "feeling trapped", "normalization": "Position play requires trust and communication about comfort" }
+      },
+      "participants": ["mounted_male", "beneath_female"],
+      "dimensions": ["mounted_oral", "position_control", "surrender", "lying_beneath"],
+      "tags": ["mounted", "oral", "position", "dominance", "beneath"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "yes_maybe_no",
+        "topic_ref": "power_dynamic",
+        "question": {
+          "en": "Does mounted/positional dominance appeal?",
+          "ru": "Привлекает ли позиционное доминирование?"
+        }
+      }
+    },
+    {
+      "id": "scene_165",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "intimate bedroom scene, couple on bed, man lying back propped on pillows, woman positioned between his spread legs, she enthusiastically stroking and licking his shaft with hands and tongue, her face showing pure enjoyment genuine smile between licks, her eyes sparkling with desire looking up at him, his hands gently in her hair not controlling just touching, both completely nude, warm intimate lighting, her body language showing she is doing this entirely for her own pleasure not performance, authentic mutual enjoyment visible in both expressions",
+      "user_description": {
+        "en": "A woman enthusiastically gives oral pleasure, clearly enjoying it for her own satisfaction as much as his.",
+        "ru": "Женщина с энтузиазмом доставляет оральное удовольствие, явно наслаждаясь этим для собственного удовлетворения так же как и его."
+      },
+      "ai_context": {
+        "description": "Enthusiastic oral - she enjoys giving. Mutual pleasure focus.",
+        "tests": { "primary_kink": "enthusiastic_oral", "secondary_kinks": ["enjoying_giving", "mutual_pleasure", "genuine"], "power_dynamic": "mutual", "gender_role_aspect": "enthusiastic_giving" },
+        "emotional_range": { "positive": ["enthusiastic", "enjoying", "connected"], "negative": ["performative"], "curious": ["appreciative"] },
+        "profile_signals": { "if_positive": ["enthusiastic_oral", "mutual_enjoyment"], "if_negative": ["reluctant_only"], "if_curious": ["giving_curious"] },
+        "correlations": { "positive": ["oral_enjoyment", "connection"], "negative": ["transactional"] },
+        "taboo_context": { "level": 1, "common_concerns": null, "normalization": null }
+      },
+      "participants": ["receiving_male", "giving_female"],
+      "dimensions": ["enthusiastic_oral", "enjoying_giving", "mutual_pleasure"],
+      "tags": ["oral", "enthusiastic", "enjoying", "mutual", "intimate"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "oral_giving",
+        "question": {
+          "en": "How much do you enjoy giving oral?",
+          "ru": "Насколько нравится давать оральный секс?"
+        }
+      }
+    },
+    {
+      "id": "scene_170",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "intimate scene, man's head between woman's thighs as she lies on her back, view from her perspective looking down at him, his eyes looking up at her making intense eye contact while his mouth works on her, his hands gripping her thighs holding them open, she gripping sheets with one hand other hand in his hair, her back arched in pleasure, his expression showing he is enjoying giving as much as she enjoys receiving, bedroom with soft lighting, mutual pleasure clearly visible",
+      "user_description": {
+        "en": "A man gives enthusiastic oral pleasure, making eye contact while enjoying giving.",
+        "ru": "Мужчина с энтузиазмом доставляет оральное удовольствие, поддерживая зрительный контакт и наслаждаясь процессом."
+      },
+      "ai_context": {
+        "description": "Cunnilingus with eye contact - he enjoys giving. Mutual pleasure.",
+        "tests": { "primary_kink": "cunnilingus", "secondary_kinks": ["eye_contact", "enjoying_giving", "connection"], "power_dynamic": "service", "gender_role_aspect": "male_giving" },
+        "emotional_range": { "positive": ["pleasured", "connected", "worshipped"], "negative": ["self_conscious"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["receiving_oral", "eye_contact", "worship"], "if_negative": ["giving_only"], "if_curious": ["receiving_curious"] },
+        "correlations": { "positive": ["oral_enjoyment", "worship"], "negative": ["receiving_discomfort"] },
+        "taboo_context": { "level": 1, "common_concerns": null, "normalization": null }
+      },
+      "participants": ["giving_male", "receiving_female"],
+      "dimensions": ["cunnilingus", "eye_contact", "worshipping", "mutual_pleasure"],
+      "tags": ["oral", "cunnilingus", "eye_contact", "worship", "intimate"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "oral_receiving",
+        "question": {
+          "en": "How much do you enjoy receiving oral?",
+          "ru": "Насколько нравится получать оральный секс?"
+        }
+      }
+    },
+    {
+      "id": "scene_175",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "rough sex scene, woman on all fours on bed, man behind her with one hand fisted in her hair pulling her head back arching her spine, his other hand gripping her hip firmly leaving visible marks, their bodies connected in fast aggressive rhythm, her expression mix of pleasure and intensity mouth open, his expression focused dominant, sheets tangled beneath them, sweat visible on their skin, aggressive passionate energy, bedroom with dim lighting",
+      "user_description": {
+        "en": "Rough sex from behind with hair pulling and aggressive rhythm. Passionate intensity.",
+        "ru": "Грубый секс сзади с вытягиванием за волосы и агрессивным ритмом. Страстная интенсивность."
+      },
+      "ai_context": {
+        "description": "Rough doggy with hair pulling. Aggressive passionate sex.",
+        "tests": { "primary_kink": "rough_sex", "secondary_kinks": ["hair_pulling", "aggressive", "from_behind"], "power_dynamic": "dominant_male", "gender_role_aspect": "rough_male" },
+        "emotional_range": { "positive": ["intense", "passionate", "primal"], "negative": ["too_rough", "painful"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["rough_sex", "hair_pulling", "intensity"], "if_negative": ["gentle_only"], "if_curious": ["rough_curious"] },
+        "correlations": { "positive": ["dominance", "primal", "aggressive"], "negative": ["gentle_only", "slow"] },
+        "taboo_context": { "level": 3, "common_concerns": "too rough", "normalization": "Consensual rough sex is about passion and intensity with communication" }
+      },
+      "participants": ["dominant_male", "receiving_female"],
+      "dimensions": ["rough_sex", "hair_pulling", "aggressive", "from_behind"],
+      "tags": ["rough", "hair_pulling", "doggy", "aggressive", "passionate"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "rough_sex",
+        "question": {
+          "en": "Does rough sex with hair pulling appeal?",
+          "ru": "Привлекает ли грубый секс с вытягиванием за волосы?"
+        },
+        "show_experience": true
+      }
+    },
+    {
+      "id": "scene_180",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman pinned against wall by man, her wrists held above her head by his one hand pressing them to the wall, his other hand on her throat not squeezing just holding, she wearing torn blouse and hiked up skirt, he in unbuttoned shirt and lowered pants, their bodies pressed together in standing position against exposed brick wall, her leg wrapped around his hip pulling him closer, both expressions intense passionate, consensual roughness evident in their chemistry, dim industrial loft lighting",
+      "user_description": {
+        "en": "Rough standing sex against wall, her wrists pinned, consensual intensity.",
+        "ru": "Грубый секс стоя у стены, её запястья прижаты, согласованная интенсивность."
+      },
+      "ai_context": {
+        "description": "Wall sex with pinning. Consensual rough standing position.",
+        "tests": { "primary_kink": "wall_sex", "secondary_kinks": ["pinning", "standing", "rough"], "power_dynamic": "male_pinning", "gender_role_aspect": "pinned_female" },
+        "emotional_range": { "positive": ["intense", "passionate", "taken"], "negative": ["trapped", "too_rough"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["wall_sex", "pinning", "rough_positions"], "if_negative": ["gentle_only", "bed_only"], "if_curious": ["position_curious"] },
+        "correlations": { "positive": ["rough_sex", "spontaneous", "aggressive"], "negative": ["slow", "bed_only"] },
+        "taboo_context": { "level": 3, "common_concerns": null, "normalization": null }
+      },
+      "participants": ["pinning_male", "pinned_female"],
+      "dimensions": ["wall_sex", "pinning", "standing", "rough", "passionate"],
+      "tags": ["wall", "pinning", "standing", "rough", "passionate"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "rough_sex",
+        "question": {
+          "en": "How much does being pinned during sex appeal?",
+          "ru": "Насколько привлекает быть прижатой во время секса?"
+        }
+      }
+    },
+    {
+      "id": "scene_185",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "intimate bedroom scene, couple in 69 position on bed, woman on top facing his feet, man beneath her, both simultaneously pleasuring each other with mouths, her hips lowered to his face as his hands hold her thighs, she bent forward working on him with enthusiasm, visible pleasure on both faces despite being occupied, white sheets tangled around them, soft afternoon light through sheer curtains, mutual pleasure giving and receiving at same time",
+      "user_description": {
+        "en": "69 position with mutual simultaneous oral pleasure. Both giving and receiving.",
+        "ru": "Позиция 69 с взаимным одновременным оральным удовольствием. Оба дают и получают."
+      },
+      "ai_context": {
+        "description": "69 position - mutual simultaneous oral. Both give and receive at once.",
+        "tests": { "primary_kink": "69_position", "secondary_kinks": ["mutual_oral", "simultaneous", "giving_receiving"], "power_dynamic": "mutual_equal", "gender_role_aspect": "equal" },
+        "emotional_range": { "positive": ["connected", "mutual", "intense"], "negative": ["distracted", "awkward"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["69", "mutual_oral", "simultaneous"], "if_negative": ["sequential_only", "focus_needed"], "if_curious": ["69_curious"] },
+        "correlations": { "positive": ["oral_both", "mutual_pleasure"], "negative": ["one_direction"] },
+        "taboo_context": { "level": 1, "common_concerns": null, "normalization": null }
+      },
+      "participants": ["mutual_male", "mutual_female"],
+      "dimensions": ["69_position", "mutual_oral", "simultaneous", "both_pleasuring"],
+      "tags": ["69", "mutual", "oral", "simultaneous", "both"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "positions",
+        "question": {
+          "en": "How much does 69/mutual simultaneous oral appeal?",
+          "ru": "Насколько привлекает 69/взаимный одновременный оральный секс?"
+        }
+      }
+    },
+    {
+      "id": "scene_190",
+      "priority": 2,
+      "intensity": 2,
+      "generation_prompt": "intimate bathtub scene, couple in large clawfoot tub filled with bubbles, she sitting in his lap facing away leaning back against his chest, his arms wrapped around her from behind one hand on her stomach other on her breast, her head tilted back resting on his shoulder eyes closed in relaxation, bubbles covering them to mid-chest, candles arranged around tub rim creating soft flickering light, bathroom with romantic atmosphere, intimate not explicitly sexual just sensual connection, their bodies intertwined in warm water",
+      "user_description": {
+        "en": "Intimate bath together with sensual touching and romantic connection.",
+        "ru": "Интимная ванна вместе с чувственными прикосновениями и романтической связью."
+      },
+      "ai_context": {
+        "description": "Romantic bath together. Sensual intimacy, not explicit.",
+        "tests": { "primary_kink": "bath_intimacy", "secondary_kinks": ["romantic", "sensual", "touching"], "power_dynamic": "equal_intimate", "gender_role_aspect": "romantic" },
+        "emotional_range": { "positive": ["romantic", "intimate", "connected"], "negative": ["too_slow", "boring"], "curious": ["appreciative"] },
+        "profile_signals": { "if_positive": ["romantic_intimacy", "bath_play", "sensual"], "if_negative": ["explicit_only"], "if_curious": ["romantic_curious"] },
+        "correlations": { "positive": ["foreplay", "romance", "connection"], "negative": ["direct_only"] },
+        "taboo_context": { "level": 1, "common_concerns": null, "normalization": null }
+      },
+      "participants": ["intimate_male", "intimate_female"],
+      "dimensions": ["bath", "romantic", "sensual", "touching", "intimate"],
+      "tags": ["bath", "candles", "romantic", "sensual", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "pace_mood",
+        "question": {
+          "en": "How much does romantic sensual intimacy appeal?",
+          "ru": "Насколько привлекает романтичная чувственная интимность?"
+        }
+      }
+    },
+    {
+      "id": "scene_195",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "woman in shower pressing against glass shower door from inside, water running down her back, her breasts and stomach pressed flat against foggy glass creating visible impression, her hands flat on glass above her head, man standing directly behind her inside shower pressing her forward against the glass, his hands on her hips, water cascading over both of them, her face turned to side expression of pleasure against glass, steam filling the shower, hot shower sex against glass",
+      "user_description": {
+        "en": "Shower sex pressing her against the glass door. Steam and water.",
+        "ru": "Секс в душе прижимая её к стеклянной двери. Пар и вода."
+      },
+      "ai_context": {
+        "description": "Shower sex against glass. Hot water, steam, pressed against surface.",
+        "tests": { "primary_kink": "shower_sex", "secondary_kinks": ["against_glass", "wet", "steamy"], "power_dynamic": "male_pressing", "gender_role_aspect": "pressed_female" },
+        "emotional_range": { "positive": ["hot", "wet", "passionate"], "negative": ["slippery", "uncomfortable"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["shower_sex", "wet_sex", "pressing"], "if_negative": ["dry_only", "bed_only"], "if_curious": ["shower_curious"] },
+        "correlations": { "positive": ["water_play", "locations", "spontaneous"], "negative": ["bed_only"] },
+        "taboo_context": { "level": 1, "common_concerns": null, "normalization": null }
+      },
+      "participants": ["pressing_male", "pressed_female"],
+      "dimensions": ["shower_sex", "against_glass", "wet", "steamy"],
+      "tags": ["shower", "glass", "wet", "steam", "pressing"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "locations",
+        "question": {
+          "en": "How much does shower/wet sex appeal?",
+          "ru": "Насколько привлекает секс в душе/мокрый?"
+        }
+      }
+    },
+    {
+      "id": "scene_200",
+      "priority": 2,
+      "intensity": 2,
+      "generation_prompt": "slow sensual sex scene, couple in missionary position on bed with white sheets, man above woman both completely nude, their bodies moving in slow synchronized rhythm, faces close foreheads touching, eyes locked in deep gaze, her arms wrapped around his back, his hands cupping her face, visible emotional connection between them, soft warm lighting creating intimate glow, slow deliberate movements rather than fast, making love rather than fucking, romantic passionate intimacy",
+      "user_description": {
+        "en": "Slow passionate lovemaking with deep eye contact and emotional connection.",
+        "ru": "Медленное страстное занятие любовью с глубоким зрительным контактом и эмоциональной связью."
+      },
+      "ai_context": {
+        "description": "Slow romantic lovemaking. Eye contact, emotional connection, deliberate pace.",
+        "tests": { "primary_kink": "slow_lovemaking", "secondary_kinks": ["eye_contact", "emotional", "deliberate"], "power_dynamic": "equal_connected", "gender_role_aspect": "mutual" },
+        "emotional_range": { "positive": ["connected", "loved", "intimate"], "negative": ["too_slow", "boring"], "curious": ["appreciative"] },
+        "profile_signals": { "if_positive": ["slow_sex", "eye_contact", "emotional_sex"], "if_negative": ["fast_only", "intense_only"], "if_curious": ["slow_curious"] },
+        "correlations": { "positive": ["romance", "connection", "intimacy"], "negative": ["rough_sex", "fast_only"] },
+        "taboo_context": { "level": 1, "common_concerns": null, "normalization": null }
+      },
+      "participants": ["loving_male", "loving_female"],
+      "dimensions": ["slow_lovemaking", "eye_contact", "emotional", "missionary"],
+      "tags": ["slow", "lovemaking", "romantic", "eye_contact", "intimate"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "pace_mood",
+        "question": {
+          "en": "How much does slow emotional lovemaking appeal?",
+          "ru": "Насколько привлекает медленное эмоциональное занятие любовью?"
+        }
+      }
+    }
+  ]
+}

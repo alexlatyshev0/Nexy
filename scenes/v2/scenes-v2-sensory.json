@@ -1,0 +1,479 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Sensory Play",
+  "note": "Sensory enhancement/deprivation scenes - blindfold, temperature, texture. Focus on heightening or restricting senses.",
+  "scenes": [
+    {
+      "id": "scene_blindfold",
+      "priority": 2,
+      "intensity": 2,
+
+      "generation_prompt": "intimate bedroom scene, person wearing blindfold or eyes covered with silk, lying back anticipating touch, partner's hands approaching their body, sensory deprivation heightening anticipation, vulnerability through darkness, every touch unexpected",
+
+      "user_description": {
+        "en": "Eyes covered, world reduced to sensation. Every touch a surprise, every caress amplified. Not knowing what comes next makes everything more intense.",
+        "ru": "Глаза закрыты, мир сведён к ощущениям. Каждое прикосновение — сюрприз, каждая ласка усилена. Незнание что будет дальше делает всё интенсивнее."
+      },
+
+      "ai_context": {
+        "description": "Blindfold play. Visual deprivation heightens other senses. Entry-level sensory play. Anticipation and surprise.",
+
+        "tests": {
+          "primary_kink": "blindfold",
+          "secondary_kinks": ["sensory_deprivation", "anticipation", "vulnerability", "surprise"],
+          "power_dynamic": "slight_power_exchange",
+          "gender_role_aspect": "trust through sensory surrender"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy being blindfolded during sex?",
+          "as_giver": "Do you enjoy blindfolding your partner?",
+          "emotional": "What does not being able to see add to the experience?"
+        },
+
+        "emotional_range": {
+          "positive": ["heightens everything", "love the anticipation", "exciting vulnerability"],
+          "negative": ["need to see", "uncomfortable", "scary"],
+          "curious": ["interesting", "would try", "with trust"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["blindfold_enjoys", "sensory_deprivation_positive", "anticipation_likes"],
+          "if_negative": ["visual_needed", "sight_required"],
+          "if_curious": ["blindfold_curious"]
+        },
+
+        "correlations": {
+          "positive": ["sensory_play_general", "bondage", "trust_play"],
+          "negative": ["control_needed", "visual_necessary"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["vulnerability", "not knowing what's happening"],
+          "normalization": "One of the most popular sensory enhancements—most couples have tried or would enjoy blindfold play"
+        }
+      },
+
+      "participants": [
+        { "role": "blindfolded", "gender": "any", "action": "receives without seeing" },
+        { "role": "touching", "gender": "any", "action": "provides sensation" }
+      ],
+
+      "dimensions": ["blindfold", "sensory_deprivation", "anticipation"],
+      "tags": ["blindfold", "sensory", "anticipation", "vulnerability"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_ice_play",
+      "priority": 3,
+      "intensity": 2,
+
+      "generation_prompt": "sensual bedroom scene, person lying back while partner trails ice cube along their body, cold sensation on warm skin, water droplets visible, goosebumps, gasping reaction to cold, temperature play, erotic ice",
+
+      "user_description": {
+        "en": "An ice cube traces along heated skin, leaving trails of cold fire. The contrast makes nerves spark—gasping at the unexpected chill.",
+        "ru": "Кубик льда скользит по разгорячённой коже, оставляя следы холодного огня. Контраст заставляет нервы искрить — задыхаясь от неожиданного холода."
+      },
+
+      "ai_context": {
+        "description": "Ice play / cold sensation. Temperature contrast on aroused body. Testing interest in cold sensation as arousal.",
+
+        "tests": {
+          "primary_kink": "ice_play",
+          "secondary_kinks": ["temperature_play", "sensation_contrast", "cold_arousal"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "sensation exploration"
+        },
+
+        "question_angles": {
+          "as_receiver": "Does ice on your body during sex turn you on?",
+          "as_giver": "Do you enjoy using ice on your partner?",
+          "emotional": "What does temperature contrast add to sensation?"
+        },
+
+        "emotional_range": {
+          "positive": ["love the contrast", "heightens sensation", "exciting shock"],
+          "negative": ["too cold", "uncomfortable", "takes me out of moment"],
+          "curious": ["interesting", "would try", "in moderation"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["ice_play_enjoys", "temperature_play_positive", "sensation_contrast_likes"],
+          "if_negative": ["cold_no", "temperature_neutral"],
+          "if_curious": ["ice_curious"]
+        },
+
+        "correlations": {
+          "positive": ["sensory_play_general", "wax_play", "sensation_seeking"],
+          "negative": ["gentle_only", "no_surprises"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["too cold", "nipple sensitivity"],
+          "normalization": "Common sensory play—the contrast between hot aroused body and cold ice creates intense sensation"
+        }
+      },
+
+      "participants": [
+        { "role": "using_ice", "gender": "any", "action": "trails ice on partner" },
+        { "role": "receiving", "gender": "any", "action": "feels ice sensation" }
+      ],
+
+      "dimensions": ["ice_play", "temperature", "sensation", "contrast"],
+      "tags": ["ice", "cold", "temperature", "sensory", "sensation"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_wax_play",
+      "priority": 4,
+      "intensity": 3,
+
+      "generation_prompt": "BDSM wax play scene, candle dripping hot wax onto person's body, wax pooling on skin stomach or chest, mix of pain and pleasure on recipient's face, dominant partner holding candle, hot wax trails visible, erotic temperature play",
+
+      "user_description": {
+        "en": "Hot wax drips onto waiting skin, each drop a burst of heat that fades to warmth. Pain and pleasure blur together in trails of solidifying wax.",
+        "ru": "Горячий воск капает на ждущую кожу, каждая капля — всплеск жара, который переходит в тепло. Боль и удовольствие сливаются в следах застывающего воска."
+      },
+
+      "ai_context": {
+        "description": "Wax play - hot candle wax dripped on body. Pain/pleasure mix. Temperature play with controlled 'danger'. BDSM adjacent.",
+
+        "tests": {
+          "primary_kink": "wax_play",
+          "secondary_kinks": ["temperature_play_hot", "pain_pleasure", "controlled_burn", "marks"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "receiving controlled pain"
+        },
+
+        "question_angles": {
+          "as_receiver": "Does hot wax on your body turn you on?",
+          "as_giver": "Would you enjoy dripping wax on your partner?",
+          "emotional": "What does the heat and slight pain of wax add?"
+        },
+
+        "emotional_range": {
+          "positive": ["love the burn", "pain into pleasure", "intense sensation", "beautiful marks"],
+          "negative": ["too painful", "burn fear", "not interested"],
+          "curious": ["intrigued", "with proper candles", "might try"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["wax_play_enjoys", "pain_pleasure_likes", "temperature_hot_positive"],
+          "if_negative": ["wax_no", "burn_fear"],
+          "if_curious": ["wax_curious"]
+        },
+
+        "correlations": {
+          "positive": ["impact_play", "sensation_play", "BDSM_general"],
+          "negative": ["pain_averse", "marks_no"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["burns", "candle type", "removal", "marks"],
+          "normalization": "Use massage candles or soy candles with low melting point—when done safely, creates unique sensation"
+        }
+      },
+
+      "participants": [
+        { "role": "dripping", "gender": "any", "action": "drips wax from candle" },
+        { "role": "receiving", "gender": "any", "action": "receives hot wax" }
+      ],
+
+      "dimensions": ["wax_play", "temperature_hot", "pain_pleasure", "sensation"],
+      "tags": ["wax", "candle", "hot", "temperature", "BDSM"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_feather_tickle",
+      "priority": 3,
+      "intensity": 1,
+
+      "generation_prompt": "sensual teasing scene, person lying back while partner uses feather or soft object to trace along their body, light tickling sensation, giggling and squirming, teasing foreplay, feather along neck chest stomach thighs, playful sensual teasing",
+
+      "user_description": {
+        "en": "A feather dances across skin, barely there yet impossible to ignore. Ticklish torture that builds anticipation for firmer touch.",
+        "ru": "Перо танцует по коже, едва ощутимое, но невозможно игнорировать. Щекотливая пытка, что создаёт ожидание более твёрдого прикосновения."
+      },
+
+      "ai_context": {
+        "description": "Feather/light touch teasing. Tickle play as foreplay. Light sensation that builds anticipation.",
+
+        "tests": {
+          "primary_kink": "feather_play",
+          "secondary_kinks": ["tickling", "light_touch", "teasing", "anticipation"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "playful sensation"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy being teased with light touches?",
+          "as_giver": "Do you enjoy teasing your partner this way?",
+          "emotional": "What does light teasing add to foreplay?"
+        },
+
+        "emotional_range": {
+          "positive": ["love the tease", "builds anticipation", "playful and fun"],
+          "negative": ["too ticklish", "annoying", "want firmer touch"],
+          "curious": ["might enjoy", "with right mood"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["feather_enjoys", "teasing_likes", "light_touch_positive"],
+          "if_negative": ["ticklish_no", "firm_touch_prefers"],
+          "if_curious": ["teasing_curious"]
+        },
+
+        "correlations": {
+          "positive": ["foreplay_extended", "sensory_play", "playful_sex"],
+          "negative": ["direct_prefers", "ticklish_intensely"]
+        },
+
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": ["too ticklish"],
+          "normalization": "Lightest form of sensory play—playful and intimate addition to foreplay"
+        }
+      },
+
+      "participants": [
+        { "role": "teasing", "gender": "any", "action": "uses feather to tease" },
+        { "role": "teased", "gender": "any", "action": "receives light sensation" }
+      ],
+
+      "dimensions": ["feather", "tickle", "teasing", "light_touch"],
+      "tags": ["feather", "tickle", "tease", "light", "playful"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_sensation_variety",
+      "priority": 3,
+      "intensity": 2,
+
+      "generation_prompt": "sensory exploration scene, blindfolded person receiving variety of sensations, multiple tools visible - fur, leather, nails, silk - partner alternating between different textures on their skin, contrast of sensations, sensory journey",
+
+      "user_description": {
+        "en": "Silk, then leather, then fingernails, then fur. A journey of contrasting sensations, never knowing what texture will touch next.",
+        "ru": "Шёлк, потом кожа, потом ногти, потом мех. Путешествие контрастных ощущений, никогда не зная какая текстура прикоснётся следующей."
+      },
+
+      "ai_context": {
+        "description": "Sensation variety play. Multiple textures used on body. Testing interest in texture/sensation exploration.",
+
+        "tests": {
+          "primary_kink": "sensation_play",
+          "secondary_kinks": ["texture_variety", "sensory_journey", "contrast"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "sensory exploration"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy variety of sensations/textures?",
+          "as_giver": "Do you enjoy exploring your partner's body with different sensations?",
+          "emotional": "What does sensory variety add to intimacy?"
+        },
+
+        "emotional_range": {
+          "positive": ["love the variety", "keeps me guessing", "each sensation unique"],
+          "negative": ["overwhelming", "prefer consistency", "distracting"],
+          "curious": ["sounds interesting", "would try"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["sensation_variety_enjoys", "texture_play_positive", "sensory_exploration_likes"],
+          "if_negative": ["consistency_prefers", "sensation_simple"],
+          "if_curious": ["sensation_curious"]
+        },
+
+        "correlations": {
+          "positive": ["blindfold", "sensory_play_all", "exploration"],
+          "negative": ["routine_prefers", "straightforward_only"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": null,
+          "normalization": "Playful exploration that many couples enjoy—builds anticipation and heightens awareness"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "specifics",
+        "question": {
+          "en": "Which sensations appeal most?",
+          "ru": "Какие ощущения привлекают больше?"
+        },
+        "options": [
+          { "id": "soft", "label": { "en": "Soft (silk, fur, feathers)", "ru": "Мягкие (шёлк, мех, перья)" }, "signal": "soft_sensation" },
+          { "id": "rough", "label": { "en": "Rough (leather, nails)", "ru": "Грубые (кожа, ногти)" }, "signal": "rough_sensation" },
+          { "id": "temperature", "label": { "en": "Temperature (ice, wax)", "ru": "Температурные (лёд, воск)" }, "signal": "temperature_sensation" },
+          { "id": "pinpoint", "label": { "en": "Pinpoint (wartenberg wheel)", "ru": "Точечные (колёсико)" }, "signal": "pinpoint_sensation" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "providing", "gender": "any", "action": "uses variety of textures" },
+        { "role": "receiving", "gender": "any", "action": "experiences sensation journey" }
+      ],
+
+      "dimensions": ["sensation_variety", "texture", "sensory_play", "exploration"],
+      "tags": ["sensation", "texture", "variety", "sensory", "exploration"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_sensory_deprivation_full",
+      "priority": 5,
+      "intensity": 4,
+
+      "generation_prompt": "intense BDSM sensory deprivation scene, person blindfolded with noise-canceling headphones or earplugs, possibly restrained, complete sensory isolation, partner approaching unseen unheard, total vulnerability through sensory removal, floating in darkness",
+
+      "user_description": {
+        "en": "Sight gone. Sound gone. Floating in darkness and silence, waiting. Every nerve alive, desperate for any sensation. Complete surrender to the void.",
+        "ru": "Зрение отключено. Звук отключён. Плавание в темноте и тишине, ожидание. Каждый нерв жив, жаждет любого ощущения. Полная сдача пустоте."
+      },
+
+      "ai_context": {
+        "description": "Full sensory deprivation - multiple senses blocked. Advanced play. Tests comfort with complete sensory isolation.",
+
+        "tests": {
+          "primary_kink": "sensory_deprivation_full",
+          "secondary_kinks": ["blindfold", "deafness", "isolation", "intense_vulnerability"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "extreme surrender through sensory loss"
+        },
+
+        "question_angles": {
+          "as_receiver": "Would full sensory deprivation excite or frighten you?",
+          "as_giver": "Would you enjoy putting your partner in sensory isolation?",
+          "emotional": "What would being cut off from all senses feel like?"
+        },
+
+        "emotional_range": {
+          "positive": ["intense and freeing", "ultimate trust", "floating", "heightened remaining senses"],
+          "negative": ["too scary", "panic inducing", "need connection", "hard limit"],
+          "curious": ["intriguing but intense", "would need much trust"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["sensory_deprivation_deep_positive", "isolation_ok", "extreme_trust"],
+          "if_negative": ["sensory_deprivation_hard_limit", "connection_needed"],
+          "if_curious": ["sensory_deprivation_curious"]
+        },
+
+        "correlations": {
+          "positive": ["blindfold", "bondage_advanced", "extreme_submission"],
+          "negative": ["connection_needed", "light_play_only"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["panic", "claustrophobia", "disconnection", "safety"],
+          "normalization": "Advanced play requiring strong trust and clear safety signals—profoundly intense for those who enjoy it"
+        }
+      },
+
+      "participants": [
+        { "role": "deprived", "gender": "any", "action": "experiences sensory isolation" },
+        { "role": "controlling", "gender": "any", "action": "controls all input" }
+      ],
+
+      "dimensions": ["sensory_deprivation", "isolation", "blindfold", "advanced"],
+      "tags": ["sensory_deprivation", "blindfold", "isolation", "advanced", "BDSM"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_massage_to_sex",
+      "priority": 2,
+      "intensity": 2,
+
+      "generation_prompt": "sensual massage transitioning to sex, person lying face down receiving massage, partner's oiled hands on their back and body, massage becoming increasingly sensual, hands wandering to erotic areas, intimate touch progression, oil glistening on skin",
+
+      "user_description": {
+        "en": "Strong hands working tension from muscles, oil warming on skin. The massage grows more intimate, hands wandering, until relaxation becomes arousal.",
+        "ru": "Сильные руки снимают напряжение с мышц, масло согревается на коже. Массаж становится интимнее, руки блуждают, пока расслабление не переходит в возбуждение."
+      },
+
+      "ai_context": {
+        "description": "Sensual massage leading to sex. Touch-focused foreplay. Tests interest in extended tactile buildup.",
+
+        "tests": {
+          "primary_kink": "sensual_massage",
+          "secondary_kinks": ["oil_play", "extended_foreplay", "touch_focused", "buildup"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "caring touch as arousal"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy massage as foreplay?",
+          "as_giver": "Do you enjoy giving sensual massage?",
+          "emotional": "What does extended touch add to intimacy?"
+        },
+
+        "emotional_range": {
+          "positive": ["love the buildup", "relaxation into arousal", "intimate connection"],
+          "negative": ["too slow", "prefer direct", "massage stays massage"],
+          "curious": ["sounds nice", "with right partner"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["massage_foreplay_enjoys", "touch_focused_positive", "buildup_likes"],
+          "if_negative": ["direct_prefers", "massage_separate"],
+          "if_curious": ["massage_curious"]
+        },
+
+        "correlations": {
+          "positive": ["extended_foreplay", "sensory_play", "intimacy_focused"],
+          "negative": ["quick_prefers", "direct_action"]
+        },
+
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": null,
+          "normalization": "Classic foreplay technique—combines relaxation with building arousal"
+        }
+      },
+
+      "participants": [
+        { "role": "massaging", "gender": "any", "action": "gives sensual massage" },
+        { "role": "receiving", "gender": "any", "action": "receives and becomes aroused" }
+      ],
+
+      "dimensions": ["massage", "oil", "foreplay", "buildup"],
+      "tags": ["massage", "oil", "foreplay", "sensual", "touch"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ],
+
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_170", "scene_171", "scene_172", "scene_173", "scene_174"],
+      "reason": "Multiple sensory play variants consolidated into type-based scenes",
+      "recommendation": "Keep main sensory scenes with follow-up for specific sensation preferences"
+    }
+  ]
+}

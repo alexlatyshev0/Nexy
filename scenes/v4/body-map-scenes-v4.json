@@ -1,0 +1,392 @@
+[
+  {
+    "id": "bodymap-v4-001-kissing",
+    "slug": "bodymap-v4-kissing",
+    "priority": 50,
+    "schema_version": 4,
+    "image_url": null,
+    "description": "Body map for kissing preferences (V4)",
+    "participants": ["user", "partner"],
+    "dimensions": ["oral", "sensual", "body_worship"],
+    "tags": ["body_map", "kissing", "oral"],
+    "intensity": 2,
+    "relevant_for": {
+      "gender": "any",
+      "interested_in": "any"
+    },
+    "user_description": {
+      "ru": "Карта поцелуев",
+      "en": "Kissing map"
+    },
+    "question_config": {
+      "type": "body_map",
+      "action": "kiss",
+      "passes": [
+        {
+          "subject": "give",
+          "question": {
+            "ru": "Куда ты любишь целовать партнёра?",
+            "en": "Where do you like to kiss your partner?"
+          }
+        },
+        {
+          "subject": "receive",
+          "question": {
+            "ru": "Куда тебе нравится, когда тебя целуют?",
+            "en": "Where do you like being kissed?"
+          }
+        }
+      ]
+    },
+    "ai_context": {
+      "description": "Mapping kissing preferences across body zones",
+      "tests": {
+        "primary_kink": "oral_fixation",
+        "secondary_kinks": ["body_worship", "sensual_touch"],
+        "power_dynamic": "equal",
+        "gender_role_aspect": "tender"
+      },
+      "emotional_range": {
+        "positive": ["intimacy", "tenderness", "arousal"],
+        "negative": ["discomfort", "ticklishness"],
+        "curious": ["exploration"]
+      },
+      "profile_signals": {
+        "if_positive": ["enjoys_oral_attention", "body_worship_giver", "body_worship_receiver"],
+        "if_negative": ["oral_averse", "touch_sensitive"],
+        "if_curious": ["exploring_touch"]
+      },
+      "taboo_context": {
+        "level": 1,
+        "common_concerns": null,
+        "normalization": null
+      }
+    },
+    "follow_up": null
+  },
+  {
+    "id": "bodymap-v4-002-licking",
+    "slug": "bodymap-v4-licking",
+    "priority": 51,
+    "schema_version": 4,
+    "image_url": null,
+    "description": "Body map for licking/sucking preferences (V4)",
+    "participants": ["user", "partner"],
+    "dimensions": ["oral", "sensual", "fetish"],
+    "tags": ["body_map", "licking", "oral", "fetish"],
+    "intensity": 3,
+    "relevant_for": {
+      "gender": "any",
+      "interested_in": "any"
+    },
+    "user_description": {
+      "ru": "Карта ласк языком",
+      "en": "Licking/sucking map"
+    },
+    "question_config": {
+      "type": "body_map",
+      "action": "lick_suck",
+      "passes": [
+        {
+          "subject": "give",
+          "question": {
+            "ru": "Где ты любишь лизать/сосать партнёра?",
+            "en": "Where do you like to lick/suck your partner?"
+          }
+        },
+        {
+          "subject": "receive",
+          "question": {
+            "ru": "Где тебе нравится, когда тебя лижут/сосут?",
+            "en": "Where do you like being licked/sucked?"
+          }
+        }
+      ]
+    },
+    "ai_context": {
+      "description": "Mapping oral stimulation preferences across body zones",
+      "tests": {
+        "primary_kink": "oral_fixation",
+        "secondary_kinks": ["body_worship", "cunnilingus", "fellatio"],
+        "power_dynamic": "service",
+        "gender_role_aspect": "sensual"
+      },
+      "emotional_range": {
+        "positive": ["arousal", "pleasure", "submission"],
+        "negative": ["disgust", "discomfort"],
+        "curious": ["new_sensations"]
+      },
+      "profile_signals": {
+        "if_positive": ["oral_giver", "oral_receiver", "sensual_worship"],
+        "if_negative": ["oral_averse"],
+        "if_curious": ["oral_curious"]
+      },
+      "taboo_context": {
+        "level": 2,
+        "common_concerns": null,
+        "normalization": null
+      }
+    },
+    "follow_up": null
+  },
+  {
+    "id": "bodymap-v4-003-light-slapping",
+    "slug": "bodymap-v4-light-slapping",
+    "priority": 52,
+    "schema_version": 4,
+    "image_url": null,
+    "description": "Body map for light slapping preferences (V4)",
+    "participants": ["user", "partner"],
+    "dimensions": ["impact", "playful", "dominance"],
+    "tags": ["body_map", "slapping", "impact", "playful"],
+    "intensity": 2,
+    "relevant_for": {
+      "gender": "any",
+      "interested_in": "any"
+    },
+    "user_description": {
+      "ru": "Карта лёгких шлепков",
+      "en": "Light slapping map"
+    },
+    "question_config": {
+      "type": "body_map",
+      "action": "light_slap",
+      "passes": [
+        {
+          "subject": "give",
+          "question": {
+            "ru": "Где ты любишь легонько шлёпать партнёра?",
+            "en": "Where do you like to lightly slap your partner?"
+          }
+        },
+        {
+          "subject": "receive",
+          "question": {
+            "ru": "Где тебе нравится, когда тебя легонько шлёпают?",
+            "en": "Where do you like being lightly slapped?"
+          }
+        }
+      ]
+    },
+    "ai_context": {
+      "description": "Mapping light impact play preferences across body zones",
+      "tests": {
+        "primary_kink": "impact_play_light",
+        "secondary_kinks": ["playful_dominance", "teasing"],
+        "power_dynamic": "top",
+        "gender_role_aspect": "playful"
+      },
+      "emotional_range": {
+        "positive": ["excitement", "playfulness", "arousal"],
+        "negative": ["pain_aversion", "discomfort"],
+        "curious": ["impact_curious"]
+      },
+      "profile_signals": {
+        "if_positive": ["enjoys_light_impact_giving", "enjoys_light_impact_receiving"],
+        "if_negative": ["impact_averse"],
+        "if_curious": ["impact_curious"]
+      },
+      "taboo_context": {
+        "level": 2,
+        "common_concerns": null,
+        "normalization": null
+      }
+    },
+    "follow_up": null
+  },
+  {
+    "id": "bodymap-v4-004-spanking",
+    "slug": "bodymap-v4-spanking",
+    "priority": 53,
+    "schema_version": 4,
+    "image_url": null,
+    "description": "Body map for spanking preferences (V4)",
+    "participants": ["user", "partner"],
+    "dimensions": ["impact", "bdsm", "dominance", "submission"],
+    "tags": ["body_map", "spanking", "impact", "bdsm"],
+    "intensity": 4,
+    "relevant_for": {
+      "gender": "any",
+      "interested_in": "any"
+    },
+    "user_description": {
+      "ru": "Карта порки",
+      "en": "Spanking map"
+    },
+    "question_config": {
+      "type": "body_map",
+      "action": "spank",
+      "passes": [
+        {
+          "subject": "give",
+          "question": {
+            "ru": "Где ты готов(а) пороть партнёра?",
+            "en": "Where would you spank your partner?"
+          }
+        },
+        {
+          "subject": "receive",
+          "question": {
+            "ru": "Где тебе нравится, когда тебя порют?",
+            "en": "Where do you like being spanked?"
+          }
+        }
+      ]
+    },
+    "ai_context": {
+      "description": "Mapping harder impact play preferences across body zones",
+      "tests": {
+        "primary_kink": "impact_play_hard",
+        "secondary_kinks": ["spanking", "discipline", "pain_pleasure"],
+        "power_dynamic": "dominant",
+        "gender_role_aspect": "discipline"
+      },
+      "emotional_range": {
+        "positive": ["arousal", "submission", "catharsis"],
+        "negative": ["fear", "pain_aversion"],
+        "curious": ["pain_curious"]
+      },
+      "profile_signals": {
+        "if_positive": ["enjoys_spanking_giving", "enjoys_spanking_receiving", "pain_pleasure"],
+        "if_negative": ["pain_hard_limit"],
+        "if_curious": ["spanking_curious"]
+      },
+      "taboo_context": {
+        "level": 3,
+        "common_concerns": ["pain_tolerance", "boundaries"],
+        "normalization": "Многие пары включают порку в свою интимную жизнь для обоюдного удовольствия"
+      }
+    },
+    "follow_up": null
+  },
+  {
+    "id": "bodymap-v4-005-biting",
+    "slug": "bodymap-v4-biting",
+    "priority": 54,
+    "schema_version": 4,
+    "image_url": null,
+    "description": "Body map for biting/scratching preferences (V4)",
+    "participants": ["user", "partner"],
+    "dimensions": ["primal", "pain", "passion"],
+    "tags": ["body_map", "biting", "scratching", "primal"],
+    "intensity": 3,
+    "relevant_for": {
+      "gender": "any",
+      "interested_in": "any"
+    },
+    "user_description": {
+      "ru": "Карта укусов и царапин",
+      "en": "Biting/scratching map"
+    },
+    "question_config": {
+      "type": "body_map",
+      "action": "bite_scratch",
+      "passes": [
+        {
+          "subject": "give",
+          "question": {
+            "ru": "Где ты любишь кусать/царапать партнёра?",
+            "en": "Where do you like to bite/scratch your partner?"
+          }
+        },
+        {
+          "subject": "receive",
+          "question": {
+            "ru": "Где тебе нравится, когда тебя кусают/царапают?",
+            "en": "Where do you like being bitten/scratched?"
+          }
+        }
+      ]
+    },
+    "ai_context": {
+      "description": "Mapping primal/sensation play preferences across body zones",
+      "tests": {
+        "primary_kink": "primal_play",
+        "secondary_kinks": ["marking", "sensation_play", "passion"],
+        "power_dynamic": "primal",
+        "gender_role_aspect": "passionate"
+      },
+      "emotional_range": {
+        "positive": ["passion", "intensity", "marking"],
+        "negative": ["pain_aversion", "marks_concern"],
+        "curious": ["primal_curious"]
+      },
+      "profile_signals": {
+        "if_positive": ["primal_giver", "primal_receiver", "enjoys_marking"],
+        "if_negative": ["marks_averse", "gentle_only"],
+        "if_curious": ["primal_curious"]
+      },
+      "taboo_context": {
+        "level": 2,
+        "common_concerns": ["visible_marks"],
+        "normalization": null
+      }
+    },
+    "follow_up": null
+  },
+  {
+    "id": "bodymap-v4-006-squeezing",
+    "slug": "bodymap-v4-squeezing",
+    "priority": 55,
+    "schema_version": 4,
+    "image_url": null,
+    "description": "Body map for squeezing/twisting preferences (V4)",
+    "participants": ["user", "partner"],
+    "dimensions": ["sensation", "nipple_play", "grip"],
+    "tags": ["body_map", "squeezing", "twisting", "sensation"],
+    "intensity": 3,
+    "relevant_for": {
+      "gender": "any",
+      "interested_in": "any"
+    },
+    "user_description": {
+      "ru": "Карта сжатий и кручений",
+      "en": "Squeezing/twisting map"
+    },
+    "question_config": {
+      "type": "body_map",
+      "action": "squeeze_twist",
+      "passes": [
+        {
+          "subject": "give",
+          "question": {
+            "ru": "Где ты любишь сжимать/крутить партнёра?",
+            "en": "Where do you like to squeeze/twist your partner?"
+          }
+        },
+        {
+          "subject": "receive",
+          "question": {
+            "ru": "Где тебе нравится, когда тебя сжимают/крутят?",
+            "en": "Where do you like being squeezed/twisted?"
+          }
+        }
+      ]
+    },
+    "ai_context": {
+      "description": "Mapping grip/pressure play preferences across body zones",
+      "tests": {
+        "primary_kink": "sensation_play",
+        "secondary_kinks": ["nipple_play", "grip_play", "pressure"],
+        "power_dynamic": "control",
+        "gender_role_aspect": "intense"
+      },
+      "emotional_range": {
+        "positive": ["intensity", "arousal", "control"],
+        "negative": ["pain_aversion", "sensitivity"],
+        "curious": ["sensation_curious"]
+      },
+      "profile_signals": {
+        "if_positive": ["enjoys_pressure_giving", "enjoys_pressure_receiving", "nipple_play"],
+        "if_negative": ["gentle_touch_only"],
+        "if_curious": ["pressure_curious"]
+      },
+      "taboo_context": {
+        "level": 2,
+        "common_concerns": null,
+        "normalization": null
+      }
+    },
+    "follow_up": null
+  }
+]

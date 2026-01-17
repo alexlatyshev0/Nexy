@@ -1,0 +1,255 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Solo Play & Body Fetishes",
+  "note": "Masturbation, foot fetish, sexting, aftercare, body-focused kinks",
+  "scenes": [
+    {
+      "id": "scene_solo_masturbation_f",
+      "priority": 2,
+      "intensity": 2,
+      "generation_prompt": "woman alone in bed masturbating, lying on back on white tangled sheets, eyes closed head tilted back expression of pleasure, her left hand on her breast, right hand between her spread legs, completely nude body arched slightly, soft warm lamp light from bedside, intimate private solo moment",
+      "user_description": {
+        "en": "Alone in bed, lost in her own pleasure. Eyes closed, back arching. Private moment of self-exploration and release.",
+        "ru": "Одна в постели, погружённая в своё удовольствие. Глаза закрыты, спина выгибается. Личный момент самопознания и разрядки."
+      },
+      "ai_context": {
+        "description": "Female solo masturbation. Testing comfort with watching/thinking about solo female pleasure.",
+        "tests": { "primary_kink": "female_masturbation", "secondary_kinks": ["solo_pleasure", "self_touch", "voyeur_adjacent"], "power_dynamic": "neutral", "gender_role_aspect": "female self-pleasure" },
+        "question_angles": { "as_viewer": "Do you enjoy watching a woman pleasure herself?", "as_woman": "Do you enjoy solo play?", "emotional": "How does seeing self-pleasure make you feel?" },
+        "emotional_range": { "positive": ["very hot", "natural", "love watching"], "negative": ["prefer partnered", "not interested"], "curious": ["can be nice", "depends on context"] },
+        "profile_signals": { "if_positive": ["solo_female_enjoys", "masturbation_positive"], "if_negative": ["partnered_only"], "if_curious": ["solo_neutral"] },
+        "correlations": { "positive": ["voyeurism", "porn_enjoys", "self_pleasure_normalizes"], "negative": ["partnered_only_strict"] },
+        "taboo_context": { "level": 1, "common_concerns": ["none significant"], "normalization": "Masturbation is healthy and natural—solo pleasure is self-care" }
+      },
+      "participants": [{ "role": "solo", "gender": "female", "action": "masturbates" }],
+      "dimensions": ["masturbation", "solo", "self_pleasure"],
+      "tags": ["solo", "masturbation", "female", "self_pleasure"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_solo_masturbation_m",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "man alone in bedroom masturbating, lying on back on bed dark sheets, one hand wrapped around himself stroking, other hand behind his head, eyes closed jaw clenched in pleasure expression, completely nude muscular body, soft moody lighting, intimate vulnerable male moment",
+      "user_description": {
+        "en": "Alone, hand moving in familiar rhythm. Eyes closed, jaw tight with building pleasure. Private moment of male self-pleasure.",
+        "ru": "Один, рука движется в знакомом ритме. Глаза закрыты, челюсть сжата от нарастающего удовольствия. Личный момент мужского самоудовлетворения."
+      },
+      "ai_context": {
+        "description": "Male solo masturbation. Testing comfort with watching/thinking about solo male pleasure.",
+        "tests": { "primary_kink": "male_masturbation", "secondary_kinks": ["solo_pleasure", "male_vulnerability", "self_touch"], "power_dynamic": "neutral", "gender_role_aspect": "male self-pleasure" },
+        "question_angles": { "as_viewer": "Do you enjoy watching a man pleasure himself?", "as_man": "Do you enjoy solo play?", "emotional": "How does seeing male self-pleasure make you feel?" },
+        "emotional_range": { "positive": ["hot", "vulnerable is sexy", "natural"], "negative": ["not interested", "prefer partnered"], "curious": ["can be nice", "depends"] },
+        "profile_signals": { "if_positive": ["solo_male_enjoys", "male_masturbation_hot"], "if_negative": ["not_interested_male_solo"], "if_curious": ["male_solo_neutral"] },
+        "correlations": { "positive": ["male_body_appreciates", "vulnerability_likes"], "negative": ["female_only", "partnered_only"] },
+        "taboo_context": { "level": 2, "common_concerns": ["some find less appealing than female"], "normalization": "Male masturbation equally natural—vulnerability can be attractive" }
+      },
+      "participants": [{ "role": "solo", "gender": "male", "action": "masturbates" }],
+      "dimensions": ["masturbation", "solo", "male_solo"],
+      "tags": ["solo", "masturbation", "male", "self_pleasure"],
+      "relevant_for": { "gender": "any", "interested_in": "male" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_solo_vibrator",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "woman alone in bed using vibrator, lying propped against pillows on white sheets, legs spread bent at knees, hand holding purple vibrator pressed between her legs, eyes closed expression of building pleasure, she wearing only t-shirt pushed up, bedside table with lubricant visible, soft bedroom lighting",
+      "user_description": {
+        "en": "Vibrator humming against her most sensitive spot. Alone with her toy, building toward release. Technology enhancing solo pleasure.",
+        "ru": "Вибратор гудит на её самом чувствительном месте. Одна со своей игрушкой, нарастая к разрядке. Технология усиливает одиночное удовольствие."
+      },
+      "ai_context": {
+        "description": "Solo vibrator use. Testing comfort with toys in solo context.",
+        "tests": { "primary_kink": "vibrator_solo", "secondary_kinks": ["toys", "self_pleasure", "intense_sensation"], "power_dynamic": "neutral", "gender_role_aspect": "self-sufficient pleasure" },
+        "question_angles": { "as_viewer": "Do you enjoy watching solo toy use?", "as_user": "Do you use toys when alone?", "emotional": "How do you feel about solo toy play?" },
+        "emotional_range": { "positive": ["love it", "toys are great", "efficient pleasure"], "negative": ["prefer hands", "prefer partner"], "curious": ["sometimes", "depends on mood"] },
+        "profile_signals": { "if_positive": ["solo_toys_enjoys", "vibrator_positive"], "if_negative": ["hands_only", "partner_prefers"], "if_curious": ["toys_sometimes"] },
+        "correlations": { "positive": ["toys_general", "self_pleasure_positive", "orgasm_focused"], "negative": ["natural_only", "partner_dependent"] },
+        "taboo_context": { "level": 1, "common_concerns": ["none"], "normalization": "Toys enhance solo pleasure—most people use them" }
+      },
+      "participants": [{ "role": "solo", "gender": "female", "action": "uses vibrator" }],
+      "dimensions": ["toys", "vibrator", "solo"],
+      "tags": ["vibrator", "toy", "solo", "self_pleasure"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_foot_worship",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "man kneeling on floor at woman's feet, both hands cradling her bare foot lifted to his face, his lips pressed to her arch in reverent kiss, looking up at her with devoted expression, she sitting in elegant armchair wearing silk robe, looking down at him with satisfied superior expression, her toenails painted red, soft bedroom lighting",
+      "user_description": {
+        "en": "He kneels, cradling her foot like something precious. Lips pressed to her arch in worship. Devotion expressed through attention to her feet.",
+        "ru": "Он на коленях, держит её ногу как что-то драгоценное. Губы прижаты к её своду в поклонении. Преданность выраженная через внимание к её ногам."
+      },
+      "ai_context": {
+        "description": "Foot worship. Devotional foot attention. Testing foot fetish interest.",
+        "tests": { "primary_kink": "foot_fetish", "secondary_kinks": ["worship", "devotion", "kneeling"], "power_dynamic": "submissive", "gender_role_aspect": "male devotion to female feet" },
+        "question_angles": { "as_worshipper": "Are you attracted to feet or foot worship?", "as_worshipped": "Would you enjoy having your feet worshipped?", "emotional": "How does foot attention make you feel?" },
+        "emotional_range": { "positive": ["feet are sexy", "love worship dynamic", "very into it"], "negative": ["feet do nothing for me", "weird", "not attractive"], "curious": ["never considered", "might try"] },
+        "profile_signals": { "if_positive": ["foot_fetish", "worship_enjoys", "feet_attracted"], "if_negative": ["feet_no", "feet_neutral"], "if_curious": ["foot_curious"] },
+        "correlations": { "positive": ["submission", "worship_kink", "body_parts_focused"], "negative": ["not_feet_focused"] },
+        "taboo_context": { "level": 3, "common_concerns": ["stigma", "not understanding appeal"], "normalization": "Foot fetish is one of most common fetishes—nothing unusual about it" }
+      },
+      "participants": [{ "role": "worshipping", "gender": "male", "action": "kisses feet" }, { "role": "worshipped", "gender": "female", "action": "receives worship" }],
+      "dimensions": ["foot_fetish", "worship", "devotion"],
+      "tags": ["feet", "worship", "kneeling", "fetish"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_heels_fetish",
+      "priority": 4,
+      "intensity": 2,
+      "generation_prompt": "woman standing wearing only high stiletto heels, completely nude otherwise, standing in confident pose one hand on hip, legs emphasized by heels creating long leg line, calves and thighs defined by heel height, standing on hardwood floor, studio lighting emphasizing her silhouette, powerful confident feminine energy",
+      "user_description": {
+        "en": "Nothing but high heels. Legs elongated, calves defined. The shoes transforming posture into power. Nude except for stilettos.",
+        "ru": "Ничего кроме высоких каблуков. Ноги удлинены, икры подчёркнуты. Туфли превращают осанку во власть. Обнажена кроме шпилек."
+      },
+      "ai_context": {
+        "description": "Heels-only aesthetic. Shoe fetish combined with nude body. Testing heel/shoe attraction.",
+        "tests": { "primary_kink": "heels_fetish", "secondary_kinks": ["shoes", "legs", "power_pose"], "power_dynamic": "neutral", "gender_role_aspect": "feminine power through footwear" },
+        "question_angles": { "visual_appeal": "Do high heels especially attract you?", "specific": "Is there something about heels-only that appeals?" },
+        "emotional_range": { "positive": ["love heels", "legs look amazing", "so hot"], "negative": ["uncomfortable looking", "prefer barefoot", "doesn't do it for me"], "curious": ["can be nice", "depends"] },
+        "profile_signals": { "if_positive": ["heels_fetish", "shoes_attracted", "legs_focused"], "if_negative": ["heels_neutral", "barefoot_prefers"], "if_curious": ["heels_sometimes"] },
+        "correlations": { "positive": ["legs_attracted", "fashion_focused", "feminine_aesthetic"], "negative": ["casual_prefers", "natural_only"] },
+        "taboo_context": { "level": 2, "common_concerns": ["practicality", "foot health"], "normalization": "Heels fetish is common—combines power, legs, and fashion" }
+      },
+      "participants": [{ "role": "wearing", "gender": "female", "action": "poses in heels only" }],
+      "dimensions": ["heels_fetish", "legs", "confidence"],
+      "tags": ["heels", "fetish", "legs", "confident"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_sexting_selfie_f",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "woman taking lingerie selfie in full-length mirror, holding smartphone up with right hand screen facing mirror, she wearing matching red lace bra and panties, standing in slight hip-pop pose, looking at phone screen, bedroom visible in reflection, modern sexting scenario sending pics to someone, playful seductive expression",
+      "user_description": {
+        "en": "Mirror selfie in lingerie. Phone angled just right. Sending a preview of what's waiting. Modern digital foreplay.",
+        "ru": "Селфи в зеркале в белье. Телефон под правильным углом. Отправляет превью того, что ждёт. Современная цифровая прелюдия."
+      },
+      "ai_context": {
+        "description": "Sexting selfie. Modern digital intimacy. Testing comfort with sending/receiving intimate photos.",
+        "tests": { "primary_kink": "sexting", "secondary_kinks": ["selfies", "digital_intimacy", "teasing"], "power_dynamic": "neutral", "gender_role_aspect": "digital self-expression" },
+        "question_angles": { "as_sender": "Do you enjoy sending intimate selfies?", "as_receiver": "Do you enjoy receiving intimate photos?", "emotional": "How does digital intimacy feel to you?" },
+        "emotional_range": { "positive": ["love it", "fun foreplay", "builds anticipation"], "negative": ["privacy concerns", "prefer in person", "not comfortable"], "curious": ["sometimes", "with right person"] },
+        "profile_signals": { "if_positive": ["sexting_enjoys", "digital_intimacy_ok", "selfies_sends"], "if_negative": ["in_person_only", "privacy_strict"], "if_curious": ["sexting_sometimes"] },
+        "correlations": { "positive": ["modern_dating", "long_distance_ok", "visual_teasing"], "negative": ["traditional_only", "privacy_focused"] },
+        "taboo_context": { "level": 2, "common_concerns": ["privacy", "photos spreading"], "normalization": "Consensual sexting is normal modern intimacy—trust and discretion key" }
+      },
+      "participants": [{ "role": "sending", "gender": "female", "action": "takes selfie" }],
+      "dimensions": ["sexting", "selfie", "digital_intimacy"],
+      "tags": ["sexting", "selfie", "mirror", "phone"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_sexting_selfie_m",
+      "priority": 4,
+      "intensity": 2,
+      "generation_prompt": "man taking shirtless selfie in bathroom mirror, holding phone up showing camera screen in reflection, other arm tensed showing muscle definition, wearing only low-riding jeans showing v-line above waistband, confident expression slight smirk, good lighting highlighting physique, modern sexting scenario",
+      "user_description": {
+        "en": "Mirror selfie, shirt off. Flex subtle but visible. Sending a taste of what's underneath. Digital tease from him.",
+        "ru": "Селфи в зеркале, без рубашки. Мышцы слегка напряжены. Отправляет намёк на то, что под одеждой. Цифровое дразнение от него."
+      },
+      "ai_context": {
+        "description": "Male sexting selfie. Modern digital intimacy from male perspective.",
+        "tests": { "primary_kink": "sexting", "secondary_kinks": ["male_selfies", "digital_intimacy", "physique_display"], "power_dynamic": "neutral", "gender_role_aspect": "male digital self-expression" },
+        "question_angles": { "as_sender": "Do you enjoy sending shirtless/intimate selfies?", "as_receiver": "Do you enjoy receiving photos from men?", "emotional": "How do you feel about male sexting?" },
+        "emotional_range": { "positive": ["love receiving", "hot when done well", "exciting"], "negative": ["unsolicited is bad", "prefer in person", "not interested"], "curious": ["depends on person", "can be nice"] },
+        "profile_signals": { "if_positive": ["male_sexting_enjoys", "physique_appreciates"], "if_negative": ["unsolicited_no", "in_person_prefers"], "if_curious": ["male_selfies_neutral"] },
+        "correlations": { "positive": ["male_body_appreciates", "digital_intimacy", "visual_arousal"], "negative": ["female_only", "traditional_only"] },
+        "taboo_context": { "level": 2, "common_concerns": ["unsolicited pics stigma", "dick pics association"], "normalization": "Consensual, tasteful male sexting is appreciated—context and consent matter" }
+      },
+      "participants": [{ "role": "sending", "gender": "male", "action": "takes selfie" }],
+      "dimensions": ["sexting", "selfie", "male_display"],
+      "tags": ["sexting", "selfie", "shirtless", "male"],
+      "relevant_for": { "gender": "any", "interested_in": "male" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_video_call_intimacy",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "split scene showing video call between couple in different locations, she on left sitting in front of laptop wearing black lingerie showing off to camera, laptop screen shows his face watching, he on right lying in bed watching screen with desire, screens visible showing their connection, long distance intimacy through technology, bedroom settings both sides",
+      "user_description": {
+        "en": "Video call intimacy. She shows off in lingerie while he watches from miles away. Distance bridged by screens. Modern long-distance desire.",
+        "ru": "Интимность через видеозвонок. Она показывает себя в белье пока он смотрит за километры. Расстояние преодолено экранами. Современное желание на расстоянии."
+      },
+      "ai_context": {
+        "description": "Video call intimacy. Long-distance digital sex. Testing comfort with remote intimacy.",
+        "tests": { "primary_kink": "video_sex", "secondary_kinks": ["long_distance", "digital_intimacy", "showing_off"], "power_dynamic": "equal", "gender_role_aspect": "modern relationship tool" },
+        "question_angles": { "experience": "Have you had intimate video calls?", "appeal": "Does video intimacy appeal to you?", "emotional": "Can digital connection feel intimate?" },
+        "emotional_range": { "positive": ["necessary sometimes", "can be hot", "creative connection"], "negative": ["not the same", "prefer physical", "awkward"], "curious": ["would try", "better than nothing"] },
+        "profile_signals": { "if_positive": ["video_sex_ok", "long_distance_manages", "digital_intimate"], "if_negative": ["physical_only", "video_awkward"], "if_curious": ["video_curious"] },
+        "correlations": { "positive": ["long_distance_ok", "modern_dating", "adaptable"], "negative": ["physical_presence_needs", "traditional_only"] },
+        "taboo_context": { "level": 2, "common_concerns": ["recording", "privacy"], "normalization": "Video intimacy is common in modern relationships—trust essential" }
+      },
+      "participants": [{ "role": "showing", "gender": "female", "action": "shows off on camera" }, { "role": "watching", "gender": "male", "action": "watches on screen" }],
+      "dimensions": ["video_call", "long_distance", "digital_intimacy"],
+      "tags": ["video_call", "long_distance", "screens", "modern"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_aftercare",
+      "priority": 2,
+      "intensity": 1,
+      "generation_prompt": "intimate aftercare moment post-scene, couple cuddling in bed wrapped in soft grey blanket, she curled against his chest in fetal position, he spooning her protectively arms wrapped around her, both looking peaceful coming down from intensity, her eyes closed safe expression, his chin resting on her head protective, soft warm lamp light, emotional tenderness",
+      "user_description": {
+        "en": "After intensity, gentleness. Wrapped in blankets, wrapped in each other. Coming down together. The tender care that follows the storm.",
+        "ru": "После интенсивности, нежность. Завёрнуты в одеяла, завёрнуты друг в друга. Спускаются вместе. Нежная забота после бури."
+      },
+      "ai_context": {
+        "description": "Aftercare moment. Post-intensity tenderness. Testing value placed on aftercare.",
+        "tests": { "primary_kink": "aftercare", "secondary_kinks": ["tenderness", "emotional_connection", "recovery"], "power_dynamic": "equal", "gender_role_aspect": "mutual care" },
+        "question_angles": { "importance": "How important is aftercare to you?", "emotional": "Do you need time to come down after intensity?", "giving": "Do you enjoy providing aftercare?" },
+        "emotional_range": { "positive": ["essential", "love the tenderness", "best part sometimes"], "negative": ["not necessary", "prefer space", "awkward"], "curious": ["makes sense", "depends on intensity"] },
+        "profile_signals": { "if_positive": ["aftercare_values", "emotional_connection_needs", "tenderness_enjoys"], "if_negative": ["independent_after", "space_needs"], "if_curious": ["aftercare_situational"] },
+        "correlations": { "positive": ["bdsm_aware", "emotional_intelligence", "partner_care"], "negative": ["disconnected_after", "independent_recovery"] },
+        "taboo_context": { "level": 0, "common_concerns": ["none"], "normalization": "Aftercare is recognized best practice—emotional and physical recovery" }
+      },
+      "participants": [{ "role": "caring", "gender": "male", "action": "holds, comforts" }, { "role": "receiving", "gender": "female", "action": "receives care, recovers" }],
+      "dimensions": ["aftercare", "tenderness", "emotional_connection"],
+      "tags": ["aftercare", "cuddling", "tender", "emotional"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_mutual_masturbation",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "couple sitting facing each other on bed both masturbating simultaneously, she propped against headboard legs spread one hand between her legs, he sitting at foot of bed one hand stroking himself, both completely nude, intense eye contact watching each other's pleasure, mirroring expressions of arousal, white sheets around them, soft intimate lighting",
+      "user_description": {
+        "en": "Facing each other, watching each other touch. Eyes locked, mirroring pleasure. Together but self-focused. Intimate voyeurism within a couple.",
+        "ru": "Лицом друг к другу, наблюдая как касаются себя. Взгляды переплетены, отражая удовольствие. Вместе но сосредоточены на себе. Интимный вуайеризм внутри пары."
+      },
+      "ai_context": {
+        "description": "Mutual masturbation. Watching each other self-pleasure. Testing interest in this intimate activity.",
+        "tests": { "primary_kink": "mutual_masturbation", "secondary_kinks": ["watching_each_other", "mirroring", "voyeur_within_couple"], "power_dynamic": "equal", "gender_role_aspect": "shared self-pleasure" },
+        "question_angles": { "appeal": "Does mutual masturbation appeal to you?", "intimacy": "Is watching each other intimate or awkward?", "experience": "Have you tried this with a partner?" },
+        "emotional_range": { "positive": ["very intimate", "love watching each other", "hot"], "negative": ["prefer touching each other", "awkward", "not connected enough"], "curious": ["interesting", "would try"] },
+        "profile_signals": { "if_positive": ["mutual_masturbation_enjoys", "watching_partner_hot"], "if_negative": ["touching_each_other_prefers"], "if_curious": ["mutual_curious"] },
+        "correlations": { "positive": ["voyeurism_lite", "masturbation_positive", "visual_arousal"], "negative": ["touch_focused", "partner_touch_only"] },
+        "taboo_context": { "level": 2, "common_concerns": ["vulnerability", "awkwardness"], "normalization": "Mutual masturbation builds intimacy—sharing private pleasure" }
+      },
+      "participants": [{ "role": "mutual", "gender": "male", "action": "masturbates, watches" }, { "role": "mutual", "gender": "female", "action": "masturbates, watches" }],
+      "dimensions": ["mutual_masturbation", "watching", "mirroring"],
+      "tags": ["mutual_masturbation", "watching", "intimate"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ],
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_089", "scene_090", "scene_091", "scene_092", "scene_093", "scene_094", "scene_095", "scene_096", "scene_097", "scene_098", "scene_099", "scene_100", "scene_217", "scene_218", "scene_219", "scene_220", "scene_463", "scene_464", "scene_465", "scene_466", "scene_467", "scene_468", "scene_469", "scene_470", "scene_471", "scene_472"],
+      "reason": "Consolidated solo play, body fetishes, sexting, and aftercare into representative types",
+      "recommendation": "Use follow-up questions for specific toy types, body parts, and intensity preferences"
+    }
+  ]
+}

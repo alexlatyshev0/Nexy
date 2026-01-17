@@ -1,0 +1,135 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Filming & Photography",
+  "note": "Making videos, taking photos, recording intimate moments",
+  "scenes": [
+    {
+      "id": "scene_filming_sex",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "couple having sex with camera visible recording them, smartphone on tripod capturing the action, they aware of camera but focused on each other, bedroom setting with good lighting for filming, creating their own video",
+      "user_description": {
+        "en": "The camera records as they make love. Creating their own private video. Knowing it's being captured adds a thrill.",
+        "ru": "Камера записывает пока они занимаются любовью. Создают своё личное видео. Знание о съёмке добавляет трепета."
+      },
+      "ai_context": {
+        "description": "Filming sex together. Creating private content. Testing comfort with recording intimacy.",
+        "tests": { "primary_kink": "filming_sex", "secondary_kinks": ["creating_content", "exhibitionism_lite", "memory_keeping"], "power_dynamic": "equal", "gender_role_aspect": "mutual documentation" },
+        "question_angles": { "comfort": "Would you film yourself having sex?", "trust": "With the right partner, would you create videos?", "reason": "Is it about reliving the moment or the thrill of filming?" },
+        "emotional_range": { "positive": ["hot to rewatch", "love creating content", "adds excitement"], "negative": ["privacy concerns", "never", "too risky"], "curious": ["with trusted partner", "maybe photos only"] },
+        "profile_signals": { "if_positive": ["filming_ok", "video_sex_enjoys", "exhibition_adjacent"], "if_negative": ["no_recording", "privacy_strict"], "if_curious": ["filming_conditional"] },
+        "correlations": { "positive": ["exhibitionism", "trust_high", "visual_arousal"], "negative": ["privacy_paramount", "risk_averse"] },
+        "taboo_context": { "level": 3, "common_concerns": ["videos leaking", "revenge porn", "trust"], "normalization": "Many couples film themselves—trust and secure storage essential" }
+      },
+      "participants": [{ "role": "being_filmed", "gender": "male", "action": "has sex on camera" }, { "role": "being_filmed", "gender": "female", "action": "has sex on camera" }],
+      "dimensions": ["filming", "video", "exhibitionism"],
+      "tags": ["filming", "camera", "video", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_boudoir_shoot",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "boudoir photography scene, she posing in lingerie on bed, partner with camera directing shots, professional but intimate atmosphere, soft lighting, she enjoying being photographed, creating artistic intimate photos together",
+      "user_description": {
+        "en": "Posing in lingerie while he captures the image. Boudoir shoot with her partner. Artistic, intimate, creating something beautiful.",
+        "ru": "Позирует в белье пока он делает снимок. Будуарная съёмка с партнёром. Художественно, интимно, создавая что-то красивое."
+      },
+      "ai_context": {
+        "description": "Boudoir photography by partner. Artistic intimate photos. Testing interest in being photographed.",
+        "tests": { "primary_kink": "boudoir", "secondary_kinks": ["being_photographed", "artistic", "lingerie_focus"], "power_dynamic": "model/photographer", "gender_role_aspect": "being admired through lens" },
+        "question_angles": { "as_model": "Would you enjoy a boudoir shoot with your partner?", "as_photographer": "Would you enjoy photographing your partner intimately?", "artistic": "Is the artistic element important?" },
+        "emotional_range": { "positive": ["feel beautiful", "love being captured", "great gift idea"], "negative": ["don't like photos of myself", "too exposed"], "curious": ["might be fun", "with right lighting"] },
+        "profile_signals": { "if_positive": ["boudoir_enjoys", "being_photographed_ok", "artistic_appreciates"], "if_negative": ["no_photos", "self_conscious"], "if_curious": ["photos_conditional"] },
+        "correlations": { "positive": ["confidence", "artistic_appreciation", "visual_person"], "negative": ["camera_shy", "body_issues"] },
+        "taboo_context": { "level": 2, "common_concerns": ["body image", "where photos go"], "normalization": "Boudoir is empowering—celebrating your body through art" }
+      },
+      "participants": [{ "role": "photographing", "gender": "male", "action": "takes photos" }, { "role": "modeling", "gender": "female", "action": "poses for camera" }],
+      "dimensions": ["photography", "boudoir", "artistic"],
+      "tags": ["photography", "boudoir", "lingerie", "artistic"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_nude_photo_request",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "intimate moment, she handing him her phone asking him to take photos of her nude body, posing naturally on bed, trust evident in her request, he honored to capture her beauty, creating intimate photos together",
+      "user_description": {
+        "en": "She hands him her phone, asking him to capture her. Trusting him with her image. Creating intimate photos together.",
+        "ru": "Она протягивает ему телефон, прося запечатлеть её. Доверяет ему своё изображение. Создание интимных фото вместе."
+      },
+      "ai_context": {
+        "description": "Requesting partner take nude photos. Deep trust gesture. Testing comfort with intimate photography.",
+        "tests": { "primary_kink": "nude_photography", "secondary_kinks": ["trust", "being_captured", "body_confidence"], "power_dynamic": "neutral", "gender_role_aspect": "vulnerable request" },
+        "question_angles": { "as_subject": "Would you ask your partner to photograph you nude?", "as_photographer": "Would you take intimate photos if asked?", "trust": "Does this level of trust appeal?" },
+        "emotional_range": { "positive": ["intimate gift", "trust is sexy", "would love to"], "negative": ["never trust with images", "too vulnerable"], "curious": ["with absolute trust", "someday maybe"] },
+        "profile_signals": { "if_positive": ["nude_photos_ok", "high_trust_partner", "body_confident"], "if_negative": ["no_nude_photos", "trust_issues"], "if_curious": ["photos_with_trust"] },
+        "correlations": { "positive": ["trust_gives", "body_confidence", "vulnerability_shares"], "negative": ["privacy_absolute", "image_control"] },
+        "taboo_context": { "level": 3, "common_concerns": ["image security", "trust requirements"], "normalization": "Sharing body through photos can be deeply intimate—requires absolute trust" }
+      },
+      "participants": [{ "role": "photographing", "gender": "male", "action": "takes photos" }, { "role": "requesting", "gender": "female", "action": "asks to be photographed" }],
+      "dimensions": ["photography", "trust", "vulnerability"],
+      "tags": ["photos", "nude", "trust", "intimate"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_watching_own_video",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "couple on couch watching video of themselves on TV screen, seeing their own intimate moments played back, her curled against him both watching themselves on screen, aroused by seeing their own passion, intimate living room setting",
+      "user_description": {
+        "en": "Watching themselves on screen. Their own passion played back. Aroused by seeing what they look like together. Private screening.",
+        "ru": "Смотрят на себя на экране. Их собственная страсть воспроизведена. Возбуждены видя как они выглядят вместе. Личный просмотр."
+      },
+      "ai_context": {
+        "description": "Watching their own sex video. Aroused by seeing themselves. Testing interest in rewatching intimacy.",
+        "tests": { "primary_kink": "watching_self", "secondary_kinks": ["video_playback", "voyeurism_self", "memory_arousal"], "power_dynamic": "equal", "gender_role_aspect": "mutual viewing" },
+        "question_angles": { "appeal": "Would watching your own sex video arouse you?", "perspective": "Are you curious how you look during sex?", "sharing": "Would you enjoy this with your partner?" },
+        "emotional_range": { "positive": ["so hot", "love seeing us", "great memories"], "negative": ["cringe", "don't want to see myself", "awkward"], "curious": ["might be interesting", "once maybe"] },
+        "profile_signals": { "if_positive": ["self_video_enjoys", "visual_memory_likes"], "if_negative": ["self_conscious", "no_video"], "if_curious": ["self_video_curious"] },
+        "correlations": { "positive": ["filming_ok", "body_confident", "visual_person"], "negative": ["body_issues", "camera_shy"] },
+        "taboo_context": { "level": 2, "common_concerns": ["self-criticism", "awkwardness"], "normalization": "Seeing yourself can be enlightening and arousing—many find it hot" }
+      },
+      "participants": [{ "role": "watching", "gender": "male", "action": "watches video of themselves" }, { "role": "watching", "gender": "female", "action": "watches video of themselves" }],
+      "dimensions": ["video", "watching_self", "couple_activity"],
+      "tags": ["video", "watching", "couple", "playback"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_dick_pic_request",
+      "priority": 4,
+      "intensity": 2,
+      "generation_prompt": "phone screen showing text conversation, she asking him to send a photo, him taking intimate photo to send to her, digital intimacy exchange, modern relationship moment",
+      "user_description": {
+        "en": "She asks for a photo of him. He takes it, sends it. Digital intimacy exchange. Requested, wanted, appreciated.",
+        "ru": "Она просит фото его. Он делает, отправляет. Обмен цифровой интимностью. Запрошено, желанно, оценено."
+      },
+      "ai_context": {
+        "description": "Requested intimate male photo. Consensual exchange. Testing comfort with sending/requesting.",
+        "tests": { "primary_kink": "dick_pics", "secondary_kinks": ["sexting", "requested_photos", "digital_intimacy"], "power_dynamic": "neutral", "gender_role_aspect": "male vulnerability in photo" },
+        "question_angles": { "as_sender": "Would you send intimate photos if asked?", "as_requester": "Would you request intimate photos from partner?", "context": "Does being asked change everything?" },
+        "emotional_range": { "positive": ["love sending when asked", "request makes it hot", "enjoy sharing"], "negative": ["never send", "photos don't work for me"], "curious": ["with right person", "if asked nicely"] },
+        "profile_signals": { "if_positive": ["sending_ok", "digital_intimacy_comfortable"], "if_negative": ["no_intimate_photos"], "if_curious": ["photos_if_asked"] },
+        "correlations": { "positive": ["sexting_positive", "digital_comfortable", "request_responsive"], "negative": ["privacy_strict", "traditional_only"] },
+        "taboo_context": { "level": 3, "common_concerns": ["unsolicited stigma", "image spread"], "normalization": "Consensual requested photos are completely different from unsolicited—context is everything" }
+      },
+      "participants": [{ "role": "requesting", "gender": "female", "action": "asks for photo" }, { "role": "sending", "gender": "male", "action": "sends intimate photo" }],
+      "dimensions": ["sexting", "photos", "requested"],
+      "tags": ["photo", "sexting", "request", "digital"],
+      "relevant_for": { "gender": "any", "interested_in": "male" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ],
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_381", "scene_382", "scene_383", "scene_384", "scene_385", "scene_386", "scene_387", "scene_388", "scene_389", "scene_390", "scene_391", "scene_392", "scene_393", "scene_394"],
+      "reason": "Consolidated filming and photography scenes into representative scenarios",
+      "recommendation": "Use follow-up questions for specific preferences about what to record and how to use it"
+    }
+  ]
+}

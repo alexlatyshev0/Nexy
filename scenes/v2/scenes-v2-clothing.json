@@ -1,0 +1,303 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Clothing & Fashion Fetishes",
+  "note": "Lingerie, leather, latex, stockings, uniforms, fashion fetishes",
+  "scenes": [
+    {
+      "id": "scene_fishnet_bodysuit",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "woman standing in confident pose wearing black fishnet full-body catsuit, diamond mesh pattern covering from neck to ankles, completely nude underneath with body visible through mesh, one hand on hip, direct gaze at camera, dark backdrop studio setting, single dramatic spotlight creating shadows through mesh pattern",
+      "user_description": {
+        "en": "Black fishnet covers everything yet reveals everything. The diamond mesh pattern creates shadows on skin. Confident, bold, fetish fashion statement.",
+        "ru": "Чёрная сетка покрывает всё, но раскрывает всё. Ромбовидная сетка создаёт тени на коже. Уверенно, смело, заявление фетиш-моды."
+      },
+      "ai_context": {
+        "description": "Fishnet bodysuit. See-through fetish fashion. Testing attraction to mesh/fishnet clothing.",
+        "tests": { "primary_kink": "fishnet", "secondary_kinks": ["see_through", "fetish_fashion", "mesh"], "power_dynamic": "neutral", "gender_role_aspect": "bold feminine presentation" },
+        "question_angles": { "visual_appeal": "Do you find fishnet/mesh clothing attractive?", "on_partner": "Would you like your partner to wear this?" },
+        "emotional_range": { "positive": ["love the look", "very sexy", "confident vibe"], "negative": ["too revealing", "not my style", "uncomfortable looking"], "curious": ["interesting", "would try"] },
+        "profile_signals": { "if_positive": ["fishnet_enjoys", "mesh_attracted", "fetish_fashion_likes"], "if_negative": ["conservative_dress"], "if_curious": ["fashion_fetish_curious"] },
+        "correlations": { "positive": ["lingerie_appreciates", "visual_stimulation", "confidence_attracted"], "negative": ["traditional_dress_prefers"] },
+        "taboo_context": { "level": 2, "common_concerns": ["appropriateness", "where to wear"], "normalization": "Fishnet is classic fetish fashion—confident statement piece" }
+      },
+      "participants": [{ "role": "wearing", "gender": "female", "action": "poses in fishnet" }],
+      "dimensions": ["fishnet", "bodysuit", "fetish_fashion"],
+      "tags": ["fishnet", "mesh", "bodysuit", "fashion"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_leather_dominatrix",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman in full dominatrix outfit, black leather underbust corset cinching waist, matching leather panties, black patent leather thigh-high boots with stiletto heels, standing in wide powerful stance, leather riding crop held in right hand tapping against left palm, dark dungeon-like setting, dramatic spotlight creating harsh shadows",
+      "user_description": {
+        "en": "Full leather. Corset cinching waist, thigh-high boots gleaming. Crop in hand, tapping against palm. Power dressed to dominate.",
+        "ru": "Полностью в коже. Корсет стягивает талию, сапоги выше колена блестят. Стек в руке, постукивает по ладони. Одета властвовать."
+      },
+      "ai_context": {
+        "description": "Dominatrix leather outfit. Full BDSM aesthetic. Testing attraction to leather/dominatrix look.",
+        "tests": { "primary_kink": "leather", "secondary_kinks": ["corset", "boots", "dominatrix_aesthetic"], "power_dynamic": "dominant", "gender_role_aspect": "female power dressing" },
+        "question_angles": { "visual_appeal": "Does the dominatrix leather look attract you?", "dynamic": "Are you drawn to this power aesthetic?" },
+        "emotional_range": { "positive": ["incredibly hot", "love the power", "leather is sexy"], "negative": ["too intense", "not my thing", "intimidating"], "curious": ["intriguing", "never considered"] },
+        "profile_signals": { "if_positive": ["leather_attracted", "dominatrix_aesthetic_enjoys", "bdsm_visual"], "if_negative": ["bdsm_aesthetic_no"], "if_curious": ["leather_curious"] },
+        "correlations": { "positive": ["bdsm_interested", "power_exchange", "femdom_curious"], "negative": ["vanilla_prefers", "gentle_only"] },
+        "taboo_context": { "level": 3, "common_concerns": ["intensity", "BDSM association"], "normalization": "Leather dominatrix is iconic aesthetic—can be just visual appreciation" }
+      },
+      "participants": [{ "role": "dominatrix", "gender": "female", "action": "poses in leather" }],
+      "dimensions": ["leather", "corset", "boots", "dominatrix"],
+      "tags": ["leather", "dominatrix", "corset", "boots"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_male_harness",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "man standing in confident pose wearing black leather chest harness on bare muscular torso, harness straps crossing over pectorals connecting at center ring, additional straps over shoulders and around sides, wearing only black leather jockstrap below, dark room with single dramatic light source from side highlighting leather against skin, masculine BDSM aesthetic",
+      "user_description": {
+        "en": "Black leather harness straps crossing muscular chest. Ring at center connecting the straps. Masculine BDSM aesthetic. Leather against skin.",
+        "ru": "Ремни чёрного кожаного харнеса пересекают мускулистую грудь. Кольцо в центре соединяет ремни. Маскулинная BDSM эстетика. Кожа на коже."
+      },
+      "ai_context": {
+        "description": "Male leather harness. Masculine BDSM fashion. Testing attraction to male fetish wear.",
+        "tests": { "primary_kink": "male_leather", "secondary_kinks": ["harness", "masculine_bdsm", "fetish_fashion"], "power_dynamic": "neutral", "gender_role_aspect": "masculine presentation" },
+        "question_angles": { "visual_appeal": "Do you find men in leather harnesses attractive?", "on_partner": "Would you like your partner to wear this?" },
+        "emotional_range": { "positive": ["very hot", "love the look", "masculine energy"], "negative": ["not my thing", "too gay coded", "uncomfortable"], "curious": ["interesting", "never thought about it"] },
+        "profile_signals": { "if_positive": ["male_leather_enjoys", "harness_attracted"], "if_negative": ["traditional_male_dress"], "if_curious": ["male_fetish_fashion_curious"] },
+        "correlations": { "positive": ["bdsm_interested", "alternative_fashion", "muscular_attracted"], "negative": ["conventional_male_dress_prefers"] },
+        "taboo_context": { "level": 3, "common_concerns": ["association with gay culture", "too alternative"], "normalization": "Male harnesses are mainstream in BDSM and fashion—confidence statement" }
+      },
+      "participants": [{ "role": "wearing", "gender": "male", "action": "poses in harness" }],
+      "dimensions": ["leather", "harness", "male_fetish_wear"],
+      "tags": ["leather", "harness", "male", "bdsm"],
+      "relevant_for": { "gender": "any", "interested_in": "male" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_sheer_robe",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "woman standing by bedroom window in sheer white chiffon robe, morning light streaming through window creating silhouette effect, her nude body visible through transparent fabric as dark shape, robe hanging open loosely belted, elegant boudoir bedroom visible, soft dreamy morning atmosphere",
+      "user_description": {
+        "en": "Sheer white chiffon, backlit by morning sun. Her silhouette visible through the transparency. Elegant and teasing. Almost nude but artfully covered.",
+        "ru": "Прозрачный белый шифон, подсвеченный утренним солнцем. Её силуэт виден сквозь прозрачность. Элегантно и дразняще. Почти обнажена, но художественно прикрыта."
+      },
+      "ai_context": {
+        "description": "Sheer robe with silhouette visible. Elegant tease. Testing appreciation for see-through/teasing clothing.",
+        "tests": { "primary_kink": "sheer_clothing", "secondary_kinks": ["silhouette", "elegant_tease", "morning_light"], "power_dynamic": "neutral", "gender_role_aspect": "feminine elegance" },
+        "question_angles": { "visual_appeal": "Do you find sheer/see-through clothing attractive?", "aesthetic": "Does the elegant tease appeal to you?" },
+        "emotional_range": { "positive": ["beautiful", "elegant sexy", "love the tease"], "negative": ["prefer fully dressed or nude", "pointless"], "curious": ["nice", "sometimes"] },
+        "profile_signals": { "if_positive": ["sheer_enjoys", "tease_appreciates", "elegant_sexy"], "if_negative": ["explicit_prefers"], "if_curious": ["tease_curious"] },
+        "correlations": { "positive": ["lingerie_appreciates", "anticipation_enjoys", "visual_tease"], "negative": ["directness_prefers"] },
+        "taboo_context": { "level": 1, "common_concerns": ["none significant"], "normalization": "Sheer clothing is classic romantic/sexy aesthetic" }
+      },
+      "participants": [{ "role": "wearing", "gender": "female", "action": "in sheer robe" }],
+      "dimensions": ["sheer", "robe", "silhouette", "elegant"],
+      "tags": ["sheer", "robe", "morning", "elegant"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_boyfriend_shirt",
+      "priority": 2,
+      "intensity": 2,
+      "generation_prompt": "woman in kitchen wearing only man's white oversized dress shirt, top buttons undone showing no bra underneath, shirt hem hitting mid-thigh showing bare legs, sleeves rolled up, standing at counter making coffee barefoot, morning light through kitchen window, looking back over shoulder with satisfied morning-after smile, hair tousled from sleep",
+      "user_description": {
+        "en": "His shirt, nothing else. Buttons undone, bare legs visible below the hem. Morning coffee, tousled hair, satisfied smile. Classic morning-after look.",
+        "ru": "Его рубашка, больше ничего. Пуговицы расстёгнуты, голые ноги видны ниже подола. Утренний кофе, растрёпанные волосы, довольная улыбка. Классический утренний образ."
+      },
+      "ai_context": {
+        "description": "Boyfriend shirt only. Classic sexy casual. Testing attraction to morning-after/borrowed clothes look.",
+        "tests": { "primary_kink": "borrowed_clothes", "secondary_kinks": ["morning_after", "casual_sexy", "intimacy"], "power_dynamic": "neutral", "gender_role_aspect": "intimate domestic" },
+        "question_angles": { "visual_appeal": "Do you find the 'wearing his shirt' look attractive?", "emotional": "Does this intimate scenario appeal to you?" },
+        "emotional_range": { "positive": ["so sexy", "love it", "intimate and hot"], "negative": ["not special", "prefer lingerie"], "curious": ["nice", "classic for a reason"] },
+        "profile_signals": { "if_positive": ["boyfriend_shirt_enjoys", "casual_sexy_likes", "morning_after_romantic"], "if_negative": ["lingerie_prefers"], "if_curious": ["casual_sexy_neutral"] },
+        "correlations": { "positive": ["romantic_sexy", "intimacy_values", "domestic_sexy"], "negative": ["formal_dress_prefers"] },
+        "taboo_context": { "level": 1, "common_concerns": ["none"], "normalization": "Universal classic sexy look" }
+      },
+      "participants": [{ "role": "wearing", "gender": "female", "action": "in boyfriend shirt" }],
+      "dimensions": ["shirt_only", "morning_after", "casual_sexy"],
+      "tags": ["shirt", "morning_after", "kitchen", "classic"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_suit_disheveled",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "man standing in doorway wearing dark navy suit, white dress shirt unbuttoned at collar, tie loosened and pulled down, sleeves rolled up to elbows showing forearms, jacket unbuttoned hanging open, confident powerful stance one hand in pocket other holding whiskey glass, five o'clock shadow, looking at camera with intense smoldering gaze, home office with warm evening lighting",
+      "user_description": {
+        "en": "Suit, but loosened. Tie pulled down, collar open, sleeves rolled. Professional turned disheveled. End-of-day masculine energy.",
+        "ru": "Костюм, но расслабленный. Галстук ослаблен, воротник открыт, рукава закатаны. Профессионал ставший растрёпанным. Вечерняя мужская энергия."
+      },
+      "ai_context": {
+        "description": "Disheveled suit look. Professional masculinity. Testing attraction to the loosened-suit aesthetic.",
+        "tests": { "primary_kink": "suit_fetish", "secondary_kinks": ["disheveled", "professional_sexy", "rolled_sleeves"], "power_dynamic": "neutral", "gender_role_aspect": "masculine professional" },
+        "question_angles": { "visual_appeal": "Do you find the loosened-suit look attractive?", "specific": "Is there something about rolled sleeves or loosened ties?" },
+        "emotional_range": { "positive": ["very hot", "love this look", "professional sexy"], "negative": ["prefer casual", "suits don't do it for me"], "curious": ["classic", "can be nice"] },
+        "profile_signals": { "if_positive": ["suit_attracted", "professional_sexy_enjoys", "disheveled_masculine"], "if_negative": ["casual_prefers"], "if_curious": ["suit_neutral"] },
+        "correlations": { "positive": ["masculine_presents", "confidence_attracted", "professional_aesthetic"], "negative": ["casual_only"] },
+        "taboo_context": { "level": 1, "common_concerns": ["none"], "normalization": "Universally attractive look" }
+      },
+      "participants": [{ "role": "wearing", "gender": "male", "action": "in disheveled suit" }],
+      "dimensions": ["suit", "disheveled", "professional", "masculine"],
+      "tags": ["suit", "tie", "professional", "masculine"],
+      "relevant_for": { "gender": "any", "interested_in": "male" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_blazer_naked",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "woman standing confidently wearing only a fitted black blazer on naked body, blazer buttoned once at waist showing she wears nothing underneath, strip of bare skin from neck to navel visible, hint of breast curve showing, bare legs visible below blazer hem, modern minimalist setting, her expression confident commanding boss energy, stiletto heels only other item worn",
+      "user_description": {
+        "en": "Black blazer, nothing underneath. One button holding it closed. Power dressing taken to its extreme. Corporate meets erotic.",
+        "ru": "Чёрный пиджак, ничего под ним. Одна пуговица держит его закрытым. Деловой стиль доведённый до крайности. Корпоративное встречает эротическое."
+      },
+      "ai_context": {
+        "description": "Blazer on naked body. Power dressing. Testing attraction to corporate-erotic fusion.",
+        "tests": { "primary_kink": "power_dressing", "secondary_kinks": ["naked_under", "blazer", "boss_aesthetic"], "power_dynamic": "dominant", "gender_role_aspect": "power feminine" },
+        "question_angles": { "visual_appeal": "Does the blazer-on-naked-body look attract you?", "power": "Is the power aesthetic part of the appeal?" },
+        "emotional_range": { "positive": ["incredibly sexy", "love the power", "confident is hot"], "negative": ["weird combination", "prefer full outfit or nude"], "curious": ["interesting", "bold choice"] },
+        "profile_signals": { "if_positive": ["power_dress_enjoys", "blazer_naked_hot", "boss_aesthetic_attracts"], "if_negative": ["traditional_prefers"], "if_curious": ["power_dress_curious"] },
+        "correlations": { "positive": ["confidence_attracted", "femdom_curious", "professional_aesthetic"], "negative": ["traditional_feminine"] },
+        "taboo_context": { "level": 2, "common_concerns": ["appropriateness", "where to wear"], "normalization": "Bold fashion statement combining power and sexuality" }
+      },
+      "participants": [{ "role": "wearing", "gender": "female", "action": "in blazer only" }],
+      "dimensions": ["blazer", "naked_under", "power_dressing"],
+      "tags": ["blazer", "naked", "power", "boss"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_naked_apron_f",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "woman in kitchen wearing only a ruffled cooking apron tied behind neck and at waist, completely nude underneath, standing at stove stirring something with wooden spoon, view from behind showing her bare buttocks and back visible around apron ties, looking back over shoulder with playful smile, domestic kitchen setting with morning light",
+      "user_description": {
+        "en": "Just an apron, nothing else. The ties reveal her bare back and bottom. Cooking breakfast with a playful smile. Domestic yet erotic.",
+        "ru": "Только фартук, больше ничего. Завязки открывают её голую спину и попу. Готовит завтрак с игривой улыбкой. Домашне, но эротично."
+      },
+      "ai_context": {
+        "description": "Naked apron cooking. Classic domestic-erotic fantasy. Testing attraction to this trope.",
+        "tests": { "primary_kink": "naked_apron", "secondary_kinks": ["domestic_erotic", "cooking", "playful"], "power_dynamic": "neutral", "gender_role_aspect": "domestic feminine" },
+        "question_angles": { "visual_appeal": "Does the naked-apron look appeal to you?", "fantasy": "Would you want to come home to this?" },
+        "emotional_range": { "positive": ["love it", "playful and hot", "domestic fantasy"], "negative": ["silly", "prefer bedroom only", "not practical"], "curious": ["fun", "could be nice"] },
+        "profile_signals": { "if_positive": ["naked_apron_enjoys", "domestic_sexy_likes", "playful_sex"], "if_negative": ["bedroom_only"], "if_curious": ["domestic_sexy_neutral"] },
+        "correlations": { "positive": ["playful_sex", "domestic_fantasies", "surprise_enjoys"], "negative": ["serious_only", "bedroom_only"] },
+        "taboo_context": { "level": 1, "common_concerns": ["kitchen safety"], "normalization": "Classic playful domestic fantasy" }
+      },
+      "participants": [{ "role": "wearing", "gender": "female", "action": "in apron cooking" }],
+      "dimensions": ["naked_apron", "kitchen", "domestic_erotic"],
+      "tags": ["apron", "kitchen", "naked", "cooking"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_naked_apron_m",
+      "priority": 4,
+      "intensity": 2,
+      "generation_prompt": "man in kitchen wearing only a BBQ apron with funny slogan, apron tied around neck and waist covering front, completely nude underneath, standing at counter chopping vegetables, view from side showing his bare muscular buttocks and back visible, looking over shoulder with playful grin cooking for someone, warm kitchen lighting",
+      "user_description": {
+        "en": "Just an apron, nothing else. His muscular back and bottom bare. Chopping vegetables with a grin. Role reversal on the domestic-erotic classic.",
+        "ru": "Только фартук, больше ничего. Его мускулистая спина и попа обнажены. Нарезает овощи с улыбкой. Классика домашней эротики с обратными ролями."
+      },
+      "ai_context": {
+        "description": "Male naked apron. Role reversal domestic fantasy. Testing reaction to male domestic-erotic.",
+        "tests": { "primary_kink": "naked_apron", "secondary_kinks": ["male_domestic", "role_reversal", "cooking"], "power_dynamic": "neutral", "gender_role_aspect": "male domestic service" },
+        "question_angles": { "visual_appeal": "Does a man in just an apron appeal to you?", "role_reversal": "How do you feel about this role reversal?" },
+        "emotional_range": { "positive": ["love it", "hot and playful", "men cooking is sexy"], "negative": ["doesn't work for me", "silly", "prefer traditional"], "curious": ["fun twist", "would try"] },
+        "profile_signals": { "if_positive": ["male_apron_enjoys", "role_reversal_likes", "man_cooking_hot"], "if_negative": ["traditional_gender_roles"], "if_curious": ["role_reversal_curious"] },
+        "correlations": { "positive": ["role_reversal", "playful_sex", "men_vulnerable_likes"], "negative": ["traditional_roles_strict"] },
+        "taboo_context": { "level": 2, "common_concerns": ["masculinity concerns"], "normalization": "Fun role reversal—confident men can play with domestic roles" }
+      },
+      "participants": [{ "role": "wearing", "gender": "male", "action": "in apron cooking" }],
+      "dimensions": ["naked_apron", "male", "role_reversal"],
+      "tags": ["apron", "kitchen", "male", "cooking"],
+      "relevant_for": { "gender": "any", "interested_in": "male" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_crotchless_panties",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "intimate shot of woman's hips and upper thighs, she wearing black lace crotchless panties, the open design visible showing bare skin underneath, lying on back one knee raised, her hand resting near the opening, matching black lace garter belt visible connecting to stockings, cream satin sheets beneath her, intimate bedroom lighting",
+      "user_description": {
+        "en": "Lace panties with a deliberate opening. Garter belt and stockings completing the look. Erotic lingerie designed for access while dressed.",
+        "ru": "Кружевные трусики с намеренным отверстием. Пояс для чулок и чулки завершают образ. Эротическое бельё, разработанное для доступа оставаясь одетой."
+      },
+      "ai_context": {
+        "description": "Crotchless panties. Erotic lingerie for access. Testing interest in functional-erotic lingerie.",
+        "tests": { "primary_kink": "crotchless", "secondary_kinks": ["erotic_lingerie", "access_while_dressed", "garter_stockings"], "power_dynamic": "neutral", "gender_role_aspect": "prepared for sex" },
+        "question_angles": { "on_partner": "Would you like your partner to wear crotchless lingerie?", "functional": "Does the 'ready for access' aspect appeal?" },
+        "emotional_range": { "positive": ["very hot", "love the accessibility", "erotic intention"], "negative": ["pointless", "just be naked", "tacky"], "curious": ["interesting", "could be fun"] },
+        "profile_signals": { "if_positive": ["crotchless_enjoys", "erotic_lingerie_likes", "dressed_sex"], "if_negative": ["nude_prefers"], "if_curious": ["lingerie_curious"] },
+        "correlations": { "positive": ["lingerie_sex", "quickie_enjoys", "dressed_aesthetic"], "negative": ["nude_only"] },
+        "taboo_context": { "level": 2, "common_concerns": ["tacky perception"], "normalization": "Popular erotic lingerie—combines dressed aesthetic with accessibility" }
+      },
+      "participants": [{ "role": "wearing", "gender": "female", "action": "in crotchless panties" }],
+      "dimensions": ["crotchless", "lingerie", "erotic"],
+      "tags": ["crotchless", "panties", "lingerie", "stockings"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_stockings_garter",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "woman sitting on edge of bed in classic pin-up pose, wearing black lace garter belt around waist, sheer black thigh-high stockings attached by garter clips, matching black lace bra and panties, one leg extended showing the full stocking and garter detail, soft bedroom lighting creating classic boudoir atmosphere",
+      "user_description": {
+        "en": "Stockings attached to garter belt. Classic lingerie. The clips pulling the sheer fabric taut against her thighs. Timeless feminine elegance.",
+        "ru": "Чулки прикреплены к поясу. Классическое бельё. Зажимы натягивают прозрачную ткань на её бёдрах. Вечная женская элегантность."
+      },
+      "ai_context": {
+        "description": "Stockings and garter belt. Classic lingerie aesthetic. Testing attraction to traditional lingerie.",
+        "tests": { "primary_kink": "stockings", "secondary_kinks": ["garter_belt", "classic_lingerie", "feminine"], "power_dynamic": "neutral", "gender_role_aspect": "classic feminine" },
+        "question_angles": { "visual_appeal": "Do stockings and garter belts attract you?", "classic": "Is there something special about classic lingerie?" },
+        "emotional_range": { "positive": ["love stockings", "classic is best", "very feminine"], "negative": ["outdated", "too complicated", "prefer modern"], "curious": ["nice", "classic for a reason"] },
+        "profile_signals": { "if_positive": ["stockings_enjoys", "garter_attracted", "classic_lingerie_likes"], "if_negative": ["modern_prefers"], "if_curious": ["lingerie_neutral"] },
+        "correlations": { "positive": ["lingerie_appreciates", "feminine_aesthetic", "vintage_style"], "negative": ["casual_prefers", "nude_only"] },
+        "taboo_context": { "level": 1, "common_concerns": ["none"], "normalization": "Timeless classic lingerie aesthetic" }
+      },
+      "participants": [{ "role": "wearing", "gender": "female", "action": "in stockings and garter" }],
+      "dimensions": ["stockings", "garter", "classic_lingerie"],
+      "tags": ["stockings", "garter", "lingerie", "classic"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_latex_catsuit",
+      "priority": 5,
+      "intensity": 4,
+      "generation_prompt": "woman standing in red latex catsuit, the shiny material covering her from neck to ankles like second skin, every curve emphasized by tight latex, standing in confident pose with hands on hips, studio lighting making the latex gleam, fetish fashion aesthetic, her expression confident knowing the power of the material",
+      "user_description": {
+        "en": "Red latex, gleaming like a second skin. Every curve emphasized. The material catches light as she moves. Pure fetish aesthetic.",
+        "ru": "Красный латекс, блестящий как вторая кожа. Каждый изгиб подчёркнут. Материал ловит свет при движении. Чистая фетиш-эстетика."
+      },
+      "ai_context": {
+        "description": "Latex catsuit. Intense fetish fashion. Testing attraction to latex/rubber aesthetic.",
+        "tests": { "primary_kink": "latex", "secondary_kinks": ["catsuit", "fetish_fashion", "shiny"], "power_dynamic": "neutral", "gender_role_aspect": "fetish presentation" },
+        "question_angles": { "visual_appeal": "Do you find latex attractive?", "fetish": "Is the material itself part of the appeal?" },
+        "emotional_range": { "positive": ["love latex", "so hot", "fetish aesthetic"], "negative": ["too much", "uncomfortable looking", "not my thing"], "curious": ["interesting", "never tried"] },
+        "profile_signals": { "if_positive": ["latex_enjoys", "fetish_fashion_attracted", "shiny_likes"], "if_negative": ["latex_no", "natural_prefers"], "if_curious": ["latex_curious"] },
+        "correlations": { "positive": ["bdsm_aesthetic", "alternative_fashion", "tactile_focused"], "negative": ["natural_only", "conventional_dress"] },
+        "taboo_context": { "level": 3, "common_concerns": ["fetish association", "impractical"], "normalization": "Latex is established fetish material—visual and tactile appeal" }
+      },
+      "participants": [{ "role": "wearing", "gender": "female", "action": "in latex catsuit" }],
+      "dimensions": ["latex", "catsuit", "fetish_fashion"],
+      "tags": ["latex", "catsuit", "shiny", "fetish"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "boundary" }
+    }
+  ],
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_127", "scene_128", "scene_129", "scene_130", "scene_131", "scene_132", "scene_133", "scene_134", "scene_135", "scene_136", "scene_137", "scene_138", "scene_175", "scene_176", "scene_177", "scene_178", "scene_179", "scene_180", "scene_181", "scene_182", "scene_183", "scene_184", "scene_185", "scene_186"],
+      "reason": "Consolidated clothing fetishes into representative types covering fishnet, leather, sheer, latex, stockings, and various erotic clothing scenarios",
+      "recommendation": "Use follow-up questions for specific materials, colors, and contexts"
+    }
+  ]
+}

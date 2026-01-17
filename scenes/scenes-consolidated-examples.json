@@ -1,0 +1,418 @@
+{
+  "$schema": "./scene-schema-v2.md",
+  "version": 2,
+  "scenes": [
+    {
+      "id": "scene_spanking_m_to_f",
+      "version": 2,
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "bedroom scene, man sitting on edge of bed, woman lying across his lap face down, his hand raised mid-spank about to connect with her bare buttocks, her skin showing pink marks from previous spanks, she grips the bedsheets, expression mixing pain and pleasure, he looks down at her with dominant focus, intimate bedroom lighting",
+
+      "user_description": {
+        "en": "She lies across his lap, his hand raised for another spank. Her skin is already pink from his attention. She grips the sheets, lost in the sensation.",
+        "ru": "Она лежит у него на коленях, его рука занесена для следующего шлепка. Её кожа уже розовая от его внимания. Она вцепилась в простыни, потерявшись в ощущениях."
+      },
+
+      "ai_context": {
+        "description": "Male spanking female in OTK position. Erotic discipline, visible arousal from both. Classic dominant/submissive dynamic.",
+
+        "tests": {
+          "primary_kink": "spanking_receiving",
+          "secondary_kinks": ["pain_pleasure", "submission", "discipline", "vulnerability", "trust"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "traditional male dominant discipline"
+        },
+
+        "question_angles": {
+          "as_receiver": "Would you enjoy being spanked like this?",
+          "as_giver": "Would you enjoy spanking your partner like this?",
+          "emotional": "What feelings does this scene evoke?",
+          "frequency": "How often would you want this?"
+        },
+
+        "emotional_range": {
+          "positive": ["excitement", "surrender", "trust", "catharsis", "arousal from controlled pain", "feeling claimed"],
+          "negative": ["fear", "trauma associations", "feels violent", "degrading in bad way", "loss of dignity"],
+          "curious": ["intrigued but nervous", "might try with right partner", "only if very light"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["enjoys_impact_play", "pain_pleasure_positive", "submission_leaning", "likes_discipline", "trusts_partner_control"],
+          "if_negative": ["impact_play_hard_limit", "pain_averse", "needs_gentle_only", "control_issues"],
+          "if_curious": ["impact_curious", "might_try_light", "needs_trust_first"]
+        },
+
+        "correlations": {
+          "positive": ["bondage", "dominance_submission", "hair_pulling", "rough_sex", "discipline_fantasy"],
+          "negative": ["vanilla_only", "always_gentle", "pain_hard_limit", "control_anxiety"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["too painful", "feels wrong/abusive", "childhood associations", "embarrassing"],
+          "normalization": "Consensual impact play is practiced by many couples as a form of trust, intensity, and arousal enhancement"
+        },
+
+        "gender_adaptation": {
+          "for_male": "Ask about desire to spank/give discipline",
+          "for_female": "Ask about desire to receive/be spanked"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "implement",
+        "question": {
+          "en": "What would you prefer?",
+          "ru": "Чем предпочтительнее?"
+        },
+        "options": [
+          { "id": "hand", "label": { "en": "Hand only", "ru": "Только рукой" }, "signal": "hand_spanking_pref" },
+          { "id": "paddle", "label": { "en": "Paddle", "ru": "Падл" }, "signal": "paddle_pref" },
+          { "id": "belt", "label": { "en": "Belt", "ru": "Ремень" }, "signal": "belt_pref" },
+          { "id": "crop", "label": { "en": "Riding crop", "ru": "Стек" }, "signal": "crop_pref" },
+          { "id": "various", "label": { "en": "Variety is exciting", "ru": "Разнообразие" }, "signal": "implements_variety" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "spanker", "gender": "male", "action": "spanks, disciplines" },
+        { "role": "spanked", "gender": "female", "action": "receives, submits" }
+      ],
+
+      "dimensions": ["spanking", "impact_play", "dominance", "discipline", "pain_pleasure"],
+      "tags": ["spanking", "otk", "discipline", "submission", "impact"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_spanking_f_to_m",
+      "version": 2,
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "bedroom scene, woman sitting in armless chair, man bent over her lap, his torso across her thighs, she delivers spank to his bare buttocks showing pink marks, her expression confident and pleased, he grips chair legs, face showing mix of submission and pleasure, female dominance role reversal, dramatic lighting",
+
+      "user_description": {
+        "en": "He's bent over her lap, vulnerable. Her hand comes down firmly, leaving another pink mark. She smiles, enjoying her power over him.",
+        "ru": "Он перегнулся через её колени, уязвимый. Её рука твёрдо опускается, оставляя ещё один розовый след. Она улыбается, наслаждаясь властью над ним."
+      },
+
+      "ai_context": {
+        "description": "Female spanking male in OTK position. Role reversal, female dominance. She disciplines him.",
+
+        "tests": {
+          "primary_kink": "spanking_femdom",
+          "secondary_kinks": ["role_reversal", "male_submission", "female_dominance", "vulnerability"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "female dominant, male receiving discipline"
+        },
+
+        "question_angles": {
+          "as_receiver": "Would you enjoy being spanked by a woman?",
+          "as_giver": "Would you enjoy spanking a man?",
+          "emotional": "How does female-led discipline make you feel?"
+        },
+
+        "emotional_range": {
+          "positive": ["liberation", "surrender to her", "exciting reversal", "trust", "being disciplined feels right"],
+          "negative": ["emasculating", "wrong dynamic", "uncomfortable", "prefer traditional roles"],
+          "curious": ["intriguing concept", "never considered", "might try"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["femdom_positive", "male_submission_open", "role_reversal_enjoys", "female_led_positive"],
+          "if_negative": ["femdom_hard_limit", "traditional_roles_only", "always_dominant"],
+          "if_curious": ["femdom_curious", "role_reversal_curious"]
+        },
+
+        "correlations": {
+          "positive": ["pegging_curious", "female_worship", "submission_to_women", "role_reversal"],
+          "negative": ["always_dominant", "traditional_masculine", "male_leads_only"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["masculinity questions", "power dynamics", "social expectations"],
+          "normalization": "Many men find liberation and deep connection in surrendering control to a trusted female partner"
+        },
+
+        "gender_adaptation": {
+          "for_male": "Ask about receiving discipline from woman",
+          "for_female": "Ask about desire to discipline/spank men"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "implement",
+        "question": {
+          "en": "What would you prefer?",
+          "ru": "Чем предпочтительнее?"
+        },
+        "options": [
+          { "id": "hand", "label": { "en": "Hand only", "ru": "Только рукой" }, "signal": "hand_spanking_pref" },
+          { "id": "paddle", "label": { "en": "Paddle", "ru": "Падл" }, "signal": "paddle_pref" },
+          { "id": "belt", "label": { "en": "Belt", "ru": "Ремень" }, "signal": "belt_pref" },
+          { "id": "crop", "label": { "en": "Riding crop", "ru": "Стек" }, "signal": "crop_pref" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "spanker", "gender": "female", "action": "spanks, disciplines" },
+        { "role": "spanked", "gender": "male", "action": "receives, submits" }
+      ],
+
+      "dimensions": ["spanking", "femdom", "role_reversal", "male_submission"],
+      "tags": ["spanking", "femdom", "otk", "role_reversal", "discipline"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_cum_on_body",
+      "version": 2,
+      "priority": 4,
+      "intensity": 4,
+
+      "generation_prompt": "intimate bedroom moment, man kneeling over woman lying on bed, he has just finished, visible cum on her body, she looks at it with satisfied expression, post-climax intimacy, warm lighting, both relaxed",
+
+      "user_description": {
+        "en": "The intimate moment after he finishes on her. She lies back, satisfied, feeling his warmth on her skin. Their eyes meet in post-climax connection.",
+        "ru": "Интимный момент после того как он кончил на неё. Она лежит, удовлетворённая, чувствуя его тепло на коже. Их глаза встречаются в пост-оргазменной близости."
+      },
+
+      "ai_context": {
+        "description": "External ejaculation on partner's body. Testing preferences for cum play and specific locations.",
+
+        "tests": {
+          "primary_kink": "external_cum",
+          "secondary_kinks": ["cum_play", "marking", "visual_finish", "body_worship"],
+          "power_dynamic": "none",
+          "gender_role_aspect": "receiving cum as intimate act"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy your partner finishing on you?",
+          "as_giver": "Do you enjoy finishing on your partner?",
+          "emotional": "How does this type of finish feel to you?"
+        },
+
+        "emotional_range": {
+          "positive": ["intimate", "claimed", "sexy", "loves seeing it", "feels desired"],
+          "negative": ["messy", "degrading", "prefer inside", "uncomfortable"],
+          "curious": ["depends on mood", "some places ok", "with right person"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["external_cum_positive", "cum_play_enjoys", "visual_finish_likes"],
+          "if_negative": ["internal_only_pref", "cum_averse", "clean_sex_pref"],
+          "if_curious": ["cum_play_curious", "location_dependent"]
+        },
+
+        "correlations": {
+          "positive": ["visual_arousal", "marking_enjoys", "mess_positive"],
+          "negative": ["clean_only", "internal_finish_only"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["feels degrading", "messy", "cleanup"],
+          "normalization": "Common form of intimacy where both partners enjoy the visual and physical connection of the moment"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "location",
+        "question": {
+          "en": "Where do you find most appealing?",
+          "ru": "Куда привлекательнее всего?"
+        },
+        "options": [
+          { "id": "face", "label": { "en": "Face (facial)", "ru": "Лицо (фейшл)" }, "signal": "facial_positive" },
+          { "id": "mouth", "label": { "en": "In mouth", "ru": "В рот" }, "signal": "oral_finish_positive" },
+          { "id": "chest", "label": { "en": "Chest", "ru": "Грудь" }, "signal": "chest_cum_positive" },
+          { "id": "stomach", "label": { "en": "Stomach", "ru": "Живот" }, "signal": "stomach_cum_positive" },
+          { "id": "back", "label": { "en": "Back/ass", "ru": "Спина/попа" }, "signal": "back_cum_positive" },
+          { "id": "inside", "label": { "en": "Inside (prefer)", "ru": "Внутрь (предпочитаю)" }, "signal": "creampie_pref" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "finishing", "gender": "male", "action": "finishes on her" },
+        { "role": "receiving", "gender": "female", "action": "receives" }
+      ],
+
+      "dimensions": ["cum_play", "external_finish", "visual", "marking"],
+      "tags": ["cum", "finish", "body", "external", "intimate"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_anal_m_receives",
+      "version": 2,
+      "priority": 3,
+      "intensity": 4,
+
+      "generation_prompt": "intimate bedroom scene, man lying on his side or back in vulnerable position, woman beside or behind him, her hand positioned near his buttocks suggesting anal stimulation, his face shows pleasure mixed with vulnerability, trust visible between them, intimate lighting",
+
+      "user_description": {
+        "en": "He lies back, trusting her completely. She explores him intimately, watching his reactions. His vulnerability only deepens their connection.",
+        "ru": "Он лежит, полностью доверяя ей. Она интимно исследует его, наблюдая за реакцией. Его уязвимость только углубляет их связь."
+      },
+
+      "ai_context": {
+        "description": "Male receiving anal stimulation from female partner. Testing openness to prostate play, receptive anal, vulnerability.",
+
+        "tests": {
+          "primary_kink": "anal_receiving_male",
+          "secondary_kinks": ["prostate_play", "vulnerability", "trust", "role_reversal", "new_sensations"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "man in receiving/vulnerable position"
+        },
+
+        "question_angles": {
+          "as_receiver": "Would you enjoy anal stimulation from your partner?",
+          "as_giver": "Would you enjoy giving your male partner anal pleasure?",
+          "emotional": "How does male receptive anal play make you feel?"
+        },
+
+        "emotional_range": {
+          "positive": ["intense pleasure", "trust deepening", "liberation", "new sensations", "prostate orgasm curiosity"],
+          "negative": ["uncomfortable", "not masculine", "painful", "taboo", "boundary"],
+          "curious": ["intrigued", "nervous but interested", "need right partner", "heard it feels good"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["anal_receiving_open", "prostate_curious", "vulnerability_ok", "new_experiences_open"],
+          "if_negative": ["anal_hard_limit", "receiving_hard_limit", "traditional_only"],
+          "if_curious": ["prostate_curious", "might_try_gentle", "needs_trust"]
+        },
+
+        "correlations": {
+          "positive": ["pegging_curious", "prostate_orgasm", "submission_to_partner", "sensation_seeking"],
+          "negative": ["strictly_dominant", "penetration_giver_only", "traditional_masculine"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["masculinity", "pain", "hygiene", "orientation questions", "never done before"],
+          "normalization": "Prostate stimulation is a major erogenous zone for men. Many heterosexual couples explore this for intense mutual pleasure."
+        },
+
+        "gender_adaptation": {
+          "for_male": "Focus on receiving, vulnerability, pleasure potential",
+          "for_female": "Focus on giving, exploring partner, his reactions"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_any_interest",
+        "detail_type": "specifics",
+        "question": {
+          "en": "What type interests you?",
+          "ru": "Что интересует?"
+        },
+        "options": [
+          { "id": "finger", "label": { "en": "Finger(s)", "ru": "Пальцы" }, "signal": "anal_finger_ok" },
+          { "id": "rimming", "label": { "en": "Tongue (rimming)", "ru": "Язык (римминг)" }, "signal": "rimming_receiving_ok" },
+          { "id": "toy", "label": { "en": "Small toy/plug", "ru": "Маленькая игрушка" }, "signal": "anal_toy_ok" },
+          { "id": "prostate", "label": { "en": "Prostate massage", "ru": "Массаж простаты" }, "signal": "prostate_massage_interested" },
+          { "id": "pegging", "label": { "en": "Pegging (strap-on)", "ru": "Пеггинг (страпон)" }, "signal": "pegging_interested" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "giving", "gender": "female", "action": "stimulates, explores" },
+        { "role": "receiving", "gender": "male", "action": "receives, trusts" }
+      ],
+
+      "dimensions": ["anal_male", "prostate", "vulnerability", "trust", "receiving"],
+      "tags": ["anal", "male_receiving", "prostate", "trust", "intimate"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_morning_tenderness",
+      "version": 2,
+      "priority": 1,
+      "intensity": 1,
+
+      "generation_prompt": "morning bedroom scene, couple lying in bed facing each other on white sheets, warm golden morning light through sheer curtains, one partner gently stroking the other's face or hair, both bare shoulders visible suggesting nudity under sheets, expressions of love and tenderness, intimate peaceful moment",
+
+      "user_description": {
+        "en": "Warm morning light fills the bedroom as they lie facing each other. A gentle hand traces across skin. No rush, no agenda—just the simple intimacy of being together.",
+        "ru": "Тёплый утренний свет заполняет спальню. Они лежат лицом друг к другу. Нежная рука скользит по коже. Никакой спешки — просто интимность близости."
+      },
+
+      "ai_context": {
+        "description": "Tender morning intimacy between partners. Testing preference for gentle, emotional connection vs. intensity.",
+
+        "tests": {
+          "primary_kink": "tenderness",
+          "secondary_kinks": ["emotional_connection", "slow_pace", "morning_intimacy", "gentle_touch"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "mutual tenderness"
+        },
+
+        "question_angles": {
+          "emotional": "How important is this kind of tender intimacy to you?",
+          "frequency": "How often do you want moments like this?"
+        },
+
+        "emotional_range": {
+          "positive": ["deeply romantic", "this is what I need", "connection over action", "love this"],
+          "negative": ["too slow", "prefer intensity", "feels boring", "want more action"],
+          "curious": ["nice sometimes", "balance is key", "depends on mood"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["tenderness_high", "emotional_connection_important", "slow_intimacy_enjoys", "romance_priority"],
+          "if_negative": ["intensity_priority", "action_over_emotion", "passionate_preferred"],
+          "if_curious": ["balance_seeker", "mood_dependent"]
+        },
+
+        "correlations": {
+          "positive": ["aftercare_important", "emotional_safety", "trust_first", "connection_primary"],
+          "negative": ["rough_only", "intensity_seeker", "action_focused"]
+        },
+
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": null,
+          "normalization": null
+        }
+      },
+
+      "participants": [
+        { "role": "equal", "gender": "any", "action": "tender touch" },
+        { "role": "equal", "gender": "any", "action": "receives tenderness" }
+      ],
+
+      "dimensions": ["tenderness", "romance", "emotional", "gentle", "connection"],
+      "tags": ["morning", "tender", "romantic", "gentle", "intimate"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+
+      "question_type": { "type": "interest_scale" }
+    }
+  ]
+}

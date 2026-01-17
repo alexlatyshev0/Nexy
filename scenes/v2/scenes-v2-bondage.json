@@ -1,0 +1,543 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Bondage & Restraint",
+  "note": "Separate scenes for M restrains F vs F restrains M - completely different power dynamics. Follow-up for bondage type/intensity.",
+  "scenes": [
+    {
+      "id": "scene_hands_held_down",
+      "priority": 2,
+      "intensity": 2,
+
+      "generation_prompt": "intimate bedroom scene, one partner holding the other's wrists pinned above their head during sex, light restraint, passionate control, missionary or similar position, restrained partner's face showing mix of surrender and arousal, holding partner dominant but loving",
+
+      "user_description": {
+        "en": "Wrists pinned above the head, held firmly but gently. That simple restraint changes everything—suddenly every sensation is heightened.",
+        "ru": "Запястья прижаты над головой, удерживаются крепко, но нежно. Это простое ограничение меняет всё — внезапно каждое ощущение усиливается."
+      },
+
+      "ai_context": {
+        "description": "Light bondage - hands held down during sex. Entry-level restraint, no equipment needed. Tests basic restraint interest.",
+
+        "tests": {
+          "primary_kink": "light_restraint",
+          "secondary_kinks": ["hands_held", "surrender", "control"],
+          "power_dynamic": "slight_power_exchange",
+          "gender_role_aspect": "entry_level_bondage"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy having your hands held down during sex?",
+          "as_giver": "Do you enjoy holding your partner's hands down?",
+          "emotional": "How does being lightly restrained make you feel?"
+        },
+
+        "emotional_range": {
+          "positive": ["love it", "heightens sensation", "exciting surrender", "passionate"],
+          "negative": ["uncomfortable", "need my hands free", "restricting"],
+          "curious": ["might enjoy", "with trust", "depends on mood"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["light_bondage_enjoys", "restraint_positive", "surrender_likes"],
+          "if_negative": ["restraint_no", "freedom_needs"],
+          "if_curious": ["bondage_curious"]
+        },
+
+        "correlations": {
+          "positive": ["bondage_general", "submission", "dominance", "trust_play"],
+          "negative": ["always_equal", "control_needed"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["control loss", "vulnerability"],
+          "normalization": "Most common form of bondage—many couples incorporate this naturally during passionate sex"
+        }
+      },
+
+      "participants": [
+        { "role": "restraining", "gender": "any", "action": "holds wrists down" },
+        { "role": "restrained", "gender": "any", "action": "surrenders to hold" }
+      ],
+
+      "dimensions": ["light_bondage", "hands_held", "restraint", "surrender"],
+      "tags": ["bondage", "hands", "restraint", "light", "passionate"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_tied_wrists_f",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "bedroom bondage scene, woman with wrists tied together with soft rope or silk scarves, man in control position, she lying on bed bound, her face showing arousal and trust, visible wrist binding, intimate BDSM light bondage, she surrendered to him",
+
+      "user_description": {
+        "en": "Her wrists bound with soft rope, she lies waiting for him. Unable to touch, only to receive. Complete surrender to his control.",
+        "ru": "Её запястья связаны мягкой верёвкой, она лежит в ожидании его. Не может прикоснуться, только принимать. Полная сдача его контролю."
+      },
+
+      "ai_context": {
+        "description": "Woman tied up - wrists bound. He dominates with restraint. Testing female submission to bondage.",
+
+        "tests": {
+          "primary_kink": "bondage_receiving",
+          "secondary_kinks": ["tied_wrists", "female_submission", "restraint", "vulnerability"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "female bound by male"
+        },
+
+        "question_angles": {
+          "as_receiver": "Women: Would you enjoy being tied up like this?",
+          "as_giver": "Men: Would you enjoy tying her up?",
+          "emotional": "What does being bound represent to you?"
+        },
+
+        "emotional_range": {
+          "positive": ["exciting", "trust and surrender", "heightened sensation", "freeing"],
+          "negative": ["scary", "loss of control", "claustrophobic", "not safe"],
+          "curious": ["intrigued", "with someone I trust", "light binding only"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["bondage_receiving_enjoys", "tied_up_positive", "female_submission_ok"],
+          "if_negative": ["bondage_hard_limit", "control_loss_fear"],
+          "if_curious": ["bondage_curious", "trust_needed"]
+        },
+
+        "correlations": {
+          "positive": ["submission_general", "power_exchange", "sensory_play"],
+          "negative": ["control_always_needed", "vanilla_only"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["safety", "trust", "panic", "marks"],
+          "normalization": "Bondage is one of the most common kinks—with proper safety (quick release, communication), it's enjoyed by many"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "specifics",
+        "question": {
+          "en": "What type of binding interests you?",
+          "ru": "Какой тип связывания интересует?"
+        },
+        "options": [
+          { "id": "silk", "label": { "en": "Silk/soft scarves", "ru": "Шёлк/мягкие шарфы" }, "signal": "soft_bondage" },
+          { "id": "rope", "label": { "en": "Rope", "ru": "Верёвка" }, "signal": "rope_bondage" },
+          { "id": "cuffs", "label": { "en": "Handcuffs/cuffs", "ru": "Наручники" }, "signal": "cuff_bondage" },
+          { "id": "full", "label": { "en": "Full body restraint", "ru": "Полная фиксация" }, "signal": "full_restraint" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "binding", "gender": "male", "action": "ties and controls" },
+        { "role": "bound", "gender": "female", "action": "receives while tied" }
+      ],
+
+      "dimensions": ["bondage", "tied_wrists", "female_submission", "restraint"],
+      "tags": ["bondage", "tied", "wrists", "female", "submission"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_tied_wrists_m",
+      "priority": 4,
+      "intensity": 3,
+
+      "generation_prompt": "bedroom femdom bondage scene, man with wrists tied to bedframe or bound together, woman in dominant position over him, he lying restrained and vulnerable, she in control, his face showing mix of vulnerability and arousal, role reversal bondage, she has power",
+
+      "user_description": {
+        "en": "His wrists bound to the bed, he's completely at her mercy. She moves above him, taking what she wants while he can only receive.",
+        "ru": "Его запястья привязаны к кровати, он полностью в её власти. Она движется над ним, беря что хочет, пока он может только принимать."
+      },
+
+      "ai_context": {
+        "description": "Man tied up - wrists bound. She dominates with restraint. Role reversal. Testing male openness to being restrained.",
+
+        "tests": {
+          "primary_kink": "male_bondage_receiving",
+          "secondary_kinks": ["male_tied", "femdom", "role_reversal", "male_vulnerability"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "male bound by female - role reversal"
+        },
+
+        "question_angles": {
+          "as_receiver": "Men: Would you enjoy being tied up by her?",
+          "as_giver": "Women: Would you enjoy tying him up and taking control?",
+          "emotional": "How does male bondage feel different from female?"
+        },
+
+        "emotional_range": {
+          "positive": ["exciting", "letting go", "trust", "different sensation"],
+          "negative": ["emasculating", "uncomfortable", "need control"],
+          "curious": ["might try", "with right person", "intriguing"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["male_bondage_positive", "male_submission_ok", "femdom_enjoys"],
+          "if_negative": ["male_always_dominant", "bondage_receiving_no"],
+          "if_curious": ["male_submission_curious"]
+        },
+
+        "correlations": {
+          "positive": ["femdom_general", "male_submission", "role_reversal"],
+          "negative": ["strictly_dominant_male", "traditional_only"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["masculinity", "vulnerability", "control loss"],
+          "normalization": "Many men discover intense pleasure in surrendering control—bondage allows letting go completely"
+        }
+      },
+
+      "participants": [
+        { "role": "binding", "gender": "female", "action": "ties and controls him" },
+        { "role": "bound", "gender": "male", "action": "receives while tied" }
+      ],
+
+      "dimensions": ["bondage", "male_tied", "femdom", "role_reversal"],
+      "tags": ["bondage", "tied", "male", "femdom", "submission"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_spread_eagle",
+      "priority": 4,
+      "intensity": 4,
+
+      "generation_prompt": "BDSM bedroom scene, person tied spread-eagle to bed corners, all four limbs restrained, completely exposed and vulnerable, dominant partner standing over or between their legs, intense power exchange visible, total restraint total exposure",
+
+      "user_description": {
+        "en": "Tied to all four corners of the bed, completely spread and exposed. Nowhere to hide, nothing to do but surrender to whatever comes next.",
+        "ru": "Привязан(а) к четырём углам кровати, полностью раскрыт(а) и обнажён(а). Некуда спрятаться, ничего не остаётся кроме как сдаться тому, что будет дальше."
+      },
+
+      "ai_context": {
+        "description": "Spread-eagle bondage - all four limbs tied. Maximum exposure and vulnerability. Full surrender position.",
+
+        "tests": {
+          "primary_kink": "spread_eagle_bondage",
+          "secondary_kinks": ["full_restraint", "exposure", "vulnerability", "surrender"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "complete submission through position"
+        },
+
+        "question_angles": {
+          "as_receiver": "Would you enjoy being tied spread-eagle?",
+          "as_giver": "Would you enjoy having your partner spread and restrained?",
+          "emotional": "What does complete exposure add to bondage?"
+        },
+
+        "emotional_range": {
+          "positive": ["ultimate surrender", "intensely arousing", "complete trust", "freeing"],
+          "negative": ["too vulnerable", "scary", "exposed", "hard limit"],
+          "curious": ["intriguing but intense", "maybe work up to it"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["spread_eagle_enjoys", "full_exposure_ok", "complete_surrender"],
+          "if_negative": ["exposure_too_much", "vulnerability_hard_limit"],
+          "if_curious": ["advanced_bondage_curious"]
+        },
+
+        "correlations": {
+          "positive": ["bondage_general", "submission_deep", "vulnerability_play"],
+          "negative": ["light_bondage_only", "exposure_issues"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["vulnerability", "exposure", "trust", "safety"],
+          "normalization": "Spread-eagle is classic bondage position—total surrender can be intensely connecting and arousing"
+        }
+      },
+
+      "participants": [
+        { "role": "restrained", "gender": "any", "action": "tied spread-eagle" },
+        { "role": "dominant", "gender": "any", "action": "controls bound partner" }
+      ],
+
+      "dimensions": ["spread_eagle", "full_bondage", "exposure", "surrender"],
+      "tags": ["spread_eagle", "bondage", "full_restraint", "vulnerable"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_rope_bondage_shibari",
+      "priority": 4,
+      "intensity": 4,
+
+      "generation_prompt": "artistic rope bondage shibari scene, person bound in decorative rope pattern, intricate knots and wraps visible on torso and limbs, rope creating pattern on skin, artistic BDSM, beauty of bondage, Japanese-style rope work, sensual and aesthetic restraint",
+
+      "user_description": {
+        "en": "Rope wound in intricate patterns, each knot deliberate, the web of restraint becoming art on skin. Shibari—where bondage meets beauty.",
+        "ru": "Верёвка обвивает в замысловатых узорах, каждый узел преднамерен, сеть ограничений становится искусством на коже. Шибари — где бондаж встречается с красотой."
+      },
+
+      "ai_context": {
+        "description": "Shibari/rope bondage. Artistic Japanese-style rope work. Tests interest in aesthetic bondage, not just functional.",
+
+        "tests": {
+          "primary_kink": "shibari",
+          "secondary_kinks": ["rope_bondage", "artistic_bondage", "aesthetic_kink", "ritual"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "artistic submission"
+        },
+
+        "question_angles": {
+          "as_receiver": "Does the artistry of shibari appeal to you?",
+          "as_giver": "Would you enjoy learning/performing rope bondage?",
+          "emotional": "What does the ritual and artistry of rope bondage add?"
+        },
+
+        "emotional_range": {
+          "positive": ["beautiful", "meditative", "artistic surrender", "intimate ritual"],
+          "negative": ["too elaborate", "just want simple restraint", "not interested"],
+          "curious": ["aesthetically beautiful", "interested in trying"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["shibari_interest", "artistic_bondage_enjoys", "ritual_appreciates"],
+          "if_negative": ["simple_bondage_prefers"],
+          "if_curious": ["shibari_curious"]
+        },
+
+        "correlations": {
+          "positive": ["bondage_general", "aesthetic_appreciation", "ritual_play"],
+          "negative": ["quick_bondage_only", "functionality_only"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["time investment", "skill needed", "rope safety"],
+          "normalization": "Shibari is an art form—the process itself is intimate and meditative for both partners"
+        }
+      },
+
+      "participants": [
+        { "role": "rigger", "gender": "any", "action": "ties elaborate rope patterns" },
+        { "role": "model", "gender": "any", "action": "receives artistic bondage" }
+      ],
+
+      "dimensions": ["shibari", "rope_bondage", "artistic", "ritual"],
+      "tags": ["shibari", "rope", "bondage", "art", "japanese"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_collar_leash",
+      "priority": 4,
+      "intensity": 4,
+
+      "generation_prompt": "BDSM bedroom scene, person wearing collar around neck with leash attached, dominant partner holding or pulling leash, pet play or ownership dynamic visible, collared person in submissive position, power exchange through collar and leash, intimate dominance",
+
+      "user_description": {
+        "en": "The collar around the neck, the leash in their hand. Every tug a reminder of who's in control. Owned, led, possessed.",
+        "ru": "Ошейник на шее, поводок в их руке. Каждое натяжение — напоминание о том, кто контролирует. Принадлежит, ведётся, обладается."
+      },
+
+      "ai_context": {
+        "description": "Collar and leash play. Ownership symbolism. Pet play adjacent. Strong D/s dynamic through accessory.",
+
+        "tests": {
+          "primary_kink": "collar_leash",
+          "secondary_kinks": ["ownership", "pet_play_adjacent", "symbolic_submission", "control"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "owner/owned dynamic"
+        },
+
+        "question_angles": {
+          "as_receiver": "Would you enjoy wearing a collar and leash?",
+          "as_giver": "Would you enjoy putting a collar on your partner?",
+          "emotional": "What does the collar/leash symbolize to you?"
+        },
+
+        "emotional_range": {
+          "positive": ["love the symbolism", "ownership is hot", "freeing to be led"],
+          "negative": ["too degrading", "not my thing", "uncomfortable"],
+          "curious": ["intriguing dynamic", "might try"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["collar_enjoys", "ownership_play_positive", "pet_play_curious"],
+          "if_negative": ["collar_no", "ownership_too_far"],
+          "if_curious": ["collar_curious"]
+        },
+
+        "correlations": {
+          "positive": ["BDSM_general", "power_exchange_strong", "pet_play"],
+          "negative": ["equality_always", "symbolism_no"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["degrading", "dehumanizing", "marks on neck"],
+          "normalization": "Collar play is about trust and symbolic exchange of power—very intimate for those who enjoy it"
+        }
+      },
+
+      "participants": [
+        { "role": "dominant", "gender": "any", "action": "holds leash, controls" },
+        { "role": "collared", "gender": "any", "action": "wears collar, follows" }
+      ],
+
+      "dimensions": ["collar", "leash", "ownership", "power_exchange"],
+      "tags": ["collar", "leash", "BDSM", "ownership", "pet_play"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_handcuffs",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "bedroom bondage scene with handcuffs, person's wrists cuffed together or to bedframe, metallic handcuffs visible, restrained person aroused, partner in control, police/arrest fantasy adjacent, metal restraint bondage",
+
+      "user_description": {
+        "en": "The click of handcuffs. Cold metal against skin, wrists locked together. No escaping now—only accepting what comes.",
+        "ru": "Щелчок наручников. Холодный металл на коже, запястья сомкнуты. Теперь не сбежать — только принимать что будет."
+      },
+
+      "ai_context": {
+        "description": "Handcuff bondage. Metal restraint, more 'serious' than rope/scarves. Arrest/control fantasy adjacent.",
+
+        "tests": {
+          "primary_kink": "handcuffs",
+          "secondary_kinks": ["metal_bondage", "arrest_fantasy", "serious_restraint"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "captured/controlled dynamic"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do handcuffs turn you on?",
+          "as_giver": "Do you enjoy cuffing your partner?",
+          "emotional": "What makes metal restraints different from rope/fabric?"
+        },
+
+        "emotional_range": {
+          "positive": ["hot", "serious restraint", "love the click", "no escape"],
+          "negative": ["too hard", "uncomfortable", "prefer soft restraint"],
+          "curious": ["interesting", "want to try", "with padded cuffs"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["handcuffs_enjoys", "metal_bondage_likes", "arrest_fantasy"],
+          "if_negative": ["soft_bondage_only", "metal_uncomfortable"],
+          "if_curious": ["handcuffs_curious"]
+        },
+
+        "correlations": {
+          "positive": ["bondage_general", "roleplay_arrest", "serious_restraint"],
+          "negative": ["gentle_only", "soft_bondage_only"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["bruising", "safety key", "too police-like"],
+          "normalization": "Popular bondage tool—use cuffs with quick-release or padding for safety and comfort"
+        }
+      },
+
+      "participants": [
+        { "role": "cuffing", "gender": "any", "action": "applies handcuffs" },
+        { "role": "cuffed", "gender": "any", "action": "restrained in cuffs" }
+      ],
+
+      "dimensions": ["handcuffs", "metal_bondage", "restraint"],
+      "tags": ["handcuffs", "cuffs", "bondage", "metal", "restraint"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_suspension_bondage",
+      "priority": 5,
+      "intensity": 5,
+
+      "generation_prompt": "advanced BDSM suspension scene, person suspended partially or fully from ceiling/frame in rope bondage, body held aloft by rope system, intense vulnerability and trust, rigger attending to suspended person, extreme bondage artistry",
+
+      "user_description": {
+        "en": "Suspended in rope, floating between surrender and flight. Body held by intricate knots, completely at their mercy, completely free.",
+        "ru": "Подвешен(а) в верёвках, парит между сдачей и полётом. Тело удерживается замысловатыми узлами, полностью в их власти, полностью свободен(на)."
+      },
+
+      "ai_context": {
+        "description": "Suspension bondage. Advanced/edge bondage. Person suspended by ropes. Requires significant trust and skill.",
+
+        "tests": {
+          "primary_kink": "suspension_bondage",
+          "secondary_kinks": ["advanced_bondage", "extreme_trust", "shibari_advanced", "flying"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "extreme surrender"
+        },
+
+        "question_angles": {
+          "as_receiver": "Does suspension bondage intrigue or frighten you?",
+          "as_giver": "Would you want to learn suspension rigging?",
+          "emotional": "What would complete suspension feel like?"
+        },
+
+        "emotional_range": {
+          "positive": ["ultimate trust", "flying sensation", "transcendent", "beautiful"],
+          "negative": ["too extreme", "scary", "safety concerns", "hard limit"],
+          "curious": ["fascinating but intense", "would need much trust"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["suspension_interested", "advanced_bondage_positive", "extreme_trust_ok"],
+          "if_negative": ["suspension_hard_limit", "ground_bondage_only"],
+          "if_curious": ["suspension_curious"]
+        },
+
+        "correlations": {
+          "positive": ["shibari_interest", "extreme_bondage", "deep_submission"],
+          "negative": ["light_bondage_only", "safety_paramount"]
+        },
+
+        "taboo_context": {
+          "level": 5,
+          "common_concerns": ["safety", "nerve damage", "falling", "skill required"],
+          "normalization": "Edge play requiring extensive training and safety protocols—deeply intense for experienced practitioners"
+        }
+      },
+
+      "participants": [
+        { "role": "rigger", "gender": "any", "action": "suspends with rope" },
+        { "role": "suspended", "gender": "any", "action": "hangs in rope bondage" }
+      ],
+
+      "dimensions": ["suspension", "advanced_bondage", "shibari", "extreme"],
+      "tags": ["suspension", "bondage", "advanced", "extreme", "rope"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    }
+  ],
+
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_163", "scene_164", "scene_165", "scene_166", "scene_167", "scene_168"],
+      "reason": "Multiple bondage position/type variants consolidated into type-based scenes with follow-up",
+      "recommendation": "Keep main bondage scenes, use follow-up for binding type preference"
+    }
+  ]
+}

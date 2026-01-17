@@ -1,0 +1,207 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Primal & Special Kinks",
+  "note": "Primal play, breeding kink, objectification, tears, chastity, special psychological kinks",
+  "scenes": [
+    {
+      "id": "scene_primal_chase",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "forest or large house setting, he chasing her, she running looking back with excited fear, primal hunt dynamic, predator and prey game, catching her from behind, animalistic energy, raw pursuit",
+      "user_description": {
+        "en": "She runs, he chases. Primal hunt through the house or woods. When he catches her, she's his prey. Animal instincts unleashed.",
+        "ru": "Она бежит, он преследует. Первобытная охота через дом или лес. Когда он поймает её, она его добыча. Животные инстинкты выпущены."
+      },
+      "ai_context": {
+        "description": "Primal play - chase/hunt dynamic. Tests: predator/prey, animalistic sex, rawness, pursuit.",
+        "tests": { "primary_kink": "primal_play", "secondary_kinks": ["chase", "predator_prey", "hunt", "animalistic"], "power_dynamic": "predator", "gender_role_aspect": "he hunts, she flees" },
+        "question_angles": { "as_prey": "Does being chased and caught excite you?", "as_predator": "Do you enjoy the hunt dynamic?", "primal": "Does tapping into animal instincts appeal?" },
+        "emotional_range": { "positive": ["love the chase", "primal energy is hot", "catching/being caught"], "negative": ["scary", "too rough", "prefer civilized"], "curious": ["sounds intense", "would try"] },
+        "profile_signals": { "if_positive": ["primal_enjoys", "chase_aroused", "predator_prey_likes"], "if_negative": ["civilized_prefers", "primal_no"], "if_curious": ["primal_curious"] },
+        "correlations": { "positive": ["rough_sex", "dominance", "CNC_lite", "intensity"], "negative": ["gentle_only", "controlled_only"] },
+        "taboo_context": { "level": 4, "common_concerns": ["safety during chase", "knowing when to stop"], "normalization": "Primal play taps into deep instincts—safewords essential, space to play needed" }
+      },
+      "participants": [{ "role": "predator", "gender": "male", "action": "chases, catches" }, { "role": "prey", "gender": "female", "action": "runs, gets caught" }],
+      "dimensions": ["primal", "chase", "predator_prey", "animalistic"],
+      "tags": ["primal", "chase", "hunt", "predator", "prey"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_primal_growling",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "intense sex moment, he growling in her ear, low animal sounds, biting her neck like claiming, raw primal energy, she responding to his animalistic nature, bedroom or floor, completely unleashed",
+      "user_description": {
+        "en": "He growls in her ear, bites her neck like an animal claiming mate. Human civility gone, pure primal energy released.",
+        "ru": "Он рычит ей в ухо, кусает шею как животное метящее пару. Человеческая цивилизованность ушла, чистая первобытная энергия выпущена."
+      },
+      "ai_context": {
+        "description": "Primal sounds and biting - growling, animal noises, neck biting. Tests: animalistic expression, sound.",
+        "tests": { "primary_kink": "primal_sounds", "secondary_kinks": ["growling", "biting", "claiming", "animalistic_expression"], "power_dynamic": "dominant", "gender_role_aspect": "male as animal" },
+        "question_angles": { "reaction": "Does growling during sex turn you on?", "making": "Would you make animal sounds?", "biting": "Does claiming-bite appeal?" },
+        "emotional_range": { "positive": ["incredibly hot", "primal is best", "love the rawness"], "negative": ["silly", "breaking mood", "prefer words"], "curious": ["might be hot", "never experienced"] },
+        "profile_signals": { "if_positive": ["primal_sounds_enjoys", "growling_hot", "biting_claiming"], "if_negative": ["sounds_awkward", "civilized_prefers"], "if_curious": ["primal_sounds_curious"] },
+        "correlations": { "positive": ["primal_play", "intensity", "rough_sex"], "negative": ["quiet_prefers", "controlled"] },
+        "taboo_context": { "level": 3, "common_concerns": ["feeling silly", "neighbors"], "normalization": "Animal sounds during sex are natural—dropping inhibitions" }
+      },
+      "participants": [{ "role": "primal", "gender": "male", "action": "growls, bites" }, { "role": "receiving", "gender": "female", "action": "receives primal energy" }],
+      "dimensions": ["primal", "growling", "biting", "sounds"],
+      "tags": ["primal", "growling", "biting", "animal", "raw"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_breeding_kink",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "intense penetration moment, he pressing deep inside her, both knowing no protection, breeding talk implied, raw primal desire to impregnate, she receiving with acceptance of biological purpose, intimate bedroom",
+      "user_description": {
+        "en": "Deep inside her, no barriers. The primal urge to breed, to fill her, to make her his completely. Biological imperative as kink.",
+        "ru": "Глубоко внутри неё, без барьеров. Первобытное желание оплодотворить, заполнить её, сделать полностью своей. Биологический императив как кинк."
+      },
+      "ai_context": {
+        "description": "Breeding kink - desire to impregnate/be impregnated as arousal. Separate from actually wanting children.",
+        "tests": { "primary_kink": "breeding_kink", "secondary_kinks": ["impregnation_fantasy", "bare_sex", "biological_urge", "claiming"], "power_dynamic": "dominant", "gender_role_aspect": "primal reproduction drive" },
+        "question_angles": { "fantasy_vs_reality": "Does breeding TALK turn you on regardless of actually wanting kids?", "as_woman": "Does the idea of being 'bred' arouse you?", "primal": "Is this about the biological primal urge?" },
+        "emotional_range": { "positive": ["ultimate primal", "breeding talk is hot", "love the fantasy"], "negative": ["too real", "not arousing", "prefer protection"], "curious": ["as fantasy only", "dirty talk level"] },
+        "profile_signals": { "if_positive": ["breeding_kink", "impregnation_fantasy"], "if_negative": ["protection_always", "breeding_no"], "if_curious": ["breeding_talk_curious"] },
+        "correlations": { "positive": ["primal", "bare_sex", "creampie"], "negative": ["protected_only", "no_pregnancy_themes"] },
+        "taboo_context": { "level": 4, "common_concerns": ["real pregnancy", "fantasy vs reality"], "normalization": "Breeding kink is common fantasy—can be enjoyed without intent to conceive" }
+      },
+      "participants": [{ "role": "breeding", "gender": "male", "action": "wants to impregnate" }, { "role": "receiving", "gender": "female", "action": "receives breeding" }],
+      "dimensions": ["breeding_kink", "primal", "impregnation", "bare"],
+      "tags": ["breeding", "impregnation", "primal", "bare", "creampie"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_objectification",
+      "priority": 5,
+      "intensity": 4,
+      "generation_prompt": "BDSM setting, she on all fours being used as furniture, he placing drink on her back, she still and silent serving as object, dehumanization as kink, her acceptance of object role, dark intimate setting",
+      "user_description": {
+        "en": "She becomes furniture—a table for his drink. Not a person in this moment, just an object to be used. Dehumanization as devotion.",
+        "ru": "Она становится мебелью—столиком для его напитка. Не человек в этот момент, просто объект для использования. Дегуманизация как преданность."
+      },
+      "ai_context": {
+        "description": "Objectification - being treated as object/furniture. Dehumanization kink. Tests: being used as thing, losing personhood temporarily.",
+        "tests": { "primary_kink": "objectification", "secondary_kinks": ["furniture_play", "dehumanization", "being_used", "service"], "power_dynamic": "extreme_submissive", "gender_role_aspect": "she becomes object" },
+        "question_angles": { "as_object": "Would being treated as furniture/object appeal?", "as_user": "Would you use your partner as object?", "psychology": "What does temporary dehumanization offer?" },
+        "emotional_range": { "positive": ["deep subspace", "ultimate submission", "freedom in objecthood"], "negative": ["degrading badly", "too far", "need to be seen as human"], "curious": ["extreme but intriguing", "would need to understand more"] },
+        "profile_signals": { "if_positive": ["objectification_enjoys", "furniture_play", "dehumanization_ok"], "if_negative": ["human_always", "dignity_requires"], "if_curious": ["objectification_curious"] },
+        "correlations": { "positive": ["extreme_submission", "degradation", "service"], "negative": ["respect_required", "humanity_always"] },
+        "taboo_context": { "level": 5, "common_concerns": ["psychological impact", "too degrading"], "normalization": "Objectification is extreme but valid kink—paradoxically requires great trust" }
+      },
+      "participants": [{ "role": "using", "gender": "male", "action": "uses her as furniture" }, { "role": "object", "gender": "female", "action": "serves as object" }],
+      "dimensions": ["objectification", "furniture", "dehumanization", "service"],
+      "tags": ["objectification", "furniture", "dehumanization", "extreme", "BDSM"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_tears_pleasure",
+      "priority": 5,
+      "intensity": 4,
+      "generation_prompt": "intimate intense moment, she crying from intensity of pleasure or overwhelm, tears streaming but expression is ecstasy not pain, he tenderly wiping her tears while continuing, emotional release through sex, overwhelming sensation",
+      "user_description": {
+        "en": "Tears stream down her face—not from pain, from overwhelming sensation. Crying from too much pleasure. Emotional release through physical intensity.",
+        "ru": "Слёзы текут по её лицу—не от боли, от переполняющих ощущений. Плач от слишком большого удовольствия. Эмоциональная разрядка через физическую интенсивность."
+      },
+      "ai_context": {
+        "description": "Crying from pleasure/overwhelm. Tears as intensity indicator. Tests: emotional release, overwhelm, intensity crying.",
+        "tests": { "primary_kink": "tears_pleasure", "secondary_kinks": ["emotional_release", "overwhelm", "intensity", "crying_good"], "power_dynamic": "receiving", "gender_role_aspect": "overwhelming her" },
+        "question_angles": { "experience": "Have you cried from pleasure intensity?", "reaction": "How do you feel about tears during sex?", "partner": "Would partner crying concern or arouse you?" },
+        "emotional_range": { "positive": ["happened to me", "sign of intensity", "beautiful release"], "negative": ["concerning", "would stop", "tears aren't sexy"], "curious": ["never experienced", "sounds intense"] },
+        "profile_signals": { "if_positive": ["tears_pleasure_ok", "intensity_enjoys", "emotional_release"], "if_negative": ["tears_stop", "tears_concern"], "if_curious": ["tears_curious"] },
+        "correlations": { "positive": ["intensity", "emotional_sex", "overwhelm_enjoys"], "negative": ["controlled", "tears_bad_sign"] },
+        "taboo_context": { "level": 3, "common_concerns": ["distinguishing pleasure tears from distress"], "normalization": "Crying from pleasure is real phenomenon—communication and checking in important" }
+      },
+      "participants": [{ "role": "giving", "gender": "male", "action": "overwhelms with pleasure" }, { "role": "crying", "gender": "female", "action": "cries from intensity" }],
+      "dimensions": ["tears", "pleasure", "overwhelm", "emotional"],
+      "tags": ["tears", "crying", "intensity", "pleasure", "emotional"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_chastity_device",
+      "priority": 5,
+      "intensity": 4,
+      "generation_prompt": "close-up of male chastity cage on him, she holding the key, he locked up unable to touch himself, her control over his orgasms long-term, femdom chastity dynamic, her smiling with power, his frustration visible",
+      "user_description": {
+        "en": "Locked in a cage, she holds the only key. Days without release, unable to even touch himself. Her complete control over his pleasure.",
+        "ru": "Заперт в клетке, она держит единственный ключ. Дни без разрядки, не способный даже коснуться себя. Её полный контроль над его удовольствием."
+      },
+      "ai_context": {
+        "description": "Chastity device/cage - long-term orgasm denial. Tests: extended denial, device wearing, keyholder dynamic.",
+        "tests": { "primary_kink": "chastity", "secondary_kinks": ["male_chastity", "keyholder", "long_term_denial", "orgasm_control"], "power_dynamic": "extreme_submissive", "gender_role_aspect": "she controls his orgasms entirely" },
+        "question_angles": { "as_locked": "Would wearing chastity device appeal?", "as_keyholder": "Would you hold the key to partner's chastity?", "duration": "How long could you last?" },
+        "emotional_range": { "positive": ["ultimate control exchange", "anticipation builds", "devotion proof"], "negative": ["too extreme", "need release", "uncomfortable"], "curious": ["intriguing concept", "short term maybe"] },
+        "profile_signals": { "if_positive": ["chastity_enjoys", "male_chastity_ok", "keyholder_dynamic"], "if_negative": ["regular_orgasms_need", "chastity_no"], "if_curious": ["chastity_curious"] },
+        "correlations": { "positive": ["orgasm_denial", "femdom", "devotion", "control_exchange"], "negative": ["orgasm_freedom", "no_devices"] },
+        "taboo_context": { "level": 5, "common_concerns": ["hygiene", "duration", "medical"], "normalization": "Chastity play is established kink—requires proper devices and hygiene protocols" }
+      },
+      "participants": [{ "role": "keyholder", "gender": "female", "action": "holds key, controls" }, { "role": "locked", "gender": "male", "action": "wears device, denied" }],
+      "dimensions": ["chastity", "device", "keyholder", "denial"],
+      "tags": ["chastity", "cage", "keyholder", "denial", "femdom"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_free_use",
+      "priority": 5,
+      "intensity": 4,
+      "generation_prompt": "casual domestic scene, she reading book or cooking, he approaching and taking her without asking, she allowing without stopping her activity, free use dynamic where she's always available, consensual availability agreement",
+      "user_description": {
+        "en": "She reads her book while he takes her from behind. No asking needed—she's always available. Free use arrangement. Her body his to use.",
+        "ru": "Она читает книгу пока он берёт её сзади. Спрашивать не нужно—она всегда доступна. Договорённость свободного использования. Её тело для его использования."
+      },
+      "ai_context": {
+        "description": "Free use - standing consent to be used sexually anytime. Tests: availability, CNC-adjacent, being used.",
+        "tests": { "primary_kink": "free_use", "secondary_kinks": ["always_available", "CNC_lite", "being_used", "standing_consent"], "power_dynamic": "submissive", "gender_role_aspect": "she's always available" },
+        "question_angles": { "as_available": "Would 'free use' arrangement appeal to you?", "as_user": "Would you use partner without asking each time?", "boundaries": "What limits would you set?" },
+        "emotional_range": { "positive": ["love being used", "availability is devotion", "spontaneous access"], "negative": ["need to be asked", "consent each time", "too objectifying"], "curious": ["intriguing", "limited times maybe"] },
+        "profile_signals": { "if_positive": ["free_use_enjoys", "availability_ok", "standing_consent"], "if_negative": ["consent_every_time", "free_use_no"], "if_curious": ["free_use_curious"] },
+        "correlations": { "positive": ["CNC", "submission", "being_used", "availability"], "negative": ["consent_explicit", "autonomy_strict"] },
+        "taboo_context": { "level": 5, "common_concerns": ["consent complexity", "boundaries", "stopping"], "normalization": "Free use is advanced dynamic—requires extensive negotiation and withdrawal mechanism" }
+      },
+      "participants": [{ "role": "using", "gender": "male", "action": "uses her freely" }, { "role": "available", "gender": "female", "action": "remains available" }],
+      "dimensions": ["free_use", "availability", "standing_consent", "being_used"],
+      "tags": ["free_use", "available", "CNC", "domestic", "use"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_size_worship",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "intimate bedroom moment, she reacting with awe to his size, verbal appreciation of his cock, her hands unable to fully wrap around, size worship and appreciation, his pride in her reaction, focus on dimensions",
+      "user_description": {
+        "en": "She can barely wrap her hand around it. Eyes wide, verbal appreciation of his size. Worship of his dimensions. Size as turn-on.",
+        "ru": "Она едва может обхватить рукой. Глаза широко раскрыты, словесное восхищение его размером. Поклонение его параметрам. Размер как возбуждение."
+      },
+      "ai_context": {
+        "description": "Size worship/kink - arousal from partner's size. Can be real or played up. Tests: size appreciation, verbal worship of dimensions.",
+        "tests": { "primary_kink": "size_kink", "secondary_kinks": ["size_worship", "big_cock", "verbal_appreciation", "awe"], "power_dynamic": "worshipping", "gender_role_aspect": "worship of male size" },
+        "question_angles": { "importance": "How much does size matter to you?", "worship": "Does size worship turn you on?", "giving_receiving": "Do you like having your size appreciated?" },
+        "emotional_range": { "positive": ["size matters to me", "love size worship", "big is better"], "negative": ["size doesn't matter", "feels fake", "uncomfortable"], "curious": ["can be hot", "depends on delivery"] },
+        "profile_signals": { "if_positive": ["size_kink", "size_worship_enjoys"], "if_negative": ["size_neutral", "connection_over_size"], "if_curious": ["size_sometimes_hot"] },
+        "correlations": { "positive": ["physical_focused", "visual_arousal"], "negative": ["connection_focused", "size_irrelevant"] },
+        "taboo_context": { "level": 2, "common_concerns": ["insecurity for some men", "pressure"], "normalization": "Size preference varies—worship play is about the dynamic not requirements" }
+      },
+      "participants": [{ "role": "worshipping", "gender": "female", "action": "worships his size" }, { "role": "worshipped", "gender": "male", "action": "receives size worship" }],
+      "dimensions": ["size_kink", "worship", "appreciation", "verbal"],
+      "tags": ["size", "worship", "big", "appreciation", "verbal"],
+      "relevant_for": { "gender": "any", "interested_in": "male" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ],
+  "commented_scenes": [
+    {
+      "original_ids": ["new_primal_special"],
+      "reason": "New category covering primal play, breeding kink, objectification, and special psychological kinks",
+      "recommendation": "These are edge/extreme scenes - use boundary question types and careful follow-ups"
+    }
+  ]
+}

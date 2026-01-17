@@ -1,0 +1,207 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Sex Positions",
+  "note": "Specific positions testing preference for control, visual, depth, intimacy factors",
+  "scenes": [
+    {
+      "id": "scene_missionary",
+      "priority": 1,
+      "intensity": 2,
+      "generation_prompt": "couple in missionary position, man on top between woman's legs, face to face intimacy, eye contact, her legs wrapped around him or spread, connected bodies, bedroom warm lighting",
+      "user_description": {
+        "en": "Face to face, bodies pressed together. Classic missionary allows deep connection, eye contact, kisses. Intimate and intense.",
+        "ru": "Лицом к лицу, тела прижаты. Классическая миссионерская позволяет глубокую связь, зрительный контакт, поцелуи. Интимно и интенсивно."
+      },
+      "ai_context": {
+        "description": "Missionary position. Face-to-face, man on top. Testing preference for intimacy vs variety.",
+        "tests": { "primary_kink": "missionary", "secondary_kinks": ["face_to_face", "intimacy", "eye_contact"], "power_dynamic": "slight_dominant", "gender_role_aspect": "traditional position" },
+        "question_angles": { "emotional": "Do you enjoy missionary position?", "frequency": "How often do you prefer face-to-face positions?" },
+        "emotional_range": { "positive": ["intimate", "connected", "classic for reason"], "negative": ["boring", "prefer variety"], "curious": ["sometimes", "with variations"] },
+        "profile_signals": { "if_positive": ["missionary_enjoys", "intimacy_values"], "if_negative": ["variety_seeks"], "if_curious": ["position_flexible"] },
+        "correlations": { "positive": ["intimacy_focus", "eye_contact_important"], "negative": ["always_new", "visual_prefers"] },
+        "taboo_context": { "level": 1, "common_concerns": ["vanilla label"], "normalization": "Most popular position for good reason—intimacy and connection" }
+      },
+      "participants": [{ "role": "on_top", "gender": "male", "action": "penetrates from above" }, { "role": "beneath", "gender": "female", "action": "receives, wraps legs" }],
+      "dimensions": ["missionary", "face_to_face", "intimate"],
+      "tags": ["missionary", "classic", "intimate", "face_to_face"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_doggy",
+      "priority": 1,
+      "intensity": 3,
+      "generation_prompt": "couple in doggy style position, woman on hands and knees, man behind her holding her hips, deep penetration from behind, her back arched, both showing pleasure, bedroom setting",
+      "user_description": {
+        "en": "On hands and knees, him behind gripping her hips. Deep, primal, intense. The angle hits differently.",
+        "ru": "На четвереньках, он сзади держит её бёдра. Глубоко, первобытно, интенсивно. Угол ощущается по-другому."
+      },
+      "ai_context": {
+        "description": "Doggy style position. From behind, deep penetration. Testing preference for primal vs intimate positions.",
+        "tests": { "primary_kink": "doggy_style", "secondary_kinks": ["from_behind", "deep_penetration", "primal"], "power_dynamic": "dominant", "gender_role_aspect": "he controls pace" },
+        "question_angles": { "emotional": "Do you enjoy doggy style?", "physical": "Is the angle/depth important to you?" },
+        "emotional_range": { "positive": ["intense", "deep", "primal", "love the angle"], "negative": ["impersonal", "prefer face to face"], "curious": ["sometimes", "depends on mood"] },
+        "profile_signals": { "if_positive": ["doggy_enjoys", "deep_penetration_likes", "primal_sex"], "if_negative": ["face_to_face_prefers"], "if_curious": ["position_varies"] },
+        "correlations": { "positive": ["rough_sex", "intensity", "physical_focus"], "negative": ["intimacy_only", "gentle_prefers"] },
+        "taboo_context": { "level": 1, "common_concerns": ["impersonal feeling"], "normalization": "Very popular position—many find it deeply satisfying physically" }
+      },
+      "participants": [{ "role": "behind", "gender": "male", "action": "penetrates from behind" }, { "role": "on_fours", "gender": "female", "action": "receives on hands and knees" }],
+      "dimensions": ["doggy", "from_behind", "deep", "primal"],
+      "tags": ["doggy", "from_behind", "deep", "primal"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_cowgirl",
+      "priority": 1,
+      "intensity": 3,
+      "generation_prompt": "woman on top riding man in cowgirl position, she straddling him, her hands on his chest, she controls pace and depth, he lies beneath watching her, her expression of control and pleasure",
+      "user_description": {
+        "en": "She's on top, controlling everything—pace, depth, angle. He watches her take what she needs. Power in her hips.",
+        "ru": "Она сверху, контролирует всё — темп, глубину, угол. Он смотрит как она берёт что ей нужно. Сила в её бёдрах."
+      },
+      "ai_context": {
+        "description": "Cowgirl - woman on top. She controls everything. Testing preference for female control in positions.",
+        "tests": { "primary_kink": "cowgirl", "secondary_kinks": ["woman_on_top", "female_control", "visual_for_him"], "power_dynamic": "dominant", "gender_role_aspect": "female controls" },
+        "question_angles": { "as_rider": "Women: Do you enjoy being on top?", "as_beneath": "Men: Do you enjoy her on top?" },
+        "emotional_range": { "positive": ["love the control", "hits right spot", "empowering"], "negative": ["too much work", "prefer him leading"], "curious": ["sometimes", "for variety"] },
+        "profile_signals": { "if_positive": ["cowgirl_enjoys", "female_control_likes", "active_sex"], "if_negative": ["passive_prefers"], "if_curious": ["cowgirl_sometimes"] },
+        "correlations": { "positive": ["female_initiative", "active_partner", "control_enjoys"], "negative": ["passive_receiver", "led_prefers"] },
+        "taboo_context": { "level": 1, "common_concerns": ["performance anxiety", "stamina"], "normalization": "Very popular—allows her to find perfect angle for her pleasure" }
+      },
+      "participants": [{ "role": "riding", "gender": "female", "action": "rides on top" }, { "role": "beneath", "gender": "male", "action": "lies beneath, enjoys view" }],
+      "dimensions": ["cowgirl", "woman_on_top", "control"],
+      "tags": ["cowgirl", "on_top", "female_control", "riding"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_reverse_cowgirl",
+      "priority": 2,
+      "intensity": 3,
+      "generation_prompt": "woman riding man in reverse cowgirl, facing away from him, he sees her back and ass, she controls movement, visual focus on her body from behind, bedroom setting",
+      "user_description": {
+        "en": "She rides facing away, giving him the view. Her control, his visual feast. Different angle, intense for both.",
+        "ru": "Она скачет лицом от него, давая ему вид. Её контроль, его визуальный пир. Другой угол, интенсивно для обоих."
+      },
+      "ai_context": {
+        "description": "Reverse cowgirl - she faces away. Visual position. Testing preference for visual vs intimate.",
+        "tests": { "primary_kink": "reverse_cowgirl", "secondary_kinks": ["visual", "ass_view", "woman_control"], "power_dynamic": "dominant", "gender_role_aspect": "visual focus" },
+        "question_angles": { "visual": "Do you enjoy the visual aspect of this position?", "physical": "Does this angle feel different?" },
+        "emotional_range": { "positive": ["love the view", "feels different", "visual turn-on"], "negative": ["miss eye contact", "awkward"], "curious": ["would try", "for variety"] },
+        "profile_signals": { "if_positive": ["reverse_cowgirl_enjoys", "visual_arousal"], "if_negative": ["face_to_face_prefers"], "if_curious": ["variety_open"] },
+        "correlations": { "positive": ["visual_kink", "ass_appreciation", "variety"], "negative": ["intimacy_only"] },
+        "taboo_context": { "level": 2, "common_concerns": ["porn position", "feels performative"], "normalization": "Many couples enjoy the visual variety and different sensation" }
+      },
+      "participants": [{ "role": "riding", "gender": "female", "action": "rides facing away" }, { "role": "beneath", "gender": "male", "action": "enjoys view, touches her" }],
+      "dimensions": ["reverse_cowgirl", "visual", "from_behind"],
+      "tags": ["reverse_cowgirl", "visual", "on_top", "ass_view"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_spooning",
+      "priority": 2,
+      "intensity": 2,
+      "generation_prompt": "couple having sex in spooning position, lying on their sides, him behind her, bodies curved together, intimate lazy morning or gentle sex, his arm around her, connected and close",
+      "user_description": {
+        "en": "Lying together curved like spoons, him inside her from behind. Lazy, intimate, close. Perfect for slow morning sex.",
+        "ru": "Лежат вместе изогнутые как ложки, он внутри неё сзади. Ленивый, интимный, близкий. Идеально для медленного утреннего секса."
+      },
+      "ai_context": {
+        "description": "Spooning sex position. Intimate, lazy, from behind while lying. Testing preference for gentle intimate positions.",
+        "tests": { "primary_kink": "spooning", "secondary_kinks": ["lazy_sex", "intimate", "from_behind_gentle"], "power_dynamic": "equal", "gender_role_aspect": "intimate connection" },
+        "question_angles": { "emotional": "Do you enjoy lazy intimate positions like spooning?", "timing": "Is this good for certain times?" },
+        "emotional_range": { "positive": ["intimate", "cozy", "perfect for mornings"], "negative": ["too lazy", "prefer more active"], "curious": ["sometimes", "for variety"] },
+        "profile_signals": { "if_positive": ["spooning_enjoys", "lazy_sex_likes", "intimacy_values"], "if_negative": ["active_prefers"], "if_curious": ["position_varies"] },
+        "correlations": { "positive": ["morning_sex", "gentle_sex", "closeness"], "negative": ["intense_always", "active_only"] },
+        "taboo_context": { "level": 1, "common_concerns": null, "normalization": "Perfect for intimate connection and less physically demanding sex" }
+      },
+      "participants": [{ "role": "behind", "gender": "male", "action": "enters from behind while spooning" }, { "role": "front", "gender": "female", "action": "receives while held" }],
+      "dimensions": ["spooning", "lazy", "intimate", "lying"],
+      "tags": ["spooning", "lazy", "intimate", "morning"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_standing_sex",
+      "priority": 3,
+      "intensity": 4,
+      "generation_prompt": "couple having sex standing up, her back against wall or him holding her up, standing penetration, intense athletic position, passion visible, may involve lifting her",
+      "user_description": {
+        "en": "Standing, her back against the wall, or lifted in his arms. Athletic, intense, can't-wait-for-the-bed passion.",
+        "ru": "Стоя, её спина к стене, или он держит её на руках. Атлетично, интенсивно, страсть не-могу-дождаться-кровати."
+      },
+      "ai_context": {
+        "description": "Standing sex. Athletic, spontaneous, intense. Testing preference for physical/athletic positions.",
+        "tests": { "primary_kink": "standing_sex", "secondary_kinks": ["athletic", "spontaneous", "strength"], "power_dynamic": "dominant", "gender_role_aspect": "physical strength display" },
+        "question_angles": { "physical": "Do you enjoy athletic positions like standing sex?", "spontaneous": "Is spontaneity important?" },
+        "emotional_range": { "positive": ["hot", "spontaneous", "shows strength"], "negative": ["too difficult", "prefer comfortable"], "curious": ["sounds exciting", "with right partner"] },
+        "profile_signals": { "if_positive": ["standing_sex_enjoys", "athletic_sex", "spontaneous_likes"], "if_negative": ["comfortable_prefers"], "if_curious": ["athletic_curious"] },
+        "correlations": { "positive": ["physical_fitness", "spontaneous_sex", "strength_display"], "negative": ["comfort_priority", "bed_only"] },
+        "taboo_context": { "level": 2, "common_concerns": ["physical difficulty", "stamina", "balance"], "normalization": "Requires fitness but can be incredibly passionate and spontaneous" }
+      },
+      "participants": [{ "role": "holding", "gender": "male", "action": "stands, may hold her" }, { "role": "held", "gender": "female", "action": "wrapped around or against wall" }],
+      "dimensions": ["standing", "athletic", "spontaneous"],
+      "tags": ["standing", "wall", "athletic", "spontaneous"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_prone_bone",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "woman lying flat on stomach, man on top of her from behind, prone bone position, deep penetration with her legs together, intimate and intense, his weight on her, bedroom",
+      "user_description": {
+        "en": "She lies flat, he's on top from behind. Legs together create tightness. His weight, her surrender, deep and intense.",
+        "ru": "Она лежит плашмя, он сверху сзади. Ноги вместе создают тесноту. Его вес, её сдача, глубоко и интенсивно."
+      },
+      "ai_context": {
+        "description": "Prone bone position. Her flat, him on top from behind. Tight, deep penetration.",
+        "tests": { "primary_kink": "prone_bone", "secondary_kinks": ["from_behind", "tight", "deep", "weight"], "power_dynamic": "dominant", "gender_role_aspect": "complete coverage" },
+        "question_angles": { "physical": "Do you enjoy the tightness of this position?", "emotional": "Do you like feeling his weight?" },
+        "emotional_range": { "positive": ["tight and deep", "his weight is hot", "intense"], "negative": ["too much weight", "can't move"], "curious": ["sounds interesting"] },
+        "profile_signals": { "if_positive": ["prone_bone_enjoys", "tight_sensation", "weight_likes"], "if_negative": ["movement_needs"], "if_curious": ["prone_curious"] },
+        "correlations": { "positive": ["deep_penetration", "dominance_enjoys", "tight_sensation"], "negative": ["freedom_needs"] },
+        "taboo_context": { "level": 2, "common_concerns": ["breathing", "weight"], "normalization": "Creates unique tight sensation many find intensely pleasurable" }
+      },
+      "participants": [{ "role": "on_top", "gender": "male", "action": "lies on her from behind" }, { "role": "beneath", "gender": "female", "action": "lies flat, receives" }],
+      "dimensions": ["prone_bone", "from_behind", "tight", "deep"],
+      "tags": ["prone", "from_behind", "tight", "deep"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_legs_on_shoulders",
+      "priority": 3,
+      "intensity": 4,
+      "generation_prompt": "missionary variant with woman's legs on man's shoulders, deep angle penetration, her ankles near his head, intense deep position, eye contact still possible, bedroom setting",
+      "user_description": {
+        "en": "Her legs on his shoulders, folding her, reaching deeper than before. Intense angle, eye contact remains. Deep and connected.",
+        "ru": "Её ноги на его плечах, складывает её, достигая глубже чем раньше. Интенсивный угол, зрительный контакт сохраняется. Глубоко и соединено."
+      },
+      "ai_context": {
+        "description": "Legs on shoulders position. Deep penetration variant of missionary. Testing preference for deep/intense positions.",
+        "tests": { "primary_kink": "legs_on_shoulders", "secondary_kinks": ["deep_penetration", "flexibility", "intense"], "power_dynamic": "dominant", "gender_role_aspect": "he controls depth" },
+        "question_angles": { "physical": "Do you enjoy deep positions like this?", "flexibility": "Is flexibility a factor for you?" },
+        "emotional_range": { "positive": ["so deep", "intense but intimate", "love this angle"], "negative": ["too deep", "uncomfortable", "need flexibility"], "curious": ["would try", "depends on flexibility"] },
+        "profile_signals": { "if_positive": ["deep_position_enjoys", "flexibility_has", "intensity_likes"], "if_negative": ["gentle_depth_prefers"], "if_curious": ["deep_curious"] },
+        "correlations": { "positive": ["deep_penetration", "intensity", "physical_positions"], "negative": ["gentle_only", "flexibility_limited"] },
+        "taboo_context": { "level": 2, "common_concerns": ["too deep", "cervix discomfort", "flexibility"], "normalization": "Allows very deep penetration—communication about comfort is key" }
+      },
+      "participants": [{ "role": "penetrating", "gender": "male", "action": "holds her legs on shoulders" }, { "role": "receiving", "gender": "female", "action": "legs up, receives deep" }],
+      "dimensions": ["legs_up", "deep", "intense", "flexible"],
+      "tags": ["deep", "legs_up", "intense", "missionary_variant"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ],
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_241", "scene_242", "scene_243", "scene_244", "scene_245", "scene_246", "scene_247", "scene_248", "scene_337", "scene_338", "scene_339", "scene_340", "scene_341", "scene_342", "scene_343", "scene_344", "scene_345", "scene_346"],
+      "reason": "Consolidated specific position variants into main position types",
+      "recommendation": "Use follow-up for specific variants within each position category"
+    }
+  ]
+}

@@ -1,0 +1,771 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Passion & Intensity",
+  "scenes": [
+    {
+      "id": "scene_013",
+      "priority": 2,
+      "intensity": 3,
+
+      "generation_prompt": "man standing pressing woman against white bedroom wall holding her up, both his hands gripping firmly under her thighs supporting her weight, she wraps both legs tightly around his waist ankles crossed behind his lower back, her arms around his neck fingers gripping his shoulders, her back flat against wall, both faces close intense eye contact mouths slightly open breathing heavily, he wearing only unbuttoned jeans low on hips showing v-line, she in black lace bra straps falling off shoulders and matching panties pushed aside, dramatic side lighting casting shadows on wall, raw desire visible in expressions",
+
+      "user_description": {
+        "en": "He lifts her against the wall, her legs wrapped tight around him. Eyes locked, both breathing hard. Raw desire.",
+        "ru": "Он поднимает её у стены, её ноги крепко обхватывают его. Взгляды скрещены, оба тяжело дышат. Сырое желание."
+      },
+
+      "ai_context": {
+        "description": "Wall sex position. Male strength display. Intense, passionate. Physical dominance, her surrender to being held.",
+
+        "tests": {
+          "primary_kink": "wall_sex",
+          "secondary_kinks": ["strength", "intensity", "being_lifted", "physical_passion"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "male physical dominance, female wrapped around"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy being lifted and held during sex?",
+          "as_giver": "Do you enjoy displays of physical strength during sex?",
+          "emotional": "How does this intensity feel compared to gentler sex?"
+        },
+
+        "emotional_range": {
+          "positive": ["hot", "love being lifted", "intensity is exciting", "feel desired"],
+          "negative": ["too rough", "prefer gentle", "physically uncomfortable"],
+          "curious": ["looks hot", "would try", "depends on partner"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["intensity_enjoys", "being_lifted_likes", "physical_sex_loves", "strength_turn_on"],
+          "if_negative": ["gentle_prefers", "rough_uncomfortable"],
+          "if_curious": ["intensity_curious"]
+        },
+
+        "correlations": {
+          "positive": ["rough_sex_enjoys", "dominant_partner_likes", "physical_passion"],
+          "negative": ["always_gentle", "slow_only"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": null,
+          "normalization": null
+        }
+      },
+
+      "participants": [
+        { "role": "dominant", "gender": "male", "action": "holds against wall" },
+        { "role": "wrapped", "gender": "female", "action": "legs around him" }
+      ],
+
+      "dimensions": ["wall_sex", "intensity", "strength", "passion"],
+      "tags": ["wall", "passionate", "intense", "legs_wrapped", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_014",
+      "priority": 1,
+      "intensity": 3,
+
+      "generation_prompt": "woman straddling man on bed with white sheets, she sitting upright on his hips thighs spread around his waist, leaning forward both her hands pinning his wrists firmly above his head against pillow, her arms straight pressing down, looking down at him with intense desire and control in her expression, he lying on back looking up at her submissively allowing her control, she completely nude breasts visible leaning over him, he nude visible chest and arms, dramatic bedroom lighting from side, she clearly dominant in control",
+
+      "user_description": {
+        "en": "She pins his wrists above his head, looking down at him with fierce desire. He surrenders to her control completely.",
+        "ru": "Она прижимает его запястья над головой, глядя на него с яростным желанием. Он полностью сдаётся её контролю."
+      },
+
+      "ai_context": {
+        "description": "Woman on top, pinning male's wrists. Female dominance during sex. Power exchange, she controls.",
+
+        "tests": {
+          "primary_kink": "female_dominance_sex",
+          "secondary_kinks": ["pinning", "woman_on_top", "control", "power_exchange"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "female controls, male submits"
+        },
+
+        "question_angles": {
+          "as_receiver": "Men: Do you enjoy when she takes full control?",
+          "as_giver": "Women: Do you enjoy taking control like this?",
+          "emotional": "How does this power dynamic feel?"
+        },
+
+        "emotional_range": {
+          "positive": ["love it", "hot when she leads", "freeing", "exciting"],
+          "negative": ["uncomfortable", "prefer to lead", "feels wrong"],
+          "curious": ["might enjoy", "with right partner"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["female_dominance_enjoys", "submission_during_sex_ok", "pinned_likes"],
+          "if_negative": ["always_leads", "control_keeps"],
+          "if_curious": ["switch_potential"]
+        },
+
+        "correlations": {
+          "positive": ["femdom_curious", "being_restrained_interested", "strong_women_attracted"],
+          "negative": ["always_dominant", "male_leads_only"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["masculinity", "role expectations"],
+          "normalization": "Many couples enjoy switching control—surrendering to your partner can deepen trust and pleasure"
+        }
+      },
+
+      "participants": [
+        { "role": "dominant", "gender": "female", "action": "pins wrists, on top" },
+        { "role": "submissive", "gender": "male", "action": "allows control" }
+      ],
+
+      "dimensions": ["female_dominance", "pinning", "woman_on_top", "control"],
+      "tags": ["woman_on_top", "pinning", "dominant_female", "bed", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_015",
+      "priority": 1,
+      "intensity": 3,
+
+      "generation_prompt": "man on top of woman on bed with dark sheets, he hovering over her supporting weight on knees straddling her hips, both his hands gripping her wrists pinning them firmly above her head against pillow, looking down at her with dominant intensity, she lying on back arching her back lifting chest toward him, her legs bent at knees spread around his hips, both nude, his muscular shoulders and arms tense, her expression mix of surrender and desire, intense eye contact between them, moody bedroom lighting",
+
+      "user_description": {
+        "en": "He pins her wrists above her head, eyes burning into hers. She arches toward him, surrendering to his intensity.",
+        "ru": "Он прижимает её запястья над головой, его взгляд впивается в её. Она выгибается к нему, сдаваясь его интенсивности."
+      },
+
+      "ai_context": {
+        "description": "Man on top, pinning female's wrists. Male dominance during sex. Traditional power dynamic, consensual control.",
+
+        "tests": {
+          "primary_kink": "male_dominance_sex",
+          "secondary_kinks": ["pinning", "missionary_control", "being_held_down"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "male controls, female submits"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy being held down during sex?",
+          "as_giver": "Do you enjoy taking control like this?",
+          "emotional": "How does this power dynamic feel?"
+        },
+
+        "emotional_range": {
+          "positive": ["love surrendering", "feel safe and excited", "hot", "desired"],
+          "negative": ["too controlling", "triggers anxiety", "prefer equal"],
+          "curious": ["sometimes", "with trust"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["being_pinned_enjoys", "submission_during_sex_enjoys", "male_dominance_likes"],
+          "if_negative": ["control_uncomfortable", "equality_prefers"],
+          "if_curious": ["dominance_curious"]
+        },
+
+        "correlations": {
+          "positive": ["bondage_curious", "rough_sex_enjoys", "submission_enjoys"],
+          "negative": ["always_equal", "control_issues"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": null,
+          "normalization": null
+        }
+      },
+
+      "participants": [
+        { "role": "dominant", "gender": "male", "action": "pins wrists, on top" },
+        { "role": "submissive", "gender": "female", "action": "surrenders" }
+      ],
+
+      "dimensions": ["dominance", "pinning", "missionary", "control"],
+      "tags": ["pinning", "dominant_male", "bed", "intense", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_016",
+      "priority": 2,
+      "intensity": 3,
+
+      "generation_prompt": "doggy style position on bed with grey sheets, woman on hands and knees facing away, he kneeling behind her, both his hands gripping her hips firmly pulling her back onto him, her back arched head raised, looking back over her shoulder at him with pleasure expression, hair tousled, both nude and sweating from exertion, his grip creating slight indentation on her hip skin, her fingers gripping sheets, intense passionate sex from behind, bedroom with moody lighting",
+
+      "user_description": {
+        "en": "On her hands and knees, she looks back at him as he grips her hips and pulls her closer. Deep, intense, primal.",
+        "ru": "На четвереньках, она оглядывается на него, пока он хватает её бёдра и притягивает ближе. Глубоко, интенсивно, первобытно."
+      },
+
+      "ai_context": {
+        "description": "Doggy style position. Primal, intense. Him behind her, gripping hips. Tests preference for this common but less intimate position.",
+
+        "tests": {
+          "primary_kink": "doggy_style",
+          "secondary_kinks": ["from_behind", "grip", "primal", "intensity"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "male takes from behind"
+        },
+
+        "question_angles": {
+          "emotional": "How do you feel about sex from behind?",
+          "as_receiver": "Do you enjoy this position?",
+          "frequency": "Is this a regular position for you or occasional?"
+        },
+
+        "emotional_range": {
+          "positive": ["love it", "feels amazing", "primal and hot", "deep penetration"],
+          "negative": ["too impersonal", "prefer face to face", "feels degrading"],
+          "curious": ["sometimes", "mood dependent"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["doggy_enjoys", "from_behind_likes", "primal_sex_enjoys"],
+          "if_negative": ["face_to_face_prefers", "connection_needs"],
+          "if_curious": ["position_flexible"]
+        },
+
+        "correlations": {
+          "positive": ["rough_sex_enjoys", "intensity_likes", "variety_position"],
+          "negative": ["intimate_only", "eye_contact_essential"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["impersonal", "objectifying"],
+          "normalization": "One of the most common positions; can be both intense and intimate depending on the couple"
+        }
+      },
+
+      "participants": [
+        { "role": "active", "gender": "male", "action": "from behind, grips hips" },
+        { "role": "receiving", "gender": "female", "action": "on hands and knees" }
+      ],
+
+      "dimensions": ["doggy_style", "from_behind", "primal", "intensity"],
+      "tags": ["doggy", "behind", "intense", "primal", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_017",
+      "priority": 2,
+      "intensity": 3,
+
+      "generation_prompt": "couple having sex against floor-to-ceiling window at night, city lights visible behind them in high-rise apartment, her back pressed against cold glass, her legs wrapped around his waist as he holds her up, both nude bodies silhouetted against the city skyline, the thrill of possible exposure from buildings across, his mouth on her neck, her head thrown back against the glass, exhibitionist element with the window, passionate urban sex scene",
+
+      "user_description": {
+        "en": "Pressed against the window, city lights behind them. Anyone could see. The thrill makes everything more intense.",
+        "ru": "Прижаты к окну, огни города за ними. Любой мог бы увидеть. Острота делает всё интенсивнее."
+      },
+
+      "ai_context": {
+        "description": "Sex against window, city view. Exhibitionist thrill without actual public exposure. Risk of being seen adds excitement.",
+
+        "tests": {
+          "primary_kink": "semi_public_thrill",
+          "secondary_kinks": ["exhibitionism_light", "risk", "window_sex", "excitement"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "mutual thrill seeking"
+        },
+
+        "question_angles": {
+          "emotional": "Does the risk of being seen excite you?",
+          "as_receiver": "Would you enjoy sex where you might be seen?",
+          "frequency": "Is this kind of thrill important to you?"
+        },
+
+        "emotional_range": {
+          "positive": ["thrilling", "exciting", "hot", "adds intensity"],
+          "negative": ["too risky", "prefer privacy", "anxious"],
+          "curious": ["sounds exciting", "maybe once"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["exhibitionism_curious", "risk_enjoys", "public_adjacent_likes"],
+          "if_negative": ["privacy_essential", "risk_averse"],
+          "if_curious": ["might_try_safe_version"]
+        },
+
+        "correlations": {
+          "positive": ["exhibitionism", "adventure_seeks", "novelty_enjoys"],
+          "negative": ["private_only", "conservative_sex"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["getting caught", "legal issues", "embarrassment"],
+          "normalization": "Window sex in private high-rise is a common fantasy—thrilling but legally safe"
+        }
+      },
+
+      "participants": [
+        { "role": "active", "gender": "male", "action": "holds against window" },
+        { "role": "receiving", "gender": "female", "action": "against glass" }
+      ],
+
+      "dimensions": ["window_sex", "exhibitionism_light", "thrill", "urban"],
+      "tags": ["window", "city", "exhibitionism", "thrill", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_018",
+      "priority": 2,
+      "intensity": 3,
+
+      "generation_prompt": "man's hand gripping woman's hair at the base of her skull, pulling her head back firmly but not painfully, she facing him eyes closed mouth open in pleasure expression, her neck exposed and arched back, his other hand on her lower back pulling her body close, both standing nude in bedroom, intimate aggressive passion, her hands on his chest, hair pulling during foreplay or sex, dominant gesture she clearly enjoys, dramatic side lighting",
+
+      "user_description": {
+        "en": "His hand grips her hair, pulling her head back. Her neck exposed, mouth open in pleasure. She melts into the control.",
+        "ru": "Его рука хватает её волосы, запрокидывая голову. Её шея открыта, рот приоткрыт от удовольствия. Она тает под контролем."
+      },
+
+      "ai_context": {
+        "description": "Hair pulling during sex. Male pulls female's hair. Dominant gesture, pain-pleasure, control. Common rough sex element.",
+
+        "tests": {
+          "primary_kink": "hair_pulling",
+          "secondary_kinks": ["light_pain", "control", "dominance", "rough_sex_element"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "male dominant gesture"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy having your hair pulled during sex?",
+          "as_giver": "Do you enjoy pulling your partner's hair?",
+          "emotional": "What does hair pulling add to the experience?"
+        },
+
+        "emotional_range": {
+          "positive": ["love it", "adds intensity", "feels dominant/submissive", "turn on"],
+          "negative": ["painful", "too rough", "don't like"],
+          "curious": ["might enjoy", "light pulling ok"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["hair_pulling_enjoys", "light_pain_ok", "rough_elements_likes"],
+          "if_negative": ["pain_averse", "gentle_only"],
+          "if_curious": ["rough_curious"]
+        },
+
+        "correlations": {
+          "positive": ["spanking_enjoys", "rough_sex", "dominance_submission"],
+          "negative": ["vanilla_only", "gentle_only"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["too rough", "hurts"],
+          "normalization": "Very common preference; when done right, it's intensity not pain"
+        }
+      },
+
+      "participants": [
+        { "role": "pulling", "gender": "male", "action": "grips hair" },
+        { "role": "receiving", "gender": "female", "action": "enjoys being pulled" }
+      ],
+
+      "dimensions": ["hair_pulling", "dominance", "rough_element", "control"],
+      "tags": ["hair", "pulling", "dominant", "rough", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_019",
+      "priority": 2,
+      "intensity": 3,
+
+      "generation_prompt": "woman's hand gripping man's hair at back of head, pulling his head back firmly, he facing her eyes closed jaw clenched in pleasure-pain expression, his neck exposed and arched back, she looking at him with dominant satisfied expression, her other hand on his chest, both standing nude in bedroom, role reversal hair pulling, she controls him with hair grip, his hands at his sides allowing her control, moody bedroom lighting",
+
+      "user_description": {
+        "en": "Her hand grips his hair, pulling his head back. She watches his reaction with satisfaction. He surrenders to her grip.",
+        "ru": "Её рука хватает его волосы, запрокидывая голову. Она с удовлетворением наблюдает за его реакцией. Он сдаётся её хватке."
+      },
+
+      "ai_context": {
+        "description": "Hair pulling, female pulls male's hair. Role reversal. She dominates with this gesture. Tests male comfort with receiving.",
+
+        "tests": {
+          "primary_kink": "hair_pulling_reversal",
+          "secondary_kinks": ["female_dominance", "male_receiving_roughness", "role_reversal"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "female dominant gesture on male"
+        },
+
+        "question_angles": {
+          "as_receiver": "Men: Do you enjoy having your hair pulled?",
+          "as_giver": "Women: Do you enjoy pulling your partner's hair?",
+          "emotional": "How does this role reversal feel?"
+        },
+
+        "emotional_range": {
+          "positive": ["hot", "love when she's rough", "exciting", "turn on"],
+          "negative": ["don't like", "prefer to give not receive", "uncomfortable"],
+          "curious": ["might try", "never thought about it"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["male_receiving_rough_ok", "femdom_elements_enjoys", "role_reversal_likes"],
+          "if_negative": ["receiving_rough_uncomfortable", "always_dominant"],
+          "if_curious": ["receiving_curious"]
+        },
+
+        "correlations": {
+          "positive": ["femdom_curious", "submission_elements_open", "strong_women_attracted"],
+          "negative": ["always_leads", "giving_only"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["masculinity"],
+          "normalization": "Many men enjoy their partner being physically assertive—it shows her desire"
+        }
+      },
+
+      "participants": [
+        { "role": "pulling", "gender": "female", "action": "grips his hair" },
+        { "role": "receiving", "gender": "male", "action": "surrenders to grip" }
+      ],
+
+      "dimensions": ["hair_pulling", "female_dominance", "role_reversal"],
+      "tags": ["hair", "pulling", "femdom", "role_reversal", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_020",
+      "priority": 2,
+      "intensity": 3,
+
+      "generation_prompt": "woman riding man cowgirl position on bed, she sitting upright on him, both his hands gripping her hips firmly guiding her rhythm, she leaning back slightly hands braced on his thighs behind her, head thrown back hair cascading down her back, expression of intense pleasure mouth open, he watching her with desire, both nude and sweating, her breasts bouncing with movement, his fingers digging into her hip flesh, passionate riding motion visible, bedroom with rumpled sheets dim lighting",
+
+      "user_description": {
+        "en": "She rides him hard, head thrown back in ecstasy. His hands grip her hips, guiding her rhythm. Pure pleasure.",
+        "ru": "Она скачет на нём жёстко, голова запрокинута в экстазе. Его руки сжимают её бёдра, направляя ритм. Чистое удовольствие."
+      },
+
+      "ai_context": {
+        "description": "Cowgirl position. She on top actively riding. Classic position testing preference for female active role.",
+
+        "tests": {
+          "primary_kink": "cowgirl",
+          "secondary_kinks": ["woman_on_top", "female_active", "visual", "rhythm_control"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "female active on top"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy when she rides you?",
+          "as_giver": "Do you enjoy riding and controlling the rhythm?",
+          "emotional": "What do you like most about this position?"
+        },
+
+        "emotional_range": {
+          "positive": ["love the view", "she controls depth", "hot", "intimate"],
+          "negative": ["tiring", "prefer other positions", "feel exposed"],
+          "curious": ["sometimes", "mood dependent"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["cowgirl_enjoys", "female_active_likes", "visual_arousal"],
+          "if_negative": ["other_positions_prefer"],
+          "if_curious": ["position_variety"]
+        },
+
+        "correlations": {
+          "positive": ["visual_arousal", "female_initiative_enjoys", "variety"],
+          "negative": ["missionary_only", "male_active_only"]
+        },
+
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": null,
+          "normalization": null
+        }
+      },
+
+      "participants": [
+        { "role": "riding", "gender": "female", "action": "on top, controls rhythm" },
+        { "role": "receiving", "gender": "male", "action": "guides with hands on hips" }
+      ],
+
+      "dimensions": ["cowgirl", "woman_on_top", "active_female", "visual"],
+      "tags": ["cowgirl", "riding", "woman_on_top", "passionate", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_021",
+      "priority": 2,
+      "intensity": 3,
+
+      "generation_prompt": "reverse cowgirl position on bed, woman sitting on man facing away from him toward his feet, leaning forward hands braced on his shins, her back visible arched as she rides, he lying on back hands gripping her ass cheeks from behind, both watching where they connect, her looking back over shoulder with pleasure expression, both nude sweating, his view of her back and ass as she moves on him, bedroom with dark sheets moody lighting",
+
+      "user_description": {
+        "en": "She faces away, riding him reverse. He grips her ass, watching where they connect. Different view, same intensity.",
+        "ru": "Она отвёрнута, скачет на нём в обратную сторону. Он сжимает её попу, наблюдая где они соединяются. Другой вид, та же интенсивность."
+      },
+
+      "ai_context": {
+        "description": "Reverse cowgirl. Visual focus on her back/ass. Less face-to-face, more visual stimulation. Position preference.",
+
+        "tests": {
+          "primary_kink": "reverse_cowgirl",
+          "secondary_kinks": ["visual_focus_body", "ass_view", "less_intimate_position"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "female active, male visual focus"
+        },
+
+        "question_angles": {
+          "emotional": "Do you enjoy positions where you can't see each other's faces?",
+          "as_receiver": "Men: Do you enjoy this view?",
+          "as_giver": "Women: Do you enjoy facing away during sex?"
+        },
+
+        "emotional_range": {
+          "positive": ["love the view", "hot", "different sensation"],
+          "negative": ["miss eye contact", "feels impersonal", "prefer facing"],
+          "curious": ["sometimes", "variety is nice"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["visual_arousal_body", "position_variety", "reverse_cowgirl_enjoys"],
+          "if_negative": ["face_to_face_prefers", "connection_important"],
+          "if_curious": ["variety_enjoys"]
+        },
+
+        "correlations": {
+          "positive": ["doggy_enjoys", "visual_stimulation", "variety_position"],
+          "negative": ["eye_contact_essential", "intimate_positions_only"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["impersonal"],
+          "normalization": "Popular position for visual variety—can add intimacy through touch and verbal connection"
+        }
+      },
+
+      "participants": [
+        { "role": "riding", "gender": "female", "action": "reverse, facing away" },
+        { "role": "receiving", "gender": "male", "action": "grips ass, watches" }
+      ],
+
+      "dimensions": ["reverse_cowgirl", "visual", "position_variety"],
+      "tags": ["reverse_cowgirl", "riding", "visual", "ass", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_022",
+      "priority": 2,
+      "intensity": 2,
+
+      "generation_prompt": "spooning sex position on bed, couple lying on their sides facing same direction, she in front as little spoon, he behind as big spoon pressed against her back, his arm under her head or around her waist, her top leg lifted slightly allowing him entry from behind, both nude under partially covering sheets, her face showing pleasure eyes closed, his face near her neck possibly kissing it, intimate lazy morning sex position, warm bedroom lighting soft and romantic, connected and close position",
+
+      "user_description": {
+        "en": "Spooned together, him pressed against her back, inside her. Lazy, intimate, close. No rush, just connection.",
+        "ru": "Ложечками вместе, он прижат к её спине, внутри неё. Лениво, интимно, близко. Без спешки, просто связь."
+      },
+
+      "ai_context": {
+        "description": "Spooning sex. Intimate, lazy, close. Not visually intense but emotionally connected. Morning sex vibe.",
+
+        "tests": {
+          "primary_kink": "spooning_sex",
+          "secondary_kinks": ["intimate", "lazy_sex", "closeness", "gentle"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "mutual intimacy"
+        },
+
+        "question_angles": {
+          "emotional": "Do you enjoy slow, intimate sex like spooning?",
+          "frequency": "Is this kind of lazy intimacy important to you?"
+        },
+
+        "emotional_range": {
+          "positive": ["love it", "intimate", "connected", "morning favorite"],
+          "negative": ["too slow", "prefer more active", "limited sensation"],
+          "curious": ["nice sometimes", "mood dependent"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["intimate_sex_enjoys", "slow_sex_likes", "closeness_values"],
+          "if_negative": ["active_sex_prefers", "intensity_needs"],
+          "if_curious": ["variety_enjoys"]
+        },
+
+        "correlations": {
+          "positive": ["morning_sex_enjoys", "gentle_sex", "emotional_connection"],
+          "negative": ["always_intense", "action_focused"]
+        },
+
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": null,
+          "normalization": null
+        }
+      },
+
+      "participants": [
+        { "role": "little_spoon", "gender": "female", "action": "in front" },
+        { "role": "big_spoon", "gender": "male", "action": "behind, enters" }
+      ],
+
+      "dimensions": ["spooning", "intimate", "lazy", "closeness"],
+      "tags": ["spooning", "intimate", "gentle", "morning", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_023",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "couple having sex on kitchen counter, she sitting on edge of granite countertop legs wrapped around him, he standing between her legs, her arms around his neck pulling him close, his hands gripping her thighs or ass, her back against upper cabinets, both partially clothed she in unbuttoned blouse open bra exposed he in unbuttoned shirt and jeans pushed down, spontaneous kitchen sex after cooking together, pots and ingredients visible in background, passionate interrupted-meal energy",
+
+      "user_description": {
+        "en": "Dinner can wait. He lifts her onto the counter, and she pulls him between her legs. Spontaneous desire wins.",
+        "ru": "Ужин подождёт. Он поднимает её на столешницу, она притягивает его между ног. Спонтанное желание побеждает."
+      },
+
+      "ai_context": {
+        "description": "Spontaneous kitchen sex. Non-bedroom location. Urgency, can't-wait energy. Tests preference for spontaneity.",
+
+        "tests": {
+          "primary_kink": "spontaneous_sex",
+          "secondary_kinks": ["non_bedroom", "urgency", "kitchen_sex", "passion"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "mutual urgency"
+        },
+
+        "question_angles": {
+          "emotional": "Do you enjoy spontaneous sex outside the bedroom?",
+          "frequency": "Is spontaneity important in your sex life?"
+        },
+
+        "emotional_range": {
+          "positive": ["love spontaneous", "exciting", "keeps things fresh", "hot"],
+          "negative": ["prefer planned", "bedroom only", "uncomfortable elsewhere"],
+          "curious": ["sometimes", "depends on mood"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["spontaneity_enjoys", "non_bedroom_likes", "urgency_exciting"],
+          "if_negative": ["planned_prefers", "bedroom_only"],
+          "if_curious": ["variety_open"]
+        },
+
+        "correlations": {
+          "positive": ["adventure_seeks", "variety_location", "passion_spontaneous"],
+          "negative": ["routine_prefers", "conservative"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": null,
+          "normalization": null
+        }
+      },
+
+      "participants": [
+        { "role": "active", "gender": "male", "action": "between her legs" },
+        { "role": "receiving", "gender": "female", "action": "on counter, legs wrapped" }
+      ],
+
+      "dimensions": ["spontaneous", "kitchen", "urgency", "non_bedroom"],
+      "tags": ["kitchen", "counter", "spontaneous", "passionate", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_024",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "couple in steamy glass shower together having sex, her back against wet tiles, one leg lifted and held by him, he standing pressing into her under the hot water stream, both completely nude water running down their bodies, steam visible on glass door, her arms around his neck, both faces showing pleasure eyes closed or locked on each other, bathroom with modern fixtures visible through steamy glass, passionate shower sex scene, wet hair and skin",
+
+      "user_description": {
+        "en": "Steam rises around them as he presses her against the tiles. Water streams down their bodies, lost in each other.",
+        "ru": "Пар поднимается вокруг них, пока он прижимает её к плитке. Вода струится по телам, они потеряны друг в друге."
+      },
+
+      "ai_context": {
+        "description": "Shower sex. Water, steam, wet bodies. Physically challenging but sensual. Non-bedroom location.",
+
+        "tests": {
+          "primary_kink": "shower_sex",
+          "secondary_kinks": ["water", "wet_bodies", "standing_sex", "non_bedroom"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "mutual passion"
+        },
+
+        "question_angles": {
+          "emotional": "Do you enjoy shower sex?",
+          "frequency": "How often do you have sex in the shower?"
+        },
+
+        "emotional_range": {
+          "positive": ["love it", "sensual", "hot", "intimate"],
+          "negative": ["slippery", "uncomfortable", "water issues", "prefer dry"],
+          "curious": ["looks hot", "tried it", "mixed feelings"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["shower_sex_enjoys", "non_bedroom_likes", "wet_sex_likes"],
+          "if_negative": ["practical_concerns", "bedroom_prefers"],
+          "if_curious": ["tried_mixed", "open_to_try"]
+        },
+
+        "correlations": {
+          "positive": ["bath_intimacy", "spontaneous", "non_bedroom"],
+          "negative": ["comfort_focused", "bedroom_only"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["slipping", "water washing away lubrication"],
+          "normalization": "Common fantasy and practice; requires some logistics but can be very sensual"
+        }
+      },
+
+      "participants": [
+        { "role": "active", "gender": "male", "action": "holds against tiles" },
+        { "role": "receiving", "gender": "female", "action": "against wall, leg lifted" }
+      ],
+
+      "dimensions": ["shower_sex", "water", "standing", "non_bedroom"],
+      "tags": ["shower", "water", "wet", "standing", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ]
+}

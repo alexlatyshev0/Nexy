@@ -1,0 +1,415 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Cum / Finish Preferences",
+  "note": "Separate scenes for different cum locations because visual/emotional impact differs significantly. NOT consolidated into one scene with follow-up.",
+  "scenes": [
+    {
+      "id": "scene_cum_facial",
+      "priority": 4,
+      "intensity": 4,
+
+      "generation_prompt": "bedroom intimate moment, woman on her knees or lying back, man finishing on her face, cum visible on her cheek forehead and near mouth, she has eyes closed or looking up at him, expression ranges from pleasure to acceptance to enjoyment, he holds himself directing where it lands, post-orgasm intimacy, warm bedroom lighting",
+
+      "user_description": {
+        "en": "He finishes on her face. She keeps her eyes closed as she feels his warmth land on her cheeks and lips. Intimate, raw, claimed.",
+        "ru": "Он кончает ей на лицо. Она держит глаза закрытыми, чувствуя его тепло на щеках и губах. Интимно, сыро, присвоено."
+      },
+
+      "ai_context": {
+        "description": "Facial cumshot. Him finishing on her face. Can be seen as degrading or intimate depending on context and attitude. Visually distinct from other locations.",
+
+        "tests": {
+          "primary_kink": "facial",
+          "secondary_kinks": ["cum_play", "visual_finish", "power_dynamic", "marking"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "traditional porn-influenced but can be intimate"
+        },
+
+        "question_angles": {
+          "as_receiver": "How do you feel about receiving a facial?",
+          "as_giver": "Do you enjoy finishing on your partner's face?",
+          "emotional": "What does a facial mean to you—degrading, intimate, or hot?"
+        },
+
+        "emotional_range": {
+          "positive": ["love it", "feels intimate", "hot", "like being marked"],
+          "negative": ["degrading", "uncomfortable", "mess", "not for me"],
+          "curious": ["maybe once", "with right partner", "depends on context"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["facial_enjoys", "cum_on_face_ok", "power_play_accepts"],
+          "if_negative": ["facial_hard_limit", "degrading_no"],
+          "if_curious": ["facial_curious"]
+        },
+
+        "correlations": {
+          "positive": ["cum_play_general", "submission", "visual_kink"],
+          "negative": ["degradation_no", "vanilla_only"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["degrading", "porn-like", "messy", "in eyes"],
+          "normalization": "Context matters—can be intimate marking or playful rather than degrading"
+        }
+      },
+
+      "participants": [
+        { "role": "finishing", "gender": "male", "action": "cums on her face" },
+        { "role": "receiving", "gender": "female", "action": "receives facial" }
+      ],
+
+      "dimensions": ["facial", "cum_play", "finish", "marking"],
+      "tags": ["facial", "cum", "finish", "face", "marking"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_cum_chest",
+      "priority": 4,
+      "intensity": 3,
+
+      "generation_prompt": "bedroom intimate moment, woman lying on back or kneeling, man finishing on her chest and breasts, cum visible pooling between her breasts and on skin, she watches it land or looks at him with pleasure, he holds himself directing, post-orgasm moment, pearl necklace effect, warm bedroom lighting",
+
+      "user_description": {
+        "en": "He finishes across her chest, cum pooling between her breasts. She watches, satisfied, wearing his desire on her skin.",
+        "ru": "Он кончает на её грудь, сперма собирается между грудей. Она смотрит, удовлетворённая, нося его желание на коже."
+      },
+
+      "ai_context": {
+        "description": "Cum on chest/breasts. 'Pearl necklace.' Less intense than facial, more accepted. Visual pleasure for both.",
+
+        "tests": {
+          "primary_kink": "cum_on_chest",
+          "secondary_kinks": ["visual_finish", "breast_focus", "external_cum"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "common, visually driven"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy having him finish on your chest?",
+          "as_giver": "Do you enjoy finishing on your partner's chest?",
+          "emotional": "How does this compare to other finish locations?"
+        },
+
+        "emotional_range": {
+          "positive": ["sexy", "like it there", "intimate", "visual turn-on"],
+          "negative": ["messy", "prefer inside", "no strong feeling"],
+          "curious": ["fine with it", "depends"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["chest_cum_enjoys", "visual_finish_likes", "external_ok"],
+          "if_negative": ["internal_only", "external_no"],
+          "if_curious": ["flexible"]
+        },
+
+        "correlations": {
+          "positive": ["external_finish_general", "visual_arousal"],
+          "negative": ["internal_only", "mess_averse"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["messy"],
+          "normalization": "Very common preference for visual-oriented couples"
+        }
+      },
+
+      "participants": [
+        { "role": "finishing", "gender": "male", "action": "cums on chest" },
+        { "role": "receiving", "gender": "female", "action": "receives on breasts" }
+      ],
+
+      "dimensions": ["chest_cum", "pearl_necklace", "visual", "finish"],
+      "tags": ["chest", "cum", "breasts", "finish", "visual"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_cum_mouth_swallow",
+      "priority": 4,
+      "intensity": 4,
+
+      "generation_prompt": "intimate bedroom moment, close-up of woman with man finishing in her mouth, she accepting his cum, his cock at her lips or just pulled back, cum visible in her mouth or on her lips as she swallows, her eyes looking up at him or closed in pleasure, swallowing moment visible in her throat, intimate oral finish scene",
+
+      "user_description": {
+        "en": "She takes him in her mouth as he finishes. Eyes locked on his, she swallows. The ultimate acceptance.",
+        "ru": "Она принимает его в рот, когда он кончает. Глаза устремлены на него, она глотает. Высшее принятие."
+      },
+
+      "ai_context": {
+        "description": "Oral finish with swallowing. High intimacy act for some, turn-off for others. Tests cum acceptance level.",
+
+        "tests": {
+          "primary_kink": "swallowing",
+          "secondary_kinks": ["oral_finish", "cum_in_mouth", "acceptance"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "receiving and accepting fully"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy swallowing?",
+          "as_giver": "Do you enjoy finishing in your partner's mouth?",
+          "emotional": "What does swallowing mean to you—intimate, required, or off-limits?"
+        },
+
+        "emotional_range": {
+          "positive": ["love it", "intimate", "complete acceptance", "his pleasure"],
+          "negative": ["don't like taste", "uncomfortable", "prefer elsewhere"],
+          "curious": ["depends on mood", "sometimes"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["swallowing_enjoys", "oral_finish_likes", "full_acceptance"],
+          "if_negative": ["swallowing_no", "taste_issue", "elsewhere_prefer"],
+          "if_curious": ["swallowing_sometimes"]
+        },
+
+        "correlations": {
+          "positive": ["deep_oral", "submission", "pleasing_partner"],
+          "negative": ["taste_sensitive", "control_over_finish"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["taste", "texture", "expected vs wanted"],
+          "normalization": "Personal preference; neither expectation nor rejection should be pressured"
+        }
+      },
+
+      "participants": [
+        { "role": "finishing", "gender": "male", "action": "finishes in mouth" },
+        { "role": "receiving", "gender": "female", "action": "swallows" }
+      ],
+
+      "dimensions": ["swallowing", "oral_finish", "cum_in_mouth"],
+      "tags": ["swallow", "cum", "mouth", "oral", "finish"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_creampie",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "intimate bedroom scene post-orgasm, couple in missionary or similar position, he has just finished inside her, both faces showing post-orgasm bliss, she feeling him pulse inside her, his face in her neck or looking at her with love, connected intimate moment of internal finish, possibly visible cum seeping from connection point, emotional intimate internal finish",
+
+      "user_description": {
+        "en": "He stays inside her as he finishes, filling her. She feels every pulse, both lost in the intimate connection of this moment.",
+        "ru": "Он остаётся внутри, когда кончает, наполняя её. Она чувствует каждый пульс, оба потеряны в интимной связи этого момента."
+      },
+
+      "ai_context": {
+        "description": "Internal finish / creampie. Most intimate finish for many. Feeling him cum inside. Trust and connection.",
+
+        "tests": {
+          "primary_kink": "creampie",
+          "secondary_kinks": ["internal_finish", "connection", "breeding_adjacent", "trust"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "ultimate intimacy for many couples"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy feeling him finish inside you?",
+          "as_giver": "Do you prefer finishing inside?",
+          "emotional": "What makes internal finish special or not?"
+        },
+
+        "emotional_range": {
+          "positive": ["most intimate", "love feeling it", "connection", "complete"],
+          "negative": ["mess concerns", "pregnancy worry", "prefer outside"],
+          "curious": ["with right precautions", "sometimes"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["creampie_loves", "internal_finish_prefers", "intimacy_priority"],
+          "if_negative": ["external_prefers", "mess_concern"],
+          "if_curious": ["situation_dependent"]
+        },
+
+        "correlations": {
+          "positive": ["breeding_kink", "intimacy_focused", "connection_over_visual"],
+          "negative": ["visual_finish_prefers", "control_over_finish"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["pregnancy", "mess", "cleanup"],
+          "normalization": "Most common finish preference for committed couples—deeply connecting"
+        }
+      },
+
+      "participants": [
+        { "role": "finishing", "gender": "male", "action": "finishes inside" },
+        { "role": "receiving", "gender": "female", "action": "receives internally" }
+      ],
+
+      "dimensions": ["creampie", "internal", "intimacy", "connection"],
+      "tags": ["creampie", "inside", "internal", "intimate", "finish"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_cum_body_general",
+      "priority": 4,
+      "intensity": 3,
+
+      "generation_prompt": "intimate bedroom scene, he finishing on her body, cum visible on her stomach or back or ass, she lying relaxed accepting, post-orgasm intimacy, visual of cum on skin, warm lighting intimate moment",
+
+      "user_description": {
+        "en": "He finishes on her body—stomach, back, wherever feels right in the moment. She lies there, satisfied, wearing the evidence of his pleasure.",
+        "ru": "Он кончает на её тело — живот, спину, куда чувствуется правильным в момент. Она лежит, удовлетворённая, нося доказательство его удовольствия."
+      },
+
+      "ai_context": {
+        "description": "General external finish on body (not face or chest specifically). Testing external cum comfort in general.",
+
+        "tests": {
+          "primary_kink": "external_cum_general",
+          "secondary_kinks": ["body_cum", "visual", "marking"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "common practice"
+        },
+
+        "question_angles": {
+          "emotional": "How do you feel about external finishes in general?",
+          "as_receiver": "Do you enjoy him finishing on your body?",
+          "as_giver": "Do you enjoy finishing on your partner's body?"
+        },
+
+        "emotional_range": {
+          "positive": ["like it", "visual turn-on", "marking"],
+          "negative": ["messy", "prefer inside", "cleanup issue"],
+          "curious": ["depends on location", "mood dependent"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["external_finish_enjoys", "body_cum_ok"],
+          "if_negative": ["internal_only_prefers"],
+          "if_curious": ["flexible"]
+        },
+
+        "correlations": {
+          "positive": ["visual_arousal", "variety"],
+          "negative": ["internal_only"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["messy"],
+          "normalization": "Very common; matter of personal preference"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "location",
+        "question": {
+          "en": "Where do you prefer?",
+          "ru": "Куда предпочтительнее?"
+        },
+        "options": [
+          { "id": "stomach", "label": { "en": "Stomach", "ru": "Живот" }, "signal": "stomach_cum" },
+          { "id": "back", "label": { "en": "Back", "ru": "Спина" }, "signal": "back_cum" },
+          { "id": "ass", "label": { "en": "Ass/lower back", "ru": "Попа/поясница" }, "signal": "ass_cum" },
+          { "id": "anywhere", "label": { "en": "Anywhere is hot", "ru": "Куда угодно" }, "signal": "anywhere_cum" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "finishing", "gender": "male", "action": "finishes on body" },
+        { "role": "receiving", "gender": "female", "action": "receives on body" }
+      ],
+
+      "dimensions": ["external_cum", "body", "visual"],
+      "tags": ["cum", "body", "external", "finish"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_cum_watching",
+      "priority": 4,
+      "intensity": 3,
+
+      "generation_prompt": "intimate scene of her watching him cum, his orgasm visible, she observing with fascination or arousal, his expression of pleasure as he finishes, she may be touching him or just watching, the visual of male orgasm, cum visible shooting or dripping, her expression of enjoyment watching",
+
+      "user_description": {
+        "en": "She watches him cum, fascinated by his pleasure, by the visual of his release. There's power in witnessing his most vulnerable moment.",
+        "ru": "Она смотрит как он кончает, заворожённая его удовольствием, видом его разрядки. Есть сила в наблюдении его самого уязвимого момента."
+      },
+
+      "ai_context": {
+        "description": "Watching male orgasm. Visual enjoyment of his pleasure. Her enjoying the sight. Tests female visual arousal from male orgasm.",
+
+        "tests": {
+          "primary_kink": "watching_male_orgasm",
+          "secondary_kinks": ["visual_arousal", "his_pleasure", "voyeuristic_element"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "female enjoying male's visible pleasure"
+        },
+
+        "question_angles": {
+          "as_receiver": "Women: Do you enjoy watching him cum?",
+          "as_giver": "Men: Do you enjoy her watching you finish?",
+          "emotional": "What's arousing about watching/being watched during orgasm?"
+        },
+
+        "emotional_range": {
+          "positive": ["love watching", "his face is hot", "visual turn-on", "powerful"],
+          "negative": ["not visually aroused by it", "prefer to feel not see"],
+          "curious": ["sometimes", "depends"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["visual_male_orgasm_enjoys", "watching_arousal", "his_pleasure_important"],
+          "if_negative": ["visual_not_important"],
+          "if_curious": ["varies"]
+        },
+
+        "correlations": {
+          "positive": ["visual_arousal_general", "mutual_pleasure_focus"],
+          "negative": ["eyes_closed_prefers"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": null,
+          "normalization": "Female visual arousal is normal and common—enjoying watching partner's pleasure is healthy"
+        }
+      },
+
+      "participants": [
+        { "role": "orgasming", "gender": "male", "action": "finishes while she watches" },
+        { "role": "watching", "gender": "female", "action": "observes his orgasm" }
+      ],
+
+      "dimensions": ["watching_orgasm", "visual", "male_pleasure"],
+      "tags": ["watching", "orgasm", "visual", "male", "pleasure"],
+
+      "relevant_for": { "gender": "any", "interested_in": "male" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ],
+
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_187", "scene_188", "scene_194", "scene_195", "scene_196"],
+      "reason": "Multiple angle variants of same locations consolidated into main scenes above",
+      "recommendation": "Keep scene_cum_facial, scene_cum_chest, scene_cum_body_general as representatives"
+    }
+  ]
+}

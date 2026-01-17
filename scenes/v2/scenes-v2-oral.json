@@ -1,0 +1,557 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Oral Pleasures",
+  "scenes": [
+    {
+      "id": "scene_blowjob_giving",
+      "priority": 1,
+      "intensity": 3,
+
+      "generation_prompt": "intimate bedroom scene, woman on her knees or lying between man's legs, giving oral pleasure, her expression shows enjoyment of giving, his face showing pleasure, her hands on his thighs, soft intimate lighting, focus on connection and pleasure exchange",
+
+      "user_description": {
+        "en": "She takes him in her mouth, eyes looking up at him. Her hands on his thighs, feeling him respond to every movement. Giving pleasure is receiving it.",
+        "ru": "Она берёт его в рот, глаза смотрят на него снизу. Её руки на его бёдрах, чувствуя как он отзывается на каждое движение. Давать удовольствие — значит получать его."
+      },
+
+      "ai_context": {
+        "description": "Blowjob scene. Woman giving oral to man. Testing attitudes toward giving/receiving oral, enthusiasm, and preferences.",
+
+        "tests": {
+          "primary_kink": "blowjob",
+          "secondary_kinks": ["oral_giving", "service", "pleasing_partner"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "woman giving oral pleasure"
+        },
+
+        "question_angles": {
+          "as_giver": "Women: Do you enjoy giving oral sex?",
+          "as_receiver": "Men: How important is receiving oral to you?",
+          "emotional": "What does giving/receiving oral mean in intimacy?"
+        },
+
+        "emotional_range": {
+          "positive": ["love giving", "his pleasure is mine", "intimate", "empowering"],
+          "negative": ["don't enjoy", "uncomfortable", "feels obligatory"],
+          "curious": ["depends on mood", "with right partner"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["oral_giving_enjoys", "blowjob_enthusiast", "service_oriented"],
+          "if_negative": ["oral_giving_reluctant", "other_acts_prefer"],
+          "if_curious": ["oral_giving_situational"]
+        },
+
+        "correlations": {
+          "positive": ["pleasing_partner", "oral_general", "intimacy_focused"],
+          "negative": ["receiving_only", "oral_averse"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["jaw fatigue", "gagging", "expectations"],
+          "normalization": "Oral sex preferences vary—enthusiasm matters more than technique"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "specifics",
+        "question": {
+          "en": "What style do you prefer?",
+          "ru": "Какой стиль предпочитаете?"
+        },
+        "options": [
+          { "id": "gentle", "label": { "en": "Slow and sensual", "ru": "Медленно и чувственно" }, "signal": "oral_gentle" },
+          { "id": "enthusiastic", "label": { "en": "Enthusiastic, messy", "ru": "Энергично, неряшливо" }, "signal": "oral_messy" },
+          { "id": "deep", "label": { "en": "Deep/intense", "ru": "Глубоко/интенсивно" }, "signal": "deepthroat_interest" },
+          { "id": "teasing", "label": { "en": "Teasing, edging", "ru": "Дразняще, с оттяжкой" }, "signal": "oral_teasing" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "giving", "gender": "female", "action": "gives oral" },
+        { "role": "receiving", "gender": "male", "action": "receives blowjob" }
+      ],
+
+      "dimensions": ["blowjob", "oral", "giving", "intimacy"],
+      "tags": ["oral", "blowjob", "giving", "intimate", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_cunnilingus_giving",
+      "priority": 1,
+      "intensity": 3,
+
+      "generation_prompt": "intimate bedroom scene, man between woman's thighs giving oral pleasure, her face showing intense pleasure eyes closed, her hand in his hair, he focused on her pleasure, soft warm lighting, intimate connection visible",
+
+      "user_description": {
+        "en": "His mouth finds her center, tongue exploring. Her hand tangles in his hair as waves of pleasure build. He could stay here forever.",
+        "ru": "Его рот находит её центр, язык исследует. Её рука запутывается в его волосах, пока волны удовольствия нарастают. Он мог бы остаться здесь навсегда."
+      },
+
+      "ai_context": {
+        "description": "Cunnilingus scene. Man giving oral to woman. Testing attitudes toward giving/receiving, importance of female pleasure.",
+
+        "tests": {
+          "primary_kink": "cunnilingus",
+          "secondary_kinks": ["oral_giving_male", "female_pleasure_focus", "worship"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "man focused on her pleasure"
+        },
+
+        "question_angles": {
+          "as_giver": "Men: Do you enjoy giving oral sex to women?",
+          "as_receiver": "Women: How important is receiving oral to you?",
+          "emotional": "What does this act mean to you?"
+        },
+
+        "emotional_range": {
+          "positive": ["love giving", "her pleasure is priority", "intimate", "worship"],
+          "negative": ["don't enjoy", "uncomfortable", "prefer other acts"],
+          "curious": ["depends", "learning to enjoy"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["cunnilingus_enjoys_giving", "female_pleasure_priority", "oral_enthusiast"],
+          "if_negative": ["cunnilingus_reluctant", "other_acts_prefer"],
+          "if_curious": ["cunnilingus_learning"]
+        },
+
+        "correlations": {
+          "positive": ["partner_pleasure_focus", "foreplay_values", "intimacy"],
+          "negative": ["selfish_lover", "receiving_only"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["taste", "smell", "technique anxiety"],
+          "normalization": "Communication about what feels good makes it better for everyone"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "specifics",
+        "question": {
+          "en": "What approach do you prefer?",
+          "ru": "Какой подход предпочитаете?"
+        },
+        "options": [
+          { "id": "gentle", "label": { "en": "Soft and teasing", "ru": "Мягко и дразняще" }, "signal": "cunni_gentle" },
+          { "id": "focused", "label": { "en": "Focused and rhythmic", "ru": "Сфокусированно и ритмично" }, "signal": "cunni_focused" },
+          { "id": "varied", "label": { "en": "Varied techniques", "ru": "Разные техники" }, "signal": "cunni_varied" },
+          { "id": "long", "label": { "en": "Extended sessions", "ru": "Долгие сессии" }, "signal": "cunni_extended" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "giving", "gender": "male", "action": "gives cunnilingus" },
+        { "role": "receiving", "gender": "female", "action": "receives oral" }
+      ],
+
+      "dimensions": ["cunnilingus", "oral", "female_pleasure", "giving"],
+      "tags": ["oral", "cunnilingus", "giving", "intimate", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_69",
+      "priority": 2,
+      "intensity": 3,
+
+      "generation_prompt": "couple in 69 position on bed, both giving and receiving oral simultaneously, bodies intertwined, mutual pleasure visible, intimate connection, soft bedroom lighting",
+
+      "user_description": {
+        "en": "Bodies intertwined, each pleasuring the other simultaneously. Giving and receiving blur into one continuous wave of sensation.",
+        "ru": "Тела переплетены, каждый ласкает другого одновременно. Давать и получать сливаются в одну непрерывную волну ощущений."
+      },
+
+      "ai_context": {
+        "description": "69 position. Mutual simultaneous oral. Testing preference for giving/receiving balance, multitasking during sex.",
+
+        "tests": {
+          "primary_kink": "69_position",
+          "secondary_kinks": ["mutual_oral", "simultaneous", "equality"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "mutual exchange"
+        },
+
+        "question_angles": {
+          "emotional": "Do you enjoy 69 / mutual oral?",
+          "frequency": "Is simultaneous pleasure important to you?"
+        },
+
+        "emotional_range": {
+          "positive": ["love it", "fair exchange", "intense", "connected"],
+          "negative": ["too distracting", "can't focus", "prefer taking turns"],
+          "curious": ["sometimes", "depends on mood"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["69_enjoys", "mutual_pleasure_values", "multitasking_ok"],
+          "if_negative": ["sequential_prefers", "focus_needs"],
+          "if_curious": ["69_sometimes"]
+        },
+
+        "correlations": {
+          "positive": ["equality_values", "simultaneous_pleasure"],
+          "negative": ["focus_on_one", "giving_or_receiving_prefers"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["distraction", "coordination", "fairness"],
+          "normalization": "Some love it, some find it distracting—both valid"
+        }
+      },
+
+      "participants": [
+        { "role": "mutual", "gender": "male", "action": "gives and receives" },
+        { "role": "mutual", "gender": "female", "action": "gives and receives" }
+      ],
+
+      "dimensions": ["69", "mutual", "simultaneous", "oral"],
+      "tags": ["69", "mutual", "oral", "simultaneous", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_deepthroat",
+      "priority": 4,
+      "intensity": 4,
+
+      "generation_prompt": "intimate intense oral scene, woman taking him deep, his hand gently on her head, her eyes watering slightly from intensity, consensual deep oral, trust visible, bedroom setting",
+
+      "user_description": {
+        "en": "She takes him deeper, pushing past comfort into intensity. Eyes watering, but she doesn't stop. Trust, surrender, raw intimacy.",
+        "ru": "Она берёт его глубже, переходя от комфорта к интенсивности. Глаза слезятся, но она не останавливается. Доверие, сдача, сырая интимность."
+      },
+
+      "ai_context": {
+        "description": "Deepthroat / intense oral. Testing comfort with more intense oral, gag reflex, submission during oral.",
+
+        "tests": {
+          "primary_kink": "deepthroat",
+          "secondary_kinks": ["intense_oral", "submission", "pushing_limits"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "intense giving, potential discomfort accepted"
+        },
+
+        "question_angles": {
+          "as_giver": "Are you interested in/do you enjoy deepthroating?",
+          "as_receiver": "Do you enjoy intense/deep oral?",
+          "emotional": "What does pushing limits during oral mean to you?"
+        },
+
+        "emotional_range": {
+          "positive": ["love the intensity", "surrender", "his reaction worth it"],
+          "negative": ["uncomfortable", "too much", "prefer gentle"],
+          "curious": ["might try", "with practice"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["deepthroat_enjoys", "intense_oral_likes", "limits_pushes"],
+          "if_negative": ["gentle_oral_only", "intensity_no"],
+          "if_curious": ["deepthroat_curious"]
+        },
+
+        "correlations": {
+          "positive": ["rough_oral", "submission", "intensity_seeking"],
+          "negative": ["gentle_only", "comfort_priority"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["gagging", "discomfort", "pressure", "breathing"],
+          "normalization": "Completely optional; should never be pressured. Some love the intensity, others don't—both valid"
+        }
+      },
+
+      "participants": [
+        { "role": "giving", "gender": "female", "action": "deepthroats" },
+        { "role": "receiving", "gender": "male", "action": "receives intense oral" }
+      ],
+
+      "dimensions": ["deepthroat", "intense_oral", "submission"],
+      "tags": ["deepthroat", "intense", "oral", "submission"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_facesitting",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "woman sitting on man's face, he lying on back, her thighs around his head, she looking down with pleasure and power, his hands on her thighs, intimate dominant position for receiving oral",
+
+      "user_description": {
+        "en": "She lowers herself onto his face, thighs framing him. She controls the pressure, the angle, her pleasure. He worships from below.",
+        "ru": "Она опускается на его лицо, бёдра обрамляют его. Она контролирует давление, угол, своё удовольствие. Он поклоняется снизу."
+      },
+
+      "ai_context": {
+        "description": "Facesitting. Woman on his face receiving oral. Power dynamic—she controls. Tests comfort with this position.",
+
+        "tests": {
+          "primary_kink": "facesitting",
+          "secondary_kinks": ["female_control", "oral_position", "worship", "smothering_light"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "female in control of receiving oral"
+        },
+
+        "question_angles": {
+          "as_receiver": "Women: Do you enjoy sitting on his face?",
+          "as_giver": "Men: Do you enjoy her sitting on your face?",
+          "emotional": "What does this position represent?"
+        },
+
+        "emotional_range": {
+          "positive": ["empowering", "control my pleasure", "hot", "worship"],
+          "negative": ["too dominant", "uncomfortable", "prefer lying back"],
+          "curious": ["might try", "intimidating but interesting"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["facesitting_enjoys", "female_control_likes", "worship_receiving"],
+          "if_negative": ["passive_receiving_prefers", "position_uncomfortable"],
+          "if_curious": ["facesitting_curious"]
+        },
+
+        "correlations": {
+          "positive": ["female_dominance", "control_during_sex", "worship_enjoys"],
+          "negative": ["passive_prefers", "control_avoids"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["smothering", "weight", "control anxiety"],
+          "normalization": "Popular position for female-controlled pleasure—communication about comfort is key"
+        }
+      },
+
+      "participants": [
+        { "role": "receiving", "gender": "female", "action": "sits on face" },
+        { "role": "giving", "gender": "male", "action": "gives oral from below" }
+      ],
+
+      "dimensions": ["facesitting", "female_control", "oral", "worship"],
+      "tags": ["facesitting", "oral", "femdom", "control", "worship"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_oral_kneeling_worship",
+      "priority": 2,
+      "intensity": 3,
+
+      "generation_prompt": "person kneeling before partner in worship position, looking up with devotion, about to give oral pleasure, submissive body language, standing partner looking down, power exchange visible",
+
+      "user_description": {
+        "en": "On knees before them, looking up with devotion. This position isn't just physical—it's an offering, a surrender, worship made flesh.",
+        "ru": "На коленях перед ними, глядя вверх с преданностью. Эта позиция не просто физическая — это подношение, сдача, поклонение во плоти."
+      },
+
+      "ai_context": {
+        "description": "Kneeling oral worship position. Submissive giving oral. Power exchange through position. Testing D/s dynamics in oral.",
+
+        "tests": {
+          "primary_kink": "oral_worship",
+          "secondary_kinks": ["kneeling", "submission", "service", "power_exchange"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "worship through service"
+        },
+
+        "question_angles": {
+          "as_giver": "Do you enjoy the worship aspect of kneeling to give oral?",
+          "as_receiver": "Do you enjoy being worshipped in this way?",
+          "emotional": "What does the kneeling position add?"
+        },
+
+        "emotional_range": {
+          "positive": ["love the submission", "worship is hot", "power exchange"],
+          "negative": ["too submissive", "uncomfortable", "prefer equality"],
+          "curious": ["interesting dynamic", "with right person"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["oral_worship_enjoys", "kneeling_likes", "service_submission"],
+          "if_negative": ["equality_prefers", "worship_uncomfortable"],
+          "if_curious": ["power_exchange_curious"]
+        },
+
+        "correlations": {
+          "positive": ["D_s_general", "service_oriented", "worship_giving_receiving"],
+          "negative": ["equality_only", "power_exchange_averse"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["degrading vs worshipful", "power imbalance"],
+          "normalization": "Kneeling for oral can be worship or submission—context and intention matter"
+        }
+      },
+
+      "participants": [
+        { "role": "kneeling", "gender": "any", "action": "kneels, worships" },
+        { "role": "receiving", "gender": "any", "action": "receives worship" }
+      ],
+
+      "dimensions": ["kneeling", "worship", "oral", "submission"],
+      "tags": ["kneeling", "worship", "oral", "submission", "power_exchange"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_oral_head_guidance_m",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "man standing with hand gently on back of woman's head during oral, not pushing but guiding pace, she kneeling before him, his fingers in her hair, connection between them, gentle control, bedroom setting",
+
+      "user_description": {
+        "en": "His hand in her hair, not pushing but guiding. Setting the rhythm, the depth. Gentle control that makes her feel directed, desired.",
+        "ru": "Его рука в её волосах, не толкает, но направляет. Задаёт ритм, глубину. Мягкий контроль, который заставляет её чувствовать себя направляемой, желанной."
+      },
+
+      "ai_context": {
+        "description": "Man guiding woman's head during oral. Gentle dominance through pace control. Testing comfort with guidance during oral.",
+
+        "tests": {
+          "primary_kink": "oral_head_control",
+          "secondary_kinks": ["gentle_dominance", "pace_control", "guidance"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "male sets pace"
+        },
+
+        "question_angles": {
+          "as_receiver": "Men: Do you like guiding her during oral?",
+          "as_giver": "Women: Do you enjoy being guided during oral?",
+          "emotional": "What does this gentle control add?"
+        },
+
+        "emotional_range": {
+          "positive": ["love being guided", "shows desire", "connected"],
+          "negative": ["prefer my own pace", "controlling", "uncomfortable"],
+          "curious": ["depends how gentle", "with trust"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["oral_guidance_enjoys", "pace_control_likes"],
+          "if_negative": ["self_pacing_prefers", "control_averse"],
+          "if_curious": ["guidance_situational"]
+        },
+
+        "correlations": {
+          "positive": ["gentle_dominance", "direction_enjoys"],
+          "negative": ["autonomy_always", "control_issues"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["pushing too hard", "consent", "communication"],
+          "normalization": "Gentle guidance is common—key is communication and never forcing"
+        }
+      },
+
+      "participants": [
+        { "role": "guiding", "gender": "male", "action": "guides head gently" },
+        { "role": "giving", "gender": "female", "action": "receives guidance" }
+      ],
+
+      "dimensions": ["oral_guidance", "gentle_control", "blowjob"],
+      "tags": ["oral", "guidance", "gentle", "control", "blowjob"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_oral_head_guidance_f",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "woman standing with hand gripping man's hair, guiding his face during oral, she in control, he kneeling giving cunnilingus, her directing his pace and position, dominant female expression, bedroom setting",
+
+      "user_description": {
+        "en": "Her hand grips his hair, directing his mouth where she wants it. She controls the pace, the pressure. He follows her guidance, devoted to her pleasure.",
+        "ru": "Её рука сжимает его волосы, направляя его рот туда, куда она хочет. Она контролирует темп, давление. Он следует её указаниям, преданный её удовольствию."
+      },
+
+      "ai_context": {
+        "description": "Woman guiding man's head during cunnilingus. Female control of oral. Testing comfort with female-led pace control.",
+
+        "tests": {
+          "primary_kink": "female_oral_control",
+          "secondary_kinks": ["femdom_oral", "guidance", "pace_control"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "female controls oral pace"
+        },
+
+        "question_angles": {
+          "as_receiver": "Women: Do you like guiding him during oral?",
+          "as_giver": "Men: Do you enjoy being guided by her?",
+          "emotional": "What does female control during oral add?"
+        },
+
+        "emotional_range": {
+          "positive": ["love taking control", "get exactly what I need", "empowering"],
+          "negative": ["prefer he leads", "too dominant", "uncomfortable"],
+          "curious": ["sounds interesting", "would try"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["female_oral_control_enjoys", "directing_likes"],
+          "if_negative": ["passive_receiving_prefers"],
+          "if_curious": ["female_control_curious"]
+        },
+
+        "correlations": {
+          "positive": ["female_dominance", "communication_during_sex"],
+          "negative": ["passive_only", "control_avoids"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["being too demanding", "role reversal anxiety"],
+          "normalization": "Taking control of your own pleasure is healthy and sexy"
+        }
+      },
+
+      "participants": [
+        { "role": "guiding", "gender": "female", "action": "guides his head" },
+        { "role": "giving", "gender": "male", "action": "follows her guidance" }
+      ],
+
+      "dimensions": ["female_control", "oral_guidance", "cunnilingus"],
+      "tags": ["oral", "femdom", "guidance", "control", "cunnilingus"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ],
+
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_025", "scene_026", "scene_027", "scene_028", "scene_029", "scene_030", "scene_031", "scene_032"],
+      "reason": "Consolidated into representative scenes with style follow-ups",
+      "recommendation": "Use follow-up questions for intensity/style preferences"
+    }
+  ]
+}

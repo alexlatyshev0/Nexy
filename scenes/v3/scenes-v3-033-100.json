@@ -1,0 +1,461 @@
+{
+  "$schema": "../scene-schema-v3.md",
+  "version": 3,
+  "range": "033-100",
+  "categories": ["BDSM Bondage", "Impact Play", "Sensory Play", "Locations", "Group Dynamics", "Roleplay", "Solo & Fetishes"],
+  "scenes": [
+    {
+      "id": "scene_033",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "woman lying on back on white satin sheets, both wrists tied together with burgundy silk scarf looped through ornate wooden headboard slats above her head, arms stretched up but not strained, she wearing matching cream lace bra and panties, her body relaxed but face showing anticipation parted lips looking toward camera, legs slightly apart bent at knees, soft warm lighting casting gentle shadows, elegant sensual restraint not harsh, intimate bedroom atmosphere",
+      "user_description": {
+        "en": "Her wrists tied with silk scarf to the headboard. She lies on the bed. Soft bondage. Anticipation on her face. Elegant restraint, sensual not harsh.",
+        "ru": "Её запястья связаны шёлковым шарфом к изголовью. Она лежит на кровати. Мягкий бондаж. Предвкушение на лице. Элегантное ограничение, чувственное не жёсткое."
+      },
+      "ai_context": {
+        "description": "Soft silk bondage. Woman restrained gently. Tests interest in light restraint.",
+        "tests": { "primary_kink": "soft_bondage", "secondary_kinks": ["silk", "restraint", "anticipation", "vulnerability"], "power_dynamic": "restrained_female", "gender_role_aspect": "submissive female" },
+        "question_angles": { "as_restrained": "Would you enjoy being tied up with soft restraints?", "as_restrainer": "Would you enjoy tying a partner?", "material": "Does silk bondage appeal more than harder restraints?" },
+        "emotional_range": { "positive": ["love being tied", "silk feels sensual", "anticipation is exciting"], "negative": ["don't like restraint", "feels trapped"], "curious": ["might try", "with trust"] },
+        "profile_signals": { "if_positive": ["bondage_enjoys", "soft_restraint_likes", "submission_ok"], "if_negative": ["bondage_no", "freedom_needs"], "if_curious": ["bondage_curious"] },
+        "correlations": { "positive": ["submission", "trust", "anticipation_enjoys"], "negative": ["control_needs", "claustrophobic"] },
+        "taboo_context": { "level": 2, "common_concerns": ["feeling trapped", "trust"], "normalization": "Soft bondage is very common - silk provides sensation without harshness" }
+      },
+      "participants": [{ "role": "bound", "gender": "female", "action": "tied, waiting" }],
+      "dimensions": ["bondage", "silk", "anticipation", "soft_restraint", "vulnerability"],
+      "tags": ["bondage", "silk", "tied", "bed", "soft"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" },
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "material",
+        "question": { "en": "What type of restraint appeals?", "ru": "Какой тип связывания привлекает?" },
+        "options": [
+          { "id": "silk", "label": { "en": "Silk scarves - soft", "ru": "Шёлковые шарфы - мягко" }, "signal": "bondage_silk" },
+          { "id": "rope", "label": { "en": "Rope - traditional", "ru": "Верёвка - традиционно" }, "signal": "bondage_rope" },
+          { "id": "cuffs", "label": { "en": "Leather cuffs - secure", "ru": "Кожаные наручники - надёжно" }, "signal": "bondage_cuffs" },
+          { "id": "shibari", "label": { "en": "Shibari - artistic", "ru": "Шибари - художественно" }, "signal": "bondage_shibari" }
+        ]
+      }
+    },
+    {
+      "id": "scene_034",
+      "priority": 3,
+      "intensity": 2,
+      "generation_prompt": "man lying on back on dark grey sheets, both wrists tied together with black silk scarf secured to metal headboard above his head, arms stretched up muscles visible in biceps, completely nude, his body toned and exposed vulnerable, face showing mix of anticipation and trust looking up, legs slightly spread relaxed, soft moody lighting from side, elegant restraint sensual atmosphere, trusting vulnerable expression",
+      "user_description": {
+        "en": "His wrists tied with silk scarf to the headboard. He lies on the bed. Soft bondage. Anticipation. Vulnerable but trusting expression.",
+        "ru": "Его запястья связаны шёлковым шарфом к изголовью. Он лежит на кровати. Мягкий бондаж. Предвкушение. Уязвимое но доверяющее выражение."
+      },
+      "ai_context": {
+        "description": "Soft silk bondage - male. Man restrained gently. Tests comfort with male vulnerability/submission.",
+        "tests": { "primary_kink": "male_bondage", "secondary_kinks": ["male_vulnerability", "trust", "role_reversal"], "power_dynamic": "restrained_male", "gender_role_aspect": "submissive male" },
+        "question_angles": { "as_man": "Would you enjoy being tied up?", "as_woman": "Would you enjoy tying a man?", "vulnerability": "How do you feel about male vulnerability?" },
+        "emotional_range": { "positive": ["love being restrained", "vulnerability is freeing", "trust is hot"], "negative": ["need control", "uncomfortable"], "curious": ["might try", "with right partner"] },
+        "profile_signals": { "if_positive": ["male_bondage_enjoys", "vulnerability_ok", "submission_male_ok"], "if_negative": ["must_control", "vulnerability_no"], "if_curious": ["bondage_curious"] },
+        "correlations": { "positive": ["femdom_curious", "trust_high", "role_reversal"], "negative": ["always_dominant", "control_needs"] },
+        "taboo_context": { "level": 3, "common_concerns": ["masculinity", "being vulnerable"], "normalization": "Male submission requires confidence and trust - many men find it liberating" }
+      },
+      "participants": [{ "role": "bound", "gender": "male", "action": "tied, waiting" }],
+      "dimensions": ["bondage", "silk", "anticipation", "male_vulnerability", "trust"],
+      "tags": ["bondage", "silk", "tied", "bed", "male_sub"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_035",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "woman standing in artistic shibari rope bondage, red jute rope creating intricate diamond pattern across her bare torso from shoulders to hips, horizontal chest harness rope above and below breasts creating frame, her arms bound behind back wrists to elbows, she standing straight with dignified posture, completely nude except for rope, beautiful geometric pattern pressed into her skin, dark studio background with single spotlight from above, artistic aesthetic restraint expression serene",
+      "user_description": {
+        "en": "Woman in rope bondage. Artistic shibari. Intricate patterns across body. She stands. Beautiful pattern on skin. Aesthetic restraint.",
+        "ru": "Женщина в верёвочном бондаже. Художественное шибари. Замысловатые узлы по телу. Она стоит. Красивый узор на коже. Эстетическое ограничение."
+      },
+      "ai_context": {
+        "description": "Shibari rope bondage. Artistic Japanese style. Tests interest in aesthetic bondage.",
+        "tests": { "primary_kink": "shibari", "secondary_kinks": ["rope_bondage", "artistic", "aesthetic", "restraint"], "power_dynamic": "bound", "gender_role_aspect": "art object" },
+        "question_angles": { "artistic": "Does the artistic element of shibari appeal?", "as_model": "Would you want to be bound this way?", "as_rigger": "Would you want to learn shibari?" },
+        "emotional_range": { "positive": ["beautiful art form", "love the aesthetic", "want to try"], "negative": ["too complex", "uncomfortable looking"], "curious": ["interested in learning", "would model"] },
+        "profile_signals": { "if_positive": ["shibari_enjoys", "artistic_bondage_likes"], "if_negative": ["simple_prefers"], "if_curious": ["shibari_curious"] },
+        "correlations": { "positive": ["bondage", "aesthetic_appreciation", "patience"], "negative": ["quick_prefers", "pain_averse"] },
+        "taboo_context": { "level": 3, "common_concerns": ["complexity", "rope marks"], "normalization": "Shibari is respected art form - requires training and communication" }
+      },
+      "participants": [{ "role": "bound", "gender": "female", "action": "in shibari" }],
+      "dimensions": ["shibari", "rope_bondage", "aesthetic", "art", "restraint"],
+      "tags": ["shibari", "rope", "artistic", "bondage", "standing"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_036",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "man kneeling in shibari rope bondage, black jute rope chest harness crossing his muscular torso in geometric pattern, rope over shoulders crossing at sternum wrapping around ribs, his arms bound behind back, kneeling on dark hardwood floor sitting back on heels, completely nude, head bowed slightly in submission but body showing strength in muscle definition, dramatic side lighting highlighting rope patterns pressed into skin, artistic aesthetic vulnerable strength",
+      "user_description": {
+        "en": "Man in rope bondage. Shibari on chest. Intricate patterns. He's kneeling. Vulnerable strength. Artistic restraint.",
+        "ru": "Мужчина в верёвочном бондаже. Шибари на груди. Замысловатые узлы. Он на коленях. Уязвимая сила. Художественное ограничение."
+      },
+      "ai_context": {
+        "description": "Male shibari. Artistic bondage on man. Tests interest in male aesthetic bondage.",
+        "tests": { "primary_kink": "male_shibari", "secondary_kinks": ["male_bondage", "artistic", "kneeling"], "power_dynamic": "bound_male", "gender_role_aspect": "male as art" },
+        "question_angles": { "as_man": "Would you model for shibari?", "as_rigger": "Would you want to tie a man this way?", "aesthetic": "Does male bondage aesthetics appeal?" },
+        "emotional_range": { "positive": ["beautiful on men too", "strength in submission", "artistic"], "negative": ["prefer women in bondage", "not interested"], "curious": ["intriguing", "would consider"] },
+        "profile_signals": { "if_positive": ["male_shibari_enjoys", "gender_equal_bondage"], "if_negative": ["female_bondage_only"], "if_curious": ["open_minded"] },
+        "correlations": { "positive": ["femdom", "role_reversal", "artistic"], "negative": ["traditional_only"] },
+        "taboo_context": { "level": 3, "common_concerns": ["masculinity"], "normalization": "Male bondage is increasingly popular - strength and vulnerability combine beautifully" }
+      },
+      "participants": [{ "role": "bound", "gender": "male", "action": "in shibari, kneeling" }],
+      "dimensions": ["shibari", "rope_bondage", "male_submission", "aesthetic", "kneeling"],
+      "tags": ["shibari", "rope", "male_sub", "kneeling", "artistic"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_037",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "man standing close to woman fastening black leather padded cuffs around her wrists in front of her body, his fingers working the buckle on right cuff her left already secured, she watching his hands with expression of trust and visible excitement parted lips slight flush, she wearing black lace bra and panties, he shirtless in dark jeans, bedroom setting with bed visible behind them, intimate BDSM preparation moment, soft warm lighting",
+      "user_description": {
+        "en": "He fastens cuffs on her wrists in front of her. She watches with trust and excitement. Leather cuffs. Bedroom. Intimate BDSM moment.",
+        "ru": "Он связывает её запястья вместе перед ней. Она смотрит с доверием и возбуждением. Кожаные наручники. Спальня. Интимный BDSM момент."
+      },
+      "ai_context": {
+        "description": "Putting on leather cuffs. BDSM preparation ritual. Tests interest in restraint preparation.",
+        "tests": { "primary_kink": "cuffs", "secondary_kinks": ["leather", "preparation", "ritual", "trust"], "power_dynamic": "dominant_male", "gender_role_aspect": "male restrains female" },
+        "question_angles": { "ritual": "Does the ritual of putting on cuffs appeal?", "as_restrained": "Do you enjoy cuffs vs other restraints?", "anticipation": "Is the preparation part exciting?" },
+        "emotional_range": { "positive": ["love the ritual", "cuffs feel secure", "anticipation builds"], "negative": ["prefer no restraints", "too formal"], "curious": ["might enjoy", "with trust"] },
+        "profile_signals": { "if_positive": ["cuffs_enjoys", "ritual_likes", "leather_appreciates"], "if_negative": ["restraint_no"], "if_curious": ["bondage_curious"] },
+        "correlations": { "positive": ["bondage", "leather", "D/s dynamic"], "negative": ["spontaneous_only", "freedom_needs"] },
+        "taboo_context": { "level": 2, "common_concerns": ["marks from cuffs"], "normalization": "Padded cuffs are comfortable and secure - popular BDSM accessory" }
+      },
+      "participants": [{ "role": "dominant", "gender": "male", "action": "fastens cuffs" }, { "role": "submissive", "gender": "female", "action": "allows binding" }],
+      "dimensions": ["bondage", "cuffs", "trust", "restraint", "preparation"],
+      "tags": ["tying", "cuffs", "leather", "bedroom", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_038",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "woman fastening black leather cuffs around man's wrists held together in front of him, she focused on buckling the restraint her fingers deftly working leather strap, she wearing black corset and thong with thigh-high stockings, he completely nude watching her hands with trust and visible arousal, she confident controlled expression slight smile, he standing still allowing her to work, bedroom with dark decor, dramatic lighting, clear female dominance role reversal",
+      "user_description": {
+        "en": "She fastens cuffs on his wrists. Leather cuffs. She controls. He watches with trust and arousal. BDSM with reversed roles.",
+        "ru": "Она связывает его запястья. Кожаные наручники. Она контролирует. Он смотрит с доверием и возбуждением. BDSM с обратными ролями."
+      },
+      "ai_context": {
+        "description": "Female cuffing male. Role reversal bondage. Tests comfort with femdom bondage.",
+        "tests": { "primary_kink": "femdom_bondage", "secondary_kinks": ["role_reversal", "female_control", "male_submission"], "power_dynamic": "dominant_female", "gender_role_aspect": "female restrains male" },
+        "question_angles": { "as_man": "Would you let a woman cuff you?", "as_woman": "Would you enjoy cuffing a man?", "dynamic": "How does femdom bondage feel?" },
+        "emotional_range": { "positive": ["love being controlled", "femdom is hot", "role reversal exciting"], "negative": ["must be in control", "uncomfortable"], "curious": ["intriguing", "would try"] },
+        "profile_signals": { "if_positive": ["femdom_bondage_enjoys", "male_submission_ok"], "if_negative": ["must_dominate"], "if_curious": ["femdom_curious"] },
+        "correlations": { "positive": ["femdom", "submission_male", "trust"], "negative": ["always_dominant", "traditional_only"] },
+        "taboo_context": { "level": 3, "common_concerns": ["masculinity"], "normalization": "Female-led bondage is increasingly popular - confident submission is attractive" }
+      },
+      "participants": [{ "role": "dominant", "gender": "female", "action": "fastens cuffs" }, { "role": "submissive", "gender": "male", "action": "allows binding" }],
+      "dimensions": ["bondage", "cuffs", "female_dominance", "trust", "role_reversal"],
+      "tags": ["tying", "cuffs", "femdom", "role_reversal", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_039",
+      "priority": 2,
+      "intensity": 2,
+      "generation_prompt": "woman lying on back on white sheets, black silk blindfold tied over her eyes covering from eyebrows to cheekbones, both arms stretched above her head hands near headboard not tied but placed there, lips slightly parted in anticipation of unknown touch, she wearing only matching nude panties, body tense with anticipation goosebumps visible on arms, legs slightly apart, soft diffused lighting creating intimate vulnerable atmosphere, sensory deprivation heightened awareness",
+      "user_description": {
+        "en": "She's blindfolded with silk. Lying on bed, arms above head. Waiting for touch. Sensory deprivation. Vulnerability.",
+        "ru": "Она с завязанными глазами шёлком. Лежит на кровати, руки над головой. Ожидает прикосновения. Сенсорная депривация. Уязвимость."
+      },
+      "ai_context": {
+        "description": "Blindfolded anticipation. Sensory deprivation solo. Tests interest in blindfold play.",
+        "tests": { "primary_kink": "blindfold", "secondary_kinks": ["sensory_deprivation", "anticipation", "vulnerability"], "power_dynamic": "vulnerable", "gender_role_aspect": "female vulnerability" },
+        "question_angles": { "as_blindfolded": "Do you enjoy not knowing what's coming?", "sensation": "Does removing sight enhance touch?", "trust": "Is the vulnerability exciting or scary?" },
+        "emotional_range": { "positive": ["heightens everything", "anticipation is amazing", "love surrendering sight"], "negative": ["need to see", "anxiety"], "curious": ["might be exciting", "with trust"] },
+        "profile_signals": { "if_positive": ["blindfold_enjoys", "sensory_play_likes"], "if_negative": ["sight_needs", "control_needs"], "if_curious": ["sensory_curious"] },
+        "correlations": { "positive": ["submission", "trust", "sensation_seeking"], "negative": ["control_needs", "anxiety_prone"] },
+        "taboo_context": { "level": 2, "common_concerns": ["vulnerability", "not seeing"], "normalization": "Blindfolds are gentle introduction to sensation play - heightens other senses" }
+      },
+      "participants": [{ "role": "blindfolded", "gender": "female", "action": "waits blindfolded" }],
+      "dimensions": ["blindfold", "anticipation", "sensory_deprivation", "vulnerability", "trust"],
+      "tags": ["blindfold", "silk", "bed", "anticipation", "sensory"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_040",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "man lying on back on dark sheets, black satin blindfold covering his eyes, both wrists tied separately to metal headboard bars with black rope arms spread in Y position, completely nude body exposed and vulnerable, muscles tense with anticipation, head slightly turned as if trying to hear approaching touch, lips parted breathing visible, trusting expression despite vulnerability, moody dramatic lighting from side, sensory deprivation creating heightened awareness",
+      "user_description": {
+        "en": "He's blindfolded. Lying on bed, wrists tied to headboard. Waiting for touch. Vulnerable. Trusting.",
+        "ru": "Он с завязанными глазами. Лежит на кровати, руки привязаны к изголовью. Ожидает прикосновения. Уязвим. Доверяет."
+      },
+      "ai_context": {
+        "description": "Male blindfolded and bound. Double vulnerability. Tests comfort with male sensory submission.",
+        "tests": { "primary_kink": "male_sensory_submission", "secondary_kinks": ["blindfold", "bondage", "vulnerability", "trust"], "power_dynamic": "vulnerable_male", "gender_role_aspect": "male vulnerability" },
+        "question_angles": { "as_man": "Would you allow this level of vulnerability?", "as_partner": "Would you enjoy having a man this vulnerable?", "trust": "Does complete surrender appeal?" },
+        "emotional_range": { "positive": ["ultimate trust", "vulnerability is freeing", "exciting"], "negative": ["too vulnerable", "need control"], "curious": ["intriguing", "with right partner"] },
+        "profile_signals": { "if_positive": ["male_submission_full", "vulnerability_embraces"], "if_negative": ["control_essential"], "if_curious": ["submission_curious"] },
+        "correlations": { "positive": ["femdom", "trust_high", "sensation_seeking"], "negative": ["always_dominant", "control_needs"] },
+        "taboo_context": { "level": 3, "common_concerns": ["masculinity", "helplessness"], "normalization": "Male submission requires great trust and confidence - deeply intimate" }
+      },
+      "participants": [{ "role": "blindfolded", "gender": "male", "action": "bound and blindfolded, waiting" }],
+      "dimensions": ["blindfold", "bondage", "male_vulnerability", "trust", "sensory_deprivation"],
+      "tags": ["blindfold", "tied", "bed", "male_sub", "vulnerable"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_041",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman kneeling at man's feet on bedroom carpet, wearing black leather collar with silver O-ring at front around her throat, sitting back on heels hands palms-down on her thighs, looking up at him with submissive yet proud dignified expression, she completely nude except for collar, he standing over her wearing dark dress pants and white shirt unbuttoned, his hand extended with two fingers under her chin tilting her face up, ownership dynamic visible in their eye contact, warm intimate lighting",
+      "user_description": {
+        "en": "She in collar, kneeling at his feet. Looking up at him. Submissive but proud. Leather collar. Ownership dynamic.",
+        "ru": "Она в ошейнике, на коленях у его ног. Смотрит на него снизу вверх. Подчинённая но гордая. Кожаный ошейник. Динамика принадлежности."
+      },
+      "ai_context": {
+        "description": "Collar and kneeling. Ownership symbolism. Tests interest in D/s ownership dynamic.",
+        "tests": { "primary_kink": "collaring", "secondary_kinks": ["ownership", "kneeling", "D/s_dynamic"], "power_dynamic": "owned_female", "gender_role_aspect": "female owned" },
+        "question_angles": { "as_collared": "Does wearing a collar appeal to you?", "as_owner": "Would you collar a partner?", "symbolism": "Does ownership symbolism excite you?" },
+        "emotional_range": { "positive": ["love the symbolism", "collar is meaningful", "ownership is hot"], "negative": ["too intense", "don't like ownership idea"], "curious": ["interesting dynamic", "might try"] },
+        "profile_signals": { "if_positive": ["collaring_enjoys", "ownership_dynamic_likes"], "if_negative": ["ownership_no", "equality_only"], "if_curious": ["D_s_curious"] },
+        "correlations": { "positive": ["D/s lifestyle", "submission_deep", "ritual"], "negative": ["casual_only", "equality_strict"] },
+        "taboo_context": { "level": 4, "common_concerns": ["objectification", "too serious"], "normalization": "Collaring is meaningful ritual in BDSM - symbolizes trust and commitment" }
+      },
+      "participants": [{ "role": "dominant", "gender": "male", "action": "owns" }, { "role": "submissive", "gender": "female", "action": "collared, kneeling" }],
+      "dimensions": ["collar", "ownership", "kneeling", "submission", "devotion"],
+      "tags": ["collar", "kneeling", "submission", "leather", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_042",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "man kneeling at woman's feet on hardwood floor, wearing thick black leather collar with silver ring at throat, sitting on heels hands clasped behind his back, looking up at her with devoted adoring expression, he completely nude muscular body in submissive posture, she standing tall over him in black leather corset garter belt and stiletto heels, her hand resting on top of his head possessively, confident commanding expression looking down at her property, dramatic lighting female ownership dynamic",
+      "user_description": {
+        "en": "He in collar, kneeling at her feet. Looking up with devotion. She stands over him confidently. Female ownership.",
+        "ru": "Он в ошейнике, на коленях у её ног. Смотрит на неё снизу вверх. Преданный. Она стоит над ним уверенно. Женское владение."
+      },
+      "ai_context": {
+        "description": "Male collared by female. Female ownership. Tests interest in femdom ownership.",
+        "tests": { "primary_kink": "male_collaring", "secondary_kinks": ["femdom_ownership", "male_devotion", "worship"], "power_dynamic": "owned_male", "gender_role_aspect": "male owned" },
+        "question_angles": { "as_man": "Would you wear a collar for a woman?", "as_woman": "Would you collar a man?", "ownership": "Does owning/being owned appeal?" },
+        "emotional_range": { "positive": ["devotion is beautiful", "collar is meaningful", "femdom ownership hot"], "negative": ["too extreme", "prefer equality"], "curious": ["intriguing", "with right person"] },
+        "profile_signals": { "if_positive": ["femdom_ownership_enjoys", "male_collaring_ok"], "if_negative": ["equality_only", "ownership_no"], "if_curious": ["femdom_curious"] },
+        "correlations": { "positive": ["femdom_lifestyle", "submission_male_deep"], "negative": ["always_dominant", "traditional_only"] },
+        "taboo_context": { "level": 4, "common_concerns": ["masculinity", "judgment"], "normalization": "Male submission to female owner is valid lifestyle choice - requires confidence" }
+      },
+      "participants": [{ "role": "dominant", "gender": "female", "action": "owns" }, { "role": "submissive", "gender": "male", "action": "collared, kneeling" }],
+      "dimensions": ["collar", "female_ownership", "kneeling", "male_submission", "devotion"],
+      "tags": ["collar", "kneeling", "femdom", "leather", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_043",
+      "priority": 5,
+      "intensity": 4,
+      "generation_prompt": "woman on all fours on bedroom floor on soft rug, wearing black leather collar with silver leash chain attached to O-ring, her back arched in feline pose head lifted looking forward, completely nude, man standing beside her holding leather loop end of leash in his right hand keeping light tension, he wearing dark pants and open shirt, looking down at her with dominant possessive expression, pet play dynamic clear in their positions, warm intimate bedroom lighting power exchange visible",
+      "user_description": {
+        "en": "She on all fours, collar and leash. He holds the leash. Pet play dynamic. Intimate bedroom. Power exchange.",
+        "ru": "Она на четвереньках, ошейник и поводок. Он держит поводок. Динамика пет-плей. Интимная спальня. Обмен властью."
+      },
+      "ai_context": {
+        "description": "Pet play with leash. Human pet dynamic. Tests interest in pet play.",
+        "tests": { "primary_kink": "pet_play", "secondary_kinks": ["leash", "collar", "dehumanization_lite", "submission"], "power_dynamic": "handler_pet", "gender_role_aspect": "female pet" },
+        "question_angles": { "as_pet": "Does being led on leash appeal?", "as_handler": "Would you hold a partner's leash?", "dynamic": "How does pet play feel to you?" },
+        "emotional_range": { "positive": ["love pet play", "leash is exciting", "freeing to be pet"], "negative": ["too degrading", "uncomfortable"], "curious": ["interesting dynamic", "might try"] },
+        "profile_signals": { "if_positive": ["pet_play_enjoys", "leash_likes"], "if_negative": ["pet_play_no", "dignity_needs"], "if_curious": ["pet_play_curious"] },
+        "correlations": { "positive": ["submission_deep", "playfulness", "role_play"], "negative": ["dignity_strict", "vanilla_only"] },
+        "taboo_context": { "level": 4, "common_concerns": ["degradation", "judgment"], "normalization": "Pet play is about playfulness and power exchange - can be tender and fun" }
+      },
+      "participants": [{ "role": "handler", "gender": "male", "action": "holds leash" }, { "role": "pet", "gender": "female", "action": "on all fours, leashed" }],
+      "dimensions": ["pet_play", "leash", "collar", "submission", "power_exchange"],
+      "tags": ["leash", "collar", "pet_play", "all_fours", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_044",
+      "priority": 5,
+      "intensity": 4,
+      "generation_prompt": "man on all fours on hardwood floor, wearing black leather collar with chain leash attached, head lowered in submission, completely nude muscular body in submissive pet position, woman standing beside him holding leash wrapped around her hand once keeping firm tension pulling his head up slightly, she wearing black leather bra panties and thigh-high boots with heels, her posture tall commanding looking down at him, her free hand on her hip, role reversal pet play dominant female energy, dramatic lighting",
+      "user_description": {
+        "en": "He on all fours, collar and leash. She holds leash standing. Pet play. Reversed roles. She commands.",
+        "ru": "Он на четвереньках, ошейник и поводок. Она держит поводок стоя. Пет-плей. Обратные роли. Она командует."
+      },
+      "ai_context": {
+        "description": "Male pet play. Man as pet, woman handler. Tests interest in male pet play.",
+        "tests": { "primary_kink": "male_pet_play", "secondary_kinks": ["femdom", "leash", "male_submission_deep"], "power_dynamic": "female_handler", "gender_role_aspect": "male pet" },
+        "question_angles": { "as_man": "Would you be led on leash by a woman?", "as_woman": "Would you lead a man on leash?", "dynamic": "How does male pet play feel?" },
+        "emotional_range": { "positive": ["love being her pet", "freeing", "exciting dynamic"], "negative": ["too degrading", "uncomfortable"], "curious": ["intriguing", "might try"] },
+        "profile_signals": { "if_positive": ["male_pet_play_enjoys", "femdom_deep"], "if_negative": ["dignity_needs", "pet_play_no"], "if_curious": ["pet_play_curious"] },
+        "correlations": { "positive": ["femdom_lifestyle", "submission_male_deep"], "negative": ["always_dominant", "traditional_strict"] },
+        "taboo_context": { "level": 5, "common_concerns": ["masculinity", "degradation"], "normalization": "Male pet play requires confidence - can be deeply liberating" }
+      },
+      "participants": [{ "role": "handler", "gender": "female", "action": "holds leash" }, { "role": "pet", "gender": "male", "action": "on all fours, leashed" }],
+      "dimensions": ["pet_play", "leash", "female_dominance", "male_submission", "role_reversal"],
+      "tags": ["leash", "collar", "femdom", "pet_play", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_045",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "woman bent over man's lap in over-the-knee position, her torso draped over his thighs as he sits on edge of bed, her hands braced on floor for support, his left hand on her lower back holding her in place, his right hand raised mid-swing about to connect with her bare buttocks pink from previous strikes, she wearing only matching lace bra panties pulled down to thighs, he in dark pants and shirt sleeves rolled up, her face turned toward camera showing mix of surprise and pleasure with parted lips, bedroom with soft lighting",
+      "user_description": {
+        "en": "His hand mid-spank on her bottom. She's over his knee. Playful spanking. Bedroom. Her face shows mix of surprise and pleasure.",
+        "ru": "Его рука в момент шлепка по её попе. Она перегнулась через его колено. Игривая порка. Спальня. Её лицо показывает смесь удивления и удовольствия."
+      },
+      "ai_context": {
+        "description": "Over-the-knee spanking. Classic position. Tests interest in spanking.",
+        "tests": { "primary_kink": "spanking", "secondary_kinks": ["OTK", "discipline", "playful_pain"], "power_dynamic": "spanker_spankee", "gender_role_aspect": "traditional discipline" },
+        "question_angles": { "as_spanked": "Do you enjoy being spanked?", "as_spanker": "Do you enjoy spanking a partner?", "intensity": "Playful or serious spanking?" },
+        "emotional_range": { "positive": ["love spanking", "OTK is classic", "exciting"], "negative": ["don't like pain", "uncomfortable"], "curious": ["might enjoy", "light only"] },
+        "profile_signals": { "if_positive": ["spanking_enjoys", "OTK_likes"], "if_negative": ["pain_averse", "spanking_no"], "if_curious": ["impact_curious"] },
+        "correlations": { "positive": ["impact_play", "discipline", "submission"], "negative": ["gentle_only", "pain_averse"] },
+        "taboo_context": { "level": 2, "common_concerns": ["pain level", "marks"], "normalization": "Spanking is one of most common kinks - communication about intensity essential" }
+      },
+      "participants": [{ "role": "spanking", "gender": "male", "action": "spanks" }, { "role": "spanked", "gender": "female", "action": "over knee, receiving" }],
+      "dimensions": ["spanking", "over_the_knee", "playful", "impact", "discipline"],
+      "tags": ["spanking", "otk", "playful", "bottom", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" },
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "intensity",
+        "question": { "en": "What spanking intensity?", "ru": "Какая интенсивность порки?" },
+        "options": [
+          { "id": "playful", "label": { "en": "Playful - light taps", "ru": "Игриво - лёгкие шлепки" }, "signal": "spanking_light" },
+          { "id": "medium", "label": { "en": "Medium - sting", "ru": "Средне - жжение" }, "signal": "spanking_medium" },
+          { "id": "hard", "label": { "en": "Hard - marks", "ru": "Сильно - следы" }, "signal": "spanking_hard" }
+        ]
+      }
+    },
+    {
+      "id": "scene_046",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "man bent over woman's lap in over-the-knee position, his torso draped across her thighs as she sits on armless chair, his hands gripping chair legs for support, he completely nude, his buttocks exposed showing pink marks from strikes, she wearing black corset and skirt hiked up, her left hand pressing on his upper back her right hand raised having just delivered spank, she smiling with satisfaction looking down at him, her expression playful yet dominant, bedroom with dark decor dramatic lighting",
+      "user_description": {
+        "en": "She spanks him, he's over her knee. Reversed roles. Her hand on his bottom. Playful punishment. She smiles.",
+        "ru": "Она шлепает его, он перегнулся через её колено. Обратные роли. Её рука на его попе. Игривое наказание. Она улыбается."
+      },
+      "ai_context": {
+        "description": "Female spanking male. Role reversal impact. Tests comfort with receiving from woman.",
+        "tests": { "primary_kink": "female_spanking_male", "secondary_kinks": ["role_reversal", "femdom_impact", "male_receiving_pain"], "power_dynamic": "female_spanker", "gender_role_aspect": "female disciplines male" },
+        "question_angles": { "as_man": "Would you let a woman spank you?", "as_woman": "Would you spank a man?", "dynamic": "How does reversed spanking feel?" },
+        "emotional_range": { "positive": ["love femdom spanking", "exciting reversal", "great dynamic"], "negative": ["prefer giving", "uncomfortable"], "curious": ["might try", "intriguing"] },
+        "profile_signals": { "if_positive": ["femdom_spanking_enjoys", "male_receiving_ok"], "if_negative": ["giving_only", "must_dominate"], "if_curious": ["femdom_curious"] },
+        "correlations": { "positive": ["femdom", "role_reversal", "submission_male"], "negative": ["always_dominant", "traditional_only"] },
+        "taboo_context": { "level": 3, "common_concerns": ["masculinity"], "normalization": "Men receiving spanking is increasingly common - can be deeply enjoyable" }
+      },
+      "participants": [{ "role": "spanking", "gender": "female", "action": "spanks" }, { "role": "spanked", "gender": "male", "action": "over knee, receiving" }],
+      "dimensions": ["spanking", "female_dominance", "role_reversal", "discipline", "playful"],
+      "tags": ["spanking", "otk", "femdom", "role_reversal", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_047",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman bent forward at waist over edge of bed, her torso flat on mattress, both hands gripping white sheets tightly knuckles white with anticipation, her face turned to side eyes wide looking back, she completely nude buttocks raised and exposed, man standing behind her right side holding black leather paddle with holes in his right hand raised at shoulder height ready to swing, he wearing only dark pants bare chest, BDSM bedroom with dim moody lighting, her expression anticipating impact",
+      "user_description": {
+        "en": "She's bent over edge of bed. He holds leather paddle. Anticipation. Her hands grip sheets. BDSM bedroom. About to receive.",
+        "ru": "Она нагнулась у края кровати. Он держит кожаную падл. Предвкушение. Её руки вцепились в простыни. BDSM спальня. Сейчас получит удар."
+      },
+      "ai_context": {
+        "description": "Paddle impact play. Implement use. Tests interest in implement spanking.",
+        "tests": { "primary_kink": "paddle", "secondary_kinks": ["implement", "impact_play", "anticipation"], "power_dynamic": "dominant_with_tool", "gender_role_aspect": "male with implement" },
+        "question_angles": { "implement": "Does paddle appeal more than hand?", "anticipation": "Does waiting for impact excite?", "intensity": "Implement intensity preference?" },
+        "emotional_range": { "positive": ["implements are exciting", "paddle has great feel", "love the anticipation"], "negative": ["too intense", "hand only"], "curious": ["might try", "nervous but interested"] },
+        "profile_signals": { "if_positive": ["paddle_enjoys", "implements_likes"], "if_negative": ["hand_only", "implements_no"], "if_curious": ["implement_curious"] },
+        "correlations": { "positive": ["impact_play", "BDSM_gear", "intensity_enjoys"], "negative": ["gentle_only", "vanilla"] },
+        "taboo_context": { "level": 3, "common_concerns": ["pain level", "marks", "injury"], "normalization": "Paddles are designed for impact play - proper technique important" }
+      },
+      "participants": [{ "role": "dominant", "gender": "male", "action": "holds paddle" }, { "role": "receiving", "gender": "female", "action": "bent over, waiting" }],
+      "dimensions": ["paddle", "impact_play", "anticipation", "discipline", "bdsm"],
+      "tags": ["paddle", "bent_over", "anticipation", "bdsm", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_048",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "man bent forward over edge of bed, his torso on dark sheets, hands gripping mattress, face turned showing tense anticipation expression, he completely nude muscular buttocks exposed and raised, woman standing behind him wearing black leather corset garter belt stockings and heels, holding leather riding crop in right hand tapping it against her left palm menacingly, her posture dominant confident expression with slight smirk, looking at his exposed form deciding where to strike, dramatic side lighting female dominance",
+      "user_description": {
+        "en": "He's bent over edge of bed. She holds crop, tapping it against palm. He waits. Female domination. Anticipation.",
+        "ru": "Он нагнулся у края кровати. Она держит стек, постукивает им по ладони. Он ждёт. Женское доминирование. Предвкушение."
+      },
+      "ai_context": {
+        "description": "Crop with femdom. Woman with implement on man. Tests interest in femdom impact.",
+        "tests": { "primary_kink": "femdom_crop", "secondary_kinks": ["crop", "femdom_impact", "male_receiving"], "power_dynamic": "female_with_tool", "gender_role_aspect": "female with implement" },
+        "question_angles": { "as_man": "Would you receive crop from a woman?", "as_woman": "Would you use crop on a man?", "implement": "Does crop appeal?" },
+        "emotional_range": { "positive": ["femdom with crop is hot", "love the dynamic", "exciting"], "negative": ["too intense", "prefer giving"], "curious": ["intriguing", "might try"] },
+        "profile_signals": { "if_positive": ["femdom_impact_enjoys", "crop_likes"], "if_negative": ["must_dominate", "implements_no"], "if_curious": ["femdom_curious"] },
+        "correlations": { "positive": ["femdom", "implement_play", "male_submission"], "negative": ["always_dominant", "vanilla"] },
+        "taboo_context": { "level": 4, "common_concerns": ["masculinity", "pain"], "normalization": "Receiving impact from a dominant woman can be deeply satisfying" }
+      },
+      "participants": [{ "role": "dominant", "gender": "female", "action": "holds crop" }, { "role": "receiving", "gender": "male", "action": "bent over, waiting" }],
+      "dimensions": ["crop", "female_dominance", "anticipation", "impact_play", "discipline"],
+      "tags": ["crop", "bent_over", "femdom", "anticipation", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_049",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "woman lying face down on white sheets, her body relaxed in post-spanking aftercare, visible red marks and pink handprints on both buttocks showing recent impact play, her arms folded under head face turned to side with peaceful satisfied expression, man's hand gently resting on her lower back comfortingly, she completely nude skin slightly flushed, soft warm lighting creating intimate atmosphere, tender aftercare moment vulnerability and care visible",
+      "user_description": {
+        "en": "Red marks on her bottom after spanking. She lies face down. Aftercare moment. Tenderness. Marks visible. Intimate.",
+        "ru": "Красные следы на её попе после порки. Она лежит лицом вниз. Момент aftercare. Нежность. Следы видны. Интимно."
+      },
+      "ai_context": {
+        "description": "Post-spanking aftercare. Marks visible. Tests feelings about marks and aftercare.",
+        "tests": { "primary_kink": "impact_marks", "secondary_kinks": ["aftercare", "visible_marks", "tenderness_after"], "power_dynamic": "post_scene", "gender_role_aspect": "care after intensity" },
+        "question_angles": { "marks": "How do you feel about visible marks?", "aftercare": "Is aftercare important to you?", "proud": "Would you be proud of marks?" },
+        "emotional_range": { "positive": ["marks are trophies", "love aftercare", "beautiful aftermath"], "negative": ["don't want marks", "uncomfortable"], "curious": ["might not mind", "depends"] },
+        "profile_signals": { "if_positive": ["marks_enjoys", "aftercare_values"], "if_negative": ["marks_avoid", "no_trace"], "if_curious": ["marks_ok_sometimes"] },
+        "correlations": { "positive": ["impact_play", "intensity", "aftercare_important"], "negative": ["discrete", "vanilla"] },
+        "taboo_context": { "level": 2, "common_concerns": ["visible marks", "explaining"], "normalization": "Marks fade - many see them as badges of trust and intensity" }
+      },
+      "participants": [{ "role": "marked", "gender": "female", "action": "lies after spanking" }],
+      "dimensions": ["aftercare", "marks", "spanking_result", "tenderness", "visible_marks"],
+      "tags": ["marks", "aftercare", "spanking", "red", "bed"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_050",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "close-up intimate moment, woman's right hand with manicured nails pinching and twisting man's left nipple between thumb and forefinger applying visible pressure, his face in frame grimacing expression mixing pleasure and pain eyes squeezed shut jaw clenched, she visible behind him leaning over his shoulder with wicked satisfied smile enjoying his reaction, he shirtless muscular chest, she in black bra strap visible, bedroom lighting highlighting their expressions, nipple play pain pleasure",
+      "user_description": {
+        "en": "She pinches his nipple. He grimaces from pleasure-pain. She smiles wickedly. Intimate moment. Nipple play.",
+        "ru": "Она щиплет его сосок. Он морщится от удовольствия-боли. Она улыбается хитро. Интимный момент. Игра с сосками."
+      },
+      "ai_context": {
+        "description": "Nipple pinching/torture. Pain-pleasure on sensitive area. Tests interest in nipple play.",
+        "tests": { "primary_kink": "nipple_play", "secondary_kinks": ["pinching", "pain_pleasure", "sensitive_areas"], "power_dynamic": "giving_pain", "gender_role_aspect": "female giving pain" },
+        "question_angles": { "receiving": "Are your nipples sensitive to pain/pleasure?", "giving": "Do you enjoy nipple stimulation on partner?", "intensity": "Gentle or intense nipple play?" },
+        "emotional_range": { "positive": ["nipples are so sensitive", "love the pain-pleasure", "exciting"], "negative": ["too painful", "not sensitive there"], "curious": ["might enjoy", "never tried much"] },
+        "profile_signals": { "if_positive": ["nipple_play_enjoys", "sensitive_nipples"], "if_negative": ["nipple_play_no", "not_sensitive"], "if_curious": ["nipple_curious"] },
+        "correlations": { "positive": ["pain_pleasure", "sensation_play"], "negative": ["gentle_only", "not_into_pain"] },
+        "taboo_context": { "level": 2, "common_concerns": ["too much pain"], "normalization": "Nipple sensitivity varies greatly - communication about pressure important" }
+      },
+      "participants": [{ "role": "giving", "gender": "female", "action": "pinches nipple" }, { "role": "receiving", "gender": "male", "action": "receives pain-pleasure" }],
+      "dimensions": ["nipple_play", "pain_pleasure", "female_control", "pinching"],
+      "tags": ["nipple", "pinching", "pain", "pleasure", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ]
+}

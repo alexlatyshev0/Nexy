@@ -1,0 +1,311 @@
+{
+  "$schema": "../scenes-manifest.json",
+  "version": 4,
+  "range": "201-280",
+  "categories": ["Watersports", "Extreme Submission", "Double Penetration", "Gangbang", "Cuckolding", "Degradation", "Service"],
+  "scenes": [
+    {
+      "id": "scene_201",
+      "priority": 5,
+      "intensity": 5,
+      "generation_prompt": "woman standing legs apart directly over man who kneels beneath her on shower floor, she looks down at him with dominant expression, wet bathroom setting, steam, tiles visible, artistic intimate photography style, soft lighting through frosted glass",
+      "user_description": {
+        "en": "A woman stands over a kneeling man in the shower, dominant golden shower with complete submission.",
+        "ru": "Женщина стоит над стоящим на коленях мужчиной в душе, доминантный золотой дождь с полным подчинением."
+      },
+      "ai_context": {
+        "description": "Female-dominant golden shower - she stands over kneeling man in shower, watersports with clear power dynamic",
+        "tests": { "primary_kink": "golden_shower_receiving", "secondary_kinks": ["watersports", "female_domination", "humiliation", "body_worship"], "power_dynamic": "female_dominant_standing_over", "gender_role_aspect": "male_receiving_beneath" },
+        "emotional_range": { "positive": ["total surrender", "deep trust", "taboo excitement", "worship"], "negative": ["disgust", "too degrading", "hygiene concerns", "hard limit"], "curious": ["never considered", "extreme but intriguing", "ultimate submission"] },
+        "profile_signals": { "if_positive": ["watersports_enthusiast", "extreme_submission", "taboo_seeker"], "if_negative": ["hard_limits_watersports", "hygiene_focused"], "if_curious": ["edge_explorer", "submission_curious"] },
+        "correlations": { "positive": ["humiliation_play", "extreme_submission", "degradation"], "negative": ["vanilla_preference", "cleanliness_priority"] },
+        "taboo_context": { "level": 5, "common_concerns": "Hygiene, social stigma, extreme nature", "normalization": "Watersports has dedicated community finding deep intimacy and trust in this exchange" }
+      },
+      "participants": ["dominant_female", "submissive_male"],
+      "dimensions": ["dominance_submission", "taboo", "body_fluids", "trust"],
+      "tags": ["golden_shower", "watersports", "femdom", "shower", "kneeling", "humiliation"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "watersports",
+        "question": {
+          "en": "Does watersports/golden shower appeal?",
+          "ru": "Привлекает ли золотой дождь?"
+        },
+        "show_experience": true
+      }
+    },
+    {
+      "id": "scene_202",
+      "priority": 5,
+      "intensity": 5,
+      "generation_prompt": "man standing over woman who lies in bathtub looking up at him with submissive anticipation, she is positioned to receive, bathroom setting with soft lighting, artistic intimate photography style",
+      "user_description": {
+        "en": "A woman lies in the bathtub looking up at a man standing over her, waiting to receive his golden shower.",
+        "ru": "Женщина лежит в ванне, глядя вверх на стоящего над ней мужчину, ожидая получить его золотой дождь."
+      },
+      "ai_context": {
+        "description": "Male-dominant golden shower - he stands over woman lying in bathtub",
+        "tests": { "primary_kink": "golden_shower_giving", "secondary_kinks": ["watersports", "male_domination", "marking", "ownership"], "power_dynamic": "male_dominant_standing_over", "gender_role_aspect": "female_receiving_beneath" },
+        "emotional_range": { "positive": ["ownership feeling", "dominant thrill", "marking"], "negative": ["uncomfortable", "too extreme", "hard limit"], "curious": ["interesting power dynamic", "extreme but intriguing"] },
+        "profile_signals": { "if_positive": ["watersports_giver", "territorial_dominant", "marking_fetish"], "if_negative": ["watersports_limit", "moderate_dominance"], "if_curious": ["dominance_exploring", "taboo_curious"] },
+        "correlations": { "positive": ["ownership_kink", "marking", "extreme_dominance"], "negative": ["gentle_dom_only", "vanilla_leaning"] },
+        "taboo_context": { "level": 5, "common_concerns": "Social stigma, degradation, hygiene", "normalization": "For those into watersports, giving can feel like ultimate trust and acceptance" }
+      },
+      "participants": ["dominant_male", "submissive_female"],
+      "dimensions": ["dominance_submission", "taboo", "body_fluids", "ownership"],
+      "tags": ["golden_shower", "watersports", "maledom", "bathtub", "giving", "marking"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "yes_maybe_no",
+        "topic_ref": "watersports",
+        "question": {
+          "en": "Does giving golden shower appeal?",
+          "ru": "Привлекает ли давать золотой дождь?"
+        }
+      }
+    },
+    {
+      "id": "scene_210",
+      "priority": 4,
+      "intensity": 5,
+      "generation_prompt": "woman on bed on all fours, two men positioned behind and below her, double penetration scene with intimate lighting, artistic intimate photography style, her expression of intense pleasure",
+      "user_description": {
+        "en": "Double penetration scene with a woman between two men.",
+        "ru": "Сцена двойного проникновения с женщиной между двумя мужчинами."
+      },
+      "ai_context": {
+        "description": "Double penetration - woman receives from two men simultaneously",
+        "tests": { "primary_kink": "double_penetration", "secondary_kinks": ["MFM", "intensity", "filled"], "power_dynamic": "center_of_attention", "gender_role_aspect": "receiving_both" },
+        "emotional_range": { "positive": ["intense", "filled", "overwhelmed"], "negative": ["too much", "uncomfortable"], "curious": ["intrigued", "fantasy"] },
+        "profile_signals": { "if_positive": ["DP_enjoys", "intensity_seeker", "MFM_positive"], "if_negative": ["one_partner_only", "too_intense"], "if_curious": ["DP_curious", "group_curious"] },
+        "correlations": { "positive": ["group_sex", "intensity", "being_used"], "negative": ["monogamy_strict", "vanilla"] },
+        "taboo_context": { "level": 4, "common_concerns": "logistics, comfort, jealousy", "normalization": "DP is a common fantasy - communication about positions and comfort is key" }
+      },
+      "participants": ["receiving_female", "giving_male", "giving_male"],
+      "dimensions": ["double_penetration", "MFM", "intensity", "group"],
+      "tags": ["DP", "double_penetration", "MFM", "threesome", "intense"],
+      "relevant_for": { "gender": "any", "interested_in": "both" },
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "group_sex",
+        "question": {
+          "en": "Does double penetration appeal?",
+          "ru": "Привлекает ли двойное проникновение?"
+        },
+        "show_experience": true
+      }
+    },
+    {
+      "id": "scene_220",
+      "priority": 5,
+      "intensity": 5,
+      "generation_prompt": "woman center of multiple men arranged around her, gangbang scenario with her enthusiastically engaging multiple partners, artistic intimate photography style, her expression of enjoyment being center of attention",
+      "user_description": {
+        "en": "Gangbang scene with a woman as the enthusiastic center of multiple men.",
+        "ru": "Сцена гэнгбэнга с женщиной как восторженным центром нескольких мужчин."
+      },
+      "ai_context": {
+        "description": "Gangbang - woman as center of multiple men",
+        "tests": { "primary_kink": "gangbang", "secondary_kinks": ["multiple_partners", "center_attention", "overwhelmed"], "power_dynamic": "center_focus", "gender_role_aspect": "receiving_multiple" },
+        "emotional_range": { "positive": ["overwhelmed", "desired", "ultimate_fantasy"], "negative": ["too_extreme", "degrading"], "curious": ["fantasy_only", "intrigued"] },
+        "profile_signals": { "if_positive": ["gangbang_positive", "attention_seeker", "multiple_partners"], "if_negative": ["one_partner_only", "intimacy_focused"], "if_curious": ["group_fantasy"] },
+        "correlations": { "positive": ["group_sex", "exhibitionism", "being_used"], "negative": ["monogamy", "gentle_only"] },
+        "taboo_context": { "level": 5, "common_concerns": "jealousy, safety, coordination", "normalization": "Consensual gangbangs require planning, trust, and clear communication" }
+      },
+      "participants": ["center_female", "multiple_males"],
+      "dimensions": ["gangbang", "multiple_partners", "center_attention", "overwhelmed"],
+      "tags": ["gangbang", "group", "multiple", "center", "intense"],
+      "relevant_for": { "gender": "any", "interested_in": "both" },
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "group_sex",
+        "question": {
+          "en": "Does gangbang fantasy appeal?",
+          "ru": "Привлекает ли фантазия о гэнгбэнге?"
+        }
+      }
+    },
+    {
+      "id": "scene_230",
+      "priority": 5,
+      "intensity": 4,
+      "generation_prompt": "couple in bedroom with another man, husband/boyfriend in chair watching as wife/girlfriend intimately with other man, cuckold dynamic with visible emotional complexity, artistic intimate photography style",
+      "user_description": {
+        "en": "Cuckolding scene - partner watches as significant other is with someone else.",
+        "ru": "Сцена куколда - партнёр смотрит как значимый другой с кем-то ещё."
+      },
+      "ai_context": {
+        "description": "Cuckolding - watching partner with another person",
+        "tests": { "primary_kink": "cuckolding", "secondary_kinks": ["watching", "compersion", "humiliation"], "power_dynamic": "complex", "gender_role_aspect": "watching_partner" },
+        "emotional_range": { "positive": ["compersion", "turned_on", "complex_arousal"], "negative": ["jealousy", "painful", "limit"], "curious": ["complex", "intriguing"] },
+        "profile_signals": { "if_positive": ["cuckold_positive", "compersion", "watching_partner"], "if_negative": ["monogamy_strict", "jealousy_prone"], "if_curious": ["cuckold_curious"] },
+        "correlations": { "positive": ["voyeurism", "sharing", "compersion"], "negative": ["possessive", "monogamy_strict"] },
+        "taboo_context": { "level": 4, "common_concerns": "jealousy, emotional complexity", "normalization": "Cuckolding involves complex emotions - communication and aftercare essential" }
+      },
+      "participants": ["watching_cuckold", "hotwife", "bull"],
+      "dimensions": ["cuckolding", "watching", "sharing", "complex_emotions"],
+      "tags": ["cuckold", "watching", "hotwife", "bull", "sharing"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "cuckolding",
+        "question": {
+          "en": "Does cuckolding (watching partner with another) appeal?",
+          "ru": "Привлекает ли куколдинг (смотреть партнёра с другим)?"
+        },
+        "show_experience": true
+      }
+    },
+    {
+      "id": "scene_240",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman on knees looking up adoringly at dominant man, worship posture, his hand on her head, she wears collar, complete devotional submission, artistic intimate photography style",
+      "user_description": {
+        "en": "A woman kneels in worship position before a dominant man, complete devotion.",
+        "ru": "Женщина на коленях в позе поклонения перед доминантным мужчиной, полная преданность."
+      },
+      "ai_context": {
+        "description": "Devotional worship position - complete submission and adoration",
+        "tests": { "primary_kink": "worship", "secondary_kinks": ["devotion", "kneeling", "collar"], "power_dynamic": "devotional_submission", "gender_role_aspect": "worshipping_female" },
+        "emotional_range": { "positive": ["devoted", "peaceful", "fulfilled"], "negative": ["degrading", "too_much"], "curious": ["intriguing"] },
+        "profile_signals": { "if_positive": ["worship_enjoys", "devotion", "submission_deep"], "if_negative": ["equality_only"], "if_curious": ["devotion_curious"] },
+        "correlations": { "positive": ["D/s lifestyle", "service", "collar"], "negative": ["equality_strict"] },
+        "taboo_context": { "level": 3, "common_concerns": "power imbalance", "normalization": "Devotional dynamics are about deep trust and consensual power exchange" }
+      },
+      "participants": ["dominant_male", "worshipping_female"],
+      "dimensions": ["worship", "devotion", "kneeling", "submission"],
+      "tags": ["worship", "kneeling", "collar", "devotion", "submission"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "power_dynamic",
+        "question": {
+          "en": "How much does devotional worship appeal?",
+          "ru": "Насколько привлекает преданное поклонение?"
+        }
+      }
+    },
+    {
+      "id": "scene_250",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "man kneeling before seated woman in elegant dress, he kisses her extended foot wearing high heel, she looks down imperiously, female worship receiving, artistic intimate photography style",
+      "user_description": {
+        "en": "A man kneels to worship a woman's feet. She receives his devotion imperiously.",
+        "ru": "Мужчина стоит на коленях и поклоняется ногам женщины. Она принимает его преданность властно."
+      },
+      "ai_context": {
+        "description": "Foot worship - male worshipping female feet",
+        "tests": { "primary_kink": "foot_worship", "secondary_kinks": ["worship", "femdom_lite", "devotion"], "power_dynamic": "female_receiving_worship", "gender_role_aspect": "male_worshipping" },
+        "emotional_range": { "positive": ["devoted", "worshipful", "fulfilled"], "negative": ["feet_aversion"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["foot_worship", "worship_giving"], "if_negative": ["feet_neutral", "equality_only"], "if_curious": ["worship_curious"] },
+        "correlations": { "positive": ["femdom", "worship", "service"], "negative": ["vanilla"] },
+        "taboo_context": { "level": 3, "common_concerns": "judgment", "normalization": "Foot worship is one of most common fetishes" }
+      },
+      "participants": ["worshipped_female", "worshipping_male"],
+      "dimensions": ["foot_worship", "worship", "femdom_lite", "devotion"],
+      "tags": ["feet", "worship", "kneeling", "heels", "devotion"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "topic_drilldown",
+        "topic_ref": "worship",
+        "question": {
+          "en": "Does foot worship appeal?",
+          "ru": "Привлекает ли поклонение ногам?"
+        }
+      }
+    },
+    {
+      "id": "scene_260",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman sitting on man's face in queening position, she gripping headboard for balance, he beneath her serving, her expression of pleasure taking what she wants, dominant facesitting, artistic intimate photography style",
+      "user_description": {
+        "en": "Queening - she sits on his face taking her pleasure while he serves beneath.",
+        "ru": "Квининг - она сидит на его лице получая удовольствие пока он служит внизу."
+      },
+      "ai_context": {
+        "description": "Queening/facesitting - she takes pleasure from his service",
+        "tests": { "primary_kink": "queening", "secondary_kinks": ["facesitting", "female_dominance", "service"], "power_dynamic": "female_dominant", "gender_role_aspect": "male_serving" },
+        "emotional_range": { "positive": ["powerful", "served", "pleasure_taking"], "negative": ["uncomfortable_giving", "suffocating"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["queening", "facesitting", "femdom"], "if_negative": ["oral_equality_only"], "if_curious": ["queening_curious"] },
+        "correlations": { "positive": ["femdom", "oral_service", "power_exchange"], "negative": ["equality_strict"] },
+        "taboo_context": { "level": 2, "common_concerns": "breathing", "normalization": "Queening is about pleasure and power exchange with communication" }
+      },
+      "participants": ["queening_female", "serving_male"],
+      "dimensions": ["queening", "facesitting", "service", "female_dominance"],
+      "tags": ["queening", "facesitting", "femdom", "service", "oral"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "oral_receiving",
+        "question": {
+          "en": "How much does queening/receiving facesitting appeal?",
+          "ru": "Насколько привлекает квининг/получать фейсситтинг?"
+        }
+      }
+    },
+    {
+      "id": "scene_270",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "intimate moment after intensity, couple cuddling on bed with blankets, visible marks on skin suggesting earlier BDSM play, tender aftercare moment, she curled against him safely, soft lighting, emotional connection visible",
+      "user_description": {
+        "en": "Aftercare after intense play. Tender cuddling with visible marks from intensity.",
+        "ru": "Aftercare после интенсивной игры. Нежные объятия с видимыми следами от интенсивности."
+      },
+      "ai_context": {
+        "description": "Aftercare with visible marks - tenderness after intensity",
+        "tests": { "primary_kink": "aftercare", "secondary_kinks": ["marks", "tenderness", "recovery"], "power_dynamic": "caring", "gender_role_aspect": "mutual_care" },
+        "emotional_range": { "positive": ["safe", "cared_for", "connected"], "negative": ["unnecessary", "prefer_space"], "curious": ["appreciate"] },
+        "profile_signals": { "if_positive": ["aftercare_values", "marks_accepting"], "if_negative": ["no_aftercare_needed"], "if_curious": ["aftercare_learning"] },
+        "correlations": { "positive": ["BDSM", "intensity", "emotional_intelligence"], "negative": ["detached"] },
+        "taboo_context": { "level": 1, "common_concerns": null, "normalization": "Aftercare is essential part of BDSM" }
+      },
+      "participants": ["caring_male", "cared_for_female"],
+      "dimensions": ["aftercare", "marks", "tenderness", "recovery"],
+      "tags": ["aftercare", "cuddling", "marks", "tender", "recovery"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "scale",
+        "topic_ref": "power_dynamic",
+        "question": {
+          "en": "How important is aftercare after intensity?",
+          "ru": "Насколько важен aftercare после интенсивности?"
+        }
+      }
+    },
+    {
+      "id": "scene_280",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "man kneeling in service position, woman sits elegantly on throne-like chair, he presents her a drink on tray while naked, protocol and service submission visible, elegant setting with candles, artistic intimate photography style",
+      "user_description": {
+        "en": "Service submission - he serves her needs in protocol position.",
+        "ru": "Сервисное подчинение - он служит её потребностям в протокольной позиции."
+      },
+      "ai_context": {
+        "description": "Service submission - formal service dynamic",
+        "tests": { "primary_kink": "service_submission", "secondary_kinks": ["protocol", "serving", "femdom_service"], "power_dynamic": "female_served", "gender_role_aspect": "male_service" },
+        "emotional_range": { "positive": ["fulfilled", "purposeful", "devoted"], "negative": ["servile", "uncomfortable"], "curious": ["intrigued"] },
+        "profile_signals": { "if_positive": ["service_enjoys", "protocol", "femdom_service"], "if_negative": ["equality_only"], "if_curious": ["service_curious"] },
+        "correlations": { "positive": ["D/s lifestyle", "protocol", "devotion"], "negative": ["equality_strict"] },
+        "taboo_context": { "level": 2, "common_concerns": "servitude", "normalization": "Service submission can be deeply fulfilling for those wired for it" }
+      },
+      "participants": ["served_female", "serving_male"],
+      "dimensions": ["service", "protocol", "submission", "femdom"],
+      "tags": ["service", "protocol", "kneeling", "serving", "femdom"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_config": {
+        "type": "yes_maybe_no",
+        "topic_ref": "power_dynamic",
+        "question": {
+          "en": "Does formal service submission appeal?",
+          "ru": "Привлекает ли формальное сервисное подчинение?"
+        }
+      }
+    }
+  ]
+}

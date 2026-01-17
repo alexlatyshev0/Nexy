@@ -1,0 +1,479 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Edge Play",
+  "note": "P5 - High taboo, niche kinks. Shown only to users who have indicated openness to extreme content. All scenes require explicit consent context.",
+  "scenes": [
+    {
+      "id": "scene_watersports_giving",
+      "priority": 5,
+      "intensity": 5,
+
+      "generation_prompt": "watersports golden shower scene, dominant standing over submissive, urination implied on partner, power exchange through bodily fluids, extreme dominance display, bathroom or shower setting, urine kink",
+
+      "user_description": {
+        "en": "The ultimate mark of ownership. Golden warmth streaming down, claiming completely. Beyond conventional boundaries into raw possession.",
+        "ru": "Высшая метка принадлежности. Золотое тепло стекает вниз, полностью присваивая. За пределами условных границ в сырое обладание."
+      },
+
+      "ai_context": {
+        "description": "Watersports/golden shower - urination on partner. Extreme dominance through bodily fluids. High taboo.",
+
+        "tests": {
+          "primary_kink": "watersports",
+          "secondary_kinks": ["golden_shower", "urine_play", "extreme_marking", "degradation_extreme"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "extreme ownership display"
+        },
+
+        "question_angles": {
+          "as_giver": "Would you be interested in watersports (giving)?",
+          "as_receiver": "Would you be interested in watersports (receiving)?",
+          "emotional": "What does this extreme act represent?"
+        },
+
+        "emotional_range": {
+          "positive": ["ultimate ownership", "taboo thrill", "deeply intimate"],
+          "negative": ["absolutely not", "hard limit", "disgusting"],
+          "curious": ["intrigued", "very private fantasy"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["watersports_positive", "extreme_play_open", "taboo_seeking"],
+          "if_negative": ["watersports_hard_limit", "bodily_fluids_no"],
+          "if_curious": ["watersports_curious"]
+        },
+
+        "correlations": {
+          "positive": ["extreme_BDSM", "degradation_deep", "marking_extreme"],
+          "negative": ["vanilla", "fluids_no"]
+        },
+
+        "taboo_context": {
+          "level": 5,
+          "common_concerns": ["hygiene", "social judgment", "partner acceptance"],
+          "normalization": "More common than people admit—involves trust, health considerations, and clear communication"
+        }
+      },
+
+      "participants": [
+        { "role": "giving", "gender": "any", "action": "urinates on partner" },
+        { "role": "receiving", "gender": "any", "action": "receives golden shower" }
+      ],
+
+      "dimensions": ["watersports", "golden_shower", "extreme", "degradation"],
+      "tags": ["watersports", "urine", "golden_shower", "extreme", "taboo"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_cnc",
+      "priority": 5,
+      "intensity": 5,
+
+      "generation_prompt": "consensual non-consent scene, rough forced fantasy play, one person 'resisting' while other 'takes', struggle roleplay, pre-negotiated rape fantasy, safe word context implied, resistance and overpowering, BDSM edge play",
+
+      "user_description": {
+        "en": "The fantasy of resistance and overpowering—fully negotiated, safe-worded, consensual. 'No' that means yes, because the real stop word is different.",
+        "ru": "Фантазия сопротивления и овладения — полностью оговорённая, со стоп-словом, консенсуальная. «Нет» которое значит да, потому что настоящее стоп-слово другое."
+      },
+
+      "ai_context": {
+        "description": "CNC - Consensual Non-Consent. Rape fantasy roleplay between consenting adults with negotiation and safe words.",
+
+        "tests": {
+          "primary_kink": "CNC",
+          "secondary_kinks": ["rape_fantasy", "forced_fantasy", "resistance_play", "overpowering"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "taking/being taken by force fantasy"
+        },
+
+        "question_angles": {
+          "as_taker": "Would you enjoy playing the forceful role in CNC?",
+          "as_taken": "Would you enjoy the 'resisting' role in CNC?",
+          "emotional": "What does this fantasy provide that regular D/s doesn't?"
+        },
+
+        "emotional_range": {
+          "positive": ["primal thrill", "ultimate surrender", "fantasy fulfillment"],
+          "negative": ["too intense", "triggering", "hard limit", "morally wrong"],
+          "curious": ["intriguing but scary", "would need much trust"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["CNC_positive", "force_fantasy_ok", "primal_extreme"],
+          "if_negative": ["CNC_hard_limit", "consent_verbal_only"],
+          "if_curious": ["CNC_curious"]
+        },
+
+        "correlations": {
+          "positive": ["extreme_BDSM", "primal_play", "rough_sex_extreme"],
+          "negative": ["gentle_only", "verbal_consent_required"]
+        },
+
+        "taboo_context": {
+          "level": 5,
+          "common_concerns": ["trauma", "misunderstanding consent", "emotional aftermath", "partner judgment"],
+          "normalization": "Common fantasy (studies show ~50%+ have it)—requires extensive negotiation, safe words, and aftercare"
+        }
+      },
+
+      "participants": [
+        { "role": "taking", "gender": "any", "action": "plays forceful role" },
+        { "role": "taken", "gender": "any", "action": "plays resisting role" }
+      ],
+
+      "dimensions": ["CNC", "consensual_non_consent", "force_fantasy", "extreme"],
+      "tags": ["CNC", "rape_fantasy", "force", "primal", "extreme"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_breath_play",
+      "priority": 5,
+      "intensity": 5,
+
+      "generation_prompt": "breath play scene, dominant hand around submissive's throat controlling breathing, controlled asphyxiation, gasping for air, light-headed arousal, choking during sex, breath control BDSM, dangerous edge play",
+
+      "user_description": {
+        "en": "Hand around throat, air becoming precious, the edge of consciousness where everything intensifies. Breath control that makes every gasp ecstatic.",
+        "ru": "Рука вокруг горла, воздух становится драгоценным, край сознания где всё усиливается. Контроль дыхания, делающий каждый вздох экстатичным."
+      },
+
+      "ai_context": {
+        "description": "Breath play / erotic asphyxiation. Controlled choking. DANGEROUS edge play requiring safety knowledge.",
+
+        "tests": {
+          "primary_kink": "breath_play",
+          "secondary_kinks": ["choking_advanced", "asphyxiation", "edge_of_consciousness", "danger_play"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "life control"
+        },
+
+        "question_angles": {
+          "as_choking": "Would you engage in breath play (giving)?",
+          "as_choked": "Does restricted breathing during sex turn you on?",
+          "emotional": "What does the edge of consciousness provide?"
+        },
+
+        "emotional_range": {
+          "positive": ["intense high", "ultimate trust", "heightened orgasm"],
+          "negative": ["too dangerous", "scary", "hard limit"],
+          "curious": ["intrigued but afraid", "very light only"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["breath_play_positive", "edge_play_extreme"],
+          "if_negative": ["breath_play_hard_limit", "safety_first"],
+          "if_curious": ["breath_play_curious_light"]
+        },
+
+        "correlations": {
+          "positive": ["extreme_BDSM", "danger_play", "choking_general"],
+          "negative": ["safety_paramount", "risk_averse"]
+        },
+
+        "taboo_context": {
+          "level": 5,
+          "common_concerns": ["death risk", "injury", "losing consciousness", "cannot safe word"],
+          "normalization": "Inherently risky—requires extensive research on techniques, never alone, never full restriction"
+        }
+      },
+
+      "participants": [
+        { "role": "choking", "gender": "any", "action": "controls partner's breath" },
+        { "role": "choked", "gender": "any", "action": "breath restricted" }
+      ],
+
+      "dimensions": ["breath_play", "choking", "asphyxiation", "edge_play"],
+      "tags": ["breath_play", "choking", "asphyxiation", "dangerous", "extreme"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_free_use",
+      "priority": 5,
+      "intensity": 4,
+
+      "generation_prompt": "free use dynamic scene, one partner available for use at any time, being used while doing other activity, casual use without asking, free use relationship dynamic, always available kink, using partner while they cook or read",
+
+      "user_description": {
+        "en": "The agreement: available whenever wanted, no asking needed. They continue their activity while being used. Complete access, complete surrender.",
+        "ru": "Договорённость: доступен(на) когда угодно, без необходимости спрашивать. Они продолжают своё занятие пока их используют. Полный доступ, полная сдача."
+      },
+
+      "ai_context": {
+        "description": "Free use dynamic. Consensual agreement for partner to be always available sexually. No asking/permission needed within agreed parameters.",
+
+        "tests": {
+          "primary_kink": "free_use",
+          "secondary_kinks": ["always_available", "consensual_objectification", "use_dynamic"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "availability as gift"
+        },
+
+        "question_angles": {
+          "as_used": "Would you enjoy a 'free use' dynamic?",
+          "as_using": "Would you enjoy having a partner always available?",
+          "emotional": "What does unrestricted access represent?"
+        },
+
+        "emotional_range": {
+          "positive": ["freeing surrender", "always desired", "deep service"],
+          "negative": ["dehumanizing", "need autonomy", "not interested"],
+          "curious": ["intriguing concept", "for limited time maybe"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["free_use_positive", "availability_kink", "deep_submission"],
+          "if_negative": ["autonomy_always", "free_use_no"],
+          "if_curious": ["free_use_curious"]
+        },
+
+        "correlations": {
+          "positive": ["deep_submission", "service_oriented", "consensual_objectification"],
+          "negative": ["autonomy_paramount", "consent_each_time"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["loss of autonomy", "boundaries", "ongoing consent"],
+          "normalization": "Consensual ongoing agreement with clear parameters and ability to revoke—about surrender and trust"
+        }
+      },
+
+      "participants": [
+        { "role": "using", "gender": "any", "action": "uses partner freely" },
+        { "role": "available", "gender": "any", "action": "remains available for use" }
+      ],
+
+      "dimensions": ["free_use", "availability", "use_dynamic", "submission"],
+      "tags": ["free_use", "available", "use", "submission", "dynamic"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_knife_play",
+      "priority": 5,
+      "intensity": 5,
+
+      "generation_prompt": "knife play BDSM scene, dominant holding knife against submissive's skin, blade tracing body without cutting, fear and arousal mix, knife as implement of control, edge play with blade, dangerous implement near vulnerable body",
+
+      "user_description": {
+        "en": "Cold steel traces across skin, sharp edge a hair away from harm. The fear becomes arousal, danger becomes trust. Every nerve alive with awareness.",
+        "ru": "Холодная сталь скользит по коже, острое лезвие на волосок от вреда. Страх становится возбуждением, опасность становится доверием. Каждый нерв жив осознанием."
+      },
+
+      "ai_context": {
+        "description": "Knife play - blade used in scene without cutting. Fear/danger as arousal. Extreme edge play.",
+
+        "tests": {
+          "primary_kink": "knife_play",
+          "secondary_kinks": ["blade_play", "fear_arousal", "danger_implements", "edge_play_extreme"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "weapon as control"
+        },
+
+        "question_angles": {
+          "as_holding": "Would you be interested in knife play (holding)?",
+          "as_receiving": "Does the idea of a blade on your skin arouse you?",
+          "emotional": "What does controlled danger provide?"
+        },
+
+        "emotional_range": {
+          "positive": ["fear is arousing", "ultimate trust", "primal edge"],
+          "negative": ["too dangerous", "terrifying", "hard limit"],
+          "curious": ["interesting but intense", "only with extreme trust"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["knife_play_positive", "fear_arousal", "edge_play_extreme"],
+          "if_negative": ["weapons_hard_limit", "danger_no"],
+          "if_curious": ["knife_curious"]
+        },
+
+        "correlations": {
+          "positive": ["extreme_BDSM", "fear_play", "implements_extreme"],
+          "negative": ["safety_paramount", "gentle_only"]
+        },
+
+        "taboo_context": {
+          "level": 5,
+          "common_concerns": ["injury", "scars", "fear response", "trust"],
+          "normalization": "Advanced edge play requiring training, dull blades, and absolute trust—about fear and power, not injury"
+        }
+      },
+
+      "participants": [
+        { "role": "holding", "gender": "any", "action": "wields blade" },
+        { "role": "receiving", "gender": "any", "action": "feels blade on skin" }
+      ],
+
+      "dimensions": ["knife_play", "blade", "fear", "danger", "edge_play"],
+      "tags": ["knife", "blade", "edge_play", "fear", "extreme"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_public_sex",
+      "priority": 5,
+      "intensity": 4,
+
+      "generation_prompt": "public sex scene, couple having sex in public location, risk of discovery, outdoor or semi-public setting, thrill of being caught, sex in public space, exhibitionist act",
+
+      "user_description": {
+        "en": "The thrill of exposure, sex where someone might see. Public risk transforms private act into electric adventure.",
+        "ru": "Трепет обнажения, секс там где кто-то может увидеть. Публичный риск превращает частный акт в электрическое приключение."
+      },
+
+      "ai_context": {
+        "description": "Public sex - actual sex in public/semi-public places. Risk of discovery. Beyond exhibitionism to action.",
+
+        "tests": {
+          "primary_kink": "public_sex",
+          "secondary_kinks": ["outdoor_sex", "risk_discovery", "exhibitionism_extreme"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "shared risk"
+        },
+
+        "question_angles": {
+          "emotional": "Does the risk of public sex excite you?",
+          "fantasy_vs_reality": "Is this a fantasy or something you'd actually do?",
+          "where": "What settings appeal?"
+        },
+
+        "emotional_range": {
+          "positive": ["thrilling risk", "adventure", "forbidden excitement"],
+          "negative": ["too risky", "illegal", "disrespectful to others"],
+          "curious": ["fantasy yes", "reality maybe", "semi-public only"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["public_sex_positive", "risk_seeker", "exhibitionist_extreme"],
+          "if_negative": ["private_only", "legal_concerns"],
+          "if_curious": ["public_curious", "semi_public_maybe"]
+        },
+
+        "correlations": {
+          "positive": ["exhibitionism", "risk_taking", "adventure_sex"],
+          "negative": ["private_only", "cautious"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["legal issues", "getting caught", "involving unwilling others"],
+          "normalization": "Common fantasy—if acted on, choose locations carefully to avoid involving non-consenting observers"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "location",
+        "question": {
+          "en": "What settings appeal?",
+          "ru": "Какие места привлекают?"
+        },
+        "options": [
+          { "id": "car", "label": { "en": "In a car", "ru": "В машине" }, "signal": "car_sex" },
+          { "id": "nature", "label": { "en": "Outdoors/nature", "ru": "На природе" }, "signal": "outdoor_sex" },
+          { "id": "bathroom", "label": { "en": "Public bathroom/stall", "ru": "Публичный туалет" }, "signal": "bathroom_sex" },
+          { "id": "club", "label": { "en": "Club/party", "ru": "Клуб/вечеринка" }, "signal": "club_sex" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "participant", "gender": "any", "action": "has sex in public" },
+        { "role": "participant", "gender": "any", "action": "has sex in public" }
+      ],
+
+      "dimensions": ["public_sex", "outdoor", "risk", "exhibitionism"],
+      "tags": ["public", "outdoor", "risk", "exhibitionist", "adventure"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_breeding_kink",
+      "priority": 4,
+      "intensity": 3,
+
+      "generation_prompt": "breeding kink scene, intense internal finish with intention/fantasy of impregnation, deep primal connection, him finishing inside with breeding intent, her receiving with conception fantasy, primal reproductive urge as kink",
+
+      "user_description": {
+        "en": "The primal urge to breed, to fill, to be filled with purpose. Fantasy of conception making every thrust more urgent, every finish more intense.",
+        "ru": "Первобытное желание оплодотворить, наполнить, быть наполненной с целью. Фантазия зачатия делает каждый толчок срочнее, каждое окончание интенсивнее."
+      },
+
+      "ai_context": {
+        "description": "Breeding kink - arousal from impregnation fantasy/risk. Primal reproductive urge as turn-on.",
+
+        "tests": {
+          "primary_kink": "breeding_kink",
+          "secondary_kinks": ["impregnation_fantasy", "primal_reproductive", "internal_finish_extreme"],
+          "power_dynamic": "primal",
+          "gender_role_aspect": "reproductive dynamic"
+        },
+
+        "question_angles": {
+          "as_breeder": "Does the idea of 'breeding' turn you on?",
+          "as_bred": "Does impregnation risk/fantasy arouse you?",
+          "emotional": "What makes the reproductive element arousing?"
+        },
+
+        "emotional_range": {
+          "positive": ["primal and hot", "deeply connecting", "biological drive"],
+          "negative": ["pregnancy fear", "not arousing", "reproductive pressure"],
+          "curious": ["fantasy only", "interesting concept"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["breeding_kink_positive", "impregnation_arousal", "primal_reproductive"],
+          "if_negative": ["reproduction_separate", "pregnancy_fear"],
+          "if_curious": ["breeding_curious"]
+        },
+
+        "correlations": {
+          "positive": ["creampie", "primal_sex", "internal_preference"],
+          "negative": ["contraception_strict", "reproduction_anxiety"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["actual pregnancy", "fantasy vs reality", "relationship stage"],
+          "normalization": "Common kink about primal biology—can be enjoyed as pure fantasy with proper contraception"
+        }
+      },
+
+      "participants": [
+        { "role": "breeding", "gender": "male", "action": "finishes inside with intent" },
+        { "role": "bred", "gender": "female", "action": "receives with conception fantasy" }
+      ],
+
+      "dimensions": ["breeding", "impregnation", "primal", "internal"],
+      "tags": ["breeding", "impregnation", "primal", "kink", "internal"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ],
+
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_301", "scene_302", "scene_303"],
+      "reason": "Extreme edge play variants kept as separate scenes due to very different dynamics",
+      "recommendation": "Each edge play scene tests a distinct high-taboo preference"
+    }
+  ]
+}

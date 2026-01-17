@@ -1,0 +1,394 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Exhibitionism & Voyeurism",
+  "scenes": [
+    {
+      "id": "scene_masturbation_watched_f",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "woman lying on bed masturbating while man watches from chair nearby, she touches herself knowing she's being observed, eye contact between them, she performs for him, exhibitionist pleasure, intimate bedroom",
+
+      "user_description": {
+        "en": "She touches herself while he watches from the chair. Their eyes meet. She's not just pleasuring herself—she's performing, and they both know it.",
+        "ru": "Она ласкает себя, пока он смотрит из кресла. Их глаза встречаются. Она не просто доставляет себе удовольствие — она выступает, и оба это знают."
+      },
+
+      "ai_context": {
+        "description": "Woman masturbating while partner watches. Exhibitionism within couple. Testing comfort with being watched, performing.",
+
+        "tests": {
+          "primary_kink": "being_watched_masturbating",
+          "secondary_kinks": ["exhibitionism", "performance", "vulnerability", "solo_observed"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "woman displaying for partner"
+        },
+
+        "question_angles": {
+          "as_performer": "Women: Would you enjoy masturbating while he watches?",
+          "as_watcher": "Men: Would you enjoy watching her pleasure herself?",
+          "emotional": "What does being watched/watching add to the experience?"
+        },
+
+        "emotional_range": {
+          "positive": ["exhibitionist thrill", "turns me on", "his attention is hot", "empowering"],
+          "negative": ["too vulnerable", "self-conscious", "prefer privacy"],
+          "curious": ["might try", "nervous but interested"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["exhibitionism_enjoys", "being_watched_likes", "performance_arousing"],
+          "if_negative": ["privacy_needs", "self_conscious", "watching_only"],
+          "if_curious": ["exhibitionism_curious"]
+        },
+
+        "correlations": {
+          "positive": ["voyeurism_enjoys", "mutual_masturbation", "visual_arousal"],
+          "negative": ["private_only", "eyes_closed_prefers"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["self-consciousness", "vulnerability", "performing well"],
+          "normalization": "Mutual watching is common in couples—builds trust and visual intimacy"
+        }
+      },
+
+      "participants": [
+        { "role": "exhibitionist", "gender": "female", "action": "masturbates while watched" },
+        { "role": "voyeur", "gender": "male", "action": "watches" }
+      ],
+
+      "dimensions": ["exhibitionism", "masturbation", "watching", "performance"],
+      "tags": ["masturbation", "watched", "exhibitionism", "performance", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_masturbation_watched_m",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "man sitting on bed masturbating while woman watches from nearby, he touches himself knowing she's observing, vulnerability and arousal, she watches with interest and desire, intimate bedroom",
+
+      "user_description": {
+        "en": "He strokes himself under her gaze, vulnerable in a way men rarely allow themselves to be. She watches every reaction, fascinated.",
+        "ru": "Он ласкает себя под её взглядом, уязвимый так, как мужчины редко себе позволяют. Она наблюдает за каждой реакцией, заворожённая."
+      },
+
+      "ai_context": {
+        "description": "Man masturbating while partner watches. Male vulnerability, being observed. Less common dynamic.",
+
+        "tests": {
+          "primary_kink": "male_exhibitionism",
+          "secondary_kinks": ["male_vulnerability", "being_watched", "female_voyeur"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "male displaying vulnerability"
+        },
+
+        "question_angles": {
+          "as_performer": "Men: Would you masturbate while she watches?",
+          "as_watcher": "Women: Would you enjoy watching him pleasure himself?",
+          "emotional": "How does male exhibitionism feel different?"
+        },
+
+        "emotional_range": {
+          "positive": ["vulnerable but hot", "her watching excites me", "intimate"],
+          "negative": ["too exposed", "embarrassing", "prefer watching her"],
+          "curious": ["never tried", "might be hot"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["male_exhibitionism_ok", "vulnerability_comfortable", "being_watched_enjoys"],
+          "if_negative": ["privacy_needs_male", "performing_uncomfortable"],
+          "if_curious": ["male_exhibitionism_curious"]
+        },
+
+        "correlations": {
+          "positive": ["vulnerability_general", "female_voyeur_enjoys", "mutual_watching"],
+          "negative": ["always_private", "male_display_uncomfortable"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["masculinity", "vulnerability", "performance anxiety"],
+          "normalization": "Male vulnerability during sex deepens intimacy—her enjoying watching validates his sexuality"
+        }
+      },
+
+      "participants": [
+        { "role": "exhibitionist", "gender": "male", "action": "masturbates while watched" },
+        { "role": "voyeur", "gender": "female", "action": "watches with desire" }
+      ],
+
+      "dimensions": ["male_exhibitionism", "vulnerability", "watching", "female_voyeur"],
+      "tags": ["masturbation", "male", "watched", "vulnerability", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_mutual_masturbation",
+      "priority": 2,
+      "intensity": 3,
+
+      "generation_prompt": "couple facing each other on bed, both masturbating simultaneously, watching each other, eye contact, mirrored pleasure, intimate mutual activity, soft lighting",
+
+      "user_description": {
+        "en": "Facing each other, both touching themselves. Eyes locked, breathing synced. Watching each other's pleasure builds their own.",
+        "ru": "Лицом друг к другу, оба касаются себя. Взгляды скрещены, дыхание синхронизировано. Наблюдение за удовольствием партнёра усиливает своё."
+      },
+
+      "ai_context": {
+        "description": "Mutual masturbation. Both partners self-pleasuring while watching each other. Equal, intimate, visual.",
+
+        "tests": {
+          "primary_kink": "mutual_masturbation",
+          "secondary_kinks": ["watching", "mirroring", "visual_intimacy", "equality"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "mutual display"
+        },
+
+        "question_angles": {
+          "emotional": "Do you enjoy masturbating together, watching each other?",
+          "frequency": "Is mutual masturbation part of your intimacy?"
+        },
+
+        "emotional_range": {
+          "positive": ["intimate", "hot watching each other", "synced pleasure"],
+          "negative": ["prefer touching each other", "self-conscious"],
+          "curious": ["sounds interesting", "would try"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["mutual_masturbation_enjoys", "visual_intimacy", "solo_together_likes"],
+          "if_negative": ["touching_each_other_prefers"],
+          "if_curious": ["mutual_masturbation_curious"]
+        },
+
+        "correlations": {
+          "positive": ["voyeurism", "exhibitionism", "visual_arousal"],
+          "negative": ["direct_touch_only"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": null,
+          "normalization": "Common intimate activity for couples—combines individual pleasure with shared experience"
+        }
+      },
+
+      "participants": [
+        { "role": "mutual", "gender": "male", "action": "masturbates, watches" },
+        { "role": "mutual", "gender": "female", "action": "masturbates, watches" }
+      ],
+
+      "dimensions": ["mutual_masturbation", "watching", "equality", "visual"],
+      "tags": ["mutual", "masturbation", "watching", "intimate", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_window_undressing",
+      "priority": 3,
+      "intensity": 2,
+
+      "generation_prompt": "woman undressing near large window at evening, city visible outside, her silhouette visible to outside, she knows she might be seen, exhibitionist thrill, twilight lighting",
+
+      "user_description": {
+        "en": "She undresses by the window, silhouette visible against city lights. Someone might see. That possibility makes her pulse quicken.",
+        "ru": "Она раздевается у окна, силуэт виден на фоне огней города. Кто-то может увидеть. Эта возможность заставляет пульс учащаться."
+      },
+
+      "ai_context": {
+        "description": "Undressing by window with potential observers. Soft exhibitionism, thrill of possible exposure without actual public nudity.",
+
+        "tests": {
+          "primary_kink": "exhibitionist_thrill",
+          "secondary_kinks": ["risk", "possible_exposure", "window", "silhouette"],
+          "power_dynamic": "none",
+          "gender_role_aspect": "solo exhibitionist thrill"
+        },
+
+        "question_angles": {
+          "emotional": "Does the possibility of being seen excite you?",
+          "as_receiver": "Would you undress knowing someone might see?"
+        },
+
+        "emotional_range": {
+          "positive": ["thrilling", "exciting risk", "turns me on"],
+          "negative": ["too risky", "prefer complete privacy", "anxiety"],
+          "curious": ["maybe with curtains mostly closed", "controlled risk"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["exhibitionist_thrill_enjoys", "risk_arousing", "possible_exposure_likes"],
+          "if_negative": ["privacy_strict", "exposure_anxiety"],
+          "if_curious": ["controlled_exhibitionism_curious"]
+        },
+
+        "correlations": {
+          "positive": ["exhibitionism_general", "public_adjacent", "thrill_seeking"],
+          "negative": ["private_only", "risk_averse"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["actually being seen", "neighbors", "consequences"],
+          "normalization": "Window exhibitionism is common fantasy—controlled risk without actual public exposure"
+        }
+      },
+
+      "participants": [
+        { "role": "exhibitionist", "gender": "female", "action": "undresses by window" }
+      ],
+
+      "dimensions": ["exhibitionism", "window", "risk", "thrill"],
+      "tags": ["window", "undressing", "exhibitionism", "risk", "silhouette"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_JOI_femdom",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "woman clothed sitting in chair giving verbal instructions, man following her commands touching himself, she watches and directs, JOI scenario, power exchange through words, she controls his pleasure verbally",
+
+      "user_description": {
+        "en": "She sits fully clothed, watching him follow her every instruction. 'Slower. Stop. Now continue.' His pleasure is entirely in her hands—without her touching him at all.",
+        "ru": "Она сидит полностью одетая, наблюдая как он следует каждой инструкции. «Медленнее. Стоп. Теперь продолжай.» Его удовольствие полностью в её руках — без единого прикосновения."
+      },
+
+      "ai_context": {
+        "description": "JOI - Jerk Off Instructions. Female verbally controlling male masturbation. Power exchange through direction.",
+
+        "tests": {
+          "primary_kink": "JOI",
+          "secondary_kinks": ["verbal_control", "femdom", "instruction", "watching"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "female controls male pleasure verbally"
+        },
+
+        "question_angles": {
+          "as_receiver": "Men: Would you enjoy following her instructions?",
+          "as_giver": "Women: Would you enjoy controlling his pleasure with words?",
+          "emotional": "What does verbal control add?"
+        },
+
+        "emotional_range": {
+          "positive": ["love being controlled", "her voice is commanding", "hot"],
+          "negative": ["prefer doing my own thing", "too controlled"],
+          "curious": ["interesting", "might try"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["JOI_enjoys", "verbal_control_likes", "femdom_lite"],
+          "if_negative": ["self_directed_prefers", "control_resistant"],
+          "if_curious": ["JOI_curious"]
+        },
+
+        "correlations": {
+          "positive": ["femdom", "verbal_arousal", "instruction_following"],
+          "negative": ["autonomous_prefers", "control_issues"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": null,
+          "normalization": "JOI is popular form of power exchange—verbal control without physical contact"
+        }
+      },
+
+      "participants": [
+        { "role": "instructor", "gender": "female", "action": "gives verbal commands" },
+        { "role": "following", "gender": "male", "action": "follows instructions" }
+      ],
+
+      "dimensions": ["JOI", "verbal_control", "femdom", "instruction"],
+      "tags": ["JOI", "instructions", "verbal", "femdom", "control"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_secret_watching",
+      "priority": 4,
+      "intensity": 3,
+
+      "generation_prompt": "POV voyeur perspective through doorway or window, watching someone undress or intimate moment, they unaware of being watched, forbidden glimpse, taboo voyeurism",
+
+      "user_description": {
+        "en": "Through the crack in the door, a forbidden glimpse. They don't know you're watching. The secrecy makes your heart pound.",
+        "ru": "Через щель в двери запретный взгляд. Они не знают что вы смотрите. Тайна заставляет сердце колотиться."
+      },
+
+      "ai_context": {
+        "description": "Voyeurism fantasy - watching someone unaware. Tests the forbidden watching fantasy (not actual non-consensual watching).",
+
+        "tests": {
+          "primary_kink": "voyeurism_fantasy",
+          "secondary_kinks": ["forbidden", "secret_watching", "taboo"],
+          "power_dynamic": "none",
+          "gender_role_aspect": "observer fantasy"
+        },
+
+        "question_angles": {
+          "emotional": "Does the fantasy of secretly watching someone excite you?",
+          "as_receiver": "Is forbidden watching part of your fantasy life?"
+        },
+
+        "emotional_range": {
+          "positive": ["forbidden is exciting", "fantasy turn on", "taboo thrill"],
+          "negative": ["feels wrong", "not interested", "prefer consensual"],
+          "curious": ["as fantasy only", "controlled scenario"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["voyeur_fantasy_enjoys", "forbidden_arousing", "secret_watching_fantasy"],
+          "if_negative": ["consensual_only", "voyeur_fantasy_no"],
+          "if_curious": ["voyeur_fantasy_curious"]
+        },
+
+        "correlations": {
+          "positive": ["taboo_fantasies", "watching_general", "forbidden_thrill"],
+          "negative": ["consent_strict", "vanilla_only"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["ethics", "consent", "fantasy vs reality"],
+          "normalization": "Voyeur fantasy is common—as fantasy or consensual roleplay, not actual non-consensual watching"
+        }
+      },
+
+      "participants": [
+        { "role": "voyeur", "gender": "any", "action": "secretly watches" },
+        { "role": "unaware", "gender": "any", "action": "doesn't know they're watched" }
+      ],
+
+      "dimensions": ["voyeurism", "forbidden", "fantasy", "secret"],
+      "tags": ["voyeur", "secret", "forbidden", "fantasy", "watching"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    }
+  ],
+
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_101", "scene_102", "scene_103", "scene_104", "scene_105", "scene_106", "scene_107", "scene_108"],
+      "reason": "Consolidated into representative scenes by type",
+      "recommendation": "Keep distinct scenes for M watching F, F watching M, mutual, and JOI variations"
+    }
+  ]
+}
