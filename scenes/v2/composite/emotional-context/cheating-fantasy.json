@@ -1,0 +1,295 @@
+{
+  "id": "cheating_fantasy",
+  "slug": "cheating-fantasy",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Фантазия об измене",
+    "en": "Cheating Fantasy"
+  },
+  "subtitle": {
+    "ru": "Запретный секс на стороне",
+    "en": "Forbidden sex on the side"
+  },
+  "ai_description": {
+    "ru": "Фантазия о сексе с чужим партнёром или изменить своему. Не реальная измена, а возбуждение от запретности, риска, тайны.",
+    "en": "Fantasy of sex with someone else's partner or cheating on yours. Not real cheating, but arousal from the forbidden, risk, secrecy."
+  },
+  "image_prompt": "man and woman embracing on hotel bed, wedding ring visible on finger, hotel room with curtained window",
+  "intensity": 3,
+  "category": "emotional-context",
+  "tags": [
+    "cheating",
+    "affair",
+    "forbidden",
+    "secret",
+    "married"
+  ],
+  "elements": [
+    {
+      "id": "scenario",
+      "label": {
+        "ru": "Сценарий",
+        "en": "Scenario"
+      },
+      "tag_ref": "cheating_scenario",
+      "follow_ups": [
+        {
+          "id": "which",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой сценарий?",
+            "en": "Which scenario?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "you_cheat",
+                "label": {
+                  "ru": "Ты изменяешь",
+                  "en": "You cheat"
+                }
+              },
+              {
+                "id": "with_married",
+                "label": {
+                  "ru": "С женатым/замужней",
+                  "en": "With married person"
+                }
+              },
+              {
+                "id": "partners_friend",
+                "label": {
+                  "ru": "С другом партнёра",
+                  "en": "With partner's friend"
+                }
+              },
+              {
+                "id": "ex",
+                "label": {
+                  "ru": "С бывшим",
+                  "en": "With ex"
+                }
+              },
+              {
+                "id": "coworker",
+                "label": {
+                  "ru": "С коллегой",
+                  "en": "With coworker"
+                }
+              },
+              {
+                "id": "one_night",
+                "label": {
+                  "ru": "Случайная связь",
+                  "en": "One night stand"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "element",
+      "label": {
+        "ru": "Элементы",
+        "en": "Elements"
+      },
+      "tag_ref": "cheating_elements",
+      "follow_ups": [
+        {
+          "id": "details",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что добавляет остроты?",
+            "en": "What adds spice?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "ring_on",
+                "label": {
+                  "ru": "Кольцо на пальце",
+                  "en": "Ring on finger"
+                }
+              },
+              {
+                "id": "almost_caught",
+                "label": {
+                  "ru": "Почти поймали",
+                  "en": "Almost caught"
+                }
+              },
+              {
+                "id": "during_event",
+                "label": {
+                  "ru": "Во время мероприятия (свадьба, вечеринка)",
+                  "en": "During event (wedding, party)"
+                }
+              },
+              {
+                "id": "in_their_bed",
+                "label": {
+                  "ru": "В их кровати",
+                  "en": "In their bed"
+                }
+              },
+              {
+                "id": "messages",
+                "label": {
+                  "ru": "Тайная переписка",
+                  "en": "Secret messages"
+                }
+              },
+              {
+                "id": "quickie",
+                "label": {
+                  "ru": "Быстрый секс пока не заметили",
+                  "en": "Quick sex before noticed"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "cheating_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "forbidden",
+                "label": {
+                  "ru": "Запретность",
+                  "en": "Forbidden"
+                }
+              },
+              {
+                "id": "risk",
+                "label": {
+                  "ru": "Риск попасться",
+                  "en": "Risk of getting caught"
+                }
+              },
+              {
+                "id": "secrecy",
+                "label": {
+                  "ru": "Тайна",
+                  "en": "Secrecy"
+                }
+              },
+              {
+                "id": "novelty",
+                "label": {
+                  "ru": "Новизна (не свой партнёр)",
+                  "en": "Novelty (not your partner)"
+                }
+              },
+              {
+                "id": "conquest",
+                "label": {
+                  "ru": "Завоевание чужого",
+                  "en": "Conquering someone else's"
+                }
+              },
+              {
+                "id": "betrayal",
+                "label": {
+                  "ru": "Элемент предательства",
+                  "en": "Element of betrayal"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "reality",
+      "label": {
+        "ru": "Реальность",
+        "en": "Reality"
+      },
+      "tag_ref": "cheating_reality",
+      "follow_ups": [
+        {
+          "id": "level",
+          "type": "single_select",
+          "question": {
+            "ru": "Фантазия или реальность?",
+            "en": "Fantasy or reality?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "fantasy_only",
+                "label": {
+                  "ru": "Только фантазия",
+                  "en": "Fantasy only"
+                }
+              },
+              {
+                "id": "roleplay",
+                "label": {
+                  "ru": "Ролевая игра с партнёром",
+                  "en": "Roleplay with partner"
+                }
+              },
+              {
+                "id": "open",
+                "label": {
+                  "ru": "Открытые отношения",
+                  "en": "Open relationship"
+                }
+              },
+              {
+                "id": "have_done",
+                "label": {
+                  "ru": "Было в реальности",
+                  "en": "Have done it"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "interest_scale",
+    "text": {
+      "ru": "Фантазия об измене возбуждает?",
+      "en": "Does cheating fantasy excite you?"
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "cheating_fantasy",
+      "affair",
+      "forbidden"
+    ],
+    "tests_secondary": [
+      "risk",
+      "secrecy",
+      "novelty"
+    ]
+  },
+  "user_description": {
+    "ru": "Пара занимается сексом, один из них или оба состоят в отношениях с другими людьми",
+    "en": "A couple has sex, one or both of them are in relationships with other people"
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "id": "nipple_clamps",
+  "slug": "nipple-clamps",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Зажимы для сосков",
+    "en": "Nipple Clamps"
+  },
+  "subtitle": {
+    "ru": "Боль и удовольствие",
+    "en": "Pain and pleasure"
+  },
+  "ai_description": {
+    "ru": "Зажимы для сосков — давление, боль, чувствительность. Разная интенсивность от лёгкой до сильной.",
+    "en": "Nipple clamps — pressure, pain, sensitivity. Various intensity from light to strong."
+  },
+  "image_prompt": "woman with nipple clamps, man adjusting the clamps, close-up on chest, bedroom setting with dim lighting",
+  "intensity": 3,
+  "category": "toys",
+  "tags": [
+    "toys",
+    "nipple_clamps",
+    "pain",
+    "nipple_play"
+  ],
+  "elements": [
+    {
+      "id": "who_wears",
+      "label": {
+        "ru": "Кто носит",
+        "en": "Who wears"
+      },
+      "tag_ref": "clamps_who",
+      "follow_ups": [
+        {
+          "id": "wearer",
+          "type": "single_select",
+          "question": {
+            "ru": "На ком?",
+            "en": "On whom?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "on_her",
+                "label": {
+                  "ru": "На ней",
+                  "en": "On her"
+                }
+              },
+              {
+                "id": "on_him",
+                "label": {
+                  "ru": "На нём",
+                  "en": "On him"
+                }
+              },
+              {
+                "id": "both",
+                "label": {
+                  "ru": "На обоих",
+                  "en": "On both"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "intensity",
+      "label": {
+        "ru": "Интенсивность",
+        "en": "Intensity"
+      },
+      "tag_ref": "clamps_intensity",
+      "follow_ups": [
+        {
+          "id": "level",
+          "type": "single_select",
+          "question": {
+            "ru": "Какая интенсивность?",
+            "en": "What intensity?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "light",
+                "label": {
+                  "ru": "Лёгкое давление",
+                  "en": "Light pressure"
+                }
+              },
+              {
+                "id": "moderate",
+                "label": {
+                  "ru": "Ощутимо",
+                  "en": "Noticeable"
+                }
+              },
+              {
+                "id": "strong",
+                "label": {
+                  "ru": "Сильно, больно",
+                  "en": "Strong, painful"
+                }
+              },
+              {
+                "id": "varies",
+                "label": {
+                  "ru": "По настроению",
+                  "en": "Depends on mood"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "type",
+      "label": {
+        "ru": "Тип",
+        "en": "Type"
+      },
+      "tag_ref": "clamps_type",
+      "follow_ups": [
+        {
+          "id": "style",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой тип?",
+            "en": "What type?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "adjustable",
+                "label": {
+                  "ru": "Регулируемые",
+                  "en": "Adjustable"
+                }
+              },
+              {
+                "id": "clover",
+                "label": {
+                  "ru": "Клевер (сильнее при натяжении)",
+                  "en": "Clover (tighter when pulled)"
+                }
+              },
+              {
+                "id": "chain",
+                "label": {
+                  "ru": "С цепочкой",
+                  "en": "With chain"
+                }
+              },
+              {
+                "id": "vibrating",
+                "label": {
+                  "ru": "Вибрирующие",
+                  "en": "Vibrating"
+                }
+              },
+              {
+                "id": "weights",
+                "label": {
+                  "ru": "С грузиками",
+                  "en": "With weights"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "appeal",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "clamps_appeal",
+      "follow_ups": [
+        {
+          "id": "why",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "pain_pleasure",
+                "label": {
+                  "ru": "Боль-удовольствие",
+                  "en": "Pain-pleasure"
+                }
+              },
+              {
+                "id": "sensitivity",
+                "label": {
+                  "ru": "Повышенная чувствительность",
+                  "en": "Heightened sensitivity"
+                }
+              },
+              {
+                "id": "visual",
+                "label": {
+                  "ru": "Как выглядит",
+                  "en": "How it looks"
+                }
+              },
+              {
+                "id": "control",
+                "label": {
+                  "ru": "Партнёр контролирует",
+                  "en": "Partner controls"
+                }
+              },
+              {
+                "id": "removal",
+                "label": {
+                  "ru": "Момент снятия (прилив крови)",
+                  "en": "Removal moment (blood rush)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в зажимах для сосков?",
+      "en": "What appeals about nipple clamps?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "nipple_clamps",
+      "toys",
+      "nipple_play"
+    ],
+    "tests_secondary": [
+      "pain",
+      "sensation",
+      "control"
+    ]
+  },
+  "user_description": {
+    "ru": "Он надевает ей зажимы на соски и регулирует давление.",
+    "en": "He puts nipple clamps on her and adjusts the pressure."
+  }
+}

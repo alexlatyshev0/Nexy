@@ -1,0 +1,218 @@
+{
+  "id": "angry_sex",
+  "slug": "angry-sex",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Злой секс",
+    "en": "Angry Sex"
+  },
+  "subtitle": {
+    "ru": "Агрессия в постели",
+    "en": "Aggression in bed"
+  },
+  "ai_description": {
+    "ru": "Секс с элементами злости и агрессии. Не насилие, а выход эмоций через физическое взаимодействие.",
+    "en": "Sex with elements of anger and aggression. Not violence, but emotional release through physical interaction."
+  },
+  "image_prompt": "man pushing woman against wall, both partly dressed, aggressive kissing, hallway or bedroom entrance",
+  "intensity": 4,
+  "category": "emotional-context",
+  "tags": [
+    "emotional",
+    "angry_sex",
+    "aggressive",
+    "intense",
+    "rough"
+  ],
+  "elements": [
+    {
+      "id": "trigger",
+      "label": {
+        "ru": "Причина",
+        "en": "Trigger"
+      },
+      "tag_ref": "angry_trigger",
+      "follow_ups": [
+        {
+          "id": "why_angry",
+          "type": "multi_select",
+          "question": {
+            "ru": "Откуда злость?",
+            "en": "Where from anger?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "argument",
+                "label": {
+                  "ru": "Ссора друг с другом",
+                  "en": "Argument with each other"
+                }
+              },
+              {
+                "id": "jealousy",
+                "label": {
+                  "ru": "Ревность",
+                  "en": "Jealousy"
+                }
+              },
+              {
+                "id": "external",
+                "label": {
+                  "ru": "Внешний стресс",
+                  "en": "External stress"
+                }
+              },
+              {
+                "id": "roleplay",
+                "label": {
+                  "ru": "Ролевая игра",
+                  "en": "Roleplay"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "actions",
+      "label": {
+        "ru": "Действия",
+        "en": "Actions"
+      },
+      "tag_ref": "angry_actions",
+      "follow_ups": [
+        {
+          "id": "what",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие действия?",
+            "en": "What actions?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "rough_handling",
+                "label": {
+                  "ru": "Грубые хватки",
+                  "en": "Rough handling"
+                }
+              },
+              {
+                "id": "pushing",
+                "label": {
+                  "ru": "Толкать к стене/кровати",
+                  "en": "Pushing to wall/bed"
+                }
+              },
+              {
+                "id": "hair_pulling",
+                "label": {
+                  "ru": "Тянуть за волосы",
+                  "en": "Hair pulling"
+                }
+              },
+              {
+                "id": "clothes_tearing",
+                "label": {
+                  "ru": "Рвать одежду",
+                  "en": "Tearing clothes"
+                }
+              },
+              {
+                "id": "hard_sex",
+                "label": {
+                  "ru": "Жёсткий секс",
+                  "en": "Hard sex"
+                }
+              },
+              {
+                "id": "dirty_talk",
+                "label": {
+                  "ru": "Грубые слова",
+                  "en": "Rough words"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "who_aggressive",
+      "label": {
+        "ru": "Кто агрессивен",
+        "en": "Who is aggressive"
+      },
+      "tag_ref": "angry_who",
+      "follow_ups": [
+        {
+          "id": "aggressor",
+          "type": "single_select",
+          "question": {
+            "ru": "Кто проявляет агрессию?",
+            "en": "Who shows aggression?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "he",
+                "label": {
+                  "ru": "Он",
+                  "en": "He"
+                }
+              },
+              {
+                "id": "she",
+                "label": {
+                  "ru": "Она",
+                  "en": "She"
+                }
+              },
+              {
+                "id": "both",
+                "label": {
+                  "ru": "Оба",
+                  "en": "Both"
+                }
+              },
+              {
+                "id": "alternating",
+                "label": {
+                  "ru": "По очереди",
+                  "en": "Alternating"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в злом сексе?",
+      "en": "What appeals about angry sex?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "angry_sex",
+      "aggressive",
+      "rough"
+    ],
+    "tests_secondary": [
+      "emotional_intensity",
+      "release",
+      "passion"
+    ]
+  },
+  "user_description": {
+    "ru": "Он толкает её к стене, рвёт одежду, грубо трахает. Или она — его.",
+    "en": "He pushes her against wall, tears clothes, fucks her rough. Or she does him."
+  }
+}

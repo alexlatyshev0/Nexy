@@ -3,28 +3,39 @@ import type { LocalizedString, Locale } from './types';
 /**
  * Default locale for the application
  */
-export const DEFAULT_LOCALE: Locale = 'ru';
+export const DEFAULT_LOCALE: Locale = 'en';
 
 /**
  * Get user's preferred locale
+ * Priority: profile > localStorage > browser/system > default 'en'
  */
-export function getLocale(): Locale {
+export function getLocale(profile?: { language?: string | null } | null): Locale {
+  // 1. Check profile language first
+  if (profile?.language === 'en' || profile?.language === 'ru') {
+    return profile.language;
+  }
+
   if (typeof window === 'undefined') {
+    // On server, check browser/system language if available, otherwise default
     return DEFAULT_LOCALE;
   }
 
-  // Check localStorage first
+  // 2. Check localStorage
   const saved = localStorage.getItem('locale');
   if (saved === 'en' || saved === 'ru') {
     return saved;
   }
 
-  // Fallback to browser language
+  // 3. Check browser/system language
   const browserLang = navigator.language.toLowerCase();
+  if (browserLang.startsWith('ru')) {
+    return 'ru';
+  }
   if (browserLang.startsWith('en')) {
     return 'en';
   }
 
+  // 4. Default to 'en'
   return DEFAULT_LOCALE;
 }
 
@@ -117,6 +128,46 @@ export const UI_STRINGS: Record<string, LocalizedString> = {
   yes: { ru: 'Да', en: 'Yes' },
   maybe: { ru: 'Может быть', en: 'Maybe' },
   no: { ru: 'Нет', en: 'No' },
+
+  // Settings
+  account: { ru: 'Аккаунт', en: 'Account' },
+  logOut: { ru: 'Выйти из аккаунта', en: 'Log out' },
+  privacy: { ru: 'Приватность', en: 'Privacy' },
+  privacyDescription: {
+    ru: 'Ваши данные защищены и никогда не передаются третьим лицам',
+    en: 'Your data is protected and never shared with third parties',
+  },
+  whatWeStore: { ru: 'Что мы храним:', en: 'What we store:' },
+  emailForAuth: { ru: 'Email для авторизации', en: 'Email for authentication' },
+  yourAnswers: { ru: 'Ваши ответы на вопросы', en: 'Your answers to questions' },
+  preferenceProfile: {
+    ru: 'Профиль предпочтений (анонимизированный)',
+    en: 'Preference profile (anonymized)',
+  },
+  partnersSeeOnly: { ru: 'Партнёры видят только:', en: 'Partners see only:' },
+  matches: {
+    ru: 'Совпадения (то, что хотите оба)',
+    en: 'Matches (what both of you want)',
+  },
+  whatYouDontWant: {
+    ru: 'То, что вы НЕ хотите (если партнёр хочет)',
+    en: 'What you do NOT want (if partner wants)',
+  },
+  dangerZone: { ru: 'Опасная зона', en: 'Danger Zone' },
+  deleteAccount: { ru: 'Удалить аккаунт', en: 'Delete account' },
+  deleteAccountWarning: {
+    ru: 'Это действие удалит все ваши данные без возможности восстановления',
+    en: 'This action will delete all your data without the possibility of recovery',
+  },
+  deleteAccountConfirm: {
+    ru: 'Вы уверены, что хотите удалить аккаунт? Это действие необратимо.',
+    en: 'Are you sure you want to delete your account? This action is irreversible.',
+  },
+  deleteAccountContact: {
+    ru: 'Для удаления аккаунта обратитесь в поддержку.',
+    en: 'To delete your account, please contact support.',
+  },
+  language: { ru: 'Язык / Language', en: 'Language' },
 };
 
 /**

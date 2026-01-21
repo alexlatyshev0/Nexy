@@ -1,0 +1,230 @@
+{
+  "id": "pussy_worship",
+  "slug": "pussy-worship",
+  "version": 2,
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Pussy worship",
+    "en": "Pussy Worship"
+  },
+  "subtitle": {
+    "ru": "Он поклоняется её киске",
+    "en": "He worships her pussy"
+  },
+  "ai_description": {
+    "ru": "Pussy worship — благоговейное отношение к киске. Не просто куни, а поклонение: восхищение, обожание, служение.",
+    "en": "Pussy worship — reverent attitude toward her pussy. Not just cunnilingus, but worship: admiration, adoration, service."
+  },
+  "image_prompt": "man kneeling before woman, worshipping her pussy with mouth and hands, looking up at her adoringly, bedroom setting, intimate angle",
+  "intensity": 2,
+  "category": "worship-service",
+  "tags": [
+    "pussy_worship",
+    "worship",
+    "service",
+    "devotion",
+    "oral"
+  ],
+  "elements": [
+    {
+      "id": "how",
+      "label": {
+        "ru": "Как",
+        "en": "How"
+      },
+      "tag_ref": "pussy_worship_how",
+      "follow_ups": [
+        {
+          "id": "actions",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как выражается поклонение?",
+            "en": "How is worship expressed?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "kissing",
+                "label": {
+                  "ru": "Целовать",
+                  "en": "Kissing"
+                }
+              },
+              {
+                "id": "licking",
+                "label": {
+                  "ru": "Лизать",
+                  "en": "Licking"
+                }
+              },
+              {
+                "id": "nuzzling",
+                "label": {
+                  "ru": "Тереться лицом",
+                  "en": "Nuzzling"
+                }
+              },
+              {
+                "id": "verbal",
+                "label": {
+                  "ru": "Словесное восхищение",
+                  "en": "Verbal admiration"
+                }
+              },
+              {
+                "id": "gazing",
+                "label": {
+                  "ru": "Смотреть с обожанием",
+                  "en": "Gazing adoringly"
+                }
+              },
+              {
+                "id": "thanking",
+                "label": {
+                  "ru": "Благодарить за киску",
+                  "en": "Thanking for her pussy"
+                }
+              },
+              {
+                "id": "begging",
+                "label": {
+                  "ru": "Просить разрешения",
+                  "en": "Begging for permission"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "focus",
+      "label": {
+        "ru": "Фокус",
+        "en": "Focus"
+      },
+      "tag_ref": "pussy_worship_focus",
+      "follow_ups": [
+        {
+          "id": "parts",
+          "type": "multi_select",
+          "question": {
+            "ru": "На чём фокус?",
+            "en": "What's the focus?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "clit",
+                "label": {
+                  "ru": "Клитор",
+                  "en": "Clit"
+                }
+              },
+              {
+                "id": "lips",
+                "label": {
+                  "ru": "Губы",
+                  "en": "Lips"
+                }
+              },
+              {
+                "id": "inside",
+                "label": {
+                  "ru": "Внутри",
+                  "en": "Inside"
+                }
+              },
+              {
+                "id": "taste",
+                "label": {
+                  "ru": "Вкус",
+                  "en": "Taste"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "pussy_worship_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "devotion",
+                "label": {
+                  "ru": "Его преданность",
+                  "en": "His devotion"
+                }
+              },
+              {
+                "id": "power",
+                "label": {
+                  "ru": "Её власть",
+                  "en": "Her power"
+                }
+              },
+              {
+                "id": "submission",
+                "label": {
+                  "ru": "Его подчинение",
+                  "en": "His submission"
+                }
+              },
+              {
+                "id": "beauty_worship",
+                "label": {
+                  "ru": "Восхищение красотой",
+                  "en": "Beauty appreciation"
+                }
+              },
+              {
+                "id": "objectification",
+                "label": {
+                  "ru": "Он сведён к служению",
+                  "en": "He's reduced to service"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "interest_scale",
+    "text": {
+      "ru": "Pussy worship — он поклоняется её киске?",
+      "en": "Pussy worship — he worships her pussy?"
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "pussy_worship",
+      "genital_worship"
+    ],
+    "tests_secondary": [
+      "devotion",
+      "service",
+      "male_submission"
+    ]
+  },
+  "user_description": {
+    "ru": "Он на коленях перед ней, поклоняется её киске — целует, лижет, ласкает руками с обожанием и благоговением",
+    "en": "He kneels before her, worships her pussy — kisses, licks, caresses with hands in adoration and reverence"
+  }
+}

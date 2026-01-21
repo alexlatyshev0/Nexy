@@ -1,0 +1,276 @@
+{
+  "id": "edging_f_to_m",
+  "slug": "edging-she-controls-him",
+  "version": 2,
+  "paired_scene": "edging_m_to_f",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Эджинг",
+    "en": "Edging"
+  },
+  "subtitle": {
+    "ru": "Она контролирует его оргазм",
+    "en": "She controls his orgasm"
+  },
+  "ai_description": {
+    "ru": "Она доводит его до грани и останавливается. Снова и снова. Контроль над его оргазмом, накопление желания, мучительное удовольствие.",
+    "en": "She brings him to the edge and stops. Again and again. Control over his orgasm, building desire, torturous pleasure."
+  },
+  "image_prompt": "woman with hand on man's penis, man lying on bed with tense body position, woman kneeling beside him, both nude, bedroom with soft lamp light",
+  "intensity": 3,
+  "category": "control",
+  "tags": [
+    "edging",
+    "orgasm_control",
+    "denial",
+    "teasing",
+    "femdom"
+  ],
+  "elements": [
+    {
+      "id": "method",
+      "label": {
+        "ru": "Метод",
+        "en": "Method"
+      },
+      "tag_ref": "edging_method_m",
+      "follow_ups": [
+        {
+          "id": "how",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как доводить?",
+            "en": "How to edge?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "handjob",
+                "label": {
+                  "ru": "Рукой",
+                  "en": "Handjob"
+                }
+              },
+              {
+                "id": "blowjob",
+                "label": {
+                  "ru": "Минет",
+                  "en": "Blowjob"
+                }
+              },
+              {
+                "id": "riding",
+                "label": {
+                  "ru": "Сверху",
+                  "en": "Riding"
+                }
+              },
+              {
+                "id": "toy",
+                "label": {
+                  "ru": "Игрушкой",
+                  "en": "With toy"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "count",
+      "label": {
+        "ru": "Сколько раз",
+        "en": "How many times"
+      },
+      "tag_ref": "edging_count_m",
+      "follow_ups": [
+        {
+          "id": "times",
+          "type": "single_select",
+          "question": {
+            "ru": "Сколько раз на грань?",
+            "en": "How many edges?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "few",
+                "label": {
+                  "ru": "Несколько раз",
+                  "en": "A few times"
+                }
+              },
+              {
+                "id": "many",
+                "label": {
+                  "ru": "Много раз",
+                  "en": "Many times"
+                }
+              },
+              {
+                "id": "until_begs",
+                "label": {
+                  "ru": "Пока не умоляет",
+                  "en": "Until he begs"
+                }
+              },
+              {
+                "id": "no_orgasm",
+                "label": {
+                  "ru": "Без оргазма вообще",
+                  "en": "No orgasm at all"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "release",
+      "label": {
+        "ru": "Разрешение",
+        "en": "Permission"
+      },
+      "tag_ref": "edging_release_m",
+      "follow_ups": [
+        {
+          "id": "when",
+          "type": "single_select",
+          "question": {
+            "ru": "Когда разрешить?",
+            "en": "When to allow?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "eventually",
+                "label": {
+                  "ru": "В конце сессии",
+                  "en": "Eventually"
+                }
+              },
+              {
+                "id": "earn_it",
+                "label": {
+                  "ru": "Когда заслужит",
+                  "en": "When earned"
+                }
+              },
+              {
+                "id": "maybe",
+                "label": {
+                  "ru": "Может быть",
+                  "en": "Maybe"
+                }
+              },
+              {
+                "id": "ruined",
+                "label": {
+                  "ru": "Испорченный оргазм",
+                  "en": "Ruined orgasm"
+                }
+              },
+              {
+                "id": "on_command",
+                "label": {
+                  "ru": "По команде",
+                  "en": "On command"
+                }
+              },
+              {
+                "id": "long_term",
+                "label": {
+                  "ru": "Долгосрочный запрет",
+                  "en": "Long-term denial"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "edging_appeal_f",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "control",
+                "label": {
+                  "ru": "Контроль над ним",
+                  "en": "Control over him"
+                }
+              },
+              {
+                "id": "his_desperation",
+                "label": {
+                  "ru": "Его отчаяние",
+                  "en": "His desperation"
+                }
+              },
+              {
+                "id": "his_begging",
+                "label": {
+                  "ru": "Его мольбы",
+                  "en": "His begging"
+                }
+              },
+              {
+                "id": "power",
+                "label": {
+                  "ru": "Власть",
+                  "en": "Power"
+                }
+              },
+              {
+                "id": "teasing",
+                "label": {
+                  "ru": "Дразнить его",
+                  "en": "Teasing him"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в эджинге над ним?",
+      "en": "What appeals about edging him?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "edging",
+      "orgasm_control",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "teasing",
+      "denial",
+      "control"
+    ]
+  },
+  "user_description": {
+    "ru": "Она стимулирует его до состояния близкого к оргазму, затем останавливается. Повторяет это несколько раз.",
+    "en": "She stimulates him to near orgasm, then stops. Repeats this multiple times."
+  }
+}

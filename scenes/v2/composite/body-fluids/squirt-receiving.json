@@ -1,0 +1,138 @@
+{
+  "id": "squirt_receiving",
+  "slug": "squirt-receiving",
+  "version": 2,
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Принимать сквирт",
+    "en": "Receiving Squirt"
+  },
+  "subtitle": {
+    "ru": "Когда она кончает фонтаном",
+    "en": "When she cums hard"
+  },
+  "ai_description": {
+    "ru": "М-перспектива на сквирт партнёрши. Куда хочет получить, что делает с жидкостью, какие ощущения.",
+    "en": "M-perspective on partner's squirting. Where he wants it, what he does with it, what sensations."
+  },
+  "image_prompt": "man's face with liquid streaming onto it, woman above him squirting, bedroom setting, his mouth open",
+  "intensity": 3,
+  "category": "body_fluids",
+  "tags": ["squirting", "squirt", "receiving", "drinking", "wet"],
+  "elements": [
+    {
+      "id": "attitude",
+      "label": { "ru": "Отношение", "en": "Attitude" },
+      "tag_ref": "squirt_m_attitude",
+      "follow_ups": [{
+        "id": "how_feel",
+        "type": "single_select",
+        "question": { "ru": "Как относишься к её сквирту?", "en": "How do you feel about her squirting?" },
+        "config": {
+          "options": [
+            { "id": "love", "label": { "ru": "Обожаю, хочу больше", "en": "Love it, want more" } },
+            { "id": "enjoy", "label": { "ru": "Нравится", "en": "Enjoy it" } },
+            { "id": "neutral", "label": { "ru": "Нейтрально", "en": "Neutral" } },
+            { "id": "curious", "label": { "ru": "Хочу попробовать", "en": "Want to try" } },
+            { "id": "not_for_me", "label": { "ru": "Не моё", "en": "Not for me" } }
+          ]
+        }
+      }]
+    },
+    {
+      "id": "where_want",
+      "label": { "ru": "Куда хочешь", "en": "Where you want it" },
+      "tag_ref": "squirt_m_where",
+      "follow_ups": [{
+        "id": "target",
+        "type": "multi_select",
+        "question": { "ru": "Куда хочешь чтобы она сквиртовала?", "en": "Where do you want her to squirt?" },
+        "config": {
+          "options": [
+            { "id": "my_face", "label": { "ru": "Мне в лицо", "en": "On my face" } },
+            { "id": "my_mouth", "label": { "ru": "Мне в рот", "en": "In my mouth" } },
+            { "id": "my_body", "label": { "ru": "На моё тело", "en": "On my body" } },
+            { "id": "my_cock", "label": { "ru": "На мой член", "en": "On my cock" } },
+            { "id": "her_face", "label": { "ru": "Ей в лицо (я направляю)", "en": "On her face (I direct)" } },
+            { "id": "her_mouth", "label": { "ru": "Ей в рот", "en": "In her mouth" } },
+            { "id": "bed", "label": { "ru": "На кровать", "en": "On bed" } }
+          ]
+        }
+      }]
+    },
+    {
+      "id": "what_do",
+      "label": { "ru": "Что делаешь", "en": "What you do" },
+      "tag_ref": "squirt_m_action",
+      "follow_ups": [{
+        "id": "action",
+        "type": "multi_select",
+        "question": { "ru": "Что делаешь с её сквиртом?", "en": "What do you do with her squirt?" },
+        "config": {
+          "options": [
+            { "id": "drink", "label": { "ru": "Пью/глотаю", "en": "Drink/swallow" } },
+            { "id": "savor", "label": { "ru": "Смакую во рту", "en": "Savor in mouth" } },
+            { "id": "spit_on_her", "label": { "ru": "Выплёвываю на неё", "en": "Spit on her" } },
+            { "id": "spit_in_mouth", "label": { "ru": "Выплёвываю ей в рот", "en": "Spit in her mouth" } },
+            { "id": "rub_in", "label": { "ru": "Втираю в её тело", "en": "Rub into her body" } },
+            { "id": "use_as_lube", "label": { "ru": "Использую как смазку", "en": "Use as lube" } },
+            { "id": "let_drip", "label": { "ru": "Даю стечь", "en": "Let it drip" } }
+          ]
+        }
+      }]
+    },
+    {
+      "id": "making_her",
+      "label": { "ru": "Заставить её", "en": "Making her" },
+      "tag_ref": "squirt_m_cause",
+      "follow_ups": [{
+        "id": "how_cause",
+        "type": "multi_select",
+        "question": { "ru": "Как хочешь заставить её сквиртовать?", "en": "How do you want to make her squirt?" },
+        "config": {
+          "options": [
+            { "id": "fingers", "label": { "ru": "Пальцами", "en": "With fingers" } },
+            { "id": "tongue", "label": { "ru": "Языком", "en": "With tongue" } },
+            { "id": "cock", "label": { "ru": "Членом", "en": "With cock" } },
+            { "id": "toy", "label": { "ru": "Игрушкой", "en": "With toy" } },
+            { "id": "combo", "label": { "ru": "Комбинацией", "en": "Combination" } },
+            { "id": "forced", "label": { "ru": "Заставить против воли (CNC)", "en": "Force it (CNC)" } }
+          ]
+        }
+      }]
+    },
+    {
+      "id": "what_appeals",
+      "label": { "ru": "Что привлекает", "en": "What appeals" },
+      "tag_ref": "squirt_m_appeal",
+      "follow_ups": [{
+        "id": "appeal",
+        "type": "multi_select",
+        "question": { "ru": "Что возбуждает в её сквирте?", "en": "What excites about her squirting?" },
+        "config": {
+          "options": [
+            { "id": "proof", "label": { "ru": "Доказательство её оргазма", "en": "Proof of her orgasm" } },
+            { "id": "my_skill", "label": { "ru": "Моё мастерство", "en": "My skill" } },
+            { "id": "her_loss_control", "label": { "ru": "Её потеря контроля", "en": "Her loss of control" } },
+            { "id": "wet_mess", "label": { "ru": "Мокрый беспорядок", "en": "Wet mess" } },
+            { "id": "taste", "label": { "ru": "Вкус", "en": "Taste" } },
+            { "id": "dominance", "label": { "ru": "Я заставил её", "en": "I made her" } },
+            { "id": "worship", "label": { "ru": "Поклоняться её телу", "en": "Worship her body" } }
+          ]
+        }
+      }]
+    }
+  ],
+  "question": {
+    "type": "interest_scale",
+    "text": { "ru": "Она сквиртует на тебя / в тебя?", "en": "She squirts on you / into you?" }
+  },
+  "ai_context": {
+    "tests_primary": ["squirt_receiving", "squirt_drinking"],
+    "tests_secondary": ["wet_play", "body_fluids", "oral"]
+  },
+  "user_description": {
+    "ru": "Она сквиртует — ему в лицо, в рот, на тело. Он пьёт, смакует, выплёвывает на неё.",
+    "en": "She squirts — on his face, in his mouth, on his body. He drinks, savors, spits back on her."
+  }
+}

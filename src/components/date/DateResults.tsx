@@ -61,7 +61,7 @@ export function DateResults({ bothYes, bothMaybe, partnerName }: DateResultsProp
                 >
                   <span className="text-2xl">{getPlaceholderEmoji(scene)}</span>
                   <div className="flex-1">
-                    <p className="text-sm line-clamp-1">{scene.description.slice(0, 50)}...</p>
+                    <p className="text-sm line-clamp-1">{(scene.user_description?.ru || scene.ai_description?.ru || '').slice(0, 50)}...</p>
                     <div className="flex gap-1 mt-1">
                       {scene.dimensions.slice(0, 2).map((dim) => (
                         <Badge key={dim} variant="outline" className="text-xs">
@@ -101,7 +101,7 @@ export function DateResults({ bothYes, bothMaybe, partnerName }: DateResultsProp
                 >
                   <span className="text-2xl">{getPlaceholderEmoji(scene)}</span>
                   <div className="flex-1">
-                    <p className="text-sm line-clamp-1">{scene.description.slice(0, 50)}...</p>
+                    <p className="text-sm line-clamp-1">{(scene.user_description?.ru || scene.ai_description?.ru || '').slice(0, 50)}...</p>
                   </div>
                 </motion.div>
               ))}

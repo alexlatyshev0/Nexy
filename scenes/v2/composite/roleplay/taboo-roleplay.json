@@ -1,0 +1,263 @@
+{
+  "id": "taboo_roleplay",
+  "slug": "taboo-roleplay",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Табуированные ролевые",
+    "en": "Taboo Roleplay"
+  },
+  "subtitle": {
+    "ru": "Запретные семейные фантазии",
+    "en": "Forbidden family fantasies"
+  },
+  "ai_description": {
+    "ru": "Ролевая игра в запретные отношения — step-siblings, step-parents. Не реальный инцест, а фантазия о запретном. Популярнейший жанр.",
+    "en": "Roleplay of forbidden relationships — step-siblings, step-parents. Not real incest, but fantasy of the forbidden. Most popular genre."
+  },
+  "image_prompt": "man and woman in domestic setting, bedroom or living room, intimate positioning, forbidden dynamic between characters",
+  "intensity": 4,
+  "category": "roleplay",
+  "tags": [
+    "taboo",
+    "step_fantasy",
+    "forbidden",
+    "roleplay",
+    "family_roleplay"
+  ],
+  "elements": [
+    {
+      "id": "scenario",
+      "label": {
+        "ru": "Сценарий",
+        "en": "Scenario"
+      },
+      "tag_ref": "taboo_scenario",
+      "follow_ups": [
+        {
+          "id": "which",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие сценарии?",
+            "en": "Which scenarios?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "step_siblings",
+                "label": {
+                  "ru": "Сводные брат/сестра",
+                  "en": "Step-siblings"
+                }
+              },
+              {
+                "id": "step_mom",
+                "label": {
+                  "ru": "Мачеха",
+                  "en": "Step-mom"
+                }
+              },
+              {
+                "id": "step_dad",
+                "label": {
+                  "ru": "Отчим",
+                  "en": "Step-dad"
+                }
+              },
+              {
+                "id": "uncle_aunt",
+                "label": {
+                  "ru": "Дядя/тётя",
+                  "en": "Uncle/aunt"
+                }
+              },
+              {
+                "id": "in_laws",
+                "label": {
+                  "ru": "Родственники супруга",
+                  "en": "In-laws"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dynamic",
+      "label": {
+        "ru": "Динамика",
+        "en": "Dynamic"
+      },
+      "tag_ref": "taboo_dynamic",
+      "follow_ups": [
+        {
+          "id": "how",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какая динамика?",
+            "en": "What dynamic?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "seduction",
+                "label": {
+                  "ru": "Соблазнение",
+                  "en": "Seduction"
+                }
+              },
+              {
+                "id": "caught",
+                "label": {
+                  "ru": "Застали (мастурбирует и т.д.)",
+                  "en": "Caught (masturbating etc.)"
+                }
+              },
+              {
+                "id": "blackmail",
+                "label": {
+                  "ru": "Шантаж",
+                  "en": "Blackmail"
+                }
+              },
+              {
+                "id": "stuck",
+                "label": {
+                  "ru": "Застрял/застряла (stuck)",
+                  "en": "Stuck scenario"
+                }
+              },
+              {
+                "id": "sharing_bed",
+                "label": {
+                  "ru": "Вынуждены делить кровать",
+                  "en": "Forced to share bed"
+                }
+              },
+              {
+                "id": "secret",
+                "label": {
+                  "ru": "Тайные отношения",
+                  "en": "Secret relationship"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "taboo_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "forbidden",
+                "label": {
+                  "ru": "Запретность",
+                  "en": "Forbidden aspect"
+                }
+              },
+              {
+                "id": "taboo",
+                "label": {
+                  "ru": "Табу",
+                  "en": "Taboo"
+                }
+              },
+              {
+                "id": "power_age",
+                "label": {
+                  "ru": "Разница в возрасте/власти",
+                  "en": "Age/power difference"
+                }
+              },
+              {
+                "id": "domestic",
+                "label": {
+                  "ru": "Домашняя обстановка",
+                  "en": "Domestic setting"
+                }
+              },
+              {
+                "id": "secrecy",
+                "label": {
+                  "ru": "Секретность",
+                  "en": "Secrecy"
+                }
+              },
+              {
+                "id": "corruption",
+                "label": {
+                  "ru": "Развращение",
+                  "en": "Corruption"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "boundary",
+    "text": {
+      "ru": "Табуированные семейные ролевые — интересуют?",
+      "en": "Taboo family roleplay — interested?"
+    },
+    "config": {
+      "boundary_options": [
+        {
+          "id": "hard_no",
+          "label": {
+            "ru": "Нет, неприемлемо",
+            "en": "No, unacceptable"
+          }
+        },
+        {
+          "id": "curious",
+          "label": {
+            "ru": "Интересно как фантазия",
+            "en": "Curious as fantasy"
+          }
+        },
+        {
+          "id": "yes",
+          "label": {
+            "ru": "Да, возбуждает",
+            "en": "Yes, exciting"
+          }
+        }
+      ]
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "taboo_roleplay",
+      "step_fantasy",
+      "forbidden"
+    ],
+    "tests_secondary": [
+      "roleplay",
+      "power_dynamic",
+      "secrecy"
+    ]
+  },
+  "user_description": {
+    "ru": "Мужчина и женщина играют роли сводных родственников и занимаются сексом",
+    "en": "A man and woman roleplay as step-family members and have sex"
+  }
+}

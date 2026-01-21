@@ -1,5 +1,9 @@
--- Intimate Discovery Database Schema (FULL)
--- Version: 2.1
+-- ⚠️ DEPRECATED: This file is OUTDATED and does not reflect V2 structure
+-- Use migrations/005_scenes_v2_composite.sql and migrations/011_finalize_v2.sql instead
+-- See docs/DATABASE_SCHEMA_V2.md for current schema documentation
+--
+-- Intimate Discovery Database Schema (FULL) - OLD VERSION
+-- Version: 2.1 (OUTDATED)
 -- Run this in your Supabase SQL Editor
 -- This file combines base schema + exclusions + partner chat
 

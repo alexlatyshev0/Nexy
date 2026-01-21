@@ -1,0 +1,311 @@
+{
+  "id": "clothing",
+  "slug": "clothing",
+  "version": 2,
+  "type": "image_select",
+  "order": 11,
+
+  "title": { "ru": "Одежда", "en": "Clothing" },
+  "subtitle": { "ru": "Что надеть в постели?", "en": "What to wear in bed?" },
+  "description": {
+    "ru": "Выбери из картинок, что возбуждает на партнёре и на тебе",
+    "en": "Select from images what turns you on - on partner and on yourself"
+  },
+
+  "intensity": 2,
+  "tags": ["clothing", "lingerie", "underwear", "costume", "visual"],
+
+  "passes": [
+    {
+      "id": "on_her",
+      "question": {
+        "ru": "Что возбуждает на ней?",
+        "en": "What's hot on her?"
+      },
+      "show_for": ["male", "female_attracted_to_women"]
+    },
+    {
+      "id": "on_him",
+      "question": {
+        "ru": "Что возбуждает на нём?",
+        "en": "What's hot on him?"
+      },
+      "show_for": ["female", "male_attracted_to_men"]
+    },
+    {
+      "id": "on_me",
+      "question": {
+        "ru": "В чём ты себя чувствуешь сексуально?",
+        "en": "What makes you feel sexy?"
+      },
+      "show_for": ["all"]
+    }
+  ],
+
+  "categories": [
+    {
+      "id": "lingerie_female",
+      "label": { "ru": "Женское бельё", "en": "Women's lingerie" },
+      "for_passes": ["on_her", "on_me_female"],
+      "options": [
+        {
+          "id": "lace_bra_panty",
+          "label": { "ru": "Кружевной комплект", "en": "Lace bra & panty set" },
+          "image_prompt": "elegant lace lingerie set, bra and panties, feminine",
+          "_image": "images/lingerie/lace_set.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "bodysuit",
+          "label": { "ru": "Боди", "en": "Bodysuit" },
+          "image_prompt": "sexy bodysuit lingerie, form fitting",
+          "_image": "images/lingerie/bodysuit.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "babydoll",
+          "label": { "ru": "Бэбидолл", "en": "Babydoll" },
+          "image_prompt": "sheer babydoll nightie, flowing fabric",
+          "_image": "images/lingerie/babydoll.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "stockings_garter",
+          "label": { "ru": "Чулки с поясом", "en": "Stockings & garter" },
+          "image_prompt": "thigh high stockings with garter belt, elegant",
+          "_image": "images/lingerie/stockings.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "corset",
+          "label": { "ru": "Корсет", "en": "Corset" },
+          "image_prompt": "waist cinching corset, boned structure",
+          "_image": "images/lingerie/corset.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "thong",
+          "label": { "ru": "Стринги", "en": "Thong" },
+          "image_prompt": "minimal thong underwear, revealing",
+          "_image": "images/lingerie/thong.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "crotchless",
+          "label": { "ru": "С вырезом", "en": "Crotchless" },
+          "image_prompt": "crotchless panties or bodysuit, accessible",
+          "_image": "images/lingerie/crotchless.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "his_shirt",
+          "label": { "ru": "Его рубашка", "en": "His shirt" },
+          "image_prompt": "woman wearing oversized men's dress shirt, casual sexy",
+          "_image": "images/lingerie/his_shirt.jpg",
+          "_image_note": "TODO: Generate image"
+        }
+      ]
+    },
+    {
+      "id": "fetish_female",
+      "label": { "ru": "Фетиш одежда (она)", "en": "Fetish wear (her)" },
+      "for_passes": ["on_her", "on_me_female"],
+      "options": [
+        {
+          "id": "latex_dress",
+          "label": { "ru": "Латексное платье", "en": "Latex dress" },
+          "image_prompt": "shiny latex dress, form fitting, glossy",
+          "_image": "images/fetish/latex_dress.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "leather_harness",
+          "label": { "ru": "Кожаная портупея", "en": "Leather harness" },
+          "image_prompt": "leather body harness, straps across torso",
+          "_image": "images/fetish/harness_f.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "pvc_catsuit",
+          "label": { "ru": "PVC комбинезон", "en": "PVC catsuit" },
+          "image_prompt": "shiny PVC catsuit, full body, zipper",
+          "_image": "images/fetish/catsuit.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "collar",
+          "label": { "ru": "Ошейник", "en": "Collar" },
+          "image_prompt": "leather collar with ring, BDSM accessory",
+          "_image": "images/fetish/collar.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "high_heels",
+          "label": { "ru": "Высокие каблуки", "en": "High heels" },
+          "image_prompt": "stiletto high heels, sexy footwear",
+          "_image": "images/fetish/heels.jpg",
+          "_image_note": "TODO: Generate image"
+        }
+      ]
+    },
+    {
+      "id": "costumes_female",
+      "label": { "ru": "Костюмы (она)", "en": "Costumes (her)" },
+      "for_passes": ["on_her", "on_me_female"],
+      "options": [
+        {
+          "id": "maid",
+          "label": { "ru": "Горничная", "en": "Maid" },
+          "image_prompt": "French maid costume, short dress with apron",
+          "_image": "images/costumes/maid.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "nurse",
+          "label": { "ru": "Медсестра", "en": "Nurse" },
+          "image_prompt": "sexy nurse costume, short white dress",
+          "_image": "images/costumes/nurse.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "schoolgirl",
+          "label": { "ru": "Школьница", "en": "Schoolgirl" },
+          "image_prompt": "plaid skirt schoolgirl outfit, mature adult woman",
+          "_image": "images/costumes/schoolgirl.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "secretary",
+          "label": { "ru": "Секретарша", "en": "Secretary" },
+          "image_prompt": "tight pencil skirt, glasses, blouse",
+          "_image": "images/costumes/secretary.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "bunny",
+          "label": { "ru": "Зайка", "en": "Bunny" },
+          "image_prompt": "playboy bunny costume, ears and tail",
+          "_image": "images/costumes/bunny.jpg",
+          "_image_note": "TODO: Generate image"
+        }
+      ]
+    },
+    {
+      "id": "underwear_male",
+      "label": { "ru": "Мужское бельё", "en": "Men's underwear" },
+      "for_passes": ["on_him", "on_me_male"],
+      "options": [
+        {
+          "id": "boxer_briefs",
+          "label": { "ru": "Боксеры", "en": "Boxer briefs" },
+          "image_prompt": "fitted boxer briefs, masculine",
+          "_image": "images/male/boxer_briefs.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "briefs",
+          "label": { "ru": "Плавки", "en": "Briefs" },
+          "image_prompt": "classic briefs underwear, minimal",
+          "_image": "images/male/briefs.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "jockstrap",
+          "label": { "ru": "Джоки", "en": "Jockstrap" },
+          "image_prompt": "athletic jockstrap, sporty",
+          "_image": "images/male/jockstrap.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "nothing",
+          "label": { "ru": "Ничего", "en": "Nothing" },
+          "image_prompt": "just pants, no underwear suggestion",
+          "_image": "images/male/commando.jpg",
+          "_image_note": "TODO: Generate image"
+        }
+      ]
+    },
+    {
+      "id": "fetish_male",
+      "label": { "ru": "Фетиш (он)", "en": "Fetish (him)" },
+      "for_passes": ["on_him", "on_me_male"],
+      "options": [
+        {
+          "id": "leather_harness_m",
+          "label": { "ru": "Кожаная портупея", "en": "Leather harness" },
+          "image_prompt": "leather chest harness, masculine",
+          "_image": "images/fetish/harness_m.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "collar_m",
+          "label": { "ru": "Ошейник", "en": "Collar" },
+          "image_prompt": "leather collar on man, submissive",
+          "_image": "images/fetish/collar_m.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "suit_tie",
+          "label": { "ru": "Костюм с галстуком", "en": "Suit & tie" },
+          "image_prompt": "man in formal suit, dominant aesthetic",
+          "_image": "images/male/suit.jpg",
+          "_image_note": "TODO: Generate image"
+        }
+      ]
+    },
+    {
+      "id": "undressing",
+      "label": { "ru": "Как раздеваться?", "en": "How to undress?" },
+      "for_passes": ["on_her", "on_him", "on_me"],
+      "options": [
+        {
+          "id": "slow_tease",
+          "label": { "ru": "Медленно, с дразнением", "en": "Slow tease" },
+          "image_prompt": "slow sensual undressing, one piece at a time",
+          "_image": "images/undress/slow.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "rip_off",
+          "label": { "ru": "Сорвать с нетерпением", "en": "Rip off eagerly" },
+          "image_prompt": "clothes being torn off, passionate urgency",
+          "_image": "images/undress/rip.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "stay_dressed",
+          "label": { "ru": "Остаться частично одетым", "en": "Stay partially dressed" },
+          "image_prompt": "sex with clothes still on, pushed aside",
+          "_image": "images/undress/partial.jpg",
+          "_image_note": "TODO: Generate image"
+        },
+        {
+          "id": "undressed_by_partner",
+          "label": { "ru": "Партнёр раздевает", "en": "Undressed by partner" },
+          "image_prompt": "being undressed by another person, passive",
+          "_image": "images/undress/by_partner.jpg",
+          "_image_note": "TODO: Generate image"
+        }
+      ]
+    }
+  ],
+
+  "config": {
+    "multi_select": true,
+    "show_images": true,
+    "images_ready": false,
+    "_comment": "Set images_ready to true when images are generated"
+  },
+
+  "ai_context": {
+    "tests_primary": ["clothing_preference", "visual_arousal"],
+    "tests_secondary": ["lingerie", "fetish_wear", "costume"],
+    "profile_signals": {
+      "if_lingerie": "appreciates_feminine",
+      "if_fetish": "kink_oriented",
+      "if_costumes": "roleplay_interested",
+      "if_nothing": "naturalist",
+      "if_rip_off": "passionate_urgent"
+    }
+  }
+}

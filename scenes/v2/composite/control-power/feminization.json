@@ -1,0 +1,282 @@
+{
+  "id": "feminization",
+  "slug": "feminization",
+  "version": 2,
+  "role_direction": "f_dom_m_sub",
+  "title": {
+    "ru": "Феминизация",
+    "en": "Feminization"
+  },
+  "subtitle": {
+    "ru": "Переодевание и женственность",
+    "en": "Crossdressing and femininity"
+  },
+  "ai_description": {
+    "ru": "Когда он надевает женскую одежду, макияж, ведёт себя женственно. От лёгкого переодевания до полного образа.",
+    "en": "When he wears women's clothing, makeup, acts feminine. From light crossdressing to full transformation."
+  },
+  "image_prompt": "man wearing feminine lingerie and makeup, woman adjusting his outfit, bedroom with vanity mirror",
+  "intensity": 3,
+  "category": "control-power",
+  "tags": [
+    "feminization",
+    "crossdressing",
+    "sissy",
+    "gender_play",
+    "power_exchange"
+  ],
+  "elements": [
+    {
+      "id": "what_wear",
+      "label": {
+        "ru": "Что надевать",
+        "en": "What to wear"
+      },
+      "tag_ref": "fem_clothing",
+      "follow_ups": [
+        {
+          "id": "items",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какая одежда?",
+            "en": "What clothing?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "panties",
+                "label": {
+                  "ru": "Трусики",
+                  "en": "Panties"
+                }
+              },
+              {
+                "id": "lingerie",
+                "label": {
+                  "ru": "Бельё",
+                  "en": "Lingerie"
+                }
+              },
+              {
+                "id": "stockings",
+                "label": {
+                  "ru": "Чулки",
+                  "en": "Stockings"
+                }
+              },
+              {
+                "id": "dress",
+                "label": {
+                  "ru": "Платье",
+                  "en": "Dress"
+                }
+              },
+              {
+                "id": "heels",
+                "label": {
+                  "ru": "Каблуки",
+                  "en": "Heels"
+                }
+              },
+              {
+                "id": "makeup",
+                "label": {
+                  "ru": "Макияж",
+                  "en": "Makeup"
+                }
+              },
+              {
+                "id": "wig",
+                "label": {
+                  "ru": "Парик",
+                  "en": "Wig"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "depth",
+      "label": {
+        "ru": "Глубина",
+        "en": "Depth"
+      },
+      "tag_ref": "fem_depth",
+      "follow_ups": [
+        {
+          "id": "level",
+          "type": "single_select",
+          "question": {
+            "ru": "Насколько глубоко?",
+            "en": "How deep?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "light",
+                "label": {
+                  "ru": "Лёгкое (один элемент)",
+                  "en": "Light (one item)"
+                }
+              },
+              {
+                "id": "partial",
+                "label": {
+                  "ru": "Частичное",
+                  "en": "Partial"
+                }
+              },
+              {
+                "id": "full",
+                "label": {
+                  "ru": "Полный образ",
+                  "en": "Full transformation"
+                }
+              },
+              {
+                "id": "lifestyle",
+                "label": {
+                  "ru": "За пределами спальни",
+                  "en": "Beyond bedroom"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dynamic",
+      "label": {
+        "ru": "Динамика",
+        "en": "Dynamic"
+      },
+      "tag_ref": "fem_dynamic",
+      "follow_ups": [
+        {
+          "id": "how",
+          "type": "single_select",
+          "question": {
+            "ru": "Какая динамика?",
+            "en": "What dynamic?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "self_desire",
+                "label": {
+                  "ru": "Его желание",
+                  "en": "His desire"
+                }
+              },
+              {
+                "id": "her_request",
+                "label": {
+                  "ru": "Она просит",
+                  "en": "She requests"
+                }
+              },
+              {
+                "id": "forced",
+                "label": {
+                  "ru": "Принуждение",
+                  "en": "Forced"
+                }
+              },
+              {
+                "id": "mutual",
+                "label": {
+                  "ru": "Обоюдное",
+                  "en": "Mutual"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "fem_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "taboo",
+                "label": {
+                  "ru": "Запретность",
+                  "en": "Taboo"
+                }
+              },
+              {
+                "id": "power",
+                "label": {
+                  "ru": "Власть",
+                  "en": "Power"
+                }
+              },
+              {
+                "id": "humiliation",
+                "label": {
+                  "ru": "Унижение",
+                  "en": "Humiliation"
+                }
+              },
+              {
+                "id": "aesthetic",
+                "label": {
+                  "ru": "Эстетика",
+                  "en": "Aesthetic"
+                }
+              },
+              {
+                "id": "roleplay",
+                "label": {
+                  "ru": "Роль",
+                  "en": "Roleplay"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в феминизации?",
+      "en": "What appeals about feminization?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "feminization",
+      "crossdressing",
+      "sissy"
+    ],
+    "tests_secondary": [
+      "gender_play",
+      "power_exchange",
+      "humiliation"
+    ]
+  },
+  "user_description": {
+    "ru": "Он надевает женскую одежду, макияж, парик. Она превращает его в девочку.",
+    "en": "He wears women's clothes, makeup, wig. She transforms him into a girl."
+  }
+}

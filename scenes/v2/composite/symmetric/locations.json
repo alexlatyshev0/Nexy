@@ -1,0 +1,658 @@
+{
+  "id": "locations",
+  "slug": "sex-locations",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Локации",
+    "en": "Locations"
+  },
+  "ai_description": {
+    "ru": "Спальня, душ, машина, офис, природа... Где заниматься сексом? Каждое место даёт своё ощущение — риск, комфорт, новизна.",
+    "en": "Bedroom, shower, car, office, outdoors... Where to have sex? Each place gives its own feeling — risk, comfort, novelty."
+  },
+  "image_prompt": "man and woman having sex on hotel balcony, woman pressed against railing facing city view, man behind her, urban skyline background, evening time",
+  "intensity": 2,
+  "category": "symmetric",
+  "tags": [
+    "locations",
+    "places",
+    "outdoor",
+    "public",
+    "car_sex",
+    "shower_sex"
+  ],
+  "elements": [
+    {
+      "id": "bedroom",
+      "label": {
+        "ru": "Спальня",
+        "en": "Bedroom"
+      },
+      "tag_ref": "bedroom",
+      "follow_ups": [
+        {
+          "id": "bedroom_style",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какая атмосфера?",
+            "en": "What atmosphere?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "comfortable",
+                "label": {
+                  "ru": "Комфортная, привычная",
+                  "en": "Comfortable, familiar"
+                }
+              },
+              {
+                "id": "romantic",
+                "label": {
+                  "ru": "Романтичная (свечи)",
+                  "en": "Romantic (candles)"
+                }
+              },
+              {
+                "id": "messy",
+                "label": {
+                  "ru": "Хаотичная, страстная",
+                  "en": "Messy, passionate"
+                }
+              },
+              {
+                "id": "planned",
+                "label": {
+                  "ru": "Подготовленная",
+                  "en": "Prepared"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "shower",
+      "label": {
+        "ru": "Душ/ванная",
+        "en": "Shower/bathroom"
+      },
+      "tag_ref": "shower_sex",
+      "follow_ups": [
+        {
+          "id": "shower_type",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что именно?",
+            "en": "What exactly?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "shower",
+                "label": {
+                  "ru": "В душе",
+                  "en": "In shower"
+                }
+              },
+              {
+                "id": "bathtub",
+                "label": {
+                  "ru": "В ванной",
+                  "en": "In bathtub"
+                }
+              },
+              {
+                "id": "counter",
+                "label": {
+                  "ru": "На раковине",
+                  "en": "On counter"
+                }
+              },
+              {
+                "id": "steam",
+                "label": {
+                  "ru": "В пару",
+                  "en": "Steamy"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "shower_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What do you like?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "water",
+                "label": {
+                  "ru": "Вода, мокро",
+                  "en": "Water, wet"
+                }
+              },
+              {
+                "id": "naked_together",
+                "label": {
+                  "ru": "Голые вместе",
+                  "en": "Naked together"
+                }
+              },
+              {
+                "id": "slippery",
+                "label": {
+                  "ru": "Скользко",
+                  "en": "Slippery"
+                }
+              },
+              {
+                "id": "washing",
+                "label": {
+                  "ru": "Мыть друг друга",
+                  "en": "Washing each other"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "label": {
+        "ru": "Кухня",
+        "en": "Kitchen"
+      },
+      "tag_ref": "kitchen_sex",
+      "follow_ups": [
+        {
+          "id": "kitchen_where",
+          "type": "multi_select",
+          "question": {
+            "ru": "Где на кухне?",
+            "en": "Where in kitchen?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "counter",
+                "label": {
+                  "ru": "На столешнице",
+                  "en": "On counter"
+                }
+              },
+              {
+                "id": "table",
+                "label": {
+                  "ru": "На столе",
+                  "en": "On table"
+                }
+              },
+              {
+                "id": "against_fridge",
+                "label": {
+                  "ru": "Прижав к холодильнику",
+                  "en": "Against fridge"
+                }
+              },
+              {
+                "id": "floor",
+                "label": {
+                  "ru": "На полу",
+                  "en": "On floor"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "car",
+      "label": {
+        "ru": "Машина",
+        "en": "Car"
+      },
+      "tag_ref": "car_sex",
+      "follow_ups": [
+        {
+          "id": "car_where",
+          "type": "multi_select",
+          "question": {
+            "ru": "Где в машине?",
+            "en": "Where in car?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "backseat",
+                "label": {
+                  "ru": "Заднее сиденье",
+                  "en": "Backseat"
+                }
+              },
+              {
+                "id": "front",
+                "label": {
+                  "ru": "Переднее сиденье",
+                  "en": "Front seat"
+                }
+              },
+              {
+                "id": "parked",
+                "label": {
+                  "ru": "Припаркованная",
+                  "en": "Parked"
+                }
+              },
+              {
+                "id": "secluded",
+                "label": {
+                  "ru": "В укромном месте",
+                  "en": "Secluded spot"
+                }
+              },
+              {
+                "id": "public_parking",
+                "label": {
+                  "ru": "Публичная парковка (риск)",
+                  "en": "Public parking (risk)"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "car_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что привлекает?",
+            "en": "What appeals?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "spontaneous",
+                "label": {
+                  "ru": "Спонтанность",
+                  "en": "Spontaneity"
+                }
+              },
+              {
+                "id": "risk",
+                "label": {
+                  "ru": "Риск быть замеченным",
+                  "en": "Risk of being caught"
+                }
+              },
+              {
+                "id": "cramped",
+                "label": {
+                  "ru": "Теснота, близость",
+                  "en": "Cramped, close"
+                }
+              },
+              {
+                "id": "nostalgia",
+                "label": {
+                  "ru": "Ностальгия (юность)",
+                  "en": "Nostalgia (youth)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "outdoor",
+      "label": {
+        "ru": "На природе",
+        "en": "Outdoors"
+      },
+      "tag_ref": "outdoor_sex",
+      "follow_ups": [
+        {
+          "id": "outdoor_where",
+          "type": "multi_select",
+          "question": {
+            "ru": "Где на природе?",
+            "en": "Where outdoors?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "forest",
+                "label": {
+                  "ru": "В лесу",
+                  "en": "In forest"
+                }
+              },
+              {
+                "id": "beach",
+                "label": {
+                  "ru": "На пляже",
+                  "en": "On beach"
+                }
+              },
+              {
+                "id": "park",
+                "label": {
+                  "ru": "В парке",
+                  "en": "In park"
+                }
+              },
+              {
+                "id": "balcony",
+                "label": {
+                  "ru": "На балконе",
+                  "en": "On balcony"
+                }
+              },
+              {
+                "id": "rooftop",
+                "label": {
+                  "ru": "На крыше",
+                  "en": "On rooftop"
+                }
+              },
+              {
+                "id": "camping",
+                "label": {
+                  "ru": "В палатке",
+                  "en": "In tent"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "outdoor_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что привлекает?",
+            "en": "What appeals?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "freedom",
+                "label": {
+                  "ru": "Свобода",
+                  "en": "Freedom"
+                }
+              },
+              {
+                "id": "nature",
+                "label": {
+                  "ru": "Близость к природе",
+                  "en": "Closeness to nature"
+                }
+              },
+              {
+                "id": "risk",
+                "label": {
+                  "ru": "Риск",
+                  "en": "Risk"
+                }
+              },
+              {
+                "id": "novelty",
+                "label": {
+                  "ru": "Новизна",
+                  "en": "Novelty"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "office",
+      "label": {
+        "ru": "Офис/работа",
+        "en": "Office/work"
+      },
+      "tag_ref": "office_sex",
+      "follow_ups": [
+        {
+          "id": "office_where",
+          "type": "multi_select",
+          "question": {
+            "ru": "Где в офисе?",
+            "en": "Where in office?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "desk",
+                "label": {
+                  "ru": "На столе",
+                  "en": "On desk"
+                }
+              },
+              {
+                "id": "bathroom",
+                "label": {
+                  "ru": "В туалете",
+                  "en": "In bathroom"
+                }
+              },
+              {
+                "id": "storage",
+                "label": {
+                  "ru": "В подсобке",
+                  "en": "In storage room"
+                }
+              },
+              {
+                "id": "after_hours",
+                "label": {
+                  "ru": "После работы",
+                  "en": "After hours"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "hotel",
+      "label": {
+        "ru": "Отель",
+        "en": "Hotel"
+      },
+      "tag_ref": "hotel_sex",
+      "follow_ups": [
+        {
+          "id": "hotel_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What do you like?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "anonymity",
+                "label": {
+                  "ru": "Анонимность",
+                  "en": "Anonymity"
+                }
+              },
+              {
+                "id": "big_bed",
+                "label": {
+                  "ru": "Большая кровать",
+                  "en": "Big bed"
+                }
+              },
+              {
+                "id": "no_cleanup",
+                "label": {
+                  "ru": "Не надо убирать",
+                  "en": "No cleanup"
+                }
+              },
+              {
+                "id": "loud",
+                "label": {
+                  "ru": "Можно громко",
+                  "en": "Can be loud"
+                }
+              },
+              {
+                "id": "mirrors",
+                "label": {
+                  "ru": "Зеркала",
+                  "en": "Mirrors"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "public",
+      "label": {
+        "ru": "Публичное место",
+        "en": "Public place"
+      },
+      "tag_ref": "public_sex",
+      "follow_ups": [
+        {
+          "id": "public_where",
+          "type": "multi_select",
+          "question": {
+            "ru": "Где?",
+            "en": "Where?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "restroom",
+                "label": {
+                  "ru": "Туалет ресторана/клуба",
+                  "en": "Restaurant/club restroom"
+                }
+              },
+              {
+                "id": "changing_room",
+                "label": {
+                  "ru": "Примерочная",
+                  "en": "Changing room"
+                }
+              },
+              {
+                "id": "elevator",
+                "label": {
+                  "ru": "Лифт",
+                  "en": "Elevator"
+                }
+              },
+              {
+                "id": "airplane",
+                "label": {
+                  "ru": "Самолёт",
+                  "en": "Airplane"
+                }
+              },
+              {
+                "id": "train",
+                "label": {
+                  "ru": "Поезд",
+                  "en": "Train"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "public_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что привлекает?",
+            "en": "What appeals?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "thrill",
+                "label": {
+                  "ru": "Острые ощущения",
+                  "en": "Thrill"
+                }
+              },
+              {
+                "id": "risk",
+                "label": {
+                  "ru": "Риск попасться",
+                  "en": "Risk of getting caught"
+                }
+              },
+              {
+                "id": "forbidden",
+                "label": {
+                  "ru": "Запретность",
+                  "en": "Forbidden"
+                }
+              },
+              {
+                "id": "quick",
+                "label": {
+                  "ru": "Быстро, страстно",
+                  "en": "Quick, passionate"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Где тебе нравится заниматься сексом?",
+      "en": "Where do you like to have sex?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "locations",
+      "places",
+      "variety"
+    ],
+    "tests_secondary": [
+      "outdoor",
+      "public",
+      "spontaneous"
+    ],
+    "emotional_range": {
+      "positive": [
+        "adventurous",
+        "enjoys variety",
+        "risk-taker"
+      ],
+      "negative": [
+        "prefers bedroom",
+        "needs privacy",
+        "cautious"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Секс в разных местах — спальня, душ, машина, балкон, природа, отель.",
+    "en": "Sex in different places — bedroom, shower, car, balcony, outdoors, hotel."
+  }
+}

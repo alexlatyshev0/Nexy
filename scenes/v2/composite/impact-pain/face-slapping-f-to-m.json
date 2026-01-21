@@ -1,0 +1,255 @@
+{
+  "id": "face_slapping_f_to_m",
+  "slug": "face-slapping-she-slaps-him",
+  "version": 2,
+  "paired_scene": "face_slapping_m_to_f",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Пощёчины",
+    "en": "Face Slapping"
+  },
+  "subtitle": {
+    "ru": "Она даёт ему пощёчину",
+    "en": "She slaps him"
+  },
+  "ai_description": {
+    "ru": "Её рука касается его щеки — резко, властно. Femdom, наказание, или просто проверка его реакции. Она контролирует.",
+    "en": "Her hand meets his cheek — sharp, commanding. Femdom, punishment, or just testing his reaction. She's in control."
+  },
+  "image_prompt": "woman slapping man's face with her hand, his head turning from impact, indoor setting",
+  "intensity": 4,
+  "category": "impact-pain",
+  "tags": [
+    "face_slapping",
+    "slap",
+    "femdom",
+    "impact",
+    "rough"
+  ],
+  "elements": [
+    {
+      "id": "intensity",
+      "label": {
+        "ru": "Интенсивность",
+        "en": "Intensity"
+      },
+      "tag_ref": "slap_intensity_m",
+      "follow_ups": [
+        {
+          "id": "level",
+          "type": "single_select",
+          "question": {
+            "ru": "Насколько сильно?",
+            "en": "How hard?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "symbolic",
+                "label": {
+                  "ru": "Символически",
+                  "en": "Symbolic"
+                }
+              },
+              {
+                "id": "light",
+                "label": {
+                  "ru": "Лёгкая",
+                  "en": "Light"
+                }
+              },
+              {
+                "id": "moderate",
+                "label": {
+                  "ru": "Умеренная",
+                  "en": "Moderate"
+                }
+              },
+              {
+                "id": "hard",
+                "label": {
+                  "ru": "Сильная",
+                  "en": "Hard"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Контекст",
+        "en": "Context"
+      },
+      "tag_ref": "slap_context_m",
+      "follow_ups": [
+        {
+          "id": "when",
+          "type": "multi_select",
+          "question": {
+            "ru": "В каком контексте?",
+            "en": "In what context?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "femdom",
+                "label": {
+                  "ru": "Femdom сессия",
+                  "en": "Femdom session"
+                }
+              },
+              {
+                "id": "punishment",
+                "label": {
+                  "ru": "Наказание",
+                  "en": "Punishment"
+                }
+              },
+              {
+                "id": "attention",
+                "label": {
+                  "ru": "Привлечь внимание",
+                  "en": "Get attention"
+                }
+              },
+              {
+                "id": "during_sex",
+                "label": {
+                  "ru": "Во время секса",
+                  "en": "During sex"
+                }
+              },
+              {
+                "id": "humiliation",
+                "label": {
+                  "ru": "Унижение",
+                  "en": "Humiliation"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "slap_appeal_m",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "her_power",
+                "label": {
+                  "ru": "Её власть",
+                  "en": "Her power"
+                }
+              },
+              {
+                "id": "submission",
+                "label": {
+                  "ru": "Подчинение ей",
+                  "en": "Submitting to her"
+                }
+              },
+              {
+                "id": "shock",
+                "label": {
+                  "ru": "Шок",
+                  "en": "Shock"
+                }
+              },
+              {
+                "id": "humiliation",
+                "label": {
+                  "ru": "Унижение",
+                  "en": "Humiliation"
+                }
+              },
+              {
+                "id": "pain",
+                "label": {
+                  "ru": "Боль",
+                  "en": "Pain"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "boundary",
+    "text": {
+      "ru": "Когда она даёт пощёчину — возбуждает?",
+      "en": "When she slaps — exciting?"
+    },
+    "config": {
+      "boundary_options": [
+        {
+          "id": "hard_no",
+          "label": {
+            "ru": "Нет",
+            "en": "No"
+          }
+        },
+        {
+          "id": "curious",
+          "label": {
+            "ru": "Интересно",
+            "en": "Curious"
+          }
+        },
+        {
+          "id": "yes",
+          "label": {
+            "ru": "Да",
+            "en": "Yes"
+          }
+        }
+      ]
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "face_slapping",
+      "femdom",
+      "impact"
+    ],
+    "tests_secondary": [
+      "humiliation",
+      "submission",
+      "rough"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys femdom",
+        "submission turn-on",
+        "shock arousing"
+      ],
+      "negative": [
+        "violence trigger",
+        "not interested",
+        "prefers gentle"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Она даёт ему пощёчину",
+    "en": "She slaps his face"
+  }
+}

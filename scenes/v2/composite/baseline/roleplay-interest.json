@@ -1,0 +1,254 @@
+{
+  "id": "roleplay_interest",
+  "slug": "roleplay-interest",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Ролевые игры",
+    "en": "Roleplay"
+  },
+  "subtitle": {
+    "ru": "Притворяться кем-то другим?",
+    "en": "Pretend to be someone else?"
+  },
+  "ai_description": {
+    "ru": "Доктор и пациент, босс и секретарь, незнакомцы... Нравится играть роли или предпочитаешь быть собой?",
+    "en": "Doctor and patient, boss and secretary, strangers... Like playing roles or prefer being yourself?"
+  },
+  "image_prompt": "man and woman in roleplay scenario, woman in secretary outfit, man in business suit, office setting with desk",
+  "intensity": 1,
+  "category": "baseline",
+  "priority": 9,
+  "tags": [
+    "baseline",
+    "roleplay",
+    "fantasy",
+    "scenarios",
+    "pretend"
+  ],
+  "elements": [
+    {
+      "id": "interest",
+      "label": {
+        "ru": "Интерес",
+        "en": "Interest"
+      },
+      "tag_ref": "roleplay_interest_level",
+      "follow_ups": [
+        {
+          "id": "level",
+          "type": "single_select",
+          "question": {
+            "ru": "Ролевые игры...",
+            "en": "Roleplay..."
+          },
+          "config": {
+            "options": [
+              {
+                "id": "no",
+                "label": {
+                  "ru": "Не моё, хочу быть собой",
+                  "en": "Not for me, want to be myself"
+                }
+              },
+              {
+                "id": "light",
+                "label": {
+                  "ru": "Лёгкие (незнакомцы в баре)",
+                  "en": "Light (strangers at bar)"
+                }
+              },
+              {
+                "id": "enjoy",
+                "label": {
+                  "ru": "Нравится играть роли",
+                  "en": "Enjoy playing roles"
+                }
+              },
+              {
+                "id": "love",
+                "label": {
+                  "ru": "Обожаю, чем сложнее сценарий тем лучше",
+                  "en": "Love it, the more elaborate the better"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "scenarios",
+      "label": {
+        "ru": "Сценарии",
+        "en": "Scenarios"
+      },
+      "tag_ref": "roleplay_scenarios",
+      "follow_ups": [
+        {
+          "id": "which",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие сценарии интересны?",
+            "en": "What scenarios interest you?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "strangers",
+                "label": {
+                  "ru": "Незнакомцы",
+                  "en": "Strangers"
+                }
+              },
+              {
+                "id": "authority",
+                "label": {
+                  "ru": "Власть (босс, учитель, доктор)",
+                  "en": "Authority (boss, teacher, doctor)"
+                }
+              },
+              {
+                "id": "service",
+                "label": {
+                  "ru": "Обслуживание (горничная, официант)",
+                  "en": "Service (maid, waiter)"
+                }
+              },
+              {
+                "id": "taboo",
+                "label": {
+                  "ru": "Табуированные (step-family)",
+                  "en": "Taboo (step-family)"
+                }
+              },
+              {
+                "id": "fantasy",
+                "label": {
+                  "ru": "Фэнтези (вампиры, эльфы)",
+                  "en": "Fantasy (vampires, elves)"
+                }
+              },
+              {
+                "id": "historical",
+                "label": {
+                  "ru": "Исторические (викторианцы)",
+                  "en": "Historical (Victorian)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "depth",
+      "label": {
+        "ru": "Глубина",
+        "en": "Depth"
+      },
+      "tag_ref": "roleplay_depth",
+      "follow_ups": [
+        {
+          "id": "how_deep",
+          "type": "single_select",
+          "question": {
+            "ru": "Насколько погружаться?",
+            "en": "How deep to go?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "hint",
+                "label": {
+                  "ru": "Намёки и слова",
+                  "en": "Hints and words"
+                }
+              },
+              {
+                "id": "costume",
+                "label": {
+                  "ru": "С костюмами",
+                  "en": "With costumes"
+                }
+              },
+              {
+                "id": "scene",
+                "label": {
+                  "ru": "Полноценная сцена",
+                  "en": "Full scene"
+                }
+              },
+              {
+                "id": "elaborate",
+                "label": {
+                  "ru": "Продуманный сценарий",
+                  "en": "Elaborate scenario"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "boundary",
+    "text": {
+      "ru": "Ролевые игры — интересуют?",
+      "en": "Roleplay — interested?"
+    },
+    "config": {
+      "boundary_options": [
+        {
+          "id": "no",
+          "label": {
+            "ru": "Нет",
+            "en": "No"
+          }
+        },
+        {
+          "id": "light",
+          "label": {
+            "ru": "Лёгкие",
+            "en": "Light"
+          }
+        },
+        {
+          "id": "yes",
+          "label": {
+            "ru": "Да",
+            "en": "Yes"
+          }
+        }
+      ]
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "roleplay",
+      "scenarios",
+      "fantasy"
+    ],
+    "tests_secondary": [
+      "costumes",
+      "pretend",
+      "acting"
+    ],
+    "gates": {
+      "no": [
+        "skip_roleplay_scenes"
+      ],
+      "light": [
+        "basic_roleplay_only"
+      ],
+      "yes": [
+        "all_roleplay_scenes"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Один партнёр играет роль доктора, другой — пациента. Или босс и секретарь. Или незнакомцы встречаются в баре.",
+    "en": "One partner plays a doctor, the other a patient. Or boss and secretary. Or strangers meeting at a bar."
+  }
+}

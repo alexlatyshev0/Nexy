@@ -1,0 +1,304 @@
+{
+  "id": "foot_worship_m_to_f",
+  "slug": "foot-worship-he-worships-her",
+  "version": 2,
+  "paired_scene": "foot_worship_f_to_m",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Поклонение ногам",
+    "en": "Foot Worship"
+  },
+  "subtitle": {
+    "ru": "Он поклоняется её ногам",
+    "en": "He worships her feet"
+  },
+  "ai_description": {
+    "ru": "Она сидит как королева, он у её ног. Целует, лижет, массирует. Её ступни — объект его поклонения и возбуждения.",
+    "en": "She sits like a queen, he at her feet. Kissing, licking, massaging. Her feet — object of his worship and arousal."
+  },
+  "image_prompt": "man kneeling at woman's feet, kissing her bare foot and toes, woman sitting relaxed in chair, her feet bare with polished nails, man nude, bedroom setting",
+  "intensity": 3,
+  "category": "worship_service",
+  "tags": [
+    "foot_worship",
+    "feet",
+    "femdom",
+    "worship",
+    "foot_fetish"
+  ],
+  "elements": [
+    {
+      "id": "activities",
+      "label": {
+        "ru": "Что делать?",
+        "en": "What to do?"
+      },
+      "tag_ref": "foot_activities",
+      "follow_ups": [
+        {
+          "id": "acts",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие действия?",
+            "en": "What actions?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "kiss",
+                "label": {
+                  "ru": "Целовать",
+                  "en": "Kiss"
+                }
+              },
+              {
+                "id": "lick",
+                "label": {
+                  "ru": "Лизать",
+                  "en": "Lick"
+                }
+              },
+              {
+                "id": "suck_toes",
+                "label": {
+                  "ru": "Сосать пальцы",
+                  "en": "Suck toes"
+                }
+              },
+              {
+                "id": "massage",
+                "label": {
+                  "ru": "Массировать",
+                  "en": "Massage"
+                }
+              },
+              {
+                "id": "smell",
+                "label": {
+                  "ru": "Нюхать",
+                  "en": "Smell"
+                }
+              },
+              {
+                "id": "footjob",
+                "label": {
+                  "ru": "Footjob",
+                  "en": "Footjob"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "foot_state",
+      "label": {
+        "ru": "Состояние ног",
+        "en": "Foot state"
+      },
+      "tag_ref": "foot_state",
+      "follow_ups": [
+        {
+          "id": "state",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие ноги?",
+            "en": "What feet?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "clean",
+                "label": {
+                  "ru": "Чистые",
+                  "en": "Clean"
+                }
+              },
+              {
+                "id": "sweaty",
+                "label": {
+                  "ru": "Потные",
+                  "en": "Sweaty"
+                }
+              },
+              {
+                "id": "heels",
+                "label": {
+                  "ru": "В туфлях на каблуках",
+                  "en": "In heels"
+                }
+              },
+              {
+                "id": "stockings",
+                "label": {
+                  "ru": "В чулках",
+                  "en": "In stockings"
+                }
+              },
+              {
+                "id": "barefoot",
+                "label": {
+                  "ru": "Босые",
+                  "en": "Barefoot"
+                }
+              },
+              {
+                "id": "pedicure",
+                "label": {
+                  "ru": "С педикюром",
+                  "en": "With pedicure"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dynamic",
+      "label": {
+        "ru": "Динамика",
+        "en": "Dynamic"
+      },
+      "tag_ref": "foot_worship_dynamic",
+      "follow_ups": [
+        {
+          "id": "power",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какая динамика?",
+            "en": "What dynamic?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "worship",
+                "label": {
+                  "ru": "Поклонение богине",
+                  "en": "Goddess worship"
+                }
+              },
+              {
+                "id": "service",
+                "label": {
+                  "ru": "Служение",
+                  "en": "Service"
+                }
+              },
+              {
+                "id": "humiliation",
+                "label": {
+                  "ru": "Унижение",
+                  "en": "Humiliation"
+                }
+              },
+              {
+                "id": "reward",
+                "label": {
+                  "ru": "Награда за хорошее поведение",
+                  "en": "Reward for good behavior"
+                }
+              },
+              {
+                "id": "sensual",
+                "label": {
+                  "ru": "Чувственное, эротичное",
+                  "en": "Sensual, erotic"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "foot_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "feet_beauty",
+                "label": {
+                  "ru": "Красота ног",
+                  "en": "Beauty of feet"
+                }
+              },
+              {
+                "id": "submission",
+                "label": {
+                  "ru": "Подчинение",
+                  "en": "Submission"
+                }
+              },
+              {
+                "id": "her_power",
+                "label": {
+                  "ru": "Её власть",
+                  "en": "Her power"
+                }
+              },
+              {
+                "id": "taboo",
+                "label": {
+                  "ru": "Табу",
+                  "en": "Taboo"
+                }
+              },
+              {
+                "id": "smell",
+                "label": {
+                  "ru": "Запах",
+                  "en": "Smell"
+                }
+              },
+              {
+                "id": "texture",
+                "label": {
+                  "ru": "Текстура кожи",
+                  "en": "Skin texture"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в поклонении ногам?",
+      "en": "What appeals about foot worship?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "foot_worship",
+      "foot_fetish",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "worship",
+      "submission",
+      "feet"
+    ]
+  },
+  "user_description": {
+    "ru": "Он на коленях у её ног, целует и лижет её ступни и пальцы.",
+    "en": "He kneels at her feet, kisses and licks her soles and toes."
+  }
+}

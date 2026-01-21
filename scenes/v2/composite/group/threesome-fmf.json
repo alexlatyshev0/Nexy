@@ -1,0 +1,319 @@
+{
+  "id": "threesome_fmf",
+  "slug": "threesome-fmf",
+  "version": 2,
+  "paired_scene": "threesome_mfm",
+  "role_direction": "group",
+  "title": {
+    "ru": "Тройка FMF",
+    "en": "Threesome FMF"
+  },
+  "subtitle": {
+    "ru": "Две женщины, один мужчина",
+    "en": "Two women, one man"
+  },
+  "ai_description": {
+    "ru": "Он между двух женщин. Они ласкают друг друга и его. Удовольствие втроём, все внимание — и на нём, и друг на друге.",
+    "en": "He's between two women. They caress each other and him. Pleasure of three, attention on him and each other."
+  },
+  "image_prompt": "man and two women on bed, man penetrating one woman while second woman touches both of them, all nude, bedroom with soft lamp light",
+  "intensity": 4,
+  "category": "group",
+  "tags": [
+    "threesome",
+    "fmf",
+    "group_sex",
+    "two_women",
+    "bisexual"
+  ],
+  "elements": [
+    {
+      "id": "women_dynamic",
+      "label": {
+        "ru": "Динамика между женщинами",
+        "en": "Women's dynamic"
+      },
+      "tag_ref": "fmf_women",
+      "follow_ups": [
+        {
+          "id": "interaction",
+          "type": "single_select",
+          "question": {
+            "ru": "Взаимодействие женщин?",
+            "en": "Women's interaction?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "bisexual",
+                "label": {
+                  "ru": "Бисексуальны (друг с другом)",
+                  "en": "Bisexual (with each other)"
+                }
+              },
+              {
+                "id": "focus_him",
+                "label": {
+                  "ru": "Фокус на нём",
+                  "en": "Focus on him"
+                }
+              },
+              {
+                "id": "competition",
+                "label": {
+                  "ru": "Соревнуются за него",
+                  "en": "Compete for him"
+                }
+              },
+              {
+                "id": "mixed",
+                "label": {
+                  "ru": "По-разному",
+                  "en": "Mixed"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "activities",
+      "label": {
+        "ru": "Активности",
+        "en": "Activities"
+      },
+      "tag_ref": "fmf_activities",
+      "follow_ups": [
+        {
+          "id": "acts",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие активности?",
+            "en": "What activities?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "double_bj",
+                "label": {
+                  "ru": "Двойной минет",
+                  "en": "Double blowjob"
+                }
+              },
+              {
+                "id": "one_rides",
+                "label": {
+                  "ru": "Одна сверху, другая на лице",
+                  "en": "One rides, one on face"
+                }
+              },
+              {
+                "id": "watch",
+                "label": {
+                  "ru": "Одна смотрит",
+                  "en": "One watches"
+                }
+              },
+              {
+                "id": "women_together",
+                "label": {
+                  "ru": "Женщины вместе",
+                  "en": "Women together"
+                }
+              },
+              {
+                "id": "switch",
+                "label": {
+                  "ru": "Меняться местами",
+                  "en": "Switch positions"
+                }
+              },
+              {
+                "id": "dp_toys",
+                "label": {
+                  "ru": "DP с игрушками",
+                  "en": "DP with toys"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "your_role",
+      "label": {
+        "ru": "Твоя роль",
+        "en": "Your role"
+      },
+      "tag_ref": "fmf_role",
+      "follow_ups": [
+        {
+          "id": "role",
+          "type": "single_select",
+          "question": {
+            "ru": "Какая роль?",
+            "en": "What role?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "the_man",
+                "label": {
+                  "ru": "Мужчина",
+                  "en": "The man"
+                }
+              },
+              {
+                "id": "main_woman",
+                "label": {
+                  "ru": "Основная женщина",
+                  "en": "Main woman"
+                }
+              },
+              {
+                "id": "unicorn",
+                "label": {
+                  "ru": "Unicorn (третья)",
+                  "en": "Unicorn (the third)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "finding_third",
+      "label": {
+        "ru": "Найти третью",
+        "en": "Finding third"
+      },
+      "tag_ref": "finding_unicorn",
+      "follow_ups": [
+        {
+          "id": "who",
+          "type": "multi_select",
+          "question": {
+            "ru": "Кто третья?",
+            "en": "Who's the third?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "stranger",
+                "label": {
+                  "ru": "Незнакомка",
+                  "en": "Stranger"
+                }
+              },
+              {
+                "id": "friend",
+                "label": {
+                  "ru": "Знакомая",
+                  "en": "Friend"
+                }
+              },
+              {
+                "id": "ex",
+                "label": {
+                  "ru": "Бывшая",
+                  "en": "Ex"
+                }
+              },
+              {
+                "id": "pro",
+                "label": {
+                  "ru": "Профессионал",
+                  "en": "Professional"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "fmf_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "two_women",
+                "label": {
+                  "ru": "Две женщины",
+                  "en": "Two women"
+                }
+              },
+              {
+                "id": "variety",
+                "label": {
+                  "ru": "Разнообразие",
+                  "en": "Variety"
+                }
+              },
+              {
+                "id": "attention",
+                "label": {
+                  "ru": "Всё внимание на нём/ней",
+                  "en": "All attention"
+                }
+              },
+              {
+                "id": "watching_wlw",
+                "label": {
+                  "ru": "Смотреть женщин вместе",
+                  "en": "Watching women together"
+                }
+              },
+              {
+                "id": "novelty",
+                "label": {
+                  "ru": "Новизна",
+                  "en": "Novelty"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в тройке FMF?",
+      "en": "What appeals about FMF threesome?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "threesome",
+      "fmf",
+      "group"
+    ],
+    "tests_secondary": [
+      "bisexual",
+      "unicorn",
+      "variety"
+    ]
+  },
+  "user_description": {
+    "ru": "Один мужчина и две женщины занимаются сексом. Мужчина трахает одну женщину, вторая женщина ласкает их обоих. Женщины целуются и ласкают друг друга.",
+    "en": "One man and two women have sex. The man fucks one woman while the second woman caresses them both. The women kiss and caress each other."
+  }
+}

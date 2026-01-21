@@ -1,0 +1,77 @@
+{
+  "id": "objectification_f",
+  "slug": "objectification-f",
+  "version": 2,
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Объективация (она — объект)",
+    "en": "Objectification (She's the Object)"
+  },
+  "subtitle": {
+    "ru": "Она становится вещью",
+    "en": "She becomes a thing"
+  },
+  "ai_description": {
+    "ru": "Она становится мебелью, игрушкой, объектом для использования. Дегуманизация как форма глубокого подчинения.",
+    "en": "She becomes furniture, toy, object to be used. Dehumanization as deep submission."
+  },
+  "image_prompt": "woman on all fours with man placing glass on her back, using her as human table, bedroom setting, minimal clothing",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": ["objectification", "furniture", "dehumanization", "female_submission"],
+  "elements": [
+    {
+      "id": "types",
+      "label": { "ru": "Типы", "en": "Types" },
+      "tag_ref": "object_types",
+      "follow_ups": [
+        {
+          "id": "what",
+          "type": "multi_select",
+          "question": { "ru": "Чем она становится?", "en": "What does she become?" },
+          "config": {
+            "options": [
+              { "id": "furniture", "label": { "ru": "Мебель (стол, стул)", "en": "Furniture (table, chair)" } },
+              { "id": "sex_toy", "label": { "ru": "Секс-игрушка", "en": "Sex toy" } },
+              { "id": "footstool", "label": { "ru": "Подставка для ног", "en": "Footstool" } },
+              { "id": "decoration", "label": { "ru": "Декорация", "en": "Decoration" } },
+              { "id": "holes", "label": { "ru": "Просто дырки", "en": "Just holes" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": { "ru": "Что привлекает", "en": "What appeals" },
+      "tag_ref": "object_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": { "ru": "Что возбуждает?", "en": "What excites?" },
+          "config": {
+            "options": [
+              { "id": "her_submission", "label": { "ru": "Её полное подчинение", "en": "Her total submission" } },
+              { "id": "using_her", "label": { "ru": "Использовать её", "en": "Using her" } },
+              { "id": "being_used", "label": { "ru": "Быть использованной", "en": "Being used" } },
+              { "id": "degradation", "label": { "ru": "Деградация", "en": "Degradation" } }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "interest_scale",
+    "text": { "ru": "Она как объект — мебель, игрушка?", "en": "She as object — furniture, toy?" }
+  },
+  "ai_context": {
+    "tests_primary": ["objectification", "female_submission"],
+    "tests_secondary": ["furniture_play", "dehumanization"]
+  },
+  "user_description": {
+    "ru": "Она становится объектом — мебелью или игрушкой. На неё ставят стакан, используют как подставку или сидение.",
+    "en": "She becomes an object — furniture or toy. A glass is placed on her, she's used as a stand or seat."
+  }
+}

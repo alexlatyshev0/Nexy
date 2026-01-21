@@ -1,0 +1,58 @@
+{
+  "id": "bodymap_licking",
+  "slug": "licking",
+  "version": 2,
+  "type": "body_map",
+  "order": 2,
+
+  "title": { "ru": "Ласки языком", "en": "Licking & Sucking" },
+  "subtitle": { "ru": "Карта оральных ласк", "en": "Oral pleasure map" },
+  "description": {
+    "ru": "Отметь, где любишь лизать/сосать и где нравится получать",
+    "en": "Mark where you like to lick/suck and where you like receiving"
+  },
+
+  "intensity": 2,
+  "action": "lick_suck",
+  "tags": ["licking", "sucking", "oral", "body_worship"],
+
+  "passes": [
+    {
+      "id": "give",
+      "question": {
+        "ru": "Где ты любишь лизать/сосать партнёра?",
+        "en": "Where do you like to lick/suck your partner?"
+      },
+      "instruction": {
+        "ru": "Нажми на зоны тела",
+        "en": "Tap on body zones"
+      }
+    },
+    {
+      "id": "receive",
+      "question": {
+        "ru": "Где тебе нравится, когда тебя лижут/сосут?",
+        "en": "Where do you like being licked/sucked?"
+      },
+      "instruction": {
+        "ru": "Нажми на зоны тела",
+        "en": "Tap on body zones"
+      }
+    }
+  ],
+
+  "zones": {
+    "available": ["lips", "neck", "ears", "nipples", "chest", "stomach", "inner_thighs", "genitals", "buttocks", "feet", "fingers", "toes"],
+    "highlight_erogenous": true
+  },
+
+  "ai_context": {
+    "tests_primary": ["oral_fixation", "licking"],
+    "tests_secondary": ["cunnilingus", "fellatio", "body_worship"],
+    "profile_signals": {
+      "if_genitals": "enjoys_oral_sex",
+      "if_nipples": "nipple_sensitive",
+      "if_feet_toes": "foot_fetish_curious"
+    }
+  }
+}

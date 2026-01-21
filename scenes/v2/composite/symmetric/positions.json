@@ -1,0 +1,628 @@
+{
+  "id": "positions",
+  "slug": "sex-positions",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Позы",
+    "en": "Positions"
+  },
+  "ai_description": {
+    "ru": "Миссионерская, догги, наездница... Каждая поза даёт своё ощущение, свой угол, свою глубину. Какие позы возбуждают больше всего?",
+    "en": "Missionary, doggy, cowgirl... Each position gives its own sensation, angle, depth. Which positions excite you most?"
+  },
+  "image_prompt": "man and woman in missionary position on bed, both nude, woman on back with legs around man, man on top supporting himself with arms, bedroom setting",
+  "intensity": 2,
+  "category": "symmetric",
+  "tags": [
+    "positions",
+    "missionary",
+    "doggy",
+    "cowgirl",
+    "sex_positions"
+  ],
+  "elements": [
+    {
+      "id": "missionary",
+      "label": {
+        "ru": "Миссионерская",
+        "en": "Missionary"
+      },
+      "tag_ref": "missionary",
+      "follow_ups": [
+        {
+          "id": "missionary_style",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой стиль?",
+            "en": "What style?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "classic",
+                "label": {
+                  "ru": "Классическая",
+                  "en": "Classic"
+                }
+              },
+              {
+                "id": "legs_up",
+                "label": {
+                  "ru": "Ноги на плечах",
+                  "en": "Legs on shoulders"
+                }
+              },
+              {
+                "id": "legs_wrapped",
+                "label": {
+                  "ru": "Ноги обнимают его",
+                  "en": "Legs wrapped around"
+                }
+              },
+              {
+                "id": "pillow_under",
+                "label": {
+                  "ru": "Подушка под бёдра",
+                  "en": "Pillow under hips"
+                }
+              },
+              {
+                "id": "close_intimate",
+                "label": {
+                  "ru": "Близко, интимно",
+                  "en": "Close, intimate"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "missionary_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What do you like?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "eye_contact",
+                "label": {
+                  "ru": "Зрительный контакт",
+                  "en": "Eye contact"
+                }
+              },
+              {
+                "id": "kissing",
+                "label": {
+                  "ru": "Можно целоваться",
+                  "en": "Can kiss"
+                }
+              },
+              {
+                "id": "closeness",
+                "label": {
+                  "ru": "Близость тел",
+                  "en": "Body closeness"
+                }
+              },
+              {
+                "id": "his_control",
+                "label": {
+                  "ru": "Он контролирует",
+                  "en": "He controls"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "doggy",
+      "label": {
+        "ru": "Догги-стайл",
+        "en": "Doggy style"
+      },
+      "tag_ref": "doggy",
+      "follow_ups": [
+        {
+          "id": "doggy_style",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой стиль?",
+            "en": "What style?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "classic",
+                "label": {
+                  "ru": "На четвереньках",
+                  "en": "On all fours"
+                }
+              },
+              {
+                "id": "face_down",
+                "label": {
+                  "ru": "Лицом в подушку",
+                  "en": "Face in pillow"
+                }
+              },
+              {
+                "id": "prone",
+                "label": {
+                  "ru": "Лёжа на животе",
+                  "en": "Prone bone"
+                }
+              },
+              {
+                "id": "standing",
+                "label": {
+                  "ru": "Стоя наклонившись",
+                  "en": "Standing bent over"
+                }
+              },
+              {
+                "id": "edge_bed",
+                "label": {
+                  "ru": "На краю кровати",
+                  "en": "Edge of bed"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "doggy_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What do you like?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "depth",
+                "label": {
+                  "ru": "Глубина проникновения",
+                  "en": "Depth of penetration"
+                }
+              },
+              {
+                "id": "angle",
+                "label": {
+                  "ru": "Угол (G-точка)",
+                  "en": "Angle (G-spot)"
+                }
+              },
+              {
+                "id": "ass_view",
+                "label": {
+                  "ru": "Вид сзади",
+                  "en": "Rear view"
+                }
+              },
+              {
+                "id": "primal",
+                "label": {
+                  "ru": "Первобытное",
+                  "en": "Primal"
+                }
+              },
+              {
+                "id": "hair_grab",
+                "label": {
+                  "ru": "Можно тянуть за волосы",
+                  "en": "Can pull hair"
+                }
+              },
+              {
+                "id": "spank",
+                "label": {
+                  "ru": "Можно шлёпать",
+                  "en": "Can spank"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cowgirl",
+      "label": {
+        "ru": "Наездница",
+        "en": "Cowgirl"
+      },
+      "tag_ref": "cowgirl",
+      "follow_ups": [
+        {
+          "id": "cowgirl_style",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой стиль?",
+            "en": "What style?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "classic",
+                "label": {
+                  "ru": "Классическая",
+                  "en": "Classic"
+                }
+              },
+              {
+                "id": "reverse",
+                "label": {
+                  "ru": "Обратная (reverse)",
+                  "en": "Reverse cowgirl"
+                }
+              },
+              {
+                "id": "leaning",
+                "label": {
+                  "ru": "Наклон вперёд",
+                  "en": "Leaning forward"
+                }
+              },
+              {
+                "id": "upright",
+                "label": {
+                  "ru": "Сидя прямо",
+                  "en": "Sitting upright"
+                }
+              },
+              {
+                "id": "grinding",
+                "label": {
+                  "ru": "Тёрка (grinding)",
+                  "en": "Grinding"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "cowgirl_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What do you like?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "her_control",
+                "label": {
+                  "ru": "Она контролирует темп",
+                  "en": "She controls pace"
+                }
+              },
+              {
+                "id": "clit_stim",
+                "label": {
+                  "ru": "Стимуляция клитора",
+                  "en": "Clit stimulation"
+                }
+              },
+              {
+                "id": "view",
+                "label": {
+                  "ru": "Вид на неё",
+                  "en": "View of her"
+                }
+              },
+              {
+                "id": "depth_control",
+                "label": {
+                  "ru": "Контроль глубины",
+                  "en": "Depth control"
+                }
+              },
+              {
+                "id": "breast_access",
+                "label": {
+                  "ru": "Доступ к груди",
+                  "en": "Breast access"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "spooning",
+      "label": {
+        "ru": "На боку (ложки)",
+        "en": "Spooning"
+      },
+      "tag_ref": "spooning",
+      "follow_ups": [
+        {
+          "id": "spooning_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What do you like?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "intimate",
+                "label": {
+                  "ru": "Интимность",
+                  "en": "Intimacy"
+                }
+              },
+              {
+                "id": "lazy",
+                "label": {
+                  "ru": "Ленивый секс",
+                  "en": "Lazy sex"
+                }
+              },
+              {
+                "id": "morning",
+                "label": {
+                  "ru": "Хорошо утром",
+                  "en": "Good for morning"
+                }
+              },
+              {
+                "id": "hands_free",
+                "label": {
+                  "ru": "Руки свободны (для клитора)",
+                  "en": "Hands free (for clit)"
+                }
+              },
+              {
+                "id": "cuddly",
+                "label": {
+                  "ru": "Можно обниматься",
+                  "en": "Cuddly"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "standing",
+      "label": {
+        "ru": "Стоя",
+        "en": "Standing"
+      },
+      "tag_ref": "standing_sex",
+      "follow_ups": [
+        {
+          "id": "standing_style",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой стиль?",
+            "en": "What style?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "against_wall",
+                "label": {
+                  "ru": "Прижав к стене",
+                  "en": "Against wall"
+                }
+              },
+              {
+                "id": "lift",
+                "label": {
+                  "ru": "Он держит её",
+                  "en": "He lifts her"
+                }
+              },
+              {
+                "id": "bent_over",
+                "label": {
+                  "ru": "Она наклонилась",
+                  "en": "She bent over"
+                }
+              },
+              {
+                "id": "from_behind",
+                "label": {
+                  "ru": "Сзади стоя",
+                  "en": "Standing from behind"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "standing_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What do you like?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "spontaneous",
+                "label": {
+                  "ru": "Спонтанность",
+                  "en": "Spontaneity"
+                }
+              },
+              {
+                "id": "strength",
+                "label": {
+                  "ru": "Его сила",
+                  "en": "His strength"
+                }
+              },
+              {
+                "id": "passion",
+                "label": {
+                  "ru": "Страсть, не терпится",
+                  "en": "Passion, can't wait"
+                }
+              },
+              {
+                "id": "locations",
+                "label": {
+                  "ru": "Можно где угодно",
+                  "en": "Anywhere"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "lotus",
+      "label": {
+        "ru": "Лотос",
+        "en": "Lotus"
+      },
+      "tag_ref": "lotus",
+      "follow_ups": [
+        {
+          "id": "lotus_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What do you like?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "closeness",
+                "label": {
+                  "ru": "Максимальная близость",
+                  "en": "Maximum closeness"
+                }
+              },
+              {
+                "id": "eye_contact",
+                "label": {
+                  "ru": "Зрительный контакт",
+                  "en": "Eye contact"
+                }
+              },
+              {
+                "id": "kissing",
+                "label": {
+                  "ru": "Можно целоваться",
+                  "en": "Can kiss"
+                }
+              },
+              {
+                "id": "tantric",
+                "label": {
+                  "ru": "Тантрический элемент",
+                  "en": "Tantric element"
+                }
+              },
+              {
+                "id": "slow",
+                "label": {
+                  "ru": "Медленный секс",
+                  "en": "Slow sex"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "69",
+      "label": {
+        "ru": "69",
+        "en": "69"
+      },
+      "tag_ref": "sixty_nine",
+      "follow_ups": [
+        {
+          "id": "69_preference",
+          "type": "single_select",
+          "question": {
+            "ru": "Кто сверху?",
+            "en": "Who's on top?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "she_top",
+                "label": {
+                  "ru": "Она сверху",
+                  "en": "She on top"
+                }
+              },
+              {
+                "id": "he_top",
+                "label": {
+                  "ru": "Он сверху",
+                  "en": "He on top"
+                }
+              },
+              {
+                "id": "side",
+                "label": {
+                  "ru": "На боку",
+                  "en": "Side by side"
+                }
+              },
+              {
+                "id": "any",
+                "label": {
+                  "ru": "Любой",
+                  "en": "Any"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие позы тебе нравятся?",
+      "en": "What positions do you like?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "positions",
+      "sex_positions",
+      "variety"
+    ],
+    "tests_secondary": [
+      "angle",
+      "control",
+      "intimacy"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys variety",
+        "specific preferences",
+        "adventurous"
+      ],
+      "negative": [
+        "prefers one position",
+        "physical limitations",
+        "shy about trying"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Разные позы — миссионерская, догги, наездница, ложки, стоя, 69.",
+    "en": "Different positions — missionary, doggy, cowgirl, spoons, standing, 69."
+  }
+}

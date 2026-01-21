@@ -1,0 +1,422 @@
+{
+  "id": "nipple_play_f_to_m",
+  "slug": "nipple-play-she-on-him",
+  "version": 2,
+  "paired_scene": "nipple_play_m_to_f",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Игры с сосками",
+    "en": "Nipple Play"
+  },
+  "subtitle": {
+    "ru": "Она с его сосками",
+    "en": "She on his nipples"
+  },
+  "ai_description": {
+    "ru": "Её пальцы на его сосках. Сжимает, крутит, кусает. Мужские соски тоже чувствительны — он стонет, дёргается. Она наслаждается его реакцией.",
+    "en": "Her fingers on his nipples. Squeezing, twisting, biting. Male nipples are sensitive too — he moans, squirms. She enjoys his reaction."
+  },
+  "image_prompt": "woman pinching man's nipples, man shirtless lying on bed, woman straddling him in lingerie, bedroom",
+  "intensity": 2,
+  "category": "impact_pain",
+  "tags": [
+    "nipple_play",
+    "male_nipples",
+    "sensation",
+    "femdom",
+    "pinching"
+  ],
+  "elements": [
+    {
+      "id": "techniques",
+      "label": {
+        "ru": "Техники",
+        "en": "Techniques"
+      },
+      "tag_ref": "male_nipple_techniques",
+      "follow_ups": [
+        {
+          "id": "what_techniques",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие действия?",
+            "en": "What actions?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "pinching",
+                "label": {
+                  "ru": "Щипать",
+                  "en": "Pinching"
+                }
+              },
+              {
+                "id": "twisting",
+                "label": {
+                  "ru": "Крутить",
+                  "en": "Twisting"
+                }
+              },
+              {
+                "id": "pulling",
+                "label": {
+                  "ru": "Тянуть",
+                  "en": "Pulling"
+                }
+              },
+              {
+                "id": "sucking",
+                "label": {
+                  "ru": "Сосать",
+                  "en": "Sucking"
+                }
+              },
+              {
+                "id": "biting",
+                "label": {
+                  "ru": "Кусать",
+                  "en": "Biting"
+                }
+              },
+              {
+                "id": "licking",
+                "label": {
+                  "ru": "Лизать",
+                  "en": "Licking"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "intensity",
+      "label": {
+        "ru": "Интенсивность",
+        "en": "Intensity"
+      },
+      "tag_ref": "male_nipple_intensity",
+      "follow_ups": [
+        {
+          "id": "how_intense",
+          "type": "scale",
+          "question": {
+            "ru": "Насколько сильно?",
+            "en": "How intense?"
+          },
+          "config": {
+            "min_label": {
+              "ru": "Нежно",
+              "en": "Gentle"
+            },
+            "max_label": {
+              "ru": "Сильно, до боли",
+              "en": "Hard, to pain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": {
+        "ru": "Приспособления",
+        "en": "Tools"
+      },
+      "tag_ref": "male_nipple_tools",
+      "follow_ups": [
+        {
+          "id": "what_tools",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что использовать?",
+            "en": "What to use?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "fingers",
+                "label": {
+                  "ru": "Пальцы",
+                  "en": "Fingers"
+                }
+              },
+              {
+                "id": "mouth",
+                "label": {
+                  "ru": "Рот",
+                  "en": "Mouth"
+                }
+              },
+              {
+                "id": "clamps",
+                "label": {
+                  "ru": "Зажимы",
+                  "en": "Clamps"
+                }
+              },
+              {
+                "id": "clothespins",
+                "label": {
+                  "ru": "Прищепки",
+                  "en": "Clothespins"
+                }
+              },
+              {
+                "id": "ice",
+                "label": {
+                  "ru": "Лёд",
+                  "en": "Ice"
+                }
+              },
+              {
+                "id": "wax",
+                "label": {
+                  "ru": "Воск",
+                  "en": "Wax"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Когда?",
+        "en": "When?"
+      },
+      "tag_ref": "male_nipple_context",
+      "follow_ups": [
+        {
+          "id": "when",
+          "type": "multi_select",
+          "question": {
+            "ru": "В какой момент?",
+            "en": "At what moment?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "foreplay",
+                "label": {
+                  "ru": "Прелюдия",
+                  "en": "Foreplay"
+                }
+              },
+              {
+                "id": "during_sex",
+                "label": {
+                  "ru": "Во время секса",
+                  "en": "During sex"
+                }
+              },
+              {
+                "id": "during_blowjob",
+                "label": {
+                  "ru": "Во время минета",
+                  "en": "During blowjob"
+                }
+              },
+              {
+                "id": "during_handjob",
+                "label": {
+                  "ru": "Во время дрочки",
+                  "en": "During handjob"
+                }
+              },
+              {
+                "id": "orgasm",
+                "label": {
+                  "ru": "При его оргазме",
+                  "en": "During his orgasm"
+                }
+              },
+              {
+                "id": "torture",
+                "label": {
+                  "ru": "Как пытка (femdom)",
+                  "en": "As torture (femdom)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "his_sensitivity",
+      "label": {
+        "ru": "Его чувствительность",
+        "en": "His sensitivity"
+      },
+      "tag_ref": "male_nipple_sensitivity",
+      "follow_ups": [
+        {
+          "id": "how_sensitive",
+          "type": "scale",
+          "question": {
+            "ru": "Чувствительность его сосков?",
+            "en": "His nipple sensitivity?"
+          },
+          "config": {
+            "min_label": {
+              "ru": "Мало чувствует",
+              "en": "Not very sensitive"
+            },
+            "max_label": {
+              "ru": "Очень чувствительные",
+              "en": "Very sensitive"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "her_enjoyment",
+      "label": {
+        "ru": "Её удовольствие",
+        "en": "Her enjoyment"
+      },
+      "tag_ref": "femdom_nipple_enjoy",
+      "follow_ups": [
+        {
+          "id": "why_enjoys",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что ей нравится?",
+            "en": "What does she enjoy?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "reactions",
+                "label": {
+                  "ru": "Его реакции",
+                  "en": "His reactions"
+                }
+              },
+              {
+                "id": "control",
+                "label": {
+                  "ru": "Контроль над его удовольствием",
+                  "en": "Control over his pleasure"
+                }
+              },
+              {
+                "id": "pain",
+                "label": {
+                  "ru": "Причинять боль",
+                  "en": "Causing pain"
+                }
+              },
+              {
+                "id": "vulnerability",
+                "label": {
+                  "ru": "Его уязвимость",
+                  "en": "His vulnerability"
+                }
+              },
+              {
+                "id": "squirming",
+                "label": {
+                  "ru": "Как он корчится",
+                  "en": "Watching him squirm"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "orgasm_connection",
+      "label": {
+        "ru": "Связь с оргазмом",
+        "en": "Orgasm connection"
+      },
+      "tag_ref": "male_nipple_orgasm",
+      "follow_ups": [
+        {
+          "id": "orgasm_effect",
+          "type": "single_select",
+          "question": {
+            "ru": "Влияние на оргазм?",
+            "en": "Effect on orgasm?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "enhances",
+                "label": {
+                  "ru": "Усиливает",
+                  "en": "Enhances"
+                }
+              },
+              {
+                "id": "triggers",
+                "label": {
+                  "ru": "Может вызвать оргазм",
+                  "en": "Can trigger orgasm"
+                }
+              },
+              {
+                "id": "pleasant",
+                "label": {
+                  "ru": "Приятно, но не влияет",
+                  "en": "Pleasant, no effect"
+                }
+              },
+              {
+                "id": "none",
+                "label": {
+                  "ru": "Нет связи",
+                  "en": "No connection"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что нравится когда она играет с его сосками?",
+      "en": "What do you like when she plays with his nipples?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "nipple_play",
+      "male_nipples",
+      "sensation"
+    ],
+    "tests_secondary": [
+      "femdom",
+      "pain_pleasure",
+      "sensitivity"
+    ],
+    "emotional_range": {
+      "positive": [
+        "sensitive nipples",
+        "enjoys sensation",
+        "femdom context"
+      ],
+      "negative": [
+        "not sensitive",
+        "too painful",
+        "no interest"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Она щиплет, крутит, кусает его соски.",
+    "en": "She pinches, twists, bites his nipples."
+  }
+}

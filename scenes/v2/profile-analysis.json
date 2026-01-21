@@ -1,0 +1,599 @@
+{
+  "version": 2,
+  "description": "Post-discovery profile analysis - archetypes, insights, couple compatibility",
+
+  "archetypes": {
+    "_note": "Predefined profiles based on response patterns. User may match multiple.",
+
+    "romantic_lover": {
+      "name": { "ru": "Романтик", "en": "Romantic Lover" },
+      "description": {
+        "ru": "Ценит эмоциональную связь, нежность и интимность",
+        "en": "Values emotional connection, tenderness, and intimacy"
+      },
+      "indicators": {
+        "high": ["romantic", "sensual", "intimate", "aftercare", "eye_contact"],
+        "low": ["rough", "degradation", "pain_pleasure"]
+      },
+      "intensity_range": [1, 2]
+    },
+
+    "gentle_explorer": {
+      "name": { "ru": "Нежный исследователь", "en": "Gentle Explorer" },
+      "description": {
+        "ru": "Открыт к экспериментам, но предпочитает мягкий подход",
+        "en": "Open to exploration but prefers gentle approach"
+      },
+      "indicators": {
+        "high": ["sensual", "teasing", "massage", "blindfold"],
+        "moderate": ["light_bondage", "roleplay"],
+        "low": ["impact_play", "pain"]
+      },
+      "intensity_range": [1, 3]
+    },
+
+    "playful_kinkster": {
+      "name": { "ru": "Игривый кинкстер", "en": "Playful Kinkster" },
+      "description": {
+        "ru": "Любит экспериментировать, игры и лёгкий BDSM",
+        "en": "Enjoys experimentation, games, and light BDSM"
+      },
+      "indicators": {
+        "high": ["spanking", "roleplay", "teasing", "toys", "costumes"],
+        "moderate": ["bondage", "dirty_talk", "exhibitionism"]
+      },
+      "intensity_range": [2, 3]
+    },
+
+    "dominant": {
+      "name": { "ru": "Доминант", "en": "Dominant" },
+      "description": {
+        "ru": "Предпочитает контроль, направление и власть",
+        "en": "Prefers control, direction, and power"
+      },
+      "indicators": {
+        "high": ["control", "discipline", "bondage", "collar", "power"],
+        "moderate": ["spanking", "edging", "free_use", "obedience"],
+        "pattern": "give >> receive in asymmetric activities"
+      },
+      "subtypes": {
+        "caring_dom": {
+          "also_high": ["aftercare", "praise", "reassurance"],
+          "name": { "ru": "Заботливый дом", "en": "Caring Dom" }
+        },
+        "strict_dom": {
+          "also_high": ["discipline", "punishment", "rules"],
+          "name": { "ru": "Строгий дом", "en": "Strict Dom" }
+        },
+        "sadist": {
+          "also_high": ["impact", "marks", "cruel"],
+          "name": { "ru": "Садист", "en": "Sadist" }
+        }
+      },
+      "intensity_range": [3, 5]
+    },
+
+    "submissive": {
+      "name": { "ru": "Сабмиссив", "en": "Submissive" },
+      "description": {
+        "ru": "Получает удовольствие от подчинения и отдачи контроля",
+        "en": "Enjoys submission and surrendering control"
+      },
+      "indicators": {
+        "high": ["submission", "helplessness", "obedience", "giving_up", "vulnerability"],
+        "moderate": ["bondage", "collar", "service", "worship"],
+        "pattern": "receive >> give in asymmetric activities"
+      },
+      "subtypes": {
+        "service_sub": {
+          "also_high": ["service", "worship", "devotion"],
+          "name": { "ru": "Сервис-саб", "en": "Service Sub" }
+        },
+        "brat": {
+          "also_high": ["funishment", "playful_resistance", "provocation"],
+          "name": { "ru": "Брат", "en": "Brat" }
+        },
+        "masochist": {
+          "also_high": ["pain_pleasure", "endorphins", "marks"],
+          "name": { "ru": "Мазохист", "en": "Masochist" }
+        }
+      },
+      "intensity_range": [2, 5]
+    },
+
+    "switch": {
+      "name": { "ru": "Свитч", "en": "Switch" },
+      "description": {
+        "ru": "Наслаждается обеими ролями — доминирования и подчинения",
+        "en": "Enjoys both dominant and submissive roles"
+      },
+      "indicators": {
+        "pattern": "give ≈ receive across asymmetric activities",
+        "high": ["switch", "versatile", "spanking", "bondage"]
+      },
+      "intensity_range": [2, 5]
+    },
+
+    "primal": {
+      "name": { "ru": "Примал", "en": "Primal" },
+      "description": {
+        "ru": "Привлекает животная страсть, инстинкты, физическая интенсивность",
+        "en": "Drawn to animal passion, instincts, physical intensity"
+      },
+      "indicators": {
+        "high": ["primal", "biting", "scratching", "hair_pulling", "rough"],
+        "moderate": ["cnc", "chase", "struggle"]
+      },
+      "intensity_range": [3, 5]
+    },
+
+    "exhibitionist": {
+      "name": { "ru": "Эксгибиционист", "en": "Exhibitionist" },
+      "description": {
+        "ru": "Возбуждается от того, что на него смотрят или могут увидеть",
+        "en": "Aroused by being watched or risk of being seen"
+      },
+      "indicators": {
+        "high": ["exhibitionism", "public_risk", "showing_off", "being_watched"]
+      },
+      "intensity_range": [2, 4]
+    },
+
+    "voyeur": {
+      "name": { "ru": "Вуайерист", "en": "Voyeur" },
+      "description": {
+        "ru": "Возбуждается от наблюдения за другими",
+        "en": "Aroused by watching others"
+      },
+      "indicators": {
+        "high": ["voyeurism", "watching", "cuckold", "hotwife"]
+      },
+      "intensity_range": [2, 4]
+    },
+
+    "sensualist": {
+      "name": { "ru": "Сенсуалист", "en": "Sensualist" },
+      "description": {
+        "ru": "Фокус на физических ощущениях, текстурах, температуре",
+        "en": "Focused on physical sensations, textures, temperature"
+      },
+      "indicators": {
+        "high": ["sensation_play", "blindfold", "ice", "wax", "feather", "massage"]
+      },
+      "intensity_range": [2, 4]
+    },
+
+    "fetishist": {
+      "name": { "ru": "Фетишист", "en": "Fetishist" },
+      "description": {
+        "ru": "Сильная привязка к конкретным объектам, материалам, частям тела",
+        "en": "Strong attachment to specific objects, materials, body parts"
+      },
+      "indicators": {
+        "high_any": ["foot_fetish", "latex", "leather", "lingerie", "uniform", "specific_body_part"]
+      },
+      "intensity_range": [2, 5]
+    },
+
+    "edge_player": {
+      "name": { "ru": "Экстремал", "en": "Edge Player" },
+      "description": {
+        "ru": "Привлекают интенсивные, рискованные, табуированные практики",
+        "en": "Drawn to intense, risky, taboo practices"
+      },
+      "indicators": {
+        "high": ["edge_play", "breath_play", "needle_play", "extreme"],
+        "intensity_preference": ">= 4"
+      },
+      "intensity_range": [4, 5],
+      "requires_experience_check": true
+    },
+
+    "explorer": {
+      "name": { "ru": "Исследователь", "en": "Explorer" },
+      "description": {
+        "ru": "Любопытен и открыт ко всему новому, пробует разное без глубокой привязки",
+        "en": "Curious and open to everything new, tries different things without deep attachment"
+      },
+      "indicators": {
+        "high": ["curious", "variety", "open_minded", "exploration"],
+        "pattern": "moderate scores across many categories, no strong aversions"
+      },
+      "intensity_range": [2, 4]
+    },
+
+    "hedonist": {
+      "name": { "ru": "Гедонист", "en": "Hedonist" },
+      "description": {
+        "ru": "Стремится к максимальному удовольствию, любит разнообразие и избыток",
+        "en": "Seeks maximum pleasure, loves variety and excess"
+      },
+      "indicators": {
+        "high": ["pleasure", "indulgence", "group", "taboo", "variety"],
+        "moderate": ["degradation", "public", "rough"]
+      },
+      "intensity_range": [3, 5]
+    },
+
+    "sadist": {
+      "name": { "ru": "Садист", "en": "Sadist" },
+      "description": {
+        "ru": "Получает удовольствие от причинения консенсуальной боли партнёру",
+        "en": "Derives pleasure from inflicting consensual pain on partner"
+      },
+      "indicators": {
+        "high": ["spanking", "whip", "cane", "impact", "want_marks", "bruises"],
+        "moderate": ["discipline", "punishment", "wax_play"],
+        "high_any": ["tears_positive", "cruel"],
+        "pattern": "give >> receive in pain-related activities"
+      },
+      "intensity_range": [3, 5]
+    },
+
+    "masochist": {
+      "name": { "ru": "Мазохист", "en": "Masochist" },
+      "description": {
+        "ru": "Получает удовольствие от получения боли, эндорфиновый кайф",
+        "en": "Derives pleasure from receiving pain, endorphin high"
+      },
+      "indicators": {
+        "high": ["pain_pleasure", "endorphins", "want_marks", "bruises"],
+        "moderate": ["spanking", "whip", "impact", "wax_play"],
+        "high_any": ["tears_release", "subspace"],
+        "pattern": "receive >> give in pain-related activities"
+      },
+      "intensity_range": [3, 5]
+    },
+
+    "brat": {
+      "name": { "ru": "Брат", "en": "Brat" },
+      "description": {
+        "ru": "Любит игривое неподчинение и 'заслуживать' наказание",
+        "en": "Enjoys playful defiance and 'earning' punishment"
+      },
+      "indicators": {
+        "high": ["funishment", "teasing", "chase", "playful_resistance", "provocation"],
+        "moderate": ["spanking", "wrestling", "struggle"],
+        "pattern": "prefers funishment over serious punishment"
+      },
+      "intensity_range": [2, 4]
+    },
+
+    "cuckold": {
+      "name": { "ru": "Куколд", "en": "Cuckold" },
+      "description": {
+        "ru": "Возбуждается от того, что партнёрша с другими, элемент унижения или гордости",
+        "en": "Aroused by partner being with others, element of humiliation or pride"
+      },
+      "indicators": {
+        "high": ["cuckold", "hotwife", "watching", "sharing", "compersion"],
+        "moderate": ["humiliation", "chastity", "voyeurism"]
+      },
+      "intensity_range": [3, 5]
+    },
+
+    "performer": {
+      "name": { "ru": "Перформер", "en": "Performer" },
+      "description": {
+        "ru": "Любит перевоплощаться, играть роли, создавать сценарии",
+        "en": "Loves transformation, playing roles, creating scenarios"
+      },
+      "indicators": {
+        "high": ["roleplay", "costumes", "fantasy", "character", "scenario"],
+        "moderate": ["exhibitionism", "creativity"]
+      },
+      "intensity_range": [2, 4]
+    }
+  },
+
+  "profile_generation": {
+    "_note": "How to generate user profile from responses",
+
+    "tag_scoring": {
+      "scene_liked": "+2 to primary tags, +1 to secondary tags",
+      "scene_disliked": "-1 to primary tags",
+      "element_selected": "+1 to element tags",
+      "followup_high_rating": "+1 to followup tags",
+      "bodymap_zone_selected": "+1 to zone tags"
+    },
+
+    "archetype_matching": {
+      "method": "Calculate fit score for each archetype based on indicators",
+      "threshold": 0.6,
+      "max_archetypes": 3,
+      "allow_combinations": true
+    },
+
+    "output_format": {
+      "primary_archetype": "Highest scoring archetype",
+      "secondary_archetypes": "Other archetypes above threshold",
+      "tag_scores": "Map of all tags with scores",
+      "intensity_profile": "Preferred intensity range",
+      "give_receive_balance": "Ratio of give vs receive preferences",
+      "exploration_zones": "Areas with moderate scores (potential growth)"
+    }
+  },
+
+  "couple_compatibility": {
+    "_note": "Analyze compatibility between two profiles",
+
+    "compatibility_dimensions": [
+      {
+        "id": "role_compatibility",
+        "name": { "ru": "Совместимость ролей", "en": "Role Compatibility" },
+        "rules": {
+          "dom_sub": "high compatibility",
+          "dom_dom": "potential conflict, needs negotiation",
+          "sub_sub": "needs external dynamic or switching",
+          "switch_any": "high flexibility"
+        }
+      },
+      {
+        "id": "intensity_alignment",
+        "name": { "ru": "Совпадение интенсивности", "en": "Intensity Alignment" },
+        "rules": {
+          "same_range": "high compatibility",
+          "adjacent_range": "workable with communication",
+          "distant_range": "significant gap, needs discussion"
+        }
+      },
+      {
+        "id": "shared_interests",
+        "name": { "ru": "Общие интересы", "en": "Shared Interests" },
+        "calculation": "overlap of high-scored tags"
+      },
+      {
+        "id": "complementary_desires",
+        "name": { "ru": "Взаимодополняющие желания", "en": "Complementary Desires" },
+        "calculation": "A wants to give what B wants to receive"
+      },
+      {
+        "id": "growth_opportunities",
+        "name": { "ru": "Возможности для роста", "en": "Growth Opportunities" },
+        "calculation": "One partner's high interest in other's exploration zone"
+      }
+    ],
+
+    "red_flags": [
+      {
+        "condition": "One has hard_limit where other has strong_interest",
+        "severity": "high",
+        "recommendation": "Requires explicit discussion and respect"
+      },
+      {
+        "condition": "Large intensity gap (>2 levels)",
+        "severity": "medium",
+        "recommendation": "Start slow, check in frequently"
+      }
+    ],
+
+    "output_format": {
+      "overall_score": "0-100%",
+      "dimension_scores": "Score per dimension",
+      "shared_favorites": "Activities both love",
+      "explore_together": "New areas to try together",
+      "discussion_points": "Areas needing communication",
+      "date_night_ideas": "Specific activity suggestions"
+    }
+  },
+
+  "ai_analysis_prompts": {
+    "_note": "Prompts for AI-powered profile analysis",
+
+    "generate_profile_summary": {
+      "system": "You are an intimate relationship counselor. Generate insightful, non-judgmental profile summaries.",
+      "user_template": "User responses:\n{responses}\n\nTag scores:\n{tag_scores}\n\nMatched archetypes:\n{archetypes}\n\nGenerate a warm, insightful 2-3 paragraph summary of this person's intimate preferences. Be specific but tasteful. Highlight:\n1. Core desires and what drives them\n2. Preferred dynamics and roles\n3. Areas they might want to explore\n\nTone: Affirming, curious, non-judgmental."
+    },
+
+    "generate_couple_insights": {
+      "system": "You are a couples intimacy coach. Provide helpful, specific compatibility insights.",
+      "user_template": "Partner A profile:\n{profile_a}\n\nPartner B profile:\n{profile_b}\n\nCompatibility scores:\n{compatibility}\n\nGenerate insights for this couple:\n1. What makes them compatible\n2. Potential friction points (frame constructively)\n3. 3 specific activities to try together\n4. Communication tips for their dynamic\n\nTone: Encouraging, practical, specific."
+    },
+
+    "suggest_explorations": {
+      "system": "You suggest new intimate experiences based on existing preferences.",
+      "user_template": "User profile:\n{profile}\n\nCurrent high interests:\n{high_tags}\n\nExploration zones (moderate scores):\n{exploration_zones}\n\nSuggest 3-5 new experiences this person might enjoy, based on patterns in their preferences. Explain the connection to what they already like."
+    }
+  },
+
+  "insight_templates": {
+    "_note": "Pre-written insight templates for common patterns",
+
+    "dom_with_aftercare": {
+      "pattern": "dominant + high_aftercare",
+      "insight": {
+        "ru": "Ты доминант, который заботится. Контроль для тебя — это ответственность, а не просто власть.",
+        "en": "You're a caring dominant. Control for you is responsibility, not just power."
+      }
+    },
+    "sub_with_bratty": {
+      "pattern": "submissive + brat",
+      "insight": {
+        "ru": "Тебе нравится подчиняться, но не сразу — сначала нужно заслужить твою покорность.",
+        "en": "You like to submit, but not immediately — your surrender must be earned."
+      }
+    },
+    "primal_romantic": {
+      "pattern": "primal + romantic",
+      "insight": {
+        "ru": "В тебе живут два волка: один хочет нежности, другой — первобытной страсти. И оба правы.",
+        "en": "Two wolves live in you: one craves tenderness, the other primal passion. Both are right."
+      }
+    },
+    "voyeur_exhibitionist_pair": {
+      "pattern": "partner_a.voyeur + partner_b.exhibitionist",
+      "insight": {
+        "ru": "Идеальное совпадение: один любит смотреть, другой — показывать.",
+        "en": "Perfect match: one loves to watch, the other loves to show."
+      }
+    },
+    "switch_balanced": {
+      "pattern": "give ≈ receive across activities",
+      "insight": {
+        "ru": "Ты настоящий свитч — наслаждаешься обеими сторонами медали. Это редкий дар: понимать и власть, и подчинение.",
+        "en": "You're a true switch — enjoying both sides equally. A rare gift: understanding both power and surrender."
+      }
+    },
+    "sadist_with_consent": {
+      "pattern": "sadist + high_communication + aftercare",
+      "insight": {
+        "ru": "Тебе нравится причинять боль, но только когда партнёр этого хочет. Это не жестокость — это искусство.",
+        "en": "You enjoy giving pain, but only when your partner craves it. This isn't cruelty — it's art."
+      }
+    },
+    "masochist_controlled": {
+      "pattern": "masochist + submission + trust",
+      "insight": {
+        "ru": "Боль для тебя — не страдание, а освобождение. В правильных руках ты растворяешься.",
+        "en": "Pain for you isn't suffering — it's release. In the right hands, you dissolve."
+      }
+    },
+    "sensualist_touch": {
+      "pattern": "high_touch + massage + sensory",
+      "insight": {
+        "ru": "Для тебя секс начинается задолго до постели. Прикосновения, текстуры, запахи — всё это прелюдия.",
+        "en": "For you, sex starts long before the bedroom. Touch, texture, scent — it's all foreplay."
+      }
+    },
+    "exhibitionist_thrill": {
+      "pattern": "exhibitionism + public_risk",
+      "insight": {
+        "ru": "Риск быть увиденным — это не страх, а острые ощущения. Адреналин делает всё ярче.",
+        "en": "The risk of being seen isn't fear — it's thrill. Adrenaline makes everything more vivid."
+      }
+    },
+    "service_devoted": {
+      "pattern": "service + worship + devotion",
+      "insight": {
+        "ru": "Служить для тебя — это не унижение, а привилегия. В заботе о партнёре ты находишь смысл.",
+        "en": "Service for you isn't degradation — it's privilege. In caring for your partner, you find meaning."
+      }
+    },
+    "bondage_trust": {
+      "pattern": "bondage + helplessness + trust",
+      "insight": {
+        "ru": "Связанность для тебя — это не потеря контроля, а его осознанная передача. Высшая форма доверия.",
+        "en": "Being bound isn't losing control — it's consciously giving it away. The ultimate form of trust."
+      }
+    },
+    "verbal_degradation": {
+      "pattern": "degradation + dirty_talk + arousal_from_words",
+      "insight": {
+        "ru": "Слова действуют на тебя сильнее прикосновений. Правильная фраза — и ты уже там.",
+        "en": "Words affect you more than touch. The right phrase — and you're already there."
+      }
+    },
+    "praise_needy": {
+      "pattern": "praise + validation + words_of_affirmation",
+      "insight": {
+        "ru": "Когда тебя хвалят в постели, ты расцветаешь. Признание — твой язык любви.",
+        "en": "When praised in bed, you bloom. Recognition is your love language."
+      }
+    },
+    "foot_worship_devotion": {
+      "pattern": "foot_fetish + worship + submission",
+      "insight": {
+        "ru": "Ноги для тебя — не просто часть тела, а объект поклонения. В этом нет ничего странного — это твой путь к близости.",
+        "en": "Feet for you aren't just body parts — they're objects of worship. Nothing strange here — it's your path to intimacy."
+      }
+    },
+    "vanilla_deep": {
+      "pattern": "romantic + sensual + low_intensity + eye_contact",
+      "insight": {
+        "ru": "Тебе не нужны наручники, чтобы чувствовать глубоко. Твоя интимность — в глазах, дыхании, нежности.",
+        "en": "You don't need handcuffs to feel deeply. Your intimacy is in eyes, breath, tenderness."
+      }
+    },
+    "group_curious": {
+      "pattern": "threesome + group + moderate_score",
+      "insight": {
+        "ru": "Тебя интригует идея нескольких партнёров, но это пока фантазия. И это нормально — исследуй в своём темпе.",
+        "en": "The idea of multiple partners intrigues you, but it's still fantasy. That's okay — explore at your own pace."
+      }
+    },
+    "cnc_fantasy": {
+      "pattern": "cnc + primal + trust_required",
+      "insight": {
+        "ru": "Фантазия о потере контроля — это не желание насилия, а желание полной отдачи. С правильным партнёром это безопасно.",
+        "en": "The fantasy of losing control isn't about violence — it's about complete surrender. With the right partner, it's safe."
+      }
+    },
+    "pet_play_escape": {
+      "pattern": "pet_play + playful + escape_from_adult",
+      "insight": {
+        "ru": "Быть питомцем — это возможность отключить голову и просто быть. Никаких решений, только инстинкты.",
+        "en": "Being a pet is a chance to turn off your mind and just be. No decisions, only instincts."
+      }
+    },
+    "edging_control": {
+      "pattern": "edging + denial + control_arousal",
+      "insight": {
+        "ru": "Ожидание для тебя слаще оргазма. Чем дольше держать на грани — тем мощнее финал.",
+        "en": "Anticipation is sweeter than climax for you. The longer the edge — the more powerful the release."
+      }
+    },
+    "impact_cathartic": {
+      "pattern": "spanking + impact_play + emotional_release",
+      "insight": {
+        "ru": "Удары для тебя — это не боль, а сброс. После хорошей порки мир становится проще.",
+        "en": "Impact for you isn't pain — it's release. After a good spanking, the world gets simpler."
+      }
+    },
+    "roleplay_escape": {
+      "pattern": "roleplay + costumes + becoming_someone_else",
+      "insight": {
+        "ru": "В ролевых играх ты не притворяешься — ты освобождаешь те части себя, которые обычно прячешь.",
+        "en": "In roleplay, you're not pretending — you're freeing the parts of yourself you usually hide."
+      }
+    },
+    "cuckold_compersion": {
+      "pattern": "cuckold + watching + her_pleasure",
+      "insight": {
+        "ru": "Видеть её удовольствие с другим — это не унижение, а особый кайф. Ты наслаждаешься её наслаждением.",
+        "en": "Watching her pleasure with another isn't humiliation — it's a special thrill. You enjoy her enjoyment."
+      }
+    },
+    "hotwife_empowerment": {
+      "pattern": "hotwife + her_agency + his_support",
+      "insight": {
+        "ru": "Она свободна, он гордится. Это не измена — это доверие на новом уровне.",
+        "en": "She's free, he's proud. This isn't cheating — it's trust on another level."
+      }
+    },
+    "dom_sub_complementary": {
+      "pattern": "partner_a.dominant + partner_b.submissive",
+      "insight": {
+        "ru": "Ключ и замок. Один ведёт, другой следует. Вместе вы создаёте что-то большее.",
+        "en": "Lock and key. One leads, one follows. Together you create something greater."
+      }
+    },
+    "intensity_mismatch_gentle": {
+      "pattern": "partner_a.intensity_high + partner_b.intensity_low",
+      "insight": {
+        "ru": "Разный темперамент — не проблема, если есть диалог. Начните с её/его комфорта и растите вместе.",
+        "en": "Different intensity isn't a problem if there's dialogue. Start from their comfort and grow together."
+      }
+    },
+    "both_switches": {
+      "pattern": "partner_a.switch + partner_b.switch",
+      "insight": {
+        "ru": "Два свитча — это бесконечные возможности. Меняйтесь ролями, удивляйте друг друга.",
+        "en": "Two switches — endless possibilities. Trade roles, surprise each other."
+      }
+    },
+    "shared_kink_discovery": {
+      "pattern": "shared_high_tag + both_partners",
+      "insight": {
+        "ru": "Вы оба любите это — редкая находка. Исследуйте глубже, не стесняйтесь.",
+        "en": "You both love this — a rare find. Explore deeper, don't hold back."
+      }
+    },
+    "growth_opportunity": {
+      "pattern": "partner_a.high + partner_b.exploration_zone",
+      "insight": {
+        "ru": "Один из вас уже там, другой — на пути. Идеальная возможность стать проводником.",
+        "en": "One of you is already there, the other is on the way. Perfect opportunity to be a guide."
+      }
+    }
+  }
+}

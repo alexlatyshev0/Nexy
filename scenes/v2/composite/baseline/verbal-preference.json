@@ -1,0 +1,236 @@
+{
+  "id": "verbal_preference",
+  "slug": "verbal-preference",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Разговоры в постели",
+    "en": "Talking in Bed"
+  },
+  "subtitle": {
+    "ru": "Молчать или говорить?",
+    "en": "Silent or vocal?"
+  },
+  "ai_description": {
+    "ru": "Кто-то любит dirty talk, кто-то предпочитает молча. Похвала, грязные слова, команды... Как у тебя?",
+    "en": "Some love dirty talk, others prefer silence. Praise, dirty words, commands... What about you?"
+  },
+  "image_prompt": "man and woman in bed, man whispering in woman's ear, close intimate faces, bedroom setting",
+  "intensity": 1,
+  "category": "baseline",
+  "priority": 8,
+  "tags": [
+    "baseline",
+    "verbal",
+    "dirty_talk",
+    "praise",
+    "communication"
+  ],
+  "elements": [
+    {
+      "id": "general",
+      "label": {
+        "ru": "Общее",
+        "en": "General"
+      },
+      "tag_ref": "verbal_general",
+      "follow_ups": [
+        {
+          "id": "preference",
+          "type": "single_select",
+          "question": {
+            "ru": "Разговоры во время секса...",
+            "en": "Talking during sex..."
+          },
+          "config": {
+            "options": [
+              {
+                "id": "silent",
+                "label": {
+                  "ru": "Предпочитаю молчать",
+                  "en": "Prefer silence"
+                }
+              },
+              {
+                "id": "sounds",
+                "label": {
+                  "ru": "Звуки да, слова нет",
+                  "en": "Sounds yes, words no"
+                }
+              },
+              {
+                "id": "some",
+                "label": {
+                  "ru": "Немного слов",
+                  "en": "Some words"
+                }
+              },
+              {
+                "id": "love",
+                "label": {
+                  "ru": "Люблю разговаривать",
+                  "en": "Love talking"
+                }
+              },
+              {
+                "id": "need",
+                "label": {
+                  "ru": "Без слов не то",
+                  "en": "Need words"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "type",
+      "label": {
+        "ru": "Тип",
+        "en": "Type"
+      },
+      "tag_ref": "verbal_type",
+      "follow_ups": [
+        {
+          "id": "which",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие слова нравятся?",
+            "en": "What kind of words?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "praise",
+                "label": {
+                  "ru": "Похвала (хорошая девочка/мальчик)",
+                  "en": "Praise (good girl/boy)"
+                }
+              },
+              {
+                "id": "dirty",
+                "label": {
+                  "ru": "Грязные слова",
+                  "en": "Dirty words"
+                }
+              },
+              {
+                "id": "commands",
+                "label": {
+                  "ru": "Команды",
+                  "en": "Commands"
+                }
+              },
+              {
+                "id": "degradation",
+                "label": {
+                  "ru": "Унижение",
+                  "en": "Degradation"
+                }
+              },
+              {
+                "id": "romantic",
+                "label": {
+                  "ru": "Романтичное (люблю тебя)",
+                  "en": "Romantic (I love you)"
+                }
+              },
+              {
+                "id": "narration",
+                "label": {
+                  "ru": "Описание действий",
+                  "en": "Narrating actions"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "role",
+      "label": {
+        "ru": "Роль",
+        "en": "Role"
+      },
+      "tag_ref": "verbal_role",
+      "follow_ups": [
+        {
+          "id": "who_talks",
+          "type": "single_select",
+          "question": {
+            "ru": "Кто говорит?",
+            "en": "Who talks?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "i_talk",
+                "label": {
+                  "ru": "Я говорю",
+                  "en": "I talk"
+                }
+              },
+              {
+                "id": "partner_talks",
+                "label": {
+                  "ru": "Партнёр говорит",
+                  "en": "Partner talks"
+                }
+              },
+              {
+                "id": "both",
+                "label": {
+                  "ru": "Оба",
+                  "en": "Both"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "scale",
+    "text": {
+      "ru": "Насколько важны слова в сексе?",
+      "en": "How important are words in sex?"
+    },
+    "config": {
+      "min_label": {
+        "ru": "Молчать",
+        "en": "Silent"
+      },
+      "max_label": {
+        "ru": "Много слов",
+        "en": "Lots of words"
+      }
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "verbal",
+      "dirty_talk",
+      "communication"
+    ],
+    "tests_secondary": [
+      "praise",
+      "degradation",
+      "commands"
+    ],
+    "gates": {
+      "silent": [
+        "skip_verbal_scenes"
+      ],
+      "love": [
+        "detailed_verbal_scenes"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Разговоры в постели — молчать, грязные слова, похвала, или команды?",
+    "en": "Bedroom talk — silence, dirty words, praise, or commands?"
+  }
+}

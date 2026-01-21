@@ -1,0 +1,254 @@
+{
+  "id": "armpit",
+  "slug": "armpit",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Подмышки",
+    "en": "Armpit Play"
+  },
+  "subtitle": {
+    "ru": "Фетиш подмышек",
+    "en": "Armpit fetish"
+  },
+  "ai_description": {
+    "ru": "Возбуждение от подмышек партнёра. Запах, вкус, лизание, нюхание. Естественный или после душа.",
+    "en": "Arousal from partner's armpits. Smell, taste, licking, sniffing. Natural or freshly showered."
+  },
+  "image_prompt": "man with face close to woman's armpit, woman with arms raised, both nude, bedroom setting",
+  "intensity": 3,
+  "category": "worship-service",
+  "tags": [
+    "armpit",
+    "scent",
+    "licking",
+    "body_worship",
+    "pheromones"
+  ],
+  "elements": [
+    {
+      "id": "preference",
+      "label": {
+        "ru": "Предпочтение",
+        "en": "Preference"
+      },
+      "tag_ref": "armpit_preference",
+      "follow_ups": [
+        {
+          "id": "state",
+          "type": "single_select",
+          "question": {
+            "ru": "Какое состояние?",
+            "en": "What state?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "natural",
+                "label": {
+                  "ru": "Естественный запах",
+                  "en": "Natural scent"
+                }
+              },
+              {
+                "id": "fresh",
+                "label": {
+                  "ru": "После душа",
+                  "en": "Freshly showered"
+                }
+              },
+              {
+                "id": "sweaty",
+                "label": {
+                  "ru": "После тренировки",
+                  "en": "After workout"
+                }
+              },
+              {
+                "id": "any",
+                "label": {
+                  "ru": "Любое",
+                  "en": "Any"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "actions",
+      "label": {
+        "ru": "Действия",
+        "en": "Actions"
+      },
+      "tag_ref": "armpit_actions",
+      "follow_ups": [
+        {
+          "id": "what",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What do you like?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "sniffing",
+                "label": {
+                  "ru": "Нюхать",
+                  "en": "Sniffing"
+                }
+              },
+              {
+                "id": "licking",
+                "label": {
+                  "ru": "Лизать",
+                  "en": "Licking"
+                }
+              },
+              {
+                "id": "kissing",
+                "label": {
+                  "ru": "Целовать",
+                  "en": "Kissing"
+                }
+              },
+              {
+                "id": "nuzzling",
+                "label": {
+                  "ru": "Утыкаться",
+                  "en": "Nuzzling"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "whose",
+      "label": {
+        "ru": "Чьи подмышки",
+        "en": "Whose armpits"
+      },
+      "tag_ref": "armpit_whose",
+      "follow_ups": [
+        {
+          "id": "who",
+          "type": "single_select",
+          "question": {
+            "ru": "Чьи?",
+            "en": "Whose?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "hers",
+                "label": {
+                  "ru": "Её",
+                  "en": "Hers"
+                }
+              },
+              {
+                "id": "his",
+                "label": {
+                  "ru": "Его",
+                  "en": "His"
+                }
+              },
+              {
+                "id": "both",
+                "label": {
+                  "ru": "Обоих",
+                  "en": "Both"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "armpit_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "scent",
+                "label": {
+                  "ru": "Запах",
+                  "en": "Scent"
+                }
+              },
+              {
+                "id": "pheromones",
+                "label": {
+                  "ru": "Феромоны",
+                  "en": "Pheromones"
+                }
+              },
+              {
+                "id": "intimacy",
+                "label": {
+                  "ru": "Интимность",
+                  "en": "Intimacy"
+                }
+              },
+              {
+                "id": "taboo",
+                "label": {
+                  "ru": "Табуированность",
+                  "en": "Taboo"
+                }
+              },
+              {
+                "id": "vulnerability",
+                "label": {
+                  "ru": "Уязвимость",
+                  "en": "Vulnerability"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в подмышках?",
+      "en": "What appeals about armpits?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "armpit",
+      "scent",
+      "pheromones"
+    ],
+    "tests_secondary": [
+      "body_worship",
+      "licking",
+      "intimacy"
+    ]
+  },
+  "user_description": {
+    "ru": "Один партнёр нюхает, лизает и целует подмышки другого партнёра.",
+    "en": "One partner sniffs, licks and kisses the other partner's armpits."
+  }
+}

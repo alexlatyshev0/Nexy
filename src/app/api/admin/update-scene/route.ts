@@ -19,7 +19,7 @@ export async function POST(req: Request) {
     }
 
     // Only allow specific fields to be updated
-    const allowedFields = ['user_description', 'priority', 'prompt_instructions', 'generation_prompt'];
+    const allowedFields = ['user_description', 'priority', 'prompt_instructions', 'generation_prompt', 'accepted'];
     if (!allowedFields.includes(field)) {
       return NextResponse.json(
         { error: `Field ${field} not allowed` },

@@ -1,0 +1,282 @@
+{
+  "id": "pegging",
+  "slug": "pegging",
+  "version": 2,
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Pegging",
+    "en": "Pegging"
+  },
+  "subtitle": {
+    "ru": "Она его страпоном",
+    "en": "She pegs him"
+  },
+  "ai_description": {
+    "ru": "Она надевает страпон и берёт его. Смена ролей, её контроль, его уязвимость. Интенсивные ощущения для обоих.",
+    "en": "She wears a strap-on and takes him. Role reversal, her control, his vulnerability. Intense sensations for both."
+  },
+  "image_prompt": "woman wearing strap-on harness positioned behind man who is bent over bed, both nude, bedroom with bed and nightstand",
+  "intensity": 4,
+  "category": "anal",
+  "tags": [
+    "pegging",
+    "strapon",
+    "femdom",
+    "role_reversal",
+    "anal"
+  ],
+  "elements": [
+    {
+      "id": "toy_type",
+      "label": {
+        "ru": "Тип игрушки",
+        "en": "Toy type"
+      },
+      "tag_ref": "pegging_toy",
+      "follow_ups": [
+        {
+          "id": "toy",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой страпон?",
+            "en": "What strap-on?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "small",
+                "label": {
+                  "ru": "Маленький (для начала)",
+                  "en": "Small (starter)"
+                }
+              },
+              {
+                "id": "medium",
+                "label": {
+                  "ru": "Средний",
+                  "en": "Medium"
+                }
+              },
+              {
+                "id": "large",
+                "label": {
+                  "ru": "Большой",
+                  "en": "Large"
+                }
+              },
+              {
+                "id": "realistic",
+                "label": {
+                  "ru": "Реалистичный",
+                  "en": "Realistic"
+                }
+              },
+              {
+                "id": "double",
+                "label": {
+                  "ru": "Двойной (для обоих)",
+                  "en": "Double (for both)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "positions",
+      "label": {
+        "ru": "Позиции",
+        "en": "Positions"
+      },
+      "tag_ref": "pegging_positions",
+      "follow_ups": [
+        {
+          "id": "pos",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие позиции?",
+            "en": "What positions?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "doggy",
+                "label": {
+                  "ru": "Doggy style",
+                  "en": "Doggy style"
+                }
+              },
+              {
+                "id": "missionary",
+                "label": {
+                  "ru": "Он на спине",
+                  "en": "Him on back"
+                }
+              },
+              {
+                "id": "riding",
+                "label": {
+                  "ru": "Он сверху (сам)",
+                  "en": "Him riding"
+                }
+              },
+              {
+                "id": "standing",
+                "label": {
+                  "ru": "Стоя",
+                  "en": "Standing"
+                }
+              },
+              {
+                "id": "prone",
+                "label": {
+                  "ru": "Он лежит плашмя",
+                  "en": "Him prone"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dynamic",
+      "label": {
+        "ru": "Динамика",
+        "en": "Dynamic"
+      },
+      "tag_ref": "pegging_dynamic",
+      "follow_ups": [
+        {
+          "id": "power",
+          "type": "single_select",
+          "question": {
+            "ru": "Динамика власти?",
+            "en": "Power dynamic?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "loving",
+                "label": {
+                  "ru": "Любящая, нежная",
+                  "en": "Loving, gentle"
+                }
+              },
+              {
+                "id": "dominant",
+                "label": {
+                  "ru": "Доминантная, жёсткая",
+                  "en": "Dominant, rough"
+                }
+              },
+              {
+                "id": "playful",
+                "label": {
+                  "ru": "Игривая",
+                  "en": "Playful"
+                }
+              },
+              {
+                "id": "humiliation",
+                "label": {
+                  "ru": "С унижением",
+                  "en": "With humiliation"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "pegging_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "role_reversal",
+                "label": {
+                  "ru": "Смена ролей",
+                  "en": "Role reversal"
+                }
+              },
+              {
+                "id": "her_power",
+                "label": {
+                  "ru": "Её власть",
+                  "en": "Her power"
+                }
+              },
+              {
+                "id": "his_vulnerability",
+                "label": {
+                  "ru": "Его уязвимость",
+                  "en": "His vulnerability"
+                }
+              },
+              {
+                "id": "prostate",
+                "label": {
+                  "ru": "Стимуляция простаты",
+                  "en": "Prostate stimulation"
+                }
+              },
+              {
+                "id": "taboo",
+                "label": {
+                  "ru": "Табу",
+                  "en": "Taboo"
+                }
+              },
+              {
+                "id": "trust",
+                "label": {
+                  "ru": "Доверие",
+                  "en": "Trust"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в pegging?",
+      "en": "What appeals about pegging?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "pegging",
+      "strapon",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "role_reversal",
+      "prostate",
+      "power_exchange"
+    ]
+  },
+  "user_description": {
+    "ru": "Женщина надевает страпон и входит в его анус сзади. Мужчина наклоняется вперёд и принимает её.",
+    "en": "Woman puts on a strap-on and enters his anus from behind. Man bends forward and receives her."
+  }
+}

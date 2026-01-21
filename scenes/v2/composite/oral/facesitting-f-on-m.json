@@ -1,0 +1,381 @@
+{
+  "id": "facesitting_f_on_m",
+  "slug": "facesitting-she-on-him",
+  "version": 2,
+  "paired_scene": "facesitting_m_on_f",
+  "role_direction": "f_on_m",
+  "title": {
+    "ru": "Фейсситтинг",
+    "en": "Facesitting"
+  },
+  "subtitle": {
+    "ru": "Она на его лице",
+    "en": "She on his face"
+  },
+  "ai_description": {
+    "ru": "Она сидит на его лице, он под ней. Его рот, нос, всё лицо — для её удовольствия. Она контролирует, он служит.",
+    "en": "She sits on his face, he beneath her. His mouth, nose, whole face — for her pleasure. She controls, he serves."
+  },
+  "image_prompt": "woman sitting on man's face, she nude straddling his head, he lying on back beneath her, bedroom with bed",
+  "intensity": 3,
+  "category": "oral",
+  "tags": [
+    "facesitting",
+    "queening",
+    "smothering",
+    "femdom",
+    "oral_service",
+    "face_riding"
+  ],
+  "elements": [
+    {
+      "id": "position",
+      "label": {
+        "ru": "Позиция",
+        "en": "Position"
+      },
+      "tag_ref": "facesitting_position",
+      "follow_ups": [
+        {
+          "id": "how_sit",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как садится?",
+            "en": "How to sit?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "forward",
+                "label": {
+                  "ru": "Лицом вперёд",
+                  "en": "Facing forward"
+                }
+              },
+              {
+                "id": "reverse",
+                "label": {
+                  "ru": "Лицом назад (reverse)",
+                  "en": "Facing back (reverse)"
+                }
+              },
+              {
+                "id": "hover",
+                "label": {
+                  "ru": "Нависает (не полный вес)",
+                  "en": "Hovering (not full weight)"
+                }
+              },
+              {
+                "id": "full_weight",
+                "label": {
+                  "ru": "Полный вес",
+                  "en": "Full weight"
+                }
+              },
+              {
+                "id": "grinding",
+                "label": {
+                  "ru": "Двигается/трётся",
+                  "en": "Grinding"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "smothering",
+      "label": {
+        "ru": "Смазеринг",
+        "en": "Smothering"
+      },
+      "tag_ref": "smothering",
+      "follow_ups": [
+        {
+          "id": "breath_control",
+          "type": "scale",
+          "question": {
+            "ru": "Контроль дыхания?",
+            "en": "Breath control?"
+          },
+          "config": {
+            "min_label": {
+              "ru": "Он свободно дышит",
+              "en": "He breathes freely"
+            },
+            "max_label": {
+              "ru": "Она контролирует его дыхание",
+              "en": "She controls his breathing"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "power_dynamic",
+      "label": {
+        "ru": "Динамика власти",
+        "en": "Power dynamic"
+      },
+      "tag_ref": "femdom_oral",
+      "follow_ups": [
+        {
+          "id": "power_elements",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие элементы власти?",
+            "en": "What power elements?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "she_uses",
+                "label": {
+                  "ru": "Она использует его лицо",
+                  "en": "She uses his face"
+                }
+              },
+              {
+                "id": "he_serves",
+                "label": {
+                  "ru": "Он служит ей",
+                  "en": "He serves her"
+                }
+              },
+              {
+                "id": "commands",
+                "label": {
+                  "ru": "Она командует",
+                  "en": "She commands"
+                }
+              },
+              {
+                "id": "ignores",
+                "label": {
+                  "ru": "Она игнорирует его (смотрит ТВ)",
+                  "en": "She ignores him (watches TV)"
+                }
+              },
+              {
+                "id": "praise",
+                "label": {
+                  "ru": "Хвалит когда хорошо лижет",
+                  "en": "Praises when he licks well"
+                }
+              },
+              {
+                "id": "punish",
+                "label": {
+                  "ru": "Наказывает если плохо",
+                  "en": "Punishes if bad"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "his_hands",
+      "label": {
+        "ru": "Его руки",
+        "en": "His hands"
+      },
+      "tag_ref": "hand_position",
+      "follow_ups": [
+        {
+          "id": "hands",
+          "type": "multi_select",
+          "question": {
+            "ru": "Где его руки?",
+            "en": "Where are his hands?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "her_ass",
+                "label": {
+                  "ru": "На её попе",
+                  "en": "On her ass"
+                }
+              },
+              {
+                "id": "her_thighs",
+                "label": {
+                  "ru": "На бёдрах",
+                  "en": "On thighs"
+                }
+              },
+              {
+                "id": "her_hips",
+                "label": {
+                  "ru": "Направляет бёдра",
+                  "en": "Guiding hips"
+                }
+              },
+              {
+                "id": "tied",
+                "label": {
+                  "ru": "Связаны",
+                  "en": "Tied"
+                }
+              },
+              {
+                "id": "himself",
+                "label": {
+                  "ru": "Себя трогает",
+                  "en": "Touching himself"
+                }
+              },
+              {
+                "id": "not_allowed",
+                "label": {
+                  "ru": "Не разрешено трогать",
+                  "en": "Not allowed to touch"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "orgasm",
+      "label": {
+        "ru": "Оргазм",
+        "en": "Orgasm"
+      },
+      "tag_ref": "orgasm_facesitting",
+      "follow_ups": [
+        {
+          "id": "orgasm_goals",
+          "type": "multi_select",
+          "question": {
+            "ru": "Цель?",
+            "en": "Goal?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "her_orgasm",
+                "label": {
+                  "ru": "Её оргазм",
+                  "en": "Her orgasm"
+                }
+              },
+              {
+                "id": "multiple",
+                "label": {
+                  "ru": "Несколько оргазмов",
+                  "en": "Multiple orgasms"
+                }
+              },
+              {
+                "id": "squirt",
+                "label": {
+                  "ru": "Сквирт ему в лицо",
+                  "en": "Squirt on his face"
+                }
+              },
+              {
+                "id": "no_goal",
+                "label": {
+                  "ru": "Просто удовольствие",
+                  "en": "Just pleasure"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "duration",
+      "label": {
+        "ru": "Продолжительность",
+        "en": "Duration"
+      },
+      "tag_ref": "facesitting_duration",
+      "follow_ups": [
+        {
+          "id": "how_long",
+          "type": "single_select",
+          "question": {
+            "ru": "Как долго?",
+            "en": "How long?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "short",
+                "label": {
+                  "ru": "Недолго (5-10 мин)",
+                  "en": "Short (5-10 min)"
+                }
+              },
+              {
+                "id": "until_cum",
+                "label": {
+                  "ru": "Пока не кончит",
+                  "en": "Until she cums"
+                }
+              },
+              {
+                "id": "extended",
+                "label": {
+                  "ru": "Долго (30+ мин)",
+                  "en": "Extended (30+ min)"
+                }
+              },
+              {
+                "id": "as_throne",
+                "label": {
+                  "ru": "Как трон (постоянно)",
+                  "en": "As throne (continuously)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в фейсситтинге?",
+      "en": "What appeals about facesitting?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "facesitting",
+      "queening",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "oral_service",
+      "smothering",
+      "female_pleasure"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys female dominance",
+        "loves serving",
+        "face worship"
+      ],
+      "negative": [
+        "claustrophobic",
+        "prefers other oral",
+        "not into femdom"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Она садится на его лицо. Он лижет её киску и попку снизу.",
+    "en": "She sits on his face. He licks her pussy and ass from below."
+  }
+}

@@ -4,6 +4,7 @@ export interface Profile {
   gender: 'male' | 'female' | 'other' | 'undisclosed';
   interested_in: 'male' | 'female' | 'both';
   onboarding_completed: boolean;
+  language?: 'en' | 'ru' | null;
   created_at: string;
   updated_at: string;
 }
@@ -15,34 +16,65 @@ export interface PreferenceProfile {
   updated_at: string;
 }
 
-// Scene Types
-export interface SceneParticipant {
-  role: 'dominant' | 'submissive' | 'active' | 'passive' | 'equal';
-  gender: 'male' | 'female' | 'any';
-  action: string;
+// Scene Types (V2 - cleaned up, no legacy fields)
+
+/** Saved image variant for comparison */
+export interface ImageVariant {
+  url: string;
+  prompt: string;
+  created_at: string;
+  qa_status?: 'passed' | 'failed' | null;
+  qa_score?: number;
 }
 
+/**
+ * Base Scene interface for V2 composite scenes.
+ *
+ * Key field distinctions:
+ * - image_prompt: Default prompt from JSON files (reference for reset)
+ * - generation_prompt: Current working prompt (editable in admin)
+ * - prompt_instructions: AI instructions to auto-modify generation_prompt
+ * - ai_description: Technical description for AI matching (machine-readable)
+ * - user_description: Human-readable description shown to users
+ */
 export interface Scene {
   id: string;
   slug?: string;
+
+  // Image fields
   image_url: string | null;
-  description: string;
+  /** Default image prompt from JSON files. Used as reference for resetting. */
+  image_prompt?: string;
+  /** Current working prompt for image generation. Editable in admin. */
   generation_prompt?: string;
-  participants: SceneParticipant[];
-  dimensions: string[];
+  /** Saved image variants for comparison before choosing final one */
+  image_variants?: ImageVariant[];
+
+  // Content (localized)
+  /** Technical description for AI matching (machine-readable) */
+  ai_description: LocalizedString;
+  /** Human-readable description shown to users */
+  user_description?: LocalizedString;
+
+  // Classification
   tags: string[];
   intensity: number;
-  relevant_for: {
-    gender: 'male' | 'female' | 'any';
-    interested_in: 'male' | 'female' | 'both' | 'any';
-  };
+  category?: string;
+  priority?: number;
+
   created_at: string;
-  // QA fields
-  original_prompt?: string;
-  final_prompt?: string;
+
+  // Admin workflow fields
+  /** Instructions for AI to modify generation_prompt automatically */
+  prompt_instructions?: string;
+  /** QA validation status: passed/failed */
   qa_status?: 'passed' | 'failed' | null;
+  /** Number of QA validation attempts */
   qa_attempts?: number;
+  /** Last QA assessment details */
   qa_last_assessment?: Record<string, unknown>;
+  /** Manual image approval: true=approved, false=rejected, null=pending */
+  accepted?: boolean | null;
 }
 
 // Question Types
@@ -141,13 +173,40 @@ export type BodyGender = 'male' | 'female';
 export interface BodyZoneMarking {
   zoneId: BodyZoneId;
   preference: ZonePreference;
+  // For marker-based input (AI will interpret position)
+  position?: { x: number; y: number };
 }
+
+// Raw marker data grouped by preference
+export interface RawMarkers {
+  love: Array<{ x: number; y: number }>;
+  sometimes: Array<{ x: number; y: number }>;
+  no: Array<{ x: number; y: number }>;
+}
+
+// Zone+Action preference (for zone-first mode)
+export interface ZoneActionPreference {
+  actionId: string;
+  preference: ZonePreference;
+}
+
+// All preferences for a single zone
+export type ZoneActionPreferences = Record<string, ZonePreference | null>;
+
+// All zone preferences for a complete answer
+export type AllZonePreferences = Record<string, ZoneActionPreferences>;
 
 // One pass answer (for one action, one subject)
 export interface BodyMapPassAnswer {
   action: BodyAction;
   subject: 'give' | 'receive';
   markings: BodyZoneMarking[];
+  // New marker-based fields
+  rawMarkers?: RawMarkers;
+  view?: BodyView;
+  gender?: BodyGender;
+  // Zone-first mode: zone+action preferences
+  zoneActionPreferences?: AllZonePreferences;
 }
 
 // Full body map answer
@@ -485,27 +544,133 @@ export interface ExperienceResponse {
   created_at: string;
 }
 
-// V4 Question response
-export interface V4QuestionResponse {
+// V2 Question response (replaces V3/V4)
+export interface V2QuestionResponse {
   question: GeneratedQuestion;
-  questionConfig: QuestionConfig;
-  tabooContext?: TabooContext | null;
-  followUp?: FollowUp | null;
-  topicAlreadyAnswered?: boolean;
-  existingTopicResponse?: TopicResponse | null;
-  isV4: boolean;
+  scene: SceneV2;
+  isV2: boolean;
+  selectedElements?: string[]; // For element selection
 }
 
-// Signal update for psychological profiling
+// Signal update for psychological profiling (still used for V2)
 export interface SignalUpdate {
   signal: string;
   weight: number;
 }
 
-// V3 Question response with taboo and follow-up data
-export interface V3QuestionResponse {
-  question: GeneratedQuestion;
-  tabooContext?: TabooContext | null;
-  followUp?: FollowUp | null;
-  isV3: boolean;
+// ============================================
+// V2 SCENE TYPES - Composite Scenes
+// ============================================
+
+// V2 Conditional display for follow-ups
+export interface V2ShowIf {
+  /** Show if these elements were selected */
+  element_selected?: string[];
+  /** Show if previous answer contains these values */
+  answer_contains?: string[];
+  /** Show if interest level is within range (0-100) */
+  interest_level?: {
+    min?: number;
+    max?: number;
+  };
+}
+
+// V2 Element follow-up
+export interface V2FollowUp {
+  id: string;
+  type: 'multi_select' | 'single_select' | 'scale' | 'text' | 'image_select' | 'text_input' | 'text_with_suggestions' | 'intensity' | 'role' | 'experience' | 'body_map';
+  question: LocalizedString;
+  /** Conditional display based on previous responses */
+  show_if?: V2ShowIf;
+  /** Nested follow-ups (Level 3 drilldown) */
+  follow_ups?: V2FollowUp[];
+  config: {
+    // For multi_select, single_select
+    options?: Array<{
+      id: string;
+      label: LocalizedString;
+      image_url?: string; // For image_select
+      /** Nested drilldown for this option */
+      drilldown?: V2FollowUp;
+    }>;
+    min?: number;
+    max?: number;
+    // For text_input
+    placeholder?: LocalizedString;
+    // For text_with_suggestions
+    suggestions?: Array<{
+      label: LocalizedString;
+      examples?: LocalizedString;
+    }>;
+    // For intensity, scale
+    labels?: {
+      min?: LocalizedString;
+      max?: LocalizedString;
+    };
+    // For role
+    role_options?: Array<{
+      id: 'give' | 'receive' | 'both';
+      label: LocalizedString;
+    }>;
+    // For experience
+    experience_options?: Array<{
+      id: 'tried' | 'want_to_try' | 'fantasy_only' | 'not_interested';
+      label: LocalizedString;
+    }>;
+    /** Allow custom text input in multi_select/single_select */
+    allow_custom?: boolean;
+  };
+}
+
+// V2 Element (selectable aspect of the scene)
+export interface V2Element {
+  id: string;
+  label: LocalizedString;
+  tag_ref: string;
+  follow_ups?: V2FollowUp[];
+}
+
+// V2 Question
+export interface V2Question {
+  type: 'multi_select' | 'single_select' | 'scale' | 'yes_no';
+  text: LocalizedString;
+  min_selections?: number;
+  max_selections?: number;
+}
+
+// V2 AI Context
+export interface V2AIContext {
+  tests_primary: string[];
+  tests_secondary: string[];
+}
+
+/**
+ * V2 Scene with composite elements structure.
+ *
+ * This is the primary scene type for the discovery flow.
+ * Elements contain tag_ref and follow_ups for detailed preference mapping.
+ */
+export interface SceneV2 extends Scene {
+  slug: string;
+  version: 2;
+
+  // Direction (replaces legacy participants/relevant_for)
+  role_direction: 'm_to_f' | 'f_to_m' | 'mutual' | 'solo' | 'group' | 'universal';
+
+  // Content (localized)
+  title: LocalizedString;
+  subtitle?: LocalizedString;
+
+  // Classification
+  category: string;
+
+  // V2 structure
+  elements: V2Element[];
+  question?: V2Question;
+  ai_context: V2AIContext & {
+    gates?: Record<string, string[]>;
+  };
+
+  // Legacy field (still editable in admin)
+  follow_up?: V2FollowUp[] | null;
 }

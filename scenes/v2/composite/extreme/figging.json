@@ -1,0 +1,190 @@
+{
+  "id": "figging",
+  "slug": "figging",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Фиггинг",
+    "en": "Figging"
+  },
+  "subtitle": {
+    "ru": "Имбирная стимуляция",
+    "en": "Ginger stimulation"
+  },
+  "ai_description": {
+    "ru": "Использование очищенного корня имбиря для анальной или вагинальной стимуляции. Нарастающее жжение, невозможность сжиматься. Историческая практика.",
+    "en": "Using peeled ginger root for anal or vaginal stimulation. Building burning sensation, inability to clench. Historical practice."
+  },
+  "image_prompt": "woman bent over bed nude, man holding ginger root behind her, bedroom setting",
+  "intensity": 4,
+  "category": "extreme",
+  "tags": [
+    "figging",
+    "ginger",
+    "burning",
+    "edge_play",
+    "discipline"
+  ],
+  "elements": [
+    {
+      "id": "location",
+      "label": {
+        "ru": "Где",
+        "en": "Where"
+      },
+      "tag_ref": "figging_where",
+      "follow_ups": [
+        {
+          "id": "placement",
+          "type": "single_select",
+          "question": {
+            "ru": "Куда?",
+            "en": "Where?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "anal",
+                "label": {
+                  "ru": "Анально",
+                  "en": "Anal"
+                }
+              },
+              {
+                "id": "vaginal",
+                "label": {
+                  "ru": "Вагинально",
+                  "en": "Vaginal"
+                }
+              },
+              {
+                "id": "both",
+                "label": {
+                  "ru": "Оба варианта",
+                  "en": "Both"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Контекст",
+        "en": "Context"
+      },
+      "tag_ref": "figging_context",
+      "follow_ups": [
+        {
+          "id": "when",
+          "type": "multi_select",
+          "question": {
+            "ru": "В каком контексте?",
+            "en": "In what context?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "during_spanking",
+                "label": {
+                  "ru": "Во время порки",
+                  "en": "During spanking"
+                }
+              },
+              {
+                "id": "punishment",
+                "label": {
+                  "ru": "Как наказание",
+                  "en": "As punishment"
+                }
+              },
+              {
+                "id": "sensation",
+                "label": {
+                  "ru": "Для ощущений",
+                  "en": "For sensation"
+                }
+              },
+              {
+                "id": "alone",
+                "label": {
+                  "ru": "Само по себе",
+                  "en": "On its own"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "who_receives",
+      "label": {
+        "ru": "Кто получает",
+        "en": "Who receives"
+      },
+      "tag_ref": "figging_who",
+      "follow_ups": [
+        {
+          "id": "who",
+          "type": "single_select",
+          "question": {
+            "ru": "Кто?",
+            "en": "Who?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "she",
+                "label": {
+                  "ru": "Она",
+                  "en": "She"
+                }
+              },
+              {
+                "id": "he",
+                "label": {
+                  "ru": "Он",
+                  "en": "He"
+                }
+              },
+              {
+                "id": "both",
+                "label": {
+                  "ru": "Оба",
+                  "en": "Both"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в фиггинге?",
+      "en": "What appeals about figging?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "figging",
+      "ginger",
+      "burning"
+    ],
+    "tests_secondary": [
+      "discipline",
+      "edge_play",
+      "sensation"
+    ]
+  },
+  "user_description": {
+    "ru": "Мужчина вставляет очищенный корень имбиря в анус женщины.",
+    "en": "Man inserts peeled ginger root into woman's anus."
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Group Dynamics",
+  "note": "Threesomes, voyeurism, exhibitionism, swingers, multiple partners",
+  "scenes": [
+    {
+      "id": "scene_mfm_threesome",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "naked woman lying on side sandwiched between two naked men on large bed, one man behind her spooning his hand on her hip, second man in front face to face, both men focused on her, she eyes closed in pleasure, white sheets, warm bedroom lighting",
+      "user_description": {
+        "en": "She lies between two men, all attention on her. One behind, one in front. Every sensation doubled, every touch multiplied. Center of their universe.",
+        "ru": "Она между двумя мужчинами. Один сзади, один спереди. Всё внимание на ней."
+      },
+      "ai_context": {
+        "description": "MFM threesome. Woman as center of attention between two men. Testing interest in multiple male partners.",
+        "tests": { "primary_kink": "mfm_threesome", "secondary_kinks": ["center_of_attention", "multiple_partners", "double_penetration_hint"], "power_dynamic": "receiving", "gender_role_aspect": "woman receiving from multiple men" },
+        "question_angles": { "as_woman": "Does being the center of two men's attention appeal to you?", "as_man": "Would you share a partner with another man?", "emotional": "How do you feel about MFM scenarios?" },
+        "emotional_range": { "positive": ["ultimate fantasy", "love the attention", "intense pleasure"], "negative": ["too many people", "jealousy concerns", "not comfortable"], "curious": ["intriguing", "maybe with right people"] },
+        "profile_signals": { "if_positive": ["mfm_enjoys", "group_open", "attention_center"], "if_negative": ["monogamy_prefers", "group_no"], "if_curious": ["mfm_curious", "group_curious"] },
+        "correlations": { "positive": ["adventurous", "group_sex", "exhibitionism"], "negative": ["monogamy_strict", "jealousy_prone"] },
+        "taboo_context": { "level": 4, "common_concerns": ["jealousy", "comparison", "safety"], "normalization": "MFM is a common fantasy—communication and boundaries are key" }
+      },
+      "participants": [{ "role": "giving", "gender": "male", "action": "pleasures her" }, { "role": "giving", "gender": "male", "action": "pleasures her" }, { "role": "receiving", "gender": "female", "action": "center of attention" }],
+      "dimensions": ["mfm_threesome", "center_of_attention", "multiple_partners"],
+      "tags": ["threesome", "mfm", "two_men", "group"],
+      "relevant_for": { "gender": "any", "interested_in": "both" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_fmf_threesome",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "naked man lying on back on large bed between two women in black lingerie kneeling on either side, one woman kissing his neck hand on his chest, other woman lower kissing his hip, he looking up with pleasure, warm bedroom lighting",
+      "user_description": {
+        "en": "He lies between two women, all attention on him. Four hands, two mouths, overwhelming sensation. Center of their shared desire.",
+        "ru": "Он между двумя женщинами. Четыре руки, два рта. Всё внимание на нём."
+      },
+      "ai_context": {
+        "description": "FMF threesome. Man as center of attention between two women. Testing interest in multiple female partners.",
+        "tests": { "primary_kink": "fmf_threesome", "secondary_kinks": ["center_of_attention", "multiple_women", "male_fantasy"], "power_dynamic": "receiving", "gender_role_aspect": "man receiving from multiple women" },
+        "question_angles": { "as_man": "Does being pleasured by two women appeal to you?", "as_woman": "Would you share a partner with another woman?", "emotional": "How do you feel about FMF scenarios?" },
+        "emotional_range": { "positive": ["classic fantasy", "double the pleasure", "exciting"], "negative": ["jealousy", "too complicated", "prefer one partner"], "curious": ["intriguing", "with right connection"] },
+        "profile_signals": { "if_positive": ["fmf_enjoys", "group_open", "multiple_women"], "if_negative": ["monogamy_prefers", "group_no"], "if_curious": ["fmf_curious", "group_curious"] },
+        "correlations": { "positive": ["adventurous", "group_sex", "bisexual_curious"], "negative": ["monogamy_strict", "jealousy_prone"] },
+        "taboo_context": { "level": 4, "common_concerns": ["jealousy", "finding partners", "comparison"], "normalization": "FMF is extremely common fantasy—requires trust and communication" }
+      },
+      "participants": [{ "role": "giving", "gender": "female", "action": "pleasures him" }, { "role": "giving", "gender": "female", "action": "pleasures him" }, { "role": "receiving", "gender": "male", "action": "center of attention" }],
+      "dimensions": ["fmf_threesome", "center_of_attention", "multiple_women"],
+      "tags": ["threesome", "fmf", "two_women", "group"],
+      "relevant_for": { "gender": "any", "interested_in": "both" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_voyeur_f_watching",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman in open silk robe over lingerie sitting in armchair in corner touching herself while watching naked couple having sex in missionary on bed, her expression intense desire, dim bedroom lighting",
+      "user_description": {
+        "en": "She watches from the corner, her hand moving between her legs. The couple on the bed knows she's there. Pleasure in watching, in being the audience to their performance.",
+        "ru": "Она смотрит из угла на секс пары и мастурбирует. Они знают что она там."
+      },
+      "ai_context": {
+        "description": "Female voyeur watching couple have sex. Testing voyeuristic desires.",
+        "tests": { "primary_kink": "voyeurism", "secondary_kinks": ["watching_sex", "masturbation_while_watching", "third_person"], "power_dynamic": "observer", "gender_role_aspect": "woman as voyeur" },
+        "question_angles": { "as_voyeur": "Would you enjoy watching others have sex?", "emotional": "Does watching arouse you as much as participating?" },
+        "emotional_range": { "positive": ["love watching", "very arousing", "thrill of observing"], "negative": ["prefer participating", "feels wrong", "not my thing"], "curious": ["intriguing", "never tried"] },
+        "profile_signals": { "if_positive": ["voyeur_enjoys", "watching_aroused"], "if_negative": ["participation_only"], "if_curious": ["voyeur_curious"] },
+        "correlations": { "positive": ["group_curious", "porn_enjoys", "third_person_fantasy"], "negative": ["direct_participation_only"] },
+        "taboo_context": { "level": 3, "common_concerns": ["consent issues", "feeling creepy"], "normalization": "Consensual voyeurism is common—with all parties aware and agreeing" }
+      },
+      "participants": [{ "role": "voyeur", "gender": "female", "action": "watches and masturbates" }, { "role": "watched", "gender": "male", "action": "has sex" }, { "role": "watched", "gender": "female", "action": "has sex" }],
+      "dimensions": ["voyeurism", "watching", "masturbation"],
+      "tags": ["voyeur", "watching", "masturbation", "group"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_voyeur_m_watching",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "man in unbuttoned shirt and boxers sitting in armchair at foot of bed watching naked couple having sex in doggy position, couple glancing back at him knowing they have audience, moody bedroom lighting",
+      "user_description": {
+        "en": "He watches from the chair, leaning forward intently. The couple glances back, performing for their audience. The thrill of watching, of being allowed to see.",
+        "ru": "Он смотрит с кресла на секс пары. Они для него выступают."
+      },
+      "ai_context": {
+        "description": "Male voyeur watching couple perform. Testing voyeuristic desires with exhibitionist couple.",
+        "tests": { "primary_kink": "voyeurism", "secondary_kinks": ["watching_sex", "exhibitionist_couple", "audience"], "power_dynamic": "observer", "gender_role_aspect": "man as voyeur" },
+        "question_angles": { "as_voyeur": "Would you enjoy being audience to a couple?", "emotional": "Does the performance aspect add to the thrill?" },
+        "emotional_range": { "positive": ["very hot", "love being audience", "watching is exciting"], "negative": ["would rather join", "uncomfortable", "prefer privacy"], "curious": ["interesting dynamic", "might try"] },
+        "profile_signals": { "if_positive": ["voyeur_enjoys", "audience_role"], "if_negative": ["participation_prefers"], "if_curious": ["voyeur_curious"] },
+        "correlations": { "positive": ["group_adjacent", "cuckolding_curious", "exhibitionism"], "negative": ["direct_only", "jealousy_prone"] },
+        "taboo_context": { "level": 3, "common_concerns": ["feeling left out", "consent"], "normalization": "Being invited to watch can be intimate—a gift of trust" }
+      },
+      "participants": [{ "role": "voyeur", "gender": "male", "action": "watches intently" }, { "role": "exhibitionist", "gender": "male", "action": "performs" }, { "role": "exhibitionist", "gender": "female", "action": "performs" }],
+      "dimensions": ["voyeurism", "exhibitionism", "performance"],
+      "tags": ["voyeur", "exhibitionism", "audience", "group"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_being_watched",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "naked man and woman having sex on bed near large window at night, she looking toward window with excited expression, dark silhouette visible watching them outside, city lights behind, they knowingly perform for watcher",
+      "user_description": {
+        "en": "They know they're being watched. Rather than stopping, they perform. The knowledge of eyes on them intensifies everything. Exhibitionist thrill.",
+        "ru": "Они занимаются сексом зная, что за ними наблюдают. Выступают для зрителя."
+      },
+      "ai_context": {
+        "description": "Couple performing for a watcher. Testing exhibitionism and being watched.",
+        "tests": { "primary_kink": "exhibitionism", "secondary_kinks": ["being_watched", "performance", "audience_thrill"], "power_dynamic": "equal", "gender_role_aspect": "couple as performers" },
+        "question_angles": { "as_watched": "Does knowing someone is watching excite you?", "emotional": "Would you perform for an audience?" },
+        "emotional_range": { "positive": ["thrilling", "turns me on more", "love performing"], "negative": ["too exposed", "private only", "uncomfortable"], "curious": ["intriguing concept", "maybe anonymously"] },
+        "profile_signals": { "if_positive": ["exhibitionist", "being_watched_enjoys", "performance_aroused"], "if_negative": ["private_only", "exposure_averse"], "if_curious": ["exhibitionism_curious"] },
+        "correlations": { "positive": ["group_curious", "public_play", "confidence"], "negative": ["privacy_strong", "shy"] },
+        "taboo_context": { "level": 4, "common_concerns": ["who sees", "privacy", "consent"], "normalization": "Exhibitionism with consent is about sharing intimacy—knowing you're desired by observers" }
+      },
+      "participants": [{ "role": "exhibitionist", "gender": "male", "action": "performs" }, { "role": "exhibitionist", "gender": "female", "action": "performs" }],
+      "dimensions": ["exhibitionism", "being_watched", "performance"],
+      "tags": ["exhibitionism", "watched", "performance", "thrill"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_swingers_same_room",
+      "priority": 5,
+      "intensity": 4,
+      "generation_prompt": "hotel room with two queen beds side by side, naked couple in missionary on left bed, another naked couple with woman on top on right bed, all four occasionally glancing at each other, swingers watching while being watched, warm ambient lighting",
+      "user_description": {
+        "en": "Two couples in the same room. Separate beds but watching each other. The thrill of parallel pleasure, glances exchanged mid-passion. Swinger energy.",
+        "ru": "Две пары занимаются сексом в одной комнате на разных кроватях. Смотрят друг на друга."
+      },
+      "ai_context": {
+        "description": "Two couples in same room, watching each other. Soft swinging / voyeur-exhibitionist combo.",
+        "tests": { "primary_kink": "swinging", "secondary_kinks": ["same_room", "couple_watching", "voyeur_exhibitionist"], "power_dynamic": "equal", "gender_role_aspect": "couples as both watchers and watched" },
+        "question_angles": { "as_swinger": "Would you have sex while another couple is in the same room?", "emotional": "Does the shared experience appeal to you?" },
+        "emotional_range": { "positive": ["exciting", "adds spice", "love the dynamic"], "negative": ["too public", "uncomfortable", "prefer privacy"], "curious": ["intriguing", "soft swap entry point"] },
+        "profile_signals": { "if_positive": ["swinging_open", "same_room_ok", "soft_swap"], "if_negative": ["private_only", "couple_only"], "if_curious": ["swinging_curious"] },
+        "correlations": { "positive": ["group_open", "exhibitionism", "voyeurism"], "negative": ["monogamy_strict", "jealousy_prone"] },
+        "taboo_context": { "level": 5, "common_concerns": ["jealousy", "comparison", "boundaries"], "normalization": "Same-room play is often first step into swinging—allows connection without full swap" }
+      },
+      "participants": [{ "role": "swinger", "gender": "male", "action": "has sex, watches" }, { "role": "swinger", "gender": "female", "action": "has sex, watches" }, { "role": "swinger", "gender": "male", "action": "has sex, watches" }, { "role": "swinger", "gender": "female", "action": "has sex, watches" }],
+      "dimensions": ["swinging", "voyeurism", "exhibitionism", "same_room"],
+      "tags": ["swingers", "two_couples", "watching", "group"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_multiple_hands_f",
+      "priority": 5,
+      "intensity": 4,
+      "generation_prompt": "naked woman lying on back on dark sheets with black silk blindfold, four different hands touching her body from different angles on her breast thigh hip and neck, she cannot see whose hands, her expression pleasure, dark intimate lighting",
+      "user_description": {
+        "en": "Blindfolded, she can't see whose hands are whose. Four hands? Six? Touch from everywhere, identity unknown. Sensory mystery with multiple partners.",
+        "ru": "У неё повязка на глазах. Много рук ласкают тело, не знает чьи."
+      },
+      "ai_context": {
+        "description": "Blindfolded woman touched by multiple hands. Anonymous group touch.",
+        "tests": { "primary_kink": "multiple_partners", "secondary_kinks": ["blindfold", "anonymous_touch", "sensory_overload"], "power_dynamic": "receiving", "gender_role_aspect": "woman receiving anonymous group attention" },
+        "question_angles": { "as_receiver": "Would you enjoy being touched by multiple unknown people while blindfolded?", "emotional": "Does the mystery of not knowing add excitement?" },
+        "emotional_range": { "positive": ["overwhelming pleasure", "love the mystery", "fantasy scenario"], "negative": ["need to know who", "too much", "scary not exciting"], "curious": ["intriguing", "with trusted people"] },
+        "profile_signals": { "if_positive": ["multiple_partners_enjoys", "anonymous_touch_ok", "blindfold_group"], "if_negative": ["known_partners_only", "no_anonymous"], "if_curious": ["group_touch_curious"] },
+        "correlations": { "positive": ["group_sex", "blindfold_play", "submission"], "negative": ["control_needs", "trust_issues"] },
+        "taboo_context": { "level": 5, "common_concerns": ["trust", "knowing participants", "safety"], "normalization": "Anonymous touch fantasy is common—in practice, knowing all participants beforehand is essential for safety" }
+      },
+      "participants": [{ "role": "receiving", "gender": "female", "action": "blindfolded, receives touches" }, { "role": "touching", "gender": "any", "action": "touches anonymously" }],
+      "dimensions": ["blindfold", "multiple_hands", "mystery", "group"],
+      "tags": ["blindfold", "multiple_hands", "group", "anonymous"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+    {
+      "id": "scene_multiple_hands_m",
+      "priority": 5,
+      "intensity": 4,
+      "generation_prompt": "naked man lying on back on white sheets with black satin blindfold, multiple feminine hands with different nail colors touching his body on chest thigh and abs, he cannot see whose hands, his expression pleasure, sensory overload",
+      "user_description": {
+        "en": "Blindfolded, he can't see whose hands are whose. Multiple feminine hands with different nail colors. Touch from everywhere, identity unknown. Surrender to sensation.",
+        "ru": "У него повязка на глазах. Много женских рук ласкают тело, не знает чьи."
+      },
+      "ai_context": {
+        "description": "Blindfolded man touched by multiple feminine hands. Anonymous group touch.",
+        "tests": { "primary_kink": "multiple_partners", "secondary_kinks": ["blindfold", "multiple_women", "male_receiving"], "power_dynamic": "receiving", "gender_role_aspect": "man receiving anonymous female attention" },
+        "question_angles": { "as_receiver": "Would you enjoy being touched by multiple women while blindfolded?", "emotional": "Does the mystery of multiple unknown touchers excite you?" },
+        "emotional_range": { "positive": ["ultimate fantasy", "sensory heaven", "love it"], "negative": ["need to see", "overwhelming", "prefer one partner"], "curious": ["intriguing", "would try"] },
+        "profile_signals": { "if_positive": ["multiple_women_enjoys", "blindfold_group_ok"], "if_negative": ["one_partner_prefers", "control_needs"], "if_curious": ["group_touch_curious"] },
+        "correlations": { "positive": ["fmf_open", "blindfold_play", "receiving"], "negative": ["monogamy_strict", "control_need"] },
+        "taboo_context": { "level": 5, "common_concerns": ["knowing participants", "trust", "boundaries"], "normalization": "Common male fantasy—works best with established trust and known participants" }
+      },
+      "participants": [{ "role": "receiving", "gender": "male", "action": "blindfolded, receives touches" }, { "role": "touching", "gender": "female", "action": "touches anonymously" }],
+      "dimensions": ["blindfold", "multiple_hands", "multiple_women", "male_receiving"],
+      "tags": ["blindfold", "multiple_hands", "group", "male_sub"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    }
+  ],
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_073", "scene_074", "scene_075", "scene_076", "scene_077", "scene_078", "scene_079", "scene_080", "scene_355", "scene_356", "scene_357", "scene_358", "scene_359", "scene_360", "scene_361", "scene_362", "scene_363", "scene_364"],
+      "reason": "Consolidated group dynamics into representative scenarios covering MFM, FMF, voyeurism, exhibitionism, swinging, and anonymous group touch",
+      "recommendation": "Use follow-up questions for specific group configurations and partner counts"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "teacher_m_student_f",
+  "slug": "teacher-m-student-f",
+  "version": 2,
+  "role_direction": "m_to_f",
+  "title": { "ru": "Учитель и ученица", "en": "Teacher & Schoolgirl" },
+  "subtitle": { "ru": "Он — строгий учитель", "en": "He's the strict teacher" },
+  "ai_description": { "ru": "М-учитель, Ж-ученица. Ролеплей с наказаниями, rewards, властью через обучение.", "en": "M-teacher, F-student. Roleplay with punishments, rewards, power through teaching." },
+  "image_prompt": "woman in schoolgirl uniform bent over wooden desk, man in business suit holding ruler behind her, classroom with blackboard",
+  "intensity": 3,
+  "category": "roleplay",
+  "tags": ["roleplay", "teacher", "student", "m_dom", "punishment"],
+  "elements": [
+    {
+      "id": "what_happens",
+      "label": { "ru": "Что происходит", "en": "What happens" },
+      "tag_ref": "teacher_action",
+      "follow_ups": [{
+        "id": "action",
+        "type": "multi_select",
+        "question": { "ru": "Что делает учитель?", "en": "What does teacher do?" },
+        "config": {
+          "options": [
+            { "id": "scolding", "label": { "ru": "Отчитывает", "en": "Scolding" } },
+            { "id": "spanking", "label": { "ru": "Шлёпает", "en": "Spanking" } },
+            { "id": "detention", "label": { "ru": "Оставляет после уроков", "en": "Detention" } },
+            { "id": "rewards", "label": { "ru": "Награждает за успехи", "en": "Rewards for good grades" } }
+          ]
+        }
+      }]
+    }
+  ],
+  "question": { "type": "interest_scale", "text": { "ru": "Он — строгий учитель, она — непослушная ученица?", "en": "He's strict teacher, she's naughty student?" } },
+  "ai_context": { "tests_primary": ["teacher_student", "m_dom"], "tests_secondary": ["roleplay", "punishment"] },
+  "user_description": { "ru": "Он играет строгого учителя. Она — ученица в школьной форме. Наказания за плохое поведение.", "en": "He plays strict teacher. She's student in uniform. Punishments for bad behavior." }
+}

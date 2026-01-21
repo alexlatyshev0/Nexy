@@ -1,0 +1,297 @@
+{
+  "id": "massage_m_to_f",
+  "slug": "massage-he-massages-her",
+  "version": 2,
+  "paired_scene": "massage_f_to_m",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Массаж",
+    "en": "Massage"
+  },
+  "subtitle": {
+    "ru": "Он массирует её",
+    "en": "He massages her"
+  },
+  "ai_description": {
+    "ru": "Она лежит на животе, он разминает её спину. Масло, свечи, медленные движения. Массаж перетекает в ласки, ласки — в секс.",
+    "en": "She lies face down, he kneads her back. Oil, candles, slow movements. Massage flows into caresses, caresses — into sex."
+  },
+  "image_prompt": "man massaging woman lying face down on bed, his hands on her back, she nude with towel over bottom, he shirtless, bedroom setting, soft warm lighting",
+  "intensity": 1,
+  "category": "massage",
+  "tags": [
+    "massage",
+    "oil_massage",
+    "sensual",
+    "foreplay",
+    "relaxation"
+  ],
+  "elements": [
+    {
+      "id": "areas",
+      "label": {
+        "ru": "Какие зоны?",
+        "en": "What areas?"
+      },
+      "tag_ref": "massage_areas",
+      "follow_ups": [
+        {
+          "id": "body_areas",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие части тела?",
+            "en": "What body parts?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "back",
+                "label": {
+                  "ru": "Спина",
+                  "en": "Back"
+                }
+              },
+              {
+                "id": "shoulders",
+                "label": {
+                  "ru": "Плечи, шея",
+                  "en": "Shoulders, neck"
+                }
+              },
+              {
+                "id": "legs",
+                "label": {
+                  "ru": "Ноги",
+                  "en": "Legs"
+                }
+              },
+              {
+                "id": "feet",
+                "label": {
+                  "ru": "Ступни",
+                  "en": "Feet"
+                }
+              },
+              {
+                "id": "butt",
+                "label": {
+                  "ru": "Попа",
+                  "en": "Butt"
+                }
+              },
+              {
+                "id": "inner_thighs",
+                "label": {
+                  "ru": "Внутренняя часть бёдер",
+                  "en": "Inner thighs"
+                }
+              },
+              {
+                "id": "full_body",
+                "label": {
+                  "ru": "Всё тело",
+                  "en": "Full body"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "erotic_transition",
+      "label": {
+        "ru": "Переход в эротику",
+        "en": "Erotic transition"
+      },
+      "tag_ref": "massage_erotic",
+      "follow_ups": [
+        {
+          "id": "transition",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как переходит в секс?",
+            "en": "How does it become sexual?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "gradual",
+                "label": {
+                  "ru": "Постепенно, незаметно",
+                  "en": "Gradually, imperceptibly"
+                }
+              },
+              {
+                "id": "breasts",
+                "label": {
+                  "ru": "Переходит к груди",
+                  "en": "Moves to breasts"
+                }
+              },
+              {
+                "id": "between_legs",
+                "label": {
+                  "ru": "Руки между ног",
+                  "en": "Hands between legs"
+                }
+              },
+              {
+                "id": "happy_ending",
+                "label": {
+                  "ru": "Happy ending",
+                  "en": "Happy ending"
+                }
+              },
+              {
+                "id": "she_turns",
+                "label": {
+                  "ru": "Она переворачивается",
+                  "en": "She turns over"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "oil",
+      "label": {
+        "ru": "Масло",
+        "en": "Oil"
+      },
+      "tag_ref": "massage_oil",
+      "follow_ups": [
+        {
+          "id": "oil_type",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какое масло?",
+            "en": "What oil?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "scented",
+                "label": {
+                  "ru": "Ароматическое",
+                  "en": "Scented"
+                }
+              },
+              {
+                "id": "warming",
+                "label": {
+                  "ru": "Разогревающее",
+                  "en": "Warming"
+                }
+              },
+              {
+                "id": "neutral",
+                "label": {
+                  "ru": "Нейтральное",
+                  "en": "Neutral"
+                }
+              },
+              {
+                "id": "edible",
+                "label": {
+                  "ru": "Съедобное",
+                  "en": "Edible"
+                }
+              },
+              {
+                "id": "coconut",
+                "label": {
+                  "ru": "Кокосовое",
+                  "en": "Coconut"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "atmosphere",
+      "label": {
+        "ru": "Атмосфера",
+        "en": "Atmosphere"
+      },
+      "tag_ref": "massage_atmosphere",
+      "follow_ups": [
+        {
+          "id": "setting",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что важно?",
+            "en": "What's important?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "candles",
+                "label": {
+                  "ru": "Свечи",
+                  "en": "Candles"
+                }
+              },
+              {
+                "id": "music",
+                "label": {
+                  "ru": "Музыка",
+                  "en": "Music"
+                }
+              },
+              {
+                "id": "warm",
+                "label": {
+                  "ru": "Тёплая комната",
+                  "en": "Warm room"
+                }
+              },
+              {
+                "id": "naked",
+                "label": {
+                  "ru": "Оба голые",
+                  "en": "Both naked"
+                }
+              },
+              {
+                "id": "towels",
+                "label": {
+                  "ru": "Полотенца",
+                  "en": "Towels"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что нравится в массаже?",
+      "en": "What do you like about massage?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "massage",
+      "sensual_touch",
+      "foreplay"
+    ],
+    "tests_secondary": [
+      "oil",
+      "relaxation",
+      "transition"
+    ]
+  },
+  "user_description": {
+    "ru": "Он массирует её тело маслом. Руки скользят к груди, между ног.",
+    "en": "He massages her body with oil. Hands slide to breasts, between legs."
+  }
+}

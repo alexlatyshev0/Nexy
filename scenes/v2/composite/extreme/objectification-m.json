@@ -1,0 +1,76 @@
+{
+  "id": "objectification_m",
+  "slug": "objectification-m",
+  "version": 2,
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Объективация (он — объект)",
+    "en": "Objectification (He's the Object)"
+  },
+  "subtitle": {
+    "ru": "Он становится вещью",
+    "en": "He becomes a thing"
+  },
+  "ai_description": {
+    "ru": "Он становится мебелью, игрушкой, объектом для использования. Дегуманизация как форма глубокого подчинения.",
+    "en": "He becomes furniture, toy, object to be used. Dehumanization as deep submission."
+  },
+  "image_prompt": "man on all fours with woman sitting on his back using him as chair, woman with glass in hand, bedroom setting, minimal clothing",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": ["objectification", "furniture", "dehumanization", "male_submission"],
+  "elements": [
+    {
+      "id": "types",
+      "label": { "ru": "Типы", "en": "Types" },
+      "tag_ref": "object_types",
+      "follow_ups": [
+        {
+          "id": "what",
+          "type": "multi_select",
+          "question": { "ru": "Чем он становится?", "en": "What does he become?" },
+          "config": {
+            "options": [
+              { "id": "furniture", "label": { "ru": "Мебель (стол, стул)", "en": "Furniture (table, chair)" } },
+              { "id": "sex_toy", "label": { "ru": "Секс-игрушка", "en": "Sex toy" } },
+              { "id": "footstool", "label": { "ru": "Подставка для ног", "en": "Footstool" } },
+              { "id": "dildo", "label": { "ru": "Дилдо — только его член", "en": "Dildo — just his cock" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": { "ru": "Что привлекает", "en": "What appeals" },
+      "tag_ref": "object_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": { "ru": "Что возбуждает?", "en": "What excites?" },
+          "config": {
+            "options": [
+              { "id": "his_submission", "label": { "ru": "Его полное подчинение", "en": "His total submission" } },
+              { "id": "using_him", "label": { "ru": "Использовать его", "en": "Using him" } },
+              { "id": "being_used", "label": { "ru": "Быть использованным", "en": "Being used" } },
+              { "id": "degradation", "label": { "ru": "Деградация", "en": "Degradation" } }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "interest_scale",
+    "text": { "ru": "Он как объект — мебель, игрушка?", "en": "He as object — furniture, toy?" }
+  },
+  "ai_context": {
+    "tests_primary": ["objectification", "male_submission"],
+    "tests_secondary": ["furniture_play", "femdom"]
+  },
+  "user_description": {
+    "ru": "Он становится объектом — мебелью или игрушкой. На него садятся, используют как подставку или только его член.",
+    "en": "He becomes an object — furniture or toy. She sits on him, uses him as a stand or just his cock."
+  }
+}

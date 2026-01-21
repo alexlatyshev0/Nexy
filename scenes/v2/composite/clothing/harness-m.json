@@ -1,0 +1,268 @@
+{
+  "id": "harness_m",
+  "slug": "male-harness",
+  "version": 2,
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Харнесс на нём",
+    "en": "Male Harness"
+  },
+  "subtitle": {
+    "ru": "Ремешки и цепочки на мужском теле",
+    "en": "Straps and chains on male body"
+  },
+  "ai_description": {
+    "ru": "Мужской харнесс — ремешки на торсе, chest harness, body chains. Подчёркивает мускулатуру или уязвимость.",
+    "en": "Male harness — straps on torso, chest harness, body chains. Emphasizes muscles or vulnerability."
+  },
+  "image_prompt": "man wearing leather chest harness with metal rings, woman's hands on his chest adjusting straps, bedroom setting",
+  "intensity": 3,
+  "category": "clothing",
+  "tags": [
+    "clothing",
+    "harness",
+    "male_harness",
+    "leather",
+    "straps"
+  ],
+  "elements": [
+    {
+      "id": "type",
+      "label": {
+        "ru": "Тип",
+        "en": "Type"
+      },
+      "tag_ref": "male_harness_type",
+      "follow_ups": [
+        {
+          "id": "which",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой харнесс?",
+            "en": "What harness?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "chest",
+                "label": {
+                  "ru": "На грудь (chest harness)",
+                  "en": "Chest harness"
+                }
+              },
+              {
+                "id": "full_body",
+                "label": {
+                  "ru": "Полный (торс + бёдра)",
+                  "en": "Full body (torso + hips)"
+                }
+              },
+              {
+                "id": "shoulder",
+                "label": {
+                  "ru": "На плечи",
+                  "en": "Shoulder harness"
+                }
+              },
+              {
+                "id": "chains",
+                "label": {
+                  "ru": "Цепочки на тело",
+                  "en": "Body chains"
+                }
+              },
+              {
+                "id": "cock_harness",
+                "label": {
+                  "ru": "На гениталии",
+                  "en": "Cock harness"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "material",
+      "label": {
+        "ru": "Материал",
+        "en": "Material"
+      },
+      "tag_ref": "male_harness_material",
+      "follow_ups": [
+        {
+          "id": "which_material",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой материал?",
+            "en": "What material?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "leather",
+                "label": {
+                  "ru": "Кожа",
+                  "en": "Leather"
+                }
+              },
+              {
+                "id": "elastic",
+                "label": {
+                  "ru": "Эластичные ремешки",
+                  "en": "Elastic straps"
+                }
+              },
+              {
+                "id": "metal",
+                "label": {
+                  "ru": "Металлические цепочки",
+                  "en": "Metal chains"
+                }
+              },
+              {
+                "id": "rope",
+                "label": {
+                  "ru": "Верёвка (shibari)",
+                  "en": "Rope (shibari)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Контекст",
+        "en": "Context"
+      },
+      "tag_ref": "male_harness_context",
+      "follow_ups": [
+        {
+          "id": "situation",
+          "type": "multi_select",
+          "question": {
+            "ru": "В какой ситуации?",
+            "en": "In what situation?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "display",
+                "label": {
+                  "ru": "Показать тело",
+                  "en": "Display body"
+                }
+              },
+              {
+                "id": "submission",
+                "label": {
+                  "ru": "Подчинение ей",
+                  "en": "Submission to her"
+                }
+              },
+              {
+                "id": "dominance",
+                "label": {
+                  "ru": "Доминирование (он сверху)",
+                  "en": "Dominance (he's on top)"
+                }
+              },
+              {
+                "id": "party",
+                "label": {
+                  "ru": "Фетиш-вечеринка",
+                  "en": "Fetish party"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "appeal",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "male_harness_appeal",
+      "follow_ups": [
+        {
+          "id": "why",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "muscles",
+                "label": {
+                  "ru": "Подчёркивает мускулы",
+                  "en": "Emphasizes muscles"
+                }
+              },
+              {
+                "id": "vulnerability",
+                "label": {
+                  "ru": "Делает уязвимым",
+                  "en": "Makes vulnerable"
+                }
+              },
+              {
+                "id": "edgy",
+                "label": {
+                  "ru": "Дерзкий стиль",
+                  "en": "Edgy style"
+                }
+              },
+              {
+                "id": "restraint",
+                "label": {
+                  "ru": "Намёк на бондаж",
+                  "en": "Hint of bondage"
+                }
+              },
+              {
+                "id": "access",
+                "label": {
+                  "ru": "Открывает доступ к телу",
+                  "en": "Opens body access"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в харнессе на мужчине?",
+      "en": "What appeals about harness on a man?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "male_harness",
+      "straps",
+      "male_display"
+    ],
+    "tests_secondary": [
+      "leather",
+      "vulnerability",
+      "muscles"
+    ]
+  },
+  "user_description": {
+    "ru": "Он в кожаном харнессе — ремешки на голом торсе, металлические кольца.",
+    "en": "He wears leather harness — straps on bare torso, metal rings."
+  }
+}

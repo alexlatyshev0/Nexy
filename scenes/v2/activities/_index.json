@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "name": "Interactive Activities",
+  "description": "Non-scene activities: audio, image selection, etc.",
+  "total_activities": 2,
+
+  "activities": [
+    {
+      "id": "sounds",
+      "type": "audio_select",
+      "order": 10,
+      "ready": false,
+      "note": "Audio samples need to be recorded/sourced"
+    },
+    {
+      "id": "clothing",
+      "type": "image_select",
+      "order": 11,
+      "ready": false,
+      "note": "Images need to be generated"
+    }
+  ],
+
+  "future_activities": [
+    {
+      "id": "naming",
+      "description": "What to call body parts, pet names",
+      "type": "text_input_select"
+    },
+    {
+      "id": "pace",
+      "description": "Tempo/intensity sliders",
+      "type": "slider"
+    },
+    {
+      "id": "aftercare",
+      "description": "What you need after sex",
+      "type": "multi_select"
+    },
+    {
+      "id": "hard_limits",
+      "description": "Absolute no's checklist",
+      "type": "checklist"
+    }
+  ]
+}

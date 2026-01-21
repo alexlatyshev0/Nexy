@@ -1,0 +1,203 @@
+{
+  "id": "makeup_sex",
+  "slug": "makeup-sex",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Секс после ссоры",
+    "en": "Makeup Sex"
+  },
+  "subtitle": {
+    "ru": "Примирение в постели",
+    "en": "Reconciliation in bed"
+  },
+  "ai_description": {
+    "ru": "Секс после конфликта как способ примирения. Эмоциональный контекст ссоры усиливает интенсивность.",
+    "en": "Sex after conflict as reconciliation. Emotional context of argument intensifies the experience."
+  },
+  "image_prompt": "man and woman in bed after argument, she has tears on face, he holds her close, kissing her forehead, bedroom with clothes scattered",
+  "intensity": 3,
+  "category": "emotional-context",
+  "tags": [
+    "emotional",
+    "makeup_sex",
+    "reconciliation",
+    "intense"
+  ],
+  "elements": [
+    {
+      "id": "timing",
+      "label": {
+        "ru": "Когда",
+        "en": "When"
+      },
+      "tag_ref": "makeup_timing",
+      "follow_ups": [
+        {
+          "id": "when",
+          "type": "single_select",
+          "question": {
+            "ru": "Когда после ссоры?",
+            "en": "When after argument?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "immediately",
+                "label": {
+                  "ru": "Сразу после",
+                  "en": "Immediately after"
+                }
+              },
+              {
+                "id": "same_day",
+                "label": {
+                  "ru": "В тот же день",
+                  "en": "Same day"
+                }
+              },
+              {
+                "id": "next_day",
+                "label": {
+                  "ru": "На следующий день",
+                  "en": "Next day"
+                }
+              },
+              {
+                "id": "after_cooldown",
+                "label": {
+                  "ru": "После того как остыли",
+                  "en": "After cooling down"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "label": {
+        "ru": "Стиль",
+        "en": "Style"
+      },
+      "tag_ref": "makeup_style",
+      "follow_ups": [
+        {
+          "id": "how",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой секс?",
+            "en": "What kind of sex?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "passionate",
+                "label": {
+                  "ru": "Страстный, резкий",
+                  "en": "Passionate, intense"
+                }
+              },
+              {
+                "id": "tender",
+                "label": {
+                  "ru": "Нежный, примирительный",
+                  "en": "Tender, reconciling"
+                }
+              },
+              {
+                "id": "rough",
+                "label": {
+                  "ru": "Грубый, агрессивный",
+                  "en": "Rough, aggressive"
+                }
+              },
+              {
+                "id": "slow",
+                "label": {
+                  "ru": "Медленный, с разговорами",
+                  "en": "Slow, with talking"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "appeal",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "makeup_appeal",
+      "follow_ups": [
+        {
+          "id": "why",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "intensity",
+                "label": {
+                  "ru": "Интенсивность эмоций",
+                  "en": "Emotional intensity"
+                }
+              },
+              {
+                "id": "release",
+                "label": {
+                  "ru": "Выход напряжения",
+                  "en": "Tension release"
+                }
+              },
+              {
+                "id": "reconnection",
+                "label": {
+                  "ru": "Восстановление связи",
+                  "en": "Reconnection"
+                }
+              },
+              {
+                "id": "passion",
+                "label": {
+                  "ru": "Страсть после конфликта",
+                  "en": "Passion after conflict"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в сексе после ссоры?",
+      "en": "What appeals about makeup sex?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "makeup_sex",
+      "emotional",
+      "reconciliation"
+    ],
+    "tests_secondary": [
+      "intensity",
+      "passion",
+      "conflict_resolution"
+    ]
+  },
+  "user_description": {
+    "ru": "Пара занимается сексом после ссоры. Резко или нежно.",
+    "en": "Couple has sex after an argument. Rough or tender."
+  }
+}

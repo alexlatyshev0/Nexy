@@ -1,0 +1,282 @@
+{
+  "id": "anal_play_on_him",
+  "slug": "anal-play-on-him",
+  "version": 2,
+  "paired_scene": "anal_play_on_her",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Анальные игры",
+    "en": "Anal Play"
+  },
+  "subtitle": {
+    "ru": "С ним",
+    "en": "On him"
+  },
+  "ai_description": {
+    "ru": "Внимание к его попке. Пальцы, пробки, массаж простаты. Другие ощущения, интенсивные оргазмы, исследование его тела.",
+    "en": "Attention to his ass. Fingers, plugs, prostate massage. Different sensations, intense orgasms, exploring his body."
+  },
+  "image_prompt": "woman and man on bed, he lying face down nude, she kneeling behind him with hand on his lower back, bedroom setting",
+  "intensity": 3,
+  "category": "anal",
+  "tags": [
+    "anal",
+    "prostate",
+    "plugs",
+    "male_pleasure"
+  ],
+  "elements": [
+    {
+      "id": "activities",
+      "label": {
+        "ru": "Активности",
+        "en": "Activities"
+      },
+      "tag_ref": "anal_acts_m",
+      "follow_ups": [
+        {
+          "id": "acts",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие активности?",
+            "en": "What activities?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "fingers",
+                "label": {
+                  "ru": "Пальцы",
+                  "en": "Fingers"
+                }
+              },
+              {
+                "id": "plug",
+                "label": {
+                  "ru": "Пробка",
+                  "en": "Plug"
+                }
+              },
+              {
+                "id": "prostate_toy",
+                "label": {
+                  "ru": "Игрушка для простаты",
+                  "en": "Prostate toy"
+                }
+              },
+              {
+                "id": "prostate_massage",
+                "label": {
+                  "ru": "Массаж простаты",
+                  "en": "Prostate massage"
+                }
+              },
+              {
+                "id": "milking",
+                "label": {
+                  "ru": "Milking (без оргазма)",
+                  "en": "Milking (no orgasm)"
+                }
+              },
+              {
+                "id": "enema",
+                "label": {
+                  "ru": "Клизма (подготовка)",
+                  "en": "Enema (prep)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "prostate_orgasm",
+      "label": {
+        "ru": "Простатный оргазм",
+        "en": "Prostate orgasm"
+      },
+      "tag_ref": "prostate_o",
+      "follow_ups": [
+        {
+          "id": "goal",
+          "type": "single_select",
+          "question": {
+            "ru": "Цель?",
+            "en": "Goal?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "enhance",
+                "label": {
+                  "ru": "Усилить обычный оргазм",
+                  "en": "Enhance regular orgasm"
+                }
+              },
+              {
+                "id": "prostate_only",
+                "label": {
+                  "ru": "Оргазм только от простаты",
+                  "en": "Prostate-only orgasm"
+                }
+              },
+              {
+                "id": "milking",
+                "label": {
+                  "ru": "Milking без оргазма",
+                  "en": "Milking without orgasm"
+                }
+              },
+              {
+                "id": "exploring",
+                "label": {
+                  "ru": "Просто исследование",
+                  "en": "Just exploring"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dynamic",
+      "label": {
+        "ru": "Динамика",
+        "en": "Dynamic"
+      },
+      "tag_ref": "anal_dynamic_m",
+      "follow_ups": [
+        {
+          "id": "power",
+          "type": "single_select",
+          "question": {
+            "ru": "Кто контролирует?",
+            "en": "Who's in control?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "she_controls",
+                "label": {
+                  "ru": "Она контролирует",
+                  "en": "She controls"
+                }
+              },
+              {
+                "id": "he_guides",
+                "label": {
+                  "ru": "Он направляет",
+                  "en": "He guides"
+                }
+              },
+              {
+                "id": "mutual",
+                "label": {
+                  "ru": "Вместе",
+                  "en": "Together"
+                }
+              },
+              {
+                "id": "femdom",
+                "label": {
+                  "ru": "Femdom контекст",
+                  "en": "Femdom context"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "anal_appeal_m",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "prostate_pleasure",
+                "label": {
+                  "ru": "Удовольствие от простаты",
+                  "en": "Prostate pleasure"
+                }
+              },
+              {
+                "id": "vulnerability",
+                "label": {
+                  "ru": "Уязвимость",
+                  "en": "Vulnerability"
+                }
+              },
+              {
+                "id": "intense_orgasm",
+                "label": {
+                  "ru": "Интенсивный оргазм",
+                  "en": "Intense orgasm"
+                }
+              },
+              {
+                "id": "taboo",
+                "label": {
+                  "ru": "Табуированность",
+                  "en": "Taboo aspect"
+                }
+              },
+              {
+                "id": "her_control",
+                "label": {
+                  "ru": "Её контроль",
+                  "en": "Her control"
+                }
+              },
+              {
+                "id": "new_sensations",
+                "label": {
+                  "ru": "Новые ощущения",
+                  "en": "New sensations"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в анальных играх с ним?",
+      "en": "What appeals about anal play on him?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "anal",
+      "prostate",
+      "male_anal"
+    ],
+    "tests_secondary": [
+      "milking",
+      "vulnerability",
+      "femdom"
+    ]
+  },
+  "user_description": {
+    "ru": "Она ласкает его анус, проникает пальцем или игрушкой.",
+    "en": "She caresses his anus, penetrates with finger or toy."
+  }
+}

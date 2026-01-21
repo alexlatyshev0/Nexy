@@ -1,147 +1,807 @@
-давай сделаем так - 
-1. как-то сохраним всё что было сделано - это будет discovery1
-2. сделаем максимально детальное описание как сейчас всё равботает в отдельном файле
-3. сделаем discovery 2 - это значить что все файлы будут меняться уже там, а старые не трогаются
-4. подумать как можно раширить taxonims - игровой rape, рваная одажда...   "tag_relationships":  м often_together, всего увеличить а 1.5-2 раза веь файл
-5. 500 сцен, это очень много - нам надо пойти другим путём
-6. мы должны составить сколько-то десятков сцен, которые сразу охватывают все таксонимы. Одна новая сцена может вмещать несколько предпочтений. Смотри только чтобы они были конгружнтными. Например, девушка в наручниках, в harness, в зажимах для сосков, в кляпе и может с анальным хвостиком. И на неё капают воском. И сразу вопросы, что тебе нравится на этой сцене.... А потом если уместно фоллоуапы. Причём зачастую иногда варианты ответов могут быть супер конкретными - "зажимы для сосков", а инода общие - "сексуальная одежда" - и тут могут возникать фоллоуапы. Иногда просто как варианты выбора, иногда как выбор между картинками, иногда как указание на кукле... или даже свой ввод - как тебе нравится как называются твоё член, или как тебя называют - выбор вариантов и свой ввод тоже.
-7. т.е. кол-во именно сцен-вопросов должно быть небольшое, а дальше разветвление
-8. пройдись по таконимам (поел того как дополнишь) и потом по 500 сценам, чтобы проанализировать и сюэетно объединить их в намного меньшее кол-во сцен
-9. продумай новую систему фоллоаппов, их формат  и т.п.
+# Discovery 2 - Composite Scenes System
 
-Вопросы?
+## Overview
 
-# Scene Library v2.0
+Discovery 2 reorganizes 468 granular v4 scenes into **135 composite scenes** with proper role separation for asymmetric activities, plus **interactive activities** for multi-modal preference discovery.
+
+Key improvements:
+- **Body Map FIRST** — interactive body zone selection before scenes
+- **Multi-modal activities** — audio, image, text, slider inputs
+- Proper M→F / F→M separation for asymmetric activities
+- Nested follow-up questions for deeper preference capture
+- Bilingual support (ru/en) throughout
+- Consistent structure across all scenes
+
+## Discovery Flow
+
+```
+1. BODY MAP (2-3 scenes)         ← Universal body map with zone-first selection
+   - One map for user's own body
+   - One map for partner(s) based on preferences
+   - Zone-first mode: select zone → choose actions → set preferences
+   - See detailed documentation: docs/BODY_MAP_SYSTEM.md
+
+2. INTERACTIVE ACTIVITIES (2+)    ← Non-scene preference capture
+   - Sounds (audio_select) — what sounds turn you on
+   - Clothing (image_select) — what outfits excite you
+   - Future: Naming, Pace, Aftercare, Hard Limits
+
+3. BASELINE SCENES (14 scenes)    ← Foundational preference gates
+   - Shown first (priority: 0)
+   - Determine which detailed scenes to show/skip
+   - Examples: D/s orientation, pain tolerance, anal interest, group interest
+   - Gates filter subsequent scenes based on answers
+
+4. COMPOSITE SCENES (121 scenes)  ← Visual scenes with follow-up questions
+   - Organized by category
+   - Role-separated (M→F / F→M)
+   - Filtered by baseline gates
+```
+
+**📖 Детальная документация Body Map:** См. [`docs/BODY_MAP_SYSTEM.md`](../../docs/BODY_MAP_SYSTEM.md)
 
 ## Structure
 
-This folder contains the upgraded scene library with:
-- Full AI context for question generation
-- Multilingual user descriptions (en/ru)
-- Priority levels for adaptive questioning
-- Follow-up questions for preference details
-- Balanced consolidation (not over-aggressive)
+```
+scenes/v2/
+├── README.md
+├── flow-rules.json        # Adaptive flow: clusters, gates, scoring, runtime AI
+├── profile-analysis.json  # Post-discovery: archetypes, compatibility, insights
+│
+├── body-map/              # STEP 1 - Interactive body zone selection
+│   ├── _index.json
+│   ├── kissing.json
+│   ├── licking.json
+│   ├── light-touch.json
+│   ├── light-slapping.json
+│   ├── biting.json
+│   └── spanking.json
+│
+├── activities/            # STEP 2 - Non-scene interactive activities
+│   ├── _index.json
+│   ├── sounds.json        # Audio selection (what sounds turn you on)
+│   └── clothing.json      # Image selection (what outfits excite you)
+│
+└── composite/             # STEP 3+4 - Scene-based questions (135 scenes)
+    ├── _index.json
+    ├── baseline/          # STEP 3 - Foundational gates (14 scenes, priority: 0)
+    │   ├── power-dynamic.json      # D/s orientation
+    │   ├── intensity.json          # Rough vs gentle
+    │   ├── pain-tolerance.json     # Pain interest
+    │   ├── openness.json           # Vanilla vs kinky
+    │   ├── anal-interest.json      # Anal attitude
+    │   ├── oral-preference.json    # Oral giving/receiving
+    │   ├── group-interest.json     # Multiple partners
+    │   ├── verbal-preference.json  # Talking during sex
+    │   ├── roleplay-interest.json  # Roleplay scenarios
+    │   ├── toys-interest.json      # Sex toys
+    │   ├── watching-showing.json   # Voyeurism/exhibitionism
+    │   ├── clothing-preference.json # Clothing in sex
+    │   ├── body-fetishes.json      # Body part fetishes
+    │   └── fantasy-reality.json    # Fantasy vs reality
+    └── {category}/        # STEP 4 - Detailed scenes (121 scenes)
+        └── {scene}.json
+```
 
-## Files Created
+## Scene Schema
 
-| File | Scenes | Priority | Category |
-|------|--------|----------|----------|
-| `scenes-v2-romance-001-012.json` | 12 | P1-P2 | Romance & Tenderness |
-| `scenes-v2-passion-013-024.json` | 12 | P1-P3 | Passion & Intensity |
-| `scenes-v2-impact-045-054.json` | 9 | P3-P4 | Impact Play & Pain |
-| `scenes-v2-cum-finish.json` | 6 | P3-P4 | Cum/Finish Preferences |
-| `scenes-v2-anal.json` | 5 | P3-P5 | Anal Play |
-| `scenes-v2-oral.json` | 6 | P1-P2 | Oral Sex |
-| `scenes-v2-exhibitionism.json` | 6 | P3-P4 | Exhibitionism & Voyeurism |
-| `scenes-v2-verbal.json` | 6 | P2-P4 | Dirty Talk & Verbal |
-| `scenes-v2-bondage.json` | 8 | P2-P5 | Bondage & Restraint |
-| `scenes-v2-sensory.json` | 7 | P1-P4 | Sensory Play |
-| `scenes-v2-roleplay.json` | 8 | P3-P5 | Roleplay & Fantasy |
-| `scenes-v2-edge.json` | 7 | P4-P5 | Edge Play |
-| **TOTAL** | **92** | P1-P5 | All Categories |
-
-## Key Decisions
-
-### Separate Scenes (NOT consolidated)
-These stay as separate scenes because visual/emotional impact differs significantly:
-
-- **Spanking M→F vs F→M** - Different power dynamics
-- **Choking M→F vs F→M** - Different power dynamics
-- **Cum facial vs chest vs internal** - Different emotional reactions
-- **Anal F receives vs M receives** - Completely different dynamics
-- **Rimming F receives vs M receives** - Different taboo levels
-- **Biting M→F vs F→M** - Different meaning
-
-### Consolidated with Follow-ups
-These use one base scene + follow-up question:
-
-- **Spanking intensity** → Light / Medium / Hard follow-up
-- **Spanking implement** → Hand / Paddle / Belt / Crop follow-up
-- **Cum body location** → Stomach / Back / Ass follow-up
-- **Anal type** → Finger / Rimming / Plug / Full follow-up
-- **Pegging position** → Missionary / Doggy / Riding follow-up
-- **Bondage level** → Hands held / Tied / Full follow-up
-
-## Priority System
-
-| Priority | Description | When Shown |
-|----------|-------------|------------|
-| P1 | CORE | Everyone - fundamental preferences |
-| P2 | COMMON | Most users - common variations |
-| P3 | EXPLORATORY | Based on P1-P2 signals |
-| P4 | NICHE | Clear interest signals needed |
-| P5 | EDGE | Explicit interest only |
-
-## Scene Structure
-
-```typescript
+```json
 {
-  id: string;
-  priority: 1-5;
-  intensity: 1-5;
+  "id": "scene_id",
+  "slug": "scene-slug",
+  "version": 2,
+  "role_direction": "m_to_f | f_to_m | mutual | ...",
 
-  generation_prompt: string;           // For image generation
+  "title": { "ru": "...", "en": "..." },
+  "subtitle": { "ru": "...", "en": "..." },
+  "description": { "ru": "...", "en": "..." },
+  "image_prompt": "...",
 
-  user_description: {
-    en: string;                        // User-facing description
-    ru: string;
-  };
+  "intensity": 1-5,
+  "category": "category_name",
+  "tags": ["tag1", "tag2"],
 
-  ai_context: {
-    description: string;               // AI understanding
-    tests: {
-      primary_kink: string;
-      secondary_kinks: string[];
-      power_dynamic: string;
-      gender_role_aspect: string;
-    };
-    question_angles: {...};            // How to ask
-    emotional_range: {...};            // Expected reactions
-    profile_signals: {...};            // What answers mean
-    correlations: {...};               // Related preferences
-    taboo_context: {...};              // Normalization
-  };
+  "elements": [
+    {
+      "id": "element_id",
+      "label": { "ru": "...", "en": "..." },
+      "tag_ref": "tag_reference",
+      "follow_ups": [
+        {
+          "id": "followup_id",
+          "type": "multi_select | single_select | scale",
+          "question": { "ru": "...", "en": "..." },
+          "config": {
+            "options": [
+              { "id": "opt1", "label": { "ru": "...", "en": "..." } }
+            ]
+          }
+        }
+      ]
+    }
+  ],
 
-  follow_up?: {                        // Optional detail question
-    trigger: string;
-    detail_type: string;
-    question: { en, ru };
-    options: [...];
-    multi_select: boolean;
-  };
+  "question": {
+    "type": "multi_select",
+    "text": { "ru": "...", "en": "..." },
+    "min_selections": 0
+  },
 
-  question_type: { type: string };
+  "ai_context": {
+    "tests_primary": ["tag1", "tag2"],
+    "tests_secondary": ["tag3", "tag4"]
+  }
 }
 ```
 
-## Completion Status
+## Activity Schemas
 
-### Files Created - ALL COMPLETE
-- [x] Romance & Tenderness (12 scenes)
-- [x] Passion & Intensity (12 scenes)
-- [x] Impact Play (9 scenes)
-- [x] Cum/Finish Preferences (6 scenes)
-- [x] Anal Play (5 scenes)
-- [x] Oral Sex (6 scenes)
-- [x] Bondage & Restraint (8 scenes)
-- [x] Dirty Talk & Verbal (6 scenes)
-- [x] Exhibitionism & Voyeurism (6 scenes)
-- [x] Sensory Play (7 scenes)
-- [x] Roleplay & Fantasy (8 scenes)
-- [x] Edge Play (7 scenes)
+### Audio Select (sounds.json)
 
-### Final Statistics
-- Original library: ~500 scenes
-- V2 consolidated: 92 active scenes
-- Consolidation ratio: ~5.4:1
-- Scenes with follow-ups: 10
+```json
+{
+  "id": "activity_sounds",
+  "type": "audio_select",
+  "title": { "ru": "Звуки возбуждения", "en": "Arousing Sounds" },
 
-## Usage
+  "passes": [
+    { "id": "turn_on", "question": { "ru": "Какие звуки тебя возбуждают?" } },
+    { "id": "like_making", "question": { "ru": "Какие звуки ты сам(а) издаёшь?" } }
+  ],
 
-AI should:
-1. Select scenes based on user's gender/interests and current profile
-2. Show higher priority scenes first
-3. Use `ai_context` to generate appropriate questions
-4. Interpret answers using `profile_signals`
-5. Ask `follow_up` questions when triggered
-6. Build preference profile from signals
+  "options": [
+    {
+      "id": "moaning_female",
+      "label": { "ru": "Женские стоны", "en": "Female moaning" },
+      "_audio_sample": "samples/moaning_female.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    }
+  ],
+
+  "config": {
+    "audio_samples_ready": false,
+    "multi_select": true
+  }
+}
+```
+
+### Image Select (clothing.json)
+
+```json
+{
+  "id": "activity_clothing",
+  "type": "image_select",
+  "title": { "ru": "Возбуждающая одежда", "en": "Arousing Clothing" },
+
+  "passes": [
+    { "id": "on_her", "question": { "ru": "Что возбуждает на ней?" } },
+    { "id": "on_him", "question": { "ru": "Что возбуждает на нём?" } },
+    { "id": "on_me", "question": { "ru": "В чём ты себя чувствуешь сексуально?" } }
+  ],
+
+  "categories": [
+    {
+      "id": "lingerie",
+      "label": { "ru": "Нижнее бельё", "en": "Lingerie" },
+      "options": [
+        {
+          "id": "lace_set",
+          "label": { "ru": "Кружевной комплект" },
+          "_image": "images/clothing/lace_set.jpg",
+          "_image_note": "TODO: Generate image"
+        }
+      ]
+    }
+  ],
+
+  "config": {
+    "images_ready": false,
+    "multi_select": true
+  }
+}
+```
+
+**Note:** Fields prefixed with `_` (like `_audio_sample`, `_image`) are commented out until media assets are ready. Set `config.audio_samples_ready` or `config.images_ready` to `true` when assets are available.
+
+## Role Directions
+
+| Value | Description |
+|-------|-------------|
+| `m_to_f` | Male does to female |
+| `f_to_m` | Female does to male |
+| `mutual` | Either direction or symmetric |
+| `wlw` | Woman loving woman |
+| `mlm` | Man loving man |
+| `group` | Group scenario |
+| `m_dom_f_pet` | Male dominant, female pet/sub |
+| `f_dom_m_pet` | Female dominant, male pet/sub |
+| `f_dom_m_sub` | Female dominant, male submissive |
+| `cuckold` | Cuckold dynamic |
+| `hotwife` | Hotwife/stag-vixen dynamic |
+
+## Categories (24 total, 135 scenes)
+
+| Category | Count | Description |
+|----------|-------|-------------|
+| **baseline** | **14** | **Foundational gates — D/s, intensity, pain, openness, anal, oral, group, verbal, roleplay, toys, voyeurism, clothing, fetishes, fantasy** |
+| body-fluids | 6 | Golden shower, spitting, cum, squirting |
+| oral | 7 | Blowjob, cunnilingus, deepthroat, facesitting, rimming |
+| impact-pain | 12 | Spanking, wax, choking, nipple play, whipping, face slapping, CBT |
+| verbal | 5 | Praise, degradation, dirty talk |
+| control-power | 11 | Bondage, collar, edging, feminization, free-use, forced/ruined orgasm |
+| cnc-rough | 4 | CNC, primal play, somnophilia |
+| worship-service | 6 | Foot worship, body worship, armpit, genital worship |
+| massage | 2 | Sensual massage |
+| pet-play | 2 | Pet play dynamics |
+| age-play | 2 | DD/lg, MD/lb |
+| chastity | 2 | Male/female chastity |
+| group | 6 | Threesome, gangbang, orgy, swinging, double penetration |
+| lgbtq | 2 | WLW, MLM |
+| exhibitionism | 4 | Exhibitionism, voyeurism, public sex, glory hole |
+| anal | 3 | Anal play, pegging |
+| cuckold | 2 | Cuckold, hotwife |
+| sensory | 4 | Blindfold, ice, feather, electrostim |
+| roleplay | 6 | Boss-secretary, stranger, teacher, doctor, service, taboo roleplay |
+| toys | 2 | Vibrator, remote control |
+| intimacy-outside | 4 | Casual touch, morning teasing, kitchen, sexting |
+| symmetric | 2 | Positions, locations |
+| clothing | 3 | Lingerie, torn clothes, latex-leather |
+| romantic | 3 | Aftercare, romantic sex, quickie |
+| extreme | 10 | Needle play, mummification, figging, lactation, fucking machine, fisting, breeding, knife play, breath play, objectification |
+| emotional-context | 2 | Emotional sex, cheating fantasy |
+| manual | 3 | Handjob, fingering, titfuck |
+| filming | 1 | Recording and photography |
+| solo-mutual | 2 | JOI, mutual masturbation |
+
+## Paired Scenes
+
+Asymmetric activities have paired variants. See `paired_scenes` in `_index.json`.
+
+```
+spanking-m-to-f ↔ spanking-f-to-m
+golden-shower-m-to-f ↔ golden-shower-f-to-m
+cuckold ↔ hotwife
+ddlg ↔ mdlb
+```
+
+## Intensity Levels
+
+| Level | Description | Examples |
+|-------|-------------|----------|
+| 1 | Vanilla | Romantic sex, massage |
+| 2 | Light kink | Spanking, blindfold, dirty talk |
+| 3 | Moderate kink | Bondage, role play |
+| 4 | Advanced kink | CNC, electrostim |
+| 5 | Extreme | Needle play, mummification |
+
+---
+
+## Baseline System
+
+Baseline scenes are **foundational questions** shown first (priority: 0) that determine which detailed scenes to show or skip. They establish the user's core preferences before diving into specifics.
+
+### Why Baseline?
+
+Without baseline scenes, the system would ask everyone about everything — including scenes they have zero interest in. Baseline scenes act as **gates** that filter out irrelevant content.
+
+### The 14 Baseline Scenes
+
+| Scene | Tests | Gates |
+|-------|-------|-------|
+| `power-dynamic` | D/s orientation | dominant → bondage_giving, control_scenes; submissive → bondage_receiving, service_scenes |
+| `intensity` | Rough vs gentle | gentle_only → skip rough scenes; rough → impact, CNC scenes |
+| `pain-tolerance` | Pain interest | no → skip pain scenes; yes → impact, wax, CBT |
+| `openness` | Vanilla vs kinky | vanilla → skip extreme; kinky → unlock advanced |
+| `anal-interest` | Anal attitude | no → skip all anal; yes → rimming, pegging, anal play |
+| `oral-preference` | Oral giving/receiving | dislike_giving → skip giving oral; love → detailed oral scenes |
+| `group-interest` | Multiple partners | no → skip group; yes → threesome, gangbang, swinging, orgy |
+| `verbal-preference` | Talking during sex | silent → skip dirty talk; vocal → praise, degradation |
+| `roleplay-interest` | Roleplay scenarios | no → skip roleplay; yes → all roleplay scenes |
+| `toys-interest` | Sex toys | no → skip toy scenes; yes → vibrator, remote control |
+| `watching-showing` | Voyeurism/exhibitionism | no → skip voyeur scenes; yes → exhibitionism, public |
+| `clothing-preference` | Clothing in sex | naked → skip clothing; fetish → latex, lingerie scenes |
+| `body-fetishes` | Body part fetishes | feet → foot worship; worship → body worship scenes |
+| `fantasy-reality` | Fantasy vs reality | strict → fantasy_only scenes; all → encourage trying |
+
+### Gate Logic
+
+Each baseline scene has an `ai_context.gates` object that maps answer options to scene filters:
+
+```json
+{
+  "ai_context": {
+    "gates": {
+      "no": ["skip_anal_scenes"],
+      "curious": ["light_anal_only"],
+      "yes": ["all_anal_scenes"]
+    }
+  }
+}
+```
+
+The runtime engine uses these gates to:
+1. **Skip** irrelevant scenes (user selected "no" on baseline)
+2. **Prioritize** relevant scenes (user selected "yes")
+3. **Partially unlock** for curious users (show lighter variants first)
+
+### Baseline Scene Schema
+
+Baseline scenes have additional fields:
+
+```json
+{
+  "category": "baseline",
+  "priority": 1-14,           // Order within baseline (lower = earlier)
+  "ai_context": {
+    "gates": {                // Maps answers to scene filters
+      "answer_id": ["scene_filter_1", "scene_filter_2"]
+    }
+  }
+}
+```
+
+---
+
+## Follow-up Question Types
+
+- `multi_select` - Multiple options can be selected
+- `single_select` - Only one option
+- `scale` - 1-5 or 1-10 slider
+
+## Usage Example
+
+```typescript
+import { loadScene, getCategory } from './scene-loader';
+
+// Load single scene
+const spanking = await loadScene('impact-pain/spanking-m-to-f');
+
+// Get paired scene for reverse dynamic
+const pairedSlug = spanking.paired_scene; // 'impact-pain/spanking-f-to-m'
+
+// Filter by role direction for user
+const userScenes = allScenes.filter(s =>
+  s.role_direction === 'mutual' ||
+  s.role_direction === userPreferredDirection
+);
+
+// Process elements and follow-ups
+for (const element of scene.elements) {
+  // Show element question
+  for (const followUp of element.follow_ups) {
+    // Show follow-up based on type
+  }
+}
+```
+
+### Baseline Processing Example
+
+```typescript
+// 1. Load baseline scenes first (sorted by priority)
+const baselineScenes = allScenes
+  .filter(s => s.category === 'baseline')
+  .sort((a, b) => a.priority - b.priority);
+
+// 2. Process user answers and collect active gates
+const activeGates: string[] = [];
+
+for (const scene of baselineScenes) {
+  const response = await showScene(scene);
+
+  // Get gates from ai_context based on user's answer
+  const gates = scene.ai_context.gates[response.selected];
+  if (gates) {
+    activeGates.push(...gates);
+  }
+}
+
+// 3. Filter detailed scenes based on gates
+const detailedScenes = allScenes
+  .filter(s => s.category !== 'baseline')
+  .filter(s => !shouldSkip(s, activeGates));
+
+function shouldSkip(scene: Scene, gates: string[]): boolean {
+  // Skip if gate says to skip this scene's tags
+  return gates.some(gate =>
+    gate.startsWith('skip_') &&
+    scene.tags.some(tag => gate.includes(tag))
+  );
+}
+```
+
+## Migration from v4
+
+The 468 v4 scenes are consolidated into 135 composite scenes (14 baseline + 121 detailed):
+- Granular variants → Follow-up questions
+- Role-reversed scenes → Paired scenes with `role_direction`
+- Scattered tags → Consistent `ai_context.tests_primary/secondary`
+
+## Statistics
+
+| Metric | Value |
+|--------|-------|
+| **Body Map activities** | 6 |
+| **Interactive activities** | 2 (sounds, clothing) |
+| **Future activities** | 4 planned |
+| **Baseline scenes** | 14 |
+| **Detailed scenes** | 121 |
+| **Total scenes** | 135 |
+| **Categories** | 24 |
+| Paired scene pairs | 25 |
+| Scenes with elements | All |
+| Avg elements per scene | 3-4 |
+| Consolidation ratio | 3.5:1 from v4 |
+
+## Activity Types
+
+| Type | Description | Example |
+|------|-------------|---------|
+| `body_map` | Tap zones on body silhouette | Kissing, Spanking zones |
+| `audio_select` | Listen and select audio samples | Arousing sounds |
+| `image_select` | View and select images | Clothing preferences |
+| `text_input_select` | Type or select text options | Naming body parts |
+| `slider` | Drag slider for value | Pace/intensity |
+| `multi_select` | Select multiple checkboxes | Aftercare preferences |
+| `checklist` | Yes/No checklist | Hard limits |
+
+## Adaptive Flow System
+
+The adaptive flow system personalizes question ordering and skips irrelevant content based on user responses.
+
+### Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                         flow-rules.json                         │
+│                    (Offline AI + Manual Rules)                  │
+│  ┌──────────────┐  ┌──────────────┐  ┌───────────────────────┐ │
+│  │ tag_clusters │  │ intensity_   │  │ bodymap_to_tags      │ │
+│  │ (12 groups)  │  │ gates        │  │ (zone → tag mapping) │ │
+│  └──────────────┘  └──────────────┘  └───────────────────────┘ │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                       Runtime Engine                            │
+│  ┌─────────────────────────┐    ┌─────────────────────────────┐│
+│  │ OFFLINE MODE (default)  │ OR │ RUNTIME AI (paid, async)    ││
+│  │ - Rule-based scoring    │    │ - Background analysis       ││
+│  │ - Fast, free            │    │ - Non-blocking calibration  ││
+│  │ - Deterministic         │    │ - Smarter predictions       ││
+│  └─────────────────────────┘    └─────────────────────────────┘│
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                 profile-analysis.json                           │
+│                   (Post-Discovery AI)                           │
+│  ┌──────────────┐  ┌──────────────┐  ┌───────────────────────┐ │
+│  │ Archetypes   │  │ Couple       │  │ AI Insight            │ │
+│  │ (20 types)   │  │ Compatibility│  │ Generation            │ │
+│  └──────────────┘  └──────────────┘  └───────────────────────┘ │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Three Levels of AI Integration
+
+| Level | When | Cost | Description |
+|-------|------|------|-------------|
+| **OFFLINE** | Build time | Free | Pre-computed tag clusters, intensity paths, similarity matrix |
+| **RUNTIME** | During discovery | Paid | Background AI calibration after each scene (non-blocking) |
+| **POST-ANALYSIS** | After completion | Included | Profile generation, archetype matching, couple compatibility |
+
+### Offline Scoring (Default)
+
+```
+score = base_score
+      + tag_boosts (from bodymap, previous answers)
+      + cluster_boosts (related tags in same cluster)
+      + similarity_boosts (liked similar scenes)
+      - intensity_mismatch_penalty
+      - already_seen_category_penalty
+```
+
+See `flow-rules.json → scoring_algorithm` for weights.
+
+### Runtime AI (Paid Feature)
+
+When enabled, AI analyzes responses **in background** after each scene:
+
+```
+User answers Scene #15
+       ↓
+┌──────────────────────────────────────────┐
+│ IMMEDIATELY show Scene #16               │ ← From offline algorithm
+│ (no waiting for AI)                      │
+└──────────────────────────────────────────┘
+       ↓ (async, in background)
+┌──────────────────────────────────────────┐
+│ AI analyzes 15 responses                 │
+│ → Predicts interest for remaining 79     │
+│ → Recalibrates order for Scene #17+      │
+└──────────────────────────────────────────┘
+```
+
+Config in `flow-rules.json`:
+```json
+"runtime_ai": {
+  "enabled": false,
+  "is_paid_feature": true,
+  "config": {
+    "analyze_after_n_scenes": 5,
+    "recalibrate_every_n": 10,
+    "fallback_to_offline": true
+  }
+}
+```
+
+### Tag Clusters
+
+12 pre-defined clusters group related interests:
+
+| Cluster | Core Tags | Progression Path |
+|---------|-----------|------------------|
+| impact_play | spanking, slapping, whipping | light-slapping → spanking → whipping → caning |
+| primal | biting, scratching, hair_pulling | biting → scratching → primal → cnc |
+| bondage_restraint | bondage, rope, shibari | blindfold → light_restraints → full_bondage → shibari |
+| power_exchange | dominance, submission, service | light_dominance → collar → pet_play → TPE |
+| sensory | blindfold, ice, wax, electrostim | feather → ice → wax → electrostim |
+| romantic_sensual | romantic, tender, massage | vanilla → sensual → deeply_romantic |
+
+See `flow-rules.json → tag_clusters` for full list.
+
+### Intensity Gates
+
+Some scenes require prerequisite interests:
+
+```json
+"whipping": {
+  "require_any": ["spanking >= 3", "impact_play >= 2"],
+  "skip_if": ["pain_pleasure == 0"]
+},
+"needle_play": {
+  "require_all": ["edge_play >= 3", "pain_pleasure >= 3"],
+  "require_explicit_consent": true
+}
+```
+
+### Body Map → Tag Mapping
+
+Body map selections boost relevant tags:
+
+```json
+"spanking": {
+  "zones": {
+    "buttocks": { "boost": ["spanking", "impact_play", "discipline"] },
+    "thighs": { "boost": ["extended_impact", "pain_pleasure"] },
+    "many_zones": { "boost": ["heavy_impact", "masochist"] }
+  },
+  "give_receive": {
+    "give_only": { "boost": ["dominant", "sadist"] },
+    "receive_only": { "boost": ["submissive", "masochist"] },
+    "both": { "boost": ["switch", "versatile"] }
+  }
+}
+```
+
+### Exploration Strategy
+
+```json
+"exploration_strategy": {
+  "calibration_phase": {
+    "scenes_count": 15,
+    "strategy": "breadth_first"
+  },
+  "main_phase": {
+    "exploit_ratio": 0.7,
+    "explore_ratio": 0.3
+  }
+}
+```
+
+- First 15 scenes: diverse selection to establish baseline
+- After: 70% from high-interest clusters, 30% discovery
+
+---
+
+## Post-Discovery Analysis
+
+After completing discovery, AI generates insights. See `profile-analysis.json`.
+
+### Archetypes (20 types)
+
+| Archetype | Description | Key Indicators |
+|-----------|-------------|----------------|
+| Romantic Lover | Values connection, tenderness | high: romantic, sensual, aftercare |
+| Gentle Explorer | Open but prefers soft approach | high: sensual, teasing; low: pain |
+| Playful Kinkster | Enjoys experimentation, light BDSM | high: spanking, roleplay, toys |
+| Dominant | Prefers control and power | pattern: give >> receive |
+| Submissive | Enjoys surrendering control | pattern: receive >> give |
+| Switch | Enjoys both roles | pattern: give ≈ receive |
+| Primal | Animal passion, intensity | high: biting, scratching, rough |
+| Sensualist | Focus on physical sensations | high: blindfold, ice, wax, massage |
+| Exhibitionist | Aroused by being watched | high: exhibitionism, public_risk |
+| Voyeur | Aroused by watching | high: voyeurism, watching |
+| Fetishist | Specific object/material focus | high_any: foot, latex, leather |
+| Edge Player | Intense, taboo practices | intensity_preference >= 4 |
+
+Users may match multiple archetypes. Subtypes exist (e.g., Caring Dom, Strict Dom, Sadist).
+
+### Couple Compatibility
+
+Analyzes two profiles across dimensions:
+
+1. **Role Compatibility** — Dom/sub match, switch flexibility
+2. **Intensity Alignment** — Same range vs. significant gap
+3. **Shared Interests** — Overlap of high-scored tags
+4. **Complementary Desires** — A wants to give what B wants to receive
+5. **Growth Opportunities** — One's interest in other's exploration zone
+
+Output includes:
+- Overall score (0-100%)
+- Shared favorites
+- Areas to explore together
+- Discussion points
+- Date night ideas
+
+### AI-Generated Insights
+
+```json
+"generate_profile_summary": {
+  "system": "Generate insightful, non-judgmental profile summaries.",
+  "output": "2-3 paragraphs: core desires, preferred dynamics, exploration areas"
+}
+```
+
+Pre-written templates for common patterns:
+```json
+"primal_romantic": {
+  "pattern": "primal + romantic",
+  "insight": "Two wolves live in you: one craves tenderness, the other primal passion."
+}
+```
+
+---
+
+## Image Prompt Guidelines
+
+Each scene has an `image_prompt` field for image generation. Follow these rules:
+
+### ✅ MUST DO:
+
+1. **Always specify gender and position**
+   - Bad: `couple in bedroom, one person on top`
+   - Good: `woman sitting on man's lap facing him, man lying on bed`
+
+2. **Only ONE action per prompt**
+   - Bad: `he strokes her hair, then kisses her neck, then spanks her`
+   - Good: `man spanking woman's bare bottom with open palm`
+
+3. **Always specify clothing state**
+   - Bad: `couple in bedroom`
+   - Good: `naked woman, man in unbuttoned shirt`
+   - Good: `woman in black lingerie, man fully clothed in suit`
+
+4. **Can mention lighting and setting**
+   - Good: `warm bedroom lighting, silk sheets`
+   - Good: `dimly lit room, candles on nightstand`
+
+### ⛔ NEVER DO:
+
+1. **Never specify art style** — style is set via `styleVariant`
+   - Bad: `photorealistic, cinematic, 4k, masterpiece`
+
+2. **Never use speech bubbles or quality words**
+   - Bad: `beautiful, stunning, perfect, high quality`
+
+3. **Avoid vague descriptions**
+   - Bad: `intimate moment, passionate scene`
+   - Good: `man kissing woman's neck while holding her waist`
+
+### 📝 Prompt Template:
+
+```
+[WHO - explicit genders], [CLOTHING STATE], [SPECIFIC ACTION], [SETTING/LIGHTING]
+```
+
+**Examples:**
+```
+naked woman lying face down on bed, man's hands massaging her back with oil, warm bedroom lighting
+
+woman in red lingerie sitting on man's face, man naked lying on back, her hands gripping headboard
+
+man standing behind naked woman bent over desk, his hand raised mid-spank, office setting
+```
+
+---
+
+## File Reference
+
+| File | Purpose |
+|------|---------|
+| `flow-rules.json` | Adaptive ordering: clusters, gates, scoring, runtime AI config |
+| `profile-analysis.json` | Post-discovery: 20 archetypes, 26 insights, compatibility rules |
+| `image-manifest.json` | 129 images for generation (95 scenes + 34 clothing) |
+| `composite/_index.json` | Scene registry with categories |
+| `body-map/_index.json` | Body map activity flow |
+| `activities/_index.json` | Non-scene activity registry |
+
+---
+
+## TypeScript Implementation
+
+All core logic is implemented in `scripts/`:
+
+| File | Purpose |
+|------|---------|
+| `flow-engine.ts` | Adaptive flow, scoring, body map processing |
+| `profile-generator.ts` | Profile creation, archetype matching |
+| `couple-matcher.ts` | Compatibility analysis, date ideas |
+| `api.ts` | REST API endpoints |
+| `schema.ts` | JSON validation |
+| `test-journeys.ts` | 20 test user journeys |
+| `localization.ts` | Translation checking |
+
+### Usage
+
+```typescript
+import flowEngine, { createFlowState } from './scripts/flow-engine';
+import profileGenerator from './scripts/profile-generator';
+import coupleMatcher from './scripts/couple-matcher';
+
+// 1. Initialize state
+let state = createFlowState();
+
+// 2. Process body map
+state = flowEngine.processBodyMapResponses(state, bodyMapAnswers);
+
+// 3. Get next scene
+const nextScene = flowEngine.getNextScene(allScenes, state);
+
+// 4. Process response
+state = flowEngine.processSceneResponse(state, response, scene);
+
+// 5. Generate profile
+const profile = profileGenerator.generateProfile(state, totalScenes, totalBodyMap);
+
+// 6. Match couple
+const compatibility = coupleMatcher.analyzeCompatibility(profileA, profileB);
+```
+
+### API Endpoints
+
+```
+POST /api/discovery/start           # Start session
+GET  /api/discovery/session/:id     # Get session state
+POST /api/discovery/bodymap         # Submit body map answers
+GET  /api/discovery/next-scene      # Get next scene
+POST /api/discovery/scene/response  # Submit scene response
+GET  /api/discovery/profile         # Get generated profile
+POST /api/discovery/compatibility   # Analyze couple compatibility
+POST /api/discovery/enable-runtime-ai # Enable paid AI feature
+```
+
+### Test Journeys (20 profiles)
+
+Run predefined user journeys to validate flow:
+
+```typescript
+import { runAllJourneyTests } from './scripts/test-journeys';
+
+const results = runAllJourneyTests(allScenes);
+console.log(`Passed: ${results.passed}/${results.passed + results.failed}`);
+```
+
+Journeys cover: romantic_lover, dominant_male, submissive_female, submissive_male, switch, primal, sensualist, exhibitionist, service_sub, dominant_female, experimenter, taboo_lover, voyeur, group_enthusiast, sadist, brat, masochist_heavy, cuckold, roleplay_lover, vanilla_curious
+
+### Validation
+
+```typescript
+import { validateScene } from './scripts/schema';
+import { checkFile, printReport } from './scripts/localization';
+
+// Schema validation
+const result = validateScene(sceneData);
+
+// Localization check
+const report = checkFile(sceneData, 'scene.json');
+printReport(report);
+```

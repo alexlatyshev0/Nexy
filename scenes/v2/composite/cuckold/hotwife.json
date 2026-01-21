@@ -1,0 +1,283 @@
+{
+  "id": "hotwife",
+  "slug": "hotwife-vixen",
+  "version": 2,
+  "paired_scene": "cuckold",
+  "role_direction": "hotwife",
+  "title": {
+    "ru": "Hotwife/Vixen",
+    "en": "Hotwife/Vixen"
+  },
+  "subtitle": {
+    "ru": "Она свободна",
+    "en": "She's free"
+  },
+  "ai_description": {
+    "ru": "Она встречается с другими мужчинами с его благословения. Он гордится, он поддерживает. Stag/Vixen динамика без унижения.",
+    "en": "She sees other men with his blessing. He's proud, he supports. Stag/Vixen dynamic without humiliation."
+  },
+  "image_prompt": "woman in sexy dress standing between two men, one her partner one stranger, bar setting with dim ambient light",
+  "intensity": 4,
+  "category": "hotwife",
+  "tags": [
+    "hotwife",
+    "vixen",
+    "stag",
+    "sharing",
+    "ethical_nonmonogamy"
+  ],
+  "elements": [
+    {
+      "id": "his_involvement",
+      "label": {
+        "ru": "Его участие",
+        "en": "His involvement"
+      },
+      "tag_ref": "stag_role",
+      "follow_ups": [
+        {
+          "id": "role",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как он участвует?",
+            "en": "How is he involved?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "present",
+                "label": {
+                  "ru": "Присутствует",
+                  "en": "Present"
+                }
+              },
+              {
+                "id": "joins",
+                "label": {
+                  "ru": "Присоединяется",
+                  "en": "Joins in"
+                }
+              },
+              {
+                "id": "waits",
+                "label": {
+                  "ru": "Ждёт дома",
+                  "en": "Waits at home"
+                }
+              },
+              {
+                "id": "texts",
+                "label": {
+                  "ru": "Получает сообщения",
+                  "en": "Gets texts/updates"
+                }
+              },
+              {
+                "id": "reclaim",
+                "label": {
+                  "ru": "Reclaim после",
+                  "en": "Reclaims after"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "her_freedom",
+      "label": {
+        "ru": "Её свобода",
+        "en": "Her freedom"
+      },
+      "tag_ref": "vixen_freedom",
+      "follow_ups": [
+        {
+          "id": "level",
+          "type": "single_select",
+          "question": {
+            "ru": "Насколько свободна?",
+            "en": "How free?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "together_only",
+                "label": {
+                  "ru": "Только вместе с ним",
+                  "en": "Only together"
+                }
+              },
+              {
+                "id": "approved",
+                "label": {
+                  "ru": "С его одобрения",
+                  "en": "With his approval"
+                }
+              },
+              {
+                "id": "free_choice",
+                "label": {
+                  "ru": "Выбирает сама",
+                  "en": "Free choice"
+                }
+              },
+              {
+                "id": "full_freedom",
+                "label": {
+                  "ru": "Полная свобода",
+                  "en": "Full freedom"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "communication",
+      "label": {
+        "ru": "Общение",
+        "en": "Communication"
+      },
+      "tag_ref": "hotwife_comm",
+      "follow_ups": [
+        {
+          "id": "sharing",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что рассказывать?",
+            "en": "What to share?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "everything",
+                "label": {
+                  "ru": "Все детали",
+                  "en": "All details"
+                }
+              },
+              {
+                "id": "summary",
+                "label": {
+                  "ru": "Общее",
+                  "en": "Summary"
+                }
+              },
+              {
+                "id": "photos",
+                "label": {
+                  "ru": "Фото/видео",
+                  "en": "Photos/videos"
+                }
+              },
+              {
+                "id": "live_texts",
+                "label": {
+                  "ru": "Сообщения в процессе",
+                  "en": "Live texts"
+                }
+              },
+              {
+                "id": "nothing",
+                "label": {
+                  "ru": "Не рассказывает",
+                  "en": "Keeps private"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "hotwife_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "her_pleasure",
+                "label": {
+                  "ru": "Её удовольствие",
+                  "en": "Her pleasure"
+                }
+              },
+              {
+                "id": "pride",
+                "label": {
+                  "ru": "Гордость за неё",
+                  "en": "Pride in her"
+                }
+              },
+              {
+                "id": "variety",
+                "label": {
+                  "ru": "Разнообразие",
+                  "en": "Variety"
+                }
+              },
+              {
+                "id": "empowerment",
+                "label": {
+                  "ru": "Её свобода",
+                  "en": "Her empowerment"
+                }
+              },
+              {
+                "id": "stories",
+                "label": {
+                  "ru": "Её рассказы",
+                  "en": "Her stories"
+                }
+              },
+              {
+                "id": "reclaim",
+                "label": {
+                  "ru": "Reclaim секс",
+                  "en": "Reclaim sex"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в hotwife динамике?",
+      "en": "What appeals about hotwife dynamic?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "hotwife",
+      "vixen",
+      "stag"
+    ],
+    "tests_secondary": [
+      "sharing",
+      "pride",
+      "nonmonogamy"
+    ]
+  },
+  "user_description": {
+    "ru": "Она флиртует и трахается с другими мужчинами с одобрения партнёра.",
+    "en": "She flirts and fucks other men with partner's approval."
+  }
+}

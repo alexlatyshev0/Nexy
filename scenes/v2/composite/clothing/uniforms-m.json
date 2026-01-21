@@ -1,0 +1,239 @@
+{
+  "id": "uniforms_m",
+  "slug": "male-uniforms",
+  "version": 2,
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Униформа на нём",
+    "en": "Male Uniforms"
+  },
+  "subtitle": {
+    "ru": "Костюмы для ролевых игр",
+    "en": "Costumes for roleplay"
+  },
+  "ai_description": {
+    "ru": "Мужская униформа в сексе — полицейский, пожарный, официант, дворецкий. Ролевая динамика власти или сервиса.",
+    "en": "Male uniforms in sex — police, firefighter, waiter, butler. Roleplay power or service dynamic."
+  },
+  "image_prompt": "man in police uniform shirt unbuttoned showing chest, woman sitting in chair, he stands before her, living room setting",
+  "intensity": 2,
+  "category": "clothing",
+  "tags": [
+    "clothing",
+    "uniforms",
+    "male_uniform",
+    "roleplay",
+    "costume"
+  ],
+  "elements": [
+    {
+      "id": "costume_type",
+      "label": {
+        "ru": "Тип костюма",
+        "en": "Costume type"
+      },
+      "tag_ref": "male_uniform_type",
+      "follow_ups": [
+        {
+          "id": "which",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие костюмы?",
+            "en": "Which costumes?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "police",
+                "label": {
+                  "ru": "Полицейский",
+                  "en": "Police officer"
+                }
+              },
+              {
+                "id": "firefighter",
+                "label": {
+                  "ru": "Пожарный",
+                  "en": "Firefighter"
+                }
+              },
+              {
+                "id": "military",
+                "label": {
+                  "ru": "Военный",
+                  "en": "Military"
+                }
+              },
+              {
+                "id": "doctor",
+                "label": {
+                  "ru": "Врач",
+                  "en": "Doctor"
+                }
+              },
+              {
+                "id": "butler",
+                "label": {
+                  "ru": "Дворецкий/слуга",
+                  "en": "Butler/servant"
+                }
+              },
+              {
+                "id": "waiter",
+                "label": {
+                  "ru": "Официант",
+                  "en": "Waiter"
+                }
+              },
+              {
+                "id": "construction",
+                "label": {
+                  "ru": "Строитель",
+                  "en": "Construction worker"
+                }
+              },
+              {
+                "id": "pilot",
+                "label": {
+                  "ru": "Пилот",
+                  "en": "Pilot"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dynamic",
+      "label": {
+        "ru": "Динамика",
+        "en": "Dynamic"
+      },
+      "tag_ref": "male_uniform_dynamic",
+      "follow_ups": [
+        {
+          "id": "power",
+          "type": "single_select",
+          "question": {
+            "ru": "Какая динамика?",
+            "en": "What dynamic?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "authority",
+                "label": {
+                  "ru": "Он — авторитет (полиция, военный)",
+                  "en": "He's authority (police, military)"
+                }
+              },
+              {
+                "id": "service",
+                "label": {
+                  "ru": "Он обслуживает её (дворецкий)",
+                  "en": "He serves her (butler)"
+                }
+              },
+              {
+                "id": "seduction",
+                "label": {
+                  "ru": "Он соблазняет (пожарный, строитель)",
+                  "en": "He seduces (firefighter, worker)"
+                }
+              },
+              {
+                "id": "professional",
+                "label": {
+                  "ru": "Профессиональный сценарий (врач)",
+                  "en": "Professional scenario (doctor)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "appeal",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "male_uniform_appeal",
+      "follow_ups": [
+        {
+          "id": "why",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "visual",
+                "label": {
+                  "ru": "Как выглядит",
+                  "en": "How it looks"
+                }
+              },
+              {
+                "id": "authority",
+                "label": {
+                  "ru": "Власть/авторитет",
+                  "en": "Power/authority"
+                }
+              },
+              {
+                "id": "service",
+                "label": {
+                  "ru": "Он обслуживает",
+                  "en": "He serves"
+                }
+              },
+              {
+                "id": "fantasy",
+                "label": {
+                  "ru": "Воплощение фантазии",
+                  "en": "Fantasy fulfillment"
+                }
+              },
+              {
+                "id": "undressing",
+                "label": {
+                  "ru": "Раздевание из униформы",
+                  "en": "Undressing from uniform"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие мужские костюмы возбуждают?",
+      "en": "Which male costumes excite you?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "male_uniforms",
+      "costumes",
+      "roleplay"
+    ],
+    "tests_secondary": [
+      "authority",
+      "service",
+      "fantasy"
+    ]
+  },
+  "user_description": {
+    "ru": "Он в униформе — полицейский, пожарный, дворецкий. Она раздевает его.",
+    "en": "He wears uniform — police, firefighter, butler. She undresses him."
+  }
+}

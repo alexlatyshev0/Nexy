@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { createClient } from '@/lib/supabase/client';
-import { Scene, SceneV3 } from '@/lib/types';
+import { Scene, SceneV2, ImageVariant } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
@@ -12,7 +12,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import { STYLE_VARIANTS } from '@/lib/civitai-config';
+import { STYLE_VARIANTS, buildPrompt } from '@/lib/civitai-config';
 import {
   Trash2,
   RefreshCw,
@@ -31,34 +31,67 @@ import {
   ShieldX,
   ShieldQuestion,
   Languages,
+  ThumbsUp,
+  ThumbsDown,
+  Copy,
+  Layers,
+  CheckCircle2,
+  Upload,
+  Wand2,
 } from 'lucide-react';
 
 type GenerationStatus = 'idle' | 'pending' | 'generating' | 'completed' | 'error';
 type QAStatus = 'passed' | 'failed' | null;
 
-// V3 fields that extend Scene
-interface SceneWithStatus extends Scene {
+// V3 fields that extend Scene (with optional overrides for admin UI)
+interface SceneWithStatus extends Omit<Scene, 'ai_description' | 'user_description' | 'participants'> {
   selected: boolean;
   status: GenerationStatus;
   error?: string;
   expanded?: boolean;
-  // V3 fields
+  // Core description fields (JSONB localized)
+  ai_description?: { en: string; ru: string };
+  user_description?: { en: string; ru: string };
+  // V2 fields (legacy V3/V4 fields kept for compatibility)
   slug?: string;
   priority?: number;
-  user_description?: { en: string; ru: string };
-  ai_context?: SceneV3['ai_context'];
+  ai_context?: any; // V2 uses ai_context with tests_primary/tests_secondary
   question_type?: string;
-  follow_up?: SceneV3['follow_up'];
+  follow_up?: any;
+  // V2 fields
+  version?: number;
+  title?: { en: string; ru: string };
+  subtitle?: { en: string; ru: string };
+  category?: string;
+  role_direction?: string;
+  elements?: Array<{
+    id: string;
+    label: { en: string; ru: string };
+    tag_ref: string;
+  }>;
+  question?: {
+    type: string;
+    text: { en: string; ru: string };
+  };
+  // Participants can be array of objects or simple count
+  participants?: { count: number } | Array<{ gender: string; role: string }>;
+  // Prompt fields
+  image_prompt?: string; // Default prompt from JSON files
   // QA fields
-  original_prompt?: string;
-  final_prompt?: string;
   qa_status?: QAStatus;
   qa_attempts?: number;
   qa_last_assessment?: Record<string, unknown>;
   prompt_instructions?: string; // User notes for AI on how to modify prompt
+  // Manual acceptance
+  accepted?: boolean | null;
+  // Image variants for comparison
+  image_variants?: ImageVariant[];
   // UI state
-  showOriginalPrompt?: boolean;
+  showDefaultPrompt?: boolean; // Show image_prompt (default) for comparison
   showPromptInstructions?: boolean;
+  showVariants?: boolean; // Show variants gallery
+  showImg2Img?: boolean; // Show img2img controls
+  img2imgStrength?: number; // Strength for img2img (0-1)
 }
 
 type ServiceType = 'civitai' | 'replicate';
@@ -82,11 +115,15 @@ interface GlobalSettings {
   modelId: string;
   aspectRatio: string;
   enableQA: boolean;
+  useAiContext: boolean; // When false, only use generation_prompt (no ai_context)
 }
 
 // Civitai models
 const CIVITAI_MODELS = [
+  { id: '795765', name: 'Illustrious XL v0.1' },
+  { id: '1024144', name: 'NoobAI XL (Illustrious)' },
   { id: '2173364', name: 'CoMix v1.0 (Illustrious)' },
+  { id: '1022833', name: 'WAI-NSFW-illustrious' },
   { id: '4201', name: 'Realistic Vision v5.1' },
   { id: '139562', name: 'RealVisXL V5.0 Lightning' },
   { id: '312530', name: 'CyberRealistic XL v8.0' },
@@ -100,6 +137,10 @@ const CIVITAI_MODELS = [
 
 // Replicate models
 const REPLICATE_MODELS = [
+  { id: 'pony-xl', name: 'Pony XL v5 (best for yaoi/bara)' },
+  { id: 'pony-realism', name: 'Pony Realism v2.3 (realistic)' },
+  { id: 'noobai-xl', name: 'NoobAI XL (Illustrious)' },
+  { id: 'wai-illustrious', name: 'WAI NSFW Illustrious v11' },
   { id: 'z-image-turbo', name: 'Z Image Turbo (super fast)' },
   { id: 'flux-schnell', name: 'FLUX Schnell (fast)' },
   { id: 'flux-dev', name: 'FLUX Dev' },
@@ -120,6 +161,7 @@ const DEFAULT_SETTINGS: GlobalSettings = {
   modelId: '4201',
   aspectRatio: '3:2',
   enableQA: false,
+  useAiContext: true, // Use ai_context by default
 };
 
 function loadSettings(): GlobalSettings {
@@ -149,48 +191,135 @@ interface LogEntry {
   type: 'info' | 'success' | 'error';
 }
 
-// Build QA context from scene ai_context
+// Build QA context from scene data
 function buildQAContext(scene: SceneWithStatus) {
-  if (!scene.ai_context) {
-    return null;
+  const aiContext = scene.ai_context;
+  const keyElements: Array<{ element: string; critical: boolean; in_action: boolean }> = [];
+
+  // V2 scenes: use user_description as essence (action-based)
+  // V3 scenes: use ai_context.description
+  let essence = '';
+
+  // Priority: user_description (best for QA - action descriptions) > ai_context.description > ai_description
+  if (scene.user_description?.en) {
+    essence = scene.user_description.en;
+  } else if (scene.user_description?.ru) {
+    essence = scene.user_description.ru;
+  } else if (aiContext?.description) {
+    essence = aiContext.description;
+  } else {
+    essence = scene.ai_description?.en || scene.ai_description?.ru || '';
   }
 
-  const aiContext = scene.ai_context;
+  // Build key elements based on scene version
+  if (scene.version === 2 && aiContext) {
+    // V2 scenes: use tests_primary array
+    const v2Context = aiContext as { tests_primary?: string[]; tests_secondary?: string[]; emotional_range?: { positive?: string[] } };
 
-  // Default key elements based on scene tests
-  const keyElements = [];
+    if (v2Context.tests_primary && v2Context.tests_primary.length > 0) {
+      // First primary test is critical and must be "in action"
+      keyElements.push({
+        element: v2Context.tests_primary[0],
+        critical: true,
+        in_action: true,
+      });
 
-  if (aiContext.tests?.primary_kink) {
+      // Additional primary tests are critical but don't need to be in action
+      for (const test of v2Context.tests_primary.slice(1)) {
+        keyElements.push({
+          element: test,
+          critical: true,
+          in_action: false,
+        });
+      }
+    }
+
+    if (v2Context.tests_secondary) {
+      for (const test of v2Context.tests_secondary.slice(0, 2)) {
+        keyElements.push({
+          element: test,
+          critical: false,
+          in_action: false,
+        });
+      }
+    }
+  } else if (aiContext?.tests) {
+    // V3 scenes: use tests.primary_kink
+    const v3Context = aiContext as { tests?: { primary_kink?: string; secondary_kinks?: string[] }; description?: string; emotional_range?: { positive?: string[] } };
+
+    if (v3Context.tests?.primary_kink) {
+      keyElements.push({
+        element: v3Context.tests.primary_kink,
+        critical: true,
+        in_action: true,
+      });
+    }
+
+    if (v3Context.tests?.secondary_kinks) {
+      for (const kink of v3Context.tests.secondary_kinks.slice(0, 2)) {
+        keyElements.push({
+          element: kink,
+          critical: false,
+          in_action: false,
+        });
+      }
+    }
+  }
+
+  // Determine participants based on role_direction for V2 scenes
+  let participantCount = 2;
+  let genders: string[] = ['M', 'F'];
+
+  if (scene.role_direction) {
+    const roleDir = scene.role_direction;
+    if (roleDir === 'solo' || roleDir === 'f_experience') {
+      participantCount = 1;
+      genders = roleDir === 'f_experience' ? ['F'] : ['any'];
+    } else if (roleDir === 'mlm') {
+      genders = ['M', 'M'];
+    } else if (roleDir === 'wlw') {
+      genders = ['F', 'F'];
+    } else if (roleDir === 'group' || roleDir.includes('threesome') || roleDir.includes('gangbang')) {
+      participantCount = 3;
+      genders = ['any', 'any', 'any'];
+    } else if (roleDir === 'm_to_f' || roleDir.includes('m_') || roleDir === 'cuckold') {
+      genders = ['M', 'F'];
+    } else if (roleDir === 'f_to_m' || roleDir.includes('f_')) {
+      genders = ['F', 'M'];
+    }
+  } else if (scene.participants) {
+    if (Array.isArray(scene.participants)) {
+      participantCount = scene.participants.length;
+      genders = scene.participants.map((p) => p.gender === 'male' ? 'M' : p.gender === 'female' ? 'F' : 'any');
+    } else if (typeof scene.participants === 'object' && 'count' in scene.participants) {
+      participantCount = scene.participants.count;
+    }
+  }
+
+  // Get mood from ai_context
+  let mood = 'sensual';
+  if (aiContext?.emotional_range?.positive) {
+    mood = aiContext.emotional_range.positive.join(', ');
+  }
+
+  // If no key elements, create from essence
+  if (keyElements.length === 0 && essence) {
     keyElements.push({
-      element: aiContext.tests.primary_kink,
+      element: essence,
       critical: true,
       in_action: true,
     });
   }
 
-  if (aiContext.tests?.secondary_kinks) {
-    for (const kink of aiContext.tests.secondary_kinks.slice(0, 2)) {
-      keyElements.push({
-        element: kink,
-        critical: false,
-        in_action: false,
-      });
-    }
-  }
-
-  // Determine participants from scene
-  const participants = scene.participants || [];
-  const genders = participants.map((p) => p.gender === 'male' ? 'M' : p.gender === 'female' ? 'F' : 'any');
-
   return {
-    essence: aiContext.description || scene.description,
+    essence,
     key_elements: keyElements.length > 0 ? keyElements : [
       { element: 'main subject visible', critical: true, in_action: false },
     ],
-    mood: aiContext.emotional_range?.positive?.join(', ') || 'sensual',
+    mood,
     participants: {
-      count: participants.length || 1,
-      genders: genders.length > 0 ? genders : ['any'],
+      count: participantCount,
+      genders,
     },
   };
 }
@@ -201,7 +330,7 @@ export default function AdminScenesPage() {
   const [generating, setGenerating] = useState(false);
   const [settings, setSettings] = useState<GlobalSettings>(DEFAULT_SETTINGS);
   const [showSettings, setShowSettings] = useState(true);
-  const [filter, setFilter] = useState<'all' | 'no_image' | 'has_image' | 'qa_failed'>('all');
+  const [filter, setFilter] = useState<'all' | 'no_image' | 'has_image' | 'qa_failed' | 'v2_only' | 'accepted' | 'rejected' | 'not_reviewed'>('all');
   const [logs, setLogs] = useState<LogEntry[]>([]);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   const [qaDetailScene, setQaDetailScene] = useState<SceneWithStatus | null>(null);
@@ -251,6 +380,28 @@ export default function AdminScenesPage() {
       })));
     }
 
+    // Debug: log accepted status
+    const acceptedScenes = (data || []).filter(s => s.accepted !== null && s.accepted !== undefined);
+    console.log('[LoadScenes] Scenes with accepted status:', acceptedScenes.length, acceptedScenes.map(s => ({
+      slug: s.slug,
+      accepted: s.accepted,
+    })));
+
+    // Debug: compare generation_prompt vs image_prompt
+    const promptCompare = (data || []).slice(0, 3).map(s => ({
+      slug: s.slug,
+      generation_prompt: s.generation_prompt?.substring(0, 60) + '...',
+      image_prompt: s.image_prompt?.substring(0, 60) + '...',
+      are_same: s.generation_prompt === s.image_prompt,
+    }));
+    console.log('[LoadScenes] Prompt comparison (first 3):', promptCompare);
+
+    // Check if 'accepted' field exists in first scene
+    if (data && data.length > 0) {
+      console.log('[LoadScenes] First scene keys:', Object.keys(data[0]));
+      console.log('[LoadScenes] First scene accepted value:', data[0].accepted);
+    }
+
     setScenes(
       (data || []).map((scene) => ({
         ...scene,
@@ -269,6 +420,10 @@ export default function AdminScenesPage() {
     if (filter === 'no_image') return !scene.image_url;
     if (filter === 'has_image') return !!scene.image_url;
     if (filter === 'qa_failed') return scene.qa_status === 'failed';
+    if (filter === 'v2_only') return scene.version === 2;
+    if (filter === 'accepted') return scene.accepted === true;
+    if (filter === 'rejected') return scene.accepted === false;
+    if (filter === 'not_reviewed') return scene.image_url && scene.accepted === null;
     return true;
   });
 
@@ -316,43 +471,53 @@ export default function AdminScenesPage() {
     addLog(`Selected ${withoutImage.length} scenes without images`, 'success');
   };
 
+  // Track original prompts to detect changes (since state is updated on every keystroke)
+  const originalPromptsRef = useRef<Record<string, string>>({});
+
   const updatePrompt = (id: string, prompt: string) => {
+    // Store original value on first edit
+    if (!(id in originalPromptsRef.current)) {
+      const scene = scenes.find((s) => s.id === id);
+      originalPromptsRef.current[id] = scene?.generation_prompt || '';
+    }
     setScenes((prev) =>
       prev.map((s) => (s.id === id ? { ...s, generation_prompt: prompt } : s))
     );
   };
 
   const savePrompt = async (id: string, newPrompt: string) => {
-    const scene = scenes.find((s) => s.id === id);
-    if (!scene) return;
+    const originalPrompt = originalPromptsRef.current[id];
 
-    const oldPrompt = scene.generation_prompt;
-
-    // Если промпт не изменился - ничего не делаем
-    if (oldPrompt === newPrompt) return;
-
-    // Если original_prompt ещё не установлен и был старый промпт - сохраняем его как оригинал
-    const shouldSaveOriginal = !scene.original_prompt && oldPrompt && oldPrompt.trim();
-
-    const updateData: Record<string, unknown> = {
-      generation_prompt: newPrompt,
-    };
-
-    if (shouldSaveOriginal) {
-      updateData.original_prompt = oldPrompt;
+    // If no original tracked or prompt hasn't changed - skip save
+    if (originalPrompt === undefined || originalPrompt === newPrompt) {
+      delete originalPromptsRef.current[id]; // Clean up
+      return;
     }
 
-    await supabase.from('scenes').update(updateData).eq('id', id);
+    // Save to generation_prompt via API route (bypasses RLS)
+    try {
+      const res = await fetch('/api/admin/update-scene', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sceneId: id,
+          field: 'generation_prompt',
+          value: newPrompt,
+        }),
+      });
 
-    // Обновляем локальное состояние
-    if (shouldSaveOriginal) {
-      setScenes((prev) =>
-        prev.map((s) =>
-          s.id === id ? { ...s, original_prompt: oldPrompt } : s
-        )
-      );
-      addLog(`Saved original prompt for scene`, 'info');
+      const data = await res.json();
+      if (!res.ok || data.error) {
+        addLog(`Failed to save prompt: ${data.error || 'Unknown error'}`, 'error');
+      } else {
+        addLog(`Prompt saved`, 'success');
+      }
+    } catch (err) {
+      addLog(`Failed to save prompt: ${(err as Error).message}`, 'error');
     }
+
+    // Clean up tracked original
+    delete originalPromptsRef.current[id];
   };
 
   // V3: Toggle expand row
@@ -495,44 +660,11 @@ export default function AdminScenesPage() {
     }
   };
 
-  // Toggle original prompt visibility
-  const toggleShowOriginalPrompt = (id: string) => {
+  // Toggle default prompt visibility (show image_prompt for comparison)
+  const toggleShowDefaultPrompt = (id: string) => {
     setScenes((prev) =>
-      prev.map((s) => (s.id === id ? { ...s, showOriginalPrompt: !s.showOriginalPrompt } : s))
+      prev.map((s) => (s.id === id ? { ...s, showDefaultPrompt: !s.showDefaultPrompt } : s))
     );
-  };
-
-  // Restore original prompt
-  const restoreOriginalPrompt = async (id: string) => {
-    const scene = scenes.find((s) => s.id === id);
-    if (!scene?.original_prompt) return;
-
-    await supabase
-      .from('scenes')
-      .update({
-        generation_prompt: scene.original_prompt,
-        final_prompt: null,
-        qa_status: null,
-        qa_attempts: null,
-        qa_last_assessment: null,
-      })
-      .eq('id', id);
-
-    setScenes((prev) =>
-      prev.map((s) =>
-        s.id === id
-          ? {
-              ...s,
-              generation_prompt: s.original_prompt,
-              final_prompt: undefined,
-              qa_status: null,
-              qa_attempts: undefined,
-              qa_last_assessment: undefined,
-            }
-          : s
-      )
-    );
-    addLog(`Restored original prompt for scene`, 'success');
   };
 
   // Toggle prompt instructions visibility
@@ -540,6 +672,61 @@ export default function AdminScenesPage() {
     setScenes((prev) =>
       prev.map((s) => (s.id === id ? { ...s, showPromptInstructions: !s.showPromptInstructions } : s))
     );
+  };
+
+  // Reset generation_prompt to image_prompt (default)
+  const resetToDefaultPrompt = async (id: string) => {
+    const scene = scenes.find((s) => s.id === id);
+    console.log('[Reset] Full scene data:', {
+      slug: scene?.slug,
+      image_prompt: scene?.image_prompt,
+      generation_prompt: scene?.generation_prompt,
+      are_same: scene?.image_prompt === scene?.generation_prompt,
+    });
+
+    if (!scene?.image_prompt) {
+      addLog('No default prompt (image_prompt) to reset to. Run: npx tsx scripts/update-prompts-in-db.ts', 'error');
+      return;
+    }
+
+    try {
+      console.log('[Reset] Sending to API - will set generation_prompt to:', scene.image_prompt);
+      const response = await fetch('/api/admin/reset-prompt', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sceneId: id,
+          imagePrompt: scene.image_prompt,
+        }),
+      });
+
+      const result = await response.json();
+      console.log('[Reset] API response:', result);
+      console.log('[Reset] After update - prompts_match:', result.data?.generation_prompt === result.data?.image_prompt);
+
+      if (!response.ok) {
+        addLog(`Error resetting prompt: ${result.error}`, 'error');
+        return;
+      }
+
+      setScenes((prev) =>
+        prev.map((s) =>
+          s.id === id
+            ? {
+                ...s,
+                generation_prompt: s.image_prompt,
+                qa_status: null,
+                qa_attempts: undefined,
+                qa_last_assessment: undefined,
+              }
+            : s
+        )
+      );
+      addLog('Prompt reset to default', 'success');
+    } catch (error) {
+      console.error('[Reset] Error:', error);
+      addLog(`Error: ${(error as Error).message}`, 'error');
+    }
   };
 
   // Update prompt instructions locally
@@ -592,6 +779,266 @@ export default function AdminScenesPage() {
     }
   };
 
+  // Set accepted status (manual approval)
+  const setAccepted = async (id: string, accepted: boolean | null) => {
+    // Use API route to bypass RLS
+    try {
+      const response = await fetch('/api/admin/update-scene', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sceneId: id,
+          field: 'accepted',
+          value: accepted,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        addLog(`Error saving accepted: ${result.error}`, 'error');
+        return;
+      }
+
+      setScenes((prev) =>
+        prev.map((s) => (s.id === id ? { ...s, accepted } : s))
+      );
+      const statusText = accepted === true ? 'accepted' : accepted === false ? 'rejected' : 'cleared';
+      addLog(`Scene ${statusText}`, 'success');
+    } catch (error) {
+      addLog(`Error: ${(error as Error).message}`, 'error');
+    }
+  };
+
+  // Toggle variants gallery visibility
+  const toggleShowVariants = (id: string) => {
+    setScenes((prev) =>
+      prev.map((s) => (s.id === id ? { ...s, showVariants: !s.showVariants } : s))
+    );
+  };
+
+  // Save current image as variant
+  const saveAsVariant = async (id: string, imageUrl?: string, prompt?: string) => {
+    const scene = scenes.find((s) => s.id === id);
+    const urlToSave = imageUrl || scene?.image_url;
+    const promptToSave = prompt || scene?.generation_prompt;
+
+    if (!urlToSave) {
+      addLog('No image to save as variant', 'error');
+      return;
+    }
+
+    try {
+      const response = await fetch('/api/admin/save-variant', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sceneId: id, action: 'save', imageUrl: urlToSave, prompt: promptToSave }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        addLog(`Error: ${result.error}`, 'error');
+        return;
+      }
+
+      setScenes((prev) =>
+        prev.map((s) => (s.id === id ? { ...s, image_variants: result.variants } : s))
+      );
+      addLog(`Image saved as variant (${result.variants.length} total)`, 'success');
+    } catch (error) {
+      addLog(`Error: ${(error as Error).message}`, 'error');
+    }
+  };
+
+  // Select a variant as main image
+  const selectVariant = async (sceneId: string, variantUrl: string) => {
+    try {
+      const response = await fetch('/api/admin/save-variant', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sceneId, action: 'select', variantUrl }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        addLog(`Error: ${result.error}`, 'error');
+        return;
+      }
+
+      setScenes((prev) =>
+        prev.map((s) => (s.id === sceneId ? { ...s, image_url: variantUrl } : s))
+      );
+      addLog('Variant selected as main image', 'success');
+    } catch (error) {
+      addLog(`Error: ${(error as Error).message}`, 'error');
+    }
+  };
+
+  // Delete a variant
+  const deleteVariant = async (sceneId: string, variantUrl: string) => {
+    try {
+      const response = await fetch('/api/admin/save-variant', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sceneId, action: 'delete', variantUrl }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        addLog(`Error: ${result.error}`, 'error');
+        return;
+      }
+
+      setScenes((prev) =>
+        prev.map((s) => (s.id === sceneId ? { ...s, image_variants: result.variants } : s))
+      );
+      addLog('Variant deleted', 'success');
+    } catch (error) {
+      addLog(`Error: ${(error as Error).message}`, 'error');
+    }
+  };
+
+  // Keep & Retry: save current image as variant, then regenerate
+  const keepAndRetry = async (scene: SceneWithStatus) => {
+    // Capture current URL and prompt BEFORE generating new image
+    const currentUrl = scene.image_url;
+    const currentPrompt = scene.generation_prompt;
+
+    // First save current image as variant (pass URL explicitly)
+    if (currentUrl) {
+      await saveAsVariant(scene.id, currentUrl, currentPrompt);
+    }
+    // Then generate new image
+    await generateScene(scene);
+  };
+
+  // Upload image directly
+  const uploadImage = async (sceneId: string, file: File) => {
+    addLog(`Uploading image for scene...`, 'info');
+
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('sceneId', sceneId);
+
+      const response = await fetch('/api/admin/upload-image', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        addLog(`Upload error: ${result.error}`, 'error');
+        return;
+      }
+
+      setScenes((prev) =>
+        prev.map((s) => (s.id === sceneId ? { ...s, image_url: result.imageUrl } : s))
+      );
+      addLog('Image uploaded successfully', 'success');
+    } catch (error) {
+      addLog(`Upload error: ${(error as Error).message}`, 'error');
+    }
+  };
+
+  // Toggle img2img controls visibility
+  const toggleImg2Img = (id: string) => {
+    setScenes((prev) =>
+      prev.map((s) => (s.id === id ? { ...s, showImg2Img: !s.showImg2Img } : s))
+    );
+  };
+
+  // Update img2img strength
+  const updateImg2ImgStrength = (id: string, strength: number) => {
+    setScenes((prev) =>
+      prev.map((s) => (s.id === id ? { ...s, img2imgStrength: strength } : s))
+    );
+  };
+
+  // Generate with img2img
+  const generateImg2Img = async (scene: SceneWithStatus) => {
+    if (!scene.image_url) {
+      addLog('No source image for img2img', 'error');
+      return;
+    }
+
+    if (settings.service !== 'replicate') {
+      addLog('img2img is only supported with Replicate service', 'error');
+      return;
+    }
+
+    const strength = scene.img2imgStrength ?? 0.7;
+    addLog(`Starting img2img (strength: ${strength})...`, 'info');
+
+    setScenes((prev) =>
+      prev.map((s) => (s.id === scene.id ? { ...s, status: 'generating' } : s))
+    );
+
+    try {
+      const prompt = scene.generation_prompt;
+      const models = REPLICATE_MODELS;
+      const modelName = models.find(m => m.id === settings.modelId)?.name || settings.modelId;
+      const resolution = RESOLUTION_PRESETS.find(p => p.id === settings.aspectRatio) || RESOLUTION_PRESETS[0];
+
+      addLog(`Model: ${modelName}, Strength: ${strength}`, 'info');
+
+      const { prompt: fullPrompt, negativePrompt } = buildPrompt(
+        settings.stylePrefix ? `${settings.stylePrefix}, ${prompt}` : prompt || '',
+        settings.styleVariant as keyof typeof STYLE_VARIANTS | 'default'
+      );
+
+      const finalNegative = settings.negativePrompt
+        ? `${negativePrompt}, ${settings.negativePrompt}`
+        : negativePrompt;
+
+      const response = await fetch('/api/admin/generate-scene', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sceneId: scene.id,
+          prompt: fullPrompt,
+          styleVariant: settings.styleVariant,
+          negativePrompt: finalNegative,
+          modelId: settings.modelId,
+          service: 'replicate',
+          width: resolution.width,
+          height: resolution.height,
+          aspectRatio: settings.aspectRatio,
+          enableQA: false,
+          sourceImage: scene.image_url,
+          strength,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'img2img generation failed');
+      }
+
+      setScenes((prev) =>
+        prev.map((s) =>
+          s.id === scene.id
+            ? { ...s, status: 'completed', image_url: result.imageUrl || s.image_url }
+            : s
+        )
+      );
+      addLog('img2img completed', 'success');
+    } catch (error) {
+      const errorMsg = (error as Error).message;
+      addLog(`img2img error: ${errorMsg}`, 'error');
+      setScenes((prev) =>
+        prev.map((s) =>
+          s.id === scene.id ? { ...s, status: 'error', error: errorMsg } : s
+        )
+      );
+    }
+  };
+
   const deleteScene = async (id: string) => {
     if (!confirm('Delete this scene?')) return;
 
@@ -612,8 +1059,12 @@ export default function AdminScenesPage() {
   const generateScene = async (scene: SceneWithStatus) => {
     const sceneSlug = scene.slug || scene.id.substring(0, 8);
     const qaEnabled = settings.enableQA;
+    const useContext = settings.useAiContext;
 
-    addLog(`Starting generation: ${sceneSlug}${qaEnabled ? ' (QA enabled)' : ''}`, 'info');
+    const modeLabel = qaEnabled
+      ? (useContext ? ' (QA + ai_context)' : ' (QA, prompt only)')
+      : (useContext ? '' : ' (prompt only)');
+    addLog(`Starting generation: ${sceneSlug}${modeLabel}`, 'info');
 
     setScenes((prev) =>
       prev.map((s) => (s.id === scene.id ? { ...s, status: 'generating' } : s))
@@ -628,11 +1079,24 @@ export default function AdminScenesPage() {
       const resolution = RESOLUTION_PRESETS.find(p => p.id === settings.aspectRatio) || RESOLUTION_PRESETS[0];
       addLog(`Service: ${settings.service}, Model: ${modelName}, ${resolution.name}`, 'info');
 
-      // Build QA context if QA is enabled
-      const qaContext = qaEnabled ? buildQAContext(scene) : null;
-
-      if (qaEnabled && !qaContext) {
-        addLog(`Warning: QA enabled but no ai_context found, using basic context`, 'info');
+      // Build QA context only if QA is enabled AND useAiContext is true
+      let qaContext = null;
+      if (qaEnabled) {
+        if (useContext) {
+          qaContext = buildQAContext(scene);
+          if (!qaContext) {
+            addLog(`Warning: useAiContext=true but no ai_context found, using prompt-based context`, 'info');
+          }
+        }
+        // If no context (either useAiContext=false or ai_context missing), use prompt-based minimal context
+        if (!qaContext) {
+          qaContext = {
+            essence: prompt, // Use the prompt itself as essence
+            key_elements: [{ element: 'scene content', critical: true, in_action: false }],
+            mood: 'as described in prompt',
+            participants: { count: 0, genders: [] }, // Unknown from prompt alone
+          };
+        }
       }
 
       const response = await fetch('/api/admin/generate-scene', {
@@ -641,7 +1105,7 @@ export default function AdminScenesPage() {
         body: JSON.stringify({
           sceneId: scene.id,
           prompt,
-          // promptInstructions removed - now applied immediately via Apply button
+          // promptInstructions removed - now applied via Apply button only
           stylePrefix: settings.stylePrefix || undefined, // Send separately
           styleVariant: settings.styleVariant,
           negativePrompt: settings.negativePrompt || undefined,
@@ -651,12 +1115,7 @@ export default function AdminScenesPage() {
           height: resolution.height,
           aspectRatio: settings.aspectRatio,
           enableQA: qaEnabled,
-          qaContext: qaContext || (qaEnabled ? {
-            essence: scene.description,
-            key_elements: [{ element: 'main subject', critical: true, in_action: false }],
-            mood: 'sensual',
-            participants: { count: 1, genders: ['any'] },
-          } : undefined),
+          qaContext: qaContext,
         }),
       });
 
@@ -722,6 +1181,8 @@ export default function AdminScenesPage() {
       }
 
       console.log('[Admin] Updating scene with imageUrl:', result.imageUrl);
+      console.log('[Admin] Assessment from API:', result.assessment);
+      console.log('[Admin] Assessment keys:', result.assessment ? Object.keys(result.assessment) : 'null');
       setScenes((prev) => {
         const updated = prev.map((s) =>
           s.id === scene.id
@@ -731,8 +1192,6 @@ export default function AdminScenesPage() {
                 image_url: result.imageUrl || s.image_url,
                 qa_status: result.qaStatus || null,
                 qa_attempts: result.totalAttempts,
-                original_prompt: result.originalPrompt || s.original_prompt,
-                final_prompt: result.finalPrompt,
                 qa_last_assessment: result.assessment,
               }
             : s
@@ -820,7 +1279,39 @@ export default function AdminScenesPage() {
     <div className="container mx-auto px-4 max-w-6xl">
       {/* Sticky Header Panel */}
       <div className="sticky top-0 z-40 bg-background pt-8 pb-4">
-        <h1 className="text-2xl font-bold mb-4">Scene Generation Manager</h1>
+        <div className="flex items-center justify-between mb-4">
+          <h1 className="text-2xl font-bold">Scene Generation Manager</h1>
+          <div className="flex gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={async () => {
+                addLog('Importing V2 scenes...', 'info');
+                try {
+                  const res = await fetch('/api/admin/import-scenes-v2', { method: 'POST' });
+                  const data = await res.json();
+                  if (data.success) {
+                    addLog(`Imported ${data.imported} V2 scenes (${data.errors} errors)`, 'success');
+                    loadScenes();
+                  } else {
+                    addLog(`Import failed: ${data.error}`, 'error');
+                  }
+                } catch (e) {
+                  addLog(`Import error: ${(e as Error).message}`, 'error');
+                }
+              }}
+            >
+              Import V2
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => window.location.href = '/admin/users'}
+            >
+              Users Admin
+            </Button>
+          </div>
+        </div>
 
         {/* Global Settings */}
         <div className="mb-4 border rounded-lg bg-background">
@@ -842,22 +1333,40 @@ export default function AdminScenesPage() {
 
         {showSettings && (
           <div className="p-4 border-t space-y-4">
-            {/* QA Toggle */}
-            <div className="flex items-center gap-3 p-3 border rounded-lg bg-muted/30">
-              <Checkbox
-                id="enableQA"
-                checked={settings.enableQA}
-                onCheckedChange={(checked) =>
-                  updateSettings({ ...settings, enableQA: checked as boolean })
-                }
-              />
-              <label htmlFor="enableQA" className="flex-1 cursor-pointer">
-                <div className="font-medium">Enable QA Validation</div>
-                <div className="text-sm text-muted-foreground">
-                  AI will evaluate generated images and retry up to 12 times (3 rounds x 4 attempts)
-                </div>
-              </label>
-              <ShieldCheck className={`size-6 ${settings.enableQA ? 'text-green-500' : 'text-gray-300'}`} />
+            {/* QA Toggle + Use ai_context */}
+            <div className="flex gap-4">
+              <div className="flex items-center gap-3 p-3 border rounded-lg bg-muted/30 flex-1">
+                <Checkbox
+                  id="enableQA"
+                  checked={settings.enableQA}
+                  onCheckedChange={(checked) =>
+                    updateSettings({ ...settings, enableQA: checked as boolean })
+                  }
+                />
+                <label htmlFor="enableQA" className="flex-1 cursor-pointer">
+                  <div className="font-medium">Enable QA Validation</div>
+                  <div className="text-sm text-muted-foreground">
+                    AI evaluates images and retries up to 12 times
+                  </div>
+                </label>
+                <ShieldCheck className={`size-6 ${settings.enableQA ? 'text-green-500' : 'text-gray-300'}`} />
+              </div>
+
+              <div className="flex items-center gap-3 p-3 border rounded-lg bg-muted/30 flex-1">
+                <Checkbox
+                  id="useAiContext"
+                  checked={settings.useAiContext}
+                  onCheckedChange={(checked) =>
+                    updateSettings({ ...settings, useAiContext: checked as boolean })
+                  }
+                />
+                <label htmlFor="useAiContext" className="flex-1 cursor-pointer">
+                  <div className="font-medium">Use ai_context</div>
+                  <div className="text-sm text-muted-foreground">
+                    Use essence, key_elements, mood from ai_context
+                  </div>
+                </label>
+              </div>
             </div>
 
             <div className="grid grid-cols-4 gap-4">
@@ -997,9 +1506,13 @@ export default function AdminScenesPage() {
             className="h-9 rounded-md border px-3 text-sm"
           >
             <option value="all">All scenes ({scenes.length})</option>
+            <option value="v2_only">V2 scenes ({scenes.filter((s) => s.version === 2).length})</option>
             <option value="no_image">Without images ({scenes.filter((s) => !s.image_url).length})</option>
             <option value="has_image">With images ({scenes.filter((s) => s.image_url).length})</option>
             <option value="qa_failed">QA Failed ({qaFailedCount})</option>
+            <option value="accepted">✓ Accepted ({scenes.filter((s) => s.accepted === true).length})</option>
+            <option value="rejected">✗ Rejected ({scenes.filter((s) => s.accepted === false).length})</option>
+            <option value="not_reviewed">⏳ Not reviewed ({scenes.filter((s) => s.image_url && s.accepted === null).length})</option>
           </select>
         </div>
 
@@ -1058,7 +1571,7 @@ export default function AdminScenesPage() {
           <thead className="bg-muted/50">
             <tr>
               <th className="w-10 p-3" />
-              <th className="w-24 p-3 text-left text-sm font-medium">Preview</th>
+              <th className="w-52 p-3 text-left text-sm font-medium">Preview</th>
               <th className="p-3 text-left text-sm font-medium">Prompt</th>
               <th className="w-20 p-3 text-left text-sm font-medium">Status</th>
               <th className="w-24 p-3 text-left text-sm font-medium">Actions</th>
@@ -1080,10 +1593,25 @@ export default function AdminScenesPage() {
                       <>
                         <img
                           src={scene.image_url}
-                          alt={scene.description}
-                          className="w-20 h-14 object-cover rounded cursor-pointer hover:opacity-80 transition-opacity"
+                          alt={scene.ai_description?.en || scene.title?.en || scene.slug || ''}
+                          className="w-48 h-32 object-cover rounded cursor-pointer hover:opacity-80 transition-opacity"
                           onClick={() => setLightboxImage(scene.image_url)}
+                          onError={(e) => {
+                            console.error('[IMG] Failed to load:', scene.image_url);
+                            (e.target as HTMLImageElement).style.display = 'none';
+                            (e.target as HTMLImageElement).nextElementSibling?.classList.remove('hidden');
+                          }}
                         />
+                        <div
+                          className="hidden w-48 h-32 bg-red-100 rounded flex items-center justify-center text-xs text-red-500 cursor-pointer"
+                          onClick={() => {
+                            navigator.clipboard.writeText(scene.image_url || '');
+                            alert(`URL скопирован!\n\n${scene.image_url}\n\nПроверь что bucket 'scenes' публичный в Supabase Dashboard:\nStorage → scenes → Edit bucket → Make public`);
+                          }}
+                          title="Клик чтобы скопировать URL"
+                        >
+                          Error
+                        </div>
                         {/* QA Status Badge */}
                         {scene.qa_status && (
                           <div className="absolute -top-2 -right-2">
@@ -1093,10 +1621,24 @@ export default function AdminScenesPage() {
                             />
                           </div>
                         )}
+                        {/* Accepted/Rejected Badge */}
+                        {scene.accepted !== null && scene.accepted !== undefined && (
+                          <div className="absolute -bottom-1 -right-1">
+                            {scene.accepted ? (
+                              <div className="bg-green-500 rounded-full p-0.5" title="Accepted">
+                                <ThumbsUp className="size-3 text-white" />
+                              </div>
+                            ) : (
+                              <div className="bg-red-500 rounded-full p-0.5" title="Rejected">
+                                <ThumbsDown className="size-3 text-white" />
+                              </div>
+                            )}
+                          </div>
+                        )}
                       </>
                     ) : (
-                      <div className="w-20 h-14 bg-muted rounded flex items-center justify-center">
-                        <ImageIcon className="size-6 text-muted-foreground" />
+                      <div className="w-48 h-32 bg-muted rounded flex items-center justify-center">
+                        <ImageIcon className="size-8 text-muted-foreground" />
                       </div>
                     )}
                   </div>
@@ -1111,31 +1653,6 @@ export default function AdminScenesPage() {
                       onBlur={(e) => savePriority(scene.id, parseInt(e.target.value) || 50)}
                       className="w-16 h-6 text-xs"
                     />
-                    {/* Original prompt indicator */}
-                    {scene.original_prompt && scene.original_prompt !== scene.generation_prompt && (
-                      <div className="flex items-center gap-1">
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="h-6 px-2 text-xs"
-                          onClick={() => toggleShowOriginalPrompt(scene.id)}
-                          title="View original prompt"
-                        >
-                          <Eye className="size-3 mr-1" />
-                          Original
-                        </Button>
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="h-6 px-2 text-xs text-orange-600"
-                          onClick={() => restoreOriginalPrompt(scene.id)}
-                          title="Restore original prompt"
-                        >
-                          <RotateCcw className="size-3 mr-1" />
-                          Restore
-                        </Button>
-                      </div>
-                    )}
                     {/* Prompt instructions button */}
                     <Button
                       variant="ghost"
@@ -1147,13 +1664,38 @@ export default function AdminScenesPage() {
                       <Edit3 className="size-3 mr-1" />
                       {scene.prompt_instructions ? 'Instructions ✓' : 'Instructions'}
                     </Button>
+                    {/* Show default prompt and Reset buttons - when generation_prompt differs from image_prompt */}
+                    {scene.image_prompt && scene.generation_prompt !== scene.image_prompt && (
+                      <>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="h-6 px-2 text-xs"
+                          onClick={() => toggleShowDefaultPrompt(scene.id)}
+                          title="View default prompt (from JSON)"
+                        >
+                          <Eye className="size-3 mr-1" />
+                          Default
+                        </Button>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="h-6 px-2 text-xs text-orange-600"
+                          onClick={() => resetToDefaultPrompt(scene.id)}
+                          title="Reset prompt to default (from JSON)"
+                        >
+                          <RotateCcw className="size-3 mr-1" />
+                          Reset
+                        </Button>
+                      </>
+                    )}
                   </div>
 
-                  {/* Show original prompt if toggled */}
-                  {scene.showOriginalPrompt && scene.original_prompt && (
+                  {/* Show default prompt if toggled */}
+                  {scene.showDefaultPrompt && scene.image_prompt && (
                     <div className="mb-2 p-2 bg-yellow-50 border border-yellow-200 rounded text-xs">
-                      <div className="font-medium text-yellow-700 mb-1">Original Prompt:</div>
-                      <div className="text-yellow-900">{scene.original_prompt}</div>
+                      <div className="font-medium text-yellow-700 mb-1">Default Prompt (image_prompt):</div>
+                      <div className="text-yellow-900">{scene.image_prompt}</div>
                     </div>
                   )}
 
@@ -1195,8 +1737,16 @@ export default function AdminScenesPage() {
                   />
 
                   {/* AI Description (read-only info) */}
-                  <p className="text-xs text-muted-foreground mt-1 truncate" title={scene.description}>
-                    {scene.description}
+                  <p className="text-xs text-muted-foreground mt-1 truncate" title={scene.ai_description?.ru || scene.ai_description?.en || ''}>
+                    {scene.version === 2 ? (
+                      <>
+                        <span className="px-1 py-0.5 rounded bg-blue-100 text-blue-700 text-[10px] mr-1">V2</span>
+                        <span className="font-medium">{scene.title?.ru}</span>
+                        {scene.category && <span className="ml-1 text-muted-foreground">• {scene.category}</span>}
+                      </>
+                    ) : (
+                      scene.ai_description?.ru || scene.ai_description?.en || scene.slug || ''
+                    )}
                   </p>
 
                   {/* User Description RU/EN */}
@@ -1260,7 +1810,7 @@ export default function AdminScenesPage() {
                   )}
                 </td>
                 <td className="p-3">
-                  <div className="flex items-center gap-1">
+                  <div className="grid grid-cols-2 gap-1">
                     <Button
                       variant="ghost"
                       size="icon-sm"
@@ -1294,14 +1844,148 @@ export default function AdminScenesPage() {
                     <Button
                       variant="ghost"
                       size="icon-sm"
+                      onClick={() => keepAndRetry(scene)}
+                      disabled={!scene.image_url || generating}
+                      title="Keep current & Generate new"
+                      className="text-blue-600"
+                    >
+                      <Copy className="size-4" />
+                    </Button>
+                    <Button
+                      variant="ghost"
+                      size="icon-sm"
+                      onClick={() => toggleShowVariants(scene.id)}
+                      title={`Show variants (${scene.image_variants?.length || 0})`}
+                      className={scene.showVariants ? 'text-primary' : ''}
+                    >
+                      <Layers className="size-4" />
+                      {(scene.image_variants?.length || 0) > 0 && (
+                        <span className="absolute -top-1 -right-1 text-[10px] bg-primary text-primary-foreground rounded-full w-4 h-4 flex items-center justify-center">
+                          {scene.image_variants?.length}
+                        </span>
+                      )}
+                    </Button>
+                    <Button
+                      variant="ghost"
+                      size="icon-sm"
                       onClick={() => deleteScene(scene.id)}
                       title="Delete"
                     >
                       <Trash2 className="size-4 text-destructive" />
                     </Button>
+                    {/* Upload image button */}
+                    <label className="cursor-pointer">
+                      <input
+                        type="file"
+                        accept="image/*"
+                        className="hidden"
+                        onChange={(e) => {
+                          const file = e.target.files?.[0];
+                          if (file) {
+                            uploadImage(scene.id, file);
+                            e.target.value = ''; // Reset input
+                          }
+                        }}
+                      />
+                      <Button
+                        variant="ghost"
+                        size="icon-sm"
+                        title="Upload image"
+                        asChild
+                      >
+                        <span>
+                          <Upload className="size-4 text-purple-600" />
+                        </span>
+                      </Button>
+                    </label>
+                    {/* Img2img button */}
+                    <Button
+                      variant="ghost"
+                      size="icon-sm"
+                      onClick={() => toggleImg2Img(scene.id)}
+                      title="img2img (use current image as base)"
+                      className={scene.showImg2Img ? 'text-primary bg-primary/10' : ''}
+                      disabled={!scene.image_url || settings.service !== 'replicate'}
+                    >
+                      <Wand2 className="size-4" />
+                    </Button>
+                    {/* Accept/Reject buttons */}
+                    {scene.image_url && (
+                      <>
+                        <Button
+                          variant="ghost"
+                          size="icon-sm"
+                          onClick={() => setAccepted(scene.id, scene.accepted === true ? null : true)}
+                          title={scene.accepted === true ? "Clear acceptance" : "Accept"}
+                          className={scene.accepted === true ? "bg-green-100 dark:bg-green-900/30" : ""}
+                        >
+                          <ThumbsUp className={`size-4 ${scene.accepted === true ? 'text-green-600' : 'text-muted-foreground'}`} />
+                        </Button>
+                        <Button
+                          variant="ghost"
+                          size="icon-sm"
+                          onClick={() => setAccepted(scene.id, scene.accepted === false ? null : false)}
+                          title={scene.accepted === false ? "Clear rejection" : "Reject"}
+                          className={scene.accepted === false ? "bg-red-100 dark:bg-red-900/30" : ""}
+                        >
+                          <ThumbsDown className={`size-4 ${scene.accepted === false ? 'text-red-600' : 'text-muted-foreground'}`} />
+                        </Button>
+                      </>
+                    )}
                   </div>
                 </td>
               </tr>
+              {/* Img2img Controls Row */}
+              {scene.showImg2Img && (
+                <tr className="border-t bg-purple-50/50 dark:bg-purple-950/20">
+                  <td colSpan={5} className="p-4">
+                    <div className="flex items-center gap-4">
+                      <Wand2 className="size-5 text-purple-600" />
+                      <span className="font-medium text-sm">img2img</span>
+                      <span className="text-xs text-muted-foreground">
+                        Use current image as base, modify with prompt
+                      </span>
+                      <div className="flex items-center gap-2 ml-4">
+                        <span className="text-xs text-muted-foreground">Strength:</span>
+                        <input
+                          type="range"
+                          min="0.1"
+                          max="1"
+                          step="0.05"
+                          value={scene.img2imgStrength ?? 0.7}
+                          onChange={(e) => updateImg2ImgStrength(scene.id, parseFloat(e.target.value))}
+                          className="w-32 h-2"
+                        />
+                        <span className="text-xs font-mono w-8">
+                          {(scene.img2imgStrength ?? 0.7).toFixed(2)}
+                        </span>
+                      </div>
+                      <Button
+                        variant="default"
+                        size="sm"
+                        onClick={() => generateImg2Img(scene)}
+                        disabled={!scene.image_url || generating || settings.service !== 'replicate'}
+                        className="ml-auto"
+                      >
+                        {scene.status === 'generating' ? (
+                          <Loader2 className="size-4 animate-spin mr-1" />
+                        ) : (
+                          <Wand2 className="size-4 mr-1" />
+                        )}
+                        Generate img2img
+                      </Button>
+                    </div>
+                    {settings.service !== 'replicate' && (
+                      <p className="text-xs text-orange-600 mt-2">
+                        img2img requires Replicate service. Switch to Replicate in settings.
+                      </p>
+                    )}
+                    <p className="text-xs text-muted-foreground mt-2">
+                      Lower strength (0.3-0.5) keeps more of original image, higher (0.7-0.9) allows more changes.
+                    </p>
+                  </td>
+                </tr>
+              )}
               {/* V3 Expanded Row */}
               {scene.expanded && (
                 <tr className="border-t bg-muted/20">
@@ -1361,6 +2045,98 @@ export default function AdminScenesPage() {
                         />
                       </div>
                     </div>
+                  </td>
+                </tr>
+              )}
+              {/* Image Variants Gallery */}
+              {scene.showVariants && (
+                <tr className="border-t bg-blue-50/50 dark:bg-blue-950/20">
+                  <td colSpan={5} className="p-4">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Layers className="size-4 text-blue-600" />
+                      <span className="font-medium text-sm">Image Variants</span>
+                      <span className="text-xs text-muted-foreground">
+                        ({scene.image_variants?.length || 0} saved)
+                      </span>
+                      {scene.image_url && (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="ml-auto h-7 text-xs"
+                          onClick={() => saveAsVariant(scene.id, scene.image_url || undefined, scene.generation_prompt || undefined)}
+                        >
+                          <Copy className="size-3 mr-1" />
+                          Save current as variant
+                        </Button>
+                      )}
+                    </div>
+                    {(!scene.image_variants || scene.image_variants.length === 0) ? (
+                      <p className="text-sm text-muted-foreground">
+                        No variants saved yet. Click &quot;Keep &amp; Retry&quot; (copy icon) to save current image and generate a new one.
+                      </p>
+                    ) : (
+                      <div className="grid grid-cols-4 gap-3">
+                        {scene.image_variants.map((variant, idx) => (
+                          <div
+                            key={variant.url}
+                            className={`relative rounded-lg border-2 overflow-hidden group ${
+                              variant.url === scene.image_url
+                                ? 'border-primary ring-2 ring-primary/30'
+                                : 'border-transparent hover:border-muted-foreground/30'
+                            }`}
+                          >
+                            <img
+                              src={variant.url}
+                              alt={`Variant ${idx + 1}`}
+                              className="w-full h-24 object-cover cursor-pointer"
+                              onClick={() => setLightboxImage(variant.url)}
+                            />
+                            {/* Current indicator */}
+                            {variant.url === scene.image_url && (
+                              <div className="absolute top-1 left-1 bg-primary text-primary-foreground rounded-full p-0.5">
+                                <CheckCircle2 className="size-4" />
+                              </div>
+                            )}
+                            {/* QA status */}
+                            {variant.qa_status && (
+                              <div className="absolute top-1 right-1">
+                                {variant.qa_status === 'passed' ? (
+                                  <ShieldCheck className="size-4 text-green-500" />
+                                ) : (
+                                  <ShieldX className="size-4 text-red-500" />
+                                )}
+                              </div>
+                            )}
+                            {/* Hover overlay with actions */}
+                            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+                              {variant.url !== scene.image_url && (
+                                <Button
+                                  variant="secondary"
+                                  size="sm"
+                                  className="h-7 text-xs"
+                                  onClick={() => selectVariant(scene.id, variant.url)}
+                                >
+                                  <Check className="size-3 mr-1" />
+                                  Use
+                                </Button>
+                              )}
+                              <Button
+                                variant="destructive"
+                                size="sm"
+                                className="h-7 text-xs"
+                                onClick={() => deleteVariant(scene.id, variant.url)}
+                              >
+                                <Trash2 className="size-3" />
+                              </Button>
+                            </div>
+                            {/* Info */}
+                            <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-[10px] px-1 py-0.5 truncate">
+                              {variant.qa_score ? `Score: ${variant.qa_score}/10` : `#${idx + 1}`}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </td>
                 </tr>
               )}
@@ -1515,10 +2291,6 @@ export default function AdminScenesPage() {
               {/* Attempts Info */}
               <div className="text-xs text-muted-foreground border-t pt-3">
                 <span>Всего попыток: {qaDetailScene.qa_attempts || 0}</span>
-                {qaDetailScene.original_prompt && qaDetailScene.final_prompt &&
-                 qaDetailScene.original_prompt !== qaDetailScene.final_prompt && (
-                  <span className="ml-4">• Промпт был изменён AI</span>
-                )}
               </div>
             </div>
             );

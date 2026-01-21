@@ -1,0 +1,487 @@
+{
+  "id": "degradation_m_to_f",
+  "slug": "degradation-he-degrades-her",
+  "version": 2,
+  "paired_scene": "degradation_f_to_m",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Унижение",
+    "en": "Degradation"
+  },
+  "subtitle": {
+    "ru": "Он унижает её",
+    "en": "He degrades her"
+  },
+  "ai_description": {
+    "ru": "'Шлюха', — говорит он, и она чувствует волну возбуждения. Грязные слова, унижение — то, что включает её больше всего. Чем грязнее, тем горячее.",
+    "en": "'Slut,' he says, and she feels a wave of arousal. Dirty words, degradation — what turns her on most. The dirtier, the hotter."
+  },
+  "image_prompt": "man standing over kneeling woman, his hand gripping her chin, woman nude on knees, man clothed, bedroom setting",
+  "intensity": 4,
+  "category": "verbal",
+  "tags": [
+    "degradation",
+    "humiliation",
+    "slut",
+    "dirty_talk",
+    "verbal_abuse",
+    "name_calling"
+  ],
+  "elements": [
+    {
+      "id": "names",
+      "label": {
+        "ru": "Какие слова?",
+        "en": "What words?"
+      },
+      "tag_ref": "degradation_words",
+      "follow_ups": [
+        {
+          "id": "what_names",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие слова возбуждают?",
+            "en": "What words arouse?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "slut",
+                "label": {
+                  "ru": "Шлюха",
+                  "en": "Slut"
+                }
+              },
+              {
+                "id": "whore",
+                "label": {
+                  "ru": "Шалава",
+                  "en": "Whore"
+                }
+              },
+              {
+                "id": "bitch",
+                "label": {
+                  "ru": "Сука",
+                  "en": "Bitch"
+                }
+              },
+              {
+                "id": "toy",
+                "label": {
+                  "ru": "Игрушка",
+                  "en": "Toy"
+                }
+              },
+              {
+                "id": "hole",
+                "label": {
+                  "ru": "Дырка",
+                  "en": "Hole"
+                }
+              },
+              {
+                "id": "cumslut",
+                "label": {
+                  "ru": "Спермоприёмник",
+                  "en": "Cum dump"
+                }
+              },
+              {
+                "id": "pathetic",
+                "label": {
+                  "ru": "Жалкая",
+                  "en": "Pathetic"
+                }
+              },
+              {
+                "id": "property",
+                "label": {
+                  "ru": "Собственность",
+                  "en": "Property"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "label": {
+        "ru": "Фразы",
+        "en": "Phrases"
+      },
+      "tag_ref": "degradation_phrases",
+      "follow_ups": [
+        {
+          "id": "what_phrases",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие фразы?",
+            "en": "What phrases?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "born_for_this",
+                "label": {
+                  "ru": "Ты для этого создана",
+                  "en": "You were made for this"
+                }
+              },
+              {
+                "id": "only_good_for",
+                "label": {
+                  "ru": "Ты только на это годишься",
+                  "en": "You're only good for this"
+                }
+              },
+              {
+                "id": "look_at_you",
+                "label": {
+                  "ru": "Посмотри на себя",
+                  "en": "Look at yourself"
+                }
+              },
+              {
+                "id": "desperate",
+                "label": {
+                  "ru": "Какая же ты голодная",
+                  "en": "So desperate"
+                }
+              },
+              {
+                "id": "used",
+                "label": {
+                  "ru": "Я использую тебя",
+                  "en": "I'm using you"
+                }
+              },
+              {
+                "id": "worthless",
+                "label": {
+                  "ru": "Ты ничего не значишь",
+                  "en": "You're worthless"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "intensity",
+      "label": {
+        "ru": "Интенсивность",
+        "en": "Intensity"
+      },
+      "tag_ref": "degradation_intensity",
+      "follow_ups": [
+        {
+          "id": "how_harsh",
+          "type": "scale",
+          "question": {
+            "ru": "Насколько жёстко?",
+            "en": "How harsh?"
+          },
+          "config": {
+            "min_label": {
+              "ru": "Мягко, игриво",
+              "en": "Soft, playful"
+            },
+            "max_label": {
+              "ru": "Жёстко, обидно",
+              "en": "Harsh, hurtful"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Когда?",
+        "en": "When?"
+      },
+      "tag_ref": "degradation_context",
+      "follow_ups": [
+        {
+          "id": "timing",
+          "type": "multi_select",
+          "question": {
+            "ru": "В какой момент?",
+            "en": "At what moment?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "during_sex",
+                "label": {
+                  "ru": "Во время секса",
+                  "en": "During sex"
+                }
+              },
+              {
+                "id": "during_oral",
+                "label": {
+                  "ru": "Когда она сосёт",
+                  "en": "During oral"
+                }
+              },
+              {
+                "id": "cum_moment",
+                "label": {
+                  "ru": "Когда кончает на неё",
+                  "en": "When cumming on her"
+                }
+              },
+              {
+                "id": "random",
+                "label": {
+                  "ru": "Случайно",
+                  "en": "Randomly"
+                }
+              },
+              {
+                "id": "public_hint",
+                "label": {
+                  "ru": "Намёки на публике",
+                  "en": "Hints in public"
+                }
+              },
+              {
+                "id": "body_writing",
+                "label": {
+                  "ru": "Надписи на теле",
+                  "en": "Body writing"
+                }
+              },
+              {
+                "id": "public_humiliation",
+                "label": {
+                  "ru": "Публичное унижение",
+                  "en": "Public humiliation"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "degradation_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "taboo",
+                "label": {
+                  "ru": "Запретность слов",
+                  "en": "Taboo words"
+                }
+              },
+              {
+                "id": "objectification",
+                "label": {
+                  "ru": "Объективация",
+                  "en": "Objectification"
+                }
+              },
+              {
+                "id": "power",
+                "label": {
+                  "ru": "Его власть",
+                  "en": "His power"
+                }
+              },
+              {
+                "id": "being_used",
+                "label": {
+                  "ru": "Быть использованной",
+                  "en": "Being used"
+                }
+              },
+              {
+                "id": "shame_arousal",
+                "label": {
+                  "ru": "Стыд возбуждает",
+                  "en": "Shame arouses"
+                }
+              },
+              {
+                "id": "contrast",
+                "label": {
+                  "ru": "Контраст (в жизни хорошая)",
+                  "en": "Contrast (good girl in life)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "limits",
+      "label": {
+        "ru": "Границы",
+        "en": "Limits"
+      },
+      "tag_ref": "degradation_limits",
+      "follow_ups": [
+        {
+          "id": "hard_limits",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что НЕ говорить?",
+            "en": "What NOT to say?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "no_limits",
+                "label": {
+                  "ru": "Нет ограничений",
+                  "en": "No limits"
+                }
+              },
+              {
+                "id": "no_appearance",
+                "label": {
+                  "ru": "Не про внешность",
+                  "en": "Not about appearance"
+                }
+              },
+              {
+                "id": "no_intelligence",
+                "label": {
+                  "ru": "Не про ум",
+                  "en": "Not about intelligence"
+                }
+              },
+              {
+                "id": "no_fat",
+                "label": {
+                  "ru": "Не про вес",
+                  "en": "Not about weight"
+                }
+              },
+              {
+                "id": "no_family",
+                "label": {
+                  "ru": "Не про семью",
+                  "en": "Not about family"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "aftercare",
+      "label": {
+        "ru": "После",
+        "en": "After"
+      },
+      "tag_ref": "degradation_aftercare",
+      "follow_ups": [
+        {
+          "id": "after_needs",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нужно после?",
+            "en": "What's needed after?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "reassurance",
+                "label": {
+                  "ru": "Подтверждение что любит",
+                  "en": "Reassurance of love"
+                }
+              },
+              {
+                "id": "cuddles",
+                "label": {
+                  "ru": "Обнимашки",
+                  "en": "Cuddles"
+                }
+              },
+              {
+                "id": "praise",
+                "label": {
+                  "ru": "Похвала (контраст)",
+                  "en": "Praise (contrast)"
+                }
+              },
+              {
+                "id": "nothing",
+                "label": {
+                  "ru": "Ничего особенного",
+                  "en": "Nothing special"
+                }
+              },
+              {
+                "id": "discussion",
+                "label": {
+                  "ru": "Обсудить",
+                  "en": "Discussion"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в унижении?",
+      "en": "What appeals about degradation?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "degradation",
+      "humiliation",
+      "verbal"
+    ],
+    "tests_secondary": [
+      "slut_shaming",
+      "objectification",
+      "dirty_talk"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys degradation",
+        "shame-arousal link",
+        "submissive"
+      ],
+      "negative": [
+        "too hurtful",
+        "triggers real feelings",
+        "prefers respect"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Он унижает её словами — \"шлюха\", \"грязная девка\", \"на колени\".",
+    "en": "He humiliates her with words — \"slut\", \"dirty whore\", \"on your knees\"."
+  }
+}

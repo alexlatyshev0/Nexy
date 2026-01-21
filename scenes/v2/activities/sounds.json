@@ -1,0 +1,164 @@
+{
+  "id": "sounds",
+  "slug": "sounds",
+  "version": 2,
+  "type": "audio_select",
+  "order": 10,
+
+  "title": { "ru": "Звуки", "en": "Sounds" },
+  "subtitle": { "ru": "Что возбуждает на слух?", "en": "What turns you on aurally?" },
+  "description": {
+    "ru": "Выбери звуки, которые тебя возбуждают. Можешь послушать примеры.",
+    "en": "Select sounds that turn you on. You can listen to samples."
+  },
+
+  "intensity": 2,
+  "tags": ["sounds", "audio", "moaning", "dirty_talk", "asmr"],
+
+  "question": {
+    "ru": "Какие звуки тебя возбуждают?",
+    "en": "What sounds turn you on?"
+  },
+
+  "options": [
+    {
+      "id": "moaning_female",
+      "label": { "ru": "Женские стоны", "en": "Female moaning" },
+      "description": { "ru": "Тихие стоны удовольствия", "en": "Soft moans of pleasure" },
+      "intensity": 2,
+      "_audio_sample": "samples/moaning_female.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "moaning_male",
+      "label": { "ru": "Мужские стоны", "en": "Male moaning" },
+      "description": { "ru": "Глубокие стоны", "en": "Deep moans" },
+      "intensity": 2,
+      "_audio_sample": "samples/moaning_male.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "breathing_heavy",
+      "label": { "ru": "Тяжёлое дыхание", "en": "Heavy breathing" },
+      "description": { "ru": "Учащённое, возбуждённое", "en": "Fast, aroused" },
+      "intensity": 1,
+      "_audio_sample": "samples/breathing_heavy.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "whisper",
+      "label": { "ru": "Шёпот", "en": "Whisper" },
+      "description": { "ru": "Интимный шёпот на ухо", "en": "Intimate whisper in ear" },
+      "intensity": 1,
+      "_audio_sample": "samples/whisper.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "dirty_talk_mild",
+      "label": { "ru": "Мягкий dirty talk", "en": "Mild dirty talk" },
+      "description": { "ru": "\"Мне так хорошо\", \"ещё\"", "en": "\"Feels so good\", \"more\"" },
+      "intensity": 2,
+      "_audio_sample": "samples/dirty_talk_mild.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "dirty_talk_explicit",
+      "label": { "ru": "Грязные слова", "en": "Explicit dirty talk" },
+      "description": { "ru": "Откровенные, грубые слова", "en": "Explicit, crude words" },
+      "intensity": 4,
+      "_audio_sample": "samples/dirty_talk_explicit.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "commands",
+      "label": { "ru": "Команды", "en": "Commands" },
+      "description": { "ru": "\"На колени\", \"не двигайся\"", "en": "\"On your knees\", \"don't move\"" },
+      "intensity": 3,
+      "_audio_sample": "samples/commands.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "begging",
+      "label": { "ru": "Мольба", "en": "Begging" },
+      "description": { "ru": "\"Пожалуйста\", \"умоляю\"", "en": "\"Please\", \"I beg you\"" },
+      "intensity": 3,
+      "_audio_sample": "samples/begging.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "slapping_sound",
+      "label": { "ru": "Звук шлепков", "en": "Slapping sound" },
+      "description": { "ru": "Шлёп по телу", "en": "Slap on body" },
+      "intensity": 3,
+      "_audio_sample": "samples/slapping.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "wet_sounds",
+      "label": { "ru": "Мокрые звуки", "en": "Wet sounds" },
+      "description": { "ru": "Влажные, хлюпающие", "en": "Wet, squelching" },
+      "intensity": 3,
+      "_audio_sample": "samples/wet_sounds.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "gagging",
+      "label": { "ru": "Звуки gagging", "en": "Gagging sounds" },
+      "description": { "ru": "При глубоком минете", "en": "During deepthroat" },
+      "intensity": 4,
+      "_audio_sample": "samples/gagging.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "orgasm_female",
+      "label": { "ru": "Женский оргазм", "en": "Female orgasm" },
+      "description": { "ru": "Звуки кончания", "en": "Sounds of climax" },
+      "intensity": 3,
+      "_audio_sample": "samples/orgasm_female.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "orgasm_male",
+      "label": { "ru": "Мужской оргазм", "en": "Male orgasm" },
+      "description": { "ru": "Звуки кончания", "en": "Sounds of climax" },
+      "intensity": 3,
+      "_audio_sample": "samples/orgasm_male.mp3",
+      "_audio_note": "TODO: Add audio sample"
+    },
+    {
+      "id": "silence",
+      "label": { "ru": "Тишина", "en": "Silence" },
+      "description": { "ru": "Молчаливый секс", "en": "Silent sex" },
+      "intensity": 1,
+      "_audio_sample": null,
+      "_audio_note": "No sample needed"
+    },
+    {
+      "id": "music",
+      "label": { "ru": "Музыка", "en": "Music" },
+      "description": { "ru": "Фоновая музыка", "en": "Background music" },
+      "intensity": 1,
+      "_audio_sample": null,
+      "_audio_note": "No sample needed"
+    }
+  ],
+
+  "config": {
+    "multi_select": true,
+    "show_audio_player": true,
+    "audio_samples_ready": false,
+    "_comment": "Set audio_samples_ready to true when samples are added"
+  },
+
+  "ai_context": {
+    "tests_primary": ["audio_preference", "vocal"],
+    "tests_secondary": ["dirty_talk", "moaning", "sound_sensitive"],
+    "profile_signals": {
+      "if_moaning": "vocal_appreciator",
+      "if_dirty_talk": "verbal_arousal",
+      "if_commands": "power_exchange_interest",
+      "if_silence": "non_verbal_preference",
+      "if_wet_sounds": "visceral_arousal"
+    }
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "id": "intensity_baseline",
+  "slug": "intensity",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Интенсивность",
+    "en": "Intensity"
+  },
+  "subtitle": {
+    "ru": "Нежно или жёстко?",
+    "en": "Gentle or rough?"
+  },
+  "ai_description": {
+    "ru": "Какой секс тебе ближе — нежный и медленный, или жёсткий и страстный? А может, зависит от настроения?",
+    "en": "What kind of sex do you prefer — gentle and slow, or rough and passionate? Or does it depend on mood?"
+  },
+  "image_prompt": "man and woman in intimate embrace on bed, bodies intertwined, bedroom setting with soft lamp light",
+  "intensity": 1,
+  "category": "baseline",
+  "priority": 2,
+  "tags": [
+    "baseline",
+    "intensity",
+    "rough",
+    "gentle",
+    "passionate"
+  ],
+  "elements": [
+    {
+      "id": "preference",
+      "label": {
+        "ru": "Предпочтение",
+        "en": "Preference"
+      },
+      "tag_ref": "intensity_pref",
+      "follow_ups": [
+        {
+          "id": "style",
+          "type": "single_select",
+          "question": {
+            "ru": "Какой секс тебе ближе?",
+            "en": "What kind of sex do you prefer?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "gentle",
+                "label": {
+                  "ru": "Нежный, медленный",
+                  "en": "Gentle, slow"
+                }
+              },
+              {
+                "id": "moderate",
+                "label": {
+                  "ru": "Средний, разнообразный",
+                  "en": "Moderate, varied"
+                }
+              },
+              {
+                "id": "rough",
+                "label": {
+                  "ru": "Жёсткий, страстный",
+                  "en": "Rough, passionate"
+                }
+              },
+              {
+                "id": "extreme",
+                "label": {
+                  "ru": "Очень жёсткий",
+                  "en": "Very rough"
+                }
+              },
+              {
+                "id": "depends",
+                "label": {
+                  "ru": "Зависит от настроения",
+                  "en": "Depends on mood"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "elements",
+      "label": {
+        "ru": "Элементы",
+        "en": "Elements"
+      },
+      "tag_ref": "intensity_elements",
+      "follow_ups": [
+        {
+          "id": "what",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что включает жёсткий секс для тебя?",
+            "en": "What does rough sex include for you?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "fast_hard",
+                "label": {
+                  "ru": "Быстрый темп, сильные толчки",
+                  "en": "Fast pace, hard thrusts"
+                }
+              },
+              {
+                "id": "grabbing",
+                "label": {
+                  "ru": "Хватать, сжимать",
+                  "en": "Grabbing, gripping"
+                }
+              },
+              {
+                "id": "hair_pulling",
+                "label": {
+                  "ru": "Тянуть за волосы",
+                  "en": "Hair pulling"
+                }
+              },
+              {
+                "id": "pinning",
+                "label": {
+                  "ru": "Прижимать, удерживать",
+                  "en": "Pinning down"
+                }
+              },
+              {
+                "id": "biting",
+                "label": {
+                  "ru": "Кусать",
+                  "en": "Biting"
+                }
+              },
+              {
+                "id": "slapping",
+                "label": {
+                  "ru": "Шлёпать",
+                  "en": "Slapping"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "vocal",
+      "label": {
+        "ru": "Звуки",
+        "en": "Sounds"
+      },
+      "tag_ref": "intensity_vocal",
+      "follow_ups": [
+        {
+          "id": "volume",
+          "type": "single_select",
+          "question": {
+            "ru": "Насколько громко?",
+            "en": "How loud?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "quiet",
+                "label": {
+                  "ru": "Тихо, сдержанно",
+                  "en": "Quiet, restrained"
+                }
+              },
+              {
+                "id": "moderate",
+                "label": {
+                  "ru": "Умеренно",
+                  "en": "Moderate"
+                }
+              },
+              {
+                "id": "loud",
+                "label": {
+                  "ru": "Громко, не сдерживаясь",
+                  "en": "Loud, uninhibited"
+                }
+              },
+              {
+                "id": "very_loud",
+                "label": {
+                  "ru": "Очень громко (крики)",
+                  "en": "Very loud (screaming)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "scale",
+    "text": {
+      "ru": "От нежного к жёсткому — где ты?",
+      "en": "From gentle to rough — where are you?"
+    },
+    "config": {
+      "min_label": {
+        "ru": "Нежный",
+        "en": "Gentle"
+      },
+      "max_label": {
+        "ru": "Жёсткий",
+        "en": "Rough"
+      }
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "intensity",
+      "rough_sex",
+      "gentle_sex"
+    ],
+    "tests_secondary": [
+      "passion",
+      "tenderness",
+      "aggression"
+    ],
+    "gates": {
+      "gentle": [
+        "romantic_scenes",
+        "sensory_scenes"
+      ],
+      "rough": [
+        "cnc_scenes",
+        "primal_scenes",
+        "impact_scenes"
+      ],
+      "extreme": [
+        "extreme_scenes"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Пара занимается нежным медленным сексом или жёстким быстрым сексом",
+    "en": "A couple has gentle slow sex or rough fast sex"
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "id": "kitchen_counter",
+  "slug": "kitchen-counter",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "На кухне",
+    "en": "Kitchen Counter"
+  },
+  "subtitle": {
+    "ru": "Когда готовит",
+    "en": "While cooking"
+  },
+  "ai_description": {
+    "ru": "Подойти сзади когда она готовит. Прижаться, обнять, начать трогать. Секс на столешнице, забытый ужин.",
+    "en": "Coming up behind while cooking. Press against, hug, start touching. Sex on the counter, forgotten dinner."
+  },
+  "image_prompt": "woman bent over kitchen counter with skirt lifted, man behind her penetrating, both partially clothed, modern kitchen with cooking ingredients on counter",
+  "intensity": 2,
+  "category": "intimacy",
+  "tags": [
+    "kitchen",
+    "spontaneous",
+    "counter",
+    "daily_life",
+    "passion"
+  ],
+  "elements": [
+    {
+      "id": "who_approaches",
+      "label": {
+        "ru": "Кто подходит",
+        "en": "Who approaches"
+      },
+      "tag_ref": "kitchen_approach",
+      "follow_ups": [
+        {
+          "id": "who",
+          "type": "single_select",
+          "question": {
+            "ru": "Кто инициирует?",
+            "en": "Who initiates?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "he",
+                "label": {
+                  "ru": "Он подходит к ней",
+                  "en": "He approaches her"
+                }
+              },
+              {
+                "id": "she",
+                "label": {
+                  "ru": "Она подходит к нему",
+                  "en": "She approaches him"
+                }
+              },
+              {
+                "id": "varies",
+                "label": {
+                  "ru": "По-разному",
+                  "en": "Varies"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "progression",
+      "label": {
+        "ru": "Развитие",
+        "en": "Progression"
+      },
+      "tag_ref": "kitchen_progress",
+      "follow_ups": [
+        {
+          "id": "how",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как развивается?",
+            "en": "How does it progress?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "from_behind",
+                "label": {
+                  "ru": "Прижаться сзади",
+                  "en": "Press from behind"
+                }
+              },
+              {
+                "id": "neck_kisses",
+                "label": {
+                  "ru": "Поцелуи в шею",
+                  "en": "Neck kisses"
+                }
+              },
+              {
+                "id": "lift_on_counter",
+                "label": {
+                  "ru": "Поднять на стол",
+                  "en": "Lift onto counter"
+                }
+              },
+              {
+                "id": "bend_over",
+                "label": {
+                  "ru": "Наклонить над столом",
+                  "en": "Bend over counter"
+                }
+              },
+              {
+                "id": "undressing",
+                "label": {
+                  "ru": "Раздевание",
+                  "en": "Undressing"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "outcome",
+      "label": {
+        "ru": "Итог",
+        "en": "Outcome"
+      },
+      "tag_ref": "kitchen_outcome",
+      "follow_ups": [
+        {
+          "id": "result",
+          "type": "single_select",
+          "question": {
+            "ru": "Чем заканчивается?",
+            "en": "How does it end?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "sex_counter",
+                "label": {
+                  "ru": "Секс на столешнице",
+                  "en": "Sex on counter"
+                }
+              },
+              {
+                "id": "move_bedroom",
+                "label": {
+                  "ru": "Уходим в спальню",
+                  "en": "Move to bedroom"
+                }
+              },
+              {
+                "id": "tease_continue",
+                "label": {
+                  "ru": "Дразним и продолжаем готовить",
+                  "en": "Tease and continue cooking"
+                }
+              },
+              {
+                "id": "quickie",
+                "label": {
+                  "ru": "Быстрый секс и обратно",
+                  "en": "Quickie and back"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "kitchen_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "spontaneous",
+                "label": {
+                  "ru": "Спонтанность",
+                  "en": "Spontaneity"
+                }
+              },
+              {
+                "id": "interruption",
+                "label": {
+                  "ru": "Прервать рутину",
+                  "en": "Interrupting routine"
+                }
+              },
+              {
+                "id": "location",
+                "label": {
+                  "ru": "Не в спальне",
+                  "en": "Not in bedroom"
+                }
+              },
+              {
+                "id": "passion",
+                "label": {
+                  "ru": "Неудержимая страсть",
+                  "en": "Uncontrollable passion"
+                }
+              },
+              {
+                "id": "desire",
+                "label": {
+                  "ru": "Быть желанной/ым",
+                  "en": "Being desired"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в сексе на кухне?",
+      "en": "What appeals about kitchen sex?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "kitchen",
+      "spontaneous",
+      "counter"
+    ],
+    "tests_secondary": [
+      "daily_life",
+      "passion",
+      "interruption"
+    ]
+  },
+  "user_description": {
+    "ru": "Он подходит сзади, пока она готовит. Задирает юбку и входит прямо на кухне.",
+    "en": "He comes from behind while she cooks. Lifts her skirt and enters right in the kitchen."
+  }
+}

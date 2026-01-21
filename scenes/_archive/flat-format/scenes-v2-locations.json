@@ -1,0 +1,207 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Locations & Settings",
+  "note": "Different places for sex beyond the bedroom - testing adventurousness and preferences",
+  "scenes": [
+    {
+      "id": "scene_shower_sex",
+      "priority": 2,
+      "intensity": 3,
+      "generation_prompt": "naked man and woman having sex in shower, she pressed against tile wall, he behind her, water streaming down their bodies, steam visible, wet skin glistening",
+      "user_description": {
+        "en": "Water cascading over entwined bodies, steam rising. The shower becomes a private waterfall of pleasure. Wet, slippery, passionate.",
+        "ru": "Секс в душе. Вода стекает по телам, пар поднимается. Мокро и скользко."
+      },
+      "ai_context": {
+        "description": "Shower sex. Water, steam, different sensation. Testing comfort with shower sex.",
+        "tests": { "primary_kink": "shower_sex", "secondary_kinks": ["water", "steam", "wet_sex"], "power_dynamic": "equal", "gender_role_aspect": "spontaneous intimacy" },
+        "question_angles": { "emotional": "Do you enjoy shower sex?", "practical": "Is the setting worth the challenges?" },
+        "emotional_range": { "positive": ["love it", "hot and steamy", "different sensation"], "negative": ["slippery", "water not good lube", "impractical"], "curious": ["sounds fun", "with right setup"] },
+        "profile_signals": { "if_positive": ["shower_sex_enjoys", "water_play_ok"], "if_negative": ["bed_prefers"], "if_curious": ["shower_curious"] },
+        "correlations": { "positive": ["spontaneous_sex", "variety_likes"], "negative": ["practical_priority"] },
+        "taboo_context": { "level": 1, "common_concerns": ["slipping", "water as lube", "height differences"], "normalization": "Popular location—silicone lube and non-slip mat help" }
+      },
+      "participants": [{ "role": "partner", "gender": "any", "action": "in shower together" }, { "role": "partner", "gender": "any", "action": "in shower together" }],
+      "dimensions": ["shower", "water", "spontaneous"],
+      "tags": ["shower", "water", "wet", "spontaneous"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_kitchen_counter",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "woman in unbuttoned shirt sitting on kitchen counter with legs wrapped around naked man standing between her legs penetrating her, modern kitchen",
+      "user_description": {
+        "en": "She's lifted onto the counter, legs wrapping around him. Dinner can wait. Sometimes passion can't be contained to the bedroom.",
+        "ru": "Секс на кухонной столешнице. Спонтанная страсть, которая не смогла дождаться спальни."
+      },
+      "ai_context": {
+        "description": "Kitchen counter sex. Spontaneous, domestic location. Testing adventurousness in home.",
+        "tests": { "primary_kink": "kitchen_sex", "secondary_kinks": ["counter_sex", "spontaneous", "domestic"], "power_dynamic": "equal", "gender_role_aspect": "spontaneous passion" },
+        "question_angles": { "emotional": "Do you like spontaneous sex outside bedroom?", "location": "Is the kitchen appealing?" },
+        "emotional_range": { "positive": ["hot", "spontaneous is best", "can't wait"], "negative": ["prefer bedroom", "uncomfortable", "unhygienic"], "curious": ["sounds exciting", "might try"] },
+        "profile_signals": { "if_positive": ["kitchen_sex_enjoys", "spontaneous_likes"], "if_negative": ["bedroom_only"], "if_curious": ["location_curious"] },
+        "correlations": { "positive": ["spontaneous_sex", "variety", "adventure"], "negative": ["routine_prefers", "comfort_priority"] },
+        "taboo_context": { "level": 2, "common_concerns": ["hygiene", "comfort"], "normalization": "Spontaneous locations keep things exciting—kitchen counter is classic" }
+      },
+      "participants": [{ "role": "seated", "gender": "female", "action": "on counter" }, { "role": "standing", "gender": "male", "action": "between her legs" }],
+      "dimensions": ["kitchen", "spontaneous", "counter"],
+      "tags": ["kitchen", "counter", "spontaneous", "domestic"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_car_sex",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "woman straddling man in car backseat, both partially clothed, steamy windows, she riding him in cramped space, car parked in secluded location at night",
+      "user_description": {
+        "en": "Steaming up the windows in the backseat. Cramped but thrilling. That teenage excitement, grown up.",
+        "ru": "Секс в машине на заднем сиденье. Тесно, окна запотевают, риск быть замеченными."
+      },
+      "ai_context": {
+        "description": "Car sex. Cramped, risky, nostalgic. Testing comfort with semi-public risk.",
+        "tests": { "primary_kink": "car_sex", "secondary_kinks": ["cramped_space", "risk", "nostalgia"], "power_dynamic": "equal", "gender_role_aspect": "shared adventure" },
+        "question_angles": { "emotional": "Does car sex appeal to you?", "risk": "Is the risk of discovery exciting?" },
+        "emotional_range": { "positive": ["nostalgic", "exciting", "forbidden feel"], "negative": ["uncomfortable", "too risky", "past that age"], "curious": ["might try again", "with right setting"] },
+        "profile_signals": { "if_positive": ["car_sex_enjoys", "risk_likes"], "if_negative": ["comfort_priority"], "if_curious": ["car_curious"] },
+        "correlations": { "positive": ["risk_taking", "spontaneous", "nostalgia"], "negative": ["comfort_priority", "legal_concerns"] },
+        "taboo_context": { "level": 3, "common_concerns": ["getting caught", "uncomfortable", "legal issues"], "normalization": "Many couples enjoy the thrill—choose locations carefully" }
+      },
+      "participants": [{ "role": "partner", "gender": "any", "action": "in car" }, { "role": "partner", "gender": "any", "action": "in car" }],
+      "dimensions": ["car", "risk", "cramped", "spontaneous"],
+      "tags": ["car", "backseat", "risk", "spontaneous"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_outdoor_nature",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "naked man and woman having sex on blanket in forest clearing, she lying on her back, he on top of her, trees surrounding them, dappled sunlight",
+      "user_description": {
+        "en": "Under open sky, surrounded by nature. Primal, freeing, connected to something ancient. The earth beneath, sky above.",
+        "ru": "Секс на природе под открытым небом. Первобытное чувство свободы вдали от цивилизации."
+      },
+      "ai_context": {
+        "description": "Outdoor sex in nature. Primal, freeing, risky. Testing adventurousness.",
+        "tests": { "primary_kink": "outdoor_sex", "secondary_kinks": ["nature", "primal", "freedom"], "power_dynamic": "equal", "gender_role_aspect": "primal connection" },
+        "question_angles": { "emotional": "Does outdoor sex in nature appeal?", "primal": "Is there something primal about it?" },
+        "emotional_range": { "positive": ["freeing", "primal", "connected to nature"], "negative": ["bugs", "uncomfortable", "privacy needed"], "curious": ["romantic idea", "with right spot"] },
+        "profile_signals": { "if_positive": ["outdoor_enjoys", "nature_sex_likes", "primal_connection"], "if_negative": ["indoor_only", "comfort_needs"], "if_curious": ["outdoor_curious"] },
+        "correlations": { "positive": ["adventure", "primal_sex", "exhibitionism_light"], "negative": ["comfort_priority", "indoor_only"] },
+        "taboo_context": { "level": 3, "common_concerns": ["getting caught", "bugs/discomfort", "finding right spot"], "normalization": "Primal and freeing for adventurous couples—find secluded spot" }
+      },
+      "participants": [{ "role": "partner", "gender": "any", "action": "outdoors" }, { "role": "partner", "gender": "any", "action": "outdoors" }],
+      "dimensions": ["outdoor", "nature", "primal"],
+      "tags": ["outdoor", "nature", "primal", "adventure"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_hotel_room",
+      "priority": 2,
+      "intensity": 2,
+      "generation_prompt": "naked man and woman having sex in hotel room on white crisp sheets, she on all fours, he behind her, city view visible through window, hotel room with nice linens",
+      "user_description": {
+        "en": "Away from home, new bed, vacation freedom. Hotels unlock something different. Louder, wilder, more adventurous.",
+        "ru": "Секс в отеле. Вдали от дома, чувство свободы и анонимности, можно громче."
+      },
+      "ai_context": {
+        "description": "Hotel sex. Away from home, vacation mindset, more adventurous.",
+        "tests": { "primary_kink": "hotel_sex", "secondary_kinks": ["vacation_sex", "anonymity", "freedom"], "power_dynamic": "equal", "gender_role_aspect": "vacation freedom" },
+        "question_angles": { "emotional": "Is hotel sex different for you?", "freedom": "Do you feel freer away from home?" },
+        "emotional_range": { "positive": ["love vacation sex", "more adventurous", "anonymous feeling"], "negative": ["same anywhere", "prefer our bed"], "curious": ["can be different", "depends on mood"] },
+        "profile_signals": { "if_positive": ["hotel_sex_enjoys", "vacation_freedom"], "if_negative": ["home_prefers"], "if_curious": ["hotel_sometimes"] },
+        "correlations": { "positive": ["variety_likes", "adventure", "spontaneity"], "negative": ["routine_prefers", "home_comfort"] },
+        "taboo_context": { "level": 1, "common_concerns": ["thin walls", "cleanliness"], "normalization": "Many couples find hotel sex more exciting—change of scene helps" }
+      },
+      "participants": [{ "role": "partner", "gender": "any", "action": "in hotel" }, { "role": "partner", "gender": "any", "action": "in hotel" }],
+      "dimensions": ["hotel", "vacation", "adventure"],
+      "tags": ["hotel", "vacation", "adventure", "freedom"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_office_desk",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "woman in blouse bent over office desk with skirt hiked up, man in loosened tie behind her penetrating her, papers scattered, office after hours",
+      "user_description": {
+        "en": "On the office desk after hours. Everything swept aside. The thrill of the forbidden workplace, professional boundaries crossed.",
+        "ru": "Секс на офисном столе после работы. Бумаги разбросаны, запретное рабочее место."
+      },
+      "ai_context": {
+        "description": "Office sex on desk. Workplace taboo, risky. Testing workplace fantasy appeal.",
+        "tests": { "primary_kink": "office_sex", "secondary_kinks": ["desk_sex", "workplace_taboo", "risk"], "power_dynamic": "equal", "gender_role_aspect": "forbidden workplace" },
+        "question_angles": { "emotional": "Does the office setting appeal?", "risk": "Is workplace risk exciting?" },
+        "emotional_range": { "positive": ["forbidden is hot", "love the risk", "power play"], "negative": ["too risky", "unprofessional", "keep work separate"], "curious": ["fantasy yes", "reality maybe not"] },
+        "profile_signals": { "if_positive": ["office_sex_enjoys", "workplace_fantasy"], "if_negative": ["work_separate"], "if_curious": ["office_fantasy_only"] },
+        "correlations": { "positive": ["risk_taking", "taboo_enjoys", "fantasy_fulfillment"], "negative": ["professional_boundaries", "risk_averse"] },
+        "taboo_context": { "level": 4, "common_concerns": ["job loss", "cameras", "discovery"], "normalization": "Common fantasy—if acting on it, extreme caution required" }
+      },
+      "participants": [{ "role": "on_desk", "gender": "female", "action": "on office desk" }, { "role": "standing", "gender": "male", "action": "between her legs" }],
+      "dimensions": ["office", "desk", "workplace", "taboo"],
+      "tags": ["office", "desk", "workplace", "taboo", "risky"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_balcony_view",
+      "priority": 4,
+      "intensity": 4,
+      "generation_prompt": "naked woman bent over balcony railing, naked man behind her penetrating her, city lights visible below at night, high-rise apartment balcony",
+      "user_description": {
+        "en": "On the balcony, city lights below. Anyone could look up and see. The thrill of potential exposure under the night sky.",
+        "ru": "Секс на балконе с видом на город. Риск что кто-то может увидеть снизу."
+      },
+      "ai_context": {
+        "description": "Balcony sex with view. Semi-public exposure risk. Testing exhibitionism.",
+        "tests": { "primary_kink": "balcony_sex", "secondary_kinks": ["semi_public", "exposure_risk", "view"], "power_dynamic": "equal", "gender_role_aspect": "shared risk" },
+        "question_angles": { "emotional": "Does balcony sex appeal?", "risk": "Is potential exposure exciting?" },
+        "emotional_range": { "positive": ["thrilling", "exposure risk hot", "beautiful setting"], "negative": ["too exposed", "uncomfortable"], "curious": ["at night maybe", "high floor only"] },
+        "profile_signals": { "if_positive": ["balcony_enjoys", "exposure_likes"], "if_negative": ["privacy_needs"], "if_curious": ["balcony_curious"] },
+        "correlations": { "positive": ["exhibitionism", "risk_taking", "outdoor_sex"], "negative": ["private_only"] },
+        "taboo_context": { "level": 4, "common_concerns": ["neighbors", "legal issues", "being seen"], "normalization": "Popular semi-public location—night time and high floors reduce risk" }
+      },
+      "participants": [{ "role": "partner", "gender": "any", "action": "on balcony" }, { "role": "partner", "gender": "any", "action": "on balcony" }],
+      "dimensions": ["balcony", "semi_public", "view", "exposure"],
+      "tags": ["balcony", "outdoor", "semi_public", "view"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_mirror_watching",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "naked man and woman having sex doggy style in front of large bedroom mirror, both watching their reflection, mirror showing full view of their bodies, bedroom",
+      "user_description": {
+        "en": "Positioned in front of the mirror, watching themselves together. Seeing what they're doing from outside. Voyeur to their own passion.",
+        "ru": "Секс перед большим зеркалом. Возбуждает наблюдать за собой со стороны."
+      },
+      "ai_context": {
+        "description": "Sex watching in mirror. Visual arousal from watching selves. Testing visual/voyeur element.",
+        "tests": { "primary_kink": "mirror_sex", "secondary_kinks": ["watching_self", "visual_arousal", "voyeurism_self"], "power_dynamic": "equal", "gender_role_aspect": "visual focus" },
+        "question_angles": { "emotional": "Does watching yourselves turn you on?", "visual": "Is seeing the act from outside arousing?" },
+        "emotional_range": { "positive": ["hot to watch", "visual turn on", "love seeing us"], "negative": ["self-conscious", "distracting", "prefer feeling"], "curious": ["might try", "with right lighting"] },
+        "profile_signals": { "if_positive": ["mirror_enjoys", "visual_arousal", "watching_self"], "if_negative": ["self_conscious", "feeling_focus"], "if_curious": ["mirror_curious"] },
+        "correlations": { "positive": ["visual_kink", "voyeurism", "exhibitionism"], "negative": ["eyes_closed_prefers", "self_conscious"] },
+        "taboo_context": { "level": 2, "common_concerns": ["self-consciousness", "distraction"], "normalization": "Many find watching themselves incredibly arousing—visual stimulation is powerful" }
+      },
+      "participants": [{ "role": "partner", "gender": "any", "action": "watches in mirror" }, { "role": "partner", "gender": "any", "action": "watches in mirror" }],
+      "dimensions": ["mirror", "watching", "visual"],
+      "tags": ["mirror", "watching", "visual", "voyeur"],
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ],
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_063", "scene_064", "scene_065", "scene_066", "scene_067", "scene_068", "scene_069", "scene_070", "scene_071", "scene_072", "scene_409", "scene_410", "scene_411", "scene_412", "scene_413", "scene_414", "scene_415", "scene_416", "scene_417", "scene_418", "scene_419", "scene_420"],
+      "reason": "Consolidated location scenes into representative location types",
+      "recommendation": "Use follow-up for specific location preferences"
+    }
+  ]
+}

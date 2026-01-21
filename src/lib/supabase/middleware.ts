@@ -46,7 +46,8 @@ export async function updateSession(request: NextRequest) {
                     request.nextUrl.pathname.startsWith('/chat') ||
                     request.nextUrl.pathname.startsWith('/settings') ||
                     request.nextUrl.pathname.startsWith('/premium') ||
-                    request.nextUrl.pathname.startsWith('/onboarding');
+                    request.nextUrl.pathname.startsWith('/onboarding') ||
+                    request.nextUrl.pathname.startsWith('/visual-onboarding');
 
   // Redirect to login if accessing app pages without auth
   if (!user && isAppPage) {

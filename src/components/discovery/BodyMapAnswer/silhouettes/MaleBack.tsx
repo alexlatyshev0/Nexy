@@ -20,7 +20,7 @@ export function MaleBack({
   const zones = ZONE_COORDINATES['male-back'];
 
   return (
-    <div className="relative w-full h-full max-h-[500px] flex items-center justify-center">
+    <div className="relative w-full h-full flex items-center justify-center">
       {/* Background image */}
       <img
         src="/images/dolls/man_back2.jpg"

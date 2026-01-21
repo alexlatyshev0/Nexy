@@ -45,7 +45,7 @@ export function QuickSceneCard({ scene, onAnswer, loading }: QuickSceneCardProps
               <div className="text-center p-4">
                 <span className="text-6xl">{getPlaceholderEmoji()}</span>
                 <p className="mt-3 text-sm text-rose-600/70 line-clamp-2">
-                  {scene.description.slice(0, 100)}...
+                  {(scene.user_description?.ru || scene.ai_description?.ru || '').slice(0, 100)}...
                 </p>
               </div>
             )}

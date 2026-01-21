@@ -1,0 +1,301 @@
+{
+  "id": "handjob",
+  "slug": "handjob",
+  "version": 2,
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Ручная работа",
+    "en": "Handjob"
+  },
+  "subtitle": {
+    "ru": "Она ласкает его рукой",
+    "en": "She strokes him"
+  },
+  "ai_description": {
+    "ru": "Её рука обхватывает его член. Медленно или быстро, сухо или со смазкой. Она чувствует каждую реакцию, контролирует его удовольствие.",
+    "en": "Her hand wraps around him. Slow or fast, dry or lubed. She feels every reaction, controls his pleasure."
+  },
+  "image_prompt": "woman lying beside man on bed, her hand wrapped around his penis stroking, man lying on back with eyes closed, bedroom with soft lighting",
+  "intensity": 2,
+  "category": "manual",
+  "tags": [
+    "handjob",
+    "manual",
+    "stroking",
+    "teasing",
+    "foreplay"
+  ],
+  "elements": [
+    {
+      "id": "technique",
+      "label": {
+        "ru": "Техника",
+        "en": "Technique"
+      },
+      "tag_ref": "handjob_technique",
+      "follow_ups": [
+        {
+          "id": "style",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой стиль?",
+            "en": "What style?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "slow_teasing",
+                "label": {
+                  "ru": "Медленно, дразня",
+                  "en": "Slow, teasing"
+                }
+              },
+              {
+                "id": "fast_intense",
+                "label": {
+                  "ru": "Быстро, интенсивно",
+                  "en": "Fast, intense"
+                }
+              },
+              {
+                "id": "two_hands",
+                "label": {
+                  "ru": "Двумя руками",
+                  "en": "Two hands"
+                }
+              },
+              {
+                "id": "twist_motion",
+                "label": {
+                  "ru": "С прокручиванием",
+                  "en": "Twisting motion"
+                }
+              },
+              {
+                "id": "head_focus",
+                "label": {
+                  "ru": "Фокус на головке",
+                  "en": "Focus on head"
+                }
+              },
+              {
+                "id": "balls_included",
+                "label": {
+                  "ru": "Включая яички",
+                  "en": "Including balls"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "lubrication",
+      "label": {
+        "ru": "Смазка",
+        "en": "Lubrication"
+      },
+      "tag_ref": "handjob_lube",
+      "follow_ups": [
+        {
+          "id": "lube",
+          "type": "single_select",
+          "question": {
+            "ru": "Со смазкой?",
+            "en": "With lube?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "dry",
+                "label": {
+                  "ru": "Сухо",
+                  "en": "Dry"
+                }
+              },
+              {
+                "id": "spit",
+                "label": {
+                  "ru": "Слюна",
+                  "en": "Spit"
+                }
+              },
+              {
+                "id": "lube",
+                "label": {
+                  "ru": "Лубрикант",
+                  "en": "Lube"
+                }
+              },
+              {
+                "id": "oil",
+                "label": {
+                  "ru": "Масло",
+                  "en": "Oil"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Контекст",
+        "en": "Context"
+      },
+      "tag_ref": "handjob_context",
+      "follow_ups": [
+        {
+          "id": "when",
+          "type": "multi_select",
+          "question": {
+            "ru": "Когда нравится?",
+            "en": "When do you like it?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "foreplay",
+                "label": {
+                  "ru": "Как прелюдия",
+                  "en": "As foreplay"
+                }
+              },
+              {
+                "id": "main_event",
+                "label": {
+                  "ru": "Как основное",
+                  "en": "As main event"
+                }
+              },
+              {
+                "id": "to_finish",
+                "label": {
+                  "ru": "Чтобы он кончил",
+                  "en": "To make him cum"
+                }
+              },
+              {
+                "id": "edging",
+                "label": {
+                  "ru": "Для эджинга",
+                  "en": "For edging"
+                }
+              },
+              {
+                "id": "public_discreet",
+                "label": {
+                  "ru": "Незаметно в публичном месте",
+                  "en": "Discreetly in public"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "handjob_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "control",
+                "label": {
+                  "ru": "Контролировать его удовольствие",
+                  "en": "Control his pleasure"
+                }
+              },
+              {
+                "id": "watch_face",
+                "label": {
+                  "ru": "Смотреть на его лицо",
+                  "en": "Watch his face"
+                }
+              },
+              {
+                "id": "feel_reactions",
+                "label": {
+                  "ru": "Чувствовать его реакции",
+                  "en": "Feel his reactions"
+                }
+              },
+              {
+                "id": "intimacy",
+                "label": {
+                  "ru": "Интимность",
+                  "en": "Intimacy"
+                }
+              },
+              {
+                "id": "see_cum",
+                "label": {
+                  "ru": "Видеть как кончает",
+                  "en": "See him cum"
+                }
+              },
+              {
+                "id": "service",
+                "label": {
+                  "ru": "Доставлять ему удовольствие",
+                  "en": "Give him pleasure"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что нравится в ручной стимуляции?",
+      "en": "What do you like about handjobs?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "handjob",
+      "manual_stimulation",
+      "stroking"
+    ],
+    "tests_secondary": [
+      "teasing",
+      "control",
+      "foreplay"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys giving manual pleasure",
+        "likes control",
+        "appreciates technique"
+      ],
+      "negative": [
+        "prefers oral",
+        "prefers penetration",
+        "finds it boring"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Она обхватывает его член рукой и ласкает. Медленно дразня или быстро до оргазма.",
+    "en": "She wraps her hand around him and strokes. Slowly teasing or fast to orgasm."
+  }
+}

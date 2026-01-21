@@ -1,0 +1,502 @@
+{
+  "id": "degradation_f_to_m",
+  "slug": "degradation-she-degrades-him",
+  "version": 2,
+  "paired_scene": "degradation_m_to_f",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Унижение",
+    "en": "Degradation"
+  },
+  "subtitle": {
+    "ru": "Она унижает его",
+    "en": "She degrades him"
+  },
+  "ai_description": {
+    "ru": "'Жалкий', — произносит она с презрением. Он опускает глаза, но его член твердеет. Её слова режут — и это возбуждает невероятно.",
+    "en": "'Pathetic,' she says with contempt. He lowers his eyes, but his cock hardens. Her words cut — and it arouses incredibly."
+  },
+  "image_prompt": "woman standing over kneeling man, she pointing down at him with stern expression, he looking down submissively, she wearing lingerie, he nude, bedroom",
+  "intensity": 4,
+  "category": "verbal",
+  "tags": [
+    "degradation",
+    "femdom",
+    "humiliation",
+    "verbal_abuse",
+    "sph",
+    "contempt"
+  ],
+  "elements": [
+    {
+      "id": "names",
+      "label": {
+        "ru": "Какие слова?",
+        "en": "What words?"
+      },
+      "tag_ref": "femdom_degradation_words",
+      "follow_ups": [
+        {
+          "id": "what_names",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие слова возбуждают?",
+            "en": "What words arouse?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "pathetic",
+                "label": {
+                  "ru": "Жалкий",
+                  "en": "Pathetic"
+                }
+              },
+              {
+                "id": "worthless",
+                "label": {
+                  "ru": "Ничтожество",
+                  "en": "Worthless"
+                }
+              },
+              {
+                "id": "loser",
+                "label": {
+                  "ru": "Неудачник",
+                  "en": "Loser"
+                }
+              },
+              {
+                "id": "slave",
+                "label": {
+                  "ru": "Раб",
+                  "en": "Slave"
+                }
+              },
+              {
+                "id": "worm",
+                "label": {
+                  "ru": "Червь",
+                  "en": "Worm"
+                }
+              },
+              {
+                "id": "toy",
+                "label": {
+                  "ru": "Игрушка",
+                  "en": "Toy"
+                }
+              },
+              {
+                "id": "pet",
+                "label": {
+                  "ru": "Питомец",
+                  "en": "Pet"
+                }
+              },
+              {
+                "id": "toilet",
+                "label": {
+                  "ru": "Туалет",
+                  "en": "Toilet"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sph",
+      "label": {
+        "ru": "SPH (small penis)",
+        "en": "SPH"
+      },
+      "tag_ref": "sph",
+      "follow_ups": [
+        {
+          "id": "sph_interest",
+          "type": "single_select",
+          "question": {
+            "ru": "Унижение размера члена?",
+            "en": "Small penis humiliation?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "love_it",
+                "label": {
+                  "ru": "Обожаю",
+                  "en": "Love it"
+                }
+              },
+              {
+                "id": "ok",
+                "label": {
+                  "ru": "Нормально",
+                  "en": "Ok with it"
+                }
+              },
+              {
+                "id": "no",
+                "label": {
+                  "ru": "Не надо",
+                  "en": "No"
+                }
+              },
+              {
+                "id": "hard_limit",
+                "label": {
+                  "ru": "Жёсткое нет",
+                  "en": "Hard limit"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "phrases",
+      "label": {
+        "ru": "Фразы",
+        "en": "Phrases"
+      },
+      "tag_ref": "femdom_degradation_phrases",
+      "follow_ups": [
+        {
+          "id": "what_phrases",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие фразы?",
+            "en": "What phrases?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "not_man",
+                "label": {
+                  "ru": "Ты не мужчина",
+                  "en": "You're not a man"
+                }
+              },
+              {
+                "id": "real_men",
+                "label": {
+                  "ru": "Настоящие мужчины...",
+                  "en": "Real men..."
+                }
+              },
+              {
+                "id": "only_good",
+                "label": {
+                  "ru": "Ты годишься только на...",
+                  "en": "You're only good for..."
+                }
+              },
+              {
+                "id": "grateful",
+                "label": {
+                  "ru": "Будь благодарен что я...",
+                  "en": "Be grateful I..."
+                }
+              },
+              {
+                "id": "laugh",
+                "label": {
+                  "ru": "Смеётся над ним",
+                  "en": "Laughs at him"
+                }
+              },
+              {
+                "id": "compare",
+                "label": {
+                  "ru": "Сравнивает с другими",
+                  "en": "Compares to others"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "intensity",
+      "label": {
+        "ru": "Интенсивность",
+        "en": "Intensity"
+      },
+      "tag_ref": "femdom_degradation_intensity",
+      "follow_ups": [
+        {
+          "id": "how_harsh",
+          "type": "scale",
+          "question": {
+            "ru": "Насколько жёстко?",
+            "en": "How harsh?"
+          },
+          "config": {
+            "min_label": {
+              "ru": "Мягко, игриво",
+              "en": "Soft, playful"
+            },
+            "max_label": {
+              "ru": "Жёстко, жестоко",
+              "en": "Harsh, cruel"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "male_degradation_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "her_power",
+                "label": {
+                  "ru": "Её власть",
+                  "en": "Her power"
+                }
+              },
+              {
+                "id": "shame",
+                "label": {
+                  "ru": "Стыд возбуждает",
+                  "en": "Shame arouses"
+                }
+              },
+              {
+                "id": "truth",
+                "label": {
+                  "ru": "Элемент правды",
+                  "en": "Element of truth"
+                }
+              },
+              {
+                "id": "emasculation",
+                "label": {
+                  "ru": "Демаскулинизация",
+                  "en": "Emasculation"
+                }
+              },
+              {
+                "id": "contempt",
+                "label": {
+                  "ru": "Её презрение",
+                  "en": "Her contempt"
+                }
+              },
+              {
+                "id": "submission",
+                "label": {
+                  "ru": "Глубокое подчинение",
+                  "en": "Deep submission"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cuckolding_element",
+      "label": {
+        "ru": "Элемент куколда",
+        "en": "Cuckold element"
+      },
+      "tag_ref": "degradation_cuckold",
+      "follow_ups": [
+        {
+          "id": "cuck_verbal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Куколд унижение?",
+            "en": "Cuckold humiliation?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "no",
+                "label": {
+                  "ru": "Нет",
+                  "en": "No"
+                }
+              },
+              {
+                "id": "fantasy",
+                "label": {
+                  "ru": "Фантазии о других мужчинах",
+                  "en": "Fantasy about other men"
+                }
+              },
+              {
+                "id": "compare",
+                "label": {
+                  "ru": "Сравнение с другими",
+                  "en": "Comparison to others"
+                }
+              },
+              {
+                "id": "real",
+                "label": {
+                  "ru": "Реальный куколд",
+                  "en": "Real cuckolding"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Когда?",
+        "en": "When?"
+      },
+      "tag_ref": "male_degradation_context",
+      "follow_ups": [
+        {
+          "id": "timing",
+          "type": "multi_select",
+          "question": {
+            "ru": "В какой момент?",
+            "en": "At what moment?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "during_sex",
+                "label": {
+                  "ru": "Во время секса",
+                  "en": "During sex"
+                }
+              },
+              {
+                "id": "body_writing",
+                "label": {
+                  "ru": "Надписи на теле",
+                  "en": "Body writing"
+                }
+              },
+              {
+                "id": "public_humiliation",
+                "label": {
+                  "ru": "Публичное унижение",
+                  "en": "Public humiliation"
+                }
+              },
+              {
+                "id": "random",
+                "label": {
+                  "ru": "Случайно",
+                  "en": "Randomly"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "aftercare",
+      "label": {
+        "ru": "После",
+        "en": "After"
+      },
+      "tag_ref": "male_degradation_aftercare",
+      "follow_ups": [
+        {
+          "id": "after_needs",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нужно после?",
+            "en": "What's needed after?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "reassurance",
+                "label": {
+                  "ru": "Подтверждение что любит",
+                  "en": "Reassurance of love"
+                }
+              },
+              {
+                "id": "praise",
+                "label": {
+                  "ru": "Похвала",
+                  "en": "Praise"
+                }
+              },
+              {
+                "id": "cuddles",
+                "label": {
+                  "ru": "Обнимашки",
+                  "en": "Cuddles"
+                }
+              },
+              {
+                "id": "nothing",
+                "label": {
+                  "ru": "Ничего особенного",
+                  "en": "Nothing special"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает когда она унижает?",
+      "en": "What appeals when she degrades?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "degradation",
+      "femdom",
+      "humiliation"
+    ],
+    "tests_secondary": [
+      "sph",
+      "emasculation",
+      "verbal_abuse"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys femdom",
+        "shame-arousal link",
+        "deep submission"
+      ],
+      "negative": [
+        "too hurtful",
+        "masculinity triggers",
+        "prefers respect"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Она унижает его словами — \"жалкий\", \"ничтожество\", \"лизать мои ноги\".",
+    "en": "She humiliates him with words — \"pathetic\", \"worthless\", \"lick my feet\"."
+  }
+}

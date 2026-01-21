@@ -1,0 +1,413 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Dirty Talk & Verbal",
+  "scenes": [
+    {
+      "id": "scene_dirty_talk_m_to_f",
+      "priority": 2,
+      "intensity": 3,
+
+      "generation_prompt": "naked man's lips near naked woman's ear whispering during sex, she eyes closed reacting with pleasure to his words, intimate bedroom",
+
+      "user_description": {
+        "en": "His lips brush her ear as he whispers exactly what he's going to do to her. His words alone make her gasp.",
+        "ru": "Он шепчет ей на ухо во время секса. От его слов она заводится ещё больше."
+      },
+
+      "ai_context": {
+        "description": "Man whispering dirty talk to woman during sex. Verbal arousal, words as foreplay/during play.",
+
+        "tests": {
+          "primary_kink": "dirty_talk_receiving",
+          "secondary_kinks": ["verbal_arousal", "whisper", "words_during_sex"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "man verbalizing desire"
+        },
+
+        "question_angles": {
+          "as_receiver": "Women: Does dirty talk from him turn you on?",
+          "as_giver": "Men: Do you enjoy talking dirty during sex?",
+          "emotional": "How important are words during sex?"
+        },
+
+        "emotional_range": {
+          "positive": ["love hearing what he wants", "words are hot", "turns me on more"],
+          "negative": ["distracting", "prefer silence", "awkward"],
+          "curious": ["depends what he says", "some words yes"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["dirty_talk_enjoys_receiving", "verbal_arousal_high", "words_important"],
+          "if_negative": ["silent_sex_prefers", "verbal_awkward"],
+          "if_curious": ["dirty_talk_selective"]
+        },
+
+        "correlations": {
+          "positive": ["verbal_intimacy", "communication_during_sex", "aural_arousal"],
+          "negative": ["silent_prefers", "words_distracting"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["saying wrong thing", "embarrassment", "what's too much"],
+          "normalization": "Dirty talk enhances connection for many—start mild, communicate about what works"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "specifics",
+        "question": {
+          "en": "What type of talk do you enjoy?",
+          "ru": "Какой тип разговоров нравится?"
+        },
+        "options": [
+          { "id": "praise", "label": { "en": "Praise (you're so beautiful)", "ru": "Похвала (ты такая красивая)" }, "signal": "praise_kink" },
+          { "id": "describe", "label": { "en": "Describing what's happening", "ru": "Описание происходящего" }, "signal": "narrative_dirty_talk" },
+          { "id": "commands", "label": { "en": "Commands (do this, turn over)", "ru": "Команды (делай это, перевернись)" }, "signal": "command_talk" },
+          { "id": "degrading", "label": { "en": "Degrading (you dirty...)", "ru": "Унизительное (ты грязная...)" }, "signal": "degradation_verbal" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "speaking", "gender": "male", "action": "whispers dirty talk" },
+        { "role": "listening", "gender": "female", "action": "aroused by words" }
+      ],
+
+      "dimensions": ["dirty_talk", "verbal", "whisper", "arousal"],
+      "tags": ["dirty_talk", "whisper", "verbal", "arousal", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_dirty_talk_f_to_m",
+      "priority": 2,
+      "intensity": 3,
+
+      "generation_prompt": "naked woman leaning over naked man whispering seductively in his ear, he reacting with intense pleasure to her words, her expression confident, intimate bedroom",
+
+      "user_description": {
+        "en": "She leans in, her breath warm on his ear, telling him exactly what she wants him to do. His whole body responds to her voice.",
+        "ru": "Она шепчет ему на ухо во время секса. Её слова его заводят."
+      },
+
+      "ai_context": {
+        "description": "Woman whispering dirty talk to man. Female verbal initiative. Testing response to female verbal arousal.",
+
+        "tests": {
+          "primary_kink": "female_dirty_talk",
+          "secondary_kinks": ["female_verbal_initiative", "seduction", "words"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "woman verbalizing desire"
+        },
+
+        "question_angles": {
+          "as_receiver": "Men: Does her dirty talk turn you on?",
+          "as_giver": "Women: Do you enjoy talking dirty to him?",
+          "emotional": "How does female-initiated dirty talk feel?"
+        },
+
+        "emotional_range": {
+          "positive": ["love when she talks dirty", "her voice is hot", "shows her desire"],
+          "negative": ["prefer her quiet", "feels forced", "doesn't do much"],
+          "curious": ["depends what she says", "sometimes"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["female_dirty_talk_enjoys", "verbal_from_her_hot", "female_initiative_verbal"],
+          "if_negative": ["silent_from_her_prefers"],
+          "if_curious": ["female_verbal_sometimes"]
+        },
+
+        "correlations": {
+          "positive": ["female_initiative_general", "verbal_intimacy", "expressive_partner"],
+          "negative": ["quiet_partner_prefers"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["saying wrong thing", "being too forward"],
+          "normalization": "Women talking dirty shows desire and engagement—most men find it very arousing"
+        }
+      },
+
+      "participants": [
+        { "role": "speaking", "gender": "female", "action": "whispers dirty talk" },
+        { "role": "listening", "gender": "male", "action": "aroused by words" }
+      ],
+
+      "dimensions": ["dirty_talk", "female_verbal", "seduction"],
+      "tags": ["dirty_talk", "female", "whisper", "seduction", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_begging",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "naked woman with pleading expression during sex mouth open begging for more, naked man controlling pace, her face showing desperate need, intimate bedroom",
+
+      "user_description": {
+        "en": "'Please... more... don't stop...' The words spill out involuntarily. Begging shows need so raw it can't be contained.",
+        "ru": "«Пожалуйста... ещё... не останавливайся...» Просить вслух — показать насколько сильно хочешь."
+      },
+
+      "ai_context": {
+        "description": "Begging during sex. Verbal submission, expressing need, asking for more/permission. Power exchange through words.",
+
+        "tests": {
+          "primary_kink": "begging",
+          "secondary_kinks": ["verbal_submission", "need_expression", "asking_permission"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "submissive verbal expression"
+        },
+
+        "question_angles": {
+          "as_giver": "Do you enjoy begging during sex?",
+          "as_receiver": "Do you enjoy making your partner beg?",
+          "emotional": "What does begging add to the dynamic?"
+        },
+
+        "emotional_range": {
+          "positive": ["love begging", "shows how much I need it", "surrender"],
+          "negative": ["embarrassing", "too submissive", "prefer dignity"],
+          "curious": ["in the moment sometimes", "depends"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["begging_enjoys", "verbal_submission_likes", "need_expression_ok"],
+          "if_negative": ["dignity_maintains", "begging_embarrassing"],
+          "if_curious": ["begging_situational"]
+        },
+
+        "correlations": {
+          "positive": ["submission_general", "verbal_during_sex", "power_exchange"],
+          "negative": ["always_equal", "verbal_control_maintains"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["embarrassment", "too submissive", "partner reaction"],
+          "normalization": "Begging shows genuine desire and surrender—can be deeply connecting"
+        }
+      },
+
+      "participants": [
+        { "role": "begging", "gender": "any", "action": "begs for more" },
+        { "role": "controlling", "gender": "any", "action": "controls pace" }
+      ],
+
+      "dimensions": ["begging", "verbal_submission", "need", "power_exchange"],
+      "tags": ["begging", "verbal", "submission", "need", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_moaning_vocal",
+      "priority": 2,
+      "intensity": 2,
+
+      "generation_prompt": "naked woman head thrown back mouth open moaning loudly in pleasure, uninhibited expression, naked man behind her, passionate bedroom moment",
+
+      "user_description": {
+        "en": "No holding back. Every sensation expressed through sound—moans, gasps, cries of pleasure echoing freely.",
+        "ru": "Стоны и крики удовольствия без сдерживания. Громкий секс."
+      },
+
+      "ai_context": {
+        "description": "Vocal/moaning during sex. Uninhibited sound expression. Testing preference for vocal vs quiet sex.",
+
+        "tests": {
+          "primary_kink": "vocal_sex",
+          "secondary_kinks": ["moaning", "uninhibited", "sound_expression"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "expressive pleasure"
+        },
+
+        "question_angles": {
+          "emotional": "Do you prefer vocal or quiet sex?",
+          "as_giver": "Do you express pleasure vocally?",
+          "as_receiver": "Do you want to hear your partner?"
+        },
+
+        "emotional_range": {
+          "positive": ["love being loud", "feedback is important", "hearing them is hot"],
+          "negative": ["prefer quiet", "neighbors/privacy", "distracting"],
+          "curious": ["depends on situation", "with privacy yes"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["vocal_sex_enjoys", "moaning_likes", "auditory_feedback_important"],
+          "if_negative": ["quiet_sex_prefers", "privacy_concerns"],
+          "if_curious": ["vocal_situational"]
+        },
+
+        "correlations": {
+          "positive": ["expressive_sex", "feedback_giving", "uninhibited"],
+          "negative": ["reserved", "silent_prefers"]
+        },
+
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": ["neighbors", "embarrassment", "fake sounds"],
+          "normalization": "Genuine vocal expression enhances connection—both partners benefit from feedback"
+        }
+      },
+
+      "participants": [
+        { "role": "vocal", "gender": "any", "action": "expresses pleasure vocally" }
+      ],
+
+      "dimensions": ["moaning", "vocal", "uninhibited", "expression"],
+      "tags": ["moaning", "vocal", "loud", "expressive", "pleasure"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_verbal_humiliation",
+      "priority": 4,
+      "intensity": 4,
+
+      "generation_prompt": "naked woman in dominant pose standing over naked man kneeling before her, she speaking down to him, he looking up submissively, BDSM verbal humiliation scene, dramatic lighting",
+
+      "user_description": {
+        "en": "Words that would wound in any other context become electric here. Degrading names spoken with dominance, received with surrender.",
+        "ru": "Унизительные слова во время секса. Для кого-то это кинк."
+      },
+
+      "ai_context": {
+        "description": "Verbal humiliation / degradation. Degrading language as kink. BDSM verbal play. Strong taboo element.",
+
+        "tests": {
+          "primary_kink": "verbal_humiliation",
+          "secondary_kinks": ["degradation", "BDSM_verbal", "power_exchange_extreme"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "dominant degrades submissive"
+        },
+
+        "question_angles": {
+          "as_receiver": "Are you aroused by being verbally degraded?",
+          "as_giver": "Do you enjoy degrading your partner verbally?",
+          "emotional": "What does verbal humiliation provide that other play doesn't?"
+        },
+
+        "emotional_range": {
+          "positive": ["deeply arousing", "surrender through words", "cathartic"],
+          "negative": ["hurtful", "too far", "hard limit"],
+          "curious": ["intrigued but nervous", "very light only"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["verbal_humiliation_enjoys", "degradation_kink", "extreme_verbal_ok"],
+          "if_negative": ["degradation_hard_limit", "respect_always"],
+          "if_curious": ["light_degradation_curious"]
+        },
+
+        "correlations": {
+          "positive": ["BDSM_general", "humiliation_play", "extreme_submission"],
+          "negative": ["vanilla_only", "respect_paramount"]
+        },
+
+        "taboo_context": {
+          "level": 5,
+          "common_concerns": ["crossing lines", "emotional damage", "aftercare needs", "word choice"],
+          "normalization": "Consensual degradation play requires clear negotiation, safe words, and aftercare—it's about the power exchange, not actual beliefs"
+        }
+      },
+
+      "participants": [
+        { "role": "degrading", "gender": "any", "action": "verbally humiliates" },
+        { "role": "receiving", "gender": "any", "action": "receives degradation" }
+      ],
+
+      "dimensions": ["verbal_humiliation", "degradation", "BDSM", "power_exchange"],
+      "tags": ["humiliation", "verbal", "degradation", "BDSM", "extreme"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_praise_kink",
+      "priority": 2,
+      "intensity": 2,
+
+      "generation_prompt": "naked man looking lovingly at naked woman during sex, his lips moving in praise, she smiling with closed eyes receiving his words, intimate bedroom, soft lighting",
+
+      "user_description": {
+        "en": "'You're so beautiful. You feel incredible. You're perfect.' Words of praise that make everything more intense.",
+        "ru": "«Ты такая красивая. Ты идеальна.» Похвала и комплименты во время секса."
+      },
+
+      "ai_context": {
+        "description": "Praise kink. Positive affirmations during sex. Opposite end of spectrum from degradation. Emotional validation.",
+
+        "tests": {
+          "primary_kink": "praise_kink",
+          "secondary_kinks": ["affirmation", "validation", "positive_words"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "emotional verbal connection"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy being praised during sex?",
+          "as_giver": "Do you enjoy praising your partner?",
+          "emotional": "How do words of affirmation affect your arousal?"
+        },
+
+        "emotional_range": {
+          "positive": ["deeply meaningful", "makes me feel desired", "enhances connection"],
+          "negative": ["feels cheesy", "prefer action to words", "insincere"],
+          "curious": ["depends on delivery", "genuine only"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["praise_kink_enjoys", "affirmation_important", "validation_arousing"],
+          "if_negative": ["action_over_words", "praise_awkward"],
+          "if_curious": ["genuine_praise_ok"]
+        },
+
+        "correlations": {
+          "positive": ["emotional_connection", "words_of_affirmation_love_language", "gentle_dom"],
+          "negative": ["degradation_prefers", "silent_sex"]
+        },
+
+        "taboo_context": {
+          "level": 1,
+          "common_concerns": ["sincerity"],
+          "normalization": "Praise kink is increasingly recognized—verbal affirmation deeply arousing for many"
+        }
+      },
+
+      "participants": [
+        { "role": "praising", "gender": "any", "action": "gives praise" },
+        { "role": "receiving", "gender": "any", "action": "receives affirmation" }
+      ],
+
+      "dimensions": ["praise", "affirmation", "verbal", "emotional"],
+      "tags": ["praise", "affirmation", "verbal", "positive", "emotional"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    }
+  ],
+
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_109", "scene_110", "scene_111", "scene_112", "scene_113", "scene_114"],
+      "reason": "Consolidated into type-based scenes with follow-up for style",
+      "recommendation": "Use follow-up to determine praise vs degradation vs command preferences"
+    }
+  ]
+}

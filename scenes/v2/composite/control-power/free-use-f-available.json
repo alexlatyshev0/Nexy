@@ -1,0 +1,78 @@
+{
+  "id": "free_use_f_available",
+  "slug": "free-use-f-available",
+  "version": 2,
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Free use (она доступна)",
+    "en": "Free Use (She's Available)"
+  },
+  "subtitle": {
+    "ru": "Он использует её когда хочет",
+    "en": "He uses her whenever he wants"
+  },
+  "ai_description": {
+    "ru": "Она доступна для секса в любое время без спроса. Во время домашних дел, сна, работы. Тест на female submission, objectification.",
+    "en": "She's available for sex anytime without asking. During housework, sleep, work. Tests female submission, objectification."
+  },
+  "image_prompt": "woman bent over kitchen counter washing dishes, man behind her lifting her skirt and entering her, she continues task, kitchen with morning sunlight",
+  "intensity": 4,
+  "category": "control-power",
+  "tags": ["free_use", "access", "control", "female_submission", "objectification"],
+  "elements": [
+    {
+      "id": "when",
+      "label": { "ru": "Когда", "en": "When" },
+      "tag_ref": "free_use_when",
+      "follow_ups": [
+        {
+          "id": "times",
+          "type": "multi_select",
+          "question": { "ru": "Когда он может её использовать?", "en": "When can he use her?" },
+          "config": {
+            "options": [
+              { "id": "housework", "label": { "ru": "Во время домашних дел", "en": "During housework" } },
+              { "id": "working", "label": { "ru": "Когда она работает", "en": "While she's working" } },
+              { "id": "sleeping", "label": { "ru": "Когда она спит", "en": "While she's sleeping" } },
+              { "id": "watching", "label": { "ru": "Когда смотрит ТВ", "en": "While watching TV" } },
+              { "id": "anytime", "label": { "ru": "В любое время", "en": "Anytime" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": { "ru": "Что привлекает", "en": "What appeals" },
+      "tag_ref": "free_use_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": { "ru": "Что возбуждает?", "en": "What excites?" },
+          "config": {
+            "options": [
+              { "id": "his_power", "label": { "ru": "Его власть", "en": "His power" } },
+              { "id": "her_submission", "label": { "ru": "Её покорность", "en": "Her submission" } },
+              { "id": "objectification", "label": { "ru": "Она как объект", "en": "Her as object" } },
+              { "id": "availability", "label": { "ru": "Её доступность", "en": "Her availability" } },
+              { "id": "being_used", "label": { "ru": "Быть использованной", "en": "Being used" } }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "interest_scale",
+    "text": { "ru": "Free use — она доступна для него в любой момент?", "en": "Free use — she's available for him anytime?" }
+  },
+  "ai_context": {
+    "tests_primary": ["free_use", "female_submission"],
+    "tests_secondary": ["objectification", "control", "availability"]
+  },
+  "user_description": {
+    "ru": "Она доступна для секса в любой момент. Он может трахнуть её во время домашних дел, работы или сна без спроса.",
+    "en": "She's available for sex anytime. He can fuck her during housework, work, or sleep without asking."
+  }
+}

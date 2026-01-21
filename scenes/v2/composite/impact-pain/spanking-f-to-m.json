@@ -1,0 +1,523 @@
+{
+  "id": "spanking_f_to_m",
+  "slug": "spanking-she-spanks-him",
+  "version": 2,
+  "paired_scene": "spanking_m_to_f",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Шлепки",
+    "en": "Spanking"
+  },
+  "subtitle": {
+    "ru": "Она шлёпает его",
+    "en": "She spanks him"
+  },
+  "ai_description": {
+    "ru": "Он перекинут через её колени, его ягодицы подняты. Её ладонь опускается — шлёп! Femdom дисциплина, он принимает наказание от госпожи.",
+    "en": "He's bent over her lap, his buttocks raised. Her palm comes down — smack! Femdom discipline, he accepts punishment from mistress."
+  },
+  "image_prompt": "man lying across womans lap nude, her hand raised to spank, his bottom exposed, she in lingerie on couch, living room setting",
+  "intensity": 3,
+  "category": "impact_pain",
+  "tags": [
+    "spanking",
+    "femdom",
+    "discipline",
+    "otk",
+    "female_dominance",
+    "punishment"
+  ],
+  "elements": [
+    {
+      "id": "implement",
+      "label": {
+        "ru": "Чем?",
+        "en": "With what?"
+      },
+      "tag_ref": "spanking_implement",
+      "follow_ups": [
+        {
+          "id": "implements",
+          "type": "multi_select",
+          "question": {
+            "ru": "Чем шлёпать?",
+            "en": "What to spank with?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "hand",
+                "label": {
+                  "ru": "Ладонь",
+                  "en": "Hand"
+                }
+              },
+              {
+                "id": "paddle",
+                "label": {
+                  "ru": "Падл",
+                  "en": "Paddle"
+                }
+              },
+              {
+                "id": "belt",
+                "label": {
+                  "ru": "Ремень",
+                  "en": "Belt"
+                }
+              },
+              {
+                "id": "crop",
+                "label": {
+                  "ru": "Стек",
+                  "en": "Crop"
+                }
+              },
+              {
+                "id": "flogger",
+                "label": {
+                  "ru": "Флоггер",
+                  "en": "Flogger"
+                }
+              },
+              {
+                "id": "cane",
+                "label": {
+                  "ru": "Трость",
+                  "en": "Cane"
+                }
+              },
+              {
+                "id": "ruler",
+                "label": {
+                  "ru": "Линейка",
+                  "en": "Ruler"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "position",
+      "label": {
+        "ru": "Позиция",
+        "en": "Position"
+      },
+      "tag_ref": "spanking_position_m",
+      "follow_ups": [
+        {
+          "id": "positions",
+          "type": "multi_select",
+          "question": {
+            "ru": "В какой позе?",
+            "en": "What position?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "otk",
+                "label": {
+                  "ru": "Через её колени",
+                  "en": "Over her knee"
+                }
+              },
+              {
+                "id": "bent_over",
+                "label": {
+                  "ru": "Наклонившись",
+                  "en": "Bent over"
+                }
+              },
+              {
+                "id": "all_fours",
+                "label": {
+                  "ru": "На четвереньках",
+                  "en": "On all fours"
+                }
+              },
+              {
+                "id": "standing",
+                "label": {
+                  "ru": "Стоя, руки на стене",
+                  "en": "Standing, hands on wall"
+                }
+              },
+              {
+                "id": "restrained",
+                "label": {
+                  "ru": "Привязан",
+                  "en": "Restrained"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "intensity",
+      "label": {
+        "ru": "Интенсивность",
+        "en": "Intensity"
+      },
+      "tag_ref": "spanking_intensity",
+      "follow_ups": [
+        {
+          "id": "how_hard",
+          "type": "scale",
+          "question": {
+            "ru": "Насколько сильно?",
+            "en": "How hard?"
+          },
+          "config": {
+            "min_label": {
+              "ru": "Легко, символически",
+              "en": "Light, symbolic"
+            },
+            "max_label": {
+              "ru": "Сильно, жёстко",
+              "en": "Hard, intense"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Контекст",
+        "en": "Context"
+      },
+      "tag_ref": "femdom_spanking_context",
+      "follow_ups": [
+        {
+          "id": "why_spanking",
+          "type": "multi_select",
+          "question": {
+            "ru": "В каком контексте?",
+            "en": "In what context?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "punishment",
+                "label": {
+                  "ru": "Наказание за проступок",
+                  "en": "Punishment for misbehavior"
+                }
+              },
+              {
+                "id": "funishment",
+                "label": {
+                  "ru": "Funishment (он провоцирует)",
+                  "en": "Funishment (he provokes)"
+                }
+              },
+              {
+                "id": "training",
+                "label": {
+                  "ru": "Тренировка/дисциплина",
+                  "en": "Training/discipline"
+                }
+              },
+              {
+                "id": "maintenance",
+                "label": {
+                  "ru": "Поддержание порядка",
+                  "en": "Maintenance"
+                }
+              },
+              {
+                "id": "her_pleasure",
+                "label": {
+                  "ru": "Ей нравится",
+                  "en": "She enjoys it"
+                }
+              },
+              {
+                "id": "humiliation",
+                "label": {
+                  "ru": "Унижение",
+                  "en": "Humiliation"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "his_cock",
+      "label": {
+        "ru": "Его возбуждение",
+        "en": "His arousal"
+      },
+      "tag_ref": "spanking_male_arousal",
+      "follow_ups": [
+        {
+          "id": "erection",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что с его эрекцией?",
+            "en": "What about his erection?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "gets_hard",
+                "label": {
+                  "ru": "Встаёт от шлепков",
+                  "en": "Gets hard from spanking"
+                }
+              },
+              {
+                "id": "she_notices",
+                "label": {
+                  "ru": "Она замечает и комментирует",
+                  "en": "She notices and comments"
+                }
+              },
+              {
+                "id": "shame",
+                "label": {
+                  "ru": "Ему стыдно что возбуждается",
+                  "en": "He's ashamed of arousal"
+                }
+              },
+              {
+                "id": "forbidden",
+                "label": {
+                  "ru": "Ему запрещено возбуждаться",
+                  "en": "He's forbidden to get hard"
+                }
+              },
+              {
+                "id": "rubs_against",
+                "label": {
+                  "ru": "Трётся о её ногу",
+                  "en": "Rubs against her leg"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "verbal",
+      "label": {
+        "ru": "Её слова",
+        "en": "Her words"
+      },
+      "tag_ref": "femdom_spanking_verbal",
+      "follow_ups": [
+        {
+          "id": "what_says",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что она говорит?",
+            "en": "What does she say?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "bad_boy",
+                "label": {
+                  "ru": "Плохой мальчик",
+                  "en": "Bad boy"
+                }
+              },
+              {
+                "id": "count",
+                "label": {
+                  "ru": "Считай",
+                  "en": "Count them"
+                }
+              },
+              {
+                "id": "thank",
+                "label": {
+                  "ru": "Благодари госпожу",
+                  "en": "Thank mistress"
+                }
+              },
+              {
+                "id": "more",
+                "label": {
+                  "ru": "Ещё получишь",
+                  "en": "More coming"
+                }
+              },
+              {
+                "id": "deserve",
+                "label": {
+                  "ru": "Ты заслужил",
+                  "en": "You deserve this"
+                }
+              },
+              {
+                "id": "pathetic",
+                "label": {
+                  "ru": "Жалкий",
+                  "en": "Pathetic"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "aftercare",
+      "label": {
+        "ru": "После",
+        "en": "After"
+      },
+      "tag_ref": "spanking_aftercare",
+      "follow_ups": [
+        {
+          "id": "after_spanking",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что после?",
+            "en": "What after?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "rub_soothe",
+                "label": {
+                  "ru": "Погладить, успокоить",
+                  "en": "Rub, soothe"
+                }
+              },
+              {
+                "id": "corner",
+                "label": {
+                  "ru": "В угол стоять",
+                  "en": "Stand in corner"
+                }
+              },
+              {
+                "id": "thank_her",
+                "label": {
+                  "ru": "Благодарить госпожу",
+                  "en": "Thank mistress"
+                }
+              },
+              {
+                "id": "oral_service",
+                "label": {
+                  "ru": "Служить ей орально",
+                  "en": "Oral service"
+                }
+              },
+              {
+                "id": "sex",
+                "label": {
+                  "ru": "Секс",
+                  "en": "Sex"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "emotional_response",
+      "label": {
+        "ru": "Эмоции",
+        "en": "Emotions"
+      },
+      "tag_ref": "spanking_emotions_m",
+      "follow_ups": [
+        {
+          "id": "emotional",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие эмоции?",
+            "en": "What emotions?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "tears_release",
+                "label": {
+                  "ru": "Слёзы как освобождение",
+                  "en": "Tears as release"
+                }
+              },
+              {
+                "id": "subspace",
+                "label": {
+                  "ru": "Subspace (транс)",
+                  "en": "Subspace (trance)"
+                }
+              },
+              {
+                "id": "endorphins",
+                "label": {
+                  "ru": "Эндорфиновый кайф",
+                  "en": "Endorphin high"
+                }
+              },
+              {
+                "id": "catharsis",
+                "label": {
+                  "ru": "Катарсис, разрядка",
+                  "en": "Catharsis, release"
+                }
+              },
+              {
+                "id": "just_physical",
+                "label": {
+                  "ru": "Просто физические ощущения",
+                  "en": "Just physical sensations"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает когда она шлёпает?",
+      "en": "What appeals about her spanking?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "spanking",
+      "femdom",
+      "discipline"
+    ],
+    "tests_secondary": [
+      "female_dominance",
+      "punishment",
+      "submission"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys femdom",
+        "submissive to women",
+        "pain-pleasure"
+      ],
+      "negative": [
+        "prefers male dominance",
+        "not into pain",
+        "too vulnerable"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Он лежит у неё на коленях, она шлёпает его по заднице.",
+    "en": "He lies across her lap, she spanks his ass."
+  }
+}

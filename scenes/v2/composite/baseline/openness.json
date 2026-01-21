@@ -1,0 +1,252 @@
+{
+  "id": "openness",
+  "slug": "openness",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Открытость к экспериментам",
+    "en": "Openness to Experiments"
+  },
+  "subtitle": {
+    "ru": "Vanilla или кинк?",
+    "en": "Vanilla or kink?"
+  },
+  "ai_description": {
+    "ru": "Насколько ты готов пробовать новое? Классический секс, лёгкие эксперименты, или чем страннее тем лучше?",
+    "en": "How ready are you to try new things? Classic sex, light experiments, or the weirder the better?"
+  },
+  "image_prompt": "man and woman sitting on bed facing each other talking, bedroom setting with bedside table",
+  "intensity": 1,
+  "category": "baseline",
+  "priority": 4,
+  "tags": [
+    "baseline",
+    "openness",
+    "vanilla",
+    "kinky",
+    "experiments"
+  ],
+  "elements": [
+    {
+      "id": "level",
+      "label": {
+        "ru": "Уровень",
+        "en": "Level"
+      },
+      "tag_ref": "openness_level",
+      "follow_ups": [
+        {
+          "id": "spectrum",
+          "type": "single_select",
+          "question": {
+            "ru": "Где ты на шкале?",
+            "en": "Where are you on the scale?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "vanilla",
+                "label": {
+                  "ru": "Классический секс",
+                  "en": "Classic sex"
+                }
+              },
+              {
+                "id": "vanilla_plus",
+                "label": {
+                  "ru": "В основном классика + немного специй",
+                  "en": "Mostly classic + some spice"
+                }
+              },
+              {
+                "id": "adventurous",
+                "label": {
+                  "ru": "Люблю пробовать новое",
+                  "en": "Love trying new things"
+                }
+              },
+              {
+                "id": "kinky",
+                "label": {
+                  "ru": "Кинки — моё",
+                  "en": "Kinky is my thing"
+                }
+              },
+              {
+                "id": "extreme",
+                "label": {
+                  "ru": "Чем страннее тем лучше",
+                  "en": "The weirder the better"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "curiosity",
+      "label": {
+        "ru": "Любопытство",
+        "en": "Curiosity"
+      },
+      "tag_ref": "openness_curiosity",
+      "follow_ups": [
+        {
+          "id": "attitude",
+          "type": "single_select",
+          "question": {
+            "ru": "Как ты относишься к новому?",
+            "en": "How do you feel about new things?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "cautious",
+                "label": {
+                  "ru": "Осторожно, нужно время",
+                  "en": "Cautious, need time"
+                }
+              },
+              {
+                "id": "open",
+                "label": {
+                  "ru": "Открыт, если партнёр хочет",
+                  "en": "Open if partner wants"
+                }
+              },
+              {
+                "id": "eager",
+                "label": {
+                  "ru": "Сам ищу новое",
+                  "en": "Actively seek new things"
+                }
+              },
+              {
+                "id": "explorer",
+                "label": {
+                  "ru": "Хочу попробовать всё",
+                  "en": "Want to try everything"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "comfort",
+      "label": {
+        "ru": "Комфорт",
+        "en": "Comfort"
+      },
+      "tag_ref": "openness_comfort",
+      "follow_ups": [
+        {
+          "id": "zones",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что точно в зоне комфорта?",
+            "en": "What's definitely in comfort zone?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "positions",
+                "label": {
+                  "ru": "Разные позы",
+                  "en": "Different positions"
+                }
+              },
+              {
+                "id": "toys",
+                "label": {
+                  "ru": "Игрушки",
+                  "en": "Toys"
+                }
+              },
+              {
+                "id": "roleplay",
+                "label": {
+                  "ru": "Ролевые игры",
+                  "en": "Roleplay"
+                }
+              },
+              {
+                "id": "light_bdsm",
+                "label": {
+                  "ru": "Лёгкий BDSM",
+                  "en": "Light BDSM"
+                }
+              },
+              {
+                "id": "public",
+                "label": {
+                  "ru": "Публичные места",
+                  "en": "Public places"
+                }
+              },
+              {
+                "id": "group",
+                "label": {
+                  "ru": "Групповой секс",
+                  "en": "Group sex"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "scale",
+    "text": {
+      "ru": "От vanilla до kinky — где ты?",
+      "en": "From vanilla to kinky — where are you?"
+    },
+    "config": {
+      "min_label": {
+        "ru": "Vanilla",
+        "en": "Vanilla"
+      },
+      "max_label": {
+        "ru": "Kinky",
+        "en": "Kinky"
+      }
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "openness",
+      "vanilla",
+      "kinky"
+    ],
+    "tests_secondary": [
+      "adventurous",
+      "experimental",
+      "curious"
+    ],
+    "gates": {
+      "vanilla": [
+        "basic_scenes_only"
+      ],
+      "vanilla_plus": [
+        "light_kink_scenes"
+      ],
+      "adventurous": [
+        "moderate_kink_scenes"
+      ],
+      "kinky": [
+        "advanced_kink_scenes"
+      ],
+      "extreme": [
+        "all_scenes"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Пара обсуждает границы и предпочтения в сексе",
+    "en": "A couple discusses boundaries and preferences in sex"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "bodymap_biting",
+  "slug": "biting",
+  "version": 2,
+  "type": "body_map",
+  "order": 5,
+
+  "title": { "ru": "Укусы и царапины", "en": "Biting & Scratching" },
+  "subtitle": { "ru": "Карта первобытных ласк", "en": "Primal touch map" },
+  "description": {
+    "ru": "Отметь, где любишь кусать/царапать и где нравится получать",
+    "en": "Mark where you like to bite/scratch and where you like receiving"
+  },
+
+  "intensity": 3,
+  "action": "bite_scratch",
+  "tags": ["biting", "scratching", "primal", "marking"],
+
+  "passes": [
+    {
+      "id": "give",
+      "question": {
+        "ru": "Где ты любишь кусать/царапать партнёра?",
+        "en": "Where do you like to bite/scratch your partner?"
+      },
+      "instruction": {
+        "ru": "Нажми на зоны тела",
+        "en": "Tap on body zones"
+      }
+    },
+    {
+      "id": "receive",
+      "question": {
+        "ru": "Где тебе нравится, когда тебя кусают/царапают?",
+        "en": "Where do you like being bitten/scratched?"
+      },
+      "instruction": {
+        "ru": "Нажми на зоны тела",
+        "en": "Tap on body zones"
+      }
+    }
+  ],
+
+  "zones": {
+    "available": ["neck", "shoulders", "back", "chest", "nipples", "inner_thighs", "buttocks", "arms", "lips"],
+    "highlight_primal": true
+  },
+
+  "ai_context": {
+    "tests_primary": ["primal", "biting", "marking"],
+    "tests_secondary": ["pain_pleasure", "passionate"],
+    "profile_signals": {
+      "if_neck": "vampire_bite_lover",
+      "if_back": "scratching_during_sex",
+      "if_many_zones": "primal_player"
+    }
+  }
+}

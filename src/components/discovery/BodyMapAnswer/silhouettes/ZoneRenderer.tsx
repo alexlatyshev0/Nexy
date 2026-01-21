@@ -30,7 +30,8 @@ export function ZoneRenderer({
     if (pref) {
       return PREFERENCE_COLORS[pref].fill;
     }
-    return 'transparent';
+    // Show subtle highlight for unmarked zones so they're visible
+    return 'rgba(255, 255, 255, 0.15)';
   };
 
   const getZoneStroke = (zoneId: BodyZoneId) => {
@@ -38,7 +39,8 @@ export function ZoneRenderer({
     if (pref) {
       return PREFERENCE_COLORS[pref].stroke;
     }
-    return 'rgba(100, 100, 100, 0.3)';
+    // More visible stroke for unmarked zones
+    return 'rgba(255, 255, 255, 0.5)';
   };
 
   const zoneClass = selectedColor

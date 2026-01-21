@@ -14,18 +14,18 @@ const intensityLabels = ['', 'Мягко', 'Легко', 'Средне', 'Инт
 const intensityColors = ['', 'bg-green-100', 'bg-blue-100', 'bg-yellow-100', 'bg-orange-100', 'bg-red-100'];
 
 export function SceneCard({ scene }: SceneCardProps) {
-  // For placeholder, we'll show a gradient background with emoji based on dimensions
+  // Placeholder emoji based on category/tags
   const getPlaceholderEmoji = () => {
-    const dim = scene.dimensions[0] || '';
-    if (dim.includes('bondage')) return '🔗';
-    if (dim.includes('blindfold')) return '🙈';
-    if (dim.includes('dominance') || dim.includes('submission')) return '👑';
-    if (dim.includes('pain') || dim.includes('spanking')) return '🔥';
-    if (dim.includes('romantic') || dim.includes('tender')) return '💕';
-    if (dim.includes('oral')) return '💋';
-    if (dim.includes('roleplay')) return '🎭';
-    if (dim.includes('exhibition')) return '👀';
-    if (dim.includes('group')) return '👥';
+    const tag = scene.tags?.[0] || scene.category || '';
+    if (tag.includes('bondage')) return '🔗';
+    if (tag.includes('blindfold')) return '🙈';
+    if (tag.includes('dominan') || tag.includes('submiss')) return '👑';
+    if (tag.includes('pain') || tag.includes('spank') || tag.includes('impact')) return '🔥';
+    if (tag.includes('romanti') || tag.includes('tender')) return '💕';
+    if (tag.includes('oral')) return '💋';
+    if (tag.includes('roleplay')) return '🎭';
+    if (tag.includes('exhibi') || tag.includes('voyeur')) return '👀';
+    if (tag.includes('group')) return '👥';
     return '✨';
   };
 
@@ -50,7 +50,7 @@ export function SceneCard({ scene }: SceneCardProps) {
               <div className="text-center">
                 <span className="text-6xl">{getPlaceholderEmoji()}</span>
                 <p className="mt-2 text-sm text-rose-600/70 px-4 line-clamp-2">
-                  {scene.description.slice(0, 80)}...
+                  {(scene.user_description?.ru || scene.ai_description?.ru || '').slice(0, 80)}...
                 </p>
               </div>
             )}
@@ -62,15 +62,6 @@ export function SceneCard({ scene }: SceneCardProps) {
             >
               {intensityLabels[scene.intensity]}
             </Badge>
-          </div>
-
-          {/* Tags */}
-          <div className="p-3 flex flex-wrap gap-1">
-            {scene.dimensions.slice(0, 3).map((dim) => (
-              <Badge key={dim} variant="outline" className="text-xs">
-                {dim}
-              </Badge>
-            ))}
           </div>
         </CardContent>
       </Card>

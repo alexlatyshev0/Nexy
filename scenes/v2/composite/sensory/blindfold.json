@@ -1,0 +1,274 @@
+{
+  "id": "blindfold",
+  "slug": "blindfold",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Повязка на глаза",
+    "en": "Blindfold"
+  },
+  "subtitle": {
+    "ru": "Не видеть",
+    "en": "Can't see"
+  },
+  "ai_description": {
+    "ru": "Закрытые глаза, обострённые чувства. Не знать что будет дальше. Доверие, сюрпризы, усиленные ощущения.",
+    "en": "Eyes covered, heightened senses. Not knowing what's next. Trust, surprises, intensified sensations."
+  },
+  "image_prompt": "woman wearing black silk blindfold lying on bed, man's hand reaching toward her body, bedroom with soft lamp light",
+  "intensity": 2,
+  "category": "sensory",
+  "tags": [
+    "blindfold",
+    "sensory_deprivation",
+    "trust",
+    "surprise"
+  ],
+  "elements": [
+    {
+      "id": "who_blindfolded",
+      "label": {
+        "ru": "Кто с повязкой",
+        "en": "Who's blindfolded"
+      },
+      "tag_ref": "blindfold_who",
+      "follow_ups": [
+        {
+          "id": "who",
+          "type": "single_select",
+          "question": {
+            "ru": "Кто?",
+            "en": "Who?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "her",
+                "label": {
+                  "ru": "Она",
+                  "en": "Her"
+                }
+              },
+              {
+                "id": "him",
+                "label": {
+                  "ru": "Он",
+                  "en": "Him"
+                }
+              },
+              {
+                "id": "both",
+                "label": {
+                  "ru": "Оба",
+                  "en": "Both"
+                }
+              },
+              {
+                "id": "switch",
+                "label": {
+                  "ru": "Меняемся",
+                  "en": "Switch"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sensations",
+      "label": {
+        "ru": "Ощущения",
+        "en": "Sensations"
+      },
+      "tag_ref": "blindfold_sensations",
+      "follow_ups": [
+        {
+          "id": "what",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие ощущения?",
+            "en": "What sensations?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "touch",
+                "label": {
+                  "ru": "Прикосновения",
+                  "en": "Touch"
+                }
+              },
+              {
+                "id": "ice",
+                "label": {
+                  "ru": "Лёд",
+                  "en": "Ice"
+                }
+              },
+              {
+                "id": "feather",
+                "label": {
+                  "ru": "Перо",
+                  "en": "Feather"
+                }
+              },
+              {
+                "id": "wax",
+                "label": {
+                  "ru": "Воск",
+                  "en": "Wax"
+                }
+              },
+              {
+                "id": "oral",
+                "label": {
+                  "ru": "Оральные",
+                  "en": "Oral"
+                }
+              },
+              {
+                "id": "surprise",
+                "label": {
+                  "ru": "Сюрпризы",
+                  "en": "Surprises"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "restraints",
+      "label": {
+        "ru": "С ограничениями?",
+        "en": "With restraints?"
+      },
+      "tag_ref": "blindfold_restraints",
+      "follow_ups": [
+        {
+          "id": "add",
+          "type": "single_select",
+          "question": {
+            "ru": "Добавить?",
+            "en": "Add restraints?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "no",
+                "label": {
+                  "ru": "Нет, только повязка",
+                  "en": "No, just blindfold"
+                }
+              },
+              {
+                "id": "hands",
+                "label": {
+                  "ru": "Связать руки",
+                  "en": "Tie hands"
+                }
+              },
+              {
+                "id": "full",
+                "label": {
+                  "ru": "Полная фиксация",
+                  "en": "Full bondage"
+                }
+              },
+              {
+                "id": "sometimes",
+                "label": {
+                  "ru": "Иногда",
+                  "en": "Sometimes"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "blindfold_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "heightened",
+                "label": {
+                  "ru": "Обострённые ощущения",
+                  "en": "Heightened senses"
+                }
+              },
+              {
+                "id": "surprise",
+                "label": {
+                  "ru": "Не знать что будет",
+                  "en": "Surprise"
+                }
+              },
+              {
+                "id": "trust",
+                "label": {
+                  "ru": "Доверие",
+                  "en": "Trust"
+                }
+              },
+              {
+                "id": "vulnerability",
+                "label": {
+                  "ru": "Уязвимость",
+                  "en": "Vulnerability"
+                }
+              },
+              {
+                "id": "focus",
+                "label": {
+                  "ru": "Фокус на ощущениях",
+                  "en": "Focus on sensations"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в повязке на глаза?",
+      "en": "What appeals about blindfolds?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "blindfold",
+      "sensory",
+      "deprivation"
+    ],
+    "tests_secondary": [
+      "trust",
+      "surprise",
+      "vulnerability"
+    ]
+  },
+  "user_description": {
+    "ru": "Один партнёр надевает повязку на глаза другому",
+    "en": "One partner puts a blindfold on the other"
+  }
+}

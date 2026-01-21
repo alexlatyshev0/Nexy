@@ -1,0 +1,261 @@
+{
+  "id": "breeding_kink",
+  "slug": "breeding-kink",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Бридинг-кинк",
+    "en": "Breeding Kink"
+  },
+  "subtitle": {
+    "ru": "Фантазия об оплодотворении",
+    "en": "Impregnation fantasy"
+  },
+  "ai_description": {
+    "ru": "Фантазия о том чтобы кончить внутрь, оплодотворить, быть наполненной. Первобытное желание. Фантазия, не обязательно желание детей.",
+    "en": "Fantasy of cumming inside, impregnating, being filled. Primal urge. A fantasy, not necessarily wanting children."
+  },
+  "image_prompt": "man and woman in missionary position, him deep inside her, her legs wrapped around his waist, bedroom with soft lighting",
+  "intensity": 4,
+  "category": "extreme",
+  "tags": [
+    "breeding",
+    "impregnation",
+    "creampie",
+    "primal",
+    "bare"
+  ],
+  "elements": [
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "breeding_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "primal",
+                "label": {
+                  "ru": "Первобытность, инстинкт",
+                  "en": "Primal instinct"
+                }
+              },
+              {
+                "id": "filling",
+                "label": {
+                  "ru": "Наполнить/быть наполненной",
+                  "en": "Filling/being filled"
+                }
+              },
+              {
+                "id": "claiming",
+                "label": {
+                  "ru": "Отметить, сделать своей",
+                  "en": "Claiming, making hers"
+                }
+              },
+              {
+                "id": "risk",
+                "label": {
+                  "ru": "Риск, запретность",
+                  "en": "Risk, forbidden"
+                }
+              },
+              {
+                "id": "bare",
+                "label": {
+                  "ru": "Без барьеров",
+                  "en": "No barriers"
+                }
+              },
+              {
+                "id": "dirty_talk",
+                "label": {
+                  "ru": "Dirty talk об этом",
+                  "en": "Dirty talk about it"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "how_express",
+      "label": {
+        "ru": "Как выражается",
+        "en": "How expressed"
+      },
+      "tag_ref": "breeding_expression",
+      "follow_ups": [
+        {
+          "id": "expression",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как это выражается?",
+            "en": "How is it expressed?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "talk_only",
+                "label": {
+                  "ru": "Только в словах",
+                  "en": "Talk only"
+                }
+              },
+              {
+                "id": "cum_inside",
+                "label": {
+                  "ru": "Кончать внутрь",
+                  "en": "Cum inside"
+                }
+              },
+              {
+                "id": "begging",
+                "label": {
+                  "ru": "Просить кончить внутрь",
+                  "en": "Begging for it"
+                }
+              },
+              {
+                "id": "legs_wrap",
+                "label": {
+                  "ru": "Обхватить ногами, не выпускать",
+                  "en": "Wrap legs, hold inside"
+                }
+              },
+              {
+                "id": "deep_finish",
+                "label": {
+                  "ru": "Кончить как можно глубже",
+                  "en": "Finish as deep as possible"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "reality",
+      "label": {
+        "ru": "Реальность",
+        "en": "Reality"
+      },
+      "tag_ref": "breeding_reality",
+      "follow_ups": [
+        {
+          "id": "context",
+          "type": "single_select",
+          "question": {
+            "ru": "Контекст?",
+            "en": "Context?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "fantasy_only",
+                "label": {
+                  "ru": "Только фантазия (контрацепция)",
+                  "en": "Fantasy only (on birth control)"
+                }
+              },
+              {
+                "id": "roleplay",
+                "label": {
+                  "ru": "Ролевая игра",
+                  "en": "Roleplay"
+                }
+              },
+              {
+                "id": "real_intent",
+                "label": {
+                  "ru": "Реальное желание зачать",
+                  "en": "Actually trying to conceive"
+                }
+              },
+              {
+                "id": "risk_play",
+                "label": {
+                  "ru": "Игра с риском (без защиты)",
+                  "en": "Risk play (no protection)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "boundary",
+    "text": {
+      "ru": "Фантазия об оплодотворении возбуждает?",
+      "en": "Does impregnation fantasy excite you?"
+    },
+    "config": {
+      "boundary_options": [
+        {
+          "id": "hard_no",
+          "label": {
+            "ru": "Нет",
+            "en": "No"
+          }
+        },
+        {
+          "id": "curious",
+          "label": {
+            "ru": "Интересно",
+            "en": "Curious"
+          }
+        },
+        {
+          "id": "yes",
+          "label": {
+            "ru": "Да",
+            "en": "Yes"
+          }
+        }
+      ]
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "breeding_kink",
+      "impregnation",
+      "creampie"
+    ],
+    "tests_secondary": [
+      "primal",
+      "bare_sex",
+      "risk"
+    ],
+    "emotional_range": {
+      "positive": [
+        "breeding fantasy hot",
+        "primal turn-on",
+        "loves dirty talk"
+      ],
+      "negative": [
+        "not interested",
+        "too real",
+        "pregnancy anxiety"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Он кончает внутрь неё, желая оплодотворить. Фантазия о беременности без контрацепции.",
+    "en": "He cums inside her, wanting to impregnate. Fantasy about pregnancy without contraception."
+  }
+}

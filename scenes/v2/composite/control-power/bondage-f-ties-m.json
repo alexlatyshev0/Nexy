@@ -1,0 +1,438 @@
+{
+  "id": "bondage_f_ties_m",
+  "slug": "bondage-she-ties-him",
+  "version": 2,
+  "paired_scene": "bondage_m_ties_f",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Бондаж",
+    "en": "Bondage"
+  },
+  "subtitle": {
+    "ru": "Она связывает его",
+    "en": "She ties him"
+  },
+  "ai_description": {
+    "ru": "Его руки привязаны к изголовью, он полностью в её власти. Она садится сверху, улыбается. Он не может сопротивляться — только принимать.",
+    "en": "His hands tied to headboard, he's completely in her power. She straddles him, smiling. He cannot resist — only accept."
+  },
+  "image_prompt": "woman tying mans wrists to headboard with silk rope, he nude lying on bed, she in lingerie leaning over him, bedroom setting",
+  "intensity": 3,
+  "category": "control_power",
+  "tags": [
+    "bondage",
+    "femdom",
+    "restraints",
+    "tied",
+    "male_submission",
+    "female_control"
+  ],
+  "elements": [
+    {
+      "id": "material",
+      "label": {
+        "ru": "Чем связывать?",
+        "en": "What to tie with?"
+      },
+      "tag_ref": "bondage_material_m",
+      "follow_ups": [
+        {
+          "id": "materials",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой материал?",
+            "en": "What material?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "silk",
+                "label": {
+                  "ru": "Шёлковые верёвки",
+                  "en": "Silk ropes"
+                }
+              },
+              {
+                "id": "handcuffs",
+                "label": {
+                  "ru": "Наручники",
+                  "en": "Handcuffs"
+                }
+              },
+              {
+                "id": "leather",
+                "label": {
+                  "ru": "Кожаные ремни",
+                  "en": "Leather straps"
+                }
+              },
+              {
+                "id": "ties",
+                "label": {
+                  "ru": "Галстуки",
+                  "en": "Ties"
+                }
+              },
+              {
+                "id": "cuffs",
+                "label": {
+                  "ru": "Манжеты с застёжками",
+                  "en": "Cuffs with clips"
+                }
+              },
+              {
+                "id": "rope",
+                "label": {
+                  "ru": "Верёвка",
+                  "en": "Rope"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "position",
+      "label": {
+        "ru": "Позиция",
+        "en": "Position"
+      },
+      "tag_ref": "bondage_position_m",
+      "follow_ups": [
+        {
+          "id": "positions",
+          "type": "multi_select",
+          "question": {
+            "ru": "В какой позе?",
+            "en": "What position?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "bed_arms_up",
+                "label": {
+                  "ru": "К кровати, руки вверх",
+                  "en": "To bed, arms up"
+                }
+              },
+              {
+                "id": "spread_eagle",
+                "label": {
+                  "ru": "Растянут (spread eagle)",
+                  "en": "Spread eagle"
+                }
+              },
+              {
+                "id": "chair",
+                "label": {
+                  "ru": "К стулу",
+                  "en": "To chair"
+                }
+              },
+              {
+                "id": "standing",
+                "label": {
+                  "ru": "Стоя",
+                  "en": "Standing"
+                }
+              },
+              {
+                "id": "kneeling",
+                "label": {
+                  "ru": "На коленях, руки за спиной",
+                  "en": "Kneeling, hands behind"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cock_bondage",
+      "label": {
+        "ru": "Член тоже?",
+        "en": "Cock too?"
+      },
+      "tag_ref": "cock_bondage",
+      "follow_ups": [
+        {
+          "id": "cock_restraint",
+          "type": "multi_select",
+          "question": {
+            "ru": "Связать/ограничить член?",
+            "en": "Restrain cock?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "no",
+                "label": {
+                  "ru": "Нет",
+                  "en": "No"
+                }
+              },
+              {
+                "id": "cock_ring",
+                "label": {
+                  "ru": "Кольцо на член",
+                  "en": "Cock ring"
+                }
+              },
+              {
+                "id": "balls_tie",
+                "label": {
+                  "ru": "Обвязка яичек",
+                  "en": "Ball tie"
+                }
+              },
+              {
+                "id": "chastity",
+                "label": {
+                  "ru": "Клетка",
+                  "en": "Chastity cage"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "her_activities",
+      "label": {
+        "ru": "Что она делает?",
+        "en": "What does she do?"
+      },
+      "tag_ref": "femdom_bondage_activities",
+      "follow_ups": [
+        {
+          "id": "activities",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что делать пока он связан?",
+            "en": "What while he's tied?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "ride",
+                "label": {
+                  "ru": "Кататься сверху",
+                  "en": "Ride him"
+                }
+              },
+              {
+                "id": "tease",
+                "label": {
+                  "ru": "Дразнить (не давать кончить)",
+                  "en": "Tease (edge him)"
+                }
+              },
+              {
+                "id": "oral_receive",
+                "label": {
+                  "ru": "Сесть на лицо",
+                  "en": "Sit on his face"
+                }
+              },
+              {
+                "id": "handjob",
+                "label": {
+                  "ru": "Дрочить ему",
+                  "en": "Handjob"
+                }
+              },
+              {
+                "id": "ignore",
+                "label": {
+                  "ru": "Игнорировать",
+                  "en": "Ignore him"
+                }
+              },
+              {
+                "id": "torture",
+                "label": {
+                  "ru": "Nipple torture",
+                  "en": "Nipple torture"
+                }
+              },
+              {
+                "id": "pegging",
+                "label": {
+                  "ru": "Пеггинг",
+                  "en": "Pegging"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "verbal",
+      "label": {
+        "ru": "Что говорит?",
+        "en": "What does she say?"
+      },
+      "tag_ref": "femdom_bondage_verbal",
+      "follow_ups": [
+        {
+          "id": "words",
+          "type": "multi_select",
+          "question": {
+            "ru": "Её слова?",
+            "en": "Her words?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "mine",
+                "label": {
+                  "ru": "Ты мой",
+                  "en": "You're mine"
+                }
+              },
+              {
+                "id": "helpless",
+                "label": {
+                  "ru": "Ты беспомощен",
+                  "en": "You're helpless"
+                }
+              },
+              {
+                "id": "use",
+                "label": {
+                  "ru": "Я буду тобой пользоваться",
+                  "en": "I'll use you"
+                }
+              },
+              {
+                "id": "suffer",
+                "label": {
+                  "ru": "Терпи",
+                  "en": "Suffer"
+                }
+              },
+              {
+                "id": "beg",
+                "label": {
+                  "ru": "Проси",
+                  "en": "Beg"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "male_bondage_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "helplessness",
+                "label": {
+                  "ru": "Беспомощность",
+                  "en": "Helplessness"
+                }
+              },
+              {
+                "id": "her_power",
+                "label": {
+                  "ru": "Её власть",
+                  "en": "Her power"
+                }
+              },
+              {
+                "id": "trust",
+                "label": {
+                  "ru": "Доверие ей",
+                  "en": "Trusting her"
+                }
+              },
+              {
+                "id": "used",
+                "label": {
+                  "ru": "Быть использованным",
+                  "en": "Being used"
+                }
+              },
+              {
+                "id": "no_choice",
+                "label": {
+                  "ru": "Нет выбора",
+                  "en": "No choice"
+                }
+              },
+              {
+                "id": "struggle",
+                "label": {
+                  "ru": "Попытки вырваться",
+                  "en": "Struggle"
+                }
+              },
+              {
+                "id": "playful_resistance",
+                "label": {
+                  "ru": "Игривое сопротивление",
+                  "en": "Playful resistance"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает когда она связывает?",
+      "en": "What appeals when she ties?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "bondage",
+      "femdom",
+      "restraints"
+    ],
+    "tests_secondary": [
+      "helplessness",
+      "male_submission",
+      "trust"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys femdom",
+        "trusts partner",
+        "surrenders"
+      ],
+      "negative": [
+        "needs control",
+        "claustrophobic",
+        "vulnerability issues"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Она связывает его руки — к кровати или за спиной.",
+    "en": "She ties his hands — to bed or behind back."
+  }
+}

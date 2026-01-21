@@ -1,5 +1,5 @@
 import type { MatchResult } from './types';
-import { flattenObject } from './ai';
+import { flattenObject } from './utils/object';
 
 export function calculateVisibility(
   myValue: number,

@@ -1,0 +1,210 @@
+{
+  "id": "first_time_together",
+  "slug": "first-time-together",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Первый раз вместе",
+    "en": "First Time Together"
+  },
+  "subtitle": {
+    "ru": "С новым партнёром",
+    "en": "With a new partner"
+  },
+  "ai_description": {
+    "ru": "Первый секс с новым партнёром. Изучение тела, предпочтений, границ. Новизна и неизвестность.",
+    "en": "First sex with new partner. Exploring body, preferences, boundaries. Novelty and unknown."
+  },
+  "image_prompt": "man and woman in bed, first time undressing each other, hesitant touches, bedroom with candles",
+  "intensity": 2,
+  "category": "emotional-context",
+  "tags": [
+    "emotional",
+    "first_time",
+    "new_partner",
+    "exploration"
+  ],
+  "elements": [
+    {
+      "id": "pace",
+      "label": {
+        "ru": "Темп",
+        "en": "Pace"
+      },
+      "tag_ref": "first_pace",
+      "follow_ups": [
+        {
+          "id": "how_fast",
+          "type": "single_select",
+          "question": {
+            "ru": "Какой темп?",
+            "en": "What pace?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "slow",
+                "label": {
+                  "ru": "Медленно, изучая",
+                  "en": "Slow, exploring"
+                }
+              },
+              {
+                "id": "passionate",
+                "label": {
+                  "ru": "Страстно, не терпится",
+                  "en": "Passionate, can't wait"
+                }
+              },
+              {
+                "id": "hesitant",
+                "label": {
+                  "ru": "Осторожно, неуверенно",
+                  "en": "Hesitant, uncertain"
+                }
+              },
+              {
+                "id": "depends",
+                "label": {
+                  "ru": "Зависит от химии",
+                  "en": "Depends on chemistry"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "communication",
+      "label": {
+        "ru": "Коммуникация",
+        "en": "Communication"
+      },
+      "tag_ref": "first_comm",
+      "follow_ups": [
+        {
+          "id": "talk",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как общаться?",
+            "en": "How to communicate?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "ask",
+                "label": {
+                  "ru": "Спрашивать что нравится",
+                  "en": "Ask what they like"
+                }
+              },
+              {
+                "id": "nonverbal",
+                "label": {
+                  "ru": "Читать реакции",
+                  "en": "Read reactions"
+                }
+              },
+              {
+                "id": "guide",
+                "label": {
+                  "ru": "Направлять руки",
+                  "en": "Guide hands"
+                }
+              },
+              {
+                "id": "tell",
+                "label": {
+                  "ru": "Говорить что хочу",
+                  "en": "Tell what I want"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "appeal",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "first_appeal",
+      "follow_ups": [
+        {
+          "id": "why",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "novelty",
+                "label": {
+                  "ru": "Новизна",
+                  "en": "Novelty"
+                }
+              },
+              {
+                "id": "discovery",
+                "label": {
+                  "ru": "Открытие нового тела",
+                  "en": "Discovering new body"
+                }
+              },
+              {
+                "id": "anticipation",
+                "label": {
+                  "ru": "Ожидание, предвкушение",
+                  "en": "Anticipation"
+                }
+              },
+              {
+                "id": "unknown",
+                "label": {
+                  "ru": "Неизвестность",
+                  "en": "The unknown"
+                }
+              },
+              {
+                "id": "chemistry",
+                "label": {
+                  "ru": "Проверка химии",
+                  "en": "Testing chemistry"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в первом разе с новым партнёром?",
+      "en": "What appeals about first time with new partner?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "first_time",
+      "new_partner",
+      "exploration"
+    ],
+    "tests_secondary": [
+      "novelty",
+      "discovery",
+      "anticipation"
+    ]
+  },
+  "user_description": {
+    "ru": "Пара занимается сексом первый раз. Раздевают друг друга, изучают тела.",
+    "en": "Couple has sex for the first time. Undressing each other, exploring bodies."
+  }
+}

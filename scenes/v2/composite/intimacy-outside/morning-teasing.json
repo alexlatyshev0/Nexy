@@ -1,0 +1,282 @@
+{
+  "id": "morning_teasing",
+  "slug": "morning-teasing",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Утреннее дразнение",
+    "en": "Morning Teasing"
+  },
+  "subtitle": {
+    "ru": "Перед работой",
+    "en": "Before work"
+  },
+  "ai_description": {
+    "ru": "Утренние прикосновения когда нет времени. Поцелуи, хватания, обещания на вечер. Уходить на работу возбуждённым.",
+    "en": "Morning touches when there's no time. Kisses, grabs, evening promises. Leaving for work aroused."
+  },
+  "image_prompt": "man and woman in bed half-awake, his hand under sheets between her legs, she sleepy but smiling, tangled sheets, bedroom with morning sunlight",
+  "intensity": 1,
+  "category": "intimacy",
+  "tags": [
+    "teasing",
+    "morning",
+    "anticipation",
+    "daily_life",
+    "intimacy"
+  ],
+  "elements": [
+    {
+      "id": "activities",
+      "label": {
+        "ru": "Что делать",
+        "en": "What to do"
+      },
+      "tag_ref": "morning_tease_acts",
+      "follow_ups": [
+        {
+          "id": "acts",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие действия?",
+            "en": "What actions?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "grab",
+                "label": {
+                  "ru": "Хватать за тело",
+                  "en": "Grab body"
+                }
+              },
+              {
+                "id": "kiss",
+                "label": {
+                  "ru": "Страстные поцелуи",
+                  "en": "Passionate kisses"
+                }
+              },
+              {
+                "id": "grind",
+                "label": {
+                  "ru": "Тереться",
+                  "en": "Grinding"
+                }
+              },
+              {
+                "id": "shower",
+                "label": {
+                  "ru": "Душ вместе",
+                  "en": "Shower together"
+                }
+              },
+              {
+                "id": "quick",
+                "label": {
+                  "ru": "Быстрый секс",
+                  "en": "Quickie"
+                }
+              },
+              {
+                "id": "tease_leave",
+                "label": {
+                  "ru": "Дразнить и уйти",
+                  "en": "Tease and leave"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "timing",
+      "label": {
+        "ru": "Когда",
+        "en": "When"
+      },
+      "tag_ref": "morning_when",
+      "follow_ups": [
+        {
+          "id": "moment",
+          "type": "multi_select",
+          "question": {
+            "ru": "В какой момент?",
+            "en": "At what moment?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "wake_up",
+                "label": {
+                  "ru": "При пробуждении",
+                  "en": "Waking up"
+                }
+              },
+              {
+                "id": "shower",
+                "label": {
+                  "ru": "В душе",
+                  "en": "In shower"
+                }
+              },
+              {
+                "id": "dressing",
+                "label": {
+                  "ru": "Пока одевается",
+                  "en": "While dressing"
+                }
+              },
+              {
+                "id": "breakfast",
+                "label": {
+                  "ru": "За завтраком",
+                  "en": "At breakfast"
+                }
+              },
+              {
+                "id": "leaving",
+                "label": {
+                  "ru": "Перед выходом",
+                  "en": "Before leaving"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "outcome",
+      "label": {
+        "ru": "Итог",
+        "en": "Outcome"
+      },
+      "tag_ref": "morning_outcome",
+      "follow_ups": [
+        {
+          "id": "result",
+          "type": "single_select",
+          "question": {
+            "ru": "Чем заканчивается?",
+            "en": "How does it end?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "leave_aroused",
+                "label": {
+                  "ru": "Уходит возбуждённый",
+                  "en": "Leave aroused"
+                }
+              },
+              {
+                "id": "quickie",
+                "label": {
+                  "ru": "Быстрый секс",
+                  "en": "Quick sex"
+                }
+              },
+              {
+                "id": "late",
+                "label": {
+                  "ru": "Опаздывает на работу",
+                  "en": "Late for work"
+                }
+              },
+              {
+                "id": "promise",
+                "label": {
+                  "ru": "Обещание на вечер",
+                  "en": "Evening promise"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "morning_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "spontaneous",
+                "label": {
+                  "ru": "Спонтанность",
+                  "en": "Spontaneity"
+                }
+              },
+              {
+                "id": "anticipation",
+                "label": {
+                  "ru": "Предвкушение вечера",
+                  "en": "Evening anticipation"
+                }
+              },
+              {
+                "id": "playfulness",
+                "label": {
+                  "ru": "Игривость",
+                  "en": "Playfulness"
+                }
+              },
+              {
+                "id": "connection",
+                "label": {
+                  "ru": "Связь в обычной жизни",
+                  "en": "Daily life connection"
+                }
+              },
+              {
+                "id": "denial",
+                "label": {
+                  "ru": "Не дать кончить",
+                  "en": "Denial"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в утреннем дразнении?",
+      "en": "What appeals about morning teasing?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "teasing",
+      "morning",
+      "intimacy"
+    ],
+    "tests_secondary": [
+      "anticipation",
+      "daily_life",
+      "playful"
+    ]
+  },
+  "user_description": {
+    "ru": "Утренние ласки в постели, когда нет времени на полноценный секс. Дразнящие прикосновения.",
+    "en": "Morning caresses in bed when no time for full sex. Teasing touches."
+  }
+}

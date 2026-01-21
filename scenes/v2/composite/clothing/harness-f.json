@@ -1,0 +1,276 @@
+{
+  "id": "harness_f",
+  "slug": "female-harness",
+  "version": 2,
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Харнесс на ней",
+    "en": "Female Harness"
+  },
+  "subtitle": {
+    "ru": "Эротическое бельё с ремешками",
+    "en": "Strappy erotic lingerie"
+  },
+  "ai_description": {
+    "ru": "Портупеи, харнессы, body chains в стиле Maison Close. Ремешки, металл, украшения на теле. Визуальный акцент без скрытия.",
+    "en": "Harnesses, body chains, Maison Close style. Straps, metal, body jewelry. Visual accent without covering."
+  },
+  "image_prompt": "woman wearing black leather harness over naked body, metal rings and straps across chest and hips, man watching her from bed, bedroom with dim lighting",
+  "intensity": 3,
+  "category": "clothing",
+  "tags": [
+    "clothing",
+    "harness",
+    "body_chain",
+    "strappy",
+    "fetish",
+    "maison_close"
+  ],
+  "elements": [
+    {
+      "id": "type",
+      "label": {
+        "ru": "Тип",
+        "en": "Type"
+      },
+      "tag_ref": "harness_type",
+      "follow_ups": [
+        {
+          "id": "which",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой тип?",
+            "en": "Which type?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "chest_harness",
+                "label": {
+                  "ru": "Портупея на грудь",
+                  "en": "Chest harness"
+                }
+              },
+              {
+                "id": "body_harness",
+                "label": {
+                  "ru": "Полный боди-харнесс",
+                  "en": "Full body harness"
+                }
+              },
+              {
+                "id": "waist_harness",
+                "label": {
+                  "ru": "На талию/бёдра",
+                  "en": "Waist/hip harness"
+                }
+              },
+              {
+                "id": "body_chain",
+                "label": {
+                  "ru": "Цепочки на тело",
+                  "en": "Body chains"
+                }
+              },
+              {
+                "id": "garter_harness",
+                "label": {
+                  "ru": "Подвязки с ремешками",
+                  "en": "Garter harness"
+                }
+              },
+              {
+                "id": "strappy_set",
+                "label": {
+                  "ru": "Комплект с ремешками",
+                  "en": "Strappy lingerie set"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "material",
+      "label": {
+        "ru": "Материал",
+        "en": "Material"
+      },
+      "tag_ref": "harness_material",
+      "follow_ups": [
+        {
+          "id": "which_material",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой материал?",
+            "en": "What material?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "leather",
+                "label": {
+                  "ru": "Кожа",
+                  "en": "Leather"
+                }
+              },
+              {
+                "id": "elastic",
+                "label": {
+                  "ru": "Эластичные ремешки",
+                  "en": "Elastic straps"
+                }
+              },
+              {
+                "id": "metal",
+                "label": {
+                  "ru": "Металлические цепочки",
+                  "en": "Metal chains"
+                }
+              },
+              {
+                "id": "lace_straps",
+                "label": {
+                  "ru": "Кружево с ремешками",
+                  "en": "Lace with straps"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "who_wears",
+      "label": {
+        "ru": "Кто носит",
+        "en": "Who wears"
+      },
+      "tag_ref": "harness_wearer",
+      "follow_ups": [
+        {
+          "id": "wearer",
+          "type": "single_select",
+          "question": {
+            "ru": "На ком?",
+            "en": "On whom?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "she",
+                "label": {
+                  "ru": "На ней",
+                  "en": "On her"
+                }
+              },
+              {
+                "id": "he",
+                "label": {
+                  "ru": "На нём",
+                  "en": "On him"
+                }
+              },
+              {
+                "id": "both",
+                "label": {
+                  "ru": "На обоих",
+                  "en": "On both"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "appeal",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "harness_appeal",
+      "follow_ups": [
+        {
+          "id": "why",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "visual",
+                "label": {
+                  "ru": "Как выглядит",
+                  "en": "How it looks"
+                }
+              },
+              {
+                "id": "frames_body",
+                "label": {
+                  "ru": "Подчёркивает тело",
+                  "en": "Frames the body"
+                }
+              },
+              {
+                "id": "access",
+                "label": {
+                  "ru": "Полный доступ к телу",
+                  "en": "Full body access"
+                }
+              },
+              {
+                "id": "edgy",
+                "label": {
+                  "ru": "Дерзкий стиль",
+                  "en": "Edgy style"
+                }
+              },
+              {
+                "id": "power",
+                "label": {
+                  "ru": "Ощущение власти",
+                  "en": "Feeling of power"
+                }
+              },
+              {
+                "id": "restraint_hint",
+                "label": {
+                  "ru": "Намёк на бондаж",
+                  "en": "Hint of bondage"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в портупеях и харнессах?",
+      "en": "What appeals about harnesses and body chains?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "harness",
+      "body_chain",
+      "strappy_lingerie"
+    ],
+    "tests_secondary": [
+      "visual",
+      "fetish",
+      "power"
+    ]
+  },
+  "user_description": {
+    "ru": "Она в портупее или харнессе — ремешки на голом теле, металлические кольца и цепочки.",
+    "en": "She wears harness — straps on naked body, metal rings and chains."
+  }
+}

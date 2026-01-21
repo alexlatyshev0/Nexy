@@ -1,10 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
-import { generateQuestion } from '@/lib/ai';
-import { isV3Scene, buildQuestionFromV3 } from '@/lib/question-v3';
-import { isV4Scene, buildV4QuestionResponse } from '@/lib/question-v4';
+import { isV2Scene, buildV2QuestionResponse } from '@/lib/question-v2';
 import { getLocale } from '@/lib/locale';
-import type { Scene, SceneV3, SceneV4, UserContext, V3QuestionResponse, V4QuestionResponse, Locale } from '@/lib/types';
+import type { SceneV2, V2QuestionResponse, Locale } from '@/lib/types';
 
 export async function POST(request: NextRequest) {
   try {
@@ -45,79 +43,135 @@ export async function POST(request: NextRequest) {
 
     const locale: Locale = requestedLocale || getLocale();
 
-    // Check if this is a V4 scene with question_config
-    if (isV4Scene(scene)) {
-      const sceneV4 = scene as SceneV4;
+    // Debug logging
+    console.log('[API/question] Scene loaded:', {
+      id: scene.id,
+      slug: scene.slug,
+      question_type: scene.question_type,
+      question_config_type: (scene as any).question_config?.type,
+      version: (scene as any).version,
+      hasQuestion: !!(scene as any).question,
+      questionValue: (scene as any).question,
+      questionType: (scene as any).question?.type,
+      elementsCount: Array.isArray((scene as any).elements) ? (scene as any).elements.length : 0,
+    });
 
-      // Build question from question_config (with topic response checking)
-      const response: V4QuestionResponse = await buildV4QuestionResponse(
-        sceneV4,
-        locale,
-        supabase,
-        user.id
-      );
+    // Check if this is a body_map scene
+    if (scene.question_type === 'body_map' || (scene as any).question_config?.type === 'body_map') {
+      console.log('[API/question] Detected body_map scene, building response');
+      // Build body_map question response
+      const aiContext = (scene as any).ai_context || {};
+      const questionConfig = (scene as any).question_config || {};
+      
+      // Build passes from ai_context or question_config
+      const passes = (aiContext.passes || questionConfig.passes || []).map((p: any) => {
+        // Handle both formats: { id: 'give', question: {...} } and { subject: 'give', question: {...} }
+        const subject = p.id === 'give' || p.id === 'receive' ? p.id : (p.subject || 'give');
+        return {
+          subject: subject as 'give' | 'receive',
+          question: p.question || { ru: '', en: '' },
+        };
+      });
 
-      return NextResponse.json(response);
-    }
+      // Get available zones safely
+      const zones = (aiContext as any).zones;
+      const availableZones = (zones && typeof zones === 'object' && 'available' in zones) 
+        ? zones.available 
+        : [];
 
-    // Check if this is a V3 scene with predefined question angles
-    if (isV3Scene(scene)) {
-      const sceneV3 = scene as SceneV3;
+      // Build general question about body interaction
+      // Questions should be about which body zones user likes/dislikes interaction with
+      // User clicks on zone → popup shows actions (kiss, lick, touch, etc.) with preferences
+      
+      // Main question text - use question from first pass which has context about who with whom
+      const firstPass = passes[0];
+      const mainQuestionText = firstPass?.question || {
+        ru: 'Где тебе нравится взаимодействовать? Нажми на зону, чтобы выбрать действия.',
+        en: 'Where do you like to interact? Tap a zone to select actions.',
+      };
 
-      // Build question from predefined angles (no AI needed)
-      const question = buildQuestionFromV3(sceneV3, locale);
-
-      const response: V3QuestionResponse = {
-        question,
-        tabooContext: sceneV3.ai_context.taboo_context || null,
-        followUp: sceneV3.follow_up || null,
-        isV3: true,
+      const response = {
+        question: {
+          question: mainQuestionText[locale] || mainQuestionText.en,
+          answerType: 'body_map' as const,
+          targetDimensions: [],
+        },
+        scene: scene,
+        isV2: true,
+        bodyMapConfig: {
+          action: (aiContext.action || questionConfig.action || 'kiss') as any,
+          passes: passes.map((p: any) => ({
+            ...p,
+            // Questions must clearly indicate who with whom
+            question: {
+              ru: p.subject === 'give' 
+                ? 'Где ты любишь или не любишь касаться партнёра?'
+                : 'Где тебе нравится или не нравится, когда партнёр(ша) тебя касается?',
+              en: p.subject === 'give'
+                ? 'Where do you like or dislike touching your partner?'
+                : 'Where do you like or dislike your partner touching you?',
+            },
+          })),
+          availableZones: availableZones,
+        },
+        // Store main question as LocalizedString for BodyMapAnswer component
+        // Use first pass question which has the correct context
+        mainQuestion: firstPass?.question || mainQuestionText,
       };
 
       return NextResponse.json(response);
     }
 
-    // Legacy scene: use AI generation
-    // Get user profile
-    const { data: profile } = await supabase
-      .from('profiles')
-      .select('gender, interested_in')
-      .eq('id', user.id)
-      .single();
+    // Check if this is a V2 composite scene
+    if (isV2Scene(scene)) {
+      const sceneV2 = scene as SceneV2;
 
-    // Get user preferences
-    const { data: prefProfile } = await supabase
-      .from('preference_profiles')
-      .select('preferences')
-      .eq('user_id', user.id)
-      .single();
+      // Debug logging - detailed inspection
+      console.log('[API/question] V2 scene detected:', {
+        id: sceneV2.id,
+        slug: sceneV2.slug,
+        hasQuestion: !!sceneV2.question,
+        questionType: sceneV2.question?.type,
+        questionValue: sceneV2.question,
+        questionTypeOf: typeof sceneV2.question,
+        questionKeys: sceneV2.question && typeof sceneV2.question === 'object' ? Object.keys(sceneV2.question) : 'N/A',
+        questionText: sceneV2.question?.text,
+        elementsCount: sceneV2.elements?.length || 0,
+        elements: sceneV2.elements?.map(e => ({ id: e.id, label: e.label })) || [],
+      });
 
-    // Get recent responses
-    const { data: recentResponses } = await supabase
-      .from('scene_responses')
-      .select('*')
-      .eq('user_id', user.id)
-      .order('created_at', { ascending: false })
-      .limit(5);
+      // Build question from V2 scene structure
+      const response: V2QuestionResponse = await buildV2QuestionResponse(
+        sceneV2,
+        locale,
+        supabase,
+        user.id
+      );
 
-    const userContext: UserContext = {
-      gender: profile?.gender || 'undisclosed',
-      interestedIn: profile?.interested_in || 'both',
-      knownPreferences: prefProfile?.preferences || {},
-      recentResponses: recentResponses || [],
-    };
+      console.log('[API/question] Built question:', {
+        answerType: response.question.answerType,
+        hasOptions: !!response.question.options,
+        optionsCount: response.question.options?.length || 0,
+        allowMultiple: response.question.allowMultiple,
+        questionText: response.question.question,
+        scaleLabels: response.question.scaleLabels,
+      });
 
-    // Generate question via AI for legacy scenes
-    const question = await generateQuestion(scene as Scene, userContext);
+      return NextResponse.json(response);
+    }
 
-    const response: V3QuestionResponse = {
-      question,
-      tabooContext: null,
-      followUp: null,
-      isV3: false,
-    };
-
-    return NextResponse.json(response);
+    // If not V2 and not body_map, return error
+    console.error('[API/question] Scene is neither V2 composite nor body_map:', {
+      id: scene.id,
+      slug: scene.slug,
+      question_type: scene.question_type,
+      version: (scene as any).version,
+      hasElements: Array.isArray((scene as any).elements),
+    });
+    return NextResponse.json(
+      { error: 'Only V2 composite scenes and body_map scenes are supported' },
+      { status: 400 }
+    );
   } catch (error) {
     console.error('Question generation error:', error);
     return NextResponse.json(

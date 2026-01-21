@@ -1,0 +1,36 @@
+{
+  "id": "fisting_f_to_m",
+  "slug": "fisting-f-to-m",
+  "version": 2,
+  "role_direction": "f_to_m",
+  "title": { "ru": "Фистинг (она ему)", "en": "Fisting (She Does Him)" },
+  "subtitle": { "ru": "Её рука внутри него", "en": "Her hand inside him" },
+  "ai_description": { "ru": "Ж вводит руку в М. Анальный фистинг. Требует много смазки и доверия.", "en": "F inserts hand into M. Anal fisting. Requires much lube and trust." },
+  "image_prompt": "woman's hand entering man's body anally, abundant lubricant visible, man on all fours, intimate bedroom setting",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": ["fisting", "penetration", "stretch", "f_dom", "anal"],
+  "elements": [
+    {
+      "id": "what_appeals",
+      "label": { "ru": "Что привлекает", "en": "What appeals" },
+      "tag_ref": "fisting_appeal",
+      "follow_ups": [{
+        "id": "appeal",
+        "type": "multi_select",
+        "question": { "ru": "Что возбуждает?", "en": "What excites?" },
+        "config": {
+          "options": [
+            { "id": "fullness", "label": { "ru": "Наполненность", "en": "Fullness" } },
+            { "id": "her_control", "label": { "ru": "Её контроль", "en": "Her control" } },
+            { "id": "prostate", "label": { "ru": "Простата", "en": "Prostate" } },
+            { "id": "surrender", "label": { "ru": "Отдача", "en": "Surrender" } }
+          ]
+        }
+      }]
+    }
+  ],
+  "question": { "type": "interest_scale", "text": { "ru": "Её рука внутри него — анальный фистинг?", "en": "Her hand inside him — anal fisting?" } },
+  "ai_context": { "tests_primary": ["fisting", "f_dom", "anal"], "tests_secondary": ["penetration", "prostate"] },
+  "user_description": { "ru": "Она вводит руку внутрь него анально", "en": "She inserts her hand inside him anally" }
+}

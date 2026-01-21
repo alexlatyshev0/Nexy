@@ -1,0 +1,135 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Manual Stimulation",
+  "note": "Handjobs, titfuck, manual techniques",
+  "scenes": [
+    {
+      "id": "scene_handjob_slow",
+      "priority": 2,
+      "intensity": 2,
+      "generation_prompt": "naked woman lying beside naked man in bed propped on elbow, her hand wrapped around him stroking slowly, watching his face, he lying on back eyes closed in pleasure, bedroom",
+      "user_description": {
+        "en": "Her hand around him, stroking slowly. Watching his face, reading every reaction. Teasing pace, building pleasure deliberately.",
+        "ru": "Медленный дразнящий ручной секс. Она гладит его, наблюдая за реакцией."
+      },
+      "ai_context": {
+        "description": "Slow teasing handjob. Woman controlling his pleasure manually. Testing appreciation for manual stimulation.",
+        "tests": { "primary_kink": "handjob", "secondary_kinks": ["teasing", "edging_lite", "manual_control"], "power_dynamic": "giving", "gender_role_aspect": "female giving pleasure" },
+        "question_angles": { "as_receiver": "Do you enjoy slow teasing handjobs?", "as_giver": "Do you enjoy giving manual pleasure?", "emotional": "Is there intimacy in manual stimulation?" },
+        "emotional_range": { "positive": ["love the teasing", "intimate and hot", "great foreplay"], "negative": ["prefer oral or sex", "too slow"], "curious": ["nice sometimes", "depends on mood"] },
+        "profile_signals": { "if_positive": ["handjob_enjoys", "manual_pleasure_likes", "teasing_appreciates"], "if_negative": ["penetration_prefers", "oral_prefers"], "if_curious": ["handjob_neutral"] },
+        "correlations": { "positive": ["foreplay_values", "teasing_likes", "connection_focused"], "negative": ["main_event_focused", "penetration_only"] },
+        "taboo_context": { "level": 1, "common_concerns": ["seen as teenage"], "normalization": "Handjobs are underrated—skilled hands create intense pleasure" }
+      },
+      "participants": [{ "role": "giving", "gender": "female", "action": "strokes him" }, { "role": "receiving", "gender": "male", "action": "receives pleasure" }],
+      "dimensions": ["handjob", "teasing", "manual"],
+      "tags": ["handjob", "manual", "teasing", "couple"],
+      "relevant_for": { "gender": "any", "interested_in": "male" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_handjob_lubed",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "naked woman using both oiled hands wrapped around naked man, glistening lube making strokes slick, his hips lifting into her grip, bedroom",
+      "user_description": {
+        "en": "Hands slick with lube, gliding smoothly. Two hands working together, every stroke intensified. Wet sounds, building rhythm.",
+        "ru": "Ручной секс с лубрикантом двумя руками. Скользко, интенсивно, усиленные ощущения."
+      },
+      "ai_context": {
+        "description": "Lubed handjob with both hands. Intensified manual stimulation.",
+        "tests": { "primary_kink": "handjob_intense", "secondary_kinks": ["lube", "two_hands", "intense_manual"], "power_dynamic": "giving", "gender_role_aspect": "skillful giving" },
+        "question_angles": { "technique": "Do you appreciate skilled hand technique?", "sensation": "Does lube enhance the experience?", "preference": "Hands vs mouth preference?" },
+        "emotional_range": { "positive": ["amazing sensation", "underrated", "love it"], "negative": ["prefer mouth", "too messy"], "curious": ["can be great", "technique matters"] },
+        "profile_signals": { "if_positive": ["handjob_skilled_enjoys", "lube_positive"], "if_negative": ["oral_prefers", "clean_prefers"], "if_curious": ["technique_appreciates"] },
+        "correlations": { "positive": ["sensation_focused", "technique_appreciates", "variety_enjoys"], "negative": ["oral_focused", "penetration_only"] },
+        "taboo_context": { "level": 1, "common_concerns": ["messiness"], "normalization": "Lubed handjobs rival oral—technique is key" }
+      },
+      "participants": [{ "role": "giving", "gender": "female", "action": "uses both hands with lube" }, { "role": "receiving", "gender": "male", "action": "receives intense stimulation" }],
+      "dimensions": ["handjob", "lube", "intense_manual"],
+      "tags": ["handjob", "lube", "intense", "manual"],
+      "relevant_for": { "gender": "any", "interested_in": "male" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_fingering_g_spot",
+      "priority": 3,
+      "intensity": 3,
+      "generation_prompt": "naked woman lying on back with legs spread, naked man's fingers inside her curled in come-hither motion, his other hand pressing lightly on her lower belly, her face showing intense pleasure, she gripping sheets, bedroom",
+      "user_description": {
+        "en": "Fingers curled just right, finding that spot inside. Pressure from above intensifying sensation. Building toward a different kind of orgasm.",
+        "ru": "Стимуляция точки G пальцами. Особая техника, особенно интенсивный оргазм."
+      },
+      "ai_context": {
+        "description": "G-spot fingering. Skilled internal manual stimulation. Testing interest in targeted stimulation.",
+        "tests": { "primary_kink": "fingering", "secondary_kinks": ["g_spot", "skilled_touch", "internal_manual"], "power_dynamic": "giving", "gender_role_aspect": "male giving pleasure" },
+        "question_angles": { "as_receiver": "Do you enjoy g-spot stimulation?", "as_giver": "Do you know how to find and stimulate the g-spot?", "preference": "Internal vs external stimulation?" },
+        "emotional_range": { "positive": ["intense orgasms", "love it", "different sensation"], "negative": ["hard to find", "prefer clit focus", "uncomfortable"], "curious": ["never experienced it right", "would like to try"] },
+        "profile_signals": { "if_positive": ["g_spot_enjoys", "internal_stim_likes", "fingering_skilled"], "if_negative": ["clit_focus_prefers"], "if_curious": ["g_spot_curious"] },
+        "correlations": { "positive": ["orgasm_variety", "skilled_lovers", "exploration"], "negative": ["clit_only", "penetration_only"] },
+        "taboo_context": { "level": 1, "common_concerns": ["difficulty finding"], "normalization": "G-spot stimulation creates intense orgasms—communication and patience help" }
+      },
+      "participants": [{ "role": "giving", "gender": "male", "action": "fingers g-spot" }, { "role": "receiving", "gender": "female", "action": "receives stimulation" }],
+      "dimensions": ["fingering", "g_spot", "skilled_touch"],
+      "tags": ["fingering", "g_spot", "manual", "internal"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_titfuck",
+      "priority": 4,
+      "intensity": 3,
+      "generation_prompt": "naked woman lying on back with breasts pressed together, naked man thrusting between them, both looking at each other, bedroom",
+      "user_description": {
+        "en": "Her breasts pressed together around him. He moves between them, watching the visual. Different sensation, intimate connection.",
+        "ru": "Секс между грудями (титфак). Он движется между её сжатой грудью."
+      },
+      "ai_context": {
+        "description": "Titfuck / breast sex. Testing interest in this specific act.",
+        "tests": { "primary_kink": "titfuck", "secondary_kinks": ["breast_play", "visual_stimulation", "alternative_penetration"], "power_dynamic": "equal", "gender_role_aspect": "using breasts for pleasure" },
+        "question_angles": { "as_man": "Does titfuck appeal to you?", "as_woman": "Would you enjoy giving a titfuck?", "visual": "Is the visual part of the appeal?" },
+        "emotional_range": { "positive": ["love it", "great visual", "different sensation"], "negative": ["doesn't do much for me", "uncomfortable", "prefer other things"], "curious": ["would try", "need right size"] },
+        "profile_signals": { "if_positive": ["titfuck_enjoys", "breast_focused", "visual_arousal"], "if_negative": ["titfuck_no"], "if_curious": ["titfuck_curious"] },
+        "correlations": { "positive": ["breast_attracted", "visual_arousal", "variety_enjoys"], "negative": ["penetration_focused", "breast_neutral"] },
+        "taboo_context": { "level": 2, "common_concerns": ["breast size needed", "porn influence"], "normalization": "Titfuck works with various sizes—lube helps, visual connection matters" }
+      },
+      "participants": [{ "role": "giving", "gender": "female", "action": "uses breasts" }, { "role": "receiving", "gender": "male", "action": "thrusts between" }],
+      "dimensions": ["titfuck", "breasts", "alternative"],
+      "tags": ["titfuck", "breasts", "manual", "visual"],
+      "relevant_for": { "gender": "any", "interested_in": "female" },
+      "question_type": { "type": "interest_scale" }
+    },
+    {
+      "id": "scene_prostate_massage",
+      "priority": 5,
+      "intensity": 4,
+      "generation_prompt": "naked man bent forward over edge of bed gripping sheets, naked woman behind him with one hand on his lower back, other hand positioned for internal stimulation, his face showing vulnerability and pleasure, bedroom",
+      "user_description": {
+        "en": "Her fingers finding his prostate. A new sensation for him, vulnerability mixed with intense pleasure. Trust required, rewards given.",
+        "ru": "Массаж простаты — она стимулирует его изнутри. Мужская точка G, интенсивное удовольствие."
+      },
+      "ai_context": {
+        "description": "Prostate massage. Male receiving anal stimulation for prostate pleasure.",
+        "tests": { "primary_kink": "prostate_play", "secondary_kinks": ["male_anal", "vulnerability", "new_sensation"], "power_dynamic": "receiving", "gender_role_aspect": "male receiving penetration" },
+        "question_angles": { "as_receiver": "Are you open to prostate stimulation?", "as_giver": "Would you give prostate massage?", "emotional": "How do you feel about male anal play?" },
+        "emotional_range": { "positive": ["amazing orgasms", "open to it", "worth exploring"], "negative": ["not interested", "too vulnerable", "exit only"], "curious": ["intrigued", "maybe with trust"] },
+        "profile_signals": { "if_positive": ["prostate_enjoys", "male_anal_open"], "if_negative": ["male_anal_no", "exit_only"], "if_curious": ["prostate_curious"] },
+        "correlations": { "positive": ["open_minded", "sensation_seeking", "vulnerability_ok"], "negative": ["traditional_male", "anal_averse"] },
+        "taboo_context": { "level": 4, "common_concerns": ["masculinity", "homosexuality fears"], "normalization": "Prostate is male g-spot—anatomy doesn't care about orientation" }
+      },
+      "participants": [{ "role": "giving", "gender": "female", "action": "stimulates prostate" }, { "role": "receiving", "gender": "male", "action": "receives, experiences new pleasure" }],
+      "dimensions": ["prostate", "male_anal", "trust"],
+      "tags": ["prostate", "finger", "male_receiving", "trust"],
+      "relevant_for": { "gender": "any", "interested_in": "male" },
+      "question_type": { "type": "boundary" }
+    }
+  ],
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_263", "scene_264", "scene_265", "scene_266", "scene_267", "scene_268", "scene_143"],
+      "reason": "Consolidated manual stimulation scenes including handjobs, fingering, titfuck, and prostate play",
+      "recommendation": "Use follow-up questions for technique preferences and intensity levels"
+    }
+  ]
+}

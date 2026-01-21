@@ -24,7 +24,9 @@ export async function getNextScene(userId: string, maxIntensity = 5): Promise<Sc
     .lte('intensity', maxIntensity);
 
   if (allExcluded.length > 0) {
-    query = query.not('id', 'in', `(${allExcluded.join(',')})`);
+    // Use proper Supabase/PostgREST syntax: single quotes for string values
+    const excludedList = `('${allExcluded.join("','")}')`;
+    query = query.not('id', 'in', excludedList);
   }
 
   const { data } = await query.limit(1).single();
@@ -64,7 +66,9 @@ export async function getFilteredScenes(
     .limit(limit);
 
   if (allExcluded.length > 0) {
-    query = query.not('id', 'in', `(${allExcluded.join(',')})`);
+    // Use proper Supabase/PostgREST syntax: single quotes for string values
+    const excludedList = `('${allExcluded.join("','")}')`;
+    query = query.not('id', 'in', excludedList);
   }
 
   const { data } = await query;

@@ -1,0 +1,282 @@
+{
+  "id": "romantic_sex",
+  "slug": "romantic-sex",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Романтический секс",
+    "en": "Romantic Sex"
+  },
+  "subtitle": {
+    "ru": "Нежность и любовь",
+    "en": "Tenderness and love"
+  },
+  "ai_description": {
+    "ru": "Медленный, нежный секс. Глаза в глаза, поцелуи, объятия. Не о технике — об эмоциональной связи и любви.",
+    "en": "Slow, tender sex. Eye contact, kisses, embraces. Not about technique — about emotional connection and love."
+  },
+  "image_prompt": "man and woman in missionary position having sex slowly, faces close looking into each other's eyes, both nude in white bed sheets, bedroom with burning candles on nightstand",
+  "intensity": 1,
+  "category": "romantic",
+  "tags": [
+    "romantic",
+    "tender",
+    "love",
+    "gentle",
+    "connection"
+  ],
+  "elements": [
+    {
+      "id": "elements",
+      "label": {
+        "ru": "Элементы",
+        "en": "Elements"
+      },
+      "tag_ref": "romantic_elements",
+      "follow_ups": [
+        {
+          "id": "what",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что важно?",
+            "en": "What matters?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "eye_contact",
+                "label": {
+                  "ru": "Глаза в глаза",
+                  "en": "Eye contact"
+                }
+              },
+              {
+                "id": "kissing",
+                "label": {
+                  "ru": "Много поцелуев",
+                  "en": "Lots of kissing"
+                }
+              },
+              {
+                "id": "slow",
+                "label": {
+                  "ru": "Медленный темп",
+                  "en": "Slow pace"
+                }
+              },
+              {
+                "id": "words",
+                "label": {
+                  "ru": "Слова любви",
+                  "en": "Words of love"
+                }
+              },
+              {
+                "id": "touching",
+                "label": {
+                  "ru": "Нежные прикосновения",
+                  "en": "Gentle touches"
+                }
+              },
+              {
+                "id": "embrace",
+                "label": {
+                  "ru": "Тесные объятия",
+                  "en": "Close embrace"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "setting",
+      "label": {
+        "ru": "Обстановка",
+        "en": "Setting"
+      },
+      "tag_ref": "romantic_setting",
+      "follow_ups": [
+        {
+          "id": "where",
+          "type": "multi_select",
+          "question": {
+            "ru": "Обстановка?",
+            "en": "Setting?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "candles",
+                "label": {
+                  "ru": "Свечи",
+                  "en": "Candles"
+                }
+              },
+              {
+                "id": "music",
+                "label": {
+                  "ru": "Музыка",
+                  "en": "Music"
+                }
+              },
+              {
+                "id": "clean_sheets",
+                "label": {
+                  "ru": "Чистое бельё",
+                  "en": "Clean sheets"
+                }
+              },
+              {
+                "id": "special_occasion",
+                "label": {
+                  "ru": "Особый случай",
+                  "en": "Special occasion"
+                }
+              },
+              {
+                "id": "natural",
+                "label": {
+                  "ru": "Естественно",
+                  "en": "Natural"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "positions",
+      "label": {
+        "ru": "Позиции",
+        "en": "Positions"
+      },
+      "tag_ref": "romantic_positions",
+      "follow_ups": [
+        {
+          "id": "pos",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие позы?",
+            "en": "What positions?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "missionary",
+                "label": {
+                  "ru": "Миссионерская",
+                  "en": "Missionary"
+                }
+              },
+              {
+                "id": "cowgirl",
+                "label": {
+                  "ru": "Она сверху",
+                  "en": "Cowgirl"
+                }
+              },
+              {
+                "id": "spooning",
+                "label": {
+                  "ru": "Ложки",
+                  "en": "Spooning"
+                }
+              },
+              {
+                "id": "face_to_face",
+                "label": {
+                  "ru": "Лицом к лицу",
+                  "en": "Face to face"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "romantic_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что важно?",
+            "en": "What matters?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "connection",
+                "label": {
+                  "ru": "Эмоциональная связь",
+                  "en": "Emotional connection"
+                }
+              },
+              {
+                "id": "love",
+                "label": {
+                  "ru": "Чувство любви",
+                  "en": "Feeling loved"
+                }
+              },
+              {
+                "id": "intimacy",
+                "label": {
+                  "ru": "Интимность",
+                  "en": "Intimacy"
+                }
+              },
+              {
+                "id": "vulnerability",
+                "label": {
+                  "ru": "Уязвимость",
+                  "en": "Vulnerability"
+                }
+              },
+              {
+                "id": "presence",
+                "label": {
+                  "ru": "Присутствие",
+                  "en": "Presence"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в романтическом сексе?",
+      "en": "What appeals about romantic sex?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "romantic",
+      "tender",
+      "love"
+    ],
+    "tests_secondary": [
+      "gentle",
+      "connection",
+      "intimacy"
+    ]
+  },
+  "user_description": {
+    "ru": "Мужчина и женщина занимаются сексом в медленном темпе. Они целуются, смотрят друг другу в глаза. В комнате горят свечи, играет музыка.",
+    "en": "A man and woman have sex at a slow pace. They kiss and look into each other's eyes. Candles burn in the room, music plays."
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "id": "anal_play_on_her",
+  "slug": "anal-play-on-her",
+  "version": 2,
+  "paired_scene": "anal_play_on_him",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Анальные игры",
+    "en": "Anal Play"
+  },
+  "subtitle": {
+    "ru": "С ней",
+    "en": "On her"
+  },
+  "ai_description": {
+    "ru": "Внимание к её попке. Пальцы, пробки, анальный секс. Другие ощущения, другая интенсивность, табуированное удовольствие.",
+    "en": "Attention to her ass. Fingers, plugs, anal sex. Different sensations, different intensity, taboo pleasure."
+  },
+  "image_prompt": "man and woman on bed, she lying face down nude with arched back, he behind her with hand near her bottom, bedroom setting",
+  "intensity": 3,
+  "category": "anal",
+  "tags": [
+    "anal",
+    "anal_sex",
+    "plugs",
+    "backdoor"
+  ],
+  "elements": [
+    {
+      "id": "activities",
+      "label": {
+        "ru": "Активности",
+        "en": "Activities"
+      },
+      "tag_ref": "anal_acts_f",
+      "follow_ups": [
+        {
+          "id": "acts",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие активности?",
+            "en": "What activities?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "fingers",
+                "label": {
+                  "ru": "Пальцы",
+                  "en": "Fingers"
+                }
+              },
+              {
+                "id": "plug",
+                "label": {
+                  "ru": "Пробка",
+                  "en": "Plug"
+                }
+              },
+              {
+                "id": "beads",
+                "label": {
+                  "ru": "Бусы",
+                  "en": "Beads"
+                }
+              },
+              {
+                "id": "anal_sex",
+                "label": {
+                  "ru": "Анальный секс",
+                  "en": "Anal sex"
+                }
+              },
+              {
+                "id": "dp",
+                "label": {
+                  "ru": "DP (оба отверстия)",
+                  "en": "DP (both holes)"
+                }
+              },
+              {
+                "id": "gaping",
+                "label": {
+                  "ru": "Gaping",
+                  "en": "Gaping"
+                }
+              },
+              {
+                "id": "enema",
+                "label": {
+                  "ru": "Клизма (подготовка)",
+                  "en": "Enema (prep)"
+                }
+              },
+              {
+                "id": "atm",
+                "label": {
+                  "ru": "ATM (ass to mouth)",
+                  "en": "ATM (ass to mouth)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "plug_wear",
+      "label": {
+        "ru": "Ношение пробки",
+        "en": "Plug wearing"
+      },
+      "tag_ref": "plug_wearing",
+      "follow_ups": [
+        {
+          "id": "when",
+          "type": "multi_select",
+          "question": {
+            "ru": "Когда носить?",
+            "en": "When to wear?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "during_sex",
+                "label": {
+                  "ru": "Во время секса",
+                  "en": "During sex"
+                }
+              },
+              {
+                "id": "foreplay",
+                "label": {
+                  "ru": "Для подготовки",
+                  "en": "For preparation"
+                }
+              },
+              {
+                "id": "date",
+                "label": {
+                  "ru": "На свидании",
+                  "en": "On a date"
+                }
+              },
+              {
+                "id": "daily",
+                "label": {
+                  "ru": "Ежедневно (тренировка)",
+                  "en": "Daily (training)"
+                }
+              },
+              {
+                "id": "public",
+                "label": {
+                  "ru": "Публично (под одеждой)",
+                  "en": "Publicly (under clothes)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "intensity",
+      "label": {
+        "ru": "Интенсивность",
+        "en": "Intensity"
+      },
+      "tag_ref": "anal_intensity",
+      "follow_ups": [
+        {
+          "id": "level",
+          "type": "single_select",
+          "question": {
+            "ru": "Насколько интенсивно?",
+            "en": "How intense?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "gentle",
+                "label": {
+                  "ru": "Нежно, медленно",
+                  "en": "Gentle, slow"
+                }
+              },
+              {
+                "id": "medium",
+                "label": {
+                  "ru": "Средне",
+                  "en": "Medium"
+                }
+              },
+              {
+                "id": "rough",
+                "label": {
+                  "ru": "Жёстко",
+                  "en": "Rough"
+                }
+              },
+              {
+                "id": "extreme",
+                "label": {
+                  "ru": "Экстремально",
+                  "en": "Extreme"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "anal_appeal_f",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "taboo",
+                "label": {
+                  "ru": "Табуированность",
+                  "en": "Taboo aspect"
+                }
+              },
+              {
+                "id": "fullness",
+                "label": {
+                  "ru": "Ощущение наполненности",
+                  "en": "Feeling of fullness"
+                }
+              },
+              {
+                "id": "submission",
+                "label": {
+                  "ru": "Отдаться полностью",
+                  "en": "Total surrender"
+                }
+              },
+              {
+                "id": "his_pleasure",
+                "label": {
+                  "ru": "Его удовольствие",
+                  "en": "His pleasure"
+                }
+              },
+              {
+                "id": "intensity",
+                "label": {
+                  "ru": "Интенсивность ощущений",
+                  "en": "Sensation intensity"
+                }
+              },
+              {
+                "id": "dirty",
+                "label": {
+                  "ru": "Грязность",
+                  "en": "Dirtiness"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в анальных играх?",
+      "en": "What appeals about anal play?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "anal",
+      "anal_sex",
+      "plugs"
+    ],
+    "tests_secondary": [
+      "backdoor",
+      "taboo",
+      "fullness"
+    ]
+  },
+  "user_description": {
+    "ru": "Он ласкает и проникает пальцами или игрушкой в её попку.",
+    "en": "He caresses and penetrates her ass with fingers or toy."
+  }
+}

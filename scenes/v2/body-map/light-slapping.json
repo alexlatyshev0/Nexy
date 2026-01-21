@@ -1,0 +1,58 @@
+{
+  "id": "bodymap_light_slapping",
+  "slug": "light-slapping",
+  "version": 2,
+  "type": "body_map",
+  "order": 4,
+
+  "title": { "ru": "Лёгкие шлепки", "en": "Light Slapping" },
+  "subtitle": { "ru": "Карта игривых шлепков", "en": "Playful slap map" },
+  "description": {
+    "ru": "Отметь, где любишь легонько шлёпать и где нравится получать",
+    "en": "Mark where you like to playfully slap and where you like receiving"
+  },
+
+  "intensity": 2,
+  "action": "light_slap",
+  "tags": ["slapping", "playful", "impact_light"],
+
+  "passes": [
+    {
+      "id": "give",
+      "question": {
+        "ru": "Где ты любишь легонько шлёпать партнёра?",
+        "en": "Where do you like to lightly slap your partner?"
+      },
+      "instruction": {
+        "ru": "Нажми на зоны тела",
+        "en": "Tap on body zones"
+      }
+    },
+    {
+      "id": "receive",
+      "question": {
+        "ru": "Где тебе нравится, когда тебя легонько шлёпают?",
+        "en": "Where do you like being lightly slapped?"
+      },
+      "instruction": {
+        "ru": "Нажми на зоны тела",
+        "en": "Tap on body zones"
+      }
+    }
+  ],
+
+  "zones": {
+    "available": ["face", "buttocks", "thighs", "chest", "stomach", "genitals"],
+    "highlight_impact": true
+  },
+
+  "ai_context": {
+    "tests_primary": ["impact_light", "playful"],
+    "tests_secondary": ["spanking_curious", "teasing"],
+    "profile_signals": {
+      "if_buttocks": "spanking_interested",
+      "if_face": "face_slap_curious",
+      "if_thighs": "thigh_play"
+    }
+  }
+}

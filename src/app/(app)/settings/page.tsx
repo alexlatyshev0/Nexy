@@ -1,16 +1,52 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { LogOut, Trash2, User, Shield } from 'lucide-react';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { LogOut, Trash2, User, Shield, Languages } from 'lucide-react';
+import { getLocale, setLocale, t, type Locale } from '@/lib/locale';
+import type { Profile } from '@/lib/types';
 
 export default function SettingsPage() {
   const [loading, setLoading] = useState(false);
+  const [profile, setProfile] = useState<Profile | null>(null);
+  const [currentLocale, setCurrentLocale] = useState<Locale>('en');
   const router = useRouter();
   const supabase = createClient();
+
+  useEffect(() => {
+    async function fetchProfile() {
+      try {
+        const { data: { user } } = await supabase.auth.getUser();
+        if (!user) return;
+
+        const { data: profileData } = await supabase
+          .from('profiles')
+          .select('*')
+          .eq('id', user.id)
+          .single();
+
+        if (profileData) {
+          const profile = profileData as Profile;
+          setProfile(profile);
+          const locale = getLocale(profile);
+          setCurrentLocale(locale);
+        } else {
+          const locale = getLocale();
+          setCurrentLocale(locale);
+        }
+      } catch (error) {
+        console.error('Error fetching profile:', error);
+        const locale = getLocale();
+        setCurrentLocale(locale);
+      }
+    }
+
+    fetchProfile();
+  }, [supabase]);
 
   const handleLogout = async () => {
     setLoading(true);
@@ -19,13 +55,46 @@ export default function SettingsPage() {
   };
 
   const handleDeleteAccount = async () => {
-    const confirmed = window.confirm(
-      'Вы уверены, что хотите удалить аккаунт? Это действие необратимо.'
-    );
+    const confirmed = window.confirm(t('deleteAccountConfirm', currentLocale));
 
     if (confirmed) {
       // In production, this would call a server action to delete the user
-      alert('Для удаления аккаунта обратитесь в поддержку.');
+      alert(t('deleteAccountContact', currentLocale));
+    }
+  };
+
+  const handleLanguageChange = async (newLocale: Locale) => {
+    setLoading(true);
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) return;
+
+      // Update profile in database
+      const { error } = await supabase
+        .from('profiles')
+        .update({ language: newLocale })
+        .eq('id', user.id);
+
+      if (error) {
+        console.error('Error updating language:', error);
+        return;
+      }
+
+      // Update local state
+      setCurrentLocale(newLocale);
+      setLocale(newLocale);
+      
+      // Update profile state
+      if (profile) {
+        setProfile({ ...profile, language: newLocale });
+      }
+
+      // Reload page to apply language changes
+      window.location.reload();
+    } catch (error) {
+      console.error('Error changing language:', error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -36,10 +105,31 @@ export default function SettingsPage() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <User className="w-5 h-5" />
-            Аккаунт
+            {t('account', currentLocale)}
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
+          {/* Language selector */}
+          <div className="space-y-2">
+            <label className="text-sm font-medium flex items-center gap-2">
+              <Languages className="w-4 h-4" />
+              {t('language', currentLocale)}
+            </label>
+            <Select
+              value={currentLocale}
+              onValueChange={(value) => handleLanguageChange(value as Locale)}
+              disabled={loading}
+            >
+              <SelectTrigger className="w-full">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="en">English</SelectItem>
+                <SelectItem value="ru">Русский</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+
           <Button
             onClick={handleLogout}
             variant="outline"
@@ -47,7 +137,7 @@ export default function SettingsPage() {
             disabled={loading}
           >
             <LogOut className="w-4 h-4 mr-2" />
-            Выйти из аккаунта
+            {t('logOut', currentLocale)}
           </Button>
         </CardContent>
       </Card>
@@ -57,27 +147,27 @@ export default function SettingsPage() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Shield className="w-5 h-5" />
-            Приватность
+            {t('privacy', currentLocale)}
           </CardTitle>
           <CardDescription>
-            Ваши данные защищены и никогда не передаются третьим лицам
+            {t('privacyDescription', currentLocale)}
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="text-sm text-muted-foreground">
-            <p className="mb-2">Что мы храним:</p>
+            <p className="mb-2">{t('whatWeStore', currentLocale)}</p>
             <ul className="list-disc list-inside space-y-1">
-              <li>Email для авторизации</li>
-              <li>Ваши ответы на вопросы</li>
-              <li>Профиль предпочтений (анонимизированный)</li>
+              <li>{t('emailForAuth', currentLocale)}</li>
+              <li>{t('yourAnswers', currentLocale)}</li>
+              <li>{t('preferenceProfile', currentLocale)}</li>
             </ul>
           </div>
 
           <div className="text-sm text-muted-foreground">
-            <p className="mb-2">Партнёры видят только:</p>
+            <p className="mb-2">{t('partnersSeeOnly', currentLocale)}</p>
             <ul className="list-disc list-inside space-y-1">
-              <li>Совпадения (то, что хотите оба)</li>
-              <li>То, что вы НЕ хотите (если партнёр хочет)</li>
+              <li>{t('matches', currentLocale)}</li>
+              <li>{t('whatYouDontWant', currentLocale)}</li>
             </ul>
           </div>
         </CardContent>
@@ -88,7 +178,7 @@ export default function SettingsPage() {
         <CardHeader>
           <CardTitle className="text-red-600 flex items-center gap-2">
             <Trash2 className="w-5 h-5" />
-            Опасная зона
+            {t('dangerZone', currentLocale)}
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -97,10 +187,10 @@ export default function SettingsPage() {
             variant="destructive"
             className="w-full"
           >
-            Удалить аккаунт
+            {t('deleteAccount', currentLocale)}
           </Button>
           <p className="text-xs text-muted-foreground mt-2 text-center">
-            Это действие удалит все ваши данные без возможности восстановления
+            {t('deleteAccountWarning', currentLocale)}
           </p>
         </CardContent>
       </Card>

@@ -1,0 +1,59 @@
+{
+  "id": "bodymap_kissing",
+  "slug": "kissing",
+  "version": 2,
+  "type": "body_map",
+  "order": 1,
+
+  "title": { "ru": "Поцелуи", "en": "Kissing" },
+  "subtitle": { "ru": "Карта поцелуев", "en": "Kissing map" },
+  "description": {
+    "ru": "Отметь на теле, куда любишь целовать и где нравится получать поцелуи",
+    "en": "Mark on the body where you like to kiss and where you like being kissed"
+  },
+
+  "intensity": 1,
+  "action": "kiss",
+  "tags": ["kissing", "oral", "sensual", "body_worship"],
+
+  "passes": [
+    {
+      "id": "give",
+      "question": {
+        "ru": "Куда ты любишь целовать партнёра?",
+        "en": "Where do you like to kiss your partner?"
+      },
+      "instruction": {
+        "ru": "Нажми на зоны тела",
+        "en": "Tap on body zones"
+      }
+    },
+    {
+      "id": "receive",
+      "question": {
+        "ru": "Куда тебе нравится, когда тебя целуют?",
+        "en": "Where do you like being kissed?"
+      },
+      "instruction": {
+        "ru": "Нажми на зоны тела",
+        "en": "Tap on body zones"
+      }
+    }
+  ],
+
+  "zones": {
+    "available": ["lips", "neck", "ears", "chest", "nipples", "stomach", "inner_thighs", "back", "shoulders", "hands", "feet", "genitals", "buttocks"],
+    "highlight_erogenous": true
+  },
+
+  "ai_context": {
+    "tests_primary": ["kissing", "oral_attention"],
+    "tests_secondary": ["body_worship", "sensual_touch", "erogenous_zones"],
+    "profile_signals": {
+      "if_many_zones": "sensual_explorer",
+      "if_few_zones": "focused_preference",
+      "if_genitals": "direct_stimulation",
+      "if_neck_ears": "erogenous_sensitive"
+    }
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "version": 2,
+  "description": "Adaptive flow rules for Discovery 2 - centralized graph for question ordering",
+
+  "flow_modes": {
+    "offline": {
+      "enabled": true,
+      "description": "Rule-based scoring from pre-computed graph. Fast, free, default."
+    },
+    "runtime_ai": {
+      "enabled": false,
+      "is_paid_feature": true,
+      "description": "AI analyzes responses in background, calibrates next questions. Non-blocking.",
+      "config": {
+        "analyze_after_n_scenes": 5,
+        "recalibrate_every_n": 10,
+        "model": "gpt-4o-mini",
+        "fallback_to_offline": true
+      }
+    }
+  },
+
+  "tag_clusters": {
+    "_note": "AI-generated groupings of related tags. Liking one boosts others in cluster.",
+
+    "impact_play": {
+      "core": ["spanking", "slapping", "whipping", "caning"],
+      "related": ["discipline", "pain_pleasure", "marking"],
+      "progression": ["light-slapping", "spanking", "whipping", "caning"]
+    },
+    "primal": {
+      "core": ["primal", "biting", "scratching", "hair_pulling"],
+      "related": ["passionate", "rough", "cnc", "marking"],
+      "progression": ["biting", "scratching", "primal", "cnc"]
+    },
+    "bondage_restraint": {
+      "core": ["bondage", "restraints", "rope", "shibari"],
+      "related": ["helplessness", "control", "submission"],
+      "progression": ["blindfold", "light_restraints", "full_bondage", "shibari", "mummification"]
+    },
+    "power_exchange": {
+      "core": ["dominance", "submission", "control", "service"],
+      "related": ["collar", "pet_play", "discipline", "obedience"],
+      "progression": ["light_dominance", "collar", "pet_play", "full_power_exchange"]
+    },
+    "sensory": {
+      "core": ["blindfold", "ice", "wax", "feather", "electrostim"],
+      "related": ["teasing", "sensation_play", "anticipation"],
+      "progression": ["feather", "ice", "wax", "electrostim"]
+    },
+    "oral": {
+      "core": ["blowjob", "cunnilingus", "deepthroat", "facesitting"],
+      "related": ["oral_fixation", "worship", "service"],
+      "progression": ["oral_basic", "deepthroat", "facesitting", "oral_worship"]
+    },
+    "exhibitionism_voyeurism": {
+      "core": ["exhibitionism", "voyeurism", "public", "watching"],
+      "related": ["thrill", "risk", "exposure"],
+      "progression": ["private_show", "semi_public", "public_risk"]
+    },
+    "group": {
+      "core": ["threesome", "gangbang", "orgy", "swinging"],
+      "related": ["sharing", "watching", "multiple_partners"],
+      "progression": ["threesome_fantasy", "threesome", "moresome", "swinging"]
+    },
+    "fetish_clothing": {
+      "core": ["lingerie", "latex", "leather", "uniform"],
+      "related": ["dressing_up", "costume", "fetish_wear"],
+      "progression": ["lingerie", "costume", "latex_leather", "full_fetish"]
+    },
+    "romantic_sensual": {
+      "core": ["romantic", "sensual", "tender", "intimate"],
+      "related": ["massage", "aftercare", "connection", "eye_contact"],
+      "progression": ["vanilla", "sensual", "deeply_romantic"]
+    },
+    "degradation_humiliation": {
+      "core": ["degradation", "humiliation", "objectification"],
+      "related": ["verbal_abuse", "name_calling", "exposure"],
+      "progression": ["light_teasing", "dirty_talk", "degradation", "humiliation"]
+    },
+    "worship_service": {
+      "core": ["foot_worship", "body_worship", "service", "devotion"],
+      "related": ["adoration", "submission", "giving"],
+      "progression": ["appreciation", "worship", "devoted_service"]
+    }
+  },
+
+  "bodymap_to_tags": {
+    "_note": "Maps body map selections to tag boosts",
+
+    "kissing": {
+      "zones": {
+        "lips": { "boost": ["romantic", "passionate", "intimate"] },
+        "neck": { "boost": ["sensual", "vampire", "erogenous"] },
+        "ears": { "boost": ["whispering", "sensual", "teasing"] },
+        "chest": { "boost": ["intimate", "sensual"] },
+        "stomach": { "boost": ["teasing", "anticipation"] },
+        "inner_thighs": { "boost": ["teasing", "oral", "anticipation"] },
+        "genitals": { "boost": ["oral", "worship"] }
+      }
+    },
+    "licking": {
+      "zones": {
+        "neck": { "boost": ["sensual", "oral_fixation"] },
+        "nipples": { "boost": ["nipple_play", "sensual", "oral"] },
+        "stomach": { "boost": ["teasing", "body_worship"] },
+        "genitals": { "boost": ["oral", "cunnilingus", "blowjob"] },
+        "anus": { "boost": ["rimming", "anal_play", "taboo"] },
+        "feet": { "boost": ["foot_fetish", "worship"] }
+      }
+    },
+    "light_touch": {
+      "zones": {
+        "many_zones": { "boost": ["sensual", "touch_oriented", "massage"] },
+        "back_shoulders": { "boost": ["massage", "relaxation"] },
+        "inner_thighs": { "boost": ["teasing", "anticipation"] }
+      }
+    },
+    "light_slapping": {
+      "zones": {
+        "buttocks": { "boost": ["spanking", "impact_light"] },
+        "face": { "boost": ["face_slapping", "dominance", "degradation"] },
+        "thighs": { "boost": ["impact_light", "teasing"] },
+        "genitals": { "boost": ["genital_slapping", "pain_pleasure"] }
+      }
+    },
+    "biting": {
+      "zones": {
+        "neck": { "boost": ["primal", "vampire", "marking"] },
+        "shoulders": { "boost": ["primal", "passionate"] },
+        "back": { "boost": ["scratching", "primal", "passionate"] },
+        "many_zones": { "boost": ["primal", "marking", "pain_pleasure"] }
+      }
+    },
+    "spanking": {
+      "zones": {
+        "buttocks": { "boost": ["spanking", "impact_play", "discipline"] },
+        "thighs": { "boost": ["extended_impact", "pain_pleasure"] },
+        "many_zones": { "boost": ["heavy_impact", "pain_slut", "masochist"] }
+      },
+      "give_receive": {
+        "give_only": { "boost": ["dominant", "sadist"] },
+        "receive_only": { "boost": ["submissive", "masochist"] },
+        "both": { "boost": ["switch", "versatile"] }
+      }
+    }
+  },
+
+  "intensity_gates": {
+    "_note": "Scenes requiring minimum interest/intensity in prerequisite tags",
+
+    "whipping": {
+      "require_any": ["spanking >= 3", "impact_play >= 2"],
+      "skip_if": ["pain_pleasure == 0"]
+    },
+    "caning": {
+      "require_any": ["whipping >= 2", "heavy_impact >= 2"]
+    },
+    "needle_play": {
+      "require_all": ["edge_play >= 3", "pain_pleasure >= 3"],
+      "require_explicit_consent": true
+    },
+    "mummification": {
+      "require_any": ["bondage >= 4", "helplessness >= 3"]
+    },
+    "cnc": {
+      "require_all": ["rough >= 2", "trust_established"],
+      "show_consent_screen": true
+    },
+    "golden_shower": {
+      "require_any": ["body_fluids >= 2", "taboo >= 3"],
+      "skip_if": ["disgust_sensitive"]
+    },
+    "humiliation": {
+      "require_any": ["degradation >= 2", "submission >= 3"],
+      "skip_if": ["shame_sensitive"]
+    }
+  },
+
+  "scene_similarity": {
+    "_note": "Similarity scores between scenes (0-1). If user likes A, boost B.",
+
+    "spanking-m-to-f": {
+      "similar": ["whipping", "discipline", "otk-spanking"],
+      "scores": [0.8, 0.7, 0.9]
+    },
+    "bondage": {
+      "similar": ["restraints", "shibari", "helplessness"],
+      "scores": [0.9, 0.7, 0.8]
+    },
+    "primal": {
+      "similar": ["biting", "cnc", "rough-sex"],
+      "scores": [0.85, 0.7, 0.75]
+    },
+    "romantic-sex": {
+      "similar": ["sensual-massage", "aftercare", "intimate"],
+      "scores": [0.8, 0.7, 0.85]
+    }
+  },
+
+  "exploration_strategy": {
+    "_note": "Balance between exploiting known interests and exploring new areas",
+
+    "calibration_phase": {
+      "scenes_count": 15,
+      "strategy": "breadth_first",
+      "description": "Show diverse scenes to establish baseline interests"
+    },
+    "main_phase": {
+      "exploit_ratio": 0.7,
+      "explore_ratio": 0.3,
+      "description": "70% scenes from high-interest clusters, 30% discovery"
+    },
+    "category_coverage": {
+      "min_per_category": 1,
+      "description": "Ensure at least 1 scene from each category is shown"
+    }
+  },
+
+  "scoring_algorithm": {
+    "_note": "How to calculate predicted interest for a scene",
+
+    "formula": "base_score + tag_boosts + cluster_boosts + similarity_boosts - penalties",
+
+    "weights": {
+      "tag_match_primary": 2.0,
+      "tag_match_secondary": 1.0,
+      "cluster_membership": 1.5,
+      "similar_scene_liked": 1.2,
+      "intensity_mismatch_penalty": -0.5,
+      "already_seen_category_penalty": -0.3
+    }
+  },
+
+  "runtime_ai_prompts": {
+    "_note": "Prompts for runtime AI analysis (paid feature)",
+
+    "analyze_responses": {
+      "system": "You analyze user responses to intimate preference questions. Output JSON with predicted interest scores.",
+      "user_template": "User responses so far:\n{responses}\n\nPredict interest scores (0-5) for these remaining scenes:\n{remaining_scenes}\n\nConsider patterns, intensity preferences, and psychological connections between interests."
+    },
+    "calibrate_order": {
+      "system": "You optimize question ordering for engagement and discovery.",
+      "user_template": "Current interest profile:\n{profile}\n\nRemaining scenes:\n{scenes}\n\nReturn ordered list of scene IDs, balancing:\n1. High predicted interest (engagement)\n2. Unexplored areas (discovery)\n3. Intensity progression (comfort)"
+    }
+  }
+}

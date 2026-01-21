@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle2, Loader2 } from 'lucide-react';
-import type { FollowUp, Locale } from '@/lib/types';
-import { getFollowUpQuestion } from '@/lib/question-v3';
+import { t } from '@/lib/locale';
+import type { V2FollowUp, Locale } from '@/lib/types';
 
 interface FollowUpQuestionProps {
-  followUp: FollowUp;
+  followUp: V2FollowUp;
   locale?: Locale;
-  onSubmit: (optionId: string, signal: string) => Promise<void>;
+  onSubmit: (optionId: string) => Promise<void>;
   onSkip?: () => void;
 }
 
@@ -24,7 +24,8 @@ export function FollowUpQuestion({
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const { question, options } = getFollowUpQuestion(followUp, locale);
+  const question = followUp.question[locale] || followUp.question.en || followUp.question.ru || '';
+  const options = followUp.config.options || [];
 
   const handleSubmit = async () => {
     if (!selectedOption) return;
@@ -34,7 +35,7 @@ export function FollowUpQuestion({
 
     setLoading(true);
     try {
-      await onSubmit(option.id, option.signal);
+      await onSubmit(option.id);
     } finally {
       setLoading(false);
     }
@@ -69,7 +70,7 @@ export function FollowUpQuestion({
                   {selectedOption === option.id && (
                     <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
                   )}
-                  <span>{option.label}</span>
+                  <span>{option.label[locale] || option.label.en || option.label.ru || option.id}</span>
                 </span>
               </Button>
             ))}
@@ -83,7 +84,7 @@ export function FollowUpQuestion({
                 disabled={loading}
                 className="flex-1"
               >
-                {locale === 'ru' ? 'Пропустить' : 'Skip'}
+                {t('skip', locale || 'en')}
               </Button>
             )}
             <Button

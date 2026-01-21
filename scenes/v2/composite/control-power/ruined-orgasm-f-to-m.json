@@ -1,0 +1,98 @@
+{
+  "id": "ruined_orgasm_f_to_m",
+  "slug": "ruined-orgasm-f-to-m",
+  "version": 2,
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Испорченный оргазм (она портит ему)",
+    "en": "Ruined Orgasm (She Ruins His)"
+  },
+  "subtitle": {
+    "ru": "Она отпускает в момент кончания",
+    "en": "She lets go at the moment he cums"
+  },
+  "ai_description": {
+    "ru": "Она стимулирует его до момента оргазма, затем убирает руку. Оргазм происходит без стимуляции. Контроль, фрустрация.",
+    "en": "She stimulates him until orgasm, then removes hand. Orgasm happens without stimulation. Control, frustration."
+  },
+  "image_prompt": "woman's hand pulling away from man's erect cock at crucial moment, man lying on bed with tense expression, bedroom setting",
+  "intensity": 4,
+  "category": "control-power",
+  "tags": ["ruined_orgasm", "orgasm_control", "denial", "f_dom"],
+  "elements": [
+    {
+      "id": "method",
+      "label": { "ru": "Метод", "en": "Method" },
+      "tag_ref": "ruined_method",
+      "follow_ups": [
+        {
+          "id": "how",
+          "type": "multi_select",
+          "question": { "ru": "Как она портит?", "en": "How does she ruin?" },
+          "config": {
+            "options": [
+              { "id": "hands_off", "label": { "ru": "Убрать руки", "en": "Hands off" } },
+              { "id": "stop_moving", "label": { "ru": "Перестать двигаться", "en": "Stop moving" } },
+              { "id": "pull_out", "label": { "ru": "Слезть с него", "en": "Get off him" } },
+              { "id": "squeeze_base", "label": { "ru": "Сжать основание", "en": "Squeeze base" } },
+              { "id": "flick", "label": { "ru": "Щелчок по головке", "en": "Flick the head" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "aftermath",
+      "label": { "ru": "После", "en": "Aftermath" },
+      "tag_ref": "ruined_after",
+      "follow_ups": [
+        {
+          "id": "then",
+          "type": "multi_select",
+          "question": { "ru": "Что потом?", "en": "What then?" },
+          "config": {
+            "options": [
+              { "id": "continue_edge", "label": { "ru": "Продолжить эджинг", "en": "Continue edging" } },
+              { "id": "done", "label": { "ru": "Всё, на этом конец", "en": "Done, that's it" } },
+              { "id": "real_orgasm", "label": { "ru": "Потом настоящий оргазм", "en": "Then a real orgasm" } },
+              { "id": "multiple_ruined", "label": { "ru": "Несколько испорченных подряд", "en": "Multiple ruined in a row" } },
+              { "id": "eat_it", "label": { "ru": "Заставить съесть", "en": "Make him eat it" } }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": { "ru": "Что привлекает", "en": "What appeals" },
+      "tag_ref": "ruined_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": { "ru": "Что возбуждает?", "en": "What excites?" },
+          "config": {
+            "options": [
+              { "id": "her_control", "label": { "ru": "Её контроль", "en": "Her control" } },
+              { "id": "his_frustration", "label": { "ru": "Его фрустрация", "en": "His frustration" } },
+              { "id": "cruelty", "label": { "ru": "Жестокость", "en": "Cruelty" } },
+              { "id": "begging", "label": { "ru": "Его мольба", "en": "His begging" } }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "interest_scale",
+    "text": { "ru": "Она портит ему оргазм — убирает руку в момент кульминации?", "en": "She ruins his orgasm — removes hand at climax?" }
+  },
+  "ai_context": {
+    "tests_primary": ["ruined_orgasm", "f_dom"],
+    "tests_secondary": ["denial", "femdom", "orgasm_control"]
+  },
+  "user_description": {
+    "ru": "Она стимулирует его до оргазма, затем в момент кульминации убирает руку — оргазм происходит без стимуляции",
+    "en": "She stimulates him until orgasm, then removes hand at climax — orgasm happens without stimulation"
+  }
+}

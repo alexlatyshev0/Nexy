@@ -1,0 +1,240 @@
+{
+  "id": "clothing_preference",
+  "slug": "clothing-preference",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Одежда в сексе",
+    "en": "Clothing in Sex"
+  },
+  "subtitle": {
+    "ru": "Голые или в чём-то?",
+    "en": "Naked or wearing something?"
+  },
+  "ai_description": {
+    "ru": "Полностью голые или что-то на себе? Бельё, каблуки, латекс, униформа... Что возбуждает?",
+    "en": "Completely naked or wearing something? Lingerie, heels, latex, uniforms... What excites?"
+  },
+  "image_prompt": "man and woman on bed, woman wearing black lingerie and stockings, man shirtless, bedroom setting",
+  "intensity": 1,
+  "category": "baseline",
+  "priority": 12,
+  "tags": [
+    "baseline",
+    "clothing",
+    "lingerie",
+    "fetish_wear",
+    "naked"
+  ],
+  "elements": [
+    {
+      "id": "general",
+      "label": {
+        "ru": "Общее",
+        "en": "General"
+      },
+      "tag_ref": "clothing_general",
+      "follow_ups": [
+        {
+          "id": "preference",
+          "type": "single_select",
+          "question": {
+            "ru": "Во время секса...",
+            "en": "During sex..."
+          },
+          "config": {
+            "options": [
+              {
+                "id": "naked",
+                "label": {
+                  "ru": "Полностью голые",
+                  "en": "Completely naked"
+                }
+              },
+              {
+                "id": "some",
+                "label": {
+                  "ru": "Что-то иногда остаётся",
+                  "en": "Something sometimes stays"
+                }
+              },
+              {
+                "id": "lingerie",
+                "label": {
+                  "ru": "Бельё важно",
+                  "en": "Lingerie matters"
+                }
+              },
+              {
+                "id": "fetish",
+                "label": {
+                  "ru": "Специальная одежда возбуждает",
+                  "en": "Special clothing excites"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_stays",
+      "label": {
+        "ru": "Что остаётся",
+        "en": "What stays on"
+      },
+      "tag_ref": "clothing_stays",
+      "follow_ups": [
+        {
+          "id": "items",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает когда остаётся?",
+            "en": "What excites when it stays on?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "lingerie",
+                "label": {
+                  "ru": "Красивое бельё",
+                  "en": "Nice lingerie"
+                }
+              },
+              {
+                "id": "heels",
+                "label": {
+                  "ru": "Каблуки",
+                  "en": "Heels"
+                }
+              },
+              {
+                "id": "stockings",
+                "label": {
+                  "ru": "Чулки",
+                  "en": "Stockings"
+                }
+              },
+              {
+                "id": "shirt",
+                "label": {
+                  "ru": "Рубашка/футболка",
+                  "en": "Shirt/t-shirt"
+                }
+              },
+              {
+                "id": "skirt_up",
+                "label": {
+                  "ru": "Юбка задрана",
+                  "en": "Skirt pulled up"
+                }
+              },
+              {
+                "id": "panties_aside",
+                "label": {
+                  "ru": "Трусики сдвинуты",
+                  "en": "Panties pushed aside"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "special",
+      "label": {
+        "ru": "Специальное",
+        "en": "Special"
+      },
+      "tag_ref": "clothing_special",
+      "follow_ups": [
+        {
+          "id": "fetish_wear",
+          "type": "multi_select",
+          "question": {
+            "ru": "Специальная одежда?",
+            "en": "Special clothing?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "latex",
+                "label": {
+                  "ru": "Латекс",
+                  "en": "Latex"
+                }
+              },
+              {
+                "id": "leather",
+                "label": {
+                  "ru": "Кожа",
+                  "en": "Leather"
+                }
+              },
+              {
+                "id": "uniform",
+                "label": {
+                  "ru": "Униформа",
+                  "en": "Uniform"
+                }
+              },
+              {
+                "id": "cosplay",
+                "label": {
+                  "ru": "Косплей",
+                  "en": "Cosplay"
+                }
+              },
+              {
+                "id": "crossdress",
+                "label": {
+                  "ru": "Одежда другого пола",
+                  "en": "Cross-dressing"
+                }
+              },
+              {
+                "id": "mask",
+                "label": {
+                  "ru": "Маска",
+                  "en": "Mask"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Одежда в сексе — что важно?",
+      "en": "Clothing in sex — what matters?"
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "clothing",
+      "lingerie",
+      "fetish_wear"
+    ],
+    "tests_secondary": [
+      "latex",
+      "leather",
+      "uniform"
+    ],
+    "gates": {
+      "naked": [
+        "skip_clothing_scenes"
+      ],
+      "fetish": [
+        "all_clothing_scenes"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Пара занимается сексом. Она в белье, чулках или другой одежде. Он голый или частично одетый.",
+    "en": "A couple has sex. She wears lingerie, stockings or other clothing. He is naked or partially clothed."
+  }
+}

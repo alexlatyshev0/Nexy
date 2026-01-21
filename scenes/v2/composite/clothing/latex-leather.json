@@ -1,0 +1,283 @@
+{
+  "id": "latex_leather",
+  "slug": "latex-leather",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Латекс и кожа",
+    "en": "Latex & Leather"
+  },
+  "subtitle": {
+    "ru": "Фетиш материалов",
+    "en": "Material fetish"
+  },
+  "ai_description": {
+    "ru": "Возбуждение от материалов — латекса, кожи, винила, PVC. Вид, запах, ощущение на коже. От отдельных элементов до полного образа.",
+    "en": "Arousal from materials — latex, leather, vinyl, PVC. The look, smell, feel on skin. From single items to full outfits."
+  },
+  "image_prompt": "woman in black latex bodysuit, man in leather pants, dimly lit room with dark furniture",
+  "intensity": 3,
+  "category": "clothing",
+  "tags": [
+    "latex",
+    "leather",
+    "vinyl",
+    "material_fetish",
+    "clothing"
+  ],
+  "elements": [
+    {
+      "id": "material",
+      "label": {
+        "ru": "Материал",
+        "en": "Material"
+      },
+      "tag_ref": "fetish_material",
+      "follow_ups": [
+        {
+          "id": "which",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой материал?",
+            "en": "Which material?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "latex",
+                "label": {
+                  "ru": "Латекс",
+                  "en": "Latex"
+                }
+              },
+              {
+                "id": "leather",
+                "label": {
+                  "ru": "Кожа",
+                  "en": "Leather"
+                }
+              },
+              {
+                "id": "vinyl",
+                "label": {
+                  "ru": "Винил",
+                  "en": "Vinyl"
+                }
+              },
+              {
+                "id": "pvc",
+                "label": {
+                  "ru": "PVC",
+                  "en": "PVC"
+                }
+              },
+              {
+                "id": "rubber",
+                "label": {
+                  "ru": "Резина",
+                  "en": "Rubber"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "items",
+      "label": {
+        "ru": "Предметы",
+        "en": "Items"
+      },
+      "tag_ref": "fetish_items",
+      "follow_ups": [
+        {
+          "id": "what",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие предметы?",
+            "en": "What items?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "catsuit",
+                "label": {
+                  "ru": "Комбинезон",
+                  "en": "Catsuit"
+                }
+              },
+              {
+                "id": "corset",
+                "label": {
+                  "ru": "Корсет",
+                  "en": "Corset"
+                }
+              },
+              {
+                "id": "gloves",
+                "label": {
+                  "ru": "Перчатки",
+                  "en": "Gloves"
+                }
+              },
+              {
+                "id": "boots",
+                "label": {
+                  "ru": "Сапоги",
+                  "en": "Boots"
+                }
+              },
+              {
+                "id": "harness",
+                "label": {
+                  "ru": "Портупея",
+                  "en": "Harness"
+                }
+              },
+              {
+                "id": "mask",
+                "label": {
+                  "ru": "Маска",
+                  "en": "Mask"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "who_wears",
+      "label": {
+        "ru": "Кто носит",
+        "en": "Who wears"
+      },
+      "tag_ref": "fetish_wearer",
+      "follow_ups": [
+        {
+          "id": "who",
+          "type": "single_select",
+          "question": {
+            "ru": "Кто носит?",
+            "en": "Who wears?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "she",
+                "label": {
+                  "ru": "Она",
+                  "en": "She"
+                }
+              },
+              {
+                "id": "he",
+                "label": {
+                  "ru": "Он",
+                  "en": "He"
+                }
+              },
+              {
+                "id": "both",
+                "label": {
+                  "ru": "Оба",
+                  "en": "Both"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "fetish_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "look",
+                "label": {
+                  "ru": "Внешний вид",
+                  "en": "The look"
+                }
+              },
+              {
+                "id": "feel",
+                "label": {
+                  "ru": "Ощущения",
+                  "en": "The feel"
+                }
+              },
+              {
+                "id": "smell",
+                "label": {
+                  "ru": "Запах",
+                  "en": "The smell"
+                }
+              },
+              {
+                "id": "sound",
+                "label": {
+                  "ru": "Звук",
+                  "en": "The sound"
+                }
+              },
+              {
+                "id": "restriction",
+                "label": {
+                  "ru": "Ограничение",
+                  "en": "Restriction"
+                }
+              },
+              {
+                "id": "aesthetic",
+                "label": {
+                  "ru": "Эстетика",
+                  "en": "Aesthetic"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в латексе и коже?",
+      "en": "What appeals about latex and leather?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "latex",
+      "leather",
+      "vinyl",
+      "material_fetish"
+    ],
+    "tests_secondary": [
+      "clothing",
+      "texture",
+      "aesthetic"
+    ]
+  },
+  "user_description": {
+    "ru": "Партнёры носят одежду из латекса, кожи или винила",
+    "en": "Partners wear latex, leather or vinyl clothing"
+  }
+}

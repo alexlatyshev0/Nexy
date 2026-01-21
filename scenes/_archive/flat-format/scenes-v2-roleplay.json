@@ -1,0 +1,559 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Roleplay & Fantasy",
+  "note": "Fantasy scenarios and character roleplay. Testing interest in acting out different scenarios/personas.",
+  "scenes": [
+    {
+      "id": "scene_stranger_fantasy",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "man in suit approaching woman in cocktail dress at bar counter, they pretending to be strangers meeting for first time, flirting body language, dim bar lighting",
+
+      "user_description": {
+        "en": "They meet like strangers at a bar—pretending they've never touched. The thrill of the pickup, the 'first time' tension, all over again.",
+        "ru": "Ролевая игра — пара притворяется незнакомцами в баре. Флирт и ощущение первой встречи заново."
+      },
+
+      "ai_context": {
+        "description": "Stranger roleplay. Couple pretends to meet for first time. Anonymous encounter fantasy within safe relationship.",
+
+        "tests": {
+          "primary_kink": "stranger_fantasy",
+          "secondary_kinks": ["anonymous_encounter", "first_time_recreation", "pickup_roleplay"],
+          "power_dynamic": "equal",
+          "gender_role_aspect": "seduction game"
+        },
+
+        "question_angles": {
+          "as_player": "Would you enjoy pretending to be strangers with your partner?",
+          "emotional": "What does the 'stranger' fantasy provide?",
+          "fantasy": "Is the thrill of anonymity appealing?"
+        },
+
+        "emotional_range": {
+          "positive": ["exciting", "rekindling spark", "new again", "thrilling pretense"],
+          "negative": ["feels silly", "prefer being ourselves", "not interested"],
+          "curious": ["might be fun", "interesting idea"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["stranger_fantasy_enjoys", "roleplay_positive", "novelty_seeking"],
+          "if_negative": ["authentic_prefers", "roleplay_no"],
+          "if_curious": ["roleplay_curious"]
+        },
+
+        "correlations": {
+          "positive": ["roleplay_general", "variety_seeking", "fantasy_exploration"],
+          "negative": ["authentic_only", "roleplay_uncomfortable"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["feeling silly", "can't stay in character"],
+          "normalization": "Common couple fantasy—allows rekindling excitement and exploring seduction safely"
+        }
+      },
+
+      "participants": [
+        { "role": "stranger1", "gender": "any", "action": "approaches as stranger" },
+        { "role": "stranger2", "gender": "any", "action": "plays along with pickup" }
+      ],
+
+      "dimensions": ["stranger_roleplay", "anonymous", "fantasy", "seduction"],
+      "tags": ["stranger", "roleplay", "fantasy", "anonymous", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_boss_secretary",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "man in suit sitting behind desk as boss, woman in professional blouse and skirt standing before him as secretary, he looking up at her with authority, office with window behind",
+
+      "user_description": {
+        "en": "The boss behind the desk, the employee who stayed late. Power and position become part of the game. 'Close the door and lock it.'",
+        "ru": "Ролевая игра босс и подчинённый в офисе. Рабочая иерархия, запретный флирт."
+      },
+
+      "ai_context": {
+        "description": "Boss/employee office roleplay. Power dynamic through professional hierarchy. Testing workplace power fantasy.",
+
+        "tests": {
+          "primary_kink": "boss_employee_roleplay",
+          "secondary_kinks": ["office_fantasy", "power_hierarchy", "professional_taboo"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "professional power exchange"
+        },
+
+        "question_angles": {
+          "as_boss": "Would you enjoy playing the boss role?",
+          "as_employee": "Would you enjoy playing the subordinate role?",
+          "emotional": "What makes workplace power dynamics arousing?"
+        },
+
+        "emotional_range": {
+          "positive": ["power dynamic hot", "forbidden office thrill", "enjoy the hierarchy"],
+          "negative": ["too close to work", "uncomfortable", "not appealing"],
+          "curious": ["might try", "sounds interesting"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["office_roleplay_enjoys", "power_hierarchy_positive", "taboo_setting"],
+          "if_negative": ["work_separate", "roleplay_no"],
+          "if_curious": ["office_fantasy_curious"]
+        },
+
+        "correlations": {
+          "positive": ["power_exchange", "roleplay_general", "authority_play"],
+          "negative": ["work_sex_separate", "hierarchy_uncomfortable"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["too real", "workplace associations"],
+          "normalization": "Common fantasy—exploring power dynamics safely within consenting relationship"
+        }
+      },
+
+      "participants": [
+        { "role": "boss", "gender": "any", "action": "exercises professional power" },
+        { "role": "employee", "gender": "any", "action": "submits to authority" }
+      ],
+
+      "dimensions": ["office_roleplay", "boss", "power_hierarchy", "fantasy"],
+      "tags": ["office", "boss", "secretary", "roleplay", "power"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_teacher_student",
+      "priority": 4,
+      "intensity": 3,
+
+      "generation_prompt": "woman dressed as teacher with glasses at desk, man as adult student sitting in chair before her looking nervous, classroom with chalkboard behind",
+
+      "user_description": {
+        "en": "The teacher with all the power, the student who needs to pass. 'I think we can work something out.' Academic authority becomes erotic leverage.",
+        "ru": "Ролевая игра учитель и студент. Академический авторитет и динамика власти."
+      },
+
+      "ai_context": {
+        "description": "Teacher/student roleplay (adults only). Authority and forbidden dynamic. Educational power exchange.",
+
+        "tests": {
+          "primary_kink": "teacher_student_roleplay",
+          "secondary_kinks": ["authority_figure", "forbidden_dynamic", "academic_power"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "educational authority exchange"
+        },
+
+        "question_angles": {
+          "as_teacher": "Would you enjoy playing the teacher/professor role?",
+          "as_student": "Would you enjoy playing the eager student role?",
+          "emotional": "What makes the teacher-student dynamic appealing?"
+        },
+
+        "emotional_range": {
+          "positive": ["authority is hot", "forbidden thrill", "power exchange"],
+          "negative": ["uncomfortable associations", "not for me"],
+          "curious": ["might explore", "with right framing"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["teacher_roleplay_enjoys", "authority_fantasy_positive"],
+          "if_negative": ["education_sex_separate"],
+          "if_curious": ["teacher_curious"]
+        },
+
+        "correlations": {
+          "positive": ["authority_play", "power_exchange", "roleplay_general"],
+          "negative": ["roleplay_no", "authority_uncomfortable"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["associations with real education", "power imbalance concerns"],
+          "normalization": "Adult fantasy about authority dynamics—separate from real educational contexts"
+        }
+      },
+
+      "participants": [
+        { "role": "teacher", "gender": "any", "action": "exercises academic authority" },
+        { "role": "student", "gender": "any", "action": "seeks approval/grades" }
+      ],
+
+      "dimensions": ["teacher_student", "authority", "forbidden", "roleplay"],
+      "tags": ["teacher", "student", "roleplay", "authority", "forbidden"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_medical_roleplay",
+      "priority": 4,
+      "intensity": 4,
+
+      "generation_prompt": "woman in white doctor coat with stethoscope, man as patient sitting on examination table in hospital gown, she approaching him for examination, medical office setting",
+
+      "user_description": {
+        "en": "'I need to do a thorough examination.' The clinical setting, the vulnerability of being a patient, the authority of the doctor—all becoming something else entirely.",
+        "ru": "Ролевая игра врач и пациент. Медицинский осмотр как эротическая игра."
+      },
+
+      "ai_context": {
+        "description": "Medical/doctor roleplay. Clinical setting as erotic scenario. Examination as foreplay. Professional authority.",
+
+        "tests": {
+          "primary_kink": "medical_roleplay",
+          "secondary_kinks": ["doctor_patient", "examination", "clinical_erotic", "vulnerability"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "medical authority dynamic"
+        },
+
+        "question_angles": {
+          "as_doctor": "Would you enjoy playing the medical professional?",
+          "as_patient": "Would you enjoy being 'examined'?",
+          "emotional": "What makes medical scenarios arousing?"
+        },
+
+        "emotional_range": {
+          "positive": ["examination is hot", "vulnerability exciting", "clinical detachment"],
+          "negative": ["too clinical", "medical associations", "not arousing"],
+          "curious": ["intriguing", "might try"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["medical_roleplay_enjoys", "examination_fantasy"],
+          "if_negative": ["medical_sex_separate"],
+          "if_curious": ["medical_curious"]
+        },
+
+        "correlations": {
+          "positive": ["authority_play", "vulnerability_play", "roleplay_elaborate"],
+          "negative": ["medical_trauma", "clinical_turnoff"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["real medical experiences", "clinical associations"],
+          "normalization": "Common fantasy exploring vulnerability and professional authority in safe context"
+        }
+      },
+
+      "participants": [
+        { "role": "medical", "gender": "any", "action": "conducts 'examination'" },
+        { "role": "patient", "gender": "any", "action": "submits to examination" }
+      ],
+
+      "dimensions": ["medical_roleplay", "doctor", "examination", "authority"],
+      "tags": ["medical", "doctor", "nurse", "examination", "roleplay"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_uniform_fetish",
+      "priority": 3,
+      "intensity": 2,
+
+      "generation_prompt": "woman in sexy nurse uniform with short skirt and heels, man watching her with obvious arousal, she posing in the uniform, bedroom",
+
+      "user_description": {
+        "en": "The uniform transforms them. Nurse, officer, soldier, maid—the costume becoming part of the fantasy, the role becoming real.",
+        "ru": "Партнёр в сексуальной униформе — медсестра, полицейский, горничная. Костюм как возбуждающий элемент."
+      },
+
+      "ai_context": {
+        "description": "Uniform/costume fetish. Clothing as arousal trigger. Professional or service uniforms as kink.",
+
+        "tests": {
+          "primary_kink": "uniform_fetish",
+          "secondary_kinks": ["costume_play", "visual_kink", "role_clothing"],
+          "power_dynamic": "varies",
+          "gender_role_aspect": "role signified through clothing"
+        },
+
+        "question_angles": {
+          "as_wearer": "Do you enjoy wearing costumes/uniforms for your partner?",
+          "as_viewer": "Are you turned on by your partner in uniforms?",
+          "emotional": "What makes uniforms arousing?"
+        },
+
+        "emotional_range": {
+          "positive": ["uniforms are hot", "love dressing up", "visual turn-on"],
+          "negative": ["feels silly", "costumes don't do it for me"],
+          "curious": ["might try", "certain uniforms maybe"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["uniform_fetish_positive", "costume_enjoys", "visual_arousal"],
+          "if_negative": ["costumes_no"],
+          "if_curious": ["uniform_curious"]
+        },
+
+        "correlations": {
+          "positive": ["roleplay_general", "visual_kink", "lingerie_fetish"],
+          "negative": ["authentic_only", "costume_uncomfortable"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["feeling silly in costume"],
+          "normalization": "Very common kink—visual arousal from uniforms is widespread"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "specifics",
+        "question": {
+          "en": "Which uniforms appeal most?",
+          "ru": "Какие униформы привлекают больше?"
+        },
+        "options": [
+          { "id": "nurse", "label": { "en": "Nurse/medical", "ru": "Медсестра/медицинская" }, "signal": "nurse_uniform" },
+          { "id": "police", "label": { "en": "Police/military", "ru": "Полиция/военная" }, "signal": "authority_uniform" },
+          { "id": "maid", "label": { "en": "Maid/service", "ru": "Горничная/сервис" }, "signal": "service_uniform" },
+          { "id": "schoolgirl", "label": { "en": "School uniform (adult)", "ru": "Школьная форма (взрослые)" }, "signal": "schoolgirl_uniform" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "uniformed", "gender": "any", "action": "wears costume/uniform" },
+        { "role": "admiring", "gender": "any", "action": "aroused by uniform" }
+      ],
+
+      "dimensions": ["uniform", "costume", "visual_kink", "roleplay"],
+      "tags": ["uniform", "costume", "fetish", "visual", "roleplay"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_maid_service",
+      "priority": 4,
+      "intensity": 3,
+
+      "generation_prompt": "woman in French maid outfit with frilly apron bending over dusting furniture, man in robe sitting in chair watching her serve, living room setting",
+
+      "user_description": {
+        "en": "The maid outfit, the feather duster, the 'Yes, sir/ma'am.' Service becomes submission, domestic role becomes erotic play.",
+        "ru": "Ролевая игра горничной. Обслуживание и подчинение в сексуальном костюме."
+      },
+
+      "ai_context": {
+        "description": "Maid/servant roleplay. Service submission. Domestic servitude as erotic dynamic.",
+
+        "tests": {
+          "primary_kink": "maid_roleplay",
+          "secondary_kinks": ["service_submission", "domestic_servitude", "uniform"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "servant dynamic"
+        },
+
+        "question_angles": {
+          "as_maid": "Would you enjoy playing the maid/servant role?",
+          "as_served": "Would you enjoy being served this way?",
+          "emotional": "What makes service roleplay appealing?"
+        },
+
+        "emotional_range": {
+          "positive": ["service is fulfilling", "love the dynamic", "costume is fun"],
+          "negative": ["demeaning", "not my thing"],
+          "curious": ["might try", "playfully"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["maid_roleplay_enjoys", "service_submission_positive"],
+          "if_negative": ["service_no", "demeaning"],
+          "if_curious": ["service_roleplay_curious"]
+        },
+
+        "correlations": {
+          "positive": ["service_oriented", "submission_general", "uniform_fetish"],
+          "negative": ["equality_always", "service_uncomfortable"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["demeaning", "class implications"],
+          "normalization": "Playful power exchange—service can be deeply satisfying for those who enjoy giving"
+        }
+      },
+
+      "participants": [
+        { "role": "maid", "gender": "any", "action": "serves in costume" },
+        { "role": "served", "gender": "any", "action": "receives service" }
+      ],
+
+      "dimensions": ["maid_roleplay", "service", "uniform", "submission"],
+      "tags": ["maid", "service", "roleplay", "uniform", "submission"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_pet_play",
+      "priority": 5,
+      "intensity": 4,
+
+      "generation_prompt": "woman wearing cat ears headband and collar on all fours on bed, man sitting beside her petting her head, she in pet posture, bedroom",
+
+      "user_description": {
+        "en": "Collar on, ears in place, mind slipping into pet space. They become the kitten, the puppy—owned, cared for, commanded.",
+        "ru": "Пет-плей — один из партнёров в роли котёнка или щенка. Ошейник, ушки, подчинение хозяину."
+      },
+
+      "ai_context": {
+        "description": "Pet play - human pet roleplay. Puppy/kitten play. Owner/pet dynamic. Non-human headspace.",
+
+        "tests": {
+          "primary_kink": "pet_play",
+          "secondary_kinks": ["puppy_play", "kitten_play", "owner_dynamic", "non_human_roleplay"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "pet/owner exchange"
+        },
+
+        "question_angles": {
+          "as_pet": "Would you enjoy being someone's 'pet'?",
+          "as_owner": "Would you enjoy having a 'pet'?",
+          "emotional": "What does pet headspace provide?"
+        },
+
+        "emotional_range": {
+          "positive": ["freeing", "primal", "deeply submissive", "cared for"],
+          "negative": ["too weird", "not interested", "dehumanizing"],
+          "curious": ["intriguing", "might explore"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["pet_play_positive", "primal_play", "deep_submission"],
+          "if_negative": ["pet_play_hard_limit", "human_only"],
+          "if_curious": ["pet_play_curious"]
+        },
+
+        "correlations": {
+          "positive": ["collar_play", "ownership", "primal", "submission_deep"],
+          "negative": ["traditional_only", "human_roles_only"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["weird", "dehumanizing", "misunderstood"],
+          "normalization": "Pet play is about headspace and care—many find it deeply relaxing and connecting"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "specifics",
+        "question": {
+          "en": "What type of pet play interests you?",
+          "ru": "Какой тип пет-плея интересует?"
+        },
+        "options": [
+          { "id": "kitten", "label": { "en": "Kitten play", "ru": "Котёнок" }, "signal": "kitten_play" },
+          { "id": "puppy", "label": { "en": "Puppy play", "ru": "Щенок" }, "signal": "puppy_play" },
+          { "id": "owner", "label": { "en": "Being the owner", "ru": "Быть хозяином" }, "signal": "pet_owner" },
+          { "id": "accessories", "label": { "en": "Just accessories (tail, ears)", "ru": "Только аксессуары (хвост, ушки)" }, "signal": "pet_accessories_only" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "pet", "gender": "any", "action": "acts as pet" },
+        { "role": "owner", "gender": "any", "action": "owns and commands pet" }
+      ],
+
+      "dimensions": ["pet_play", "kitten", "puppy", "owner", "roleplay"],
+      "tags": ["pet_play", "puppy", "kitten", "owner", "BDSM"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_age_play_daddy",
+      "priority": 5,
+      "intensity": 4,
+
+      "generation_prompt": "older man sitting in armchair with nurturing protective posture, woman sitting at his feet looking up at him adoringly with vulnerable expression, she wearing cute pajamas, cozy living room",
+
+      "user_description": {
+        "en": "'Yes Daddy/Mommy.' The dynamic of care and control, protection and surrender. Nurturing dominance meets playful submission.",
+        "ru": "Дэдди/мамми динамика. Заботливое доминирование и игривое подчинение между взрослыми."
+      },
+
+      "ai_context": {
+        "description": "DD/lg, MD/lb - Daddy Dom / Little dynamic. Age regression headspace (not actual ages). Nurturing dominance.",
+
+        "tests": {
+          "primary_kink": "dd_lg_dynamic",
+          "secondary_kinks": ["daddy_dom", "mommy_dom", "little_space", "nurturing_dominance"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "caregiver/little dynamic"
+        },
+
+        "question_angles": {
+          "as_caregiver": "Would you enjoy the Daddy/Mommy role?",
+          "as_little": "Would you enjoy being cared for as a 'little'?",
+          "emotional": "What does this nurturing dynamic provide?"
+        },
+
+        "emotional_range": {
+          "positive": ["deeply nurturing", "safe surrender", "care and control"],
+          "negative": ["uncomfortable associations", "not for me", "hard limit"],
+          "curious": ["intriguing dynamic", "might explore"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["dd_lg_positive", "nurturing_dom_enjoys", "little_space_positive"],
+          "if_negative": ["dd_lg_hard_limit", "age_play_no"],
+          "if_curious": ["dd_lg_curious"]
+        },
+
+        "correlations": {
+          "positive": ["power_exchange_nurturing", "care_giving", "protective_dynamic"],
+          "negative": ["age_play_uncomfortable", "traditional_only"]
+        },
+
+        "taboo_context": {
+          "level": 5,
+          "common_concerns": ["misunderstanding of dynamic", "associations", "judgment"],
+          "normalization": "About headspace and nurturing power exchange between consenting adults—not related to actual ages"
+        }
+      },
+
+      "participants": [
+        { "role": "caregiver", "gender": "any", "action": "nurturing dominant" },
+        { "role": "little", "gender": "any", "action": "submissive in little space" }
+      ],
+
+      "dimensions": ["dd_lg", "nurturing", "power_exchange", "age_play"],
+      "tags": ["daddy_dom", "mommy_dom", "little", "age_play", "nurturing"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    }
+  ],
+
+  "commented_scenes": [
+    {
+      "original_ids": ["scene_201", "scene_202", "scene_203", "scene_204", "scene_205", "scene_206"],
+      "reason": "Multiple specific roleplay variants - keeping representative scenarios",
+      "recommendation": "Use follow-up for specific fantasy preferences within broader categories"
+    }
+  ]
+}

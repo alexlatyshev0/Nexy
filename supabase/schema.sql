@@ -1,4 +1,8 @@
--- Intimate Discovery Database Schema
+-- ⚠️ DEPRECATED: This file is OUTDATED and does not reflect V2 structure
+-- Use migrations/005_scenes_v2_composite.sql and migrations/011_finalize_v2.sql instead
+-- See docs/DATABASE_SCHEMA_V2.md for current schema documentation
+--
+-- Intimate Discovery Database Schema (OLD V1/V4 - DO NOT USE)
 -- Run this in your Supabase SQL Editor
 
 -- ============================================

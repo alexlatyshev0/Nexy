@@ -1,0 +1,419 @@
+{
+  "id": "deepthroat",
+  "slug": "deepthroat",
+  "version": 2,
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Глубокий минет",
+    "en": "Deepthroat"
+  },
+  "ai_description": {
+    "ru": "Она берёт его полностью, до самого горла. Слёзы на глазах, слюна течёт, но она не останавливается. Полное принятие, полное подчинение.",
+    "en": "She takes him completely, to the throat. Tears in eyes, saliva flowing, but she doesn't stop. Complete acceptance, complete submission."
+  },
+  "image_prompt": "woman taking man deep in throat, his hands in her hair, both nude, close angle, bedroom",
+  "intensity": 4,
+  "category": "oral",
+  "tags": [
+    "deepthroat",
+    "gagging",
+    "throat",
+    "oral_extreme",
+    "submission",
+    "sloppy"
+  ],
+  "elements": [
+    {
+      "id": "depth",
+      "label": {
+        "ru": "Глубина",
+        "en": "Depth"
+      },
+      "tag_ref": "throat_depth",
+      "follow_ups": [
+        {
+          "id": "how_deep",
+          "type": "scale",
+          "question": {
+            "ru": "Насколько глубоко?",
+            "en": "How deep?"
+          },
+          "config": {
+            "min_label": {
+              "ru": "До горла",
+              "en": "To throat"
+            },
+            "max_label": {
+              "ru": "Полностью, нос в лобок",
+              "en": "Fully, nose to pubic"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "gagging",
+      "label": {
+        "ru": "Рвотный рефлекс",
+        "en": "Gagging"
+      },
+      "tag_ref": "gagging",
+      "follow_ups": [
+        {
+          "id": "gag_attitude",
+          "type": "single_select",
+          "question": {
+            "ru": "Отношение к gagging?",
+            "en": "Attitude to gagging?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "avoid",
+                "label": {
+                  "ru": "Избегать",
+                  "en": "Avoid"
+                }
+              },
+              {
+                "id": "ok",
+                "label": {
+                  "ru": "Нормально если случается",
+                  "en": "Ok if it happens"
+                }
+              },
+              {
+                "id": "enjoy",
+                "label": {
+                  "ru": "Нравится",
+                  "en": "Enjoy it"
+                }
+              },
+              {
+                "id": "seek",
+                "label": {
+                  "ru": "Специально вызывать",
+                  "en": "Deliberately cause it"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "label": {
+        "ru": "Кто контролирует?",
+        "en": "Who controls?"
+      },
+      "tag_ref": "oral_control",
+      "follow_ups": [
+        {
+          "id": "who_controls",
+          "type": "single_select",
+          "question": {
+            "ru": "Кто задаёт темп?",
+            "en": "Who sets the pace?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "she",
+                "label": {
+                  "ru": "Она сама (её темп)",
+                  "en": "She does (her pace)"
+                }
+              },
+              {
+                "id": "he_gentle",
+                "label": {
+                  "ru": "Он мягко направляет",
+                  "en": "He gently guides"
+                }
+              },
+              {
+                "id": "he_control",
+                "label": {
+                  "ru": "Он контролирует её голову",
+                  "en": "He controls her head"
+                }
+              },
+              {
+                "id": "facefuck",
+                "label": {
+                  "ru": "Он использует её рот",
+                  "en": "He uses her mouth"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "messiness",
+      "label": {
+        "ru": "Грязность",
+        "en": "Messiness"
+      },
+      "tag_ref": "sloppy_oral",
+      "follow_ups": [
+        {
+          "id": "mess_level",
+          "type": "multi_select",
+          "question": {
+            "ru": "Насколько грязно?",
+            "en": "How messy?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "saliva",
+                "label": {
+                  "ru": "Много слюны",
+                  "en": "Lots of saliva"
+                }
+              },
+              {
+                "id": "tears",
+                "label": {
+                  "ru": "Слёзы",
+                  "en": "Tears"
+                }
+              },
+              {
+                "id": "mascara",
+                "label": {
+                  "ru": "Потёкшая тушь",
+                  "en": "Running mascara"
+                }
+              },
+              {
+                "id": "drool",
+                "label": {
+                  "ru": "Слюна капает",
+                  "en": "Drool dripping"
+                }
+              },
+              {
+                "id": "clean",
+                "label": {
+                  "ru": "Чисто",
+                  "en": "Clean"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "breathing",
+      "label": {
+        "ru": "Дыхание",
+        "en": "Breathing"
+      },
+      "tag_ref": "breath_control",
+      "follow_ups": [
+        {
+          "id": "breath_control",
+          "type": "multi_select",
+          "question": {
+            "ru": "Контроль дыхания?",
+            "en": "Breath control?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "free",
+                "label": {
+                  "ru": "Свободно дышать",
+                  "en": "Breathe freely"
+                }
+              },
+              {
+                "id": "hold_short",
+                "label": {
+                  "ru": "Короткие задержки",
+                  "en": "Short holds"
+                }
+              },
+              {
+                "id": "hold_long",
+                "label": {
+                  "ru": "Долгие задержки",
+                  "en": "Long holds"
+                }
+              },
+              {
+                "id": "he_controls",
+                "label": {
+                  "ru": "Он контролирует когда дышать",
+                  "en": "He controls when to breathe"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "deepthroat_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "submission",
+                "label": {
+                  "ru": "Полное подчинение",
+                  "en": "Complete submission"
+                }
+              },
+              {
+                "id": "skill",
+                "label": {
+                  "ru": "Показать умение",
+                  "en": "Show skill"
+                }
+              },
+              {
+                "id": "his_pleasure",
+                "label": {
+                  "ru": "Его удовольствие",
+                  "en": "His pleasure"
+                }
+              },
+              {
+                "id": "challenge",
+                "label": {
+                  "ru": "Челлендж, преодоление",
+                  "en": "Challenge, overcoming"
+                }
+              },
+              {
+                "id": "vulnerability",
+                "label": {
+                  "ru": "Уязвимость",
+                  "en": "Vulnerability"
+                }
+              },
+              {
+                "id": "being_used",
+                "label": {
+                  "ru": "Быть использованной",
+                  "en": "Being used"
+                }
+              },
+              {
+                "id": "worship",
+                "label": {
+                  "ru": "Поклонение его члену",
+                  "en": "Cock worship"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "training",
+      "label": {
+        "ru": "Тренировка",
+        "en": "Training"
+      },
+      "tag_ref": "throat_training",
+      "follow_ups": [
+        {
+          "id": "training_interest",
+          "type": "single_select",
+          "question": {
+            "ru": "Тренировать горло?",
+            "en": "Train throat?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "already",
+                "label": {
+                  "ru": "Уже умею",
+                  "en": "Already skilled"
+                }
+              },
+              {
+                "id": "learning",
+                "label": {
+                  "ru": "Учусь",
+                  "en": "Learning"
+                }
+              },
+              {
+                "id": "want",
+                "label": {
+                  "ru": "Хочу научиться",
+                  "en": "Want to learn"
+                }
+              },
+              {
+                "id": "not_interested",
+                "label": {
+                  "ru": "Не интересует",
+                  "en": "Not interested"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в глубоком минете?",
+      "en": "What appeals about deepthroat?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "deepthroat",
+      "throat_fucking",
+      "oral_extreme"
+    ],
+    "tests_secondary": [
+      "gagging",
+      "submission",
+      "skill"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys challenge",
+        "submissive",
+        "skilled"
+      ],
+      "negative": [
+        "gag reflex issues",
+        "not comfortable",
+        "prefers gentle"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Она берёт его член глубоко в горло. До упора, до слёз, до рвотного рефлекса.",
+    "en": "She takes his cock deep in throat. All the way, to tears, to gag reflex."
+  }
+}

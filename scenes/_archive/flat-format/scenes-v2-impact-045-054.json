@@ -1,0 +1,638 @@
+{
+  "$schema": "../scene-schema-v2.md",
+  "version": 2,
+  "category": "Impact Play & Pain",
+  "scenes": [
+    {
+      "id": "scene_045",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "woman in lace bra with panties at thighs bent over lap of man in dark pants and shirt sitting on bed edge, his right hand raised to spank her bare pink bottom, his left hand on her lower back, her face showing surprise and pleasure, soft bedroom lighting",
+
+      "user_description": {
+        "en": "She's bent over his lap, skin already pink. His hand is raised for another spank. Her face shows that perfect mix of surprise and pleasure.",
+        "ru": "Она лежит у него на коленях, он шлёпает её по попе. Кожа уже порозовела."
+      },
+
+      "ai_context": {
+        "description": "Over-the-knee spanking. Male spanks female. Classic discipline position. Playful to moderate intensity. Hand spanking.",
+
+        "tests": {
+          "primary_kink": "spanking_receiving",
+          "secondary_kinks": ["OTK_position", "discipline", "pain_pleasure", "vulnerability"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "male disciplines female"
+        },
+
+        "question_angles": {
+          "as_receiver": "Would you enjoy being spanked like this?",
+          "as_giver": "Would you enjoy spanking your partner?",
+          "emotional": "What feelings does erotic spanking evoke?"
+        },
+
+        "emotional_range": {
+          "positive": ["exciting", "arousing pain", "surrender", "trust", "cathartic"],
+          "negative": ["too painful", "feels wrong", "uncomfortable", "triggers"],
+          "curious": ["intrigued", "light spanks maybe", "with right person"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["spanking_enjoys", "impact_play_positive", "pain_pleasure_likes"],
+          "if_negative": ["spanking_hard_limit", "pain_averse"],
+          "if_curious": ["impact_curious", "light_spanking_open"]
+        },
+
+        "correlations": {
+          "positive": ["dominance_submission", "bondage_curious", "rough_sex"],
+          "negative": ["vanilla_only", "gentle_only"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["too painful", "feels abusive", "childhood associations"],
+          "normalization": "Consensual erotic spanking is common; the mix of pain and pleasure releases endorphins"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "intensity",
+        "question": {
+          "en": "What intensity appeals to you?",
+          "ru": "Какая интенсивность привлекает?"
+        },
+        "options": [
+          { "id": "light", "label": { "en": "Light, playful taps", "ru": "Лёгкие, игривые шлепки" }, "signal": "spanking_light" },
+          { "id": "medium", "label": { "en": "Medium, feeling it", "ru": "Средние, ощутимые" }, "signal": "spanking_medium" },
+          { "id": "hard", "label": { "en": "Hard, leaving marks", "ru": "Сильные, со следами" }, "signal": "spanking_hard" },
+          { "id": "building", "label": { "en": "Start light, build up", "ru": "Начать легко, нарастать" }, "signal": "spanking_building" }
+        ],
+        "multi_select": false
+      },
+
+      "participants": [
+        { "role": "spanking", "gender": "male", "action": "spanks, disciplines" },
+        { "role": "spanked", "gender": "female", "action": "over his lap, receives" }
+      ],
+
+      "dimensions": ["spanking", "OTK", "discipline", "impact_play"],
+      "tags": ["spanking", "otk", "playful", "bottom", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_046",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "naked man bent over lap of woman in black corset sitting on chair, his pink bottom exposed from spanks, her right hand raised having just delivered spank, her left hand on his upper back, she smiling with satisfaction, dark bedroom with dramatic lighting",
+
+      "user_description": {
+        "en": "He's bent over her lap, vulnerable. She delivers another spank, watching the pink bloom on his skin with satisfaction.",
+        "ru": "Он лежит у неё на коленях, она шлёпает его по попе. Роли поменялись."
+      },
+
+      "ai_context": {
+        "description": "Over-the-knee spanking. Female spanks male. Role reversal. Female dominance in classic discipline position.",
+
+        "tests": {
+          "primary_kink": "spanking_femdom",
+          "secondary_kinks": ["role_reversal", "male_receiving_pain", "female_dominance"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "female disciplines male"
+        },
+
+        "question_angles": {
+          "as_receiver": "Men: Would you enjoy being spanked by a woman?",
+          "as_giver": "Women: Would you enjoy spanking a man?",
+          "emotional": "How does female-to-male spanking feel different?"
+        },
+
+        "emotional_range": {
+          "positive": ["exciting reversal", "freeing", "trust", "her power is hot"],
+          "negative": ["emasculating", "uncomfortable", "prefer traditional"],
+          "curious": ["might try", "never thought about it"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["femdom_spanking_enjoys", "male_receiving_pain_ok", "role_reversal_likes"],
+          "if_negative": ["traditional_roles_only", "receiving_pain_hard_limit"],
+          "if_curious": ["femdom_curious", "might_try"]
+        },
+
+        "correlations": {
+          "positive": ["femdom_general", "submission_male", "pegging_curious"],
+          "negative": ["always_dominant", "male_leads_only"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["masculinity", "social expectations"],
+          "normalization": "Role reversal in impact play is common—many men find liberation in surrendering control"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "intensity",
+        "question": {
+          "en": "What intensity appeals to you?",
+          "ru": "Какая интенсивность привлекает?"
+        },
+        "options": [
+          { "id": "light", "label": { "en": "Light, playful", "ru": "Лёгкие, игривые" }, "signal": "spanking_light" },
+          { "id": "medium", "label": { "en": "Medium, feeling it", "ru": "Средние, ощутимые" }, "signal": "spanking_medium" },
+          { "id": "hard", "label": { "en": "Hard, marking", "ru": "Сильные, со следами" }, "signal": "spanking_hard" }
+        ],
+        "multi_select": false
+      },
+
+      "participants": [
+        { "role": "spanking", "gender": "female", "action": "spanks, disciplines" },
+        { "role": "spanked", "gender": "male", "action": "over her lap, receives" }
+      ],
+
+      "dimensions": ["spanking", "femdom", "OTK", "role_reversal"],
+      "tags": ["spanking", "otk", "femdom", "role_reversal", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_047",
+      "priority": 4,
+      "intensity": 4,
+
+      "generation_prompt": "naked woman bent over bed edge gripping white sheets, her face turned looking back with anticipation, man in dark pants bare chest standing behind her holding black leather paddle raised ready to swing, dim moody BDSM bedroom lighting",
+
+      "user_description": {
+        "en": "She grips the sheets, waiting. He raises the leather paddle behind her. The anticipation is almost as intense as the strike will be.",
+        "ru": "Она перегнулась через кровать, он стоит сзади с паддлом. Шлёпать инструментами — интенсивнее."
+      },
+
+      "ai_context": {
+        "description": "Paddle spanking. Implement use, higher intensity. BDSM impact play. More serious than hand spanking.",
+
+        "tests": {
+          "primary_kink": "implement_spanking",
+          "secondary_kinks": ["paddle", "BDSM", "anticipation", "harder_impact"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "male dominant with implement"
+        },
+
+        "question_angles": {
+          "as_receiver": "Would you enjoy being spanked with implements?",
+          "as_giver": "Would you enjoy using implements?",
+          "emotional": "How does implement spanking feel vs hand?"
+        },
+
+        "emotional_range": {
+          "positive": ["more intense", "love the anticipation", "serious play", "deeper submission"],
+          "negative": ["too painful", "too serious", "hand is enough"],
+          "curious": ["might try", "depends on implement"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["implement_spanking_enjoys", "BDSM_interest", "intensity_seeking"],
+          "if_negative": ["hand_only", "implements_hard_limit"],
+          "if_curious": ["implements_curious"]
+        },
+
+        "correlations": {
+          "positive": ["BDSM_general", "pain_play", "serious_kink"],
+          "negative": ["light_play_only", "vanilla_adjacent"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["too painful", "leaving marks", "too extreme"],
+          "normalization": "Implements distribute impact differently—many find them preferable to hand spanking"
+        }
+      },
+
+      "follow_up": {
+        "trigger": "if_positive",
+        "detail_type": "implement",
+        "question": {
+          "en": "Which implements interest you?",
+          "ru": "Какие предметы интересуют?"
+        },
+        "options": [
+          { "id": "paddle", "label": { "en": "Paddle", "ru": "Падл" }, "signal": "paddle_interest" },
+          { "id": "belt", "label": { "en": "Belt", "ru": "Ремень" }, "signal": "belt_interest" },
+          { "id": "crop", "label": { "en": "Riding crop", "ru": "Стек" }, "signal": "crop_interest" },
+          { "id": "flogger", "label": { "en": "Flogger", "ru": "Флоггер" }, "signal": "flogger_interest" },
+          { "id": "cane", "label": { "en": "Cane", "ru": "Трость" }, "signal": "cane_interest" }
+        ],
+        "multi_select": true
+      },
+
+      "participants": [
+        { "role": "dominant", "gender": "male", "action": "holds paddle" },
+        { "role": "receiving", "gender": "female", "action": "bent over, waiting" }
+      ],
+
+      "dimensions": ["paddle", "implement", "BDSM", "anticipation"],
+      "tags": ["paddle", "bent_over", "anticipation", "bdsm", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_048",
+      "priority": 4,
+      "intensity": 4,
+
+      "generation_prompt": "naked man bent over bed edge gripping mattress his face showing anticipation, woman in black leather corset garter belt and heels standing behind him holding riding crop tapping it against her palm, her dominant smirk, dramatic side lighting, BDSM bedroom",
+
+      "user_description": {
+        "en": "He waits, bent over the bed. She taps the crop against her palm, taking her time. The anticipation is exquisite torture.",
+        "ru": "Он перегнулся через кровать, она сзади со стеком. Фемдом с инструментами."
+      },
+
+      "ai_context": {
+        "description": "Crop impact play. Female dominant with implement on male. Femdom BDSM. More intense power exchange.",
+
+        "tests": {
+          "primary_kink": "femdom_implement",
+          "secondary_kinks": ["crop", "male_receiving", "BDSM", "female_power"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "female dominant with implement on male"
+        },
+
+        "question_angles": {
+          "as_receiver": "Men: Would you submit to this?",
+          "as_giver": "Women: Would you enjoy wielding implements?",
+          "emotional": "How does this level of femdom feel?"
+        },
+
+        "emotional_range": {
+          "positive": ["love her power", "hot surrender", "trusting her completely"],
+          "negative": ["too extreme", "uncomfortable", "prefer vanilla"],
+          "curious": ["intriguing", "might try light version"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["femdom_BDSM_enjoys", "male_receiving_implements_ok", "submission_deep"],
+          "if_negative": ["femdom_hard_limit", "receiving_pain_hard_limit"],
+          "if_curious": ["femdom_BDSM_curious"]
+        },
+
+        "correlations": {
+          "positive": ["femdom_general", "pegging", "full_submission"],
+          "negative": ["always_dominant", "vanilla_only"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["masculinity", "pain tolerance", "extreme"],
+          "normalization": "Female-led impact play allows men to experience vulnerability and surrender in a controlled environment"
+        }
+      },
+
+      "participants": [
+        { "role": "dominant", "gender": "female", "action": "holds crop, controls" },
+        { "role": "receiving", "gender": "male", "action": "bent over, waiting" }
+      ],
+
+      "dimensions": ["crop", "femdom", "implement", "BDSM"],
+      "tags": ["crop", "bent_over", "femdom", "anticipation", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_050",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "woman in black bra pinching shirtless man's nipple with her fingers, his face grimacing mixing pain and pleasure eyes closed, she behind his shoulder smiling with satisfaction, bedroom lighting",
+
+      "user_description": {
+        "en": "She pinches his nipple, watching him grimace with that mix of pain and pleasure. Her smile says she knows exactly what she's doing.",
+        "ru": "Она щиплет его сосок. Он морщится от смеси боли и удовольствия."
+      },
+
+      "ai_context": {
+        "description": "Nipple play/pinching on male. Pain-pleasure mix. She enjoys his reaction. Tests male nipple sensitivity and pain comfort.",
+
+        "tests": {
+          "primary_kink": "nipple_play_receiving",
+          "secondary_kinks": ["pain_pleasure", "male_sensitivity", "her_control"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "female causes pleasurable pain to male"
+        },
+
+        "question_angles": {
+          "as_receiver": "Men: Are your nipples sensitive? Do you enjoy nipple play?",
+          "as_giver": "Do you enjoy playing with your partner's nipples?",
+          "emotional": "How do you feel about pain mixed with pleasure?"
+        },
+
+        "emotional_range": {
+          "positive": ["very sensitive there", "love it", "intense sensation"],
+          "negative": ["not sensitive", "just painful", "don't enjoy"],
+          "curious": ["never tried", "might like"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["nipple_sensitive_male", "pain_pleasure_enjoys", "nipple_play_likes"],
+          "if_negative": ["nipples_not_sensitive", "pain_no_pleasure"],
+          "if_curious": ["nipple_curious"]
+        },
+
+        "correlations": {
+          "positive": ["pain_play_general", "sensation_play", "receiving_attention"],
+          "negative": ["pain_averse"]
+        },
+
+        "taboo_context": {
+          "level": 2,
+          "common_concerns": ["men shouldn't be sensitive there"],
+          "normalization": "Male nipples have same nerve density as female—many men are highly sensitive there"
+        }
+      },
+
+      "participants": [
+        { "role": "giving", "gender": "female", "action": "pinches nipple" },
+        { "role": "receiving", "gender": "male", "action": "experiences pain-pleasure" }
+      ],
+
+      "dimensions": ["nipple_play", "pain_pleasure", "male_receiving"],
+      "tags": ["nipple", "pinching", "pain", "pleasure", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_051",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "naked man standing behind naked woman biting her shoulder where it meets neck, visible red bite marks on her skin, she tilting head back eyes closed mouth open in pleasure, both nude from waist up, his arms around her torso, dramatic lighting",
+
+      "user_description": {
+        "en": "His teeth sink into her shoulder as she gasps with pleasure. Marks bloom across her skin—primal claiming.",
+        "ru": "Он кусает её плечо, оставляя следы. Первобытное и страстное."
+      },
+
+      "ai_context": {
+        "description": "Biting during sex. Leaving marks. Primal, marking behavior. Pain-pleasure, passion intensity.",
+
+        "tests": {
+          "primary_kink": "biting",
+          "secondary_kinks": ["marking", "primal", "pain_pleasure", "claiming"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "male marking female"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy being bitten during sex?",
+          "as_giver": "Do you enjoy biting your partner?",
+          "emotional": "What does biting/marking mean to you?"
+        },
+
+        "emotional_range": {
+          "positive": ["love it", "primal", "feel claimed", "passion marks"],
+          "negative": ["too painful", "don't want marks", "feels aggressive"],
+          "curious": ["light biting maybe", "no visible marks"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["biting_enjoys", "marking_likes", "primal_sex_enjoys"],
+          "if_negative": ["biting_hard_limit", "no_marks"],
+          "if_curious": ["light_biting_open"]
+        },
+
+        "correlations": {
+          "positive": ["rough_sex", "hair_pulling", "primal_play"],
+          "negative": ["gentle_only", "no_pain"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["leaving visible marks", "explaining marks"],
+          "normalization": "Biting releases primal energy and creates intense sensation—negotiate visibility of marks"
+        }
+      },
+
+      "participants": [
+        { "role": "biting", "gender": "male", "action": "bites shoulder" },
+        { "role": "receiving", "gender": "female", "action": "receives, enjoys" }
+      ],
+
+      "dimensions": ["biting", "marking", "primal", "passion"],
+      "tags": ["biting", "shoulder", "marks", "passionate", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_052",
+      "priority": 3,
+      "intensity": 3,
+
+      "generation_prompt": "naked woman biting naked man's chest leaving red marks, his hand on back of her head encouraging the bite, his head tilted back eyes closed in pleasure, she looking up at him while biting, both standing, dramatic lighting",
+
+      "user_description": {
+        "en": "She bites his chest, leaving marks. His hand in her hair encourages her. He tilts his head back, lost in the sensation.",
+        "ru": "Она кусает его грудь, оставляя следы. Ему нравится."
+      },
+
+      "ai_context": {
+        "description": "Female biting male. Role reversal marking. She marks him. Tests male comfort being marked/bitten.",
+
+        "tests": {
+          "primary_kink": "being_bitten_male",
+          "secondary_kinks": ["female_marking", "role_reversal", "pain_pleasure"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "female marks male"
+        },
+
+        "question_angles": {
+          "as_receiver": "Men: Do you enjoy being bitten?",
+          "as_giver": "Women: Do you enjoy biting/marking your partner?",
+          "emotional": "How does being marked by her feel?"
+        },
+
+        "emotional_range": {
+          "positive": ["love it", "her passion showing", "feel claimed by her"],
+          "negative": ["don't like being bitten", "marks uncomfortable"],
+          "curious": ["might enjoy", "never tried"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["being_bitten_enjoys", "female_marking_likes", "receiving_intensity_ok"],
+          "if_negative": ["receiving_pain_no", "marking_hard_limit"],
+          "if_curious": ["might_try"]
+        },
+
+        "correlations": {
+          "positive": ["receiving_rough_ok", "female_initiative", "passion_intensity"],
+          "negative": ["always_giving", "pain_averse"]
+        },
+
+        "taboo_context": {
+          "level": 3,
+          "common_concerns": ["visible marks", "explaining marks"],
+          "normalization": "Her biting shows passion and desire—many men find it deeply arousing"
+        }
+      },
+
+      "participants": [
+        { "role": "biting", "gender": "female", "action": "bites his chest" },
+        { "role": "receiving", "gender": "male", "action": "encourages, enjoys" }
+      ],
+
+      "dimensions": ["biting", "marking", "male_receiving", "female_initiative"],
+      "tags": ["biting", "chest", "marks", "pain", "couple"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "interest_scale" }
+    },
+
+    {
+      "id": "scene_053",
+      "priority": 3,
+      "intensity": 4,
+
+      "generation_prompt": "naked man hovering over naked woman lying on back, his hand wrapped around her throat firm but not squeezing, she looking up at him with trust lips parted, intense eye contact, both nude visible shoulders, bedroom",
+
+      "user_description": {
+        "en": "His hand on her throat—firm but not squeezing. Her eyes show complete trust as she surrenders to his control.",
+        "ru": "Его рука на её горле — не сжимает, только контролирует. Требует большого доверия."
+      },
+
+      "ai_context": {
+        "description": "Light choking/hand on throat. Control not restriction. Trust and power exchange. Common kink requiring care.",
+
+        "tests": {
+          "primary_kink": "choking_light",
+          "secondary_kinks": ["breath_play_adjacent", "control", "trust", "power_exchange"],
+          "power_dynamic": "submissive",
+          "gender_role_aspect": "male controls, female trusts"
+        },
+
+        "question_angles": {
+          "as_receiver": "Do you enjoy having a hand on your throat during sex?",
+          "as_giver": "Do you enjoy putting your hand on your partner's throat?",
+          "emotional": "What does this gesture mean to you—control, trust, intensity?"
+        },
+
+        "emotional_range": {
+          "positive": ["love it", "intense trust", "feeling controlled", "vulnerability hot"],
+          "negative": ["scary", "triggers panic", "too dangerous", "don't trust"],
+          "curious": ["might try with right person", "very light only"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["choking_enjoys", "breath_play_interest", "control_surrenders_to"],
+          "if_negative": ["choking_hard_limit", "breath_play_hard_limit"],
+          "if_curious": ["light_choking_curious", "trust_dependent"]
+        },
+
+        "correlations": {
+          "positive": ["dominance_submission", "intensity_seeks", "edge_play_curious"],
+          "negative": ["always_safe_only", "vanilla", "control_issues"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["safety", "going too far", "accidents", "trust"],
+          "normalization": "Very common kink; light pressure on sides of neck (not windpipe) is about control and trust, not actual restriction"
+        }
+      },
+
+      "participants": [
+        { "role": "controlling", "gender": "male", "action": "hand on throat" },
+        { "role": "trusting", "gender": "female", "action": "surrenders, trusts" }
+      ],
+
+      "dimensions": ["choking_light", "breath_play", "control", "trust"],
+      "tags": ["throat", "choking", "control", "trust", "intense"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    },
+
+    {
+      "id": "scene_054",
+      "priority": 3,
+      "intensity": 4,
+
+      "generation_prompt": "naked woman straddling naked man on bed, her hand on his throat applying light controlling pressure, she looking down at him with dominant expression, he lying on back looking up with trust, his hands at sides allowing her control, moody bedroom lighting",
+
+      "user_description": {
+        "en": "She straddles him, hand on his throat, eyes burning into his. He lies still beneath her, completely surrendered to her power.",
+        "ru": "Она сверху, рука на его горле. Он полностью в её власти."
+      },
+
+      "ai_context": {
+        "description": "Female hand on male throat. Femdom choking. She controls him. Role reversal power exchange.",
+
+        "tests": {
+          "primary_kink": "femdom_choking",
+          "secondary_kinks": ["female_dominance", "male_vulnerability", "control_reversal"],
+          "power_dynamic": "dominant",
+          "gender_role_aspect": "female controls male's breath"
+        },
+
+        "question_angles": {
+          "as_receiver": "Men: Would you allow her to control you this way?",
+          "as_giver": "Women: Would you enjoy this level of control?",
+          "emotional": "How does female-controlled breath play feel?"
+        },
+
+        "emotional_range": {
+          "positive": ["trusting her completely", "her power is hot", "liberating"],
+          "negative": ["too vulnerable", "uncomfortable", "don't trust anyone that much"],
+          "curious": ["with the right woman", "intriguing"]
+        },
+
+        "profile_signals": {
+          "if_positive": ["femdom_choking_ok", "male_vulnerability_ok", "deep_trust_gives"],
+          "if_negative": ["receiving_control_hard_limit", "vulnerability_uncomfortable"],
+          "if_curious": ["femdom_curious"]
+        },
+
+        "correlations": {
+          "positive": ["femdom_general", "submission_male", "trust_giving"],
+          "negative": ["always_dominant", "control_keeps"]
+        },
+
+        "taboo_context": {
+          "level": 4,
+          "common_concerns": ["safety", "masculinity", "vulnerability"],
+          "normalization": "Surrendering control to a trusted partner can be deeply intimate and bonding"
+        }
+      },
+
+      "participants": [
+        { "role": "controlling", "gender": "female", "action": "hand on throat, on top" },
+        { "role": "trusting", "gender": "male", "action": "surrenders, trusts" }
+      ],
+
+      "dimensions": ["choking_light", "femdom", "control", "trust"],
+      "tags": ["throat", "femdom", "control", "trust", "intense"],
+
+      "relevant_for": { "gender": "any", "interested_in": "any" },
+      "question_type": { "type": "boundary" }
+    }
+  ],
+
+  "commented_scenes": [
+    {
+      "id": "scene_049",
+      "reason": "Aftercare scene - moved to aftercare category, not impact play testing",
+      "original_description": "Visible marks after spanking, aftercare moment"
+    }
+  ]
+}

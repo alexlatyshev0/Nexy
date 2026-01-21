@@ -1,0 +1,444 @@
+{
+  "id": "wax_play_f_to_m",
+  "slug": "wax-play-she-on-him",
+  "version": 2,
+  "paired_scene": "wax_play_m_to_f",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Восковые игры",
+    "en": "Wax Play"
+  },
+  "subtitle": {
+    "ru": "Она капает на него",
+    "en": "She drips on him"
+  },
+  "ai_description": {
+    "ru": "Он лежит связанный, она стоит над ним со свечой. Медленно наклоняет — капля горячего воска падает на его грудь. Он дёргается, но не может двигаться.",
+    "en": "He lies bound, she stands over him with a candle. Slowly tilts it — a drop of hot wax falls on his chest. He jerks, but cannot move."
+  },
+  "image_prompt": "woman dripping candle wax on mans chest, he nude lying on bed, she in lingerie holding candle above, red wax drops visible, bedroom setting, candlelit",
+  "intensity": 3,
+  "category": "impact_pain",
+  "tags": [
+    "wax_play",
+    "femdom",
+    "temperature_play",
+    "sensory",
+    "male_submission"
+  ],
+  "elements": [
+    {
+      "id": "body_areas",
+      "label": {
+        "ru": "Куда капать?",
+        "en": "Where to drip?"
+      },
+      "tag_ref": "wax_location_m",
+      "follow_ups": [
+        {
+          "id": "areas",
+          "type": "body_map",
+          "question": {
+            "ru": "На какие части тела?",
+            "en": "On which body parts?"
+          },
+          "config": {
+            "zones": [
+              {
+                "id": "chest",
+                "label": {
+                  "ru": "Грудь",
+                  "en": "Chest"
+                }
+              },
+              {
+                "id": "nipples",
+                "label": {
+                  "ru": "Соски",
+                  "en": "Nipples"
+                }
+              },
+              {
+                "id": "stomach",
+                "label": {
+                  "ru": "Живот",
+                  "en": "Stomach"
+                }
+              },
+              {
+                "id": "back",
+                "label": {
+                  "ru": "Спина",
+                  "en": "Back"
+                }
+              },
+              {
+                "id": "thighs",
+                "label": {
+                  "ru": "Бёдра",
+                  "en": "Thighs"
+                }
+              },
+              {
+                "id": "cock",
+                "label": {
+                  "ru": "Член",
+                  "en": "Cock"
+                }
+              },
+              {
+                "id": "balls",
+                "label": {
+                  "ru": "Яички",
+                  "en": "Balls"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "temperature",
+      "label": {
+        "ru": "Температура",
+        "en": "Temperature"
+      },
+      "tag_ref": "wax_temperature",
+      "follow_ups": [
+        {
+          "id": "heat_level",
+          "type": "scale",
+          "question": {
+            "ru": "Насколько горячо?",
+            "en": "How hot?"
+          },
+          "config": {
+            "min_label": {
+              "ru": "Тёплый, нежный",
+              "en": "Warm, gentle"
+            },
+            "max_label": {
+              "ru": "Горячий, обжигающий",
+              "en": "Hot, burning"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cock_wax",
+      "label": {
+        "ru": "На гениталии?",
+        "en": "On genitals?"
+      },
+      "tag_ref": "wax_genitals",
+      "follow_ups": [
+        {
+          "id": "genital_wax",
+          "type": "single_select",
+          "question": {
+            "ru": "Воск на член/яички?",
+            "en": "Wax on cock/balls?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "no",
+                "label": {
+                  "ru": "Нет, избегать",
+                  "en": "No, avoid"
+                }
+              },
+              {
+                "id": "light",
+                "label": {
+                  "ru": "Немного, осторожно",
+                  "en": "A little, carefully"
+                }
+              },
+              {
+                "id": "yes",
+                "label": {
+                  "ru": "Да, нравится",
+                  "en": "Yes, enjoy it"
+                }
+              },
+              {
+                "id": "focus",
+                "label": {
+                  "ru": "Основной фокус",
+                  "en": "Main focus"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bondage_combo",
+      "label": {
+        "ru": "С бондажем?",
+        "en": "With bondage?"
+      },
+      "tag_ref": "wax_bondage_m",
+      "follow_ups": [
+        {
+          "id": "restraints",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как связан?",
+            "en": "How restrained?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "not_tied",
+                "label": {
+                  "ru": "Не связан",
+                  "en": "Not tied"
+                }
+              },
+              {
+                "id": "hands",
+                "label": {
+                  "ru": "Руки связаны",
+                  "en": "Hands tied"
+                }
+              },
+              {
+                "id": "spread",
+                "label": {
+                  "ru": "Растянут",
+                  "en": "Spread eagle"
+                }
+              },
+              {
+                "id": "blindfold",
+                "label": {
+                  "ru": "Повязка на глаза",
+                  "en": "Blindfolded"
+                }
+              },
+              {
+                "id": "gag",
+                "label": {
+                  "ru": "Кляп",
+                  "en": "Gagged"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "her_attitude",
+      "label": {
+        "ru": "Её настрой",
+        "en": "Her attitude"
+      },
+      "tag_ref": "femdom_wax_attitude",
+      "follow_ups": [
+        {
+          "id": "attitude",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как она себя ведёт?",
+            "en": "How does she behave?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "cruel",
+                "label": {
+                  "ru": "Жестоко, наслаждается болью",
+                  "en": "Cruel, enjoys his pain"
+                }
+              },
+              {
+                "id": "teasing",
+                "label": {
+                  "ru": "Дразнит, издевается",
+                  "en": "Teasing, taunting"
+                }
+              },
+              {
+                "id": "sensual",
+                "label": {
+                  "ru": "Чувственно",
+                  "en": "Sensual"
+                }
+              },
+              {
+                "id": "clinical",
+                "label": {
+                  "ru": "Холодно, отстранённо",
+                  "en": "Cold, detached"
+                }
+              },
+              {
+                "id": "playful",
+                "label": {
+                  "ru": "Игриво",
+                  "en": "Playful"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "verbal",
+      "label": {
+        "ru": "Что говорит?",
+        "en": "What does she say?"
+      },
+      "tag_ref": "femdom_wax_verbal",
+      "follow_ups": [
+        {
+          "id": "words",
+          "type": "multi_select",
+          "question": {
+            "ru": "Её слова?",
+            "en": "Her words?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "suffer",
+                "label": {
+                  "ru": "Терпи",
+                  "en": "Suffer"
+                }
+              },
+              {
+                "id": "beautiful",
+                "label": {
+                  "ru": "Красиво корчишься",
+                  "en": "You squirm beautifully"
+                }
+              },
+              {
+                "id": "more",
+                "label": {
+                  "ru": "Ещё",
+                  "en": "More"
+                }
+              },
+              {
+                "id": "count",
+                "label": {
+                  "ru": "Считай капли",
+                  "en": "Count the drops"
+                }
+              },
+              {
+                "id": "silent",
+                "label": {
+                  "ru": "Молча",
+                  "en": "Silent"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "wax_male_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "sensation",
+                "label": {
+                  "ru": "Ощущение жжения",
+                  "en": "Burning sensation"
+                }
+              },
+              {
+                "id": "her_power",
+                "label": {
+                  "ru": "Её власть над ним",
+                  "en": "Her power over him"
+                }
+              },
+              {
+                "id": "vulnerability",
+                "label": {
+                  "ru": "Его уязвимость",
+                  "en": "His vulnerability"
+                }
+              },
+              {
+                "id": "anticipation",
+                "label": {
+                  "ru": "Ожидание капли",
+                  "en": "Anticipation"
+                }
+              },
+              {
+                "id": "endurance",
+                "label": {
+                  "ru": "Терпеть для неё",
+                  "en": "Enduring for her"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает когда она капает воск?",
+      "en": "What appeals about her dripping wax?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "wax_play",
+      "femdom",
+      "temperature_play"
+    ],
+    "tests_secondary": [
+      "male_submission",
+      "pain_pleasure",
+      "sensory"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys femdom",
+        "pain-pleasure connection",
+        "submissive"
+      ],
+      "negative": [
+        "fear of burns",
+        "not into pain",
+        "prefers control"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Она капает горячий воск свечи на его тело.",
+    "en": "She drips hot candle wax on his body."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "knife_play_f_to_m",
+  "slug": "knife-play-f-to-m",
+  "version": 2,
+  "role_direction": "f_to_m",
+  "title": { "ru": "Ножевые игры (она ведёт)", "en": "Knife Play (She Leads)" },
+  "subtitle": { "ru": "Она водит лезвием по его телу", "en": "She traces blade on his body" },
+  "ai_description": { "ru": "Ж водит ножом по коже М. Edge play с элементом страха и доверия.", "en": "F traces knife on M's skin. Edge play with fear and trust element." },
+  "image_prompt": "woman holding knife blade against man's chest, bedroom setting, blade touching but not cutting skin",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": ["knife_play", "edge_play", "fear", "f_dom"],
+  "elements": [
+    {
+      "id": "what_appeals",
+      "label": { "ru": "Что привлекает", "en": "What appeals" },
+      "tag_ref": "knife_appeal",
+      "follow_ups": [{
+        "id": "appeal",
+        "type": "multi_select",
+        "question": { "ru": "Что возбуждает?", "en": "What excites?" },
+        "config": {
+          "options": [
+            { "id": "danger", "label": { "ru": "Опасность", "en": "Danger" } },
+            { "id": "trust", "label": { "ru": "Доверие", "en": "Trust" } },
+            { "id": "sensation", "label": { "ru": "Ощущение лезвия", "en": "Blade sensation" } },
+            { "id": "power", "label": { "ru": "Её власть", "en": "Her power" } }
+          ]
+        }
+      }]
+    }
+  ],
+  "question": { "type": "interest_scale", "text": { "ru": "Она водит ножом по его телу?", "en": "She traces knife on his body?" } },
+  "ai_context": { "tests_primary": ["knife_play", "edge_play", "f_dom"], "tests_secondary": ["danger", "femdom"] },
+  "user_description": { "ru": "Она водит лезвием ножа по его коже — грудь, живот, шея", "en": "She traces knife blade on his skin — chest, belly, neck" }
+}

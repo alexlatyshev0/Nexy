@@ -1,0 +1,254 @@
+{
+  "id": "group_interest",
+  "slug": "group-interest",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Секс втроём и больше",
+    "en": "Sex with Multiple Partners"
+  },
+  "subtitle": {
+    "ru": "Только вдвоём или открыт к большему?",
+    "en": "Just two or open to more?"
+  },
+  "ai_description": {
+    "ru": "Секс с несколькими партнёрами одновременно. Тройка, свинг, оргия... Это фантазия, любопытство, или категорически нет?",
+    "en": "Sex with multiple partners at once. Threesome, swinging, orgy... Is this fantasy, curiosity, or absolutely not?"
+  },
+  "image_prompt": "two women and one man in intimate embrace on bed, bedroom setting with soft lamp light",
+  "intensity": 2,
+  "category": "baseline",
+  "priority": 7,
+  "tags": [
+    "baseline",
+    "group",
+    "threesome",
+    "multiple_partners",
+    "monogamy"
+  ],
+  "elements": [
+    {
+      "id": "interest",
+      "label": {
+        "ru": "Интерес",
+        "en": "Interest"
+      },
+      "tag_ref": "group_interest_level",
+      "follow_ups": [
+        {
+          "id": "level",
+          "type": "single_select",
+          "question": {
+            "ru": "Секс с несколькими партнёрами...",
+            "en": "Sex with multiple partners..."
+          },
+          "config": {
+            "options": [
+              {
+                "id": "no",
+                "label": {
+                  "ru": "Не интересует, только вдвоём",
+                  "en": "Not interested, just us two"
+                }
+              },
+              {
+                "id": "fantasy",
+                "label": {
+                  "ru": "Интересно как фантазия",
+                  "en": "Interesting as fantasy"
+                }
+              },
+              {
+                "id": "curious",
+                "label": {
+                  "ru": "Хочу попробовать",
+                  "en": "Want to try"
+                }
+              },
+              {
+                "id": "experienced",
+                "label": {
+                  "ru": "Пробовал/а, нравится",
+                  "en": "Tried it, like it"
+                }
+              },
+              {
+                "id": "lifestyle",
+                "label": {
+                  "ru": "Это часть моей жизни",
+                  "en": "It's part of my life"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "configuration",
+      "label": {
+        "ru": "Конфигурация",
+        "en": "Configuration"
+      },
+      "tag_ref": "group_config",
+      "follow_ups": [
+        {
+          "id": "which",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие варианты интересны?",
+            "en": "What configurations interest you?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "mfm",
+                "label": {
+                  "ru": "МЖМ (два парня)",
+                  "en": "MFM (two guys)"
+                }
+              },
+              {
+                "id": "fmf",
+                "label": {
+                  "ru": "ЖМЖ (две девушки)",
+                  "en": "FMF (two girls)"
+                }
+              },
+              {
+                "id": "same_sex",
+                "label": {
+                  "ru": "Однополая тройка",
+                  "en": "Same-sex threesome"
+                }
+              },
+              {
+                "id": "foursome",
+                "label": {
+                  "ru": "Четверо",
+                  "en": "Foursome"
+                }
+              },
+              {
+                "id": "more",
+                "label": {
+                  "ru": "Больше (оргия)",
+                  "en": "More (orgy)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Контекст",
+        "en": "Context"
+      },
+      "tag_ref": "group_context",
+      "follow_ups": [
+        {
+          "id": "with_whom",
+          "type": "multi_select",
+          "question": {
+            "ru": "С кем?",
+            "en": "With whom?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "with_partner",
+                "label": {
+                  "ru": "С постоянным партнёром",
+                  "en": "With regular partner"
+                }
+              },
+              {
+                "id": "strangers",
+                "label": {
+                  "ru": "С незнакомыми",
+                  "en": "With strangers"
+                }
+              },
+              {
+                "id": "friends",
+                "label": {
+                  "ru": "С друзьями",
+                  "en": "With friends"
+                }
+              },
+              {
+                "id": "club",
+                "label": {
+                  "ru": "В секс-клубе",
+                  "en": "At a sex club"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "boundary",
+    "text": {
+      "ru": "Секс втроём и больше — как ты к этому?",
+      "en": "Sex with three or more — how do you feel?"
+    },
+    "config": {
+      "boundary_options": [
+        {
+          "id": "no",
+          "label": {
+            "ru": "Только вдвоём",
+            "en": "Just us two"
+          }
+        },
+        {
+          "id": "fantasy",
+          "label": {
+            "ru": "Как фантазия",
+            "en": "As fantasy"
+          }
+        },
+        {
+          "id": "yes",
+          "label": {
+            "ru": "Интересует",
+            "en": "Interested"
+          }
+        }
+      ]
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "group_sex",
+      "threesome",
+      "multiple_partners"
+    ],
+    "tests_secondary": [
+      "swinging",
+      "orgy",
+      "sharing"
+    ],
+    "gates": {
+      "no": [
+        "skip_group_scenes"
+      ],
+      "fantasy": [
+        "group_fantasy_only"
+      ],
+      "yes": [
+        "all_group_scenes"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Секс с несколькими партнёрами одновременно — тройки, свинг, оргии.",
+    "en": "Sex with multiple partners simultaneously — threesomes, swinging, orgies."
+  }
+}

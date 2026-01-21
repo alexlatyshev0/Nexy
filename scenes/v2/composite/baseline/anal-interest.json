@@ -1,0 +1,260 @@
+{
+  "id": "anal_interest",
+  "slug": "anal-interest",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Анальный секс",
+    "en": "Anal Sex"
+  },
+  "subtitle": {
+    "ru": "Базовое отношение",
+    "en": "Basic attitude"
+  },
+  "ai_description": {
+    "ru": "Анал — это отдельная тема. Кто-то обожает, кто-то категорически нет. Какое твоё базовое отношение?",
+    "en": "Anal is a separate topic. Some love it, some absolutely don't. What's your basic attitude?"
+  },
+  "image_prompt": "man and woman in intimate position from behind, bedroom setting with bed and pillows",
+  "intensity": 2,
+  "category": "baseline",
+  "priority": 5,
+  "tags": [
+    "baseline",
+    "anal",
+    "penetration",
+    "taboo"
+  ],
+  "elements": [
+    {
+      "id": "receiving",
+      "label": {
+        "ru": "Принимать",
+        "en": "Receiving"
+      },
+      "tag_ref": "anal_receiving",
+      "follow_ups": [
+        {
+          "id": "attitude",
+          "type": "single_select",
+          "question": {
+            "ru": "Анальное проникновение (принимать)...",
+            "en": "Anal penetration (receiving)..."
+          },
+          "config": {
+            "options": [
+              {
+                "id": "no",
+                "label": {
+                  "ru": "Нет, не моё",
+                  "en": "No, not for me"
+                }
+              },
+              {
+                "id": "curious",
+                "label": {
+                  "ru": "Любопытно попробовать",
+                  "en": "Curious to try"
+                }
+              },
+              {
+                "id": "sometimes",
+                "label": {
+                  "ru": "Иногда нравится",
+                  "en": "Sometimes enjoy"
+                }
+              },
+              {
+                "id": "love",
+                "label": {
+                  "ru": "Обожаю",
+                  "en": "Love it"
+                }
+              },
+              {
+                "id": "prefer",
+                "label": {
+                  "ru": "Предпочитаю анал",
+                  "en": "Prefer anal"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "giving",
+      "label": {
+        "ru": "Давать",
+        "en": "Giving"
+      },
+      "tag_ref": "anal_giving",
+      "follow_ups": [
+        {
+          "id": "interest",
+          "type": "single_select",
+          "question": {
+            "ru": "Анальный секс с партнёром (давать)...",
+            "en": "Anal sex with partner (giving)..."
+          },
+          "config": {
+            "options": [
+              {
+                "id": "no",
+                "label": {
+                  "ru": "Не интересует",
+                  "en": "Not interested"
+                }
+              },
+              {
+                "id": "if_wants",
+                "label": {
+                  "ru": "Если партнёр хочет",
+                  "en": "If partner wants"
+                }
+              },
+              {
+                "id": "enjoy",
+                "label": {
+                  "ru": "Нравится",
+                  "en": "Enjoy it"
+                }
+              },
+              {
+                "id": "love",
+                "label": {
+                  "ru": "Очень нравится",
+                  "en": "Love it"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "comfort",
+      "label": {
+        "ru": "Комфорт",
+        "en": "Comfort"
+      },
+      "tag_ref": "anal_comfort",
+      "follow_ups": [
+        {
+          "id": "what_ok",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что комфортно?",
+            "en": "What's comfortable?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "external",
+                "label": {
+                  "ru": "Только снаружи (ласки)",
+                  "en": "External only (caressing)"
+                }
+              },
+              {
+                "id": "finger",
+                "label": {
+                  "ru": "Палец",
+                  "en": "Finger"
+                }
+              },
+              {
+                "id": "toy_small",
+                "label": {
+                  "ru": "Маленькая игрушка/пробка",
+                  "en": "Small toy/plug"
+                }
+              },
+              {
+                "id": "toy_big",
+                "label": {
+                  "ru": "Большая игрушка",
+                  "en": "Large toy"
+                }
+              },
+              {
+                "id": "penis",
+                "label": {
+                  "ru": "Член",
+                  "en": "Penis"
+                }
+              },
+              {
+                "id": "rimming",
+                "label": {
+                  "ru": "Римминг (языком)",
+                  "en": "Rimming (tongue)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "boundary",
+    "text": {
+      "ru": "Анальный секс — как ты к этому?",
+      "en": "Anal sex — how do you feel about it?"
+    },
+    "config": {
+      "boundary_options": [
+        {
+          "id": "no",
+          "label": {
+            "ru": "Не моё",
+            "en": "Not for me"
+          }
+        },
+        {
+          "id": "curious",
+          "label": {
+            "ru": "Интересно",
+            "en": "Curious"
+          }
+        },
+        {
+          "id": "yes",
+          "label": {
+            "ru": "Да, нравится",
+            "en": "Yes, I like it"
+          }
+        }
+      ]
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "anal",
+      "anal_sex",
+      "penetration"
+    ],
+    "tests_secondary": [
+      "taboo",
+      "fullness",
+      "trust"
+    ],
+    "gates": {
+      "no": [
+        "skip_anal_scenes"
+      ],
+      "curious": [
+        "light_anal_scenes"
+      ],
+      "yes": [
+        "all_anal_scenes"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Анальный секс между партнёрами",
+    "en": "Anal sex between partners"
+  }
+}

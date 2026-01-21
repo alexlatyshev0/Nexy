@@ -1,0 +1,353 @@
+{
+  "id": "spitting_f_to_m",
+  "slug": "spitting-she-on-him",
+  "version": 2,
+  "paired_scene": "spitting_m_to_f",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Плевки",
+    "en": "Spitting"
+  },
+  "subtitle": {
+    "ru": "Она на него",
+    "en": "She on him"
+  },
+  "ai_description": {
+    "ru": "Она плюёт ему в лицо, он принимает покорно. Её слюна — знак её власти и его ничтожности. Femdom унижение.",
+    "en": "She spits in his face, he accepts submissively. Her saliva — a sign of her power and his worthlessness. Femdom humiliation."
+  },
+  "image_prompt": "woman close to man's face preparing to spit, man looking up at her with open mouth, both partially clothed, bedroom setting",
+  "intensity": 3,
+  "category": "body_fluids",
+  "tags": [
+    "spitting",
+    "spit",
+    "femdom",
+    "humiliation",
+    "female_domination",
+    "degradation"
+  ],
+  "elements": [
+    {
+      "id": "where_spit",
+      "label": {
+        "ru": "Куда?",
+        "en": "Where?"
+      },
+      "tag_ref": "spit_target",
+      "follow_ups": [
+        {
+          "id": "spit_location",
+          "type": "multi_select",
+          "question": {
+            "ru": "Куда плевать?",
+            "en": "Where to spit?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "mouth",
+                "label": {
+                  "ru": "В рот",
+                  "en": "In mouth"
+                }
+              },
+              {
+                "id": "face",
+                "label": {
+                  "ru": "На лицо",
+                  "en": "On face"
+                }
+              },
+              {
+                "id": "tongue",
+                "label": {
+                  "ru": "На язык",
+                  "en": "On tongue"
+                }
+              },
+              {
+                "id": "cock",
+                "label": {
+                  "ru": "На член",
+                  "en": "On cock"
+                }
+              },
+              {
+                "id": "eyes",
+                "label": {
+                  "ru": "В глаза (унижение)",
+                  "en": "In eyes (humiliation)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Контекст",
+        "en": "Context"
+      },
+      "tag_ref": "spit_context",
+      "follow_ups": [
+        {
+          "id": "when_spit",
+          "type": "multi_select",
+          "question": {
+            "ru": "В какой момент?",
+            "en": "At what moment?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "during_worship",
+                "label": {
+                  "ru": "Когда он поклоняется",
+                  "en": "When he worships"
+                }
+              },
+              {
+                "id": "punishment",
+                "label": {
+                  "ru": "Как наказание",
+                  "en": "As punishment"
+                }
+              },
+              {
+                "id": "contempt",
+                "label": {
+                  "ru": "Презрение к нему",
+                  "en": "Showing contempt"
+                }
+              },
+              {
+                "id": "handjob",
+                "label": {
+                  "ru": "Как смазка для дрочки",
+                  "en": "As lube for handjob"
+                }
+              },
+              {
+                "id": "random",
+                "label": {
+                  "ru": "Просто потому что может",
+                  "en": "Just because she can"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "spit_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "female_power",
+                "label": {
+                  "ru": "Её власть",
+                  "en": "Her power"
+                }
+              },
+              {
+                "id": "his_degradation",
+                "label": {
+                  "ru": "Его унижение",
+                  "en": "His degradation"
+                }
+              },
+              {
+                "id": "contempt",
+                "label": {
+                  "ru": "Её презрение",
+                  "en": "Her contempt"
+                }
+              },
+              {
+                "id": "worship",
+                "label": {
+                  "ru": "Принять от неё всё",
+                  "en": "Accept anything from her"
+                }
+              },
+              {
+                "id": "marking",
+                "label": {
+                  "ru": "Она метит его",
+                  "en": "She marks him"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "his_reaction",
+      "label": {
+        "ru": "Его реакция",
+        "en": "His reaction"
+      },
+      "tag_ref": "receiver_reaction",
+      "follow_ups": [
+        {
+          "id": "he_reacts",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как он реагирует?",
+            "en": "How does he react?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "swallow",
+                "label": {
+                  "ru": "Глотает с благодарностью",
+                  "en": "Swallows gratefully"
+                }
+              },
+              {
+                "id": "thank",
+                "label": {
+                  "ru": "Благодарит госпожу",
+                  "en": "Thanks mistress"
+                }
+              },
+              {
+                "id": "shame",
+                "label": {
+                  "ru": "Стыд (и возбуждение)",
+                  "en": "Shame (and arousal)"
+                }
+              },
+              {
+                "id": "hard",
+                "label": {
+                  "ru": "Становится твёрже",
+                  "en": "Gets harder"
+                }
+              },
+              {
+                "id": "beg",
+                "label": {
+                  "ru": "Просит ещё",
+                  "en": "Begs for more"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "verbal",
+      "label": {
+        "ru": "Что говорит?",
+        "en": "What does she say?"
+      },
+      "tag_ref": "verbal_humiliation",
+      "follow_ups": [
+        {
+          "id": "her_words",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что она говорит?",
+            "en": "What does she say?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "worthless",
+                "label": {
+                  "ru": "Ты ничтожество",
+                  "en": "You're worthless"
+                }
+              },
+              {
+                "id": "deserve",
+                "label": {
+                  "ru": "Это всё что ты заслуживаешь",
+                  "en": "This is all you deserve"
+                }
+              },
+              {
+                "id": "swallow_cmd",
+                "label": {
+                  "ru": "Глотай",
+                  "en": "Swallow it"
+                }
+              },
+              {
+                "id": "pathetic",
+                "label": {
+                  "ru": "Жалкий",
+                  "en": "Pathetic"
+                }
+              },
+              {
+                "id": "grateful",
+                "label": {
+                  "ru": "Скажи спасибо",
+                  "en": "Say thank you"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в этой сцене?",
+      "en": "What appeals in this scene?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "spitting",
+      "femdom",
+      "humiliation"
+    ],
+    "tests_secondary": [
+      "degradation",
+      "female_power",
+      "contempt"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys femdom",
+        "finds humiliation arousing",
+        "submissive to women"
+      ],
+      "negative": [
+        "too degrading",
+        "prefers male dominance",
+        "needs respect"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Она плюёт ему в лицо или в рот. Он покорно принимает.",
+    "en": "She spits in his face or mouth. He submissively accepts."
+  }
+}

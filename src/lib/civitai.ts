@@ -12,6 +12,28 @@ interface GenerateImageParams {
 
 const DEFAULT_NEGATIVE = "ugly, deformed, noisy, blurry, low quality, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, username, watermark, signature, text, child, underage, minor";
 
+// Truncate prompt to fit CLIP token limit (77 tokens)
+// CLIP tokenizer is unpredictable - using 150 chars max to be safe
+function truncatePrompt(prompt: string, maxChars: number = 150): string {
+  if (prompt.length <= maxChars) return prompt;
+
+  // Try to cut at last comma before limit
+  const truncated = prompt.substring(0, maxChars);
+  const lastComma = truncated.lastIndexOf(',');
+
+  if (lastComma > maxChars * 0.6) {
+    return truncated.substring(0, lastComma).trim();
+  }
+
+  // Otherwise cut at last space
+  const lastSpace = truncated.lastIndexOf(' ');
+  if (lastSpace > maxChars * 0.6) {
+    return truncated.substring(0, lastSpace).trim();
+  }
+
+  return truncated.trim();
+}
+
 // Model ID to AIR URN mapping
 // Format: urn:air:{ecosystem}:checkpoint:civitai:{modelId}@{versionId}
 const MODEL_VERSIONS: Record<number, string> = {
@@ -60,11 +82,19 @@ export async function generateWithRetry(
       console.log(`[Civitai] Attempt ${attempt + 1}/${maxRetries}`);
       console.log(`[Civitai] Model URN: ${getModelUrn(params.modelId || 4201)}`);
 
+      // Truncate prompts to fit CLIP token limit
+      const truncatedPrompt = truncatePrompt(params.prompt);
+      const truncatedNegative = truncatePrompt(params.negativePrompt || DEFAULT_NEGATIVE);
+
+      if (truncatedPrompt.length < params.prompt.length) {
+        console.log(`[Civitai] Prompt truncated from ${params.prompt.length} to ${truncatedPrompt.length} chars`);
+      }
+
       const input = {
         model: getModelUrn(params.modelId || 4201),
         params: {
-          prompt: params.prompt,
-          negativePrompt: params.negativePrompt || DEFAULT_NEGATIVE,
+          prompt: truncatedPrompt,
+          negativePrompt: truncatedNegative,
           scheduler: Scheduler.EULER_A,
           steps: params.steps || 25,
           cfgScale: params.cfgScale || 7,

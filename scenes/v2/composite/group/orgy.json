@@ -1,0 +1,289 @@
+{
+  "id": "orgy",
+  "slug": "orgy",
+  "version": 2,
+  "role_direction": "group",
+  "title": {
+    "ru": "Оргия",
+    "en": "Orgy"
+  },
+  "subtitle": {
+    "ru": "Много людей вместе",
+    "en": "Many people together"
+  },
+  "ai_description": {
+    "ru": "Несколько пар или много людей вместе. Все со всеми, свободный обмен, групповое удовольствие без границ.",
+    "en": "Multiple couples or many people together. Everyone with everyone, free exchange, group pleasure without limits."
+  },
+  "image_prompt": "multiple men and women in various sexual positions on large bed, some couples embracing, others changing partners, spacious bedroom with soft lighting",
+  "intensity": 5,
+  "category": "group",
+  "tags": [
+    "orgy",
+    "group_sex",
+    "swinging",
+    "multiple_partners",
+    "free_for_all"
+  ],
+  "elements": [
+    {
+      "id": "composition",
+      "label": {
+        "ru": "Состав",
+        "en": "Composition"
+      },
+      "tag_ref": "orgy_composition",
+      "follow_ups": [
+        {
+          "id": "who",
+          "type": "multi_select",
+          "question": {
+            "ru": "Кто участвует?",
+            "en": "Who participates?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "couples",
+                "label": {
+                  "ru": "Пары",
+                  "en": "Couples"
+                }
+              },
+              {
+                "id": "singles",
+                "label": {
+                  "ru": "Одиночки",
+                  "en": "Singles"
+                }
+              },
+              {
+                "id": "mixed",
+                "label": {
+                  "ru": "Смешанно",
+                  "en": "Mixed"
+                }
+              },
+              {
+                "id": "mmf_heavy",
+                "label": {
+                  "ru": "Больше мужчин",
+                  "en": "More men"
+                }
+              },
+              {
+                "id": "ffm_heavy",
+                "label": {
+                  "ru": "Больше женщин",
+                  "en": "More women"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "rules",
+      "label": {
+        "ru": "Правила",
+        "en": "Rules"
+      },
+      "tag_ref": "orgy_rules",
+      "follow_ups": [
+        {
+          "id": "boundaries",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие правила?",
+            "en": "What rules?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "no_rules",
+                "label": {
+                  "ru": "Без правил",
+                  "en": "No rules"
+                }
+              },
+              {
+                "id": "ask_first",
+                "label": {
+                  "ru": "Сначала спросить",
+                  "en": "Ask first"
+                }
+              },
+              {
+                "id": "stay_near",
+                "label": {
+                  "ru": "Оставаться рядом с партнёром",
+                  "en": "Stay near partner"
+                }
+              },
+              {
+                "id": "protection",
+                "label": {
+                  "ru": "Обязательная защита",
+                  "en": "Mandatory protection"
+                }
+              },
+              {
+                "id": "same_room",
+                "label": {
+                  "ru": "В одной комнате",
+                  "en": "Same room"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "activities",
+      "label": {
+        "ru": "Активности",
+        "en": "Activities"
+      },
+      "tag_ref": "orgy_activities",
+      "follow_ups": [
+        {
+          "id": "acts",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие активности?",
+            "en": "What activities?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "swap",
+                "label": {
+                  "ru": "Обмен партнёрами",
+                  "en": "Partner swap"
+                }
+              },
+              {
+                "id": "pile",
+                "label": {
+                  "ru": "Куча-мала",
+                  "en": "Pile up"
+                }
+              },
+              {
+                "id": "circle",
+                "label": {
+                  "ru": "Круговые",
+                  "en": "Circular"
+                }
+              },
+              {
+                "id": "wlw",
+                "label": {
+                  "ru": "Женщины вместе",
+                  "en": "Women together"
+                }
+              },
+              {
+                "id": "mlm",
+                "label": {
+                  "ru": "Мужчины вместе",
+                  "en": "Men together"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "orgy_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "variety",
+                "label": {
+                  "ru": "Разнообразие",
+                  "en": "Variety"
+                }
+              },
+              {
+                "id": "freedom",
+                "label": {
+                  "ru": "Свобода",
+                  "en": "Freedom"
+                }
+              },
+              {
+                "id": "energy",
+                "label": {
+                  "ru": "Групповая энергия",
+                  "en": "Group energy"
+                }
+              },
+              {
+                "id": "watching",
+                "label": {
+                  "ru": "Смотреть других",
+                  "en": "Watching others"
+                }
+              },
+              {
+                "id": "being_watched",
+                "label": {
+                  "ru": "Быть на виду",
+                  "en": "Being watched"
+                }
+              },
+              {
+                "id": "taboo",
+                "label": {
+                  "ru": "Табу",
+                  "en": "Taboo"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в оргии?",
+      "en": "What appeals about orgy?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "orgy",
+      "group",
+      "swinging"
+    ],
+    "tests_secondary": [
+      "multiple",
+      "freedom",
+      "variety"
+    ]
+  },
+  "user_description": {
+    "ru": "Несколько мужчин и женщин занимаются сексом в одной комнате. Пары меняются партнёрами. Каждый участвует с разными людьми.",
+    "en": "Several men and women have sex in one room. Couples swap partners. Each participant engages with different people."
+  }
+}

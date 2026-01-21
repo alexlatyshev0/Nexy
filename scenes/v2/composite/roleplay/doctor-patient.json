@@ -1,0 +1,268 @@
+{
+  "id": "doctor_patient",
+  "slug": "doctor-patient",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Врач/Пациент",
+    "en": "Doctor/Patient"
+  },
+  "subtitle": {
+    "ru": "Медицинский осмотр",
+    "en": "Medical examination"
+  },
+  "ai_description": {
+    "ru": "Властный врач и уязвимый пациент. Осмотры, процедуры, медицинский фетиш. Контроль через 'заботу о здоровье'.",
+    "en": "Authoritative doctor and vulnerable patient. Examinations, procedures, medical fetish. Control through 'health care'."
+  },
+  "image_prompt": "man in white medical coat examining woman on medical examination table, woman in open hospital gown, clinical medical room with medical equipment",
+  "intensity": 3,
+  "category": "roleplay",
+  "tags": [
+    "roleplay",
+    "medical",
+    "doctor",
+    "examination",
+    "vulnerability"
+  ],
+  "elements": [
+    {
+      "id": "who_doctor",
+      "label": {
+        "ru": "Кто врач?",
+        "en": "Who's doctor?"
+      },
+      "tag_ref": "doctor_who",
+      "follow_ups": [
+        {
+          "id": "doctor",
+          "type": "single_select",
+          "question": {
+            "ru": "Кто врач?",
+            "en": "Who's the doctor?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "he",
+                "label": {
+                  "ru": "Он — врач",
+                  "en": "He's the doctor"
+                }
+              },
+              {
+                "id": "she",
+                "label": {
+                  "ru": "Она — врач",
+                  "en": "She's the doctor"
+                }
+              },
+              {
+                "id": "switch",
+                "label": {
+                  "ru": "Меняемся",
+                  "en": "Switch roles"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "examination",
+      "label": {
+        "ru": "Осмотр",
+        "en": "Examination"
+      },
+      "tag_ref": "medical_exam",
+      "follow_ups": [
+        {
+          "id": "type",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой осмотр?",
+            "en": "What examination?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "physical",
+                "label": {
+                  "ru": "Физический осмотр",
+                  "en": "Physical exam"
+                }
+              },
+              {
+                "id": "gynecological",
+                "label": {
+                  "ru": "Гинекологический",
+                  "en": "Gynecological"
+                }
+              },
+              {
+                "id": "prostate",
+                "label": {
+                  "ru": "Простаты",
+                  "en": "Prostate"
+                }
+              },
+              {
+                "id": "temperature",
+                "label": {
+                  "ru": "Ректальная температура",
+                  "en": "Rectal temperature"
+                }
+              },
+              {
+                "id": "sensitivity",
+                "label": {
+                  "ru": "Тест на чувствительность",
+                  "en": "Sensitivity test"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "props",
+      "label": {
+        "ru": "Реквизит",
+        "en": "Props"
+      },
+      "tag_ref": "medical_props",
+      "follow_ups": [
+        {
+          "id": "items",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой реквизит?",
+            "en": "What props?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "gloves",
+                "label": {
+                  "ru": "Латексные перчатки",
+                  "en": "Latex gloves"
+                }
+              },
+              {
+                "id": "speculum",
+                "label": {
+                  "ru": "Speculum",
+                  "en": "Speculum"
+                }
+              },
+              {
+                "id": "gown",
+                "label": {
+                  "ru": "Больничный халат",
+                  "en": "Hospital gown"
+                }
+              },
+              {
+                "id": "table",
+                "label": {
+                  "ru": "Стол для осмотра",
+                  "en": "Exam table"
+                }
+              },
+              {
+                "id": "sounds",
+                "label": {
+                  "ru": "Уретральные стержни",
+                  "en": "Urethral sounds"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "medical_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "vulnerability",
+                "label": {
+                  "ru": "Уязвимость пациента",
+                  "en": "Patient vulnerability"
+                }
+              },
+              {
+                "id": "authority",
+                "label": {
+                  "ru": "Авторитет врача",
+                  "en": "Doctor authority"
+                }
+              },
+              {
+                "id": "clinical",
+                "label": {
+                  "ru": "Клинический подход",
+                  "en": "Clinical approach"
+                }
+              },
+              {
+                "id": "examination",
+                "label": {
+                  "ru": "Быть осмотренным",
+                  "en": "Being examined"
+                }
+              },
+              {
+                "id": "latex",
+                "label": {
+                  "ru": "Латекс/перчатки",
+                  "en": "Latex/gloves"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в медицинской ролевой игре?",
+      "en": "What appeals about medical roleplay?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "roleplay",
+      "medical",
+      "doctor"
+    ],
+    "tests_secondary": [
+      "examination",
+      "vulnerability",
+      "clinical"
+    ]
+  },
+  "user_description": {
+    "ru": "Мужчина-врач в белом халате осматривает женщину-пациентку на медицинской кушетке. Осмотр переходит в секс.",
+    "en": "Male doctor in white coat examines female patient on medical examination table. The examination turns into sex."
+  }
+}

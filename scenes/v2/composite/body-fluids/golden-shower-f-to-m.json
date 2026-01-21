@@ -1,0 +1,445 @@
+{
+  "id": "golden_shower_f_to_m",
+  "slug": "golden-shower-she-on-him",
+  "version": 2,
+  "paired_scene": "golden_shower_m_to_f",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Золотой дождь",
+    "en": "Golden Shower"
+  },
+  "subtitle": {
+    "ru": "Она на него",
+    "en": "She on him"
+  },
+  "ai_description": {
+    "ru": "Она стоит над ним, он на коленях смотрит снизу вверх. Её власть абсолютна, он принимает всё. Женское доминирование в чистом виде.",
+    "en": "She stands over him, he kneels looking up. Her power absolute, he accepts everything. Pure female domination."
+  },
+  "image_prompt": "woman standing over kneeling man in bathroom, both nude, shower/bathroom tiles visible",
+  "intensity": 4,
+  "category": "body_fluids",
+  "tags": [
+    "watersports",
+    "golden_shower",
+    "urine",
+    "femdom",
+    "humiliation",
+    "female_domination"
+  ],
+  "elements": [
+    {
+      "id": "where_body",
+      "label": {
+        "ru": "Куда на тело?",
+        "en": "Where on body?"
+      },
+      "tag_ref": "golden_shower_location",
+      "follow_ups": [
+        {
+          "id": "body_targets",
+          "type": "multi_select",
+          "question": {
+            "ru": "На какие части тела?",
+            "en": "On which body parts?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "chest",
+                "label": {
+                  "ru": "Грудь",
+                  "en": "Chest"
+                }
+              },
+              {
+                "id": "stomach",
+                "label": {
+                  "ru": "Живот",
+                  "en": "Stomach"
+                }
+              },
+              {
+                "id": "face",
+                "label": {
+                  "ru": "Лицо",
+                  "en": "Face"
+                }
+              },
+              {
+                "id": "mouth",
+                "label": {
+                  "ru": "В рот",
+                  "en": "In mouth"
+                }
+              },
+              {
+                "id": "cock",
+                "label": {
+                  "ru": "На член",
+                  "en": "On cock"
+                }
+              },
+              {
+                "id": "full_body",
+                "label": {
+                  "ru": "Всё тело",
+                  "en": "Full body"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "setting",
+      "label": {
+        "ru": "Где?",
+        "en": "Where?"
+      },
+      "tag_ref": "watersports_location",
+      "follow_ups": [
+        {
+          "id": "location",
+          "type": "multi_select",
+          "question": {
+            "ru": "В каком месте?",
+            "en": "What location?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "shower",
+                "label": {
+                  "ru": "В душе",
+                  "en": "In shower"
+                }
+              },
+              {
+                "id": "bathtub",
+                "label": {
+                  "ru": "В ванной",
+                  "en": "In bathtub"
+                }
+              },
+              {
+                "id": "over_toilet",
+                "label": {
+                  "ru": "Над унитазом (он голова)",
+                  "en": "Over toilet (his head)"
+                }
+              },
+              {
+                "id": "outdoor",
+                "label": {
+                  "ru": "На улице",
+                  "en": "Outdoors"
+                }
+              },
+              {
+                "id": "bed_protection",
+                "label": {
+                  "ru": "В постели",
+                  "en": "In bed"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "watersports_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal_factors",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что именно возбуждает?",
+            "en": "What exactly excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "femdom",
+                "label": {
+                  "ru": "Женская власть",
+                  "en": "Female power"
+                }
+              },
+              {
+                "id": "humiliation",
+                "label": {
+                  "ru": "Его унижение",
+                  "en": "His humiliation"
+                }
+              },
+              {
+                "id": "taboo",
+                "label": {
+                  "ru": "Табу, запретность",
+                  "en": "Taboo, forbidden"
+                }
+              },
+              {
+                "id": "worship",
+                "label": {
+                  "ru": "Поклонение ей",
+                  "en": "Worshipping her"
+                }
+              },
+              {
+                "id": "degradation",
+                "label": {
+                  "ru": "Его деградация",
+                  "en": "His degradation"
+                }
+              },
+              {
+                "id": "intimacy",
+                "label": {
+                  "ru": "Крайняя интимность",
+                  "en": "Extreme intimacy"
+                }
+              },
+              {
+                "id": "toilet_slave",
+                "label": {
+                  "ru": "Он — её туалет",
+                  "en": "He's her toilet"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "intensity_level",
+      "label": {
+        "ru": "Интенсивность",
+        "en": "Intensity"
+      },
+      "tag_ref": "watersports_intensity",
+      "follow_ups": [
+        {
+          "id": "intensity",
+          "type": "scale",
+          "question": {
+            "ru": "Насколько интенсивно?",
+            "en": "How intense?"
+          },
+          "config": {
+            "min_label": {
+              "ru": "Мягко, игриво",
+              "en": "Soft, playful"
+            },
+            "max_label": {
+              "ru": "Жёстко, как туалет",
+              "en": "Hard, toilet slave"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "drinking",
+      "label": {
+        "ru": "Пить?",
+        "en": "Drinking?"
+      },
+      "tag_ref": "urine_drinking",
+      "follow_ups": [
+        {
+          "id": "drink_level",
+          "type": "single_select",
+          "question": {
+            "ru": "Он пьёт?",
+            "en": "Does he drink?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "no",
+                "label": {
+                  "ru": "Нет, только на тело",
+                  "en": "No, only on body"
+                }
+              },
+              {
+                "id": "taste",
+                "label": {
+                  "ru": "Попробовать немного",
+                  "en": "Taste a little"
+                }
+              },
+              {
+                "id": "some",
+                "label": {
+                  "ru": "Частично",
+                  "en": "Some"
+                }
+              },
+              {
+                "id": "full",
+                "label": {
+                  "ru": "Всё до капли",
+                  "en": "Every drop"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "her_position",
+      "label": {
+        "ru": "Её поза",
+        "en": "Her position"
+      },
+      "tag_ref": "giver_position",
+      "follow_ups": [
+        {
+          "id": "position",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как она стоит/сидит?",
+            "en": "How is she positioned?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "standing_over",
+                "label": {
+                  "ru": "Стоит над ним",
+                  "en": "Standing over him"
+                }
+              },
+              {
+                "id": "squatting",
+                "label": {
+                  "ru": "На корточках над лицом",
+                  "en": "Squatting over face"
+                }
+              },
+              {
+                "id": "sitting_face",
+                "label": {
+                  "ru": "Сидит на лице",
+                  "en": "Sitting on face"
+                }
+              },
+              {
+                "id": "throne",
+                "label": {
+                  "ru": "На троне/стуле",
+                  "en": "On throne/chair"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "verbal",
+      "label": {
+        "ru": "Что говорит?",
+        "en": "What does she say?"
+      },
+      "tag_ref": "verbal_humiliation",
+      "follow_ups": [
+        {
+          "id": "verbal_content",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что она говорит?",
+            "en": "What does she say?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "toilet",
+                "label": {
+                  "ru": "Ты мой туалет",
+                  "en": "You're my toilet"
+                }
+              },
+              {
+                "id": "drink",
+                "label": {
+                  "ru": "Пей всё",
+                  "en": "Drink it all"
+                }
+              },
+              {
+                "id": "gratitude",
+                "label": {
+                  "ru": "Благодари меня",
+                  "en": "Thank me"
+                }
+              },
+              {
+                "id": "pathetic",
+                "label": {
+                  "ru": "Жалкий",
+                  "en": "Pathetic"
+                }
+              },
+              {
+                "id": "privilege",
+                "label": {
+                  "ru": "Это привилегия",
+                  "en": "This is a privilege"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в этой сцене?",
+      "en": "What appeals in this scene?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "watersports",
+      "golden_shower",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "humiliation",
+      "toilet_slave",
+      "female_domination"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys female power",
+        "finds humiliation arousing",
+        "worships women"
+      ],
+      "negative": [
+        "too extreme",
+        "hygiene concerns",
+        "prefers male dominance"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Она писает на него. Он на коленях принимает её струю.",
+    "en": "She pees on him. He kneels and receives her stream."
+  }
+}

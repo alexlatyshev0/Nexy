@@ -1,0 +1,57 @@
+{
+  "id": "bodymap_light_touch",
+  "slug": "light-touch",
+  "version": 2,
+  "type": "body_map",
+  "order": 3,
+
+  "title": { "ru": "Нежные прикосновения", "en": "Gentle Touch" },
+  "subtitle": { "ru": "Карта ласк", "en": "Caress map" },
+  "description": {
+    "ru": "Отметь, где любишь нежно гладить и где нравится получать ласки",
+    "en": "Mark where you like to caress and where you like being touched gently"
+  },
+
+  "intensity": 1,
+  "action": "caress",
+  "tags": ["touch", "caress", "sensual", "gentle"],
+
+  "passes": [
+    {
+      "id": "give",
+      "question": {
+        "ru": "Где ты любишь нежно гладить партнёра?",
+        "en": "Where do you like to gently touch your partner?"
+      },
+      "instruction": {
+        "ru": "Нажми на зоны тела",
+        "en": "Tap on body zones"
+      }
+    },
+    {
+      "id": "receive",
+      "question": {
+        "ru": "Где тебе нравится, когда тебя нежно гладят?",
+        "en": "Where do you like being gently touched?"
+      },
+      "instruction": {
+        "ru": "Нажми на зоны тела",
+        "en": "Tap on body zones"
+      }
+    }
+  ],
+
+  "zones": {
+    "available": ["face", "hair", "neck", "shoulders", "back", "arms", "hands", "chest", "stomach", "hips", "thighs", "legs", "feet"],
+    "highlight_erogenous": false
+  },
+
+  "ai_context": {
+    "tests_primary": ["sensual_touch", "gentle"],
+    "tests_secondary": ["romantic", "tender", "massage"],
+    "profile_signals": {
+      "if_many_zones": "touch_oriented",
+      "if_back_shoulders": "massage_lover"
+    }
+  }
+}

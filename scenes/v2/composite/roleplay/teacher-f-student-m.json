@@ -1,0 +1,36 @@
+{
+  "id": "teacher_f_student_m",
+  "slug": "teacher-f-student-m",
+  "version": 2,
+  "role_direction": "f_to_m",
+  "title": { "ru": "Учительница и ученик", "en": "Teacher & Schoolboy" },
+  "subtitle": { "ru": "Она — строгая учительница", "en": "She's the strict teacher" },
+  "ai_description": { "ru": "Ж-учительница, М-ученик. Ролеплей с наказаниями, rewards, властью через обучение.", "en": "F-teacher, M-student. Roleplay with punishments, rewards, power through teaching." },
+  "image_prompt": "man standing at blackboard being scolded, woman in tight pencil skirt and glasses pointing ruler at him, classroom setting",
+  "intensity": 3,
+  "category": "roleplay",
+  "tags": ["roleplay", "teacher", "student", "f_dom", "punishment"],
+  "elements": [
+    {
+      "id": "what_happens",
+      "label": { "ru": "Что происходит", "en": "What happens" },
+      "tag_ref": "teacher_action",
+      "follow_ups": [{
+        "id": "action",
+        "type": "multi_select",
+        "question": { "ru": "Что делает учительница?", "en": "What does teacher do?" },
+        "config": {
+          "options": [
+            { "id": "scolding", "label": { "ru": "Отчитывает", "en": "Scolding" } },
+            { "id": "spanking", "label": { "ru": "Шлёпает", "en": "Spanking" } },
+            { "id": "detention", "label": { "ru": "Оставляет после уроков", "en": "Detention" } },
+            { "id": "seduction", "label": { "ru": "Соблазняет ученика", "en": "Seduces student" } }
+          ]
+        }
+      }]
+    }
+  ],
+  "question": { "type": "interest_scale", "text": { "ru": "Она — строгая учительница, он — непослушный ученик?", "en": "She's strict teacher, he's naughty student?" } },
+  "ai_context": { "tests_primary": ["teacher_student", "f_dom"], "tests_secondary": ["roleplay", "femdom"] },
+  "user_description": { "ru": "Она играет строгую учительницу. Он — ученик. Наказания или соблазнение.", "en": "She plays strict teacher. He's student. Punishments or seduction." }
+}

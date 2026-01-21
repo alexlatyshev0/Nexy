@@ -7,6 +7,7 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
 import { Slider } from '@/components/ui/slider';
 import { ChevronRight, Check } from 'lucide-react';
+import { t } from '@/lib/locale';
 import type { Locale } from '@/lib/types';
 
 interface LocalizedString {
@@ -356,7 +357,7 @@ export function TopicDrilldown({
 
       <div className="flex gap-3 pt-4">
         <Button variant="outline" onClick={onSkip} className="flex-1">
-          Пропустить
+          {t('skip', locale || 'en')}
         </Button>
         <Button onClick={handleNext} className="flex-1">
           {isLastQuestion ? 'Готово' : 'Далее'}

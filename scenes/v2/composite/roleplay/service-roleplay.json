@@ -1,0 +1,255 @@
+{
+  "id": "service_roleplay",
+  "slug": "service-roleplay",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Сервисные роли",
+    "en": "Service Roleplay"
+  },
+  "subtitle": {
+    "ru": "Горничная, медсестра и другие",
+    "en": "Maid, nurse, and others"
+  },
+  "ai_description": {
+    "ru": "Ролевые игры в обслуживающий персонал. Горничная, медсестра, официантка. С униформой и соответствующим поведением.",
+    "en": "Roleplay as service staff. Maid, nurse, waitress. With uniform and appropriate behavior."
+  },
+  "image_prompt": "woman in French maid costume bending over to clean table, man sitting in armchair watching, living room with furniture",
+  "intensity": 2,
+  "category": "roleplay",
+  "tags": [
+    "service",
+    "maid",
+    "nurse",
+    "uniform",
+    "roleplay"
+  ],
+  "elements": [
+    {
+      "id": "role",
+      "label": {
+        "ru": "Роль",
+        "en": "Role"
+      },
+      "tag_ref": "service_role",
+      "follow_ups": [
+        {
+          "id": "which",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какая роль?",
+            "en": "Which role?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "maid",
+                "label": {
+                  "ru": "Горничная",
+                  "en": "Maid"
+                }
+              },
+              {
+                "id": "nurse",
+                "label": {
+                  "ru": "Медсестра",
+                  "en": "Nurse"
+                }
+              },
+              {
+                "id": "waitress",
+                "label": {
+                  "ru": "Официантка",
+                  "en": "Waitress"
+                }
+              },
+              {
+                "id": "flight_attendant",
+                "label": {
+                  "ru": "Стюардесса",
+                  "en": "Flight attendant"
+                }
+              },
+              {
+                "id": "housekeeper",
+                "label": {
+                  "ru": "Экономка",
+                  "en": "Housekeeper"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "who_serves",
+      "label": {
+        "ru": "Кто обслуживает",
+        "en": "Who serves"
+      },
+      "tag_ref": "service_who",
+      "follow_ups": [
+        {
+          "id": "who",
+          "type": "single_select",
+          "question": {
+            "ru": "Кто в роли?",
+            "en": "Who's in the role?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "she",
+                "label": {
+                  "ru": "Она",
+                  "en": "She"
+                }
+              },
+              {
+                "id": "he",
+                "label": {
+                  "ru": "Он",
+                  "en": "He"
+                }
+              },
+              {
+                "id": "either",
+                "label": {
+                  "ru": "Любой",
+                  "en": "Either"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "uniform",
+      "label": {
+        "ru": "Униформа",
+        "en": "Uniform"
+      },
+      "tag_ref": "service_uniform",
+      "follow_ups": [
+        {
+          "id": "dress",
+          "type": "single_select",
+          "question": {
+            "ru": "Важна униформа?",
+            "en": "Is uniform important?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "essential",
+                "label": {
+                  "ru": "Обязательно",
+                  "en": "Essential"
+                }
+              },
+              {
+                "id": "nice_to_have",
+                "label": {
+                  "ru": "Желательно",
+                  "en": "Nice to have"
+                }
+              },
+              {
+                "id": "not_needed",
+                "label": {
+                  "ru": "Не нужно",
+                  "en": "Not needed"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "service_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "uniform",
+                "label": {
+                  "ru": "Униформа",
+                  "en": "Uniform"
+                }
+              },
+              {
+                "id": "power",
+                "label": {
+                  "ru": "Власть",
+                  "en": "Power dynamic"
+                }
+              },
+              {
+                "id": "service",
+                "label": {
+                  "ru": "Обслуживание",
+                  "en": "Being served"
+                }
+              },
+              {
+                "id": "fantasy",
+                "label": {
+                  "ru": "Фантазия",
+                  "en": "Fantasy"
+                }
+              },
+              {
+                "id": "obedience",
+                "label": {
+                  "ru": "Послушание",
+                  "en": "Obedience"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в сервисных ролях?",
+      "en": "What appeals about service roleplay?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "service",
+      "maid",
+      "nurse",
+      "uniform"
+    ],
+    "tests_secondary": [
+      "roleplay",
+      "obedience",
+      "fantasy"
+    ]
+  },
+  "user_description": {
+    "ru": "Она играет роль горничной, официантки или стюардессы. Носит соответствующую униформу и обслуживает его.",
+    "en": "She plays the role of a maid, waitress, or stewardess. Wears appropriate uniform and serves him."
+  }
+}

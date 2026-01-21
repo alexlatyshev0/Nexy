@@ -1,0 +1,275 @@
+{
+  "id": "remote_control_toy",
+  "slug": "remote-control-toy",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Дистанционная игрушка",
+    "en": "Remote Control Toy"
+  },
+  "subtitle": {
+    "ru": "Он управляет на расстоянии",
+    "en": "Control from distance"
+  },
+  "ai_description": {
+    "ru": "Игрушка внутри, пульт у него. В ресторане, на работе, где угодно. Сохранять самообладание пока он играет.",
+    "en": "Toy inside, remote with partner. At restaurant, at work, anywhere. Keep composure while they play."
+  },
+  "image_prompt": "woman sitting at restaurant table trying to maintain composure, man beside her discretely holding small remote control device, both fully dressed in casual clothes, restaurant interior with other diners in background",
+  "intensity": 3,
+  "category": "toys",
+  "tags": [
+    "toys",
+    "remote",
+    "public",
+    "control",
+    "teasing"
+  ],
+  "elements": [
+    {
+      "id": "who_wears",
+      "label": {
+        "ru": "Кто носит",
+        "en": "Who wears"
+      },
+      "tag_ref": "remote_wearer",
+      "follow_ups": [
+        {
+          "id": "wearer",
+          "type": "single_select",
+          "question": {
+            "ru": "Кто носит игрушку?",
+            "en": "Who wears the toy?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "she",
+                "label": {
+                  "ru": "Она носит",
+                  "en": "She wears"
+                }
+              },
+              {
+                "id": "he",
+                "label": {
+                  "ru": "Он носит",
+                  "en": "He wears"
+                }
+              },
+              {
+                "id": "both",
+                "label": {
+                  "ru": "Оба",
+                  "en": "Both"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "toy_type",
+      "label": {
+        "ru": "Тип игрушки",
+        "en": "Toy type"
+      },
+      "tag_ref": "remote_type",
+      "follow_ups": [
+        {
+          "id": "type",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какая игрушка?",
+            "en": "What toy?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "egg",
+                "label": {
+                  "ru": "Вибро-яйцо",
+                  "en": "Vibrating egg"
+                }
+              },
+              {
+                "id": "panty",
+                "label": {
+                  "ru": "Вибро-трусики",
+                  "en": "Panty vibe"
+                }
+              },
+              {
+                "id": "plug",
+                "label": {
+                  "ru": "Вибро-пробка",
+                  "en": "Vibrating plug"
+                }
+              },
+              {
+                "id": "cock_ring",
+                "label": {
+                  "ru": "Вибро-кольцо",
+                  "en": "Vibrating ring"
+                }
+              },
+              {
+                "id": "lovense",
+                "label": {
+                  "ru": "Lovense/app",
+                  "en": "Lovense/app"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "where",
+      "label": {
+        "ru": "Где",
+        "en": "Where"
+      },
+      "tag_ref": "remote_location",
+      "follow_ups": [
+        {
+          "id": "location",
+          "type": "multi_select",
+          "question": {
+            "ru": "Где носить?",
+            "en": "Where to wear?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "restaurant",
+                "label": {
+                  "ru": "Ресторан",
+                  "en": "Restaurant"
+                }
+              },
+              {
+                "id": "party",
+                "label": {
+                  "ru": "Вечеринка",
+                  "en": "Party"
+                }
+              },
+              {
+                "id": "work",
+                "label": {
+                  "ru": "Работа",
+                  "en": "Work"
+                }
+              },
+              {
+                "id": "shopping",
+                "label": {
+                  "ru": "Магазин",
+                  "en": "Shopping"
+                }
+              },
+              {
+                "id": "home",
+                "label": {
+                  "ru": "Дома (разные комнаты)",
+                  "en": "Home (different rooms)"
+                }
+              },
+              {
+                "id": "long_distance",
+                "label": {
+                  "ru": "На расстоянии",
+                  "en": "Long distance"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "remote_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "control",
+                "label": {
+                  "ru": "Контроль",
+                  "en": "Control"
+                }
+              },
+              {
+                "id": "public_secret",
+                "label": {
+                  "ru": "Секрет на публике",
+                  "en": "Public secret"
+                }
+              },
+              {
+                "id": "surrender",
+                "label": {
+                  "ru": "Отдать контроль",
+                  "en": "Surrendering control"
+                }
+              },
+              {
+                "id": "anticipation",
+                "label": {
+                  "ru": "Не знать когда включит",
+                  "en": "Anticipation"
+                }
+              },
+              {
+                "id": "composure",
+                "label": {
+                  "ru": "Сохранять лицо",
+                  "en": "Keeping composure"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в дистанционных игрушках?",
+      "en": "What appeals about remote toys?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "remote",
+      "control",
+      "toys"
+    ],
+    "tests_secondary": [
+      "public",
+      "teasing",
+      "surrender"
+    ]
+  },
+  "user_description": {
+    "ru": "Она носит вибратор внутри. Он управляет им с пульта. Включает в ресторане, на улице, в общественных местах.",
+    "en": "She wears vibrator inside. He controls it with remote. Turns it on in restaurant, on street, in public places."
+  }
+}

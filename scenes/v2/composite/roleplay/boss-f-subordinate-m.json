@@ -1,0 +1,35 @@
+{
+  "id": "boss_f_subordinate_m",
+  "slug": "boss-f-subordinate-m",
+  "version": 2,
+  "role_direction": "f_to_m",
+  "title": { "ru": "Босс и подчинённый", "en": "Boss (F) & Subordinate" },
+  "subtitle": { "ru": "Она — босс, он — подчинённый", "en": "She's the boss" },
+  "ai_description": { "ru": "Ж-босс, М-подчинённый. Офисный ролеплей с властью и подчинением.", "en": "F-boss, M-subordinate. Office roleplay with power and submission." },
+  "image_prompt": "woman in business suit sitting at executive desk, man kneeling beside her chair, corner office with city view",
+  "intensity": 3,
+  "category": "roleplay",
+  "tags": ["roleplay", "boss", "office", "f_dom"],
+  "elements": [
+    {
+      "id": "scenario",
+      "label": { "ru": "Сценарий", "en": "Scenario" },
+      "tag_ref": "boss_scenario",
+      "follow_ups": [{
+        "id": "scene",
+        "type": "multi_select",
+        "question": { "ru": "Что происходит?", "en": "What happens?" },
+        "config": {
+          "options": [
+            { "id": "after_hours", "label": { "ru": "После работы", "en": "After hours" } },
+            { "id": "under_desk", "label": { "ru": "Он под столом", "en": "He's under desk" } },
+            { "id": "commands", "label": { "ru": "Она командует", "en": "She commands" } }
+          ]
+        }
+      }]
+    }
+  ],
+  "question": { "type": "interest_scale", "text": { "ru": "Она — босс, он — подчинённый?", "en": "She's boss, he's subordinate?" } },
+  "ai_context": { "tests_primary": ["boss_subordinate", "f_dom"], "tests_secondary": ["office", "femdom"] },
+  "user_description": { "ru": "Она играет босса в офисе. Он — её подчинённый. Власть и подчинение на рабочем месте.", "en": "She plays office boss. He's her subordinate. Power and submission at workplace." }
+}

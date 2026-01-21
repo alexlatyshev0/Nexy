@@ -1,0 +1,262 @@
+{
+  "id": "face_slapping_m_to_f",
+  "slug": "face-slapping-he-slaps-her",
+  "version": 2,
+  "paired_scene": "face_slapping_f_to_m",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Пощёчины",
+    "en": "Face Slapping"
+  },
+  "subtitle": {
+    "ru": "Он даёт ей пощёчину",
+    "en": "He slaps her"
+  },
+  "ai_description": {
+    "ru": "Его рука касается её щеки — резко, властно. Не больно, но властно. Или больно — как она хочет. Доминирование в чистом виде.",
+    "en": "His hand meets her cheek — sharp, commanding. Not painful, but dominant. Or painful — as she wants. Pure dominance."
+  },
+  "image_prompt": "man slapping woman's face with his hand, her head turning from impact, intimate bedroom setting",
+  "intensity": 4,
+  "category": "impact-pain",
+  "tags": [
+    "face_slapping",
+    "slap",
+    "dominance",
+    "impact",
+    "rough"
+  ],
+  "elements": [
+    {
+      "id": "intensity",
+      "label": {
+        "ru": "Интенсивность",
+        "en": "Intensity"
+      },
+      "tag_ref": "slap_intensity",
+      "follow_ups": [
+        {
+          "id": "level",
+          "type": "single_select",
+          "question": {
+            "ru": "Насколько сильно?",
+            "en": "How hard?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "symbolic",
+                "label": {
+                  "ru": "Символически (почти не больно)",
+                  "en": "Symbolic (barely feels)"
+                }
+              },
+              {
+                "id": "light",
+                "label": {
+                  "ru": "Лёгкая (ощущается, не больно)",
+                  "en": "Light (felt, not painful)"
+                }
+              },
+              {
+                "id": "moderate",
+                "label": {
+                  "ru": "Умеренная (ощутимо)",
+                  "en": "Moderate (noticeable)"
+                }
+              },
+              {
+                "id": "hard",
+                "label": {
+                  "ru": "Сильная (больно)",
+                  "en": "Hard (painful)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Контекст",
+        "en": "Context"
+      },
+      "tag_ref": "slap_context",
+      "follow_ups": [
+        {
+          "id": "when",
+          "type": "multi_select",
+          "question": {
+            "ru": "В каком контексте?",
+            "en": "In what context?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "during_sex",
+                "label": {
+                  "ru": "Во время секса",
+                  "en": "During sex"
+                }
+              },
+              {
+                "id": "during_oral",
+                "label": {
+                  "ru": "Во время орального",
+                  "en": "During oral"
+                }
+              },
+              {
+                "id": "punishment",
+                "label": {
+                  "ru": "Как наказание",
+                  "en": "As punishment"
+                }
+              },
+              {
+                "id": "attention",
+                "label": {
+                  "ru": "Чтобы привлечь внимание",
+                  "en": "To get attention"
+                }
+              },
+              {
+                "id": "degradation",
+                "label": {
+                  "ru": "Для унижения",
+                  "en": "For degradation"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "slap_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "dominance",
+                "label": {
+                  "ru": "Проявление власти",
+                  "en": "Show of dominance"
+                }
+              },
+              {
+                "id": "shock",
+                "label": {
+                  "ru": "Шок, внезапность",
+                  "en": "Shock, suddenness"
+                }
+              },
+              {
+                "id": "submission",
+                "label": {
+                  "ru": "Подчинение",
+                  "en": "Submission"
+                }
+              },
+              {
+                "id": "degradation",
+                "label": {
+                  "ru": "Унижение",
+                  "en": "Degradation"
+                }
+              },
+              {
+                "id": "pain",
+                "label": {
+                  "ru": "Боль",
+                  "en": "Pain"
+                }
+              },
+              {
+                "id": "primal",
+                "label": {
+                  "ru": "Первобытность",
+                  "en": "Primal"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "boundary",
+    "text": {
+      "ru": "Пощёчины во время секса — возбуждает?",
+      "en": "Face slapping during sex — exciting?"
+    },
+    "config": {
+      "boundary_options": [
+        {
+          "id": "hard_no",
+          "label": {
+            "ru": "Нет, недопустимо",
+            "en": "No, unacceptable"
+          }
+        },
+        {
+          "id": "curious",
+          "label": {
+            "ru": "Интересно попробовать",
+            "en": "Curious to try"
+          }
+        },
+        {
+          "id": "yes",
+          "label": {
+            "ru": "Да, нравится",
+            "en": "Yes, like it"
+          }
+        }
+      ]
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "face_slapping",
+      "impact",
+      "dominance"
+    ],
+    "tests_secondary": [
+      "degradation",
+      "rough",
+      "shock"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys dominance",
+        "shock is arousing",
+        "primal"
+      ],
+      "negative": [
+        "violence trigger",
+        "disrespectful",
+        "not interested"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Он бьёт её по лицу рукой во время секса",
+    "en": "He slaps her face with his hand during sex"
+  }
+}

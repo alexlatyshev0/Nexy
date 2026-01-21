@@ -1,0 +1,36 @@
+{
+  "id": "mummification_f",
+  "slug": "mummification-f",
+  "version": 2,
+  "role_direction": "m_to_f",
+  "title": { "ru": "Мумификация (она)", "en": "Mummification (Her)" },
+  "subtitle": { "ru": "Она полностью обездвижена", "en": "She's fully immobilized" },
+  "ai_description": { "ru": "Ж полностью завёрнута — плёнка, бинты, вакуумная кровать. Сенсорная депривация и полная беспомощность.", "en": "F fully wrapped — plastic, bandages, vacuum bed. Sensory deprivation and total helplessness." },
+  "image_prompt": "woman wrapped entirely in plastic wrap on padded table, only mouth and nose visible, man standing beside her, dungeon room with dim lighting",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": ["mummification", "bondage", "sensory_deprivation", "f_sub"],
+  "elements": [
+    {
+      "id": "what_appeals",
+      "label": { "ru": "Что привлекает", "en": "What appeals" },
+      "tag_ref": "mummy_appeal",
+      "follow_ups": [{
+        "id": "appeal",
+        "type": "multi_select",
+        "question": { "ru": "Что возбуждает?", "en": "What excites?" },
+        "config": {
+          "options": [
+            { "id": "helplessness", "label": { "ru": "Её беспомощность", "en": "Her helplessness" } },
+            { "id": "control", "label": { "ru": "Полный контроль над ней", "en": "Total control over her" } },
+            { "id": "sensory", "label": { "ru": "Сенсорная депривация", "en": "Sensory deprivation" } },
+            { "id": "surrender", "label": { "ru": "Полная отдача", "en": "Total surrender" } }
+          ]
+        }
+      }]
+    }
+  ],
+  "question": { "type": "interest_scale", "text": { "ru": "Она полностью обездвижена — плёнка, бинты?", "en": "She's fully immobilized — wrap, bandages?" } },
+  "ai_context": { "tests_primary": ["mummification", "bondage", "f_sub"], "tests_secondary": ["sensory_deprivation", "helplessness"] },
+  "user_description": { "ru": "Она полностью завёрнута в плёнку или бинты, не может пошевелиться", "en": "She's fully wrapped in plastic or bandages, can't move" }
+}

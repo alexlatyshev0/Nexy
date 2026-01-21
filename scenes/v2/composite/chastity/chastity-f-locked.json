@@ -1,0 +1,341 @@
+{
+  "id": "chastity_f_locked",
+  "slug": "chastity-she-locked",
+  "version": 2,
+  "paired_scene": "chastity_m_locked",
+  "role_direction": "m_keyholder_f_locked",
+  "title": {
+    "ru": "Chastity",
+    "en": "Chastity"
+  },
+  "subtitle": {
+    "ru": "Она заперта",
+    "en": "She's locked"
+  },
+  "ai_description": {
+    "ru": "На ней пояс верности, ключ у него. Она не может прикоснуться к себе без его разрешения. Полный контроль над её удовольствием.",
+    "en": "She wears a chastity belt, he holds the key. She can't touch herself without his permission. Complete control over her pleasure."
+  },
+  "image_prompt": "woman wearing chastity belt standing, man beside her holding small key, she nude except for device, bedroom setting",
+  "intensity": 4,
+  "category": "chastity",
+  "tags": [
+    "chastity",
+    "belt",
+    "keyholder",
+    "denial",
+    "maledom",
+    "orgasm_control"
+  ],
+  "elements": [
+    {
+      "id": "device_type",
+      "label": {
+        "ru": "Тип устройства",
+        "en": "Device type"
+      },
+      "tag_ref": "belt_type",
+      "follow_ups": [
+        {
+          "id": "belt",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какое устройство?",
+            "en": "What device?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "full_belt",
+                "label": {
+                  "ru": "Полный пояс",
+                  "en": "Full belt"
+                }
+              },
+              {
+                "id": "shield",
+                "label": {
+                  "ru": "Щиток",
+                  "en": "Shield only"
+                }
+              },
+              {
+                "id": "plug_attachment",
+                "label": {
+                  "ru": "С креплением для пробки",
+                  "en": "With plug attachment"
+                }
+              },
+              {
+                "id": "comfortable",
+                "label": {
+                  "ru": "Для длительного ношения",
+                  "en": "For long-term wear"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "duration",
+      "label": {
+        "ru": "Длительность",
+        "en": "Duration"
+      },
+      "tag_ref": "chastity_duration_f",
+      "follow_ups": [
+        {
+          "id": "how_long",
+          "type": "single_select",
+          "question": {
+            "ru": "Как долго заперта?",
+            "en": "How long locked?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "session",
+                "label": {
+                  "ru": "На время сессии",
+                  "en": "During session"
+                }
+              },
+              {
+                "id": "day",
+                "label": {
+                  "ru": "День",
+                  "en": "Day"
+                }
+              },
+              {
+                "id": "days",
+                "label": {
+                  "ru": "Несколько дней",
+                  "en": "Several days"
+                }
+              },
+              {
+                "id": "week",
+                "label": {
+                  "ru": "Неделя",
+                  "en": "Week"
+                }
+              },
+              {
+                "id": "longer",
+                "label": {
+                  "ru": "Дольше",
+                  "en": "Longer"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "teasing",
+      "label": {
+        "ru": "Дразнить?",
+        "en": "Teasing?"
+      },
+      "tag_ref": "chastity_tease_f",
+      "follow_ups": [
+        {
+          "id": "tease_types",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как дразнить?",
+            "en": "How to tease?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "visual",
+                "label": {
+                  "ru": "Показывает себя",
+                  "en": "Shows himself"
+                }
+              },
+              {
+                "id": "touch",
+                "label": {
+                  "ru": "Трогает её (не там)",
+                  "en": "Touches her (not there)"
+                }
+              },
+              {
+                "id": "vibrator",
+                "label": {
+                  "ru": "Вибратор на поясе",
+                  "en": "Vibrator on belt"
+                }
+              },
+              {
+                "id": "talk",
+                "label": {
+                  "ru": "Рассказывает что сделает",
+                  "en": "Tells what he'll do"
+                }
+              },
+              {
+                "id": "uses_her",
+                "label": {
+                  "ru": "Использует её (но не даёт кончить)",
+                  "en": "Uses her (no orgasm)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "release",
+      "label": {
+        "ru": "Освобождение",
+        "en": "Release"
+      },
+      "tag_ref": "chastity_release_f",
+      "follow_ups": [
+        {
+          "id": "release_conditions",
+          "type": "multi_select",
+          "question": {
+            "ru": "За что выпускать?",
+            "en": "Release for what?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "good_behavior",
+                "label": {
+                  "ru": "За хорошее поведение",
+                  "en": "Good behavior"
+                }
+              },
+              {
+                "id": "service",
+                "label": {
+                  "ru": "За служение",
+                  "en": "For service"
+                }
+              },
+              {
+                "id": "his_mood",
+                "label": {
+                  "ru": "Когда он захочет",
+                  "en": "When he wants"
+                }
+              },
+              {
+                "id": "begging",
+                "label": {
+                  "ru": "Если умоляет",
+                  "en": "If she begs"
+                }
+              },
+              {
+                "id": "scheduled",
+                "label": {
+                  "ru": "По расписанию",
+                  "en": "Scheduled"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "female_chastity_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "his_control",
+                "label": {
+                  "ru": "Его контроль",
+                  "en": "His control"
+                }
+              },
+              {
+                "id": "denial",
+                "label": {
+                  "ru": "Отказ в удовольствии",
+                  "en": "Denied pleasure"
+                }
+              },
+              {
+                "id": "frustration",
+                "label": {
+                  "ru": "Фрустрация",
+                  "en": "Frustration"
+                }
+              },
+              {
+                "id": "constant_reminder",
+                "label": {
+                  "ru": "Постоянное напоминание",
+                  "en": "Constant reminder"
+                }
+              },
+              {
+                "id": "buildup",
+                "label": {
+                  "ru": "Накопление желания",
+                  "en": "Desire buildup"
+                }
+              },
+              {
+                "id": "submission",
+                "label": {
+                  "ru": "Подчинение",
+                  "en": "Submission"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в женском chastity?",
+      "en": "What appeals about female chastity?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "chastity",
+      "belt",
+      "denial"
+    ],
+    "tests_secondary": [
+      "keyholder",
+      "maledom",
+      "orgasm_control"
+    ]
+  },
+  "user_description": {
+    "ru": "На ней пояс верности. Ключ у него — он решает, когда она получит оргазм.",
+    "en": "She wears a chastity belt. He holds the key — he decides when she cums."
+  }
+}

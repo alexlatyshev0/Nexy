@@ -1,0 +1,351 @@
+{
+  "id": "filming",
+  "slug": "filming",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Съёмка",
+    "en": "Filming"
+  },
+  "subtitle": {
+    "ru": "Фото и видео",
+    "en": "Photos & video"
+  },
+  "ai_description": {
+    "ru": "Записать секс на видео. Сделать откровенные фото. Стримить для других. Камера добавляет возбуждение — знать что это останется.",
+    "en": "Record sex on video. Take explicit photos. Stream for others. Camera adds arousal — knowing it stays."
+  },
+  "image_prompt": "man and woman having sex while phone camera records them, phone positioned to capture their bodies, bedroom setting with dim lamp",
+  "intensity": 3,
+  "category": "filming",
+  "tags": [
+    "filming",
+    "photos",
+    "video",
+    "amateur",
+    "recording"
+  ],
+  "elements": [
+    {
+      "id": "what_film",
+      "label": {
+        "ru": "Что снимать",
+        "en": "What to film"
+      },
+      "tag_ref": "filming_what",
+      "follow_ups": [
+        {
+          "id": "content",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что снимать?",
+            "en": "What to film?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "nudes",
+                "label": {
+                  "ru": "Обнажённые фото",
+                  "en": "Nude photos"
+                }
+              },
+              {
+                "id": "sexy_poses",
+                "label": {
+                  "ru": "Сексуальные позы",
+                  "en": "Sexy poses"
+                }
+              },
+              {
+                "id": "oral",
+                "label": {
+                  "ru": "Оральный секс",
+                  "en": "Oral sex"
+                }
+              },
+              {
+                "id": "sex",
+                "label": {
+                  "ru": "Секс (sex tape)",
+                  "en": "Sex (sex tape)"
+                }
+              },
+              {
+                "id": "masturbation",
+                "label": {
+                  "ru": "Мастурбация",
+                  "en": "Masturbation"
+                }
+              },
+              {
+                "id": "cumshot",
+                "label": {
+                  "ru": "Момент оргазма",
+                  "en": "Cumshot/orgasm"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "purpose",
+      "label": {
+        "ru": "Для чего",
+        "en": "Purpose"
+      },
+      "tag_ref": "filming_purpose",
+      "follow_ups": [
+        {
+          "id": "why",
+          "type": "multi_select",
+          "question": {
+            "ru": "Для чего снимать?",
+            "en": "Why film?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "just_us",
+                "label": {
+                  "ru": "Только для нас",
+                  "en": "Just for us"
+                }
+              },
+              {
+                "id": "rewatch",
+                "label": {
+                  "ru": "Пересматривать потом",
+                  "en": "Rewatch later"
+                }
+              },
+              {
+                "id": "send_partner",
+                "label": {
+                  "ru": "Отправить партнёру",
+                  "en": "Send to partner"
+                }
+              },
+              {
+                "id": "share_online",
+                "label": {
+                  "ru": "Выложить онлайн",
+                  "en": "Share online"
+                }
+              },
+              {
+                "id": "live_stream",
+                "label": {
+                  "ru": "Стримить в реальном времени",
+                  "en": "Live stream"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "label": {
+        "ru": "Стиль",
+        "en": "Style"
+      },
+      "tag_ref": "filming_style",
+      "follow_ups": [
+        {
+          "id": "how",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какой стиль?",
+            "en": "What style?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "pov",
+                "label": {
+                  "ru": "POV (от первого лица)",
+                  "en": "POV (first person)"
+                }
+              },
+              {
+                "id": "tripod",
+                "label": {
+                  "ru": "На штативе сбоку",
+                  "en": "Tripod from side"
+                }
+              },
+              {
+                "id": "mirror",
+                "label": {
+                  "ru": "Через зеркало",
+                  "en": "Via mirror"
+                }
+              },
+              {
+                "id": "handheld",
+                "label": {
+                  "ru": "С рук (динамично)",
+                  "en": "Handheld (dynamic)"
+                }
+              },
+              {
+                "id": "hidden",
+                "label": {
+                  "ru": "Скрытая камера (игра)",
+                  "en": "Hidden camera (roleplay)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "face",
+      "label": {
+        "ru": "Лицо",
+        "en": "Face"
+      },
+      "tag_ref": "filming_face",
+      "follow_ups": [
+        {
+          "id": "show_face",
+          "type": "single_select",
+          "question": {
+            "ru": "Показывать лицо?",
+            "en": "Show face?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "both_faces",
+                "label": {
+                  "ru": "Оба лица",
+                  "en": "Both faces"
+                }
+              },
+              {
+                "id": "one_face",
+                "label": {
+                  "ru": "Только одного",
+                  "en": "Only one"
+                }
+              },
+              {
+                "id": "no_faces",
+                "label": {
+                  "ru": "Без лиц",
+                  "en": "No faces"
+                }
+              },
+              {
+                "id": "masked",
+                "label": {
+                  "ru": "В масках",
+                  "en": "Masked"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "filming_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "being_filmed",
+                "label": {
+                  "ru": "Знать что снимают",
+                  "en": "Knowing you're filmed"
+                }
+              },
+              {
+                "id": "memory",
+                "label": {
+                  "ru": "Сохранить на память",
+                  "en": "Keeping the memory"
+                }
+              },
+              {
+                "id": "see_yourself",
+                "label": {
+                  "ru": "Видеть себя со стороны",
+                  "en": "See yourself from outside"
+                }
+              },
+              {
+                "id": "exhibitionism",
+                "label": {
+                  "ru": "Эксгибиционизм (если шерить)",
+                  "en": "Exhibitionism (if sharing)"
+                }
+              },
+              {
+                "id": "performance",
+                "label": {
+                  "ru": "Элемент выступления",
+                  "en": "Performance element"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что нравится в съёмке?",
+      "en": "What do you like about filming?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "filming",
+      "recording",
+      "photos"
+    ],
+    "tests_secondary": [
+      "exhibitionism",
+      "amateur",
+      "memory"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys being filmed",
+        "likes keeping memories",
+        "exhibitionist"
+      ],
+      "negative": [
+        "privacy concerns",
+        "self-conscious",
+        "risk averse"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Снять секс на видео, сделать откровенные фото. Для себя или чтобы поделиться.",
+    "en": "Film sex on video, take explicit photos. For yourselves or to share."
+  }
+}

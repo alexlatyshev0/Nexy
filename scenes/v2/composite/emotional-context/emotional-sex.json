@@ -1,0 +1,316 @@
+{
+  "id": "emotional_sex",
+  "slug": "emotional-sex",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Эмоциональный контекст",
+    "en": "Emotional Context"
+  },
+  "subtitle": {
+    "ru": "Секс под влиянием эмоций",
+    "en": "Sex driven by emotions"
+  },
+  "ai_description": {
+    "ru": "Секс после ссоры, от злости, на радостях после разлуки. Когда эмоции переливаются в физическое — страсть острее, контакт глубже.",
+    "en": "Sex after a fight, from anger, joyful reunion after separation. When emotions spill into physical — passion sharper, connection deeper."
+  },
+  "image_prompt": "man and woman in passionate embrace, clothes partially torn and removed, living room setting with furniture knocked over",
+  "intensity": 3,
+  "category": "emotional-context",
+  "tags": [
+    "emotional",
+    "makeup_sex",
+    "angry_sex",
+    "reunion",
+    "passionate"
+  ],
+  "elements": [
+    {
+      "id": "makeup_sex",
+      "label": {
+        "ru": "Примирительный секс",
+        "en": "Makeup sex"
+      },
+      "tag_ref": "makeup_sex",
+      "follow_ups": [
+        {
+          "id": "makeup_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What appeals?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "relief",
+                "label": {
+                  "ru": "Облегчение после напряжения",
+                  "en": "Relief after tension"
+                }
+              },
+              {
+                "id": "reconnection",
+                "label": {
+                  "ru": "Восстановление связи",
+                  "en": "Reconnecting"
+                }
+              },
+              {
+                "id": "intensity",
+                "label": {
+                  "ru": "Интенсивность эмоций",
+                  "en": "Emotional intensity"
+                }
+              },
+              {
+                "id": "proving_love",
+                "label": {
+                  "ru": "Доказать любовь телом",
+                  "en": "Proving love physically"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "angry_sex",
+      "label": {
+        "ru": "Злой секс",
+        "en": "Angry sex"
+      },
+      "tag_ref": "angry_sex",
+      "follow_ups": [
+        {
+          "id": "angry_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What appeals?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "channeling",
+                "label": {
+                  "ru": "Выплеснуть агрессию",
+                  "en": "Channel aggression"
+                }
+              },
+              {
+                "id": "rough",
+                "label": {
+                  "ru": "Грубее чем обычно",
+                  "en": "Rougher than usual"
+                }
+              },
+              {
+                "id": "power_dynamic",
+                "label": {
+                  "ru": "Борьба за власть",
+                  "en": "Power struggle"
+                }
+              },
+              {
+                "id": "raw_passion",
+                "label": {
+                  "ru": "Сырая страсть",
+                  "en": "Raw passion"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "reunion_sex",
+      "label": {
+        "ru": "Секс после разлуки",
+        "en": "Reunion sex"
+      },
+      "tag_ref": "reunion_sex",
+      "follow_ups": [
+        {
+          "id": "reunion_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What appeals?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "missed",
+                "label": {
+                  "ru": "Соскучились друг по другу",
+                  "en": "Missed each other"
+                }
+              },
+              {
+                "id": "urgent",
+                "label": {
+                  "ru": "Срочность, не терпится",
+                  "en": "Urgency, can't wait"
+                }
+              },
+              {
+                "id": "rediscovery",
+                "label": {
+                  "ru": "Заново открыть тело",
+                  "en": "Rediscover the body"
+                }
+              },
+              {
+                "id": "appreciation",
+                "label": {
+                  "ru": "Ценить что вместе",
+                  "en": "Appreciation"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "jealousy_sex",
+      "label": {
+        "ru": "Секс от ревности",
+        "en": "Jealousy sex"
+      },
+      "tag_ref": "jealousy_sex",
+      "follow_ups": [
+        {
+          "id": "jealousy_appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What appeals?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "claiming",
+                "label": {
+                  "ru": "Отметить что мой/моя",
+                  "en": "Claiming, marking"
+                }
+              },
+              {
+                "id": "prove_better",
+                "label": {
+                  "ru": "Доказать что лучше",
+                  "en": "Prove I'm better"
+                }
+              },
+              {
+                "id": "possessive",
+                "label": {
+                  "ru": "Собственничество",
+                  "en": "Possessiveness"
+                }
+              },
+              {
+                "id": "intense_desire",
+                "label": {
+                  "ru": "Острое желание",
+                  "en": "Intense desire"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "celebration_sex",
+      "label": {
+        "ru": "Праздничный секс",
+        "en": "Celebration sex"
+      },
+      "tag_ref": "celebration_sex",
+      "follow_ups": [
+        {
+          "id": "celebration_context",
+          "type": "multi_select",
+          "question": {
+            "ru": "По какому поводу?",
+            "en": "What occasion?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "good_news",
+                "label": {
+                  "ru": "Хорошие новости",
+                  "en": "Good news"
+                }
+              },
+              {
+                "id": "anniversary",
+                "label": {
+                  "ru": "Годовщина",
+                  "en": "Anniversary"
+                }
+              },
+              {
+                "id": "achievement",
+                "label": {
+                  "ru": "Достижение",
+                  "en": "Achievement"
+                }
+              },
+              {
+                "id": "just_happy",
+                "label": {
+                  "ru": "Просто счастливы",
+                  "en": "Just happy"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие эмоциональные контексты возбуждают?",
+      "en": "What emotional contexts excite you?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "emotional_sex",
+      "makeup_sex",
+      "angry_sex"
+    ],
+    "tests_secondary": [
+      "intensity",
+      "passion",
+      "emotional_connection"
+    ],
+    "emotional_range": {
+      "positive": [
+        "emotions intensify sex",
+        "enjoys makeup sex",
+        "passionate"
+      ],
+      "negative": [
+        "prefers calm sex",
+        "emotions are separate",
+        "needs stability"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Пара занимается сексом после ссоры, во время примирения или на радостях после разлуки.",
+    "en": "A couple has sex after a fight, during reconciliation or joyfully after reunion."
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "id": "heels_only",
+  "slug": "heels-only",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Только каблуки",
+    "en": "Heels Only"
+  },
+  "subtitle": {
+    "ru": "Голая, но в туфлях",
+    "en": "Naked but in heels"
+  },
+  "ai_description": {
+    "ru": "Секс только в туфлях на каблуках. Визуальный контраст голого тела и обуви. Ноги, осанка, фигура.",
+    "en": "Sex wearing only high heels. Visual contrast of naked body and shoes. Legs, posture, figure."
+  },
+  "image_prompt": "nude woman standing in black high heels, man sitting on bed looking at her, bedroom with mirror on wall",
+  "intensity": 2,
+  "category": "clothing",
+  "tags": [
+    "clothing",
+    "heels",
+    "shoes",
+    "legs",
+    "fetish"
+  ],
+  "elements": [
+    {
+      "id": "heel_type",
+      "label": {
+        "ru": "Тип каблука",
+        "en": "Heel type"
+      },
+      "tag_ref": "heel_type",
+      "follow_ups": [
+        {
+          "id": "which",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие туфли?",
+            "en": "Which heels?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "stilettos",
+                "label": {
+                  "ru": "Шпильки",
+                  "en": "Stilettos"
+                }
+              },
+              {
+                "id": "pumps",
+                "label": {
+                  "ru": "Лодочки",
+                  "en": "Pumps"
+                }
+              },
+              {
+                "id": "platforms",
+                "label": {
+                  "ru": "Платформа",
+                  "en": "Platforms"
+                }
+              },
+              {
+                "id": "boots",
+                "label": {
+                  "ru": "Сапоги на каблуке",
+                  "en": "High heel boots"
+                }
+              },
+              {
+                "id": "strappy",
+                "label": {
+                  "ru": "С ремешками",
+                  "en": "Strappy sandals"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Контекст",
+        "en": "Context"
+      },
+      "tag_ref": "heels_context",
+      "follow_ups": [
+        {
+          "id": "when",
+          "type": "multi_select",
+          "question": {
+            "ru": "Когда в каблуках?",
+            "en": "When in heels?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "strip",
+                "label": {
+                  "ru": "Стриптиз",
+                  "en": "Striptease"
+                }
+              },
+              {
+                "id": "during_sex",
+                "label": {
+                  "ru": "Во время секса",
+                  "en": "During sex"
+                }
+              },
+              {
+                "id": "oral",
+                "label": {
+                  "ru": "Во время минета/куни",
+                  "en": "During oral"
+                }
+              },
+              {
+                "id": "posing",
+                "label": {
+                  "ru": "Позирование",
+                  "en": "Posing"
+                }
+              },
+              {
+                "id": "walking",
+                "label": {
+                  "ru": "Ходить перед ним",
+                  "en": "Walking for him"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "appeal",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "heels_appeal",
+      "follow_ups": [
+        {
+          "id": "why",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "legs",
+                "label": {
+                  "ru": "Как удлиняют ноги",
+                  "en": "Leg lengthening"
+                }
+              },
+              {
+                "id": "posture",
+                "label": {
+                  "ru": "Осанка, изгиб спины",
+                  "en": "Posture, back arch"
+                }
+              },
+              {
+                "id": "contrast",
+                "label": {
+                  "ru": "Контраст (голая + туфли)",
+                  "en": "Contrast (nude + heels)"
+                }
+              },
+              {
+                "id": "sound",
+                "label": {
+                  "ru": "Звук каблуков",
+                  "en": "Sound of heels"
+                }
+              },
+              {
+                "id": "dominance",
+                "label": {
+                  "ru": "Доминирование (она выше)",
+                  "en": "Dominance (she's taller)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в сексе в каблуках?",
+      "en": "What appeals about sex in heels?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "heels",
+      "shoes",
+      "fetish"
+    ],
+    "tests_secondary": [
+      "legs",
+      "visual",
+      "posture"
+    ]
+  },
+  "user_description": {
+    "ru": "Она голая, только в туфлях на каблуках. Ходит перед ним или занимается сексом в них.",
+    "en": "She is naked, wearing only high heels. Walking for him or having sex in them."
+  }
+}

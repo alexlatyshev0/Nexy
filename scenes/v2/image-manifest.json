@@ -1,0 +1,326 @@
+{
+  "version": 2,
+  "description": "Complete list of all images needed for Discovery 2. Use for generation or upload from disk.",
+  "generated_at": "2026-01-17",
+
+  "summary": {
+    "total_images": 129,
+    "scenes": 95,
+    "clothing": 34,
+    "ready": 0,
+    "pending": 129
+  },
+
+  "config": {
+    "base_path": "images/",
+    "scene_path": "images/scenes/",
+    "clothing_path": "images/clothing/",
+    "supported_formats": ["jpg", "png", "webp"],
+    "recommended_size": {
+      "scenes": { "width": 1024, "height": 1024 },
+      "clothing": { "width": 512, "height": 512 }
+    }
+  },
+
+  "scenes": [
+    {
+      "category": "body-fluids",
+      "images": [
+        { "id": "golden_shower_m_to_f", "file": "scenes/body-fluids/golden_shower_m_to_f.jpg", "ready": false, "prompt": "artistic bathroom scene, dominant man standing, submissive woman kneeling in shower, steam, tiles, power dynamic clear, tasteful artistic composition, warm lighting" },
+        { "id": "golden_shower_f_to_m", "file": "scenes/body-fluids/golden_shower_f_to_m.jpg", "ready": false, "prompt": "artistic bathroom scene, dominant woman standing powerfully, submissive man kneeling below her in shower, steam, female power dynamic, tasteful artistic composition, dramatic lighting" },
+        { "id": "spitting_m_to_f", "file": "scenes/body-fluids/spitting_m_to_f.jpg", "ready": false, "prompt": "intimate dominant scene, man's face close to woman's, her mouth open submissively, intensity in his eyes, power dynamic, artistic close-up, dramatic lighting" },
+        { "id": "spitting_f_to_m", "file": "scenes/body-fluids/spitting_f_to_m.jpg", "ready": false, "prompt": "femdom scene, powerful woman's face looking down with contempt, submissive man below her, intensity, female dominance, artistic composition, dramatic lighting" },
+        { "id": "cum_where_to_finish", "file": "scenes/body-fluids/cum.jpg", "ready": false, "prompt": "intimate climax moment suggestion, couple in passionate embrace, his face showing pleasure, anticipation of finish, artistic sensual composition, soft lighting" },
+        { "id": "squirting", "file": "scenes/body-fluids/squirting.jpg", "ready": false, "prompt": "intimate scene, woman in intense pleasure arching back, wet sheets visible, his hands on her, her face showing ecstasy, artistic composition, sensual lighting" }
+      ]
+    },
+    {
+      "category": "oral",
+      "images": [
+        { "id": "blowjob", "file": "scenes/oral/blowjob.jpg", "ready": false, "prompt": "intimate oral scene, woman on knees before standing man, looking up at him, sensual mouth focus, his hand gently on her head, power dynamic, artistic tasteful composition" },
+        { "id": "cunnilingus", "file": "scenes/oral/cunnilingus.jpg", "ready": false, "prompt": "intimate oral scene, woman lying back in pleasure, man between her legs, her hands gripping sheets, her face showing ecstasy, soft sensual lighting, artistic composition" },
+        { "id": "deepthroat", "file": "scenes/oral/deepthroat.jpg", "ready": false, "prompt": "intense oral scene, woman taking deeply, tears glistening in eyes, messy saliva, his hand on her head, intensity and submission, artistic dramatic composition" },
+        { "id": "facesitting_f_on_m", "file": "scenes/oral/facesitting_f_on_m.jpg", "ready": false, "prompt": "femdom facesitting scene, woman sitting confidently on man's face, her expression of pleasure and power, his hands on her thighs, artistic composition" },
+        { "id": "facesitting_m_on_f", "file": "scenes/oral/facesitting_m_on_f.jpg", "ready": false, "prompt": "male facesitting suggestion, man straddling woman's face, power dynamic, dominance clear, artistic tasteful composition" },
+        { "id": "rimming_m_to_f", "file": "scenes/oral/rimming_m_to_f.jpg", "ready": false, "prompt": "intimate rear scene suggestion, woman lying face down relaxed, man behind her with face near, her expression of pleasure, artistic composition" },
+        { "id": "rimming_f_to_m", "file": "scenes/oral/rimming_f_to_m.jpg", "ready": false, "prompt": "intimate scene suggestion, man lying back vulnerable, woman between his legs from behind, his face showing pleasure, artistic composition" }
+      ]
+    },
+    {
+      "category": "impact-pain",
+      "images": [
+        { "id": "spanking_m_to_f", "file": "scenes/impact-pain/spanking_m_to_f.jpg", "ready": false, "prompt": "spanking scene, woman bent over man's lap, his hand raised, her bottom slightly pink, her face showing mix of pleasure and anticipation, intimate power dynamic, artistic composition" },
+        { "id": "spanking_f_to_m", "file": "scenes/impact-pain/spanking_f_to_m.jpg", "ready": false, "prompt": "femdom spanking scene, man bent over woman's lap, she sits confidently, her hand raised, power reversal, artistic composition" },
+        { "id": "choking_m_to_f", "file": "scenes/impact-pain/choking_m_to_f.jpg", "ready": false, "prompt": "intimate choking scene, man's hand gently on woman's throat, her face showing ecstasy and surrender, intense eye contact, power dynamic, artistic dramatic composition" },
+        { "id": "choking_f_to_m", "file": "scenes/impact-pain/choking_f_to_m.jpg", "ready": false, "prompt": "femdom choking scene, woman on top with hand on man's throat, her expression of power and control, his eyes showing trust, artistic composition" },
+        { "id": "wax_play_m_to_f", "file": "scenes/impact-pain/wax_m_to_f.jpg", "ready": false, "prompt": "wax play scene, woman lying bound blindfolded, man holding candle above her, wax drops on her skin, anticipation visible, artistic composition" },
+        { "id": "wax_play_f_to_m", "file": "scenes/impact-pain/wax_f_to_m.jpg", "ready": false, "prompt": "femdom wax play scene, man lying bound, woman standing over him holding candle, wax on his chest, her confident expression, artistic composition" },
+        { "id": "nipple_play_m_to_f", "file": "scenes/impact-pain/nipple_m_to_f.jpg", "ready": false, "prompt": "intimate nipple play scene, man's hands on woman's breasts, her face showing pleasure-pain, close-up sensual focus, artistic composition" },
+        { "id": "nipple_play_f_to_m", "file": "scenes/impact-pain/nipple_f_to_m.jpg", "ready": false, "prompt": "intimate scene, woman's hands on man's chest focusing on nipples, his face showing pleasure-pain, close-up artistic composition" },
+        { "id": "whipping_caning", "file": "scenes/impact-pain/whipping.jpg", "ready": false, "prompt": "BDSM implements display, flogger and cane artistically arranged, artistic tasteful composition" },
+        { "id": "hair_pulling", "file": "scenes/impact-pain/hair_pulling.jpg", "ready": false, "prompt": "passionate hair pulling scene, his hand gripping her hair, her head tilted back in ecstasy, primal energy, artistic composition" }
+      ]
+    },
+    {
+      "category": "verbal",
+      "images": [
+        { "id": "praise_m_to_f", "file": "scenes/verbal/praise_m_to_f.jpg", "ready": false, "prompt": "intimate praise scene, man whispering in woman's ear, her face showing bliss and contentment, loving atmosphere, artistic composition" },
+        { "id": "praise_f_to_m", "file": "scenes/verbal/praise_f_to_m.jpg", "ready": false, "prompt": "femdom praise scene, woman gently touching man's face looking down at him with approval, he looks up adoringly, artistic composition" },
+        { "id": "degradation_m_to_f", "file": "scenes/verbal/degradation_m_to_f.jpg", "ready": false, "prompt": "intense degradation scene, man looking down dominantly at woman, her face showing arousal from his words, power dynamic, artistic composition" },
+        { "id": "degradation_f_to_m", "file": "scenes/verbal/degradation_f_to_m.jpg", "ready": false, "prompt": "femdom degradation scene, woman looking down with contempt at kneeling man, he looks ashamed but aroused, artistic composition" },
+        { "id": "dirty_talk", "file": "scenes/verbal/dirty_talk.jpg", "ready": false, "prompt": "dirty talk suggestion, couple close together, whispered words, intimate communication, artistic tasteful composition" }
+      ]
+    },
+    {
+      "category": "control-power",
+      "images": [
+        { "id": "bondage_m_ties_f", "file": "scenes/control-power/bondage_m_ties_f.jpg", "ready": false, "prompt": "bondage scene, woman's hands tied above head with silk ropes, man standing nearby admiring, her expression of anticipation and trust, artistic rope work, sensual dramatic lighting" },
+        { "id": "bondage_f_ties_m", "file": "scenes/control-power/bondage_f_ties_m.jpg", "ready": false, "prompt": "femdom bondage scene, man's hands tied to headboard, woman straddling him in control, her confident expression, power reversal, artistic composition" },
+        { "id": "collar_m_owns_f", "file": "scenes/control-power/collar_m_owns_f.jpg", "ready": false, "prompt": "collar ownership scene, woman wearing elegant collar looking up adoringly, man holding leash confidently, power dynamic, artistic composition" },
+        { "id": "collar_f_owns_m", "file": "scenes/control-power/collar_f_owns_m.jpg", "ready": false, "prompt": "femdom collar scene, man wearing collar looking up at woman with adoration, she holds leash confidently, artistic composition" },
+        { "id": "edging_m_to_f", "file": "scenes/control-power/edging_m_to_f.jpg", "ready": false, "prompt": "edging control suggestion, woman in pleasure with man's hand, intensity building, denial clear, artistic composition" },
+        { "id": "edging_f_to_m", "file": "scenes/control-power/edging_f_to_m.jpg", "ready": false, "prompt": "edging control suggestion, man in pleasure with woman's hand, intensity building, denial clear, artistic composition" },
+        { "id": "feminization", "file": "scenes/control-power/feminization.jpg", "ready": false, "prompt": "feminization suggestion, feminine clothing items, makeup palette, artistic tasteful composition" },
+        { "id": "free_use", "file": "scenes/control-power/free_use.jpg", "ready": false, "prompt": "free use suggestion, couple in domestic setting, subtle availability dynamic, artistic tasteful composition" }
+      ]
+    },
+    {
+      "category": "cnc-rough",
+      "images": [
+        { "id": "cnc_m_takes_f", "file": "scenes/cnc-rough/cnc_m_takes_f.jpg", "ready": false, "prompt": "primal cnc scene suggestion, man pinning woman against wall, her expression showing mix of fear and arousal, artistic composition" },
+        { "id": "cnc_f_takes_m", "file": "scenes/cnc-rough/cnc_f_takes_m.jpg", "ready": false, "prompt": "femdom cnc scene, powerful woman pinning man down on bed, straddling him, his expression of mock resistance, power reversal, artistic composition" },
+        { "id": "primal", "file": "scenes/cnc-rough/primal.jpg", "ready": false, "prompt": "primal play suggestion, intense passionate couple, wild energy, biting scratching, artistic tasteful composition" }
+      ]
+    },
+    {
+      "category": "worship-service",
+      "images": [
+        { "id": "foot_worship_m_to_f", "file": "scenes/worship-service/foot_worship_m_to_f.jpg", "ready": false, "prompt": "foot worship scene, elegant woman sitting regally, man kneeling at her feet kissing them, devotion and worship, artistic composition" },
+        { "id": "foot_worship_f_to_m", "file": "scenes/worship-service/foot_worship_f_to_m.jpg", "ready": false, "prompt": "female foot worship scene, woman kneeling at man's feet, devoted expression, he seated above her, artistic composition" },
+        { "id": "body_worship_m_to_f", "file": "scenes/worship-service/body_worship_m_to_f.jpg", "ready": false, "prompt": "body worship scene, man kissing woman's body reverently, she lies back in pleasure, devotional atmosphere, artistic composition" },
+        { "id": "body_worship_f_to_m", "file": "scenes/worship-service/body_worship_f_to_m.jpg", "ready": false, "prompt": "body worship scene, woman kissing man's muscular body, he lies back enjoying, her devoted attention, artistic composition" },
+        { "id": "armpit", "file": "scenes/worship-service/armpit.jpg", "ready": false, "prompt": "armpit fetish suggestion, intimate closeness, artistic tasteful composition" }
+      ]
+    },
+    {
+      "category": "massage",
+      "images": [
+        { "id": "massage_m_to_f", "file": "scenes/massage/massage_m_to_f.jpg", "ready": false, "prompt": "sensual massage scene, woman lying face down, man's oiled hands on her back, candles, relaxing yet sensual atmosphere, artistic composition" },
+        { "id": "massage_f_to_m", "file": "scenes/massage/massage_f_to_m.jpg", "ready": false, "prompt": "sensual massage scene, man lying face down, woman's hands massaging him, oil glistening, intimate atmosphere, artistic composition" }
+      ]
+    },
+    {
+      "category": "pet-play",
+      "images": [
+        { "id": "pet_play_f_is_pet", "file": "scenes/pet-play/pet_f.jpg", "ready": false, "prompt": "pet play scene, woman wearing cat ears and collar on all fours, looking up adoringly at standing man, playful submission, artistic composition" },
+        { "id": "pet_play_m_is_pet", "file": "scenes/pet-play/pet_m.jpg", "ready": false, "prompt": "femdom pet play scene, man on all fours wearing collar, woman standing above him holding leash, power dynamic, artistic composition" }
+      ]
+    },
+    {
+      "category": "age-play",
+      "images": [
+        { "id": "ddlg", "file": "scenes/age-play/ddlg.jpg", "ready": false, "prompt": "ddlg dynamic suggestion, caring protective man with gentle woman who looks up at him adoringly, nurturing atmosphere, artistic composition" },
+        { "id": "mdlb", "file": "scenes/age-play/mdlb.jpg", "ready": false, "prompt": "mdlb dynamic suggestion, nurturing woman with man who rests head on her lap, comforting gentle atmosphere, artistic composition" }
+      ]
+    },
+    {
+      "category": "chastity",
+      "images": [
+        { "id": "chastity_m_locked", "file": "scenes/chastity/chastity_m.jpg", "ready": false, "prompt": "chastity dynamic suggestion, woman confidently holding small key, man looking up at her pleadingly, power exchange, artistic composition" },
+        { "id": "chastity_f_locked", "file": "scenes/chastity/chastity_f.jpg", "ready": false, "prompt": "female chastity dynamic suggestion, man confidently holding small key, woman looking up pleadingly, control dynamic, artistic composition" }
+      ]
+    },
+    {
+      "category": "group",
+      "images": [
+        { "id": "threesome_fmf", "file": "scenes/group/threesome_fmf.jpg", "ready": false, "prompt": "fmf threesome suggestion, one man between two women on bed, all three interacting sensually, balanced composition, artistic setup" },
+        { "id": "threesome_mfm", "file": "scenes/group/threesome_mfm.jpg", "ready": false, "prompt": "mfm threesome suggestion, one woman between two men on bed, all attention focused on her, she in pleasure, artistic composition" },
+        { "id": "gangbang", "file": "scenes/group/gangbang.jpg", "ready": false, "prompt": "gangbang suggestion, woman surrounded by multiple men silhouettes, center of attention, intensity, artistic tasteful composition" },
+        { "id": "orgy", "file": "scenes/group/orgy.jpg", "ready": false, "prompt": "orgy suggestion, multiple couples together in intimate setting, bodies intertwined artistic, artistic composition" },
+        { "id": "swinging", "file": "scenes/group/swinging.jpg", "ready": false, "prompt": "swinging suggestion, two couples socializing intimately, partner exchange implied, consensual atmosphere, artistic composition" }
+      ]
+    },
+    {
+      "category": "lgbtq",
+      "images": [
+        { "id": "wlw", "file": "scenes/lgbtq/wlw.jpg", "ready": false, "prompt": "wlw intimate scene, two women in bed together, tender touching, soft feminine energy, romantic atmosphere, artistic composition" },
+        { "id": "mlm", "file": "scenes/lgbtq/mlm.jpg", "ready": false, "prompt": "mlm intimate scene, two men in bed together, masculine energy, passion and intensity, artistic tasteful composition" }
+      ]
+    },
+    {
+      "category": "exhibitionism",
+      "images": [
+        { "id": "exhibitionism", "file": "scenes/exhibitionism/exhibitionism.jpg", "ready": false, "prompt": "exhibitionism suggestion, couple in semi-public setting, hint of risk, thrill of being seen, artistic composition" },
+        { "id": "voyeurism", "file": "scenes/exhibitionism/voyeurism.jpg", "ready": false, "prompt": "voyeurism suggestion, person watching from shadows, intimate scene in background, thrill of watching, artistic composition" },
+        { "id": "public_sex", "file": "scenes/exhibitionism/public.jpg", "ready": false, "prompt": "public sex suggestion, couple in semi-hidden public location, risk of discovery, thrill visible, artistic composition" }
+      ]
+    },
+    {
+      "category": "anal",
+      "images": [
+        { "id": "anal_on_her", "file": "scenes/anal/anal_on_her.jpg", "ready": false, "prompt": "anal play suggestion, intimate couple scene, focus on her pleasure, trust and connection, artistic tasteful composition" },
+        { "id": "anal_on_him", "file": "scenes/anal/anal_on_him.jpg", "ready": false, "prompt": "male anal play suggestion, intimate couple scene, focus on his pleasure, trust and vulnerability, artistic composition" },
+        { "id": "pegging", "file": "scenes/anal/pegging.jpg", "ready": false, "prompt": "pegging suggestion, woman with strap-on in dominant position, man in vulnerable receiving position, artistic composition" }
+      ]
+    },
+    {
+      "category": "cuckold",
+      "images": [
+        { "id": "cuckold", "file": "scenes/cuckold/cuckold.jpg", "ready": false, "prompt": "cuckold suggestion, woman with confident man, her husband watching from corner, mix of emotions, artistic composition" },
+        { "id": "hotwife", "file": "scenes/cuckold/hotwife.jpg", "ready": false, "prompt": "hotwife suggestion, confident sexy woman, supportive husband proud in background, empowerment theme, artistic composition" }
+      ]
+    },
+    {
+      "category": "sensory",
+      "images": [
+        { "id": "blindfold", "file": "scenes/sensory/blindfold.jpg", "ready": false, "prompt": "blindfold scene, person with elegant blindfold on bed, anticipation clear, partner's hand approaching, artistic composition" },
+        { "id": "ice_play", "file": "scenes/sensory/ice.jpg", "ready": false, "prompt": "ice play suggestion, ice cube near skin, temperature play, goosebumps visible, sensual atmosphere, artistic composition" },
+        { "id": "feather", "file": "scenes/sensory/feather.jpg", "ready": false, "prompt": "feather play suggestion, soft feather near skin, gentle sensory stimulation, anticipation, artistic composition" },
+        { "id": "electrostim", "file": "scenes/sensory/electrostim.jpg", "ready": false, "prompt": "electrostimulation suggestion, TENS device or violet wand, artistic tasteful composition" }
+      ]
+    },
+    {
+      "category": "roleplay",
+      "images": [
+        { "id": "boss_secretary", "file": "scenes/roleplay/boss_secretary.jpg", "ready": false, "prompt": "boss secretary roleplay, office setting, power dynamic clear, desk scene suggestion, professional yet intimate, artistic composition" },
+        { "id": "stranger", "file": "scenes/roleplay/stranger.jpg", "ready": false, "prompt": "stranger roleplay, couple meeting at bar as if for first time, flirting dynamic, mysterious atmosphere, artistic composition" },
+        { "id": "teacher_student", "file": "scenes/roleplay/teacher.jpg", "ready": false, "prompt": "teacher student roleplay, classroom suggestion, authority figure dynamic, educational setting, artistic composition, adult performers" },
+        { "id": "doctor_patient", "file": "scenes/roleplay/doctor.jpg", "ready": false, "prompt": "medical roleplay suggestion, examination room setting, professional yet intimate, artistic composition" },
+        { "id": "service_roleplay", "file": "scenes/roleplay/service.jpg", "ready": false, "prompt": "service roleplay suggestion, maid or butler aesthetic, service dynamic, artistic tasteful composition" }
+      ]
+    },
+    {
+      "category": "toys",
+      "images": [
+        { "id": "vibrator", "file": "scenes/toys/vibrator.jpg", "ready": false, "prompt": "vibrator toy suggestion, intimate couple play with toy, shared pleasure, modern bedroom, artistic tasteful composition" },
+        { "id": "remote_control", "file": "scenes/toys/remote.jpg", "ready": false, "prompt": "remote control toy suggestion, person holding small remote, partner trying to stay composed, public anticipation, artistic composition" }
+      ]
+    },
+    {
+      "category": "intimacy-outside",
+      "images": [
+        { "id": "casual_touch", "file": "scenes/intimacy-outside/casual.jpg", "ready": false, "prompt": "casual intimate moment, couple in kitchen, he behind her with hands on her hips, she smiles continuing tasks, spontaneous playfulness, artistic composition" },
+        { "id": "morning_teasing", "file": "scenes/intimacy-outside/morning.jpg", "ready": false, "prompt": "morning teasing suggestion, couple in morning routine, intimate touches while getting ready, playful anticipation, artistic composition" },
+        { "id": "kitchen_counter", "file": "scenes/intimacy-outside/kitchen.jpg", "ready": false, "prompt": "kitchen intimacy suggestion, couple embracing at counter, cooking interrupted, spontaneous passion, artistic composition" },
+        { "id": "sexting", "file": "scenes/intimacy-outside/sexting.jpg", "ready": false, "prompt": "sexting suggestion, person smiling at phone screen, suggestive content implied, anticipation clear, artistic composition" }
+      ]
+    },
+    {
+      "category": "symmetric",
+      "images": [
+        { "id": "positions", "file": "scenes/symmetric/positions.jpg", "ready": false, "prompt": "intimate positions collage suggestion, couple in various sensual positions, artistic composition showing diversity" },
+        { "id": "locations", "file": "scenes/symmetric/locations.jpg", "ready": false, "prompt": "location variety collage, romantic bedroom, steamy shower, car at night, outdoor nature, artistic sensual composition" }
+      ]
+    },
+    {
+      "category": "clothing-scene",
+      "images": [
+        { "id": "lingerie_scene", "file": "scenes/clothing/lingerie.jpg", "ready": false, "prompt": "lingerie suggestion, elegant underwear displayed, lace and silk, sensual aesthetic, artistic tasteful composition" },
+        { "id": "latex_leather", "file": "scenes/clothing/latex.jpg", "ready": false, "prompt": "latex leather fetish suggestion, shiny material textures, fashion elements, artistic tasteful composition" },
+        { "id": "torn_clothes", "file": "scenes/clothing/torn.jpg", "ready": false, "prompt": "torn clothes passion suggestion, couple with disheveled clothing, buttons scattered, urgency clear, artistic composition" }
+      ]
+    },
+    {
+      "category": "romantic",
+      "images": [
+        { "id": "aftercare", "file": "scenes/romantic/aftercare.jpg", "ready": false, "prompt": "aftercare scene, couple cuddling in bed, gentle care, blankets wrapped, emotional connection, soft lighting, artistic composition" },
+        { "id": "romantic_sex", "file": "scenes/romantic/romantic.jpg", "ready": false, "prompt": "romantic sex suggestion, couple in intimate embrace, soft lighting, eye contact, love clear, artistic composition" },
+        { "id": "quickie", "file": "scenes/romantic/quickie.jpg", "ready": false, "prompt": "quickie suggestion, couple in hurried passion, clothes partially on, urgency clear, artistic tasteful composition" }
+      ]
+    },
+    {
+      "category": "extreme",
+      "images": [
+        { "id": "needle_play", "file": "scenes/extreme/needle.jpg", "ready": false, "prompt": "needle play suggestion, sterile medical aesthetic, artistic tasteful composition" },
+        { "id": "mummification", "file": "scenes/extreme/mummy.jpg", "ready": false, "prompt": "mummification bondage suggestion, wrapped figure in plastic or bandages, artistic tasteful composition" },
+        { "id": "figging", "file": "scenes/extreme/figging.jpg", "ready": false, "prompt": "figging suggestion, ginger root, artistic tasteful composition" },
+        { "id": "lactation", "file": "scenes/extreme/lactation.jpg", "ready": false, "prompt": "lactation suggestion, nursing intimacy, artistic tasteful composition" },
+        { "id": "fucking_machine", "file": "scenes/extreme/machine.jpg", "ready": false, "prompt": "fucking machine suggestion, mechanical device, artistic tasteful composition" }
+      ]
+    }
+  ],
+
+  "clothing": [
+    {
+      "category": "lingerie_female",
+      "label": { "ru": "Женское бельё", "en": "Women's Lingerie" },
+      "images": [
+        { "id": "lace_bra_panty", "file": "clothing/lingerie/lace_set.jpg", "ready": false, "prompt": "elegant lace lingerie set, bra and panties, feminine, studio lighting" },
+        { "id": "bodysuit", "file": "clothing/lingerie/bodysuit.jpg", "ready": false, "prompt": "sexy bodysuit lingerie, form fitting, studio lighting" },
+        { "id": "babydoll", "file": "clothing/lingerie/babydoll.jpg", "ready": false, "prompt": "sheer babydoll nightie, flowing fabric, romantic lighting" },
+        { "id": "stockings_garter", "file": "clothing/lingerie/stockings.jpg", "ready": false, "prompt": "thigh high stockings with garter belt, elegant, studio lighting" },
+        { "id": "corset", "file": "clothing/lingerie/corset.jpg", "ready": false, "prompt": "waist cinching corset, boned structure, dramatic lighting" },
+        { "id": "thong", "file": "clothing/lingerie/thong.jpg", "ready": false, "prompt": "minimal thong underwear, revealing, studio lighting" },
+        { "id": "crotchless", "file": "clothing/lingerie/crotchless.jpg", "ready": false, "prompt": "crotchless panties or bodysuit, accessible design, studio lighting" },
+        { "id": "his_shirt", "file": "clothing/lingerie/his_shirt.jpg", "ready": false, "prompt": "woman wearing oversized men's dress shirt, casual sexy, morning light" }
+      ]
+    },
+    {
+      "category": "fetish_female",
+      "label": { "ru": "Фетиш (она)", "en": "Fetish Wear (Her)" },
+      "images": [
+        { "id": "latex_dress", "file": "clothing/fetish/latex_dress.jpg", "ready": false, "prompt": "shiny latex dress, form fitting, glossy, dramatic lighting" },
+        { "id": "leather_harness_f", "file": "clothing/fetish/harness_f.jpg", "ready": false, "prompt": "leather body harness, straps across torso, dramatic lighting" },
+        { "id": "pvc_catsuit", "file": "clothing/fetish/catsuit.jpg", "ready": false, "prompt": "shiny PVC catsuit, full body, zipper, dramatic lighting" },
+        { "id": "collar_f", "file": "clothing/fetish/collar.jpg", "ready": false, "prompt": "leather collar with ring, BDSM accessory, studio lighting" },
+        { "id": "high_heels", "file": "clothing/fetish/heels.jpg", "ready": false, "prompt": "stiletto high heels, sexy footwear, dramatic lighting" }
+      ]
+    },
+    {
+      "category": "costumes_female",
+      "label": { "ru": "Костюмы (она)", "en": "Costumes (Her)" },
+      "images": [
+        { "id": "maid", "file": "clothing/costumes/maid.jpg", "ready": false, "prompt": "French maid costume, short dress with apron, playful" },
+        { "id": "nurse", "file": "clothing/costumes/nurse.jpg", "ready": false, "prompt": "sexy nurse costume, short white dress, studio lighting" },
+        { "id": "schoolgirl", "file": "clothing/costumes/schoolgirl.jpg", "ready": false, "prompt": "plaid skirt schoolgirl outfit, mature adult woman, studio lighting" },
+        { "id": "secretary", "file": "clothing/costumes/secretary.jpg", "ready": false, "prompt": "tight pencil skirt, glasses, blouse, professional sexy" },
+        { "id": "bunny", "file": "clothing/costumes/bunny.jpg", "ready": false, "prompt": "playboy bunny costume, ears and tail, studio lighting" }
+      ]
+    },
+    {
+      "category": "underwear_male",
+      "label": { "ru": "Мужское бельё", "en": "Men's Underwear" },
+      "images": [
+        { "id": "boxer_briefs", "file": "clothing/male/boxer_briefs.jpg", "ready": false, "prompt": "fitted boxer briefs, masculine, studio lighting" },
+        { "id": "briefs", "file": "clothing/male/briefs.jpg", "ready": false, "prompt": "classic briefs underwear, minimal, studio lighting" },
+        { "id": "jockstrap", "file": "clothing/male/jockstrap.jpg", "ready": false, "prompt": "athletic jockstrap, sporty, studio lighting" },
+        { "id": "commando", "file": "clothing/male/commando.jpg", "ready": false, "prompt": "just pants, no underwear suggestion, casual" }
+      ]
+    },
+    {
+      "category": "fetish_male",
+      "label": { "ru": "Фетиш (он)", "en": "Fetish (Him)" },
+      "images": [
+        { "id": "leather_harness_m", "file": "clothing/fetish/harness_m.jpg", "ready": false, "prompt": "leather chest harness, masculine, dramatic lighting" },
+        { "id": "collar_m", "file": "clothing/fetish/collar_m.jpg", "ready": false, "prompt": "leather collar on man, submissive aesthetic, dramatic lighting" },
+        { "id": "suit_tie", "file": "clothing/male/suit.jpg", "ready": false, "prompt": "man in formal suit, dominant aesthetic, professional" }
+      ]
+    },
+    {
+      "category": "undressing",
+      "label": { "ru": "Как раздеваться", "en": "How to Undress" },
+      "images": [
+        { "id": "slow_tease", "file": "clothing/undress/slow.jpg", "ready": false, "prompt": "slow sensual undressing, one piece at a time, anticipation" },
+        { "id": "rip_off", "file": "clothing/undress/rip.jpg", "ready": false, "prompt": "clothes being torn off, passionate urgency, scattered buttons" },
+        { "id": "stay_dressed", "file": "clothing/undress/partial.jpg", "ready": false, "prompt": "sex with clothes still on, pushed aside, urgent intimacy" },
+        { "id": "by_partner", "file": "clothing/undress/by_partner.jpg", "ready": false, "prompt": "being undressed by another person, passive receiving" }
+      ]
+    }
+  ],
+
+  "upload_instructions": {
+    "description": "Use this manifest to track image generation. Update 'ready' to true when image is available.",
+    "workflow": [
+      "1. Generate or source images matching the prompts",
+      "2. Save to the specified file path",
+      "3. Update 'ready': true for that image",
+      "4. Run validation to check all images exist"
+    ],
+    "upload_endpoint": "/api/images/upload",
+    "upload_format": {
+      "file": "multipart file",
+      "id": "image id from manifest",
+      "type": "scene | clothing"
+    }
+  }
+}

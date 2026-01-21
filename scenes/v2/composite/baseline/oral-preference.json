@@ -1,0 +1,216 @@
+{
+  "id": "oral_preference",
+  "slug": "oral-preference",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Оральный секс",
+    "en": "Oral Sex"
+  },
+  "subtitle": {
+    "ru": "Давать и получать",
+    "en": "Giving and receiving"
+  },
+  "ai_description": {
+    "ru": "Базовое отношение к оральному сексу. Нравится давать? Получать? Оба варианта? Это основа для многих других тем.",
+    "en": "Basic attitude toward oral sex. Like giving? Receiving? Both? This is foundational for many other topics."
+  },
+  "image_prompt": "man and woman in intimate oral position, bedroom setting with soft sheets",
+  "intensity": 1,
+  "category": "baseline",
+  "priority": 6,
+  "tags": [
+    "baseline",
+    "oral",
+    "blowjob",
+    "cunnilingus",
+    "giving",
+    "receiving"
+  ],
+  "elements": [
+    {
+      "id": "giving",
+      "label": {
+        "ru": "Давать",
+        "en": "Giving"
+      },
+      "tag_ref": "oral_giving",
+      "follow_ups": [
+        {
+          "id": "attitude",
+          "type": "single_select",
+          "question": {
+            "ru": "Делать оральный партнёру...",
+            "en": "Giving oral to partner..."
+          },
+          "config": {
+            "options": [
+              {
+                "id": "dislike",
+                "label": {
+                  "ru": "Не люблю",
+                  "en": "Don't like"
+                }
+              },
+              {
+                "id": "ok",
+                "label": {
+                  "ru": "Нормально, для партнёра",
+                  "en": "It's ok, for partner"
+                }
+              },
+              {
+                "id": "enjoy",
+                "label": {
+                  "ru": "Нравится",
+                  "en": "Enjoy it"
+                }
+              },
+              {
+                "id": "love",
+                "label": {
+                  "ru": "Обожаю",
+                  "en": "Love it"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "receiving",
+      "label": {
+        "ru": "Получать",
+        "en": "Receiving"
+      },
+      "tag_ref": "oral_receiving",
+      "follow_ups": [
+        {
+          "id": "attitude",
+          "type": "single_select",
+          "question": {
+            "ru": "Получать оральный...",
+            "en": "Receiving oral..."
+          },
+          "config": {
+            "options": [
+              {
+                "id": "uncomfortable",
+                "label": {
+                  "ru": "Некомфортно",
+                  "en": "Uncomfortable"
+                }
+              },
+              {
+                "id": "ok",
+                "label": {
+                  "ru": "Нормально",
+                  "en": "It's ok"
+                }
+              },
+              {
+                "id": "enjoy",
+                "label": {
+                  "ru": "Нравится",
+                  "en": "Enjoy it"
+                }
+              },
+              {
+                "id": "favorite",
+                "label": {
+                  "ru": "Один из любимых видов",
+                  "en": "One of my favorites"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "label": {
+        "ru": "Финиш",
+        "en": "Finish"
+      },
+      "tag_ref": "oral_finish",
+      "follow_ups": [
+        {
+          "id": "cum_in_mouth",
+          "type": "single_select",
+          "question": {
+            "ru": "Кончить в рот / принять сперму...",
+            "en": "Cum in mouth / receive cum..."
+          },
+          "config": {
+            "options": [
+              {
+                "id": "no",
+                "label": {
+                  "ru": "Нет",
+                  "en": "No"
+                }
+              },
+              {
+                "id": "sometimes",
+                "label": {
+                  "ru": "Иногда ок",
+                  "en": "Sometimes ok"
+                }
+              },
+              {
+                "id": "yes",
+                "label": {
+                  "ru": "Да, нравится",
+                  "en": "Yes, like it"
+                }
+              },
+              {
+                "id": "swallow",
+                "label": {
+                  "ru": "Да, и глотать",
+                  "en": "Yes, and swallow"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Оральный секс — что тебе ближе?",
+      "en": "Oral sex — what do you prefer?"
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "oral_sex",
+      "blowjob",
+      "cunnilingus"
+    ],
+    "tests_secondary": [
+      "giving",
+      "receiving",
+      "swallow"
+    ],
+    "gates": {
+      "dislike_giving": [
+        "skip_giving_oral_scenes"
+      ],
+      "love_giving": [
+        "detailed_oral_giving_scenes"
+      ],
+      "uncomfortable_receiving": [
+        "skip_receiving_oral_scenes"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Оральный секс между партнёрами",
+    "en": "Oral sex between partners"
+  }
+}

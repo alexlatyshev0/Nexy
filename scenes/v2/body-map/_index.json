@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "name": "Body Map Activities",
+  "description": "Interactive body zone selection - FIRST step in discovery before composite scenes",
+  "order": 0,
+  "total_activities": 6,
+
+  "note": "Body maps should be shown BEFORE scene questions. User taps zones on a silhouette to indicate preferences.",
+
+  "activities": [
+    {
+      "id": "kissing",
+      "priority": 1,
+      "intensity": 1,
+      "action": "kiss"
+    },
+    {
+      "id": "licking",
+      "priority": 2,
+      "intensity": 2,
+      "action": "lick_suck"
+    },
+    {
+      "id": "light-touch",
+      "priority": 3,
+      "intensity": 1,
+      "action": "caress"
+    },
+    {
+      "id": "light-slapping",
+      "priority": 4,
+      "intensity": 2,
+      "action": "light_slap"
+    },
+    {
+      "id": "biting",
+      "priority": 5,
+      "intensity": 3,
+      "action": "bite_scratch"
+    },
+    {
+      "id": "spanking",
+      "priority": 6,
+      "intensity": 4,
+      "action": "spank"
+    }
+  ],
+
+  "flow": {
+    "description": "Each activity has two passes",
+    "passes": ["give", "receive"],
+    "give_question_template": {
+      "ru": "Где ты любишь {action} партнёра?",
+      "en": "Where do you like to {action} your partner?"
+    },
+    "receive_question_template": {
+      "ru": "Где тебе нравится, когда тебя {action}?",
+      "en": "Where do you like being {action_past}?"
+    }
+  }
+}

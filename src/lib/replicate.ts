@@ -7,43 +7,130 @@ interface GenerateImageParams {
   width?: number;
   height?: number;
   aspectRatio?: string;
+  // Img2img parameters
+  sourceImage?: string; // URL or base64 of source image
+  strength?: number; // 0-1, how much to deviate from source (default 0.7)
 }
 
 // Replicate models mapping
-export const REPLICATE_MODELS: Record<string, { name: string; version: string }> = {
-  'z-image-turbo': {
-    name: 'Z Image Turbo (super fast)',
-    version: 'prunaai/z-image-turbo',
+export const REPLICATE_MODELS: Record<string, { name: string; version: string; category?: string }> = {
+  // === PONY MODELS (best for yaoi/bara, anime style) ===
+  'pony-xl': {
+    name: 'Prefect Pony XL v5 (best yaoi/bara)',
+    version: 'aisha-ai-official/prefect-pony-xl-v5:7c724e0565055883c00dec19086e06023115737ad49cf3525f1058743769e5bf',
+    category: 'pony',
   },
-  'flux-schnell': {
-    name: 'FLUX Schnell (fast)',
-    version: 'black-forest-labs/flux-schnell',
+  'pony-realism': {
+    name: 'Pony Realism (realistic pony)',
+    version: 'charlesmccarthy/pony-sdxl:b070dedae81324788c3c933a5d9e1270093dc74636214b9815dae044b4b3a58a',
+    category: 'pony',
   },
-  'flux-dev': {
-    name: 'FLUX Dev',
-    version: 'black-forest-labs/flux-dev',
+
+  // === ILLUSTRIOUS MODELS (anime/illustration style) ===
+  'wai-illustrious-v12': {
+    name: 'WAI NSFW Illustrious v12 (newest)',
+    version: 'aisha-ai-official/wai-nsfw-illustrious-v12:0fc0fa9885b284901a6f9c0b4d67701fd7647d157b88371427d63f8089ce140e',
+    category: 'illustrious',
   },
-  'flux-pro': {
-    name: 'FLUX Pro',
-    version: 'black-forest-labs/flux-1.1-pro',
+  'wai-illustrious': {
+    name: 'WAI NSFW Illustrious v11',
+    version: 'aisha-ai-official/wai-nsfw-illustrious-v11:c1d5b02687df6081c7953c74bcc527858702e8c153c9382012ccc3906752d3ec',
+    category: 'illustrious',
   },
-  'sdxl-lightning': {
-    name: 'SDXL Lightning (fast)',
-    version: 'bytedance/sdxl-lightning-4step:5f24084160c9089501c1b3545d9be3c27883ae2239b6f412990e82d4a6210f8f',
+  'noobai-xl': {
+    name: 'NoobAI XL (Illustrious)',
+    version: 'delta-lock/noobai-xl:d09db5fc24b8b6573b095c2bd845b58242dce8f996b034fa865130bf1075858f',
+    category: 'illustrious',
   },
-  'sdxl': {
-    name: 'SDXL',
-    version: 'stability-ai/sdxl:7762fd07cf82c948538e41f63f77d685e02b063e37e496e96eefd46c929f9bdc',
+
+  // === ANIME MODELS ===
+  'animagine-xl': {
+    name: 'Animagine XL 3.1 (best anime)',
+    version: 'cjwbw/animagine-xl-3.1:6afe2e6b27dad2db86df2d0ef3bb5f174d42cb64009eb84fa8bc0d5a5ab515ea',
+    category: 'anime',
+  },
+  'sdxl-niji': {
+    name: 'SDXL Niji SE (anime)',
+    version: 'lucataco/sdxl-niji-se:a3652ec3d6e7e1a3c80c43a51f6dd0f67e6cb6d13ede15c78c53d8b234e7e86d',
+    category: 'anime',
+  },
+
+  // === REALISTIC MODELS ===
+  'dreamshaper-xl': {
+    name: 'DreamShaper XL Turbo (versatile)',
+    version: 'lucataco/dreamshaper-xl-turbo:0a1710e0187b01a255302738ca0158ff02a22f4638679533e111082f9dd1b615',
+    category: 'realistic',
   },
   'realistic-vision': {
     name: 'Realistic Vision v5.1',
     version: 'lucataco/realistic-vision-v5.1:2c8e954decbf70b7607a4414e5785ef9e4de4b8c51d50fb8b8b349160e0ef6bb',
+    category: 'realistic',
   },
   'juggernaut': {
-    name: 'Juggernaut XL',
+    name: 'Juggernaut XL v9',
     version: 'lucataco/juggernaut-xl-v9:bea09cf018e513cef0841719559ea86d2299e05448633ac8fe270b5d5cd6777e',
+    category: 'realistic',
+  },
+
+  // === FAST MODELS ===
+  'z-image-turbo': {
+    name: 'Z Image Turbo (super fast)',
+    version: 'prunaai/z-image-turbo',
+    category: 'fast',
+  },
+  'sdxl-lightning': {
+    name: 'SDXL Lightning 4-step',
+    version: 'bytedance/sdxl-lightning-4step:5f24084160c9089501c1b3545d9be3c27883ae2239b6f412990e82d4a6210f8f',
+    category: 'fast',
+  },
+
+  // === FLUX MODELS (high quality) ===
+  'flux-schnell': {
+    name: 'FLUX Schnell (fast)',
+    version: 'black-forest-labs/flux-schnell',
+    category: 'flux',
+  },
+  'flux-dev': {
+    name: 'FLUX Dev',
+    version: 'black-forest-labs/flux-dev',
+    category: 'flux',
+  },
+  'flux-pro': {
+    name: 'FLUX Pro (best quality)',
+    version: 'black-forest-labs/flux-1.1-pro',
+    category: 'flux',
+  },
+
+  // === BASE SDXL ===
+  'sdxl': {
+    name: 'SDXL Base',
+    version: 'stability-ai/sdxl:7762fd07cf82c948538e41f63f77d685e02b063e37e496e96eefd46c929f9bdc',
+    category: 'sdxl',
   },
 };
+
+// Truncate prompt to fit CLIP token limit (77 tokens)
+// CLIP tokenizer is unpredictable - some words take 2-3 tokens
+// Using 150 chars max to stay well under 77 tokens
+function truncatePrompt(prompt: string, maxChars: number = 150): string {
+  if (prompt.length <= maxChars) return prompt;
+
+  // Try to cut at last comma before limit
+  const truncated = prompt.substring(0, maxChars);
+  const lastComma = truncated.lastIndexOf(',');
+
+  if (lastComma > maxChars * 0.6) {
+    return truncated.substring(0, lastComma).trim();
+  }
+
+  // Otherwise cut at last space
+  const lastSpace = truncated.lastIndexOf(' ');
+  if (lastSpace > maxChars * 0.6) {
+    return truncated.substring(0, lastSpace).trim();
+  }
+
+  return truncated.trim();
+}
 
 let replicateClient: Replicate | null = null;
 
@@ -69,8 +156,19 @@ export async function generateWithReplicate(
     throw new Error(`Unknown Replicate model: ${params.modelId}`);
   }
 
+  const isImg2Img = !!params.sourceImage;
+  const strength = params.strength ?? 0.7;
+
+  // Truncate prompt to avoid CLIP token limit (77 tokens)
+  const truncatedPrompt = truncatePrompt(params.prompt);
+  const truncatedNegative = params.negativePrompt ? truncatePrompt(params.negativePrompt) : '';
+
   console.log(`[Replicate] Starting generation with model: ${modelConfig.name}`);
-  console.log(`[Replicate] Prompt: ${params.prompt.substring(0, 100)}...`);
+  console.log(`[Replicate] Mode: ${isImg2Img ? `img2img (strength: ${strength})` : 'txt2img'}`);
+  console.log(`[Replicate] Prompt (${truncatedPrompt.length} chars): ${truncatedPrompt.substring(0, 100)}...`);
+  if (truncatedPrompt.length < params.prompt.length) {
+    console.log(`[Replicate] Prompt truncated from ${params.prompt.length} to ${truncatedPrompt.length} chars`);
+  }
   if (params.negativePrompt) {
     console.log(`[Replicate] Negative: ${params.negativePrompt}`);
   }
@@ -79,31 +177,36 @@ export async function generateWithReplicate(
     let input: Record<string, unknown>;
 
     if (params.modelId === 'z-image-turbo') {
-      // Z Image Turbo: 8 steps, guidance 0
-      // Best at 1024x1024, but can use other sizes
+      // Z Image Turbo: 8 steps, guidance 0 - NO img2img support
+      if (isImg2Img) {
+        throw new Error('Z Image Turbo does not support img2img');
+      }
       input = {
-        prompt: params.prompt,
-        negative_prompt: params.negativePrompt || '',
+        prompt: truncatedPrompt,
+        negative_prompt: truncatedNegative,
         width: params.width || 1024,
         height: params.height || 1024,
         num_inference_steps: 8,
         guidance_scale: 0,
       };
     } else if (params.modelId.startsWith('flux')) {
-      // FLUX models use aspect_ratio instead of width/height
-      // Note: Some FLUX models don't support negative_prompt, but we send it anyway
+      // FLUX models use aspect_ratio and prompt_strength for img2img (no token limit)
       input = {
-        prompt: params.prompt,
+        prompt: params.prompt, // FLUX uses T5, no 77 token limit
         negative_prompt: params.negativePrompt || undefined,
         aspect_ratio: params.aspectRatio || '3:2',
         output_format: 'webp',
         output_quality: 90,
       };
+      if (isImg2Img) {
+        input.image = params.sourceImage;
+        input.prompt_strength = strength; // FLUX uses prompt_strength instead of strength
+      }
     } else if (params.modelId === 'sdxl-lightning') {
-      // SDXL Lightning: 4 steps
+      // SDXL Lightning: 4 steps - supports img2img
       input = {
-        prompt: params.prompt,
-        negative_prompt: params.negativePrompt || '',
+        prompt: truncatedPrompt,
+        negative_prompt: truncatedNegative,
         width: params.width || 1024,
         height: params.height || 768,
         num_outputs: 1,
@@ -111,23 +214,127 @@ export async function generateWithReplicate(
         num_inference_steps: 4,
         guidance_scale: 0,
       };
-    } else {
-      // Standard SDXL models
+      if (isImg2Img) {
+        input.image = params.sourceImage;
+        input.strength = strength;
+      }
+    } else if (params.modelId === 'pony-xl' || params.modelId === 'pony-realism') {
+      // Pony models - great for yaoi/bara with booru tags
       input = {
-        prompt: params.prompt,
-        negative_prompt: params.negativePrompt || '',
+        prompt: truncatedPrompt,
+        negative_prompt: truncatedNegative,
+        width: params.width || 1024,
+        height: params.height || 1024,
+        num_outputs: 1,
+        scheduler: 'Euler a',
+        num_inference_steps: 25,
+        guidance_scale: isImg2Img ? 4 : 7,
+      };
+      if (isImg2Img) {
+        input.image = params.sourceImage;
+        input.strength = strength;
+      }
+    } else if (params.modelId === 'noobai-xl') {
+      // NoobAI XL (Illustrious) - lower guidance for img2img
+      input = {
+        prompt: truncatedPrompt,
+        negative_prompt: truncatedNegative,
+        width: params.width || 1024,
+        height: params.height || 768,
+        num_outputs: 1,
+        scheduler: 'Euler a',
+        num_inference_steps: 25,
+        guidance_scale: isImg2Img ? 4 : 7, // Lower guidance for img2img
+      };
+      if (isImg2Img) {
+        input.image = params.sourceImage;
+        input.strength = strength;
+      }
+    } else if (params.modelId === 'wai-illustrious' || params.modelId === 'wai-illustrious-v12') {
+      // WAI Illustrious - lower guidance for img2img to preserve source better
+      input = {
+        prompt: truncatedPrompt,
+        negative_prompt: truncatedNegative,
+        width: params.width || 1024,
+        height: params.height || 768,
+        num_outputs: 1,
+        scheduler: 'DPM++ 2M Karras',
+        num_inference_steps: 28,
+        guidance_scale: isImg2Img ? 4 : 7, // Lower guidance for img2img
+      };
+      if (isImg2Img) {
+        input.image = params.sourceImage;
+        input.strength = strength;
+      }
+    } else if (params.modelId === 'realistic-vision') {
+      // Realistic Vision v5.1 - lower guidance for img2img
+      input = {
+        prompt: truncatedPrompt,
+        negative_prompt: truncatedNegative,
+        width: params.width || 1024,
+        height: params.height || 768,
+        num_outputs: 1,
+        scheduler: 'EulerA',
+        num_inference_steps: 25,
+        guidance_scale: isImg2Img ? 4 : 7,
+      };
+      if (isImg2Img) {
+        input.image = params.sourceImage;
+        input.strength = strength;
+      }
+    } else if (params.modelId === 'juggernaut' || params.modelId === 'dreamshaper-xl') {
+      // Juggernaut XL / DreamShaper XL - lower guidance for img2img
+      input = {
+        prompt: truncatedPrompt,
+        negative_prompt: truncatedNegative,
+        width: params.width || 1024,
+        height: params.height || 768,
+        num_outputs: 1,
+        scheduler: 'K_EULER',
+        num_inference_steps: params.modelId === 'dreamshaper-xl' ? 6 : 30, // DreamShaper Turbo uses fewer steps
+        guidance_scale: isImg2Img ? 4 : 7,
+      };
+      if (isImg2Img) {
+        input.image = params.sourceImage;
+        input.strength = strength;
+      }
+    } else if (params.modelId === 'animagine-xl' || params.modelId === 'sdxl-niji') {
+      // Anime models (Animagine, Niji)
+      input = {
+        prompt: truncatedPrompt,
+        negative_prompt: truncatedNegative,
+        width: params.width || 1024,
+        height: params.height || 768,
+        num_outputs: 1,
+        scheduler: 'Euler a',
+        num_inference_steps: 25,
+        guidance_scale: isImg2Img ? 5 : 7,
+      };
+      if (isImg2Img) {
+        input.image = params.sourceImage;
+        input.strength = strength;
+      }
+    } else {
+      // Standard SDXL models - lower guidance for img2img
+      input = {
+        prompt: truncatedPrompt,
+        negative_prompt: truncatedNegative,
         width: params.width || 1024,
         height: params.height || 768,
         num_outputs: 1,
         scheduler: 'K_EULER',
         num_inference_steps: 25,
-        guidance_scale: 7,
+        guidance_scale: isImg2Img ? 4 : 7,
       };
+      if (isImg2Img) {
+        input.image = params.sourceImage;
+        input.strength = strength;
+      }
     }
 
     console.log(`[Replicate] Running model: ${modelConfig.version}`);
 
-    let output = await client.run(modelConfig.version as `${string}/${string}:${string}`, {
+    let output: unknown = await client.run(modelConfig.version as `${string}/${string}:${string}`, {
       input,
     });
 

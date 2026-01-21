@@ -1,0 +1,420 @@
+{
+  "id": "pet_play_f_is_pet",
+  "slug": "pet-play-she-is-pet",
+  "version": 2,
+  "paired_scene": "pet_play_m_is_pet",
+  "role_direction": "m_dom_f_pet",
+  "title": {
+    "ru": "Pet play",
+    "en": "Pet Play"
+  },
+  "subtitle": {
+    "ru": "Она — питомец",
+    "en": "She is pet"
+  },
+  "ai_description": {
+    "ru": "На ней ушки, хвостик, ошейник. Она мурлычет, ластится, ждёт команд. Kitten, puppy — милый зверёк в руках хозяина.",
+    "en": "She wears ears, tail, collar. She purrs, cuddles, waits for commands. Kitten, puppy — cute pet in master's hands."
+  },
+  "image_prompt": "woman on all fours wearing cat ears tail and collar, nude except for pet accessories, looking up at standing man, his hand extended toward her head, bedroom setting",
+  "intensity": 3,
+  "category": "pet_play",
+  "tags": [
+    "pet_play",
+    "kitten",
+    "puppy",
+    "ears",
+    "tail",
+    "collar",
+    "primal"
+  ],
+  "elements": [
+    {
+      "id": "animal",
+      "label": {
+        "ru": "Какой питомец?",
+        "en": "What pet?"
+      },
+      "tag_ref": "pet_type",
+      "follow_ups": [
+        {
+          "id": "type",
+          "type": "single_select",
+          "question": {
+            "ru": "Какой питомец?",
+            "en": "What type of pet?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "kitten",
+                "label": {
+                  "ru": "Kitten (котёнок)",
+                  "en": "Kitten"
+                }
+              },
+              {
+                "id": "puppy",
+                "label": {
+                  "ru": "Puppy (щенок)",
+                  "en": "Puppy"
+                }
+              },
+              {
+                "id": "bunny",
+                "label": {
+                  "ru": "Bunny (зайка)",
+                  "en": "Bunny"
+                }
+              },
+              {
+                "id": "pony",
+                "label": {
+                  "ru": "Pony (пони)",
+                  "en": "Pony"
+                }
+              },
+              {
+                "id": "fox",
+                "label": {
+                  "ru": "Fox (лисичка)",
+                  "en": "Fox"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "accessories",
+      "label": {
+        "ru": "Аксессуары",
+        "en": "Accessories"
+      },
+      "tag_ref": "pet_accessories",
+      "follow_ups": [
+        {
+          "id": "items",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие аксессуары?",
+            "en": "What accessories?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "ears",
+                "label": {
+                  "ru": "Ушки",
+                  "en": "Ears"
+                }
+              },
+              {
+                "id": "tail",
+                "label": {
+                  "ru": "Хвостик (плаг)",
+                  "en": "Tail (plug)"
+                }
+              },
+              {
+                "id": "collar",
+                "label": {
+                  "ru": "Ошейник",
+                  "en": "Collar"
+                }
+              },
+              {
+                "id": "leash",
+                "label": {
+                  "ru": "Поводок",
+                  "en": "Leash"
+                }
+              },
+              {
+                "id": "paws",
+                "label": {
+                  "ru": "Лапки (митенки)",
+                  "en": "Paw mitts"
+                }
+              },
+              {
+                "id": "bell",
+                "label": {
+                  "ru": "Колокольчик",
+                  "en": "Bell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "behaviors",
+      "label": {
+        "ru": "Поведение",
+        "en": "Behaviors"
+      },
+      "tag_ref": "pet_behaviors",
+      "follow_ups": [
+        {
+          "id": "acts",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какое поведение?",
+            "en": "What behaviors?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "all_fours",
+                "label": {
+                  "ru": "На четвереньках",
+                  "en": "On all fours"
+                }
+              },
+              {
+                "id": "meow_bark",
+                "label": {
+                  "ru": "Мяукать/гавкать",
+                  "en": "Meow/bark"
+                }
+              },
+              {
+                "id": "cuddle",
+                "label": {
+                  "ru": "Ластиться",
+                  "en": "Cuddle"
+                }
+              },
+              {
+                "id": "fetch",
+                "label": {
+                  "ru": "Приносить вещи",
+                  "en": "Fetch"
+                }
+              },
+              {
+                "id": "tricks",
+                "label": {
+                  "ru": "Команды (сидеть, лежать)",
+                  "en": "Commands (sit, stay)"
+                }
+              },
+              {
+                "id": "eat_bowl",
+                "label": {
+                  "ru": "Есть из миски",
+                  "en": "Eat from bowl"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "rewards",
+      "label": {
+        "ru": "Награды",
+        "en": "Rewards"
+      },
+      "tag_ref": "pet_rewards",
+      "follow_ups": [
+        {
+          "id": "reward_types",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие награды?",
+            "en": "What rewards?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "pets",
+                "label": {
+                  "ru": "Поглаживания",
+                  "en": "Petting"
+                }
+              },
+              {
+                "id": "good_pet",
+                "label": {
+                  "ru": "'Хороший питомец'",
+                  "en": "'Good pet'"
+                }
+              },
+              {
+                "id": "treats",
+                "label": {
+                  "ru": "Лакомства",
+                  "en": "Treats"
+                }
+              },
+              {
+                "id": "belly_rubs",
+                "label": {
+                  "ru": "Почёсывание животика",
+                  "en": "Belly rubs"
+                }
+              },
+              {
+                "id": "orgasm",
+                "label": {
+                  "ru": "Разрешение кончить",
+                  "en": "Permission to cum"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sexual_elements",
+      "label": {
+        "ru": "Секс элементы",
+        "en": "Sexual elements"
+      },
+      "tag_ref": "pet_sexual",
+      "follow_ups": [
+        {
+          "id": "sexual",
+          "type": "multi_select",
+          "question": {
+            "ru": "Сексуальные элементы?",
+            "en": "Sexual elements?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "breeding",
+                "label": {
+                  "ru": "Breeding (спаривание)",
+                  "en": "Breeding"
+                }
+              },
+              {
+                "id": "doggy",
+                "label": {
+                  "ru": "Секс в doggy",
+                  "en": "Doggy style sex"
+                }
+              },
+              {
+                "id": "tail_plug",
+                "label": {
+                  "ru": "Хвост-плаг во время секса",
+                  "en": "Tail plug during sex"
+                }
+              },
+              {
+                "id": "oral_command",
+                "label": {
+                  "ru": "Оральный по команде",
+                  "en": "Oral on command"
+                }
+              },
+              {
+                "id": "non_sexual",
+                "label": {
+                  "ru": "Без секса (только pet space)",
+                  "en": "Non-sexual (pet space only)"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "pet_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What do you like?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "headspace",
+                "label": {
+                  "ru": "Pet space (отключить голову)",
+                  "en": "Pet headspace"
+                }
+              },
+              {
+                "id": "cute",
+                "label": {
+                  "ru": "Быть милой",
+                  "en": "Being cute"
+                }
+              },
+              {
+                "id": "simple",
+                "label": {
+                  "ru": "Простота (еда, ласка, спать)",
+                  "en": "Simplicity"
+                }
+              },
+              {
+                "id": "care",
+                "label": {
+                  "ru": "Забота хозяина",
+                  "en": "Owner's care"
+                }
+              },
+              {
+                "id": "primal",
+                "label": {
+                  "ru": "Первобытное",
+                  "en": "Primal"
+                }
+              },
+              {
+                "id": "accessories",
+                "label": {
+                  "ru": "Аксессуары (ушки, хвост)",
+                  "en": "Accessories"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в pet play?",
+      "en": "What appeals about pet play?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "pet_play",
+      "kitten",
+      "puppy"
+    ],
+    "tests_secondary": [
+      "primal",
+      "collar",
+      "headspace"
+    ]
+  },
+  "user_description": {
+    "ru": "Женщина играет роль домашнего животного. На ней ушки, хвостик, ошейник. Ползает на четвереньках, выполняет команды партнёра.",
+    "en": "Woman plays the role of a pet. She wears ears, tail, collar. Crawls on all fours, follows partner's commands."
+  }
+}

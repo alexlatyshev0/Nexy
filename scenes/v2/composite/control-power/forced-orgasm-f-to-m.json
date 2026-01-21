@@ -1,0 +1,298 @@
+{
+  "id": "forced_orgasm_f_to_m",
+  "slug": "forced-orgasm-on-him",
+  "version": 2,
+  "paired_scene": "forced_orgasm_m_to_f",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Вынужденный оргазм",
+    "en": "Forced Orgasm"
+  },
+  "subtitle": {
+    "ru": "Она заставляет его кончать",
+    "en": "She makes him cum"
+  },
+  "ai_description": {
+    "ru": "Он связан. Она продолжает после его оргазма — чувствительность зашкаливает, но она не останавливается. Милкинг, овер-стимуляция.",
+    "en": "He's restrained. She continues after his orgasm — sensitivity overwhelming, but she doesn't stop. Milking, overstimulation."
+  },
+  "image_prompt": "woman stimulating restrained man on bed after climax, his hands bound, bedroom setting with bondage equipment",
+  "intensity": 4,
+  "category": "control-power",
+  "tags": [
+    "forced_orgasm",
+    "overstimulation",
+    "post_orgasm",
+    "femdom",
+    "milking"
+  ],
+  "elements": [
+    {
+      "id": "method",
+      "label": {
+        "ru": "Метод",
+        "en": "Method"
+      },
+      "tag_ref": "forced_o_m_method",
+      "follow_ups": [
+        {
+          "id": "how",
+          "type": "multi_select",
+          "question": {
+            "ru": "Как?",
+            "en": "How?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "handjob",
+                "label": {
+                  "ru": "Рукой (не останавливается)",
+                  "en": "Handjob (doesn't stop)"
+                }
+              },
+              {
+                "id": "blowjob",
+                "label": {
+                  "ru": "Минет после оргазма",
+                  "en": "Blowjob after orgasm"
+                }
+              },
+              {
+                "id": "riding",
+                "label": {
+                  "ru": "Продолжает скакать",
+                  "en": "Keeps riding"
+                }
+              },
+              {
+                "id": "prostate",
+                "label": {
+                  "ru": "Простата (milking)",
+                  "en": "Prostate (milking)"
+                }
+              },
+              {
+                "id": "vibrator",
+                "label": {
+                  "ru": "Вибратор на головке",
+                  "en": "Vibrator on head"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "restraint",
+      "label": {
+        "ru": "Фиксация",
+        "en": "Restraint"
+      },
+      "tag_ref": "forced_o_m_restraint",
+      "follow_ups": [
+        {
+          "id": "tied",
+          "type": "single_select",
+          "question": {
+            "ru": "Связан?",
+            "en": "Tied up?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "not_tied",
+                "label": {
+                  "ru": "Нет, просто удерживает",
+                  "en": "No, just held"
+                }
+              },
+              {
+                "id": "light",
+                "label": {
+                  "ru": "Лёгкая фиксация",
+                  "en": "Light restraint"
+                }
+              },
+              {
+                "id": "full",
+                "label": {
+                  "ru": "Полностью связан",
+                  "en": "Fully restrained"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "intensity",
+      "label": {
+        "ru": "Интенсивность",
+        "en": "Intensity"
+      },
+      "tag_ref": "forced_o_m_intensity",
+      "follow_ups": [
+        {
+          "id": "level",
+          "type": "single_select",
+          "question": {
+            "ru": "Насколько интенсивно?",
+            "en": "How intense?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "brief",
+                "label": {
+                  "ru": "Кратко после оргазма",
+                  "en": "Brief after orgasm"
+                }
+              },
+              {
+                "id": "extended",
+                "label": {
+                  "ru": "Продолжительно",
+                  "en": "Extended"
+                }
+              },
+              {
+                "id": "until_begging",
+                "label": {
+                  "ru": "Пока не начнёт умолять",
+                  "en": "Until he begs"
+                }
+              },
+              {
+                "id": "ruined_then_more",
+                "label": {
+                  "ru": "Испорченный оргазм + продолжение",
+                  "en": "Ruined then continue"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает",
+        "en": "What appeals"
+      },
+      "tag_ref": "forced_o_m_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "her_control",
+                "label": {
+                  "ru": "Её контроль",
+                  "en": "Her control"
+                }
+              },
+              {
+                "id": "sensitivity",
+                "label": {
+                  "ru": "Экстремальная чувствительность",
+                  "en": "Extreme sensitivity"
+                }
+              },
+              {
+                "id": "helpless",
+                "label": {
+                  "ru": "Беспомощность",
+                  "en": "Helplessness"
+                }
+              },
+              {
+                "id": "milking",
+                "label": {
+                  "ru": "Milking",
+                  "en": "Milking"
+                }
+              },
+              {
+                "id": "torture",
+                "label": {
+                  "ru": "Сладкая пытка",
+                  "en": "Sweet torture"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "boundary",
+    "text": {
+      "ru": "Когда она не останавливается после его оргазма?",
+      "en": "When she doesn't stop after his orgasm?"
+    },
+    "config": {
+      "boundary_options": [
+        {
+          "id": "hard_no",
+          "label": {
+            "ru": "Нет, слишком интенсивно",
+            "en": "No, too intense"
+          }
+        },
+        {
+          "id": "curious",
+          "label": {
+            "ru": "Интересно попробовать",
+            "en": "Curious to try"
+          }
+        },
+        {
+          "id": "yes",
+          "label": {
+            "ru": "Да, нравится",
+            "en": "Yes, like it"
+          }
+        }
+      ]
+    }
+  },
+  "ai_context": {
+    "tests_primary": [
+      "forced_orgasm_m",
+      "overstimulation",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "post_orgasm",
+      "milking",
+      "sensitivity"
+    ],
+    "emotional_range": {
+      "positive": [
+        "femdom turn-on",
+        "sensitivity arousing",
+        "likes being overwhelmed"
+      ],
+      "negative": [
+        "too sensitive",
+        "need to stop",
+        "not interested"
+      ]
+    }
+  },
+  "user_description": {
+    "ru": "Она продолжает стимулировать его после оргазма. Он связан и не может остановить её.",
+    "en": "She continues stimulating him after orgasm. He is restrained and cannot stop her."
+  }
+}

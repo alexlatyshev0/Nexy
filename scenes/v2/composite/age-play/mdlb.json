@@ -1,0 +1,341 @@
+{
+  "id": "mdlb",
+  "slug": "mommy-dom-little-boy",
+  "version": 2,
+  "paired_scene": "ddlg",
+  "role_direction": "f_mommy_m_little",
+  "title": {
+    "ru": "MDlb",
+    "en": "MDlb"
+  },
+  "subtitle": {
+    "ru": "Mommy Dom / Little Boy",
+    "en": "Mommy Dom / Little Boy"
+  },
+  "ai_description": {
+    "ru": "Она — Mommy, он — её маленький мальчик. Забота, нежность, контроль, утешение. Мягкий femdom с материнской энергией.",
+    "en": "She's Mommy, he's her little boy. Care, tenderness, control, comfort. Soft femdom with maternal energy."
+  },
+  "image_prompt": "dominant woman sitting in armchair, submissive man kneeling beside her in boxers, cozy living room with soft lamp",
+  "intensity": 3,
+  "category": "age_play",
+  "tags": [
+    "mdlb",
+    "mommy",
+    "little_boy",
+    "femdom",
+    "caregiver",
+    "nurturing"
+  ],
+  "elements": [
+    {
+      "id": "mommy_role",
+      "label": {
+        "ru": "Роль Mommy",
+        "en": "Mommy role"
+      },
+      "tag_ref": "mommy_role",
+      "follow_ups": [
+        {
+          "id": "mommy_traits",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что важно в Mommy?",
+            "en": "What's important in Mommy?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "nurturing",
+                "label": {
+                  "ru": "Заботливая",
+                  "en": "Nurturing"
+                }
+              },
+              {
+                "id": "comforting",
+                "label": {
+                  "ru": "Утешает",
+                  "en": "Comforting"
+                }
+              },
+              {
+                "id": "controlling",
+                "label": {
+                  "ru": "Контролирует",
+                  "en": "Controlling"
+                }
+              },
+              {
+                "id": "gentle",
+                "label": {
+                  "ru": "Нежная",
+                  "en": "Gentle"
+                }
+              },
+              {
+                "id": "strict",
+                "label": {
+                  "ru": "Строгая",
+                  "en": "Strict"
+                }
+              },
+              {
+                "id": "rewards",
+                "label": {
+                  "ru": "Награждает",
+                  "en": "Rewards"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "little_space",
+      "label": {
+        "ru": "Little space",
+        "en": "Little space"
+      },
+      "tag_ref": "male_little_space",
+      "follow_ups": [
+        {
+          "id": "elements",
+          "type": "multi_select",
+          "question": {
+            "ru": "Элементы little space?",
+            "en": "Little space elements?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "cuddles",
+                "label": {
+                  "ru": "Обнимашки",
+                  "en": "Cuddles"
+                }
+              },
+              {
+                "id": "lap",
+                "label": {
+                  "ru": "Голова на коленях",
+                  "en": "Head on lap"
+                }
+              },
+              {
+                "id": "petting",
+                "label": {
+                  "ru": "Поглаживания",
+                  "en": "Petting"
+                }
+              },
+              {
+                "id": "stories",
+                "label": {
+                  "ru": "Сказки на ночь",
+                  "en": "Bedtime stories"
+                }
+              },
+              {
+                "id": "praise",
+                "label": {
+                  "ru": "Хороший мальчик",
+                  "en": "Good boy"
+                }
+              },
+              {
+                "id": "feeding",
+                "label": {
+                  "ru": "Кормление",
+                  "en": "Feeding"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dynamic",
+      "label": {
+        "ru": "Динамика",
+        "en": "Dynamic"
+      },
+      "tag_ref": "mdlb_dynamic",
+      "follow_ups": [
+        {
+          "id": "style",
+          "type": "single_select",
+          "question": {
+            "ru": "Какой стиль?",
+            "en": "What style?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "gentle",
+                "label": {
+                  "ru": "Мягкий, нежный",
+                  "en": "Soft, gentle"
+                }
+              },
+              {
+                "id": "strict",
+                "label": {
+                  "ru": "Строгая Mommy",
+                  "en": "Strict Mommy"
+                }
+              },
+              {
+                "id": "mixed",
+                "label": {
+                  "ru": "Смешанный",
+                  "en": "Mixed"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sexual_or_not",
+      "label": {
+        "ru": "Сексуально?",
+        "en": "Sexual?"
+      },
+      "tag_ref": "mdlb_sexual",
+      "follow_ups": [
+        {
+          "id": "sexual",
+          "type": "single_select",
+          "question": {
+            "ru": "Сексуальный элемент?",
+            "en": "Sexual element?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "non_sexual",
+                "label": {
+                  "ru": "Нет, только динамика",
+                  "en": "No, just dynamic"
+                }
+              },
+              {
+                "id": "sometimes",
+                "label": {
+                  "ru": "Иногда",
+                  "en": "Sometimes"
+                }
+              },
+              {
+                "id": "pegging",
+                "label": {
+                  "ru": "С пеггингом",
+                  "en": "With pegging"
+                }
+              },
+              {
+                "id": "integrated",
+                "label": {
+                  "ru": "Интегрировано",
+                  "en": "Integrated"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "mdlb_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что нравится?",
+            "en": "What do you like?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "nurturing",
+                "label": {
+                  "ru": "Забота",
+                  "en": "Being nurtured"
+                }
+              },
+              {
+                "id": "vulnerability",
+                "label": {
+                  "ru": "Уязвимость ок",
+                  "en": "Vulnerability ok"
+                }
+              },
+              {
+                "id": "no_responsibility",
+                "label": {
+                  "ru": "Нет ответственности",
+                  "en": "No responsibility"
+                }
+              },
+              {
+                "id": "femdom_soft",
+                "label": {
+                  "ru": "Мягкий femdom",
+                  "en": "Soft femdom"
+                }
+              },
+              {
+                "id": "comfort",
+                "label": {
+                  "ru": "Утешение",
+                  "en": "Comfort"
+                }
+              },
+              {
+                "id": "regression",
+                "label": {
+                  "ru": "Регрессия",
+                  "en": "Regression"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в MDlb?",
+      "en": "What appeals about MDlb?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "mdlb",
+      "mommy",
+      "little_boy"
+    ],
+    "tests_secondary": [
+      "femdom",
+      "nurturing",
+      "caregiver"
+    ]
+  },
+  "user_description": {
+    "ru": "Женщина в роли Mommy доминирует над мужчиной, который играет её маленького мальчика",
+    "en": "Woman in Mommy role dominates over man who plays her little boy"
+  }
+}

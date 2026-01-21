@@ -12,6 +12,7 @@ import {
 import {
   improvePromptFromHints,
   rewritePromptWithAI,
+  cleanAccumulatedEmphasis,
 } from '@/lib/prompt-rewriter';
 
 const ATTEMPTS_PER_ROUND = 3;
@@ -37,6 +38,9 @@ async function generateImage(params: {
   width: number;
   height: number;
   aspectRatio: string;
+  // Img2img parameters
+  sourceImage?: string;
+  strength?: number;
 }): Promise<string> {
   if (params.service === 'replicate') {
     return generateWithReplicate({
@@ -46,7 +50,13 @@ async function generateImage(params: {
       width: params.width,
       height: params.height,
       aspectRatio: params.aspectRatio,
+      sourceImage: params.sourceImage,
+      strength: params.strength,
     });
+  }
+  // CivitAI SDK does not support img2img
+  if (params.sourceImage) {
+    throw new Error('img2img is only supported with Replicate service');
   }
   return generateWithRetry({
     prompt: params.prompt,
@@ -99,6 +109,9 @@ async function generateWithQA(params: {
   width: number;
   height: number;
   aspectRatio: string;
+  // Img2img parameters
+  sourceImage?: string;
+  strength?: number;
   onProgress?: (message: string) => void;
 }): Promise<GenerationResult> {
   const {
@@ -113,6 +126,8 @@ async function generateWithQA(params: {
     width,
     height,
     aspectRatio,
+    sourceImage,
+    strength,
     onProgress = console.log,
   } = params;
 
@@ -145,7 +160,7 @@ async function generateWithQA(params: {
 
       // Generate image
       try {
-        onProgress(`[QA] Generating image with ${service}...`);
+        onProgress(`[QA] Generating image with ${service}${sourceImage ? ' (img2img)' : ''}...`);
         lastImageUrl = await generateImage({
           prompt: fullPrompt,
           negativePrompt: finalNegative,
@@ -154,6 +169,8 @@ async function generateWithQA(params: {
           width,
           height,
           aspectRatio,
+          sourceImage,
+          strength,
         });
         onProgress(`[QA] Generated image URL: ${lastImageUrl?.substring(0, 80)}...`);
         successfulGenerations++;
@@ -183,11 +200,13 @@ async function generateWithQA(params: {
 
         if (approved) {
           onProgress(`[QA] PASSED on round ${round}, attempt ${attempt}`);
+          // Clean the prompt from QA iteration artifacts before saving
+          const cleanedPrompt = cleanAccumulatedEmphasis(currentPrompt);
           return {
             imageUrl: lastImageUrl,
             qaStatus: 'passed',
             originalPrompt,
-            finalPrompt: currentPrompt,
+            finalPrompt: cleanedPrompt,
             totalAttempts,
             lastAssessment,
             evaluationErrors,
@@ -244,11 +263,14 @@ async function generateWithQA(params: {
   // All rounds failed
   onProgress(`[QA] FAILED after ${totalAttempts} attempts across ${MAX_ROUNDS} rounds`);
 
+  // Clean the prompt from QA iteration artifacts before saving
+  const cleanedPrompt = cleanAccumulatedEmphasis(currentPrompt);
+
   return {
     imageUrl: lastImageUrl,
     qaStatus: 'failed',
     originalPrompt,
-    finalPrompt: currentPrompt,
+    finalPrompt: cleanedPrompt,
     totalAttempts,
     lastAssessment,
     evaluationErrors,
@@ -274,6 +296,9 @@ export async function POST(req: Request) {
     aspectRatio = '3:2',
     enableQA = false,
     qaContext,
+    // Img2img parameters
+    sourceImage, // URL of source image for img2img
+    strength = 0.7, // 0-1, how much to deviate from source
   } = await req.json();
 
   if (!prompt) {
@@ -298,6 +323,7 @@ export async function POST(req: Request) {
       console.log('[Generate] Service:', service);
       console.log('[Generate] Model:', modelId);
       console.log('[Generate] Resolution:', `${width}x${height} (${aspectRatio})`);
+      console.log('[Generate] Mode:', sourceImage ? `img2img (strength: ${strength})` : 'txt2img');
       console.log('[Generate] Prompt:', fullPrompt.substring(0, 100) + '...');
 
       let imageUrl: string;
@@ -310,8 +336,17 @@ export async function POST(req: Request) {
           width,
           height,
           aspectRatio,
+          sourceImage,
+          strength,
         });
       } else {
+        // CivitAI SDK does not support img2img
+        if (sourceImage) {
+          return NextResponse.json(
+            { error: 'img2img is only supported with Replicate service' },
+            { status: 400 }
+          );
+        }
         imageUrl = await generateWithRetry({
           prompt: fullPrompt,
           negativePrompt: finalNegative,
@@ -392,6 +427,8 @@ export async function POST(req: Request) {
       width,
       height,
       aspectRatio,
+      sourceImage,
+      strength,
       onProgress: console.log,
     });
 
@@ -426,13 +463,11 @@ export async function POST(req: Request) {
       }
 
       // Update scene in database
-      // Also update generation_prompt to final_prompt so user sees the improved version
+      // Also update generation_prompt to finalPrompt so user sees the improved version
       const { data: updateData, error: updateError } = await supabase
         .from('scenes')
         .update({
           image_url: storageUrl,
-          original_prompt: result.originalPrompt,
-          final_prompt: result.finalPrompt,
           generation_prompt: result.finalPrompt, // Update to show improved prompt in UI
           qa_status: result.qaStatus,
           qa_attempts: result.totalAttempts,

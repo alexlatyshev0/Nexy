@@ -1,46 +1,67 @@
 import type {
   Answer,
-  SceneV3,
+  SceneV2,
   SignalUpdate,
   PsychologicalProfile,
   BodyMapAnswer,
   BodyZoneId,
 } from './types';
-import { getResponseCategory } from './question-v3';
 import type { SupabaseClient } from '@supabase/supabase-js';
 
 /**
- * Calculate signal updates based on user's answer to a V3 scene
+ * Get response category from answer
+ */
+function getResponseCategory(answer: Answer): 'positive' | 'negative' | 'curious' {
+  if ('value' in answer) {
+    if (typeof answer.value === 'number') {
+      if (answer.value >= 70) return 'positive';
+      if (answer.value <= 30) return 'negative';
+      return 'curious';
+    }
+    if (typeof answer.value === 'string') {
+      if (answer.value === 'yes') return 'positive';
+      if (answer.value === 'no') return 'negative';
+      return 'curious';
+    }
+  }
+  if ('selected' in answer && Array.isArray(answer.selected) && answer.selected.length > 0) {
+    return 'positive';
+  }
+  return 'curious';
+}
+
+/**
+ * Calculate signal updates based on user's answer to a V2 scene
  */
 export function calculateSignalUpdates(
   answer: Answer,
-  scene: SceneV3
+  scene: SceneV2
 ): SignalUpdate[] {
-  const signals = scene.ai_context?.profile_signals;
-  if (!signals) return [];
-
+  // V2 scenes use ai_context.tests_primary and tests_secondary
+  // Map selected elements to signals
   const updates: SignalUpdate[] = [];
   const category = getResponseCategory(answer);
-
-  // Get signal weight based on answer intensity
   const weight = getSignalWeight(answer, category);
 
-  switch (category) {
-    case 'positive':
-      signals.if_positive?.forEach((signal) => {
-        updates.push({ signal, weight });
+  // For V2, use selected elements as signals
+  if ('selected' in answer && Array.isArray(answer.selected)) {
+    for (const elementId of answer.selected) {
+      const element = scene.elements.find((e) => e.id === elementId);
+      if (element) {
+        updates.push({
+          signal: element.tag_ref,
+          weight: category === 'positive' ? weight : -weight,
+        });
+      }
+    }
+  } else if ('value' in answer && typeof answer.value === 'number') {
+    // For scale answers, use primary tests
+    scene.ai_context.tests_primary?.forEach((test) => {
+      updates.push({
+        signal: test,
+        weight: category === 'positive' ? weight : -weight,
       });
-      break;
-    case 'negative':
-      signals.if_negative?.forEach((signal) => {
-        updates.push({ signal, weight: -weight });
-      });
-      break;
-    case 'curious':
-      signals.if_curious?.forEach((signal) => {
-        updates.push({ signal, weight: weight * 0.5 });
-      });
-      break;
+    });
   }
 
   return updates;
@@ -71,47 +92,29 @@ function getSignalWeight(answer: Answer, category: 'positive' | 'negative' | 'cu
  */
 export function calculateTestScoreUpdates(
   answer: Answer,
-  scene: SceneV3
+  scene: SceneV2
 ): Record<string, number> {
-  const tests = scene.ai_context?.tests;
-  if (!tests) return {};
-
+  // V2 uses tests_primary and tests_secondary
   const updates: Record<string, number> = {};
-
-  // Get normalized answer value (0-1)
-  let normalizedValue = 0.5;
+  
   if ('value' in answer && typeof answer.value === 'number') {
-    normalizedValue = answer.value / 100;
-  } else if ('value' in answer) {
-    if (answer.value === 'yes' || answer.value === true) {
-      normalizedValue = 0.8;
-    } else if (answer.value === 'no' || answer.value === false) {
-      normalizedValue = 0.2;
-    } else {
-      normalizedValue = 0.5;
+    const value = answer.value;
+    scene.ai_context.tests_primary?.forEach((test) => {
+      updates[test] = value;
+    });
+    scene.ai_context.tests_secondary?.forEach((test) => {
+      updates[test] = value * 0.5; // Secondary tests get lower weight
+    });
+  } else if ('selected' in answer && Array.isArray(answer.selected)) {
+    // For element selection, use selected elements
+    for (const elementId of answer.selected) {
+      const element = scene.elements.find((e) => e.id === elementId);
+      if (element) {
+        updates[element.tag_ref] = 75; // Default positive score for selected
+      }
     }
   }
-
-  // Update primary kink score
-  if (tests.primary_kink) {
-    updates[tests.primary_kink] = normalizedValue;
-  }
-
-  // Update secondary kink scores (with reduced weight)
-  tests.secondary_kinks?.forEach((kink) => {
-    updates[kink] = normalizedValue * 0.7;
-  });
-
-  // Update power dynamic score
-  if (tests.power_dynamic) {
-    updates[`power_dynamic.${tests.power_dynamic}`] = normalizedValue;
-  }
-
-  // Update gender role aspect
-  if (tests.gender_role_aspect) {
-    updates[`gender_role.${tests.gender_role_aspect}`] = normalizedValue;
-  }
-
+  
   return updates;
 }
 
@@ -165,7 +168,7 @@ export async function updatePsychologicalProfile(
   userId: string,
   signalUpdates: SignalUpdate[],
   testScoreUpdates: Record<string, number>,
-  scene: SceneV3
+  scene: SceneV2
 ): Promise<void> {
   // Fetch current profile
   const { data: profile } = await supabase
@@ -315,7 +318,7 @@ export function isBodyMapAnswer(answer: Answer): answer is BodyMapAnswer {
  */
 export function calculateBodyMapSignals(
   answer: BodyMapAnswer,
-  scene: SceneV3
+  scene: SceneV2
 ): SignalUpdate[] {
   const signals: SignalUpdate[] = [];
 
@@ -411,12 +414,10 @@ export function calculateBodyMapSignals(
  */
 export function calculateBodyMapTestScores(
   answer: BodyMapAnswer,
-  scene: SceneV3
+  scene: SceneV2
 ): Record<string, number> {
   const scores: Record<string, number> = {};
-  const tests = scene.ai_context?.tests;
-
-  if (!tests) return scores;
+  // V2 uses tests_primary and tests_secondary
 
   // Calculate overall engagement score based on total markings
   let totalLove = 0;
@@ -431,15 +432,15 @@ export function calculateBodyMapTestScores(
 
   const totalMarkings = totalLove + totalSometimes + totalNo;
   if (totalMarkings > 0) {
-    // Normalized engagement score
-    const engagementScore = (totalLove * 1.0 + totalSometimes * 0.5) / totalMarkings;
+    // Normalized engagement score (0-100)
+    const engagementScore = ((totalLove * 1.0 + totalSometimes * 0.5) / totalMarkings) * 100;
 
-    if (tests.primary_kink) {
-      scores[tests.primary_kink] = engagementScore;
-    }
+    scene.ai_context.tests_primary?.forEach((test) => {
+      scores[test] = engagementScore;
+    });
 
-    tests.secondary_kinks?.forEach((kink) => {
-      scores[kink] = engagementScore * 0.7;
+    scene.ai_context.tests_secondary?.forEach((test) => {
+      scores[test] = engagementScore * 0.7;
     });
   }
 

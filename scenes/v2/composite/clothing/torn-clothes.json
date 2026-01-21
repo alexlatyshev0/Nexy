@@ -1,0 +1,275 @@
+{
+  "id": "torn_clothes",
+  "slug": "torn-clothes",
+  "version": 2,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Порванная одежда",
+    "en": "Torn Clothes"
+  },
+  "subtitle": {
+    "ru": "Неудержимая страсть",
+    "en": "Uncontrollable passion"
+  },
+  "ai_description": {
+    "ru": "Страсть настолько сильна, что одежду рвут с тела. Пуговицы летят, ткань трещит. Невозможность ждать ни секунды.",
+    "en": "Passion so strong that clothes are ripped off. Buttons fly, fabric tears. Unable to wait a single second."
+  },
+  "image_prompt": "man tearing woman's shirt open, buttons flying, woman against wall, torn fabric, bedroom setting",
+  "intensity": 3,
+  "category": "rough",
+  "tags": [
+    "torn_clothes",
+    "passion",
+    "urgency",
+    "primal",
+    "rough"
+  ],
+  "elements": [
+    {
+      "id": "whose_clothes",
+      "label": {
+        "ru": "Чья одежда",
+        "en": "Whose clothes"
+      },
+      "tag_ref": "torn_whose",
+      "follow_ups": [
+        {
+          "id": "whose",
+          "type": "single_select",
+          "question": {
+            "ru": "Чью рвут?",
+            "en": "Whose clothes torn?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "hers",
+                "label": {
+                  "ru": "Её",
+                  "en": "Hers"
+                }
+              },
+              {
+                "id": "his",
+                "label": {
+                  "ru": "Его",
+                  "en": "His"
+                }
+              },
+              {
+                "id": "both",
+                "label": {
+                  "ru": "Обоих",
+                  "en": "Both"
+                }
+              },
+              {
+                "id": "varies",
+                "label": {
+                  "ru": "По-разному",
+                  "en": "Varies"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_torn",
+      "label": {
+        "ru": "Что рвут",
+        "en": "What's torn"
+      },
+      "tag_ref": "torn_what",
+      "follow_ups": [
+        {
+          "id": "items",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какую одежду?",
+            "en": "What clothing?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "shirt",
+                "label": {
+                  "ru": "Рубашка",
+                  "en": "Shirt"
+                }
+              },
+              {
+                "id": "blouse",
+                "label": {
+                  "ru": "Блузка",
+                  "en": "Blouse"
+                }
+              },
+              {
+                "id": "panties",
+                "label": {
+                  "ru": "Трусики",
+                  "en": "Panties"
+                }
+              },
+              {
+                "id": "stockings",
+                "label": {
+                  "ru": "Чулки",
+                  "en": "Stockings"
+                }
+              },
+              {
+                "id": "dress",
+                "label": {
+                  "ru": "Платье",
+                  "en": "Dress"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "label": {
+        "ru": "Контекст",
+        "en": "Context"
+      },
+      "tag_ref": "torn_context",
+      "follow_ups": [
+        {
+          "id": "when",
+          "type": "multi_select",
+          "question": {
+            "ru": "В какой ситуации?",
+            "en": "In what situation?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "coming_home",
+                "label": {
+                  "ru": "Встреча после разлуки",
+                  "en": "Reunion after time apart"
+                }
+              },
+              {
+                "id": "date",
+                "label": {
+                  "ru": "После свидания",
+                  "en": "After date"
+                }
+              },
+              {
+                "id": "fight",
+                "label": {
+                  "ru": "После ссоры",
+                  "en": "After fight"
+                }
+              },
+              {
+                "id": "sudden",
+                "label": {
+                  "ru": "Внезапное желание",
+                  "en": "Sudden desire"
+                }
+              },
+              {
+                "id": "cnc",
+                "label": {
+                  "ru": "CNC контекст",
+                  "en": "CNC context"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "what_appeals",
+      "label": {
+        "ru": "Что привлекает?",
+        "en": "What appeals?"
+      },
+      "tag_ref": "torn_appeal",
+      "follow_ups": [
+        {
+          "id": "appeal",
+          "type": "multi_select",
+          "question": {
+            "ru": "Что возбуждает?",
+            "en": "What excites?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "urgency",
+                "label": {
+                  "ru": "Срочность",
+                  "en": "Urgency"
+                }
+              },
+              {
+                "id": "desired",
+                "label": {
+                  "ru": "Быть настолько желанной",
+                  "en": "Being so desired"
+                }
+              },
+              {
+                "id": "primal",
+                "label": {
+                  "ru": "Первобытность",
+                  "en": "Primal instinct"
+                }
+              },
+              {
+                "id": "roughness",
+                "label": {
+                  "ru": "Грубость",
+                  "en": "Roughness"
+                }
+              },
+              {
+                "id": "spontaneous",
+                "label": {
+                  "ru": "Спонтанность",
+                  "en": "Spontaneity"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что привлекает в порванной одежде?",
+      "en": "What appeals about torn clothes?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "torn_clothes",
+      "passion",
+      "primal"
+    ],
+    "tests_secondary": [
+      "urgency",
+      "rough",
+      "desired"
+    ]
+  },
+  "user_description": {
+    "ru": "Один партнёр рвёт одежду с другого. Пуговицы отрываются, ткань разрывается.",
+    "en": "One partner tears clothes off the other. Buttons are ripped off, fabric is torn."
+  }
+}

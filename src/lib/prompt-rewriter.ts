@@ -10,6 +10,94 @@ export interface RewriteResult {
   changes: string[];
 }
 
+// Style words that should NEVER be in the prompt (style is set separately)
+const FORBIDDEN_STYLE_WORDS = [
+  'photorealistic', 'photo-realistic', 'realistic', 'hyper-realistic', 'hyperrealistic',
+  'photo', 'photograph', 'photography', 'photo style', 'photography style',
+  'masterpiece', 'best quality', 'high quality', 'highest quality', 'top quality',
+  'detailed', 'highly detailed', 'ultra detailed', 'extremely detailed',
+  '4k', '8k', 'uhd', 'hd', 'high resolution', 'high-resolution',
+  'sharp', 'sharp focus', 'professional', 'professional photography',
+  'cinematic', 'cinematic lighting', 'movie quality',
+  'artistic', 'art style', 'illustration style',
+  'beautiful', 'stunning', 'amazing', 'perfect', 'gorgeous',
+  'natural lighting', 'studio lighting', 'dramatic lighting',
+  'realistic anatomy', 'realistic anatomy clearly visible',
+  'anatomically correct', 'perfect anatomy',
+];
+
+/**
+ * Remove forbidden style words from prompt
+ */
+function cleanStyleWords(prompt: string): string {
+  let cleaned = prompt;
+
+  // Sort by length (longest first) to avoid partial replacements
+  const sortedWords = [...FORBIDDEN_STYLE_WORDS].sort((a, b) => b.length - a.length);
+
+  for (const word of sortedWords) {
+    // Match word with optional comma/space around it
+    const regex = new RegExp(`\\s*,?\\s*${word}\\s*,?\\s*`, 'gi');
+    cleaned = cleaned.replace(regex, ', ');
+  }
+
+  // Clean up multiple commas and spaces
+  return cleaned
+    .replace(/,\s*,+/g, ',')
+    .replace(/^\s*,\s*/, '')
+    .replace(/\s*,\s*$/, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/**
+ * Remove accumulated emphasis patterns and deduplicate phrases
+ * Exported so it can be used to clean final prompt after QA passes
+ */
+export function cleanAccumulatedEmphasis(prompt: string): string {
+  let cleaned = prompt;
+
+  // Remove "focus on X", "clearly showing X", "X clearly visible" patterns
+  // These accumulate during QA iterations
+  cleaned = cleaned.replace(/,?\s*focus on [^,]+/gi, '');
+  cleaned = cleaned.replace(/,?\s*clearly showing [^,]+/gi, '');
+  cleaned = cleaned.replace(/,?\s*[^,]+ clearly visible/gi, '');
+
+  // Split by comma, deduplicate, rejoin
+  const parts = cleaned.split(',').map(p => p.trim().toLowerCase()).filter(p => p.length > 0);
+  const seen = new Set<string>();
+  const unique: string[] = [];
+
+  for (const part of parts) {
+    // Normalize for comparison (lowercase, trim)
+    if (!seen.has(part)) {
+      seen.add(part);
+      unique.push(part);
+    }
+  }
+
+  return unique.join(', ');
+}
+
+/**
+ * Deduplicate comma-separated phrases in prompt
+ */
+function deduplicatePhrases(prompt: string): string {
+  const parts = prompt.split(',').map(p => p.trim()).filter(p => p.length > 0);
+  const seen = new Set<string>();
+  const unique: string[] = [];
+
+  for (const part of parts) {
+    const normalized = part.toLowerCase();
+    if (!seen.has(normalized)) {
+      seen.add(normalized);
+      unique.push(part); // Keep original case
+    }
+  }
+
+  return unique.join(', ');
+}
+
 /**
  * Improves prompt based on QA assessment hints
  */
@@ -17,29 +105,34 @@ export function improvePromptFromHints(
   originalPrompt: string,
   hints: QualityAssessment['regenerationHints']
 ): string {
-  let improved = originalPrompt;
+  // First, clean up any accumulated emphasis from previous iterations
+  let improved = cleanAccumulatedEmphasis(originalPrompt);
 
   // Remove problematic parts
   for (const remove of hints.remove) {
     improved = improved.replace(new RegExp(remove, 'gi'), '');
   }
 
-  // Add new elements
+  // Add new elements (only if not already present)
   if (hints.add.length > 0) {
-    improved += ', ' + hints.add.join(', ');
+    const currentLower = improved.toLowerCase();
+    const newElements = hints.add.filter(el => !currentLower.includes(el.toLowerCase()));
+    if (newElements.length > 0) {
+      improved += ', ' + newElements.join(', ');
+    }
   }
 
-  // Emphasize important elements
+  // Emphasize important elements (add only once, not accumulating)
   if (hints.emphasize) {
-    improved += `, focus on ${hints.emphasize}, clearly showing ${hints.emphasize}, ${hints.emphasize} clearly visible`;
+    // Only add emphasis phrase once
+    improved += `, focus on ${hints.emphasize}`;
   }
 
-  // Clean up
-  return improved
-    .replace(/,\s*,/g, ',')
-    .replace(/,\s*$/, '')
-    .replace(/^\s*,/, '')
-    .trim();
+  // Deduplicate and clean up
+  improved = deduplicatePhrases(improved);
+
+  // Remove style words
+  return cleanStyleWords(improved);
 }
 
 export interface ParticipantsInfo {
@@ -87,16 +180,28 @@ export async function rewritePromptWithAI(
   const systemPrompt = `Ты эксперт по написанию промптов для генерации изображений.
 Твоя задача - переписать промпт для генерации изображения, СОХРАНИВ СУТЬ, но изменив формулировку.
 
+⛔ ЗАПРЕЩЁННЫЕ СЛОВА (НИКОГДА не использовать!):
+photorealistic, realistic, photo, photography, masterpiece, best quality, high quality,
+detailed, 4k, 8k, uhd, hd, high resolution, sharp, professional, cinematic,
+artistic, beautiful, stunning, amazing, perfect, anime, cartoon, illustration style,
+natural lighting, studio lighting, dramatic lighting (если не относится к сюжету)
+
+✅ Промпт должен описывать ТОЛЬКО:
+- КТО: man/woman (с явным указанием пола!)
+- ЧТО ДЕЛАЕТ: действие, поза
+- ГДЕ: место, обстановка
+- ДЕТАЛИ СЦЕНЫ: предметы, одежда/её отсутствие
+
 Правила:
 1. СУТЬ сцены должна остаться прежней
 2. Используй другие слова, синонимы, перефразирование
 3. Делай промпт более конкретным и чётким
-4. Добавь детали, которые помогут генератору лучше понять задачу
+4. Добавь детали которые помогут генератору
 5. Учитывай причины предыдущих неудач
 6. Пиши на английском языке
-7. Не добавляй стилистические префиксы (masterpiece, best quality и т.д.) - они добавляются автоматически
-8. ОБЯЗАТЕЛЬНО указывай пол участников явно (man, woman) - никогда не используй "couple", "pair", "person" без указания пола
-9. ЕСЛИ ЕСТЬ ИНСТРУКЦИИ ПОЛЬЗОВАТЕЛЯ - они имеют НАИВЫСШИЙ ПРИОРИТЕТ и должны быть выполнены в первую очередь`;
+7. ОБЯЗАТЕЛЬНО указывай пол участников явно (man, woman)
+8. ЕСЛИ ЕСТЬ ИНСТРУКЦИИ ПОЛЬЗОВАТЕЛЯ - они имеют НАИВЫСШИЙ ПРИОРИТЕТ
+9. НЕ ДОБАВЛЯЙ слова про стиль/качество - стиль задаётся ОТДЕЛЬНО в настройках!`;
 
   // Build user instructions section
   const instructionsSection = userInstructions
@@ -146,8 +251,8 @@ ${failReasons.join('\n') || 'Нет данных'}
     throw new Error(`Anthropic API error: ${response.status} - ${errorText}`);
   }
 
-  const result = await response.json();
-  const textContent = result.content.find((c: { type: string }) => c.type === 'text');
+  const apiResult = await response.json();
+  const textContent = apiResult.content.find((c: { type: string }) => c.type === 'text');
 
   if (!textContent) {
     throw new Error('No text response from Claude');
@@ -158,7 +263,12 @@ ${failReasons.join('\n') || 'Нет данных'}
     throw new Error('Could not parse JSON from Claude response');
   }
 
-  return JSON.parse(jsonMatch[0]) as RewriteResult;
+  const result = JSON.parse(jsonMatch[0]) as RewriteResult;
+
+  // Clean any style words that Claude might have added despite instructions
+  result.newPrompt = cleanStyleWords(result.newPrompt);
+
+  return result;
 }
 
 /**
@@ -178,12 +288,23 @@ export async function applyInstructionsToPrompt(
   const systemPrompt = `You are an expert at modifying image generation prompts.
 Your task is to apply the user's instructions to modify the existing prompt.
 
+⛔ FORBIDDEN WORDS (NEVER use!):
+photorealistic, realistic, photo, photography, masterpiece, best quality, high quality,
+detailed, 4k, 8k, uhd, hd, high resolution, sharp, professional, cinematic,
+artistic, beautiful, stunning, amazing, perfect, natural lighting, studio lighting
+
+✅ Prompt should describe ONLY:
+- WHO: man/woman (explicit gender!)
+- WHAT: action, pose
+- WHERE: location, setting
+- SCENE DETAILS: objects, clothing/nudity
+
 Rules:
 1. Apply the instructions precisely
 2. Keep the rest of the prompt as-is unless the instructions say otherwise
 3. Output must be in English
-4. Do not add style prefixes (masterpiece, best quality, etc.) - they are added automatically
-5. Always preserve explicit gender mentions (man, woman) - never replace with ambiguous terms`;
+4. Always preserve explicit gender mentions (man, woman)
+5. DO NOT add style/quality words - style is set SEPARATELY in settings!`;
 
   const userPrompt = `Apply these instructions to modify the prompt:
 
@@ -222,8 +343,8 @@ Respond in JSON format:
     throw new Error(`Anthropic API error: ${response.status} - ${errorText}`);
   }
 
-  const result = await response.json();
-  const textContent = result.content.find((c: { type: string }) => c.type === 'text');
+  const apiResult = await response.json();
+  const textContent = apiResult.content.find((c: { type: string }) => c.type === 'text');
 
   if (!textContent) {
     throw new Error('No text response from Claude');
@@ -234,5 +355,10 @@ Respond in JSON format:
     throw new Error('Could not parse JSON from Claude response');
   }
 
-  return JSON.parse(jsonMatch[0]) as RewriteResult;
+  const result = JSON.parse(jsonMatch[0]) as RewriteResult;
+
+  // Clean any style words that Claude might have added despite instructions
+  result.newPrompt = cleanStyleWords(result.newPrompt);
+
+  return result;
 }

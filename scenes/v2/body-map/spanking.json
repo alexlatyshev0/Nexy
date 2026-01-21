@@ -1,0 +1,59 @@
+{
+  "id": "bodymap_spanking",
+  "slug": "spanking",
+  "version": 2,
+  "type": "body_map",
+  "order": 6,
+
+  "title": { "ru": "Порка", "en": "Spanking" },
+  "subtitle": { "ru": "Карта ударов", "en": "Impact map" },
+  "description": {
+    "ru": "Отметь, где готов(а) бить сильнее и где можно получать",
+    "en": "Mark where you'd spank harder and where you can receive"
+  },
+
+  "intensity": 4,
+  "action": "spank",
+  "tags": ["spanking", "impact", "discipline", "pain_pleasure"],
+
+  "passes": [
+    {
+      "id": "give",
+      "question": {
+        "ru": "Где ты готов(а) пороть партнёра?",
+        "en": "Where would you spank your partner?"
+      },
+      "instruction": {
+        "ru": "Нажми на зоны тела",
+        "en": "Tap on body zones"
+      }
+    },
+    {
+      "id": "receive",
+      "question": {
+        "ru": "Где тебе можно получать удары?",
+        "en": "Where can you receive impact?"
+      },
+      "instruction": {
+        "ru": "Нажми на зоны тела",
+        "en": "Tap on body zones"
+      }
+    }
+  ],
+
+  "zones": {
+    "available": ["buttocks", "thighs", "back", "chest", "stomach", "genitals", "feet"],
+    "highlight_safe": ["buttocks", "thighs"],
+    "caution": ["back", "stomach", "genitals"]
+  },
+
+  "ai_context": {
+    "tests_primary": ["spanking", "impact_play"],
+    "tests_secondary": ["discipline", "pain_pleasure", "submission"],
+    "profile_signals": {
+      "if_buttocks_only": "classic_spanking",
+      "if_thighs": "extended_impact",
+      "if_many_zones": "heavy_impact_player"
+    }
+  }
+}
