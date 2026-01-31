@@ -24,6 +24,17 @@ type QAEvaluator = 'replicate' | 'claude';
 const ATTEMPTS_PER_ROUND = 3;
 const MAX_ROUNDS = 4;
 
+// Helper: resolve paired_scene slug to ID
+async function resolvePairedSceneId(supabase: any, pairedSlug: string | null): Promise<string | null> {
+  if (!pairedSlug) return null;
+  const { data } = await supabase
+    .from('scenes')
+    .select('id')
+    .eq('slug', pairedSlug)
+    .single();
+  return data?.id || null;
+}
+
 interface GenerationResult {
   imageUrl: string;
   qaStatus: 'passed' | 'failed' | null;
@@ -406,7 +417,7 @@ export async function POST(req: Request) {
         // Check if scene exists and get linked scenes
         const { data: existingScene, error: selectError } = await supabase
           .from('scenes')
-          .select('id, slug, image_url, paired_with, shared_images_with')
+          .select('id, slug, image_url, paired_scene, shared_images_with')
           .eq('id', sceneId)
           .single();
 
@@ -443,8 +454,9 @@ export async function POST(req: Request) {
           }
 
           // Sync image_url to paired and shared scenes
+          const pairedId = await resolvePairedSceneId(supabase, existingScene?.paired_scene);
           const linkedIds = [
-            existingScene?.paired_with,
+            pairedId,
             existingScene?.shared_images_with,
           ].filter(Boolean) as string[];
 
@@ -508,7 +520,7 @@ export async function POST(req: Request) {
       // First check if scene exists and get linked scenes
       const { data: existingScene, error: selectError } = await supabase
         .from('scenes')
-        .select('id, slug, paired_with, shared_images_with')
+        .select('id, slug, paired_scene, shared_images_with')
         .eq('id', sceneId)
         .single();
 
@@ -554,8 +566,9 @@ export async function POST(req: Request) {
         console.log('[Generate+QA] DB update success, rows affected:', updateData?.length || 0);
 
         // Sync image_url to paired and shared scenes
+        const pairedId = await resolvePairedSceneId(supabase, existingScene?.paired_scene);
         const linkedIds = [
-          existingScene?.paired_with,
+          pairedId,
           existingScene?.shared_images_with,
         ].filter(Boolean) as string[];
 

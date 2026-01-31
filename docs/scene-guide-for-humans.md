@@ -140,7 +140,7 @@ spanking-m-to-f-receive (Ж видит: "Он шлёпает тебя")
 
   // CLARIFICATION — когда показать (после какой сцены)
   "scene_type": "clarification",
-  "clarification_for": ["rough"],     // показать после YES на "rough" онбординг
+  "clarification_for": ["rough-give", "pain-tolerance"],     // SLUGS сцен (НЕ gate names!)
 
   // GATES — можно ли показать (в коде, не в JSON)
   // Проверяется в src/lib/onboarding-gates.ts:
@@ -291,7 +291,7 @@ user_gates.gates = { "anal": true, "oral": true, ... }
   "is_onboarding": true,
   "onboarding_order": 9,
   "for_gender": "male",
-  "paired_with": "onboarding-rough-receive-f",
+  "paired_scene": "onboarding-rough-receive-f",
   "sets_gate": "rough"
 }
 ```
@@ -301,7 +301,7 @@ user_gates.gates = { "anal": true, "oral": true, ... }
 |------|----------|
 | `is_onboarding` | `true` — показывается в онбординге |
 | `onboarding_order` | Порядок показа (1, 2, 3...) |
-| `paired_with` | Парная онбординг-сцена (М↔Ж) |
+| `paired_scene` | Парная онбординг-сцена (М↔Ж) |
 | `sets_gate` | Какой gate открывается при YES |
 
 > ⚠️ **Baseline сцены deprecated** — они дублировали онбординг и деактивированы.
@@ -332,7 +332,7 @@ user_gates.gates = { "anal": true, "oral": true, ... }
   "is_active": true,
   "for_gender": null,
   "scene_type": "clarification",
-  "clarification_for": ["romantic", "bondage"],  // канонические gate names
+  "clarification_for": ["sensory-play", "bondage-interest"],  // SLUGS родительских сцен, НЕ gate names!
   "title": { "ru": "Повязка на глаза", "en": "Blindfold" },
   "user_description": { "ru": "Повязка на глаза во время секса.", "en": "Blindfold during sex." },
   "image_prompt": "woman wearing silk blindfold, man touching her face gently, bedroom",
@@ -372,7 +372,7 @@ user_gates.gates = { "anal": true, "oral": true, ... }
   "slug": "dirty-words-she-likes",
   "for_gender": "female",
   "scene_type": "clarification",
-  "clarification_for": ["dirty_talk"],  // канонический gate name
+  "clarification_for": ["dirty-talk-interest", "degradation-f-to-m"],  // SLUGS сцен (НЕ gate names!)
   "question": {
     "type": "multi_select",
     "text": { "ru": "Какие слова тебя заводят?", "en": "What words turn you on?" },  // Вопрос OK для multi_select
@@ -408,8 +408,8 @@ user_gates.gates = { "anal": true, "oral": true, ... }
 **Хорошо:** `"text": "Шлёпать её"` — утверждение
 
 ### Забыл clarification_for
-**Плохо:** Сцена про шлепки без `clarification_for: ["rough"]`
-**Хорошо:** Указал канонический gate name `rough`
+**Плохо:** Сцена про шлепки без `clarification_for`
+**Хорошо:** `clarification_for: ["rough-give", "pain-tolerance"]` — SLUGS сцен, не gate names!
 
 ### question.type: "multi_select" без options
 **Плохо:** Указал multi_select но не дал варианты

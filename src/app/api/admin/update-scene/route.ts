@@ -31,7 +31,7 @@ export async function POST(req: Request) {
       'selected_variant_index',
       'elements',
       'question',
-      'paired_with',
+      'paired_scene',
       'role_direction',
     ];
     if (!allowedFields.includes(field)) {
@@ -51,7 +51,7 @@ export async function POST(req: Request) {
       query = query.eq('slug', slug);
     }
 
-    const { data, error } = await query.select('*, paired_with');
+    const { data, error } = await query.select('*, paired_scene');
 
     if (error) {
       console.error('[UpdateScene] Error:', error);
@@ -67,12 +67,12 @@ export async function POST(req: Request) {
 
     // Sync paired scene for accepted status
     const scene = data[0];
-    if (field === 'accepted' && scene.paired_with) {
+    if (field === 'accepted' && scene.paired_scene) {
       await supabase
         .from('scenes')
         .update({ accepted: value })
-        .eq('id', scene.paired_with);
-      console.log(`[UpdateScene] Synced accepted=${value} to paired scene ${scene.paired_with}`);
+        .eq('slug', scene.paired_scene);
+      console.log(`[UpdateScene] Synced accepted=${value} to paired scene ${scene.paired_scene}`);
     }
 
     return NextResponse.json({ success: true, data: scene });

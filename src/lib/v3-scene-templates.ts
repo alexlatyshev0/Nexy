@@ -19,7 +19,7 @@ export interface V3SceneTemplate {
   scene_type: 'clarification' | 'main_question';
   clarification_for?: string[];
   role_direction?: string;
-  paired_with?: string;
+  paired_scene?: string;
   image_prompt: string;
   intensity: number;
   is_active: boolean;

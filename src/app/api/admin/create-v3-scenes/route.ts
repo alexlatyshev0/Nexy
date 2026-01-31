@@ -75,7 +75,7 @@ export async function POST(req: Request) {
       scene_type: template.scene_type,
       clarification_for: template.clarification_for || [],
       role_direction: template.role_direction || 'mutual',
-      paired_with: null, // Will link after creation if needed
+      paired_scene: template.paired_scene || null, // Slug reference to paired scene
       // Descriptions (minimal for now)
       ai_description: template.title,
       user_description: template.title,
@@ -101,19 +101,7 @@ export async function POST(req: Request) {
       );
     }
 
-    // Link paired scenes (finish-preference-m <-> finish-preference-f)
-    const pairedTemplates = newTemplates.filter(t => t.paired_with);
-    for (const template of pairedTemplates) {
-      const scene = insertedScenes?.find(s => s.slug === template.slug);
-      const pairedScene = insertedScenes?.find(s => s.slug === template.paired_with);
-
-      if (scene && pairedScene) {
-        await supabase
-          .from('scenes')
-          .update({ paired_with: pairedScene.id })
-          .eq('id', scene.id);
-      }
-    }
+    // Note: paired_scene slugs are already set during insert, no need to link UUIDs
 
     return NextResponse.json({
       success: true,

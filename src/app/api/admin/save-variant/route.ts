@@ -16,16 +16,30 @@ interface ImageVariant {
   is_placeholder?: boolean;
 }
 
-// Sync image_variants to linked scenes (paired_with and shared_images_with)
+// Helper: resolve paired_scene slug to ID
+async function resolvePairedSceneId(pairedSlug: string | null): Promise<string | null> {
+  if (!pairedSlug) return null;
+  const { data } = await supabase
+    .from('scenes')
+    .select('id')
+    .eq('slug', pairedSlug)
+    .single();
+  return data?.id || null;
+}
+
+// Sync image_variants to linked scenes (paired_scene and shared_images_with)
 // Also syncs to scenes that reference this scene via shared_images_with (reverse sync)
 async function syncVariantsToLinkedScenes(
   sceneId: string,
   variants: ImageVariant[],
-  pairedWith: string | null,
+  pairedSceneSlug: string | null,
   sharedImagesWith: string | null
 ) {
-  // Direct links: paired_with and shared_images_with
-  const linkedIds = [pairedWith, sharedImagesWith].filter(Boolean) as string[];
+  // Resolve paired_scene slug to ID
+  const pairedId = await resolvePairedSceneId(pairedSceneSlug);
+
+  // Direct links: paired_scene (resolved) and shared_images_with
+  const linkedIds = [pairedId, sharedImagesWith].filter(Boolean) as string[];
 
   // Reverse links: scenes that have shared_images_with pointing to this scene
   const { data: reverseLinked } = await supabase
@@ -86,7 +100,7 @@ export async function POST(req: Request) {
     // Get current scene with linked scenes
     const { data: scene, error: selectError } = await supabase
       .from('scenes')
-      .select('image_url, generation_prompt, image_variants, qa_status, qa_last_assessment, paired_with, shared_images_with')
+      .select('image_url, generation_prompt, image_variants, qa_status, qa_last_assessment, paired_scene, shared_images_with')
       .eq('id', sceneId)
       .single();
 
@@ -157,17 +171,18 @@ export async function POST(req: Request) {
 
       console.log('[SaveVariant] Saved! New total:', updatedVariants.length);
 
-      // Sync to linked scenes (paired_with and shared_images_with)
+      // Sync to linked scenes (paired_scene and shared_images_with)
       await syncVariantsToLinkedScenes(
         sceneId,
         updatedVariants,
-        scene.paired_with,
+        scene.paired_scene,
         scene.shared_images_with
       );
 
       // If we set image_url, also sync it to linked scenes that have no image_url
       if (updateData.image_url) {
-        const linkedIds = [scene.paired_with, scene.shared_images_with].filter(Boolean) as string[];
+        const pairedId = await resolvePairedSceneId(scene.paired_scene);
+        const linkedIds = [pairedId, scene.shared_images_with].filter(Boolean) as string[];
         for (const linkedId of linkedIds) {
           const { data: linked } = await supabase
             .from('scenes')
@@ -211,12 +226,12 @@ export async function POST(req: Request) {
       }
 
       // Sync image_url to paired scene (but NOT to shared_images_with source)
-      if (scene.paired_with) {
-        console.log('[SaveVariant] Syncing selected image_url to paired scene:', scene.paired_with);
+      if (scene.paired_scene) {
+        console.log('[SaveVariant] Syncing selected image_url to paired scene:', scene.paired_scene);
         await supabase
           .from('scenes')
           .update({ image_url: variantUrl })
-          .eq('id', scene.paired_with);
+          .eq('slug', scene.paired_scene);
       }
 
       return NextResponse.json({
@@ -272,15 +287,15 @@ export async function POST(req: Request) {
       if (targetSceneId !== sceneId) {
         const { data: sourceScene } = await supabase
           .from('scenes')
-          .select('paired_with')
+          .select('paired_scene')
           .eq('id', targetSceneId)
           .single();
 
-        if (sourceScene?.paired_with) {
+        if (sourceScene?.paired_scene) {
           const { data: pairedScene } = await supabase
             .from('scenes')
             .select('image_variants')
-            .eq('id', sourceScene.paired_with)
+            .eq('slug', sourceScene.paired_scene)
             .single();
 
           if (pairedScene?.image_variants) {
@@ -290,13 +305,14 @@ export async function POST(req: Request) {
             await supabase
               .from('scenes')
               .update({ image_variants: pairedVariants })
-              .eq('id', sourceScene.paired_with);
+              .eq('slug', sourceScene.paired_scene);
             console.log(`[SaveVariant] Synced deletion to paired scene of source`);
           }
         }
       } else {
         // Sync deletion to linked scenes (direct + reverse)
-        const linkedIds = [scene.paired_with, scene.shared_images_with].filter(Boolean) as string[];
+        const pairedId = await resolvePairedSceneId(scene.paired_scene);
+        const linkedIds = [pairedId, scene.shared_images_with].filter(Boolean) as string[];
 
         // Also find scenes that reference this scene via shared_images_with (reverse links)
         const { data: reverseLinked } = await supabase
@@ -432,7 +448,7 @@ export async function POST(req: Request) {
       await syncVariantsToLinkedScenes(
         sceneId,
         currentVariants,
-        scene.paired_with,
+        scene.paired_scene,
         scene.shared_images_with
       );
 

@@ -89,8 +89,8 @@ interface SceneWithStatus extends Omit<Scene, 'ai_description' | 'user_descripti
   accepted?: boolean | null;
   // Scene visibility
   is_active?: boolean;
-  // Paired scene (give/receive perspectives)
-  paired_with?: string;
+  // Paired scene (give/receive perspectives) - slug reference
+  paired_scene?: string;
   // Scene to share images with (uses their image_variants)
   shared_images_with?: string;
   // Image variants for comparison
@@ -505,7 +505,7 @@ export default function AdminScenesPage() {
     if (filter === 'all') return true;
     // All other filters only show active scenes
     if (!isActive) return false;
-    if (filter === 'paired') return !!scene.paired_with;
+    if (filter === 'paired') return !!scene.paired_scene;
     if (filter === 'no_image') return !scene.image_url;
     if (filter === 'has_image') return !!scene.image_url;
     if (filter === 'qa_failed') return scene.qa_status === 'failed';
@@ -1014,7 +1014,8 @@ export default function AdminScenesPage() {
 
       // Update local state for both the scene and its paired scene
       const scene = scenes.find(s => s.id === id);
-      const pairedId = scene?.paired_with;
+      const pairedScene = scene?.paired_scene ? scenes.find(s => s.slug === scene.paired_scene) : null;
+      const pairedId = pairedScene?.id;
 
       setScenes((prev) =>
         prev.map((s) => {
@@ -1091,7 +1092,8 @@ export default function AdminScenesPage() {
       // Update current scene and its paired scene (API syncs to paired)
       setScenes((prev) => {
         const currentScene = prev.find(s => s.id === sceneId);
-        const pairedId = currentScene?.paired_with;
+        const pairedScene = currentScene?.paired_scene ? prev.find(s => s.slug === currentScene.paired_scene) : null;
+        const pairedId = pairedScene?.id;
         return prev.map((s) => {
           if (s.id === sceneId || s.id === pairedId) {
             return { ...s, image_url: variantUrl };
@@ -1907,7 +1909,7 @@ export default function AdminScenesPage() {
             <option value="active">Active ({scenes.filter((s) => s.is_active !== false).length})</option>
             <option value="inactive">Inactive ({scenes.filter((s) => s.is_active === false).length})</option>
             <option value="all">All scenes ({scenes.length})</option>
-            <option value="paired">Paired ({scenes.filter((s) => s.is_active !== false && !!s.paired_with).length})</option>
+            <option value="paired">Paired ({scenes.filter((s) => s.is_active !== false && !!s.paired_scene).length})</option>
             <option value="v2_only">V2 scenes ({scenes.filter((s) => s.is_active !== false && s.version === 2).length})</option>
             <option value="no_image">Without images ({scenes.filter((s) => s.is_active !== false && !s.image_url).length})</option>
             <option value="has_image">With images ({scenes.filter((s) => s.is_active !== false && s.image_url).length})</option>
@@ -1985,9 +1987,9 @@ export default function AdminScenesPage() {
                 // Skip "receive" or "sub" scenes that have a paired "give"/"dom" scene - they'll be shown together
                 // Patterns: *-receive*, *-sub-*
                 const isSecondaryScene = scene.slug?.includes('-receive') || scene.slug?.includes('-sub-');
-                if (scene.paired_with && isSecondaryScene) {
+                if (scene.paired_scene && isSecondaryScene) {
                   // Check if paired "give/dom" scene exists AND is visible in current filter
-                  const primarySceneInList = filteredScenes.some(s => s.id === scene.paired_with);
+                  const primarySceneInList = filteredScenes.some(s => s.slug === scene.paired_scene);
                   if (primarySceneInList) {
                     return false; // Skip - will be shown with give/dom scene
                   }
@@ -2159,7 +2161,7 @@ export default function AdminScenesPage() {
                         <span className="px-1 py-0.5 rounded bg-blue-100 text-blue-700 text-[10px] mr-1">V2</span>
                         <span className="font-medium">{scene.title?.ru}</span>
                         {scene.category && <span className="ml-1 text-muted-foreground">• {scene.category}</span>}
-                        {scene.paired_with && <span className="ml-1 px-1 py-0.5 rounded bg-purple-100 text-purple-700 text-[10px]">Paired</span>}
+                        {scene.paired_scene && <span className="ml-1 px-1 py-0.5 rounded bg-purple-100 text-purple-700 text-[10px]">Paired</span>}
                       </>
                     ) : (
                       scene.ai_description?.ru || scene.ai_description?.en || scene.slug || ''
@@ -2168,7 +2170,7 @@ export default function AdminScenesPage() {
 
                   {/* User Description RU/EN */}
                   {(() => {
-                    const pairedScene = scene.paired_with ? scenes.find(s => s.id === scene.paired_with) : null;
+                    const pairedScene = scene.paired_scene ? scenes.find(s => s.slug === scene.paired_scene) : null;
                     // Check patterns: *-give/*-receive and *-dom-*/*-sub-*
                     const isGiveScene = scene.slug?.includes('-give');
                     const isDomScene = scene.slug?.includes('-dom-');

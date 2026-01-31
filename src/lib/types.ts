@@ -93,7 +93,9 @@ export interface Scene {
   selected_variant_index?: number;
 
   // Scene pairing (give/receive perspectives share same images)
-  /** UUID of paired scene. Both scenes reference each other. */
+  /** Slug of paired scene (same situation, different perspective). */
+  paired_scene?: string;
+  /** @deprecated Use paired_scene instead. UUID of paired scene. */
   paired_with?: string;
 
   // Cross-category image sharing (e.g., onboarding/foot ↔ worship-service/foot-worship)

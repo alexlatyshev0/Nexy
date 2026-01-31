@@ -82,22 +82,30 @@ export async function getFilteredScenesClient(
     return uuidRegex.test(id);
   });
   
-  // Get paired_with scene IDs to exclude (if user answered one, exclude the pair)
+  // Get paired_scene IDs to exclude (if user answered one, exclude the pair)
   let pairedIds: string[] = [];
   if (seenIds.length > 0) {
     const { data: pairedScenes } = await supabaseClient
       .from('scenes')
-      .select('paired_with')
+      .select('paired_scene')
       .in('id', seenIds)
-      .not('paired_with', 'is', null);
+      .not('paired_scene', 'is', null);
 
-    pairedIds = (pairedScenes || [])
-      .map(s => s.paired_with)
-      .filter((id): id is string => {
-        if (!id || typeof id !== 'string') return false;
-        const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-        return uuidRegex.test(id);
-      });
+    const pairedSlugs = (pairedScenes || [])
+      .map(s => s.paired_scene)
+      .filter((slug): slug is string => Boolean(slug));
+
+    // Resolve slugs to IDs
+    if (pairedSlugs.length > 0) {
+      const { data: pairedSceneIds } = await supabaseClient
+        .from('scenes')
+        .select('id')
+        .in('slug', pairedSlugs);
+
+      pairedIds = (pairedSceneIds || [])
+        .map(s => s.id)
+        .filter((id): id is string => Boolean(id));
+    }
   }
 
   // Combine all excluded scene IDs
