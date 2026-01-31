@@ -1,7 +1,15 @@
 {
-  "id": "striptease_f",
+  "id": "female-striptease",
   "slug": "female-striptease",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "exhibitionism"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "female-striptease-watch",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Женский стриптиз",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Медленно раздеваться для партнёра",
     "en": "Slowly undressing for partner"
+  },
+  "user_description": {
+    "ru": "Ты медленно раздеваешься перед ним, танцуешь, снимаешь одежду по одной вещи.",
+    "en": "You slowly undress for him, dance, remove clothes one piece at a time."
   },
   "ai_description": {
     "ru": "Стриптиз для партнёра — медленное раздевание, танец, показ тела. Приватное шоу.",
@@ -25,237 +37,6 @@
     "dance",
     "showing"
   ],
-  "elements": [
-    {
-      "id": "who_strips",
-      "label": {
-        "ru": "Кто раздевается",
-        "en": "Who strips"
-      },
-      "tag_ref": "strip_who",
-      "follow_ups": [
-        {
-          "id": "stripper",
-          "type": "single_select",
-          "question": {
-            "ru": "Кто раздевается?",
-            "en": "Who strips?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "she",
-                "label": {
-                  "ru": "Она для него",
-                  "en": "She for him"
-                }
-              },
-              {
-                "id": "he",
-                "label": {
-                  "ru": "Он для неё",
-                  "en": "He for her"
-                }
-              },
-              {
-                "id": "both",
-                "label": {
-                  "ru": "Оба друг для друга",
-                  "en": "Both for each other"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "style",
-      "label": {
-        "ru": "Стиль",
-        "en": "Style"
-      },
-      "tag_ref": "strip_style",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой стиль?",
-            "en": "What style?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "slow_tease",
-                "label": {
-                  "ru": "Медленно, дразня",
-                  "en": "Slow, teasing"
-                }
-              },
-              {
-                "id": "dance",
-                "label": {
-                  "ru": "С танцем",
-                  "en": "With dance"
-                }
-              },
-              {
-                "id": "music",
-                "label": {
-                  "ru": "Под музыку",
-                  "en": "To music"
-                }
-              },
-              {
-                "id": "lap_dance",
-                "label": {
-                  "ru": "Лэп-данс",
-                  "en": "Lap dance"
-                }
-              },
-              {
-                "id": "playful",
-                "label": {
-                  "ru": "Игриво",
-                  "en": "Playful"
-                }
-              },
-              {
-                "id": "seductive",
-                "label": {
-                  "ru": "Соблазнительно",
-                  "en": "Seductive"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "rules",
-      "label": {
-        "ru": "Правила",
-        "en": "Rules"
-      },
-      "tag_ref": "strip_rules",
-      "follow_ups": [
-        {
-          "id": "touching",
-          "type": "single_select",
-          "question": {
-            "ru": "Можно трогать?",
-            "en": "Can touch?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no_touch",
-                "label": {
-                  "ru": "Только смотреть",
-                  "en": "Look only"
-                }
-              },
-              {
-                "id": "limited",
-                "label": {
-                  "ru": "Немного можно",
-                  "en": "Limited touching"
-                }
-              },
-              {
-                "id": "yes",
-                "label": {
-                  "ru": "Можно трогать",
-                  "en": "Touching allowed"
-                }
-              },
-              {
-                "id": "at_end",
-                "label": {
-                  "ru": "Только в конце",
-                  "en": "Only at the end"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "appeal",
-      "label": {
-        "ru": "Что привлекает",
-        "en": "What appeals"
-      },
-      "tag_ref": "strip_appeal",
-      "follow_ups": [
-        {
-          "id": "why",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "anticipation",
-                "label": {
-                  "ru": "Предвкушение",
-                  "en": "Anticipation"
-                }
-              },
-              {
-                "id": "being_watched",
-                "label": {
-                  "ru": "Что на меня смотрят",
-                  "en": "Being watched"
-                }
-              },
-              {
-                "id": "watching",
-                "label": {
-                  "ru": "Смотреть на партнёра",
-                  "en": "Watching partner"
-                }
-              },
-              {
-                "id": "tease",
-                "label": {
-                  "ru": "Дразнить",
-                  "en": "Teasing"
-                }
-              },
-              {
-                "id": "power",
-                "label": {
-                  "ru": "Власть над вниманием",
-                  "en": "Power over attention"
-                }
-              },
-              {
-                "id": "reveal",
-                "label": {
-                  "ru": "Постепенное раскрытие",
-                  "en": "Gradual reveal"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в стриптизе?",
-      "en": "What appeals about striptease?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "striptease",
@@ -268,8 +49,11 @@
       "anticipation"
     ]
   },
-  "user_description": {
-    "ru": "Она медленно раздевается перед ним, танцует, снимает одежду по одной вещи.",
-    "en": "She slowly undresses for him, dances, removes clothes one piece at a time."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в стриптизе?",
+      "en": "What appeals about striptease?"
+    }
+      }
 }

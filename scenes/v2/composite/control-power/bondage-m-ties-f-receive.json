@@ -1,0 +1,61 @@
+{
+  "id": "bondage-he-ties-her-receive",
+  "slug": "bondage-he-ties-her-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic",
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "bondage-he-ties-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Бондаж",
+    "en": "Bondage"
+  },
+  "subtitle": {
+    "ru": "Он связывает тебя",
+    "en": "He ties you"
+  },
+  "user_description": {
+    "ru": "Он связывает твои руки — над головой или к кровати.",
+    "en": "He ties your hands — above your head or to bed."
+  },
+  "ai_description": {
+    "ru": "Её руки связаны над головой, она не может двигаться. Он обходит её, любуясь своей работой. Полная беспомощность, полное доверие.",
+    "en": "Her hands bound above her head, she cannot move. He circles her, admiring his work. Complete helplessness, complete trust."
+  },
+  "image_prompt": "man tying woman's wrists above her head with rope, woman nude standing against wall, man shirtless behind her, bedroom",
+  "intensity": 3,
+  "category": "control-power",
+  "tags": [
+    "bondage",
+    "rope",
+    "restraint",
+    "tied",
+    "helpless",
+    "submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "bondage",
+      "restraints",
+      "rope"
+    ],
+    "tests_secondary": [
+      "helplessness",
+      "submission",
+      "trust"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда тебя связывают?",
+      "en": "What appeals about being tied?"
+    }
+      }
+}

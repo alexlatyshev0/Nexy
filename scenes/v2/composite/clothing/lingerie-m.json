@@ -1,7 +1,15 @@
 {
-  "id": "lingerie_m",
+  "id": "male-lingerie",
   "slug": "male-lingerie",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "lingerie-m-wear",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Мужское бельё",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Эротическое бельё на нём",
     "en": "Erotic underwear on him"
+  },
+  "user_description": {
+    "ru": "Ты смотришь на него в эротическом белье — джокстрап, стринги или сетка.",
+    "en": "You watch him in erotic underwear — jockstrap, thong or mesh."
   },
   "ai_description": {
     "ru": "Мужское эротическое бельё — jockstrap, стринги, сетка, кружево. Он показывает тело для неё.",
@@ -25,187 +37,6 @@
     "jockstrap",
     "underwear"
   ],
-  "elements": [
-    {
-      "id": "type",
-      "label": {
-        "ru": "Тип белья",
-        "en": "Underwear type"
-      },
-      "tag_ref": "male_lingerie_type",
-      "follow_ups": [
-        {
-          "id": "which",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какое бельё?",
-            "en": "What underwear?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "jockstrap",
-                "label": {
-                  "ru": "Джокстрап",
-                  "en": "Jockstrap"
-                }
-              },
-              {
-                "id": "thong",
-                "label": {
-                  "ru": "Стринги",
-                  "en": "Thong"
-                }
-              },
-              {
-                "id": "mesh",
-                "label": {
-                  "ru": "Сетка",
-                  "en": "Mesh"
-                }
-              },
-              {
-                "id": "lace",
-                "label": {
-                  "ru": "Кружево",
-                  "en": "Lace"
-                }
-              },
-              {
-                "id": "briefs",
-                "label": {
-                  "ru": "Плавки/брифы",
-                  "en": "Briefs"
-                }
-              },
-              {
-                "id": "boxer_briefs",
-                "label": {
-                  "ru": "Боксёры в обтяжку",
-                  "en": "Boxer briefs"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "context",
-      "label": {
-        "ru": "Контекст",
-        "en": "Context"
-      },
-      "tag_ref": "male_lingerie_context",
-      "follow_ups": [
-        {
-          "id": "when",
-          "type": "multi_select",
-          "question": {
-            "ru": "Когда носить?",
-            "en": "When to wear?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "for_her",
-                "label": {
-                  "ru": "Показать ей",
-                  "en": "Show her"
-                }
-              },
-              {
-                "id": "under_clothes",
-                "label": {
-                  "ru": "Под одеждой (секрет)",
-                  "en": "Under clothes (secret)"
-                }
-              },
-              {
-                "id": "during_sex",
-                "label": {
-                  "ru": "Во время секса",
-                  "en": "During sex"
-                }
-              },
-              {
-                "id": "she_chooses",
-                "label": {
-                  "ru": "Она выбирает что надеть",
-                  "en": "She chooses what he wears"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "appeal",
-      "label": {
-        "ru": "Что привлекает",
-        "en": "What appeals"
-      },
-      "tag_ref": "male_lingerie_appeal",
-      "follow_ups": [
-        {
-          "id": "why",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "visual",
-                "label": {
-                  "ru": "Как выглядит",
-                  "en": "How it looks"
-                }
-              },
-              {
-                "id": "reveals",
-                "label": {
-                  "ru": "Что открывает/подчёркивает",
-                  "en": "What it reveals/emphasizes"
-                }
-              },
-              {
-                "id": "role_reversal",
-                "label": {
-                  "ru": "Смена ролей (он наряжается)",
-                  "en": "Role reversal (he dresses up)"
-                }
-              },
-              {
-                "id": "vulnerability",
-                "label": {
-                  "ru": "Его уязвимость",
-                  "en": "His vulnerability"
-                }
-              },
-              {
-                "id": "her_control",
-                "label": {
-                  "ru": "Она контролирует его вид",
-                  "en": "She controls his look"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Какое мужское бельё возбуждает?",
-      "en": "What male lingerie excites you?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "male_lingerie",
@@ -218,8 +49,11 @@
       "vulnerability"
     ]
   },
-  "user_description": {
-    "ru": "Он в эротическом белье — джокстрап, стринги или сетка. Показывает тело для неё.",
-    "en": "He wears erotic underwear — jockstrap, thong or mesh. Displays body for her."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Какое мужское бельё возбуждает?",
+      "en": "What male lingerie excites you?"
+    }
+      }
 }

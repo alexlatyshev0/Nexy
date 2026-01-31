@@ -10,10 +10,16 @@ import {
   QualityAssessment,
 } from '@/lib/qa-evaluator';
 import {
+  evaluateImageWithReplicate,
+  shouldApproveReplicate,
+} from '@/lib/replicate-qa-evaluator';
+import {
   improvePromptFromHints,
   rewritePromptWithAI,
   cleanAccumulatedEmphasis,
 } from '@/lib/prompt-rewriter';
+
+type QAEvaluator = 'replicate' | 'claude';
 
 const ATTEMPTS_PER_ROUND = 3;
 const MAX_ROUNDS = 4;
@@ -76,14 +82,15 @@ async function uploadToStorage(
   const blob = await response.blob();
   const buffer = await blob.arrayBuffer();
 
-  const fileName = `${sceneId}.webp`;
+  // Use unique filename with timestamp to avoid overwriting previous images
+  const fileName = `${sceneId}_${Date.now()}.webp`;
 
   const { error: uploadError } = await supabase.storage
     .from('scenes')
     .upload(fileName, buffer, {
       contentType: 'image/webp',
       cacheControl: '0',
-      upsert: true,
+      upsert: false, // Don't overwrite - each generation is unique
     });
 
   if (uploadError) {
@@ -112,6 +119,7 @@ async function generateWithQA(params: {
   // Img2img parameters
   sourceImage?: string;
   strength?: number;
+  qaEvaluator?: QAEvaluator; // 'replicate' (default, NSFW-safe) or 'claude'
   onProgress?: (message: string) => void;
 }): Promise<GenerationResult> {
   const {
@@ -128,8 +136,14 @@ async function generateWithQA(params: {
     aspectRatio,
     sourceImage,
     strength,
+    qaEvaluator = 'replicate', // Default to Replicate for NSFW support
     onProgress = console.log,
   } = params;
+
+  // Choose evaluator functions
+  const evaluate = qaEvaluator === 'claude' ? evaluateImage : evaluateImageWithReplicate;
+  const checkApproval = qaEvaluator === 'claude' ? shouldApprove : shouldApproveReplicate;
+  onProgress(`[QA] Using ${qaEvaluator} evaluator`);
 
   let currentPrompt = originalPrompt;
   let lastImageUrl = '';
@@ -185,16 +199,16 @@ async function generateWithQA(params: {
         continue;
       }
 
-      onProgress(`[QA] Generated image, evaluating...`);
+      onProgress(`[QA] Generated image, evaluating with ${qaEvaluator}...`);
       console.log('[QA] qaContext:', JSON.stringify(qaContext, null, 2));
 
-      // Evaluate with Claude Vision
+      // Evaluate image with chosen evaluator
       try {
-        console.log('[QA] Calling evaluateImage...');
-        lastAssessment = await evaluateImage(lastImageUrl, qaContext);
-        console.log('[QA] evaluateImage returned:', !!lastAssessment);
+        console.log(`[QA] Calling ${qaEvaluator} evaluator...`);
+        lastAssessment = await evaluate(lastImageUrl, qaContext);
+        console.log('[QA] Evaluation returned:', !!lastAssessment);
         successfulEvaluations++;
-        const approved = shouldApprove(lastAssessment, qaContext);
+        const approved = checkApproval(lastAssessment, qaContext);
 
         onProgress(`[QA] Essence: ${lastAssessment.essenceScore}/10, Approved: ${approved}`);
 
@@ -230,7 +244,32 @@ async function generateWithQA(params: {
         onProgress(`[QA] Evaluation failed: ${errMsg}`);
         console.error('[QA] Full evaluation error:', error);
         evaluationErrors.push(`Attempt ${totalAttempts}: ${errMsg}`);
-        // Continue to next attempt without evaluation result
+
+        // Create fallback assessment so we have data to show
+        // Only if we don't have any assessment yet
+        if (!lastAssessment) {
+          lastAssessment = {
+            essenceCaptured: false,
+            essenceScore: 0,
+            essenceComment: `Evaluation failed: ${errMsg}`,
+            keyElementsCheck: [],
+            participantsCorrect: false,
+            technicalQuality: {
+              score: 0,
+              fatalFlaws: [`Evaluation error: ${errMsg}`],
+              minorIssues: [],
+            },
+            moodMatch: false,
+            APPROVED: false,
+            failReason: `QA evaluation failed: ${errMsg}`,
+            regenerationHints: {
+              emphasize: '',
+              add: [],
+              remove: [],
+            },
+          };
+        }
+        // Continue to next attempt
       }
 
       // Small delay between attempts
@@ -296,6 +335,7 @@ export async function POST(req: Request) {
     aspectRatio = '3:2',
     enableQA = false,
     qaContext,
+    qaEvaluator = 'replicate', // 'replicate' (default, NSFW-safe) or 'claude'
     // Img2img parameters
     sourceImage, // URL of source image for img2img
     strength = 0.7, // 0-1, how much to deviate from source
@@ -363,10 +403,10 @@ export async function POST(req: Request) {
         const storageUrl = await uploadToStorage(supabase, sceneId, imageUrl);
         console.log('[Generate] Public URL:', storageUrl);
 
-        // Check if scene exists
+        // Check if scene exists and get linked scenes
         const { data: existingScene, error: selectError } = await supabase
           .from('scenes')
-          .select('id, slug, image_url')
+          .select('id, slug, image_url, paired_with, shared_images_with')
           .eq('id', sceneId)
           .single();
 
@@ -401,6 +441,20 @@ export async function POST(req: Request) {
           if (updateData && updateData[0]) {
             console.log('[Generate] Updated image_url:', updateData[0].image_url);
           }
+
+          // Sync image_url to paired and shared scenes
+          const linkedIds = [
+            existingScene?.paired_with,
+            existingScene?.shared_images_with,
+          ].filter(Boolean) as string[];
+
+          if (linkedIds.length > 0) {
+            console.log('[Generate] Syncing image_url to linked scenes:', linkedIds);
+            await supabase
+              .from('scenes')
+              .update({ image_url: storageUrl })
+              .in('id', linkedIds);
+          }
         }
 
         console.log('[Generate] Done!');
@@ -413,6 +467,7 @@ export async function POST(req: Request) {
     // Generation with QA
     console.log('[Generate+QA] Starting QA generation for scene:', sceneId);
     console.log('[Generate+QA] Service:', service);
+    console.log('[Generate+QA] QA Evaluator:', qaEvaluator);
     console.log('[Generate+QA] Essence:', qaContext.essence);
 
     const result = await generateWithQA({
@@ -429,6 +484,7 @@ export async function POST(req: Request) {
       aspectRatio,
       sourceImage,
       strength,
+      qaEvaluator: qaEvaluator as QAEvaluator, // 'replicate' or 'claude'
       onProgress: console.log,
     });
 
@@ -449,10 +505,10 @@ export async function POST(req: Request) {
         hasAssessment: !!result.lastAssessment,
       });
 
-      // First check if scene exists
+      // First check if scene exists and get linked scenes
       const { data: existingScene, error: selectError } = await supabase
         .from('scenes')
-        .select('id, slug')
+        .select('id, slug, paired_with, shared_images_with')
         .eq('id', sceneId)
         .single();
 
@@ -496,6 +552,20 @@ export async function POST(req: Request) {
         console.error('[Generate+QA] DB update error:', updateError);
       } else {
         console.log('[Generate+QA] DB update success, rows affected:', updateData?.length || 0);
+
+        // Sync image_url to paired and shared scenes
+        const linkedIds = [
+          existingScene?.paired_with,
+          existingScene?.shared_images_with,
+        ].filter(Boolean) as string[];
+
+        if (linkedIds.length > 0) {
+          console.log('[Generate+QA] Syncing image_url to linked scenes:', linkedIds);
+          await supabase
+            .from('scenes')
+            .update({ image_url: storageUrl })
+            .in('id', linkedIds);
+        }
       }
 
       console.log('[Generate+QA] Done!');

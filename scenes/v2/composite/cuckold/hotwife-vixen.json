@@ -1,0 +1,58 @@
+{
+  "id": "hotwife-vixen-f",
+  "slug": "hotwife-vixen-f",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "group",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "hotwife-stag",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Vixen",
+    "en": "Vixen"
+  },
+  "subtitle": {
+    "ru": "Ты его hotwife",
+    "en": "You're his hotwife"
+  },
+  "user_description": {
+    "ru": "Ты флиртуешь и трахаешься с другими мужчинами с одобрения партнёра. Он гордится тобой.",
+    "en": "You flirt and fuck other men with your partner's approval. He's proud of you."
+  },
+  "ai_description": {
+    "ru": "Она встречается с другими мужчинами с его благословения. Он гордится, он поддерживает. Stag/Vixen динамика без унижения.",
+    "en": "She sees other men with his blessing. He's proud, he supports. Stag/Vixen dynamic without humiliation."
+  },
+  "image_prompt": "woman in sexy dress between two men at bar, one her partner one stranger, she flirting",
+  "intensity": 4,
+  "category": "hotwife",
+  "tags": [
+    "vixen",
+    "hotwife",
+    "freedom",
+    "empowerment"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "vixen",
+      "hotwife",
+      "freedom"
+    ],
+    "tests_secondary": [
+      "empowerment",
+      "sexuality"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает быть hotwife?",
+      "en": "What appeals about being a hotwife?"
+    }
+      }
+}

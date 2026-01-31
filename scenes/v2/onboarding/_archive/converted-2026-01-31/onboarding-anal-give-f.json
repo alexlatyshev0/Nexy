@@ -1,0 +1,40 @@
+{
+  "id": "9972bb3e-99a9-46f6-b640-a1aa88aa36b6",
+  "slug": "onboarding-anal-give-f",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 2.1,
+  "for_gender": "female",
+  "paired_with": "onboarding-anal-receive-m",
+  "title": {
+    "ru": "Анальный секс",
+    "en": "Anal sex"
+  },
+  "subtitle": {
+    "ru": "Ты проникаешь",
+    "en": "You penetrate"
+  },
+  "ai_description": {
+    "ru": "Интерес к анальному проникновению в партнёра (топ).",
+    "en": "Interest in anal penetration of partner (top)."
+  },
+  "user_description": {
+    "ru": "Ты надеваешь страпон и входишь в него сзади.",
+    "en": "You put on a strapon and enter him from behind."
+  },
+  "image_prompt": "naked woman wearing strapon behind naked man on all fours, pegging implied, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "anal-give"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "anal-give"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "anal"
+}

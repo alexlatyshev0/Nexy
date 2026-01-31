@@ -1,0 +1,58 @@
+{
+  "id": "oral-wording-he-says",
+  "slug": "oral-wording-he-says",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": ["oral", "dirty_talk"],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "oral-wording-she-says",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Как говорить про оральный",
+    "en": "How to talk about oral"
+  },
+  "subtitle": {
+    "ru": "Какие слова использовать",
+    "en": "What words to use"
+  },
+  "user_description": {
+    "ru": "Какими словами тебе нравится говорить про оральный секс?",
+    "en": "What words do you like to use when talking about oral sex?"
+  },
+  "ai_description": {
+    "ru": "Грубо или нежно? 'Отсоси' или 'сделай минет'? Слова задают тон.",
+    "en": "Rough or gentle? 'Suck me' or 'give me oral'? Words set the tone."
+  },
+  "intensity": 2,
+  "category": "verbal",
+  "tags": ["oral", "dirty_talk", "verbal", "wording"],
+  "ai_context": {
+    "tests_primary": ["oral_wording", "dirty_talk"],
+    "tests_secondary": ["verbal_preference"]
+  },
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие фразы тебе нравится использовать?",
+      "en": "What phrases do you like to use?"
+    },
+    "options": [
+      { "id": "otsosi", "label": { "ru": "Отсоси мне", "en": "Suck me" } },
+      { "id": "minet", "label": { "ru": "Сделай минет", "en": "Give me a blowjob" } },
+      { "id": "voz_v_rot", "label": { "ru": "Возьми в рот", "en": "Take it in your mouth" } },
+      { "id": "lizhi", "label": { "ru": "Лижи", "en": "Lick it" } },
+      { "id": "glubzhe", "label": { "ru": "Глубже", "en": "Deeper" } },
+      { "id": "hochu_tvoyi_guby", "label": { "ru": "Хочу твои губы", "en": "I want your lips" } },
+      { "id": "polaskap", "label": { "ru": "Поласкай меня ртом", "en": "Pleasure me with your mouth" } },
+      { "id": "na_koleni", "label": { "ru": "На колени", "en": "On your knees" } }
+    ],
+    "allow_other": true,
+    "other_placeholder": {
+      "ru": "Своя фраза...",
+      "en": "Your own phrase..."
+    },
+    "min_selections": 0
+  }
+}

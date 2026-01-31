@@ -1,7 +1,14 @@
 {
-  "id": "swinging",
+  "id": "swinging-partner-swap",
   "slug": "swinging-partner-swap",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "group"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "group",
   "title": {
     "ru": "Свингинг",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Обмен партнёрами",
     "en": "Partner swap"
+  },
+  "user_description": {
+    "ru": "Ты и партнёр меняетесь партнёрами с другой парой.",
+    "en": "You and your partner swap partners with another couple."
   },
   "ai_description": {
     "ru": "Две пары меняются партнёрами. Секс с чужим партнёром при согласии всех. Разнообразие, новые ощущения, общий опыт.",
@@ -25,244 +36,6 @@
     "lifestyle",
     "group"
   ],
-  "elements": [
-    {
-      "id": "swap_type",
-      "label": {
-        "ru": "Тип обмена",
-        "en": "Swap type"
-      },
-      "tag_ref": "swing_type",
-      "follow_ups": [
-        {
-          "id": "type",
-          "type": "single_select",
-          "question": {
-            "ru": "Какой обмен?",
-            "en": "What type?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "soft",
-                "label": {
-                  "ru": "Soft swap (без проникновения)",
-                  "en": "Soft swap (no penetration)"
-                }
-              },
-              {
-                "id": "full",
-                "label": {
-                  "ru": "Full swap",
-                  "en": "Full swap"
-                }
-              },
-              {
-                "id": "same_room",
-                "label": {
-                  "ru": "В одной комнате",
-                  "en": "Same room"
-                }
-              },
-              {
-                "id": "separate",
-                "label": {
-                  "ru": "В разных комнатах",
-                  "en": "Separate rooms"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who_with",
-      "label": {
-        "ru": "С кем",
-        "en": "With whom"
-      },
-      "tag_ref": "swing_partners",
-      "follow_ups": [
-        {
-          "id": "partners",
-          "type": "multi_select",
-          "question": {
-            "ru": "Кто партнёры?",
-            "en": "Who are partners?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "friends",
-                "label": {
-                  "ru": "Друзья",
-                  "en": "Friends"
-                }
-              },
-              {
-                "id": "strangers",
-                "label": {
-                  "ru": "Незнакомцы",
-                  "en": "Strangers"
-                }
-              },
-              {
-                "id": "club",
-                "label": {
-                  "ru": "Из клуба/сообщества",
-                  "en": "From club/community"
-                }
-              },
-              {
-                "id": "online",
-                "label": {
-                  "ru": "Нашли онлайн",
-                  "en": "Found online"
-                }
-              },
-              {
-                "id": "regular",
-                "label": {
-                  "ru": "Постоянные партнёры",
-                  "en": "Regular partners"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "rules",
-      "label": {
-        "ru": "Правила",
-        "en": "Rules"
-      },
-      "tag_ref": "swing_rules",
-      "follow_ups": [
-        {
-          "id": "boundaries",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие правила?",
-            "en": "What rules?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "together_only",
-                "label": {
-                  "ru": "Только вместе",
-                  "en": "Together only"
-                }
-              },
-              {
-                "id": "same_room",
-                "label": {
-                  "ru": "В одной комнате",
-                  "en": "Same room"
-                }
-              },
-              {
-                "id": "veto",
-                "label": {
-                  "ru": "Право вето",
-                  "en": "Veto right"
-                }
-              },
-              {
-                "id": "no_feelings",
-                "label": {
-                  "ru": "Без эмоций",
-                  "en": "No feelings"
-                }
-              },
-              {
-                "id": "protection",
-                "label": {
-                  "ru": "Обязательная защита",
-                  "en": "Mandatory protection"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "swing_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "variety",
-                "label": {
-                  "ru": "Разнообразие",
-                  "en": "Variety"
-                }
-              },
-              {
-                "id": "watching",
-                "label": {
-                  "ru": "Смотреть на партнёра",
-                  "en": "Watching partner"
-                }
-              },
-              {
-                "id": "new_body",
-                "label": {
-                  "ru": "Новое тело",
-                  "en": "New body"
-                }
-              },
-              {
-                "id": "shared",
-                "label": {
-                  "ru": "Общий опыт",
-                  "en": "Shared experience"
-                }
-              },
-              {
-                "id": "freedom",
-                "label": {
-                  "ru": "Свобода",
-                  "en": "Freedom"
-                }
-              },
-              {
-                "id": "community",
-                "label": {
-                  "ru": "Сообщество",
-                  "en": "Community"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в свингинге?",
-      "en": "What appeals about swinging?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "swinging",
@@ -275,8 +48,11 @@
       "group"
     ]
   },
-  "user_description": {
-    "ru": "Две пары меняются партнёрами для секса.",
-    "en": "Two couples swap partners for sex."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в свингинге?",
+      "en": "What appeals about swinging?"
+    }
+      }
 }

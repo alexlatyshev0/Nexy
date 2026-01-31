@@ -1,0 +1,59 @@
+{
+  "id": "nipple-play-f-to-m-receive",
+  "slug": "nipple-play-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "nipple-play-she-on-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Игры с сосками",
+    "en": "Nipple Play"
+  },
+  "subtitle": {
+    "ru": "Она играет с твоими сосками",
+    "en": "She plays with your nipples"
+  },
+  "user_description": {
+    "ru": "Она щиплет, крутит, кусает твои соски.",
+    "en": "She pinches, twists, bites your nipples."
+  },
+  "ai_description": {
+    "ru": "Ж щиплет, крутит, кусает соски М. Мужские соски тоже чувствительны.",
+    "en": "F pinches, twists, bites M's nipples. Male nipples are sensitive too."
+  },
+  "image_prompt": "woman pinching man's nipples, man shirtless lying on bed, woman straddling him in lingerie, bedroom",
+  "intensity": 2,
+  "category": "impact-pain",
+  "tags": [
+    "nipple_play",
+    "male_nipples",
+    "sensation",
+    "submission",
+    "pinching"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "nipple_play",
+      "male_nipples",
+      "submission"
+    ],
+    "tests_secondary": [
+      "femdom",
+      "pain_pleasure",
+      "sensitivity"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что нравится когда она играет с твоими сосками?",
+      "en": "What do you like when she plays with your nipples?"
+    }
+      }
+}

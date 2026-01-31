@@ -70,7 +70,7 @@ export async function POST(request: NextRequest) {
             .from('subscriptions')
             .update({
               status: subscription.status === 'active' ? 'active' : 'past_due',
-              current_period_end: new Date(subscription.current_period_end * 1000).toISOString(),
+              current_period_end: new Date((subscription as any).current_period_end * 1000).toISOString(),
             })
             .eq('user_id', sub.user_id);
         }

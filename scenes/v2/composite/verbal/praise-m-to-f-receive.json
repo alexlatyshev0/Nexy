@@ -1,0 +1,56 @@
+{
+  "id": "praise-m-to-f-receive",
+  "slug": "praise-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "praise",
+    "dirty_talk"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "praise-he-praises-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Похвала",
+    "en": "Praise"
+  },
+  "subtitle": {
+    "ru": "Он хвалит тебя",
+    "en": "He praises you"
+  },
+  "user_description": {
+    "ru": "Он говорит тебе «хорошая девочка», «умница», «какая ты красивая».",
+    "en": "He tells you \"good girl\", \"clever girl\", \"you're so beautiful\"."
+  },
+  "ai_description": {
+    "ru": "'Хорошая девочка', — шепчет он ей на ухо. Она тает от его слов.",
+    "en": "'Good girl,' he whispers in her ear. She melts from his words. Praise as reward, approval as arousal."
+  },
+  "image_prompt": "man stroking woman's face, woman nude looking up at him, man shirtless, bedroom setting",
+  "intensity": 1,
+  "category": "verbal",
+  "tags": [
+    "praise",
+    "good_girl",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "praise_kink",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "verbal",
+      "submission"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Он хвалит тебя — «хорошая девочка»?",
+      "en": "He praises you — \"good girl\"?"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "spitting-m-to-f-receive",
+  "slug": "spitting-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "dirty_talk",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "spitting-m-to-f",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Плевки",
+    "en": "Spitting"
+  },
+  "subtitle": {
+    "ru": "Он на тебя",
+    "en": "He on you"
+  },
+  "user_description": {
+    "ru": "Он плюёт тебе в рот или на лицо. Ты принимаешь с открытыми губами.",
+    "en": "He spits in your mouth or on your face. You accept with open lips."
+  },
+  "ai_description": {
+    "ru": "Он плюёт ей в рот, она принимает с открытыми губами. Грубо, унизительно, но она хочет этого. Слюна как знак власти.",
+    "en": "He spits in her mouth, she accepts with open lips. Rough, degrading, but she wants it. Saliva as a sign of power."
+  },
+  "image_prompt": "man close to woman face, he spitting, she looking up with open mouth, both partially clothed, bedroom setting",
+  "intensity": 3,
+  "category": "body-fluids",
+  "tags": [
+    "spitting",
+    "spit",
+    "degradation",
+    "humiliation",
+    "dominance",
+    "saliva"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "spitting",
+      "degradation",
+      "humiliation"
+    ],
+    "tests_secondary": [
+      "dominance",
+      "sloppy",
+      "primal"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в плевках?",
+      "en": "What appeals about spitting?"
+    }
+      }
+}

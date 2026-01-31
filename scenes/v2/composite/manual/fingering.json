@@ -2,6 +2,14 @@
   "id": "fingering",
   "slug": "fingering",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "fingering-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Фингеринг",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Он ласкает её пальцами",
     "en": "He fingers her"
+  },
+  "user_description": {
+    "ru": "Ты ласкаешь её клитор пальцами и вводишь пальцы внутрь. Стимулируешь точку G.",
+    "en": "You caress her clit with your fingers and insert fingers inside. Stimulate the G-spot."
   },
   "ai_description": {
     "ru": "Его пальцы скользят внутрь неё. Клитор, вход, точка G — он изучает её тело, находит то, что заставляет её стонать.",
@@ -25,308 +37,6 @@
     "clit",
     "foreplay"
   ],
-  "elements": [
-    {
-      "id": "focus",
-      "label": {
-        "ru": "Фокус",
-        "en": "Focus"
-      },
-      "tag_ref": "fingering_focus",
-      "follow_ups": [
-        {
-          "id": "where",
-          "type": "multi_select",
-          "question": {
-            "ru": "На чём фокус?",
-            "en": "What's the focus?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "clit_external",
-                "label": {
-                  "ru": "Клитор (снаружи)",
-                  "en": "Clit (external)"
-                }
-              },
-              {
-                "id": "inside_shallow",
-                "label": {
-                  "ru": "Внутри (неглубоко)",
-                  "en": "Inside (shallow)"
-                }
-              },
-              {
-                "id": "g_spot",
-                "label": {
-                  "ru": "Точка G",
-                  "en": "G-spot"
-                }
-              },
-              {
-                "id": "combined",
-                "label": {
-                  "ru": "Клитор + внутри",
-                  "en": "Clit + inside"
-                }
-              },
-              {
-                "id": "labia",
-                "label": {
-                  "ru": "Губы, вход",
-                  "en": "Labia, entrance"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "technique",
-      "label": {
-        "ru": "Техника",
-        "en": "Technique"
-      },
-      "tag_ref": "fingering_technique",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какая техника?",
-            "en": "What technique?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "circular",
-                "label": {
-                  "ru": "Круговые движения",
-                  "en": "Circular motions"
-                }
-              },
-              {
-                "id": "come_hither",
-                "label": {
-                  "ru": "Come hither (на себя)",
-                  "en": "Come hither motion"
-                }
-              },
-              {
-                "id": "in_out",
-                "label": {
-                  "ru": "Туда-сюда",
-                  "en": "In and out"
-                }
-              },
-              {
-                "id": "pressure",
-                "label": {
-                  "ru": "Давление на G-точку",
-                  "en": "Pressure on G-spot"
-                }
-              },
-              {
-                "id": "fast_rubbing",
-                "label": {
-                  "ru": "Быстрое трение клитора",
-                  "en": "Fast clit rubbing"
-                }
-              },
-              {
-                "id": "multiple_fingers",
-                "label": {
-                  "ru": "Несколько пальцев",
-                  "en": "Multiple fingers"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "context",
-      "label": {
-        "ru": "Контекст",
-        "en": "Context"
-      },
-      "tag_ref": "fingering_context",
-      "follow_ups": [
-        {
-          "id": "when",
-          "type": "multi_select",
-          "question": {
-            "ru": "Когда нравится?",
-            "en": "When do you like it?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "foreplay",
-                "label": {
-                  "ru": "Как прелюдия",
-                  "en": "As foreplay"
-                }
-              },
-              {
-                "id": "to_orgasm",
-                "label": {
-                  "ru": "До оргазма",
-                  "en": "To orgasm"
-                }
-              },
-              {
-                "id": "during_oral",
-                "label": {
-                  "ru": "Во время куни",
-                  "en": "During oral"
-                }
-              },
-              {
-                "id": "during_sex",
-                "label": {
-                  "ru": "Во время секса (клитор)",
-                  "en": "During sex (clit)"
-                }
-              },
-              {
-                "id": "wake_up",
-                "label": {
-                  "ru": "Чтобы разбудить",
-                  "en": "To wake her up"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "g_spot_detail",
-      "label": {
-        "ru": "Точка G",
-        "en": "G-spot"
-      },
-      "tag_ref": "g_spot",
-      "follow_ups": [
-        {
-          "id": "g_spot_exp",
-          "type": "single_select",
-          "question": {
-            "ru": "Опыт с точкой G?",
-            "en": "G-spot experience?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "not_found",
-                "label": {
-                  "ru": "Не нашли",
-                  "en": "Haven't found it"
-                }
-              },
-              {
-                "id": "found_nice",
-                "label": {
-                  "ru": "Нашли, приятно",
-                  "en": "Found it, feels nice"
-                }
-              },
-              {
-                "id": "intense_orgasm",
-                "label": {
-                  "ru": "Интенсивные оргазмы",
-                  "en": "Intense orgasms"
-                }
-              },
-              {
-                "id": "squirting",
-                "label": {
-                  "ru": "Сквирт от стимуляции",
-                  "en": "Squirting from stimulation"
-                }
-              },
-              {
-                "id": "prefer_clit",
-                "label": {
-                  "ru": "Предпочитаю клитор",
-                  "en": "Prefer clit"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "fingering_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "targeted",
-                "label": {
-                  "ru": "Точечная стимуляция",
-                  "en": "Targeted stimulation"
-                }
-              },
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Его контроль над моим телом",
-                  "en": "His control over my body"
-                }
-              },
-              {
-                "id": "intimacy",
-                "label": {
-                  "ru": "Интимность",
-                  "en": "Intimacy"
-                }
-              },
-              {
-                "id": "buildup",
-                "label": {
-                  "ru": "Нарастание возбуждения",
-                  "en": "Building arousal"
-                }
-              },
-              {
-                "id": "orgasm_focus",
-                "label": {
-                  "ru": "Фокус на моём оргазме",
-                  "en": "Focus on my orgasm"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что нравится в фингеринге?",
-      "en": "What do you like about fingering?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "fingering",
@@ -351,8 +61,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Он ласкает её клитор пальцами и вводит пальцы внутрь. Стимулирует точку G.",
-    "en": "He caresses her clit with his fingers and inserts fingers inside. Stimulates the G-spot."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что нравится в фингеринге?",
+      "en": "What do you like about fingering?"
+    }
+      }
 }

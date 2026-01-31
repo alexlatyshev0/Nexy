@@ -1,0 +1,47 @@
+{
+  "id": "lingerie-sheer",
+  "slug": "lingerie-sheer",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Полупрозрачное",
+    "en": "Sheer"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Прозрачное бельё. Почти ничего не скрывает.",
+    "en": "Sheer lingerie. Hides almost nothing."
+  },
+  "ai_description": {
+    "ru": "Почти ничего не скрывает. Прозрачный шифон или сетка.",
+    "en": "Hides almost nothing. Sheer chiffon or mesh."
+  },
+  "image_prompt": "woman in sheer transparent negligee, silhouette visible, bedroom",
+  "intensity": 2,
+  "category": "clothing",
+  "tags": [
+    "lingerie",
+    "sheer",
+    "transparent"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "lingerie",
+      "sheer"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

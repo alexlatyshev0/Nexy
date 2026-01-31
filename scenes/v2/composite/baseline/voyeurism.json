@@ -1,0 +1,52 @@
+{
+  "id": "voyeurism",
+  "slug": "voyeurism",
+  "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Вуайеризм",
+    "en": "Voyeurism"
+  },
+  "subtitle": {
+    "ru": "Смотреть на других",
+    "en": "Watching others"
+  },
+  "user_description": {
+    "ru": "Наблюдать — как партнёр раздевается, мастурбирует, или как другие занимаются сексом.",
+    "en": "Watching — partner undressing, masturbating, or others having sex."
+  },
+  "ai_description": {
+    "ru": "Нравится смотреть на других? Наблюдать за партнёром, подглядывать, смотреть порно вместе?",
+    "en": "Like watching others? Observing partner, peeking, watching porn together?"
+  },
+  "image_prompt": "man watching woman through doorway, she undressing in bedroom, voyeuristic angle",
+  "intensity": 2,
+  "category": "baseline",
+  "tags": [
+    "baseline",
+    "voyeurism",
+    "watching"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "voyeurism",
+      "watching"
+    ],
+    "gates": {
+      "yes": [
+        "voyeurism_scenes"
+      ]
+    }
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Нравится наблюдать за другими?",
+      "en": "Like watching others?"
+    }
+  },
+  "priority": 11
+}

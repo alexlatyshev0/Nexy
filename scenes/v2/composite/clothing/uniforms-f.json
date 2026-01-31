@@ -1,7 +1,16 @@
 {
-  "id": "uniforms_f",
+  "id": "female-uniforms",
   "slug": "female-uniforms",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie",
+    "roleplay"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "uniforms-f-wear",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Униформа на ней",
@@ -10,6 +19,10 @@
   "subtitle": {
     "ru": "Костюмы для ролевых игр",
     "en": "Costumes for roleplay"
+  },
+  "user_description": {
+    "ru": "Ты смотришь как она надевает костюм медсестры, горничной или секретарши. Раздеваешь её.",
+    "en": "You watch her put on a nurse, maid or secretary costume. You undress her."
   },
   "ai_description": {
     "ru": "Униформа в сексе — медсестра, горничная, секретарша, полицейский. Создаёт ролевую динамику власти.",
@@ -20,198 +33,10 @@
   "category": "clothing",
   "tags": [
     "clothing",
-    "uniforms",
+    "uniform",
     "roleplay",
     "costume"
   ],
-  "elements": [
-    {
-      "id": "costume_type",
-      "label": {
-        "ru": "Тип костюма",
-        "en": "Costume type"
-      },
-      "tag_ref": "uniform_type",
-      "follow_ups": [
-        {
-          "id": "which",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие костюмы?",
-            "en": "Which costumes?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "nurse",
-                "label": {
-                  "ru": "Медсестра",
-                  "en": "Nurse"
-                }
-              },
-              {
-                "id": "maid",
-                "label": {
-                  "ru": "Горничная",
-                  "en": "Maid"
-                }
-              },
-              {
-                "id": "secretary",
-                "label": {
-                  "ru": "Секретарша",
-                  "en": "Secretary"
-                }
-              },
-              {
-                "id": "schoolgirl",
-                "label": {
-                  "ru": "Школьница",
-                  "en": "Schoolgirl"
-                }
-              },
-              {
-                "id": "police",
-                "label": {
-                  "ru": "Полицейский",
-                  "en": "Police"
-                }
-              },
-              {
-                "id": "military",
-                "label": {
-                  "ru": "Военный",
-                  "en": "Military"
-                }
-              },
-              {
-                "id": "flight_attendant",
-                "label": {
-                  "ru": "Стюардесса",
-                  "en": "Flight attendant"
-                }
-              },
-              {
-                "id": "teacher",
-                "label": {
-                  "ru": "Учительница",
-                  "en": "Teacher"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who_wears",
-      "label": {
-        "ru": "Кто надевает",
-        "en": "Who wears"
-      },
-      "tag_ref": "uniform_wearer",
-      "follow_ups": [
-        {
-          "id": "wearer",
-          "type": "single_select",
-          "question": {
-            "ru": "Кто в костюме?",
-            "en": "Who wears costume?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "she",
-                "label": {
-                  "ru": "Она",
-                  "en": "She"
-                }
-              },
-              {
-                "id": "he",
-                "label": {
-                  "ru": "Он",
-                  "en": "He"
-                }
-              },
-              {
-                "id": "both",
-                "label": {
-                  "ru": "Оба",
-                  "en": "Both"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "appeal",
-      "label": {
-        "ru": "Что привлекает",
-        "en": "What appeals"
-      },
-      "tag_ref": "uniform_appeal",
-      "follow_ups": [
-        {
-          "id": "why",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "visual",
-                "label": {
-                  "ru": "Как выглядит",
-                  "en": "How it looks"
-                }
-              },
-              {
-                "id": "roleplay",
-                "label": {
-                  "ru": "Ролевая игра",
-                  "en": "Roleplay"
-                }
-              },
-              {
-                "id": "power",
-                "label": {
-                  "ru": "Динамика власти",
-                  "en": "Power dynamic"
-                }
-              },
-              {
-                "id": "fantasy",
-                "label": {
-                  "ru": "Воплощение фантазии",
-                  "en": "Fantasy fulfillment"
-                }
-              },
-              {
-                "id": "taboo",
-                "label": {
-                  "ru": "Запретность",
-                  "en": "Taboo"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Какие костюмы тебя возбуждают?",
-      "en": "Which costumes excite you?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "uniforms",
@@ -224,8 +49,11 @@
       "power_dynamic"
     ]
   },
-  "user_description": {
-    "ru": "Она надевает костюм медсестры, горничной или секретарши. Он раздевает её.",
-    "en": "She puts on a nurse, maid or secretary costume. He undresses her."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Какие костюмы тебя возбуждают?",
+      "en": "Which costumes excite you?"
+    }
+      }
 }

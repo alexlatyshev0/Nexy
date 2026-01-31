@@ -1,0 +1,40 @@
+{
+  "id": "9b2a7337-d6a3-4678-8504-23964bd77b9d",
+  "slug": "onboarding-sexting",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 19,
+  "for_gender": null,
+  "paired_with": null,
+  "title": {
+    "ru": "Секстинг",
+    "en": "Sexting"
+  },
+  "subtitle": {
+    "ru": "Интимная переписка",
+    "en": "Intimate messaging"
+  },
+  "ai_description": {
+    "ru": "Интерес к интимной переписке и дистанционной игре. Гейтит: sexting, joi.",
+    "en": "Interest in intimate messaging and remote play. Gates: sexting, joi."
+  },
+  "user_description": {
+    "ru": "Ты присылаешь фото из примерочной. Получаешь голосовое сообщение в ответ.",
+    "en": "You send a photo from the fitting room. You get a voice message in return."
+  },
+  "image_prompt": "person in underwear holding phone taking mirror selfie, fitting room with partial reflection",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "sexting"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "sexting"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "sexting"
+}

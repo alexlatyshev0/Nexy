@@ -1,0 +1,58 @@
+{
+  "id": "genital-naming-he-names-hers",
+  "slug": "genital-naming-he-names-hers",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": ["dirty_talk"],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "genital-naming-she-names-his",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Как называть",
+    "en": "What to call it"
+  },
+  "subtitle": {
+    "ru": "Её интимное место",
+    "en": "Her intimate parts"
+  },
+  "user_description": {
+    "ru": "Какими словами тебе нравится называть её интимное место?",
+    "en": "What words do you like using for her intimate parts?"
+  },
+  "ai_description": {
+    "ru": "Какими словами М называет интимное место Ж. 'Киска', 'пизда', или что-то своё.",
+    "en": "What words M uses for F's intimate parts. 'Pussy', 'cunt', or something else."
+  },
+  "intensity": 2,
+  "category": "verbal",
+  "tags": ["dirty_talk", "verbal", "naming", "genitals"],
+  "ai_context": {
+    "tests_primary": ["genital_naming", "dirty_talk"],
+    "tests_secondary": ["verbal_preference"]
+  },
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие слова тебе нравится использовать?",
+      "en": "What words do you like to use?"
+    },
+    "options": [
+      { "id": "kiska", "label": { "ru": "Киска", "en": "Pussy" } },
+      { "id": "pizda", "label": { "ru": "Пизда", "en": "Cunt" } },
+      { "id": "schelka", "label": { "ru": "Щёлка", "en": "Slit" } },
+      { "id": "dyrka", "label": { "ru": "Дырка", "en": "Hole" } },
+      { "id": "manda", "label": { "ru": "Манда", "en": "Snatch" } },
+      { "id": "tam", "label": { "ru": "Там внизу", "en": "Down there" } },
+      { "id": "vlagalishe", "label": { "ru": "Влагалище", "en": "Vagina" } },
+      { "id": "prелесть", "label": { "ru": "Прелесть", "en": "Pretty thing" } }
+    ],
+    "allow_other": true,
+    "other_placeholder": {
+      "ru": "Своё слово...",
+      "en": "Your own word..."
+    },
+    "min_selections": 0
+  }
+}

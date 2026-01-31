@@ -1,8 +1,15 @@
 {
-  "id": "body_worship_m_to_f",
+  "id": "body-worship-he-worships-her",
   "slug": "body-worship-he-worships-her",
   "version": 2,
-  "paired_scene": "body_worship_f_to_m",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "body-worship-m-to-f-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Поклонение телу",
@@ -12,13 +19,17 @@
     "ru": "Он поклоняется ей",
     "en": "He worships her"
   },
+  "user_description": {
+    "ru": "Ты целуешь её тело — грудь, живот, бёдра, спину.",
+    "en": "You kiss her body — breasts, stomach, thighs, back."
+  },
   "ai_description": {
     "ru": "Он целует каждый сантиметр её тела. Руки, ноги, живот, грудь — всё достойно обожания. Она — богиня, он — преданный слуга.",
     "en": "He kisses every inch of her body. Arms, legs, stomach, breasts — all worthy of adoration. She's a goddess, he's devoted servant."
   },
   "image_prompt": "man kissing woman's stomach and thighs, woman lying nude on bed, man kneeling beside her, bedroom with soft lamp light",
   "intensity": 2,
-  "category": "worship_service",
+  "category": "worship-service",
   "tags": [
     "body_worship",
     "worship",
@@ -26,293 +37,6 @@
     "devotion",
     "sensual"
   ],
-  "elements": [
-    {
-      "id": "body_parts",
-      "label": {
-        "ru": "Какие части?",
-        "en": "Which parts?"
-      },
-      "tag_ref": "worship_parts",
-      "follow_ups": [
-        {
-          "id": "parts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие части тела?",
-            "en": "What body parts?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "breasts",
-                "label": {
-                  "ru": "Грудь",
-                  "en": "Breasts"
-                }
-              },
-              {
-                "id": "stomach",
-                "label": {
-                  "ru": "Живот",
-                  "en": "Stomach"
-                }
-              },
-              {
-                "id": "back",
-                "label": {
-                  "ru": "Спина",
-                  "en": "Back"
-                }
-              },
-              {
-                "id": "legs",
-                "label": {
-                  "ru": "Ноги",
-                  "en": "Legs"
-                }
-              },
-              {
-                "id": "ass",
-                "label": {
-                  "ru": "Попа",
-                  "en": "Ass"
-                }
-              },
-              {
-                "id": "neck",
-                "label": {
-                  "ru": "Шея",
-                  "en": "Neck"
-                }
-              },
-              {
-                "id": "hands",
-                "label": {
-                  "ru": "Руки",
-                  "en": "Hands"
-                }
-              },
-              {
-                "id": "everything",
-                "label": {
-                  "ru": "Всё тело",
-                  "en": "Whole body"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "actions",
-      "label": {
-        "ru": "Действия",
-        "en": "Actions"
-      },
-      "tag_ref": "worship_actions",
-      "follow_ups": [
-        {
-          "id": "acts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что делать?",
-            "en": "What to do?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "kiss",
-                "label": {
-                  "ru": "Целовать",
-                  "en": "Kiss"
-                }
-              },
-              {
-                "id": "lick",
-                "label": {
-                  "ru": "Лизать",
-                  "en": "Lick"
-                }
-              },
-              {
-                "id": "caress",
-                "label": {
-                  "ru": "Гладить",
-                  "en": "Caress"
-                }
-              },
-              {
-                "id": "massage",
-                "label": {
-                  "ru": "Массировать",
-                  "en": "Massage"
-                }
-              },
-              {
-                "id": "compliments",
-                "label": {
-                  "ru": "Хвалить словами",
-                  "en": "Verbal compliments"
-                }
-              },
-              {
-                "id": "slow",
-                "label": {
-                  "ru": "Очень медленно",
-                  "en": "Very slowly"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "dynamic",
-      "label": {
-        "ru": "Динамика",
-        "en": "Dynamic"
-      },
-      "tag_ref": "worship_dynamic",
-      "follow_ups": [
-        {
-          "id": "power",
-          "type": "single_select",
-          "question": {
-            "ru": "Какая атмосфера?",
-            "en": "What atmosphere?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "goddess",
-                "label": {
-                  "ru": "Она богиня",
-                  "en": "She's a goddess"
-                }
-              },
-              {
-                "id": "romantic",
-                "label": {
-                  "ru": "Романтично, любовно",
-                  "en": "Romantic, loving"
-                }
-              },
-              {
-                "id": "service",
-                "label": {
-                  "ru": "Служение госпоже",
-                  "en": "Serving mistress"
-                }
-              },
-              {
-                "id": "foreplay",
-                "label": {
-                  "ru": "Как прелюдия",
-                  "en": "As foreplay"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "duration",
-      "label": {
-        "ru": "Длительность",
-        "en": "Duration"
-      },
-      "tag_ref": "worship_duration",
-      "follow_ups": [
-        {
-          "id": "time",
-          "type": "scale",
-          "question": {
-            "ru": "Как долго?",
-            "en": "How long?"
-          },
-          "config": {
-            "min_label": {
-              "ru": "Несколько минут",
-              "en": "Few minutes"
-            },
-            "max_label": {
-              "ru": "Час и больше",
-              "en": "Hour or more"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "body_worship_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что нравится?",
-            "en": "What do you like?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "attention",
-                "label": {
-                  "ru": "Всё внимание на мне",
-                  "en": "All attention on me"
-                }
-              },
-              {
-                "id": "adored",
-                "label": {
-                  "ru": "Чувствовать себя обожаемой",
-                  "en": "Feeling adored"
-                }
-              },
-              {
-                "id": "slow",
-                "label": {
-                  "ru": "Медленное удовольствие",
-                  "en": "Slow pleasure"
-                }
-              },
-              {
-                "id": "power",
-                "label": {
-                  "ru": "Власть",
-                  "en": "Power"
-                }
-              },
-              {
-                "id": "relaxation",
-                "label": {
-                  "ru": "Расслабление",
-                  "en": "Relaxation"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что нравится когда он поклоняется?",
-      "en": "What do you like when he worships?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "body_worship",
@@ -325,8 +49,11 @@
       "attention"
     ]
   },
-  "user_description": {
-    "ru": "Он целует её тело — грудь, живот, бёдра, спину.",
-    "en": "He kisses her body — breasts, stomach, thighs, back."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что нравится когда он поклоняется?",
+      "en": "What do you like when he worships?"
+    }
+      }
 }

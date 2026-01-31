@@ -2,6 +2,14 @@
   "id": "joi",
   "slug": "joi",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "dirty_talk",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "JOI",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Инструкции по мастурбации",
     "en": "Jerk Off Instructions"
+  },
+  "user_description": {
+    "ru": "Инструкции как мастурбировать. Голосом или текстом.",
+    "en": "Masturbation instructions. Voice or text."
   },
   "ai_description": {
     "ru": "Один направляет, другой выполняет. Словами контролировать как партнёр себя ласкает — темп, силу, когда остановиться, когда кончить.",
@@ -25,273 +37,6 @@
     "control",
     "verbal"
   ],
-  "elements": [
-    {
-      "id": "role",
-      "label": {
-        "ru": "Роль",
-        "en": "Role"
-      },
-      "tag_ref": "joi_role",
-      "follow_ups": [
-        {
-          "id": "prefer",
-          "type": "single_select",
-          "question": {
-            "ru": "Какая роль?",
-            "en": "Which role?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "give",
-                "label": {
-                  "ru": "Давать инструкции",
-                  "en": "Give instructions"
-                }
-              },
-              {
-                "id": "receive",
-                "label": {
-                  "ru": "Выполнять инструкции",
-                  "en": "Follow instructions"
-                }
-              },
-              {
-                "id": "both",
-                "label": {
-                  "ru": "Оба варианта",
-                  "en": "Both"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "medium",
-      "label": {
-        "ru": "Формат",
-        "en": "Medium"
-      },
-      "tag_ref": "joi_medium",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как?",
-            "en": "How?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "in_person",
-                "label": {
-                  "ru": "Вживую в комнате",
-                  "en": "In person"
-                }
-              },
-              {
-                "id": "video_call",
-                "label": {
-                  "ru": "Видеозвонок",
-                  "en": "Video call"
-                }
-              },
-              {
-                "id": "voice_only",
-                "label": {
-                  "ru": "Только голос",
-                  "en": "Voice only"
-                }
-              },
-              {
-                "id": "text",
-                "label": {
-                  "ru": "Текстом",
-                  "en": "Text messages"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "style",
-      "label": {
-        "ru": "Стиль",
-        "en": "Style"
-      },
-      "tag_ref": "joi_style",
-      "follow_ups": [
-        {
-          "id": "tone",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой стиль?",
-            "en": "What style?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "gentle",
-                "label": {
-                  "ru": "Нежный, ласковый",
-                  "en": "Gentle, encouraging"
-                }
-              },
-              {
-                "id": "commanding",
-                "label": {
-                  "ru": "Командный, строгий",
-                  "en": "Commanding, strict"
-                }
-              },
-              {
-                "id": "teasing",
-                "label": {
-                  "ru": "Дразнящий",
-                  "en": "Teasing"
-                }
-              },
-              {
-                "id": "degrading",
-                "label": {
-                  "ru": "Унижающий",
-                  "en": "Degrading"
-                }
-              },
-              {
-                "id": "playful",
-                "label": {
-                  "ru": "Игривый",
-                  "en": "Playful"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "edging",
-      "label": {
-        "ru": "Эджинг",
-        "en": "Edging"
-      },
-      "tag_ref": "joi_edging",
-      "follow_ups": [
-        {
-          "id": "edge",
-          "type": "single_select",
-          "question": {
-            "ru": "Включать эджинг?",
-            "en": "Include edging?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no_edging",
-                "label": {
-                  "ru": "Нет, до оргазма",
-                  "en": "No, straight to orgasm"
-                }
-              },
-              {
-                "id": "light",
-                "label": {
-                  "ru": "Немного (1-2 раза)",
-                  "en": "Light (1-2 times)"
-                }
-              },
-              {
-                "id": "heavy",
-                "label": {
-                  "ru": "Много раз на грани",
-                  "en": "Many edges"
-                }
-              },
-              {
-                "id": "denial",
-                "label": {
-                  "ru": "Без оргазма (denial)",
-                  "en": "No orgasm (denial)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "joi_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Контроль/подчинение",
-                  "en": "Control/submission"
-                }
-              },
-              {
-                "id": "verbal",
-                "label": {
-                  "ru": "Возбуждение от слов",
-                  "en": "Verbal arousal"
-                }
-              },
-              {
-                "id": "watching",
-                "label": {
-                  "ru": "Смотреть как партнёр ласкает себя",
-                  "en": "Watching partner touch themselves"
-                }
-              },
-              {
-                "id": "being_watched",
-                "label": {
-                  "ru": "Знать что смотрят",
-                  "en": "Being watched"
-                }
-              },
-              {
-                "id": "anticipation",
-                "label": {
-                  "ru": "Ожидание, нарастание",
-                  "en": "Anticipation, buildup"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что нравится в JOI?",
-      "en": "What do you like about JOI?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "joi",
@@ -316,8 +61,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Один партнёр даёт голосовые инструкции по мастурбации, другой их выполняет",
-    "en": "One partner gives verbal masturbation instructions, the other follows them"
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что нравится в JOI?",
+      "en": "What do you like about JOI?"
+    }
+      }
 }

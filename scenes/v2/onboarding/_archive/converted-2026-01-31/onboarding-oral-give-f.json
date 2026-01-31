@@ -1,0 +1,40 @@
+{
+  "id": "2e171d2b-0709-413b-b08f-45c25d7448f9",
+  "slug": "onboarding-oral-give-f",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 1.1,
+  "for_gender": "female",
+  "paired_with": "onboarding-oral-receive-m",
+  "title": {
+    "ru": "Оральный секс",
+    "en": "Oral sex"
+  },
+  "subtitle": {
+    "ru": "Ты ласкаешь ртом",
+    "en": "You pleasure with mouth"
+  },
+  "ai_description": {
+    "ru": "Интерес к тому чтобы делать оральный секс партнёру.",
+    "en": "Interest in giving oral sex to partner."
+  },
+  "user_description": {
+    "ru": "Ты берёшь у него в рот. Смотришь снизу вверх.",
+    "en": "You take him in your mouth. Looking up at him."
+  },
+  "image_prompt": "naked woman kneeling between man's legs, giving oral, man sitting on bed edge, bedroom dim lighting",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "oral-give"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "oral-give"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "oral"
+}

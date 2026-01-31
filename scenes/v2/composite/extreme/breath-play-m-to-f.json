@@ -1,7 +1,15 @@
 {
-  "id": "breath_play_m_to_f",
+  "id": "breath-play-m-to-f",
   "slug": "breath-play-m-to-f",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "breath-play-m-to-f-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Контроль дыхания (он контролирует)",
@@ -11,6 +19,10 @@
     "ru": "Он контролирует её дыхание",
     "en": "He controls her breathing"
   },
+  "user_description": {
+    "ru": "Ты контролируешь её дыхание — сжимаешь горло, закрываешь рот и нос, контролируешь когда ей дышать.",
+    "en": "You control her breathing — squeeze her throat, cover mouth and nose, control when she breathes."
+  },
   "ai_description": {
     "ru": "M контролирует дыхание F — рука на горле, закрыть рот/нос. Требует опыта и доверия. Edge play.",
     "en": "M controls F's breathing — hand on throat, cover mouth/nose. Requires experience and trust. Edge play."
@@ -18,88 +30,62 @@
   "image_prompt": "man's hand on woman's throat controlling her breathing during sex, woman lying on bed with eyes rolled back, bedroom setting with soft lighting",
   "intensity": 5,
   "category": "extreme",
-  "tags": ["breath_play", "choking", "asphyxiation", "edge_play", "m_dom"],
-  "elements": [
-    {
-      "id": "intensity",
-      "label": { "ru": "Интенсивность", "en": "Intensity" },
-      "tag_ref": "breath_intensity",
-      "follow_ups": [
-        {
-          "id": "level",
-          "type": "single_select",
-          "question": { "ru": "Какой уровень?", "en": "What level?" },
-          "config": {
-            "options": [
-              { "id": "light_pressure", "label": { "ru": "Лёгкое давление", "en": "Light pressure" } },
-              { "id": "moderate", "label": { "ru": "Затруднённое дыхание", "en": "Restricted breathing" } },
-              { "id": "intense", "label": { "ru": "Почти нет воздуха", "en": "Almost no air" } },
-              { "id": "controlled_stops", "label": { "ru": "Контролируемые остановки", "en": "Controlled stops" } }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "method",
-      "label": { "ru": "Метод", "en": "Method" },
-      "tag_ref": "breath_method",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": { "ru": "Как?", "en": "How?" },
-          "config": {
-            "options": [
-              { "id": "hand", "label": { "ru": "Рукой на горло", "en": "Hand on throat" } },
-              { "id": "arm", "label": { "ru": "Захват рукой сзади", "en": "Arm from behind" } },
-              { "id": "covering", "label": { "ru": "Закрыть рот и нос", "en": "Cover mouth and nose" } },
-              { "id": "pillow", "label": { "ru": "Подушка на лицо", "en": "Pillow on face" } },
-              { "id": "during_oral", "label": { "ru": "Во время минета", "en": "During blowjob" } }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": { "ru": "Что привлекает", "en": "What appeals" },
-      "tag_ref": "breath_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": { "ru": "Что возбуждает?", "en": "What excites?" },
-          "config": {
-            "options": [
-              { "id": "her_trust", "label": { "ru": "Её доверие", "en": "Her trust" } },
-              { "id": "his_control", "label": { "ru": "Его контроль", "en": "His control" } },
-              { "id": "vulnerability", "label": { "ru": "Её уязвимость", "en": "Her vulnerability" } },
-              { "id": "intensified_orgasm", "label": { "ru": "Усиленный оргазм", "en": "Intensified orgasm" } }
-            ]
-          }
-        }
-      ]
-    }
+  "tags": [
+    "breath_play",
+    "choking",
+    "asphyxiation",
+    "edge_play",
+    "m_dom"
   ],
+  "ai_context": {
+    "tests_primary": [
+      "breath_play",
+      "edge_play",
+      "m_dom"
+    ],
+    "tests_secondary": [
+      "choking",
+      "control",
+      "trust"
+    ]
+  },
   "question": {
     "type": "boundary",
-    "text": { "ru": "Он контролирует её дыхание?", "en": "He controls her breathing?" },
+    "text": {
+      "ru": "Он контролирует её дыхание?",
+      "en": "He controls her breathing?"
+    },
     "config": {
       "boundary_options": [
-        { "id": "hard_no", "label": { "ru": "Нет, опасно", "en": "No, too dangerous" } },
-        { "id": "light_only", "label": { "ru": "Только лёгкое", "en": "Light only" } },
-        { "id": "curious", "label": { "ru": "Интересно", "en": "Curious" } },
-        { "id": "experienced", "label": { "ru": "Да, с опытом", "en": "Yes, experienced" } }
+        {
+          "id": "hard_no",
+          "label": {
+            "ru": "Нет, опасно",
+            "en": "No, too dangerous"
+          }
+        },
+        {
+          "id": "light_only",
+          "label": {
+            "ru": "Только лёгкое",
+            "en": "Light only"
+          }
+        },
+        {
+          "id": "curious",
+          "label": {
+            "ru": "Интересно",
+            "en": "Curious"
+          }
+        },
+        {
+          "id": "experienced",
+          "label": {
+            "ru": "Да, с опытом",
+            "en": "Yes, experienced"
+          }
+        }
       ]
     }
-  },
-  "ai_context": {
-    "tests_primary": ["breath_play", "edge_play", "m_dom"],
-    "tests_secondary": ["choking", "control", "trust"]
-  },
-  "user_description": {
-    "ru": "Он контролирует её дыхание — сжимает горло, закрывает рот и нос, контролирует когда ей дышать",
-    "en": "He controls her breathing — squeezes her throat, covers mouth and nose, controls when she breathes"
   }
 }

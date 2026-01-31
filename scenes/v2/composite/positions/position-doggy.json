@@ -1,0 +1,47 @@
+{
+  "id": "position-doggy",
+  "slug": "position-doggy",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Догги-стайл",
+    "en": "Doggy Style"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Один на четвереньках, другой сзади. Глубокое проникновение.",
+    "en": "One on all fours, the other behind. Deep penetration."
+  },
+  "ai_description": {
+    "ru": "Она на четвереньках, он сзади. Глубокое проникновение и контроль.",
+    "en": "She on all fours, him behind. Deep penetration and control."
+  },
+  "image_prompt": "woman on hands and knees on bed, man kneeling behind her, bedroom",
+  "intensity": 2,
+  "category": "positions",
+  "tags": [
+    "positions",
+    "doggy",
+    "from-behind"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "positions",
+      "doggy"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

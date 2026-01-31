@@ -1,7 +1,14 @@
 {
-  "id": "vibrator",
+  "id": "vibrator-play",
   "slug": "vibrator-play",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "toys"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Вибратор",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Игрушки для удовольствия",
     "en": "Toys for pleasure"
+  },
+  "user_description": {
+    "ru": "Вибратор для стимуляции. Разные режимы и скорости.",
+    "en": "Vibrator for stimulation. Various modes and speeds."
   },
   "ai_description": {
     "ru": "Вибратор в игре — соло или вместе. Он управляет её удовольствием, она использует на себе для него, или просто добавление в секс.",
@@ -24,230 +35,6 @@
     "orgasm",
     "pleasure"
   ],
-  "elements": [
-    {
-      "id": "who_uses",
-      "label": {
-        "ru": "Кто использует",
-        "en": "Who uses"
-      },
-      "tag_ref": "vibe_who",
-      "follow_ups": [
-        {
-          "id": "user",
-          "type": "single_select",
-          "question": {
-            "ru": "Кто использует?",
-            "en": "Who uses it?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "on_her",
-                "label": {
-                  "ru": "На ней",
-                  "en": "On her"
-                }
-              },
-              {
-                "id": "on_him",
-                "label": {
-                  "ru": "На нём",
-                  "en": "On him"
-                }
-              },
-              {
-                "id": "self",
-                "label": {
-                  "ru": "На себе",
-                  "en": "On self"
-                }
-              },
-              {
-                "id": "both",
-                "label": {
-                  "ru": "На обоих",
-                  "en": "On both"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who_controls",
-      "label": {
-        "ru": "Кто контролирует",
-        "en": "Who controls"
-      },
-      "tag_ref": "vibe_control",
-      "follow_ups": [
-        {
-          "id": "control",
-          "type": "single_select",
-          "question": {
-            "ru": "Кто управляет?",
-            "en": "Who controls?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "self",
-                "label": {
-                  "ru": "Сам/а",
-                  "en": "Self"
-                }
-              },
-              {
-                "id": "partner",
-                "label": {
-                  "ru": "Партнёр",
-                  "en": "Partner"
-                }
-              },
-              {
-                "id": "remote",
-                "label": {
-                  "ru": "Дистанционно",
-                  "en": "Remote"
-                }
-              },
-              {
-                "id": "app",
-                "label": {
-                  "ru": "Через приложение",
-                  "en": "Through app"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "when",
-      "label": {
-        "ru": "Когда",
-        "en": "When"
-      },
-      "tag_ref": "vibe_when",
-      "follow_ups": [
-        {
-          "id": "timing",
-          "type": "multi_select",
-          "question": {
-            "ru": "Когда использовать?",
-            "en": "When to use?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "foreplay",
-                "label": {
-                  "ru": "Прелюдия",
-                  "en": "Foreplay"
-                }
-              },
-              {
-                "id": "during",
-                "label": {
-                  "ru": "Во время секса",
-                  "en": "During sex"
-                }
-              },
-              {
-                "id": "finish",
-                "label": {
-                  "ru": "Для финиша",
-                  "en": "To finish"
-                }
-              },
-              {
-                "id": "public",
-                "label": {
-                  "ru": "Публично (под одеждой)",
-                  "en": "Publicly (under clothes)"
-                }
-              },
-              {
-                "id": "teasing",
-                "label": {
-                  "ru": "Для дразнения",
-                  "en": "For teasing"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "vibe_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "intensity",
-                "label": {
-                  "ru": "Интенсивность ощущений",
-                  "en": "Sensation intensity"
-                }
-              },
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Контроль над оргазмом",
-                  "en": "Orgasm control"
-                }
-              },
-              {
-                "id": "addition",
-                "label": {
-                  "ru": "Добавление к сексу",
-                  "en": "Addition to sex"
-                }
-              },
-              {
-                "id": "hands_free",
-                "label": {
-                  "ru": "Руки свободны",
-                  "en": "Hands-free"
-                }
-              },
-              {
-                "id": "showing",
-                "label": {
-                  "ru": "Показывать партнёру",
-                  "en": "Showing partner"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в использовании вибратора?",
-      "en": "What appeals about vibrator play?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "vibrator",
@@ -260,8 +47,11 @@
       "stimulation"
     ]
   },
-  "user_description": {
-    "ru": "Она или он использует вибратор на клиторе или вводит внутрь влагалища",
-    "en": "She or he uses vibrator on clitoris or inserts it into vagina"
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Вибратор?",
+      "en": "Vibrator?"
+    }
   }
 }

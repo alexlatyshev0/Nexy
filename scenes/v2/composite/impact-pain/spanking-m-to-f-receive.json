@@ -1,0 +1,59 @@
+{
+  "id": "spanking-m-to-f-receive",
+  "slug": "spanking-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "spanking-he-spanks-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Шлепки",
+    "en": "Spanking"
+  },
+  "subtitle": {
+    "ru": "Он шлёпает тебя",
+    "en": "He spanks you"
+  },
+  "user_description": {
+    "ru": "Ты лежишь у него на коленях, он шлёпает тебя по заднице.",
+    "en": "You lie across his lap, he spanks your ass."
+  },
+  "ai_description": {
+    "ru": "Она перекинута через его колени, попа поднята. Его ладонь опускается — шлёп! Её кожа розовеет, она вздрагивает, но не просит остановиться.",
+    "en": "She's bent over his lap, ass raised. His palm comes down — smack! Her skin pinkens, she gasps, but doesn't ask to stop."
+  },
+  "image_prompt": "woman lying across man's lap, his hand raised to spank her bare bottom, her skin slightly pink, he clothed sitting on couch, living room setting",
+  "intensity": 3,
+  "category": "impact-pain",
+  "tags": [
+    "spanking",
+    "impact",
+    "discipline",
+    "otk",
+    "submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "spanking",
+      "impact_play",
+      "submission"
+    ],
+    "tests_secondary": [
+      "pain_pleasure",
+      "discipline",
+      "punishment"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда он шлёпает тебя?",
+      "en": "What appeals when he spanks you?"
+    }
+      }
+}

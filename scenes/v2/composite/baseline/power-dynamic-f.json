@@ -1,0 +1,58 @@
+{
+  "id": "power-dynamic-f",
+  "slug": "power-dynamic-f",
+  "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "power-dynamic-m",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Динамика власти",
+    "en": "Power Dynamic"
+  },
+  "subtitle": {
+    "ru": "Подчиняться ему?",
+    "en": "Submit to him?"
+  },
+  "user_description": {
+    "ru": "Тебе нравится подчиняться, выполнять его команды, отдаваться его контролю?",
+    "en": "Do you like submitting, following his commands, surrendering to his control?"
+  },
+  "ai_description": {
+    "ru": "Кто главный в постели? Он доминирует, ты подчиняешься — или наоборот? Или зависит от настроения?",
+    "en": "Who's in charge in bed? He dominates, you submit — or vice versa? Or depends on mood?"
+  },
+  "image_prompt": "man and woman in bed, one positioned above the other showing dominance, intense eye contact, bedroom with soft shadows",
+  "intensity": 1,
+  "category": "baseline",
+  "tags": [
+    "baseline",
+    "power_dynamic",
+    "submissive"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "power_dynamic",
+      "submissive"
+    ],
+    "gates": {
+      "submissive": [
+        "bondage_receiving",
+        "service_scenes"
+      ],
+      "switch": [
+        "all_power_scenes"
+      ]
+    }
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Подчиняться ему в постели?",
+      "en": "Submit to him in bed?"
+    }
+  },
+  "priority": 1,
+  "sets_gate": "power_dynamic"
+}

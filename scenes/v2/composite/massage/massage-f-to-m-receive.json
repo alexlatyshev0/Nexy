@@ -1,0 +1,57 @@
+{
+  "id": "massage-f-to-m-receive",
+  "slug": "massage-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "massage-she-massages-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Массаж",
+    "en": "Massage"
+  },
+  "subtitle": {
+    "ru": "Она массирует тебя",
+    "en": "She massages you"
+  },
+  "user_description": {
+    "ru": "Она массирует твоё тело маслом. Руки скользят всё ниже, к члену.",
+    "en": "She massages your body with oil. Hands slide lower, to your cock."
+  },
+  "ai_description": {
+    "ru": "Он лежит, она над ним. Руки скользят по его телу, снимают напряжение. Массаж переходит ниже, к его члену — happy ending.",
+    "en": "He lies down, she above him. Hands glide over his body, releasing tension. Massage moves lower, to his cock — happy ending."
+  },
+  "image_prompt": "woman massaging naked man lying on massage table, her hands on his back with oil, she wearing casual clothes, spa room setting",
+  "intensity": 1,
+  "category": "massage",
+  "tags": [
+    "massage",
+    "happy_ending",
+    "sensual",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "massage",
+      "happy_ending",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "handjob",
+      "relaxation"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Массаж — она массирует тебя?",
+      "en": "Massage — she massages you?"
+    }
+  }
+}

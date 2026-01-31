@@ -1,0 +1,49 @@
+{
+  "id": "sex-swing",
+  "slug": "sex-swing",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "toys",
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Секс-качели",
+    "en": "Sex Swing"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Подвесные качели для секса. Новые позы и невесомость.",
+    "en": "Suspended sex swing. New positions and weightlessness."
+  },
+  "ai_description": {
+    "ru": "Подвесные качели для секса. Новые позы и невесомость.",
+    "en": "Suspended sex swing. New positions and weightlessness."
+  },
+  "image_prompt": "sex swing hanging from ceiling, bedroom or dungeon setting",
+  "intensity": 3,
+  "category": "furniture",
+  "tags": [
+    "furniture",
+    "swing",
+    "positions",
+    "advanced"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "furniture",
+      "swing"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

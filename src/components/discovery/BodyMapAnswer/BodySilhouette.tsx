@@ -28,7 +28,7 @@ interface BodySilhouetteProps {
 
 const BODY_IMAGES: Record<`${BodyGender}-${BodyView}`, string> = {
   'male-front': '/images/dolls/man_front.jpg',
-  'male-back': '/images/dolls/man_back2.jpg',
+  'male-back': '/images/dolls/man_back.jpg',
   'female-front': '/images/dolls/woman_front.jpeg',
   'female-back': '/images/dolls/woman_back.jpeg',
 };
@@ -72,6 +72,13 @@ export function BodySilhouette({
 
       const pos = getPositionFromEvent(e.clientX, e.clientY);
       if (pos) {
+        console.log('[BodySilhouette] Click:', {
+          clientX: e.clientX,
+          clientY: e.clientY,
+          calculatedPos: pos,
+          selectedColor,
+          imageRect: imageRef.current?.getBoundingClientRect(),
+        });
         onAddMarker(pos.x, pos.y);
       }
     },

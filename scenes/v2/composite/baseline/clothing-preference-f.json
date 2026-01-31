@@ -1,0 +1,56 @@
+{
+  "id": "clothing-preference-f",
+  "slug": "clothing-preference-f",
+  "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "clothing-preference-m",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Одежда в сексе",
+    "en": "Clothing in Sex"
+  },
+  "subtitle": {
+    "ru": "Надеваешь что-то для него?",
+    "en": "Wear something for him?"
+  },
+  "user_description": {
+    "ru": "Надевать красивое бельё, чулки, каблуки для него во время секса.",
+    "en": "Wearing beautiful lingerie, stockings, heels for him during sex."
+  },
+  "ai_description": {
+    "ru": "Полностью голая или что-то на себе? Бельё, каблуки, латекс, униформа.",
+    "en": "Completely naked or wearing something? Lingerie, heels, latex, uniforms."
+  },
+  "image_prompt": "man and woman on bed, woman wearing black lingerie and stockings, man shirtless, bedroom setting",
+  "intensity": 1,
+  "category": "baseline",
+  "tags": [
+    "baseline",
+    "clothing",
+    "lingerie"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "clothing",
+      "lingerie"
+    ],
+    "gates": {
+      "naked": [
+        "skip_clothing_scenes"
+      ],
+      "fetish": [
+        "all_clothing_scenes"
+      ]
+    }
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Надевать одежду для секса?",
+      "en": "Wear clothing for sex?"
+    }
+  },
+  "priority": 12
+}

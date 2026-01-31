@@ -1,0 +1,59 @@
+{
+  "id": "female-striptease-watch",
+  "slug": "female-striptease-watch",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "exhibitionism"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "female-striptease",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Женский стриптиз",
+    "en": "Female Striptease"
+  },
+  "subtitle": {
+    "ru": "Она раздевается для тебя",
+    "en": "She undresses for you"
+  },
+  "user_description": {
+    "ru": "Она медленно раздевается перед тобой, танцует, снимает одежду по одной вещи.",
+    "en": "She slowly undresses for you, dances, removes clothes one piece at a time."
+  },
+  "ai_description": {
+    "ru": "Стриптиз для партнёра — медленное раздевание, танец, показ тела. Приватное шоу.",
+    "en": "Striptease for partner — slow undressing, dance, showing body. Private show."
+  },
+  "image_prompt": "woman removing bra slowly while standing, man sitting in chair watching her, bedroom with lamp light, her back partly to him",
+  "intensity": 2,
+  "category": "exhibitionism",
+  "tags": [
+    "exhibitionism",
+    "striptease",
+    "undressing",
+    "dance",
+    "watching"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "striptease",
+      "undressing",
+      "watching"
+    ],
+    "tests_secondary": [
+      "exhibitionism",
+      "tease",
+      "anticipation"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда она раздевается для тебя?",
+      "en": "What appeals when she undresses for you?"
+    }
+      }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "face-slapping-m-to-f-receive",
+  "slug": "face-slapping-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough",
+    "dirty_talk"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "face-slapping-he-slaps-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Пощёчины",
+    "en": "Face Slapping"
+  },
+  "subtitle": {
+    "ru": "Он даёт тебе пощёчину",
+    "en": "He slaps you"
+  },
+  "user_description": {
+    "ru": "Он бьёт тебя по лицу рукой во время секса.",
+    "en": "He slaps your face with his hand during sex."
+  },
+  "ai_description": {
+    "ru": "Его рука касается её щеки — резко, властно. Не больно, но властно. Или больно — как она хочет. Доминирование в чистом виде.",
+    "en": "His hand meets her cheek — sharp, commanding. Not painful, but dominant. Or painful — as she wants. Pure dominance."
+  },
+  "image_prompt": "man slapping woman's face with his hand, her head turning from impact, intimate bedroom setting",
+  "intensity": 4,
+  "category": "impact-pain",
+  "tags": [
+    "face_slapping",
+    "slap",
+    "submission",
+    "impact",
+    "rough"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "face_slapping",
+      "impact",
+      "submission"
+    ],
+    "tests_secondary": [
+      "degradation",
+      "rough",
+      "shock"
+    ]
+  },
+  "question": {
+    "type": "boundary",
+    "text": {
+      "ru": "Когда он даёт тебе пощёчину — возбуждает?",
+      "en": "When he slaps you — exciting?"
+    }
+  }
+}

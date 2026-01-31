@@ -1,7 +1,15 @@
 {
-  "id": "somnophilia_f_to_m",
+  "id": "somnophilia-f-to-m",
   "slug": "somnophilia-f-to-m",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "somnophilia-f-to-m-receive",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Сомнофилия (она использует его)",
@@ -11,6 +19,10 @@
     "ru": "Она трахает его пока он спит",
     "en": "She fucks him while he sleeps"
   },
+  "user_description": {
+    "ru": "Ты занимаешься с ним сексом, пока он спит. Он просыпается от того, что ты уже на нём.",
+    "en": "You have sex with him while he sleeps. He wakes up to you already on him."
+  },
   "ai_description": {
     "ru": "Она использует спящего его. Он просыпается от того, что она уже на нём. Free use во сне.",
     "en": "She uses him while he sleeps. He wakes up to her already on him. Free use while sleeping."
@@ -18,61 +30,30 @@
   "image_prompt": "woman climbing on top of sleeping man in bed, man lying on his back under blankets, dim bedroom with moonlight through window",
   "intensity": 4,
   "category": "cnc-rough",
-  "tags": ["somnophilia", "sleep_sex", "cnc", "free_use", "f_dom"],
-  "elements": [
-    {
-      "id": "scenario",
-      "label": { "ru": "Сценарий", "en": "Scenario" },
-      "tag_ref": "somno_scenario",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": { "ru": "Какой сценарий?", "en": "What scenario?" },
-          "config": {
-            "options": [
-              { "id": "wake_to_oral", "label": { "ru": "Он просыпается от минета", "en": "He wakes to blowjob" } },
-              { "id": "wake_to_sex", "label": { "ru": "Он просыпается — она уже на нём", "en": "He wakes to her on him" } },
-              { "id": "stay_asleep", "label": { "ru": "Он не просыпается", "en": "He stays asleep" } },
-              { "id": "middle_of_night", "label": { "ru": "Посреди ночи", "en": "Middle of night" } },
-              { "id": "morning", "label": { "ru": "Утром, он ещё сонный", "en": "Morning, he's still sleepy" } }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": { "ru": "Что привлекает", "en": "What appeals" },
-      "tag_ref": "somno_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": { "ru": "Что возбуждает?", "en": "What excites?" },
-          "config": {
-            "options": [
-              { "id": "his_vulnerability", "label": { "ru": "Его уязвимость", "en": "His vulnerability" } },
-              { "id": "just_taking", "label": { "ru": "Просто взять его", "en": "Just taking him" } },
-              { "id": "being_taken", "label": { "ru": "Быть взятым", "en": "Being taken" } },
-              { "id": "surprise", "label": { "ru": "Неожиданность", "en": "Surprise" } },
-              { "id": "trust", "label": { "ru": "Доверие", "en": "Trust" } }
-            ]
-          }
-        }
-      ]
-    }
+  "tags": [
+    "somnophilia",
+    "sleep_sex",
+    "cnc",
+    "free_use",
+    "f_dom"
   ],
-  "question": {
-    "type": "interest_scale",
-    "text": { "ru": "Она трахает его пока он спит?", "en": "She fucks him while he sleeps?" }
-  },
   "ai_context": {
-    "tests_primary": ["somnophilia", "sleep_sex", "f_dom"],
-    "tests_secondary": ["cnc", "free_use", "vulnerability"]
+    "tests_primary": [
+      "somnophilia",
+      "sleep_sex",
+      "f_dom"
+    ],
+    "tests_secondary": [
+      "cnc",
+      "free_use",
+      "vulnerability"
+    ]
   },
-  "user_description": {
-    "ru": "Она занимается с ним сексом пока он спит. Он просыпается от того, что она уже на нём.",
-    "en": "She has sex with him while he sleeps. He wakes up to her already on him."
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Она трахает его пока он спит?",
+      "en": "She fucks him while he sleeps?"
+    }
   }
 }

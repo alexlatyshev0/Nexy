@@ -19,10 +19,7 @@ export async function generateQuestion(
 СЦЕНА:
 ${scene.ai_description?.ru || scene.ai_description?.en || ''}
 
-Участники:
-${JSON.stringify(scene.participants)}
-
-Измерения: ${scene.dimensions.join(', ')}
+Измерения: ${(scene.dimensions || []).join(', ')}
 
 ПОЛЬЗОВАТЕЛЬ:
 - Пол: ${user.gender}
@@ -83,7 +80,7 @@ ${JSON.stringify(scene.participants)}
       question: `Насколько тебе интересна эта сцена?`,
       answerType: 'scale',
       scaleLabels: { min: 'Не привлекает', max: 'Очень хочу' },
-      targetDimensions: scene.dimensions,
+      targetDimensions: scene.dimensions || [],
     };
   }
 }

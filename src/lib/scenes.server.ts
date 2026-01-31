@@ -17,10 +17,11 @@ export async function getNextScene(userId: string, maxIntensity = 5): Promise<Sc
   const seenIds = seen?.map(s => s.scene_id) || [];
   const allExcluded = [...(excludedIds || []), ...seenIds];
 
-  // Build query
+  // Build query - only active scenes
   let query = supabase
     .from('scenes')
     .select('*')
+    .eq('is_active', true)
     .lte('intensity', maxIntensity);
 
   if (allExcluded.length > 0) {
@@ -57,10 +58,11 @@ export async function getFilteredScenes(
   const seenIds = seen?.map(s => s.scene_id) || [];
   const allExcluded = [...(excludedIds || []), ...seenIds];
 
-  // Build query
+  // Build query - only active scenes
   let query = supabase
     .from('scenes')
     .select('*')
+    .eq('is_active', true)
     .lte('intensity', maxIntensity)
     .order('created_at', { ascending: false })
     .limit(limit);

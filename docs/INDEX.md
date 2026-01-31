@@ -74,9 +74,10 @@ intimate-discovery/
 ### Scene Structure
 
 Каждая сцена содержит:
-- `elements[]` — выбираемые элементы с follow-ups
-- `ai_context.gates` — правила фильтрации
-- `question` — основной вопрос (scale/multi_select/single_select)
+- `sets_gate` — какой gate открывает при YES
+- `clarification_for` — после каких сцен показывать (массив slug-ов сцен)
+- `paired_scene` — парная сцена (та же ситуация, другая перспектива)
+- `question` — тип вопроса (swipe/multi_select/scale)
 
 ---
 

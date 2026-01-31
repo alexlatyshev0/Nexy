@@ -1,8 +1,15 @@
 {
-  "id": "choking_m_to_f",
+  "id": "choking-he-chokes-her",
   "slug": "choking-he-chokes-her",
   "version": 2,
-  "paired_scene": "choking_f_to_m",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "choking-m-to-f-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Удушение",
@@ -12,13 +19,17 @@
     "ru": "Он держит её горло",
     "en": "He holds her throat"
   },
+  "user_description": {
+    "ru": "Ты кладёшь руку на её горло и слегка сжимаешь, контролируя её дыхание.",
+    "en": "You place your hand on her throat and squeeze slightly, controlling her breathing."
+  },
   "ai_description": {
     "ru": "Его рука на её горле. Не душит — контролирует. Лёгкое давление, её глаза закатываются от смеси страха и возбуждения. Полное доверие, полная власть.",
     "en": "His hand on her throat. Not choking — controlling. Light pressure, her eyes roll back from mix of fear and arousal. Complete trust, complete power."
   },
   "image_prompt": "man with hand on woman throat, woman against wall, both in underwear, intense eye contact, bedroom",
   "intensity": 4,
-  "category": "impact_pain",
+  "category": "impact-pain",
   "tags": [
     "choking",
     "breath_play",
@@ -27,386 +38,6 @@
     "power_exchange",
     "edge_play"
   ],
-  "elements": [
-    {
-      "id": "pressure",
-      "label": {
-        "ru": "Давление",
-        "en": "Pressure"
-      },
-      "tag_ref": "choking_pressure",
-      "follow_ups": [
-        {
-          "id": "pressure_level",
-          "type": "scale",
-          "question": {
-            "ru": "Сила давления?",
-            "en": "Pressure level?"
-          },
-          "config": {
-            "min_label": {
-              "ru": "Символическое (рука на горле)",
-              "en": "Symbolic (hand on throat)"
-            },
-            "max_label": {
-              "ru": "Ограничение дыхания",
-              "en": "Breath restriction"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "technique",
-      "label": {
-        "ru": "Техника",
-        "en": "Technique"
-      },
-      "tag_ref": "choking_technique",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как держать?",
-            "en": "How to hold?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "one_hand",
-                "label": {
-                  "ru": "Одной рукой спереди",
-                  "en": "One hand from front"
-                }
-              },
-              {
-                "id": "two_hands",
-                "label": {
-                  "ru": "Двумя руками",
-                  "en": "Two hands"
-                }
-              },
-              {
-                "id": "from_behind",
-                "label": {
-                  "ru": "Сзади",
-                  "en": "From behind"
-                }
-              },
-              {
-                "id": "sides",
-                "label": {
-                  "ru": "По бокам шеи (безопаснее)",
-                  "en": "Sides of neck (safer)"
-                }
-              },
-              {
-                "id": "squeeze_release",
-                "label": {
-                  "ru": "Сжимать и отпускать",
-                  "en": "Squeeze and release"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "context",
-      "label": {
-        "ru": "Когда?",
-        "en": "When?"
-      },
-      "tag_ref": "choking_context",
-      "follow_ups": [
-        {
-          "id": "when",
-          "type": "multi_select",
-          "question": {
-            "ru": "В какой момент?",
-            "en": "At what moment?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "during_sex",
-                "label": {
-                  "ru": "Во время секса",
-                  "en": "During sex"
-                }
-              },
-              {
-                "id": "during_orgasm",
-                "label": {
-                  "ru": "При оргазме",
-                  "en": "During orgasm"
-                }
-              },
-              {
-                "id": "foreplay",
-                "label": {
-                  "ru": "Прелюдия",
-                  "en": "Foreplay"
-                }
-              },
-              {
-                "id": "domination",
-                "label": {
-                  "ru": "Показать власть",
-                  "en": "Show dominance"
-                }
-              },
-              {
-                "id": "kissing",
-                "label": {
-                  "ru": "Во время поцелуя",
-                  "en": "While kissing"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "duration",
-      "label": {
-        "ru": "Длительность",
-        "en": "Duration"
-      },
-      "tag_ref": "choking_duration",
-      "follow_ups": [
-        {
-          "id": "how_long",
-          "type": "single_select",
-          "question": {
-            "ru": "Как долго?",
-            "en": "How long?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "brief",
-                "label": {
-                  "ru": "Кратко (несколько секунд)",
-                  "en": "Brief (few seconds)"
-                }
-              },
-              {
-                "id": "medium",
-                "label": {
-                  "ru": "Средне (10-15 сек)",
-                  "en": "Medium (10-15 sec)"
-                }
-              },
-              {
-                "id": "sustained",
-                "label": {
-                  "ru": "Долго с перерывами",
-                  "en": "Sustained with breaks"
-                }
-              },
-              {
-                "id": "edge",
-                "label": {
-                  "ru": "До предела",
-                  "en": "To the edge"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "choking_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Его контроль",
-                  "en": "His control"
-                }
-              },
-              {
-                "id": "vulnerability",
-                "label": {
-                  "ru": "Уязвимость",
-                  "en": "Vulnerability"
-                }
-              },
-              {
-                "id": "trust",
-                "label": {
-                  "ru": "Доверие ему",
-                  "en": "Trusting him"
-                }
-              },
-              {
-                "id": "lightheaded",
-                "label": {
-                  "ru": "Лёгкость в голове",
-                  "en": "Lightheadedness"
-                }
-              },
-              {
-                "id": "intensity",
-                "label": {
-                  "ru": "Интенсивность ощущений",
-                  "en": "Intensity of sensations"
-                }
-              },
-              {
-                "id": "danger",
-                "label": {
-                  "ru": "Элемент опасности",
-                  "en": "Element of danger"
-                }
-              },
-              {
-                "id": "orgasm_boost",
-                "label": {
-                  "ru": "Усиливает оргазм",
-                  "en": "Enhances orgasm"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "safety",
-      "label": {
-        "ru": "Безопасность",
-        "en": "Safety"
-      },
-      "tag_ref": "choking_safety",
-      "follow_ups": [
-        {
-          "id": "safety_measures",
-          "type": "multi_select",
-          "question": {
-            "ru": "Меры безопасности?",
-            "en": "Safety measures?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "tap_out",
-                "label": {
-                  "ru": "Сигнал рукой (tap out)",
-                  "en": "Tap out signal"
-                }
-              },
-              {
-                "id": "safeword",
-                "label": {
-                  "ru": "Стоп-слово",
-                  "en": "Safeword"
-                }
-              },
-              {
-                "id": "eye_check",
-                "label": {
-                  "ru": "Следить за глазами",
-                  "en": "Watch eyes"
-                }
-              },
-              {
-                "id": "sides_only",
-                "label": {
-                  "ru": "Только по бокам шеи",
-                  "en": "Sides of neck only"
-                }
-              },
-              {
-                "id": "no_full",
-                "label": {
-                  "ru": "Никогда полностью не перекрывать",
-                  "en": "Never fully block"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "eye_contact",
-      "label": {
-        "ru": "Зрительный контакт",
-        "en": "Eye contact"
-      },
-      "tag_ref": "choking_eyes",
-      "follow_ups": [
-        {
-          "id": "eyes",
-          "type": "single_select",
-          "question": {
-            "ru": "Глаза?",
-            "en": "Eyes?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "intense",
-                "label": {
-                  "ru": "Интенсивный контакт",
-                  "en": "Intense contact"
-                }
-              },
-              {
-                "id": "closed",
-                "label": {
-                  "ru": "Закрыты от удовольствия",
-                  "en": "Closed from pleasure"
-                }
-              },
-              {
-                "id": "roll_back",
-                "label": {
-                  "ru": "Закатываются",
-                  "en": "Roll back"
-                }
-              },
-              {
-                "id": "vary",
-                "label": {
-                  "ru": "По-разному",
-                  "en": "Varies"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в удушении?",
-      "en": "What appeals about choking?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "choking",
@@ -431,8 +62,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Мужчина кладёт руку на горло женщины и слегка сжимает, контролируя её дыхание",
-    "en": "Man places his hand on woman's throat and squeezes slightly, controlling her breathing"
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в удушении?",
+      "en": "What appeals about choking?"
+    }
+      }
 }

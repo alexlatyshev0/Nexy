@@ -1,0 +1,56 @@
+{
+  "id": "titfuck-give",
+  "slug": "titfuck-give",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "titfuck-receive",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Титфак",
+    "en": "Titfuck"
+  },
+  "subtitle": {
+    "ru": "Твой член между её грудей",
+    "en": "Your cock between her breasts"
+  },
+  "user_description": {
+    "ru": "Твой член между её грудей. Она сжимает их вокруг тебя, ты двигаешься между ними.",
+    "en": "Your cock between her breasts. She presses them around you, you move between them."
+  },
+  "ai_description": {
+    "ru": "Она сжимает грудь вокруг его члена. Он двигается между ними, смотрит на неё сверху. Визуальное удовольствие, другие ощущения.",
+    "en": "She presses her breasts around his cock. He moves between them, looks down at her. Visual pleasure, different sensation."
+  },
+  "image_prompt": "woman lying on back pressing breasts together, man kneeling over her, his penis between her breasts, bedroom",
+  "intensity": 3,
+  "category": "manual",
+  "tags": [
+    "titfuck",
+    "breasts",
+    "visual"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "titfuck",
+      "breast_sex",
+      "visual"
+    ],
+    "tests_secondary": [
+      "breasts",
+      "variety"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что нравится в титфаке?",
+      "en": "What do you like about titfuck?"
+    }
+      }
+}

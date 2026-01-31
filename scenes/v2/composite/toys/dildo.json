@@ -1,7 +1,14 @@
 {
-  "id": "dildo",
+  "id": "dildo-play",
   "slug": "dildo-play",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "toys"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Фаллоимитатор",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Проникновение без партнёра или с ним",
     "en": "Penetration alone or together"
+  },
+  "user_description": {
+    "ru": "Фаллоимитатор. Вагинально, анально, с партнёром.",
+    "en": "Dildo play. Vaginal, anal, with partner."
   },
   "ai_description": {
     "ru": "Дилдо для проникновения — вагинально, анально (на неё или на него), соло или с партнёром. Разные размеры и формы.",
@@ -24,166 +35,6 @@
     "penetration",
     "pleasure"
   ],
-  "elements": [
-    {
-      "id": "on_whom",
-      "label": {
-        "ru": "На кого",
-        "en": "On whom"
-      },
-      "tag_ref": "dildo_target",
-      "follow_ups": [
-        {
-          "id": "target",
-          "type": "multi_select",
-          "question": {
-            "ru": "На кого?",
-            "en": "On whom?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "on_her_vaginal",
-                "label": {
-                  "ru": "На неё (вагинально)",
-                  "en": "On her (vaginal)"
-                }
-              },
-              {
-                "id": "on_her_anal",
-                "label": {
-                  "ru": "На неё (анально)",
-                  "en": "On her (anal)"
-                }
-              },
-              {
-                "id": "on_him_anal",
-                "label": {
-                  "ru": "На него (анально)",
-                  "en": "On him (anal)"
-                }
-              },
-              {
-                "id": "double_her",
-                "label": {
-                  "ru": "Двойное проникновение (она)",
-                  "en": "Double penetration (her)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who_uses",
-      "label": {
-        "ru": "Кто использует",
-        "en": "Who uses"
-      },
-      "tag_ref": "dildo_user",
-      "follow_ups": [
-        {
-          "id": "user",
-          "type": "multi_select",
-          "question": {
-            "ru": "Кто использует?",
-            "en": "Who uses it?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "solo",
-                "label": {
-                  "ru": "На себе (соло)",
-                  "en": "On self (solo)"
-                }
-              },
-              {
-                "id": "partner_uses",
-                "label": {
-                  "ru": "Партнёр использует на мне",
-                  "en": "Partner uses on me"
-                }
-              },
-              {
-                "id": "i_use",
-                "label": {
-                  "ru": "Я использую на партнёре",
-                  "en": "I use on partner"
-                }
-              },
-              {
-                "id": "during_sex",
-                "label": {
-                  "ru": "Во время секса с партнёром",
-                  "en": "During sex with partner"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "preferences",
-      "label": {
-        "ru": "Предпочтения",
-        "en": "Preferences"
-      },
-      "tag_ref": "dildo_prefs",
-      "follow_ups": [
-        {
-          "id": "size",
-          "type": "single_select",
-          "question": {
-            "ru": "Размер?",
-            "en": "Size?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "small",
-                "label": {
-                  "ru": "Небольшой",
-                  "en": "Small"
-                }
-              },
-              {
-                "id": "average",
-                "label": {
-                  "ru": "Средний",
-                  "en": "Average"
-                }
-              },
-              {
-                "id": "large",
-                "label": {
-                  "ru": "Большой",
-                  "en": "Large"
-                }
-              },
-              {
-                "id": "varies",
-                "label": {
-                  "ru": "Зависит от настроения",
-                  "en": "Depends on mood"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Как тебе нравится использовать фаллоимитатор?",
-      "en": "How do you like to use a dildo?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "dildo",
@@ -196,8 +47,11 @@
       "partner_play"
     ]
   },
-  "user_description": {
-    "ru": "Партнёр вводит фаллоимитатор вагинально или анально. Или соло-игра.",
-    "en": "Partner inserts dildo vaginally or anally. Or solo play."
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Фаллоимитатор?",
+      "en": "Dildo?"
+    }
   }
 }

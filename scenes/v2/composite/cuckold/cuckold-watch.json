@@ -1,0 +1,58 @@
+{
+  "id": "cuckold-watch",
+  "slug": "cuckold-watch",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "group",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "cuckold-play",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Cuckold",
+    "en": "Cuckold"
+  },
+  "subtitle": {
+    "ru": "Ты смотришь",
+    "en": "You watch"
+  },
+  "user_description": {
+    "ru": "Ты смотришь как она занимается сексом с другим мужчиной. Возбуждение от ревности и унижения.",
+    "en": "You watch her have sex with another man. Arousal from jealousy and humiliation."
+  },
+  "ai_description": {
+    "ru": "Она с другим мужчиной, он смотрит. Смесь возбуждения, ревности, унижения. Сложная динамика, глубокие эмоции.",
+    "en": "She's with another man, he watches. Mix of arousal, jealousy, humiliation. Complex dynamic, deep emotions."
+  },
+  "image_prompt": "woman having sex with man on bed while second man sits in chair watching, bedroom",
+  "intensity": 5,
+  "category": "cuckold",
+  "tags": [
+    "cuckold",
+    "watching",
+    "humiliation",
+    "voyeurism"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "cuckold",
+      "watching",
+      "humiliation"
+    ],
+    "tests_secondary": [
+      "voyeurism",
+      "jealousy"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в куколдинге?",
+      "en": "What appeals about cuckolding?"
+    }
+      }
+}

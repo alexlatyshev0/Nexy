@@ -1,0 +1,57 @@
+{
+  "id": "fisting-vaginal-m-to-f-receive",
+  "slug": "fisting-vaginal-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "toys"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "fisting-vaginal-m-to-f",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Вагинальный фистинг",
+    "en": "Vaginal Fisting"
+  },
+  "subtitle": {
+    "ru": "Его рука внутри тебя",
+    "en": "His hand inside you"
+  },
+  "user_description": {
+    "ru": "Он вводит руку в твоё влагалище.",
+    "en": "He inserts his hand into your vagina."
+  },
+  "ai_description": {
+    "ru": "М вводит руку во влагалище Ж. Вагинальный фистинг.",
+    "en": "M inserts hand into F's vagina. Vaginal fisting."
+  },
+  "image_prompt": "man's hand entering woman's vagina, abundant lubricant visible, intimate bedroom setting",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": [
+    "fisting",
+    "vaginal",
+    "penetration",
+    "stretch",
+    "submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "fisting",
+      "vaginal_fisting"
+    ],
+    "tests_secondary": [
+      "stretch",
+      "submission"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Вагинальный фистинг — его рука в тебе?",
+      "en": "Vaginal fisting — his hand inside you?"
+    }
+  }
+}

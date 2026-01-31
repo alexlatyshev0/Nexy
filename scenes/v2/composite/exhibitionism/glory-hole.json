@@ -1,0 +1,60 @@
+{
+  "id": "glory-hole-blowjob",
+  "slug": "glory-hole-blowjob",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "exhibitionism",
+    "oral",
+    "public"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Glory Hole",
+    "en": "Glory Hole"
+  },
+  "subtitle": {
+    "ru": "Анонимный оральный секс",
+    "en": "Anonymous oral sex"
+  },
+  "user_description": {
+    "ru": "Анонимный минет через отверстие в стене.",
+    "en": "Anonymous blowjob through a hole in the wall."
+  },
+  "ai_description": {
+    "ru": "Оральный секс через отверстие в стене, когда партнёры не видят друг друга. Анонимность и возбуждение от неизвестности.",
+    "en": "Oral sex through a hole in the wall when partners can't see each other. Anonymity and excitement from the unknown."
+  },
+  "image_prompt": "artistic silhouette through partition wall, anonymous intimate moment, dim lighting",
+  "intensity": 4,
+  "category": "exhibitionism",
+  "tags": [
+    "glory_hole",
+    "anonymous",
+    "oral",
+    "exhibitionism",
+    "taboo"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "glory_hole",
+      "anonymous",
+      "oral"
+    ],
+    "tests_secondary": [
+      "exhibitionism",
+      "taboo",
+      "stranger"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в glory hole?",
+      "en": "What appeals about glory hole?"
+    }
+      }
+}

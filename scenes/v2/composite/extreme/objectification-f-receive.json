@@ -1,0 +1,56 @@
+{
+  "id": "objectification-f-receive",
+  "slug": "objectification-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "objectification-f",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Объективация (ты — объект)",
+    "en": "Objectification (You're the Object)"
+  },
+  "subtitle": {
+    "ru": "Ты становишься вещью",
+    "en": "You become a thing"
+  },
+  "user_description": {
+    "ru": "Он использует тебя как объект — мебель или игрушку. Ставит на тебя стакан, использует как подставку или сидение.",
+    "en": "He uses you as an object — furniture or toy. Places a glass on you, uses you as a stand or seat."
+  },
+  "ai_description": {
+    "ru": "Она становится мебелью, игрушкой, объектом для использования. Дегуманизация как форма глубокого подчинения.",
+    "en": "She becomes furniture, toy, object to be used. Dehumanization as deep submission."
+  },
+  "image_prompt": "woman on all fours with man placing glass on her back, using her as human table, bedroom setting, minimal clothing",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": [
+    "objectification",
+    "furniture",
+    "dehumanization",
+    "submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "objectification",
+      "submission"
+    ],
+    "tests_secondary": [
+      "furniture_play",
+      "dehumanization"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Ты как объект — мебель, игрушка?",
+      "en": "You as object — furniture, toy?"
+    }
+  }
+}

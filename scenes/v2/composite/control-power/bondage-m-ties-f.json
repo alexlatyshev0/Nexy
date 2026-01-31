@@ -1,8 +1,16 @@
 {
-  "id": "bondage_m_ties_f",
+  "id": "bondage-he-ties-her",
   "slug": "bondage-he-ties-her",
   "version": 2,
-  "paired_scene": "bondage_f_ties_m",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic",
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "bondage-he-ties-her-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Бондаж",
@@ -12,500 +20,25 @@
     "ru": "Он связывает её",
     "en": "He ties her"
   },
+  "user_description": {
+    "ru": "Ты связываешь её руки — над головой или к кровати.",
+    "en": "You tie her hands — above her head or to bed."
+  },
   "ai_description": {
     "ru": "Её руки связаны над головой, она не может двигаться. Он обходит её, любуясь своей работой. Полная беспомощность, полное доверие.",
     "en": "Her hands bound above her head, she cannot move. He circles her, admiring his work. Complete helplessness, complete trust."
   },
   "image_prompt": "man tying woman's wrists above her head with rope, woman nude standing against wall, man shirtless behind her, bedroom",
   "intensity": 3,
-  "category": "control_power",
+  "category": "control-power",
   "tags": [
     "bondage",
     "rope",
-    "restraints",
+    "restraint",
     "tied",
     "helpless",
     "submission"
   ],
-  "elements": [
-    {
-      "id": "material",
-      "label": {
-        "ru": "Чем связывать?",
-        "en": "What to tie with?"
-      },
-      "tag_ref": "bondage_material",
-      "follow_ups": [
-        {
-          "id": "materials",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой материал?",
-            "en": "What material?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "silk_rope",
-                "label": {
-                  "ru": "Шёлковые верёвки",
-                  "en": "Silk ropes"
-                }
-              },
-              {
-                "id": "jute",
-                "label": {
-                  "ru": "Джут (шибари)",
-                  "en": "Jute (shibari)"
-                }
-              },
-              {
-                "id": "handcuffs",
-                "label": {
-                  "ru": "Наручники",
-                  "en": "Handcuffs"
-                }
-              },
-              {
-                "id": "leather",
-                "label": {
-                  "ru": "Кожаные ремни",
-                  "en": "Leather straps"
-                }
-              },
-              {
-                "id": "tape",
-                "label": {
-                  "ru": "Скотч",
-                  "en": "Tape"
-                }
-              },
-              {
-                "id": "scarves",
-                "label": {
-                  "ru": "Шарфы/галстуки",
-                  "en": "Scarves/ties"
-                }
-              },
-              {
-                "id": "spreader_bar",
-                "label": {
-                  "ru": "Распорка",
-                  "en": "Spreader bar"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "body_parts",
-      "label": {
-        "ru": "Что связывать?",
-        "en": "What to tie?"
-      },
-      "tag_ref": "bondage_parts",
-      "follow_ups": [
-        {
-          "id": "parts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие части тела?",
-            "en": "What body parts?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "wrists",
-                "label": {
-                  "ru": "Запястья",
-                  "en": "Wrists"
-                }
-              },
-              {
-                "id": "ankles",
-                "label": {
-                  "ru": "Лодыжки",
-                  "en": "Ankles"
-                }
-              },
-              {
-                "id": "wrists_ankles",
-                "label": {
-                  "ru": "Руки к ногам",
-                  "en": "Wrists to ankles"
-                }
-              },
-              {
-                "id": "spread_eagle",
-                "label": {
-                  "ru": "Растянута (spread eagle)",
-                  "en": "Spread eagle"
-                }
-              },
-              {
-                "id": "hogtie",
-                "label": {
-                  "ru": "Hogtie",
-                  "en": "Hogtie"
-                }
-              },
-              {
-                "id": "breasts",
-                "label": {
-                  "ru": "Обвязка груди",
-                  "en": "Breast bondage"
-                }
-              },
-              {
-                "id": "full_body",
-                "label": {
-                  "ru": "Всё тело (шибари)",
-                  "en": "Full body (shibari)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "position",
-      "label": {
-        "ru": "Позиция",
-        "en": "Position"
-      },
-      "tag_ref": "bondage_position",
-      "follow_ups": [
-        {
-          "id": "positions",
-          "type": "multi_select",
-          "question": {
-            "ru": "В какой позе?",
-            "en": "What position?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "standing",
-                "label": {
-                  "ru": "Стоя, руки вверх",
-                  "en": "Standing, arms up"
-                }
-              },
-              {
-                "id": "bed",
-                "label": {
-                  "ru": "К кровати",
-                  "en": "To bed"
-                }
-              },
-              {
-                "id": "chair",
-                "label": {
-                  "ru": "К стулу",
-                  "en": "To chair"
-                }
-              },
-              {
-                "id": "kneeling",
-                "label": {
-                  "ru": "На коленях",
-                  "en": "Kneeling"
-                }
-              },
-              {
-                "id": "bent_over",
-                "label": {
-                  "ru": "Наклонённая",
-                  "en": "Bent over"
-                }
-              },
-              {
-                "id": "suspended",
-                "label": {
-                  "ru": "Подвешена",
-                  "en": "Suspended"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "tightness",
-      "label": {
-        "ru": "Насколько туго?",
-        "en": "How tight?"
-      },
-      "tag_ref": "bondage_tightness",
-      "follow_ups": [
-        {
-          "id": "tight_level",
-          "type": "scale",
-          "question": {
-            "ru": "Туго?",
-            "en": "Tight?"
-          },
-          "config": {
-            "min_label": {
-              "ru": "Свободно (можно вырваться)",
-              "en": "Loose (can escape)"
-            },
-            "max_label": {
-              "ru": "Туго (не пошевелиться)",
-              "en": "Tight (cannot move)"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "duration",
-      "label": {
-        "ru": "Как долго?",
-        "en": "How long?"
-      },
-      "tag_ref": "bondage_duration",
-      "follow_ups": [
-        {
-          "id": "how_long",
-          "type": "single_select",
-          "question": {
-            "ru": "Продолжительность?",
-            "en": "Duration?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "short",
-                "label": {
-                  "ru": "Кратко (во время секса)",
-                  "en": "Short (during sex)"
-                }
-              },
-              {
-                "id": "medium",
-                "label": {
-                  "ru": "Средне (час)",
-                  "en": "Medium (hour)"
-                }
-              },
-              {
-                "id": "extended",
-                "label": {
-                  "ru": "Долго (несколько часов)",
-                  "en": "Extended (several hours)"
-                }
-              },
-              {
-                "id": "overnight",
-                "label": {
-                  "ru": "На ночь",
-                  "en": "Overnight"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "blindfold_combo",
-      "label": {
-        "ru": "С повязкой?",
-        "en": "With blindfold?"
-      },
-      "tag_ref": "bondage_blindfold",
-      "follow_ups": [
-        {
-          "id": "blindfold",
-          "type": "single_select",
-          "question": {
-            "ru": "Добавить повязку на глаза?",
-            "en": "Add blindfold?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "yes",
-                "label": {
-                  "ru": "Да, обязательно",
-                  "en": "Yes, essential"
-                }
-              },
-              {
-                "id": "sometimes",
-                "label": {
-                  "ru": "Иногда",
-                  "en": "Sometimes"
-                }
-              },
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Нет, хочу видеть",
-                  "en": "No, want to see"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "bondage_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "helplessness",
-                "label": {
-                  "ru": "Беспомощность",
-                  "en": "Helplessness"
-                }
-              },
-              {
-                "id": "trust",
-                "label": {
-                  "ru": "Доверие ему",
-                  "en": "Trusting him"
-                }
-              },
-              {
-                "id": "anticipation",
-                "label": {
-                  "ru": "Ожидание (не знаю что будет)",
-                  "en": "Anticipation"
-                }
-              },
-              {
-                "id": "aesthetic",
-                "label": {
-                  "ru": "Красота верёвок",
-                  "en": "Rope aesthetics"
-                }
-              },
-              {
-                "id": "struggle",
-                "label": {
-                  "ru": "Попытки вырваться",
-                  "en": "Struggle"
-                }
-              },
-              {
-                "id": "playful_resistance",
-                "label": {
-                  "ru": "Игривое сопротивление",
-                  "en": "Playful resistance"
-                }
-              },
-              {
-                "id": "giving_up",
-                "label": {
-                  "ru": "Отдаться полностью",
-                  "en": "Complete surrender"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_happens",
-      "label": {
-        "ru": "Что дальше?",
-        "en": "What next?"
-      },
-      "tag_ref": "bondage_activity",
-      "follow_ups": [
-        {
-          "id": "activities",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что делать пока связана?",
-            "en": "What while tied?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "sex",
-                "label": {
-                  "ru": "Секс",
-                  "en": "Sex"
-                }
-              },
-              {
-                "id": "oral",
-                "label": {
-                  "ru": "Оральный секс",
-                  "en": "Oral sex"
-                }
-              },
-              {
-                "id": "tease",
-                "label": {
-                  "ru": "Дразнить",
-                  "en": "Tease"
-                }
-              },
-              {
-                "id": "toy",
-                "label": {
-                  "ru": "Игрушки",
-                  "en": "Toys"
-                }
-              },
-              {
-                "id": "impact",
-                "label": {
-                  "ru": "Шлепки/порка",
-                  "en": "Spanking"
-                }
-              },
-              {
-                "id": "sensory",
-                "label": {
-                  "ru": "Сенсорная игра",
-                  "en": "Sensory play"
-                }
-              },
-              {
-                "id": "display",
-                "label": {
-                  "ru": "Просто смотреть",
-                  "en": "Just display"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в бондаже?",
-      "en": "What appeals about bondage?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "bondage",
@@ -530,8 +63,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Он связывает её руки — над головой или к кровати.",
-    "en": "He ties her hands — above head or to bed."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в бондаже?",
+      "en": "What appeals about bondage?"
+    }
+      }
 }

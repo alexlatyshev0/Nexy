@@ -40,7 +40,14 @@ export async function updateTagPreferences(
     const specificPreferences: Record<string, unknown> = {};
     let experienceLevel: 'tried' | 'want_to_try' | 'not_interested' | 'curious' | null = null;
 
-    // Process follow-up responses for this element
+    // Auto-detect role from scene slug (-give / -receive suffix)
+    if (sceneSlug.endsWith('-give')) {
+      rolePreference = 'give';
+    } else if (sceneSlug.endsWith('-receive')) {
+      rolePreference = 'receive';
+    }
+
+    // Process follow-up responses for this element (can override auto-detected role)
     const elementResponse = elementResponses[elementId];
     if (elementResponse) {
       for (const [followUpId, followUpAnswer] of Object.entries(elementResponse)) {
@@ -114,6 +121,144 @@ export async function updateTagPreferences(
         intensity_preference: intensityPreference || existing?.intensity_preference || null,
         specific_preferences: mergedSpecificPreferences,
         experience_level: experienceLevel || existing?.experience_level || null,
+        source_scenes: sourceScenes,
+        updated_at: new Date().toISOString(),
+      }, {
+        onConflict: 'user_id,tag_ref',
+      });
+  }
+}
+
+/**
+ * Mark tags as rejected (when user swipes left/says no)
+ * Sets interest_level to -1 to indicate rejection
+ */
+export async function markTagsAsRejected(
+  supabase: SupabaseClient,
+  userId: string,
+  tags: string[],
+  sceneSlug: string
+): Promise<void> {
+  if (!tags || tags.length === 0) return;
+
+  for (const tag of tags) {
+    // Only mark as rejected if not already positively rated
+    const { data: existing } = await supabase
+      .from('tag_preferences')
+      .select('interest_level')
+      .eq('user_id', userId)
+      .eq('tag_ref', tag)
+      .single();
+
+    // Skip if already has positive interest (don't override likes)
+    if (existing && existing.interest_level > 0) {
+      continue;
+    }
+
+    await supabase
+      .from('tag_preferences')
+      .upsert({
+        user_id: userId,
+        tag_ref: tag,
+        interest_level: -1, // Negative = rejected
+        source_scenes: [sceneSlug],
+        updated_at: new Date().toISOString(),
+      }, {
+        onConflict: 'user_id,tag_ref',
+      });
+  }
+}
+
+/**
+ * Update tag_preferences based on swipe response (V3 style - using scene.tags)
+ *
+ * @param supabase - Supabase client
+ * @param userId - User ID
+ * @param sceneTags - Tags from scene.tags array
+ * @param sceneSlug - Scene slug for tracking
+ * @param responseValue - Swipe value: 0=no, 1=yes, 2=very, 3=if_asked
+ * @param experienceLevel - Optional: 0=never, 1=rarely, 2=often
+ */
+export async function updateTagPreferencesFromSwipe(
+  supabase: SupabaseClient,
+  userId: string,
+  sceneTags: string[],
+  sceneSlug: string,
+  responseValue: number,
+  experienceLevel?: number | null
+): Promise<void> {
+  if (!sceneTags || sceneTags.length === 0) return;
+
+  // Map response value to interest level
+  // 0 (no) → -1 (rejected)
+  // 1 (yes) → 50 (interested)
+  // 2 (very) → 80 (very interested)
+  // 3 (if_asked) → 30 (conditionally interested)
+  const interestLevelMap: Record<number, number> = {
+    0: -1,   // rejected
+    1: 50,   // interested
+    2: 80,   // very interested
+    3: 30,   // if partner asks
+  };
+
+  const interestLevel = interestLevelMap[responseValue] ?? 0;
+
+  // Map experience level
+  // 0 = never tried, 1 = rarely, 2 = often
+  const experienceMap: Record<number, string> = {
+    0: 'want_to_try',
+    1: 'curious',
+    2: 'tried',
+  };
+
+  const experience = experienceLevel !== null && experienceLevel !== undefined
+    ? experienceMap[experienceLevel] || null
+    : null;
+
+  // Auto-detect role from scene slug
+  let rolePreference: 'give' | 'receive' | 'both' | null = null;
+  if (sceneSlug.includes('-give') || sceneSlug.includes('-m-to-f')) {
+    rolePreference = 'give';
+  } else if (sceneSlug.includes('-receive') || sceneSlug.includes('-f-to-m')) {
+    rolePreference = 'receive';
+  }
+
+  // If rejected (value = 0), use markTagsAsRejected
+  if (responseValue === 0) {
+    await markTagsAsRejected(supabase, userId, sceneTags, sceneSlug);
+    return;
+  }
+
+  // For positive responses, update each tag
+  for (const tag of sceneTags) {
+    // Skip meta tags that shouldn't be tracked
+    if (tag === 'onboarding' || tag === 'baseline') continue;
+
+    // Get existing preference
+    const { data: existing } = await supabase
+      .from('tag_preferences')
+      .select('*')
+      .eq('user_id', userId)
+      .eq('tag_ref', tag)
+      .single();
+
+    // Merge source scenes
+    const sourceScenes = existing?.source_scenes || [];
+    if (!sourceScenes.includes(sceneSlug)) {
+      sourceScenes.push(sceneSlug);
+    }
+
+    // Upsert with max interest level (don't decrease)
+    await supabase
+      .from('tag_preferences')
+      .upsert({
+        user_id: userId,
+        tag_ref: tag,
+        interest_level: existing
+          ? Math.max(existing.interest_level || 0, interestLevel)
+          : interestLevel,
+        role_preference: rolePreference || existing?.role_preference || null,
+        experience_level: experience || existing?.experience_level || null,
         source_scenes: sourceScenes,
         updated_at: new Date().toISOString(),
       }, {

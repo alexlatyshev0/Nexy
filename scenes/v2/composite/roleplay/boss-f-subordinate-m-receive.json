@@ -1,0 +1,56 @@
+{
+  "id": "boss-f-subordinate-m-receive",
+  "slug": "boss-f-subordinate-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "roleplay"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "boss-f-subordinate-m",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Босс и подчинённый",
+    "en": "Boss & Subordinate"
+  },
+  "subtitle": {
+    "ru": "Она — босс, ты — подчинённый",
+    "en": "She's the boss, you're subordinate"
+  },
+  "user_description": {
+    "ru": "Она играет босса в офисе. Ты — её подчинённый. Власть и подчинение.",
+    "en": "She plays office boss. You're her subordinate. Power and submission."
+  },
+  "ai_description": {
+    "ru": "Ж-босс, М-подчинённый. Офисный ролеплей с властью и подчинением.",
+    "en": "F-boss, M-subordinate. Office roleplay with power and submission."
+  },
+  "image_prompt": "woman in business suit sitting at executive desk, man kneeling beside her chair, corner office with city view",
+  "intensity": 3,
+  "category": "roleplay",
+  "tags": [
+    "roleplay",
+    "boss",
+    "office",
+    "submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "boss_subordinate",
+      "submission"
+    ],
+    "tests_secondary": [
+      "office",
+      "femdom"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Она — босс, ты — подчинённый?",
+      "en": "She's boss, you're subordinate?"
+    }
+  }
+}

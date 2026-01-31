@@ -1,0 +1,40 @@
+{
+  "id": "56307d7f-8558-4259-b3b6-78cb92f3e0f6",
+  "slug": "onboarding-romantic-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 7,
+  "for_gender": "male",
+  "paired_with": null,
+  "title": {
+    "ru": "Романтика",
+    "en": "Romance"
+  },
+  "subtitle": {
+    "ru": "Нежность и близость",
+    "en": "Tenderness and intimacy"
+  },
+  "ai_description": {
+    "ru": "Интерес к романтическому, нежному сексу. Гейтит: romantic-sex, emotional-sex, massage, body-worship.",
+    "en": "Interest in romantic, tender sex. Gates: romantic-sex, emotional-sex, massage, body-worship."
+  },
+  "user_description": {
+    "ru": "Свечи. Долгие поцелуи. Ты медленно раздеваешь её, целуя каждый сантиметр кожи.",
+    "en": "Candles. Long kisses. You slowly undress her, kissing every inch of skin."
+  },
+  "image_prompt": "naked man and woman kissing on bed, candles on nightstand, silk sheets, romantic bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "romantic"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "romantic"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "romantic"
+}

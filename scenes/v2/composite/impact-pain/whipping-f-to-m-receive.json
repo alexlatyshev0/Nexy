@@ -1,0 +1,61 @@
+{
+  "id": "whipping-f-to-m-receive",
+  "slug": "whipping-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "whipping-f-to-m",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Плеть и трость",
+    "en": "Whipping"
+  },
+  "subtitle": {
+    "ru": "Она бьёт тебя плетью",
+    "en": "She strikes you"
+  },
+  "user_description": {
+    "ru": "Она бьёт тебя плетью, тростью или флоггером по телу — ягодицы, спина, бёдра.",
+    "en": "She strikes you with whip, cane or flogger on your body — butt, back, thighs."
+  },
+  "ai_description": {
+    "ru": "F бьёт M плетью/тростью/флоггером. Требует навыка и доверия. Тест на femdom/masochism dynamic.",
+    "en": "F strikes M with whip/cane/flogger. Requires skill and trust. Tests femdom/masochism dynamic."
+  },
+  "image_prompt": "man bent over wooden furniture, woman standing behind holding leather flogger raised, red marks on his back and buttocks, dungeon room with stone walls",
+  "intensity": 5,
+  "category": "impact-pain",
+  "tags": [
+    "whip",
+    "cane",
+    "flogger",
+    "impact",
+    "submission",
+    "bdsm"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "whip",
+      "cane",
+      "flogger",
+      "submission"
+    ],
+    "tests_secondary": [
+      "impact",
+      "femdom",
+      "masochism"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Она бьёт тебя плетью/тростью?",
+      "en": "She strikes you with whip/cane?"
+    }
+  }
+}

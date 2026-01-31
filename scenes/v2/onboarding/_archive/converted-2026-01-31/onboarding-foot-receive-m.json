@@ -1,0 +1,40 @@
+{
+  "id": "f1575104-5251-49ad-a236-3a78e4781d3d",
+  "slug": "onboarding-foot-receive-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 16.5,
+  "for_gender": "male",
+  "paired_with": "onboarding-foot-give-f",
+  "title": {
+    "ru": "Ноги",
+    "en": "Feet"
+  },
+  "subtitle": {
+    "ru": "Тебе поклоняются",
+    "en": "They worship you"
+  },
+  "ai_description": {
+    "ru": "Интерес к получению поклонения ногам.",
+    "en": "Interest in receiving foot worship."
+  },
+  "user_description": {
+    "ru": "Она целует твои ступни. Лижет пальцы. Массирует.",
+    "en": "She kisses your feet. Licks your toes. Massages them."
+  },
+  "image_prompt": "naked woman kneeling, kissing naked man's bare foot, man sitting on chair, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "foot-receive"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "foot-receive"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "foot"
+}

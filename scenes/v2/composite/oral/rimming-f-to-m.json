@@ -1,8 +1,16 @@
 {
-  "id": "rimming_f_to_m",
+  "id": "rimming-she-to-him",
   "slug": "rimming-she-to-him",
   "version": 2,
-  "paired_scene": "rimming_m_to_f",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "oral",
+    "anal"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "rimming-f-to-m-receive",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Римминг",
@@ -11,6 +19,10 @@
   "subtitle": {
     "ru": "Она ему",
     "en": "She to him"
+  },
+  "user_description": {
+    "ru": "Ты лижешь его анус языком.",
+    "en": "You lick his anus with your tongue."
   },
   "ai_description": {
     "ru": "Её язык на его анусе. Он на четвереньках или на спине, ноги подняты. Она исследует его запретную зону. Близко к простате — невероятные ощущения.",
@@ -26,365 +38,6 @@
     "male_receiving",
     "prostate_area"
   ],
-  "elements": [
-    {
-      "id": "technique",
-      "label": {
-        "ru": "Техника",
-        "en": "Technique"
-      },
-      "tag_ref": "rimming_technique",
-      "follow_ups": [
-        {
-          "id": "techniques",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие техники?",
-            "en": "What techniques?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "circles",
-                "label": {
-                  "ru": "Круговые движения",
-                  "en": "Circular motions"
-                }
-              },
-              {
-                "id": "pointed",
-                "label": {
-                  "ru": "Острый язык",
-                  "en": "Pointed tongue"
-                }
-              },
-              {
-                "id": "flat",
-                "label": {
-                  "ru": "Плоский язык",
-                  "en": "Flat tongue"
-                }
-              },
-              {
-                "id": "penetration",
-                "label": {
-                  "ru": "Проникновение языком",
-                  "en": "Tongue penetration"
-                }
-              },
-              {
-                "id": "combo_balls",
-                "label": {
-                  "ru": "Чередовать с яичками",
-                  "en": "Alternating with balls"
-                }
-              },
-              {
-                "id": "combo_cock",
-                "label": {
-                  "ru": "С ласками члена",
-                  "en": "With cock stroking"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "position",
-      "label": {
-        "ru": "Позиция",
-        "en": "Position"
-      },
-      "tag_ref": "rimming_position_m",
-      "follow_ups": [
-        {
-          "id": "positions",
-          "type": "multi_select",
-          "question": {
-            "ru": "В какой позе?",
-            "en": "What position?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "on_back",
-                "label": {
-                  "ru": "На спине, ноги подняты",
-                  "en": "On back, legs up"
-                }
-              },
-              {
-                "id": "doggy",
-                "label": {
-                  "ru": "На четвереньках",
-                  "en": "On all fours"
-                }
-              },
-              {
-                "id": "face_down",
-                "label": {
-                  "ru": "Лёжа на животе",
-                  "en": "Lying face down"
-                }
-              },
-              {
-                "id": "standing_bent",
-                "label": {
-                  "ru": "Стоя наклонившись",
-                  "en": "Standing bent over"
-                }
-              },
-              {
-                "id": "sitting_face",
-                "label": {
-                  "ru": "Он сидит на её лице",
-                  "en": "He sits on her face"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals_him",
-      "label": {
-        "ru": "Что привлекает его?",
-        "en": "What appeals to him?"
-      },
-      "tag_ref": "rimming_male_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "sensation",
-                "label": {
-                  "ru": "Ощущения (близко к простате)",
-                  "en": "Sensations (near prostate)"
-                }
-              },
-              {
-                "id": "taboo",
-                "label": {
-                  "ru": "Табу",
-                  "en": "Taboo"
-                }
-              },
-              {
-                "id": "vulnerability",
-                "label": {
-                  "ru": "Уязвимость",
-                  "en": "Vulnerability"
-                }
-              },
-              {
-                "id": "her_worship",
-                "label": {
-                  "ru": "Она поклоняется ему полностью",
-                  "en": "She worships him completely"
-                }
-              },
-              {
-                "id": "new_experience",
-                "label": {
-                  "ru": "Новый опыт",
-                  "en": "New experience"
-                }
-              },
-              {
-                "id": "trust",
-                "label": {
-                  "ru": "Доверие",
-                  "en": "Trust"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "fingers_combo",
-      "label": {
-        "ru": "С пальцами?",
-        "en": "With fingers?"
-      },
-      "tag_ref": "rimming_combo_m",
-      "follow_ups": [
-        {
-          "id": "combo",
-          "type": "multi_select",
-          "question": {
-            "ru": "Комбинировать с чем?",
-            "en": "Combine with?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "just_tongue",
-                "label": {
-                  "ru": "Только язык",
-                  "en": "Just tongue"
-                }
-              },
-              {
-                "id": "handjob",
-                "label": {
-                  "ru": "Дрочит член",
-                  "en": "Stroking cock"
-                }
-              },
-              {
-                "id": "finger_ass",
-                "label": {
-                  "ru": "Палец в анус",
-                  "en": "Finger in ass"
-                }
-              },
-              {
-                "id": "prostate",
-                "label": {
-                  "ru": "Массаж простаты",
-                  "en": "Prostate massage"
-                }
-              },
-              {
-                "id": "balls",
-                "label": {
-                  "ru": "Ласкает яички",
-                  "en": "Fondles balls"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "his_comfort",
-      "label": {
-        "ru": "Его комфорт",
-        "en": "His comfort"
-      },
-      "tag_ref": "male_rimming_comfort",
-      "follow_ups": [
-        {
-          "id": "experience",
-          "type": "single_select",
-          "question": {
-            "ru": "Опыт с этим?",
-            "en": "Experience with this?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "love_it",
-                "label": {
-                  "ru": "Обожаю",
-                  "en": "Love it"
-                }
-              },
-              {
-                "id": "tried_liked",
-                "label": {
-                  "ru": "Пробовал, понравилось",
-                  "en": "Tried, liked it"
-                }
-              },
-              {
-                "id": "curious",
-                "label": {
-                  "ru": "Хочу попробовать",
-                  "en": "Want to try"
-                }
-              },
-              {
-                "id": "unsure",
-                "label": {
-                  "ru": "Не уверен",
-                  "en": "Unsure"
-                }
-              },
-              {
-                "id": "not_interested",
-                "label": {
-                  "ru": "Не интересует",
-                  "en": "Not interested"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "orgasm_potential",
-      "label": {
-        "ru": "Потенциал оргазма",
-        "en": "Orgasm potential"
-      },
-      "tag_ref": "rimming_orgasm",
-      "follow_ups": [
-        {
-          "id": "can_cum",
-          "type": "single_select",
-          "question": {
-            "ru": "Можешь кончить от этого?",
-            "en": "Can you cum from this?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "yes_alone",
-                "label": {
-                  "ru": "Да, только от римминга",
-                  "en": "Yes, from rimming alone"
-                }
-              },
-              {
-                "id": "with_touch",
-                "label": {
-                  "ru": "С дополнительной стимуляцией",
-                  "en": "With additional stimulation"
-                }
-              },
-              {
-                "id": "not_for_orgasm",
-                "label": {
-                  "ru": "Нет, но очень приятно",
-                  "en": "No, but very pleasant"
-                }
-              },
-              {
-                "id": "dont_know",
-                "label": {
-                  "ru": "Не знаю ещё",
-                  "en": "Don't know yet"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в римминге (она ему)?",
-      "en": "What appeals about rimming (her to him)?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "rimming",
@@ -409,8 +62,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Она лижет его анус языком.",
-    "en": "She licks his anus with her tongue."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в римминге (она ему)?",
+      "en": "What appeals about rimming (her to him)?"
+    }
+      }
 }

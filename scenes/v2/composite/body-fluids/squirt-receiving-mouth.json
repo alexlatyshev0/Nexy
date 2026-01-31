@@ -1,0 +1,50 @@
+{
+  "id": "squirt-receiving-mouth",
+  "slug": "squirt-receiving-mouth",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "body_fluids"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "squirting-in-mouth",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Сквирт в рот",
+    "en": "Squirt in Mouth"
+  },
+  "subtitle": {
+    "ru": "Пить её",
+    "en": "Drinking her"
+  },
+  "user_description": {
+    "ru": "Она сквиртует тебе прямо в рот. Ты пьёшь, глотаешь.",
+    "en": "She squirts directly into your mouth. You drink, swallow."
+  },
+  "ai_description": {
+    "ru": "Он принимает её сквирт ртом, пьёт, наслаждается вкусом.",
+    "en": "He takes her squirt in his mouth, drinks, enjoys the taste."
+  },
+  "image_prompt": "man's face between woman's legs, mouth open receiving squirt, bedroom setting",
+  "intensity": 3,
+  "category": "body-fluids",
+  "tags": [
+    "squirting",
+    "squirt",
+    "drinking",
+    "oral"
+  ],
+  "ai_context": {
+    "tests_primary": ["squirt_drinking"],
+    "tests_secondary": ["body_fluids", "oral"]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Принимать её сквирт в рот?",
+      "en": "Take her squirt in your mouth?"
+    }
+  }
+}

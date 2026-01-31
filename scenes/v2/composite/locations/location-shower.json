@@ -1,0 +1,49 @@
+{
+  "id": "location-shower",
+  "slug": "location-shower",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "public",
+    "quickie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Душ",
+    "en": "Shower"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Секс в душе. Горячая вода, пар, скользкие тела.",
+    "en": "Sex in shower. Hot water, steam, slippery bodies."
+  },
+  "ai_description": {
+    "ru": "Секс в душе. Горячая вода, пар.",
+    "en": "Sex in the shower. Hot water, steam."
+  },
+  "image_prompt": "couple in glass shower, steam, water running, bathroom",
+  "intensity": 2,
+  "category": "locations",
+  "tags": [
+    "locations",
+    "shower",
+    "bathroom",
+    "water"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "locations",
+      "shower"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

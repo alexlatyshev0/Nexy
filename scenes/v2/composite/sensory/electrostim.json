@@ -2,6 +2,14 @@
   "id": "electrostim",
   "slug": "electrostim",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic",
+    "toys"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Электростимуляция",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Электрические ощущения",
     "en": "Electric sensations"
+  },
+  "user_description": {
+    "ru": "Ты используешь электроды на теле — слабые импульсы от покалывания до мышечных сокращений.",
+    "en": "You use electrodes on your body — mild impulses from tingling to muscle contractions."
   },
   "ai_description": {
     "ru": "Использование слабых электрических импульсов для стимуляции. От покалывания до мышечных сокращений. Специальные устройства для эротической электростимуляции.",
@@ -25,216 +37,6 @@
     "violet_wand",
     "sensation"
   ],
-  "elements": [
-    {
-      "id": "device",
-      "label": {
-        "ru": "Устройство",
-        "en": "Device"
-      },
-      "tag_ref": "estim_device",
-      "follow_ups": [
-        {
-          "id": "which",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой тип устройства?",
-            "en": "What type of device?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "tens",
-                "label": {
-                  "ru": "TENS/EMS",
-                  "en": "TENS/EMS"
-                }
-              },
-              {
-                "id": "violet_wand",
-                "label": {
-                  "ru": "Виолет вэнд",
-                  "en": "Violet wand"
-                }
-              },
-              {
-                "id": "estim_toy",
-                "label": {
-                  "ru": "E-stim игрушки",
-                  "en": "E-stim toys"
-                }
-              },
-              {
-                "id": "electrodes",
-                "label": {
-                  "ru": "Электроды",
-                  "en": "Electrodes"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "body_area",
-      "label": {
-        "ru": "Область тела",
-        "en": "Body area"
-      },
-      "tag_ref": "estim_area",
-      "follow_ups": [
-        {
-          "id": "where",
-          "type": "multi_select",
-          "question": {
-            "ru": "Куда?",
-            "en": "Where?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "genitals",
-                "label": {
-                  "ru": "Гениталии",
-                  "en": "Genitals"
-                }
-              },
-              {
-                "id": "nipples",
-                "label": {
-                  "ru": "Соски",
-                  "en": "Nipples"
-                }
-              },
-              {
-                "id": "thighs",
-                "label": {
-                  "ru": "Бёдра",
-                  "en": "Thighs"
-                }
-              },
-              {
-                "id": "buttocks",
-                "label": {
-                  "ru": "Ягодицы",
-                  "en": "Buttocks"
-                }
-              },
-              {
-                "id": "anywhere",
-                "label": {
-                  "ru": "Где угодно",
-                  "en": "Anywhere"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "intensity_level",
-      "label": {
-        "ru": "Интенсивность",
-        "en": "Intensity"
-      },
-      "tag_ref": "estim_intensity",
-      "follow_ups": [
-        {
-          "id": "level",
-          "type": "single_select",
-          "question": {
-            "ru": "Какая интенсивность?",
-            "en": "What intensity?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "light",
-                "label": {
-                  "ru": "Лёгкое покалывание",
-                  "en": "Light tingling"
-                }
-              },
-              {
-                "id": "moderate",
-                "label": {
-                  "ru": "Умеренная",
-                  "en": "Moderate"
-                }
-              },
-              {
-                "id": "intense",
-                "label": {
-                  "ru": "Интенсивная",
-                  "en": "Intense"
-                }
-              },
-              {
-                "id": "edge",
-                "label": {
-                  "ru": "На грани",
-                  "en": "On the edge"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who_receives",
-      "label": {
-        "ru": "Кто получает",
-        "en": "Who receives"
-      },
-      "tag_ref": "estim_who",
-      "follow_ups": [
-        {
-          "id": "who",
-          "type": "single_select",
-          "question": {
-            "ru": "Кто?",
-            "en": "Who?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "she",
-                "label": {
-                  "ru": "Она",
-                  "en": "She"
-                }
-              },
-              {
-                "id": "he",
-                "label": {
-                  "ru": "Он",
-                  "en": "He"
-                }
-              },
-              {
-                "id": "both",
-                "label": {
-                  "ru": "Оба",
-                  "en": "Both"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в электростимуляции?",
-      "en": "What appeals about electrostimulation?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "electrostim",
@@ -247,8 +49,11 @@
       "TENS"
     ]
   },
-  "user_description": {
-    "ru": "На тело или гениталии накладываются электроды, которые подают слабые электрические импульсы различной интенсивности.",
-    "en": "Electrodes are placed on the body or genitals that deliver mild electrical impulses of varying intensity."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в электростимуляции?",
+      "en": "What appeals about electrostimulation?"
+    }
+      }
 }

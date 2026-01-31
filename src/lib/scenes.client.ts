@@ -12,6 +12,7 @@ export async function getFilteredScenesClient(
     orderByPriority?: boolean;
     enableAdaptiveFlow?: boolean;
     enableDedupe?: boolean;
+    userGender?: 'male' | 'female';
   } = {}
 ): Promise<Scene[]> {
   const {
@@ -20,25 +21,26 @@ export async function getFilteredScenesClient(
     orderByPriority = false,
     enableAdaptiveFlow = true,
     enableDedupe = true,
+    userGender,
   } = options;
 
-  // Get excluded scene IDs
-  // If RPC function doesn't exist (404), fallback to empty array
-  let excludedIds: string[] | null = null;
-  const { data: rpcExcludedIds, error: excludedError } = await supabaseClient
-    .rpc('get_excluded_scene_ids', { p_user_id: userId });
-  
-  if (excludedError) {
-    // If function not found (404), it's okay - user might not have exclusions yet
-    if (excludedError.code === 'PGRST202' || excludedError.message?.includes('not found')) {
-      console.warn('[getFilteredScenesClient] RPC function get_excluded_scene_ids not found, using empty exclusions');
-      excludedIds = [];
-    } else {
-      console.error('[getFilteredScenesClient] Error getting excluded IDs:', excludedError);
-      excludedIds = []; // Fallback to empty on error
+  // Get excluded scene IDs with fast timeout
+  // If RPC function fails or times out, fallback to empty array (non-blocking)
+  let excludedIds: string[] = [];
+  try {
+    const rpcPromise = supabaseClient.rpc('get_excluded_scene_ids', { p_user_id: userId });
+    const timeoutPromise = new Promise<{ data: null; error: { message: string } }>((resolve) =>
+      setTimeout(() => resolve({ data: null, error: { message: 'timeout' } }), 2000)
+    );
+    const { data: rpcExcludedIds, error: excludedError } = await Promise.race([rpcPromise, timeoutPromise]);
+
+    if (excludedError) {
+      console.warn('[getFilteredScenesClient] RPC excluded IDs skipped:', excludedError.message);
+    } else if (rpcExcludedIds) {
+      excludedIds = rpcExcludedIds;
     }
-  } else {
-    excludedIds = rpcExcludedIds;
+  } catch (e) {
+    console.warn('[getFilteredScenesClient] RPC call failed, using empty exclusions');
   }
 
   // Get already seen scene IDs (exclude body_map virtual scenes from seen list)
@@ -80,28 +82,58 @@ export async function getFilteredScenesClient(
     return uuidRegex.test(id);
   });
   
+  // Get paired_with scene IDs to exclude (if user answered one, exclude the pair)
+  let pairedIds: string[] = [];
+  if (seenIds.length > 0) {
+    const { data: pairedScenes } = await supabaseClient
+      .from('scenes')
+      .select('paired_with')
+      .in('id', seenIds)
+      .not('paired_with', 'is', null);
+
+    pairedIds = (pairedScenes || [])
+      .map(s => s.paired_with)
+      .filter((id): id is string => {
+        if (!id || typeof id !== 'string') return false;
+        const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+        return uuidRegex.test(id);
+      });
+  }
+
   // Combine all excluded scene IDs
-  const allExcluded = [...validExcludedIds, ...seenIds];
-  
+  const allExcluded = [...validExcludedIds, ...seenIds, ...pairedIds];
+
   console.log('[getFilteredScenesClient] Excluded scenes:', {
     excludedFromRPC: excludedIds?.length || 0,
     validExcludedIds: validExcludedIds.length,
     seenIds: seenIds.length,
+    pairedIds: pairedIds.length,
     totalExcluded: allExcluded.length,
   });
 
 
   // Build query to get all eligible scenes
-  // V2 composite scenes only (no question_type filter - that column was removed)
+  // V2 composite scenes only, active only (no question_type filter - that column was removed)
+  // Exclude clarification scenes - they should only appear after their parent scene
   let query = supabaseClient
     .from('scenes')
     .select('*')
     .eq('version', 2)
+    .eq('is_active', true) // Filter out inactive scenes (mlm/wlw)
+    .is('clarification_for', null) // Exclude clarification scenes from main flow
     .lte('intensity', maxIntensity);
 
+  // Filter by for_gender field
+  // male → sees scenes with for_gender = 'male' or null
+  // female → sees scenes with for_gender = 'female' or null
+  if (userGender) {
+    query = query.or(`for_gender.eq.${userGender},for_gender.is.null`);
+    console.log('[getFilteredScenesClient] Filtering by for_gender:', userGender);
+  }
+
   if (allExcluded.length > 0) {
-    // Use proper Supabase/PostgREST syntax: single quotes for string values
-    const excludedList = `('${allExcluded.join("','")}')`;
+    // Use Supabase/PostgREST syntax: (uuid1,uuid2,uuid3) without quotes
+    const excludedList = `(${allExcluded.join(',')})`;
     query = query.not('id', 'in', excludedList);
   }
 
@@ -120,15 +152,19 @@ export async function getFilteredScenesClient(
   }
 
   const { data, error: queryError } = await query;
-  
+
   if (queryError) {
-    console.error('[getFilteredScenesClient] Error fetching scenes:', queryError);
+    console.error('[getFilteredScenesClient] Error fetching scenes:', JSON.stringify(queryError, null, 2));
+    console.error('[getFilteredScenesClient] Error details:', queryError.message, queryError.code, queryError.hint);
     return [];
   }
 
   if (!data || data.length === 0) {
+    console.log('[getFilteredScenesClient] No scenes found in database query');
     return [];
   }
+
+  console.log('[getFilteredScenesClient] Found', data.length, 'scenes before adaptive flow');
 
   // Use adaptive flow if enabled
   if (enableAdaptiveFlow) {
@@ -149,10 +185,9 @@ export async function getFilteredScenesClient(
     if (adaptiveScenes.length === 0 && data && data.length > 0) {
       console.log('[getFilteredScenesClient] Adaptive flow returned no scenes, using fallback');
       // Filter V2 composite scenes
-      const v2Scenes = (data as Scene[]).filter((s) => {
-        const scene = s as SceneV2;
-        return scene.version === 2 && Array.isArray(scene.elements);
-      }) as SceneV2[];
+      const v2Scenes = (data as unknown as SceneV2[]).filter((s) => {
+        return s.version === 2 && Array.isArray(s.elements);
+      });
       
       // Sort by priority
       const sorted = [...v2Scenes].sort((a, b) => {
@@ -161,10 +196,10 @@ export async function getFilteredScenesClient(
         return priorityA - priorityB;
       });
       
-      return sorted.slice(0, limit);
+      return sorted.slice(0, limit) as unknown as Scene[];
     }
     
-    return adaptiveScenes;
+    return adaptiveScenes as unknown as Scene[];
   }
 
   return (data as Scene[]) || [];
@@ -185,7 +220,8 @@ export async function getSceneCategories(
   const categories = new Map<string, { slug: string; name: string }>();
 
   data?.forEach(item => {
-    const cat = item.category as { slug: string; name: string } | null;
+    const rawCat = item.category as { slug: string; name: string } | { slug: string; name: string }[] | null;
+    const cat = Array.isArray(rawCat) ? rawCat[0] : rawCat;
     if (cat && !categories.has(cat.slug)) {
       categories.set(cat.slug, cat);
     }

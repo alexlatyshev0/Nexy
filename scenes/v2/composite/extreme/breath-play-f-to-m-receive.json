@@ -1,0 +1,59 @@
+{
+  "id": "breath-play-f-to-m-receive",
+  "slug": "breath-play-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "breath-play-f-to-m",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Контроль дыхания",
+    "en": "Breath Play"
+  },
+  "subtitle": {
+    "ru": "Она контролирует твоё дыхание",
+    "en": "She controls your breathing"
+  },
+  "user_description": {
+    "ru": "Она контролирует твоё дыхание — сжимает горло, закрывает рот и нос, садится на лицо.",
+    "en": "She controls your breathing — squeezes your throat, covers your mouth and nose, sits on your face."
+  },
+  "ai_description": {
+    "ru": "F контролирует дыхание M — рука на горле, закрыть рот/нос, сесть на лицо. Требует опыта и доверия. Edge play.",
+    "en": "F controls M's breathing — hand on throat, cover mouth/nose, sit on face. Requires experience and trust. Edge play."
+  },
+  "image_prompt": "woman's hand on man's throat controlling his breathing, man lying on bed looking up at her, bedroom setting with soft lighting",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": [
+    "breath_play",
+    "choking",
+    "asphyxiation",
+    "edge_play",
+    "submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "breath_play",
+      "edge_play",
+      "submission"
+    ],
+    "tests_secondary": [
+      "choking",
+      "femdom",
+      "trust"
+    ]
+  },
+  "question": {
+    "type": "boundary",
+    "text": {
+      "ru": "Она контролирует твоё дыхание?",
+      "en": "She controls your breathing?"
+    }
+  }
+}

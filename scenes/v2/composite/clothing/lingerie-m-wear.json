@@ -1,0 +1,59 @@
+{
+  "id": "lingerie-m-wear",
+  "slug": "lingerie-m-wear",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "male-lingerie",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Эротическое бельё",
+    "en": "Erotic Underwear"
+  },
+  "subtitle": {
+    "ru": "Ты в эротическом белье",
+    "en": "You wear erotic underwear"
+  },
+  "user_description": {
+    "ru": "Ты в эротическом белье — джокстрап, стринги или сетка. Она смотрит на тебя.",
+    "en": "You're in erotic underwear — jockstrap, thong or mesh. She watches you."
+  },
+  "ai_description": {
+    "ru": "Мужское эротическое бельё — jockstrap, стринги, сетка, кружево. Он показывает тело для неё.",
+    "en": "Male erotic underwear — jockstrap, thong, mesh, lace. He displays body for her."
+  },
+  "image_prompt": "man wearing black jockstrap standing in bedroom, woman sitting on bed looking at him, his muscular back visible, dim lighting",
+  "intensity": 2,
+  "category": "clothing",
+  "tags": [
+    "clothing",
+    "lingerie",
+    "male_lingerie",
+    "jockstrap",
+    "underwear"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "male_lingerie",
+      "underwear",
+      "male_display"
+    ],
+    "tests_secondary": [
+      "visual",
+      "role_reversal",
+      "vulnerability"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в ношении эротического белья?",
+      "en": "What appeals about wearing erotic underwear?"
+    }
+      }
+}

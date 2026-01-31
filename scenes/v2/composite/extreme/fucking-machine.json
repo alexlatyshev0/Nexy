@@ -1,7 +1,14 @@
 {
-  "id": "fucking_machine",
+  "id": "fucking-machine",
   "slug": "fucking-machine",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "toys"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Секс-машина",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Механическая стимуляция",
     "en": "Mechanical stimulation"
+  },
+  "user_description": {
+    "ru": "Секс-машина. Механическое проникновение, контроль скорости.",
+    "en": "Fucking machine. Mechanical penetration, speed control."
   },
   "ai_description": {
     "ru": "Использование механических устройств для стимуляции. Неутомимый ритм, регулируемая скорость и глубина. Партнёр наблюдает и контролирует.",
@@ -25,223 +36,6 @@
     "toys",
     "objectification"
   ],
-  "elements": [
-    {
-      "id": "type",
-      "label": {
-        "ru": "Тип",
-        "en": "Type"
-      },
-      "tag_ref": "machine_type",
-      "follow_ups": [
-        {
-          "id": "what",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой тип?",
-            "en": "What type?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "thrusting",
-                "label": {
-                  "ru": "Толкающая",
-                  "en": "Thrusting"
-                }
-              },
-              {
-                "id": "rotating",
-                "label": {
-                  "ru": "Вращающаяся",
-                  "en": "Rotating"
-                }
-              },
-              {
-                "id": "sybian",
-                "label": {
-                  "ru": "Сибиан",
-                  "en": "Sybian"
-                }
-              },
-              {
-                "id": "mounted",
-                "label": {
-                  "ru": "Стационарная",
-                  "en": "Mounted"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who_uses",
-      "label": {
-        "ru": "Кто использует",
-        "en": "Who uses"
-      },
-      "tag_ref": "machine_who",
-      "follow_ups": [
-        {
-          "id": "who",
-          "type": "single_select",
-          "question": {
-            "ru": "Кто?",
-            "en": "Who?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "she",
-                "label": {
-                  "ru": "Она",
-                  "en": "She"
-                }
-              },
-              {
-                "id": "he",
-                "label": {
-                  "ru": "Он",
-                  "en": "He"
-                }
-              },
-              {
-                "id": "both",
-                "label": {
-                  "ru": "Оба",
-                  "en": "Both"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "context",
-      "label": {
-        "ru": "Контекст",
-        "en": "Context"
-      },
-      "tag_ref": "machine_context",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": {
-            "ru": "В каком контексте?",
-            "en": "In what context?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "solo_watched",
-                "label": {
-                  "ru": "Соло под наблюдением",
-                  "en": "Solo while watched"
-                }
-              },
-              {
-                "id": "bondage",
-                "label": {
-                  "ru": "В связанном виде",
-                  "en": "While bound"
-                }
-              },
-              {
-                "id": "forced_orgasm",
-                "label": {
-                  "ru": "Принудительный оргазм",
-                  "en": "Forced orgasm"
-                }
-              },
-              {
-                "id": "endurance",
-                "label": {
-                  "ru": "На выносливость",
-                  "en": "Endurance"
-                }
-              },
-              {
-                "id": "with_partner",
-                "label": {
-                  "ru": "Вместе с партнёром",
-                  "en": "With partner"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "machine_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "tireless",
-                "label": {
-                  "ru": "Неутомимость",
-                  "en": "Tirelessness"
-                }
-              },
-              {
-                "id": "intensity",
-                "label": {
-                  "ru": "Интенсивность",
-                  "en": "Intensity"
-                }
-              },
-              {
-                "id": "objectification",
-                "label": {
-                  "ru": "Объективация",
-                  "en": "Objectification"
-                }
-              },
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Контроль",
-                  "en": "Control"
-                }
-              },
-              {
-                "id": "watching",
-                "label": {
-                  "ru": "Наблюдать",
-                  "en": "Watching"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в секс-машинах?",
-      "en": "What appeals about fucking machines?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "fucking_machine",
@@ -254,8 +48,11 @@
       "endurance"
     ]
   },
-  "user_description": {
-    "ru": "Секс-машина трахает женщину или мужчину. Партнёр наблюдает и управляет устройством.",
-    "en": "Sex machine fucks a woman or man. Partner watches and controls the device."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в секс-машинах?",
+      "en": "What appeals about fucking machines?"
+    }
+      }
 }

@@ -1,0 +1,47 @@
+{
+  "id": "position-sitting",
+  "slug": "position-sitting",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Сидя",
+    "en": "Sitting"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Один сидит, другой сверху. На стуле, диване, кровати.",
+    "en": "One sits, the other on top. Chair, couch, bed."
+  },
+  "ai_description": {
+    "ru": "Он сидит, она на нём. На стуле, диване или краю кровати.",
+    "en": "He sits, she on him. On a chair, couch, or edge of bed."
+  },
+  "image_prompt": "man sitting on chair, woman straddling him facing, sitting sex position",
+  "intensity": 2,
+  "category": "positions",
+  "tags": [
+    "positions",
+    "sitting",
+    "face-to-face"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "positions",
+      "sitting"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

@@ -106,6 +106,8 @@ CREATE TABLE scenes (
   subtitle JSONB DEFAULT '{"ru": "", "en": ""}',
   ai_description JSONB NOT NULL DEFAULT '{"ru": "", "en": ""}',   -- For AI matching
   user_description JSONB DEFAULT '{"ru": "", "en": ""}',          -- For users
+  user_description_alt JSONB,                                      -- Alternative for other gender
+  alt_for_gender TEXT CHECK (alt_for_gender IN ('male', 'female')), -- Which gender sees alt
 
   -- Image generation
   image_url TEXT,
@@ -130,6 +132,11 @@ CREATE TABLE scenes (
   qa_last_assessment JSONB,                                   -- Last QA details
   accepted BOOLEAN DEFAULT NULL,                              -- Manual approval
   follow_up JSONB,                                            -- Legacy (still editable)
+  is_active BOOLEAN DEFAULT TRUE,                             -- Active flag (false for mlm/wlw)
+
+  -- Image gallery
+  image_variants JSONB DEFAULT '[]',                          -- Gallery of image variants
+  selected_variant_index INTEGER DEFAULT 0,                   -- Currently selected variant
 
   created_at TIMESTAMPTZ DEFAULT NOW()
 );
@@ -146,6 +153,11 @@ CREATE TABLE scenes (
 | `user_description` | Human-readable description shown to users. |
 | `qa_status` | QA validation result: `passed` / `failed` / `null`. |
 | `accepted` | Manual approval: `true` / `false` / `null` (pending). |
+| `is_active` | Whether scene is shown to users. `false` for mlm/wlw content. |
+| `user_description_alt` | Alternative description shown to other gender. |
+| `alt_for_gender` | Which gender sees `user_description_alt` instead of `user_description`. |
+| `image_variants` | JSONB array of image variants for gallery. |
+| `selected_variant_index` | Index of currently selected variant in gallery. |
 
 **Indexes:**
 - `idx_scenes_slug` - Unique slug lookup
@@ -681,6 +693,38 @@ CREATE TABLE onboarding_responses (
 
 > **Note:** Gates are computed automatically and stored in `user_gates` table. See below.
 
+> **Note on Response Values:**
+> - `0` = NO (not interested)
+> - `1` = YES (interested)
+> - `2` = VERY (very interested)
+> - `3` = PARTNER_REQUEST (would do if partner asks)
+
+### orientation_wishlist
+
+Collects user interest in unavailable orientations (gay/bi content).
+
+```sql
+CREATE TABLE orientation_wishlist (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id UUID REFERENCES profiles(id) ON DELETE CASCADE,
+  requested_orientation TEXT NOT NULL CHECK (
+    requested_orientation IN ('gay_male', 'gay_female', 'bisexual')
+  ),
+  email TEXT,                     -- For non-logged users (future use)
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+
+  UNIQUE(user_id, requested_orientation)
+);
+```
+
+**Indexes:**
+- `idx_wishlist_orientation` - Orientation lookup
+- `idx_wishlist_created` - Created date lookup
+
+**RLS Policies:**
+- Users can insert/read their own entries
+- Admin access via service role key (bypasses RLS)
+
 ### user_gates (Single Source of Truth)
 
 Unified gates table. Auto-computed via triggers - **client should NOT compute gates**.
@@ -797,6 +841,17 @@ $$ LANGUAGE plpgsql STABLE;
     - compute_gates_from_onboarding, compute_gates_from_body_map functions
     - recompute_user_gates function
     - is_scene_gated_v2 function
+11. **022_is_active_and_wishlist.sql** - Orientation wishlist:
+    - `is_active` flag on scenes (for deactivating mlm/wlw content)
+    - `orientation_wishlist` table for collecting interest
+    - `get_orientation_wishlist_stats()` function
+12. **023_dual_descriptions.sql** - Dual descriptions for M/F perspectives:
+    - `user_description_alt` JSONB field on scenes
+    - `alt_for_gender` field to specify which gender sees alt description
+13. **024_extended_variants_and_partner_request.sql** - Gallery and partner request:
+    - `selected_variant_index` on scenes for gallery
+    - Updated `compute_gates_from_onboarding` to handle value 3 (PARTNER_REQUEST)
+    - `get_scene_images()` helper function
 
 ---
 

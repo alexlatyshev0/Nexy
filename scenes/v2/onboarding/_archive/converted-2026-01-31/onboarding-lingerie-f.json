@@ -1,0 +1,40 @@
+{
+  "id": "fef32e58-d7a6-4206-8c7e-a0df4b3fee41",
+  "slug": "onboarding-lingerie-f",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 15.1,
+  "for_gender": "female",
+  "paired_with": null,
+  "title": {
+    "ru": "Красивое бельё",
+    "en": "Lingerie"
+  },
+  "subtitle": {
+    "ru": "Чулки, корсеты, латекс",
+    "en": "Stockings, corsets, latex"
+  },
+  "ai_description": {
+    "ru": "Интерес к эротическому белью и одежде. Гейтит: lingerie, stockings, heels, harness, latex, uniforms.",
+    "en": "Interest in erotic lingerie and clothing. Gates: lingerie, stockings, heels, harness, latex, uniforms."
+  },
+  "user_description": {
+    "ru": "Ты в чёрном белье: чулки, корсет, кружево. Он любуется.",
+    "en": "You're in black lingerie: stockings, corset, lace. He admires you."
+  },
+  "image_prompt": "woman in black lace lingerie with stockings and corset, standing in bedroom doorway",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "lingerie"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "lingerie"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "lingerie"
+}

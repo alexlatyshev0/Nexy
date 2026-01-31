@@ -1,0 +1,59 @@
+{
+  "id": "uniforms-f-wear",
+  "slug": "uniforms-f-wear",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie",
+    "roleplay"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "female-uniforms",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Униформа",
+    "en": "Uniform"
+  },
+  "subtitle": {
+    "ru": "Ты в костюме",
+    "en": "You wear a costume"
+  },
+  "user_description": {
+    "ru": "Ты надеваешь костюм медсестры, горничной или секретарши. Он смотрит на тебя и раздевает.",
+    "en": "You put on a nurse, maid or secretary costume. He watches you and undresses you."
+  },
+  "ai_description": {
+    "ru": "Униформа в сексе — медсестра, горничная, секретарша, полицейский. Создаёт ролевую динамику власти.",
+    "en": "Uniforms in sex — nurse, maid, secretary, police. Creates roleplay power dynamic."
+  },
+  "image_prompt": "woman in nurse uniform with short skirt unbuttoned, man sitting on bed, she stands in front of him, bedroom",
+  "intensity": 2,
+  "category": "clothing",
+  "tags": [
+    "clothing",
+    "uniform",
+    "roleplay",
+    "costume"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "uniforms",
+      "costumes",
+      "roleplay"
+    ],
+    "tests_secondary": [
+      "visual",
+      "fantasy",
+      "power_dynamic"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в ношении костюма?",
+      "en": "What appeals about wearing a costume?"
+    }
+      }
+}

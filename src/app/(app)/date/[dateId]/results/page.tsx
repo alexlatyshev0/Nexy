@@ -65,19 +65,17 @@ export default function DateResultsPage({ params }: { params: Promise<{ dateId: 
         for (const [sceneId, answers] of byScene) {
           if (answers.size !== 2) continue; // Both users need to answer
 
-          const answerValues = Array.from(answers.values());
-          const scene = responses.find(r => r.scene_id === sceneId)?.scenes as Scene;
+          const answerValues = Array.from(answers.values()) as string[];
+          const responseWithScene = responses.find(r => r.scene_id === sceneId);
+          const scene = (responseWithScene?.scenes as unknown) as Scene | null;
 
           if (!scene) continue;
 
           if (answerValues.every(a => a === 'yes')) {
             yesScenes.push(scene);
-          } else if (answerValues.every(a => a === 'yes' || a === 'maybe') &&
-                     answerValues.some(a => a === 'yes' || a === 'maybe')) {
+          } else if (answerValues.every(a => a === 'yes' || a === 'maybe')) {
             // At least one is 'yes' or 'maybe', none is 'no'
-            if (!answerValues.every(a => a === 'no')) {
-              maybeScenes.push(scene);
-            }
+            maybeScenes.push(scene);
           }
         }
 

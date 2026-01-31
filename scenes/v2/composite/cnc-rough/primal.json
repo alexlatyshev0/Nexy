@@ -2,6 +2,13 @@
   "id": "primal",
   "slug": "primal",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Первобытный секс",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Животные инстинкты",
     "en": "Animal instincts"
+  },
+  "user_description": {
+    "ru": "Вы боретесь на полу, рычите, кусаете друг друга. Царапины на спине, укусы в шею.",
+    "en": "You wrestle on the floor, growling, biting each other. Scratches on the back, bites on the neck."
   },
   "ai_description": {
     "ru": "Отпустить контроль и поддаться инстинктам. Укусы, царапины, рычание, борьба за доминирование. Сырая, животная энергия.",
@@ -26,251 +37,6 @@
     "animalistic",
     "rough"
   ],
-  "elements": [
-    {
-      "id": "actions",
-      "label": {
-        "ru": "Действия",
-        "en": "Actions"
-      },
-      "tag_ref": "primal_actions",
-      "follow_ups": [
-        {
-          "id": "what",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что включает?",
-            "en": "What does it include?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "biting",
-                "label": {
-                  "ru": "Укусы",
-                  "en": "Biting"
-                }
-              },
-              {
-                "id": "scratching",
-                "label": {
-                  "ru": "Царапины",
-                  "en": "Scratching"
-                }
-              },
-              {
-                "id": "hair_pulling",
-                "label": {
-                  "ru": "Тянуть за волосы",
-                  "en": "Hair pulling"
-                }
-              },
-              {
-                "id": "wrestling",
-                "label": {
-                  "ru": "Борьба",
-                  "en": "Wrestling"
-                }
-              },
-              {
-                "id": "pinning",
-                "label": {
-                  "ru": "Прижимать",
-                  "en": "Pinning down"
-                }
-              },
-              {
-                "id": "growling",
-                "label": {
-                  "ru": "Рычание",
-                  "en": "Growling"
-                }
-              },
-              {
-                "id": "scent",
-                "label": {
-                  "ru": "Запах тела",
-                  "en": "Body scent"
-                }
-              },
-              {
-                "id": "marking",
-                "label": {
-                  "ru": "Метить территорию",
-                  "en": "Marking territory"
-                }
-              },
-              {
-                "id": "chase",
-                "label": {
-                  "ru": "Погоня",
-                  "en": "Chase"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "intensity",
-      "label": {
-        "ru": "Интенсивность",
-        "en": "Intensity"
-      },
-      "tag_ref": "primal_intensity",
-      "follow_ups": [
-        {
-          "id": "level",
-          "type": "single_select",
-          "question": {
-            "ru": "Насколько интенсивно?",
-            "en": "How intense?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "playful",
-                "label": {
-                  "ru": "Игриво",
-                  "en": "Playful"
-                }
-              },
-              {
-                "id": "moderate",
-                "label": {
-                  "ru": "Умеренно",
-                  "en": "Moderate"
-                }
-              },
-              {
-                "id": "intense",
-                "label": {
-                  "ru": "Интенсивно",
-                  "en": "Intense"
-                }
-              },
-              {
-                "id": "full_force",
-                "label": {
-                  "ru": "В полную силу",
-                  "en": "Full force"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "marks",
-      "label": {
-        "ru": "Следы",
-        "en": "Marks"
-      },
-      "tag_ref": "primal_marks",
-      "follow_ups": [
-        {
-          "id": "ok",
-          "type": "single_select",
-          "question": {
-            "ru": "Следы допустимы?",
-            "en": "Marks okay?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no_marks",
-                "label": {
-                  "ru": "Без следов",
-                  "en": "No marks"
-                }
-              },
-              {
-                "id": "hidden",
-                "label": {
-                  "ru": "Только скрытые",
-                  "en": "Only hidden areas"
-                }
-              },
-              {
-                "id": "any",
-                "label": {
-                  "ru": "Где угодно",
-                  "en": "Anywhere"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "primal_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "raw_energy",
-                "label": {
-                  "ru": "Сырая энергия",
-                  "en": "Raw energy"
-                }
-              },
-              {
-                "id": "instinct",
-                "label": {
-                  "ru": "Инстинкты",
-                  "en": "Instincts"
-                }
-              },
-              {
-                "id": "struggle",
-                "label": {
-                  "ru": "Борьба",
-                  "en": "Struggle"
-                }
-              },
-              {
-                "id": "pain_pleasure",
-                "label": {
-                  "ru": "Боль-удовольствие",
-                  "en": "Pain-pleasure"
-                }
-              },
-              {
-                "id": "no_thinking",
-                "label": {
-                  "ru": "Не думать",
-                  "en": "Not thinking"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в первобытном сексе?",
-      "en": "What appeals about primal play?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "primal",
@@ -285,8 +51,11 @@
       "marks"
     ]
   },
-  "user_description": {
-    "ru": "Мужчина и женщина борются на полу, рычат, кусают друг друга. Он царапает её спину. Она кусает его шею.",
-    "en": "Man and woman wrestle on floor, growl, bite each other. He scratches her back. She bites his neck."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в первобытном сексе?",
+      "en": "What appeals about primal play?"
+    }
+      }
 }

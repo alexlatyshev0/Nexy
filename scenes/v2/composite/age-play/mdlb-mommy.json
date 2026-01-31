@@ -1,0 +1,60 @@
+{
+  "id": "mdlb-mommy",
+  "slug": "mdlb-mommy",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "roleplay",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "mdlb-little-boy",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "MDlb — Mommy",
+    "en": "MDlb — Mommy"
+  },
+  "subtitle": {
+    "ru": "Ты его Mommy",
+    "en": "You're his Mommy"
+  },
+  "user_description": {
+    "ru": "Ты его Mommy, он твой мальчик.",
+    "en": "You're his Mommy, he's your boy."
+  },
+  "ai_description": {
+    "ru": "Она — Mommy, он — её маленький мальчик. Забота, нежность, контроль, утешение. Мягкий femdom с материнской энергией.",
+    "en": "She's Mommy, he's her little boy. Care, tenderness, control, comfort. Soft femdom with maternal energy."
+  },
+  "image_prompt": "dominant woman sitting in armchair, submissive man kneeling beside her, she strokes his hair gently, cozy living room",
+  "intensity": 3,
+  "category": "age-play",
+  "tags": [
+    "mdlb",
+    "mommy",
+    "femdom",
+    "caregiver",
+    "nurturing"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "mdlb",
+      "mommy",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "caregiver",
+      "nurturing",
+      "gentle_dom"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в роли Mommy?",
+      "en": "What appeals about being Mommy?"
+    }
+      }
+}

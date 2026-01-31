@@ -1,0 +1,56 @@
+{
+  "id": "feminization-do",
+  "slug": "feminization-do",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "feminization-wear",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Феминизация",
+    "en": "Feminization"
+  },
+  "subtitle": {
+    "ru": "Ты превращаешь его в девочку",
+    "en": "You transform him into a girl"
+  },
+  "user_description": {
+    "ru": "Ты переодеваешь его в женскую одежду, делаешь макияж. Превращаешь в свою девочку.",
+    "en": "You dress him in women's clothes, do his makeup. Transform him into your girl."
+  },
+  "ai_description": {
+    "ru": "Когда он надевает женскую одежду, макияж, ведёт себя женственно. От лёгкого переодевания до полного образа.",
+    "en": "When he wears women's clothing, makeup, acts feminine. From light crossdressing to full transformation."
+  },
+  "image_prompt": "man wearing feminine lingerie and light makeup, sitting at vanity mirror, bedroom setting",
+  "intensity": 3,
+  "category": "control-power",
+  "tags": [
+    "feminization",
+    "crossdressing",
+    "femdom",
+    "gender_play"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "feminization",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "gender_play",
+      "dominance"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в феминизации партнёра?",
+      "en": "What appeals about feminizing your partner?"
+    }
+      }
+}

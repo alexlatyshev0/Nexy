@@ -25,6 +25,8 @@ export interface ImageVariant {
   created_at: string;
   qa_status?: 'passed' | 'failed' | null;
   qa_score?: number;
+  /** True if this is a placeholder slot awaiting image generation */
+  is_placeholder?: boolean;
 }
 
 /**
@@ -75,6 +77,47 @@ export interface Scene {
   qa_last_assessment?: Record<string, unknown>;
   /** Manual image approval: true=approved, false=rejected, null=pending */
   accepted?: boolean | null;
+
+  // Activation & visibility
+  /** Whether scene is active and should be shown. False for mlm/wlw until content ready */
+  is_active?: boolean;
+
+  // Dual descriptions (same image, different perspectives for M/F)
+  /** Alternative description for opposite gender perspective */
+  user_description_alt?: LocalizedString;
+  /** Which gender sees user_description_alt ('male' or 'female'). Null = no alternative */
+  alt_for_gender?: 'male' | 'female' | null;
+
+  // Gallery/variants
+  /** Index of currently selected variant. 0 = main image_url, 1+ = image_variants[index-1] */
+  selected_variant_index?: number;
+
+  // Scene pairing (give/receive perspectives share same images)
+  /** UUID of paired scene. Both scenes reference each other. */
+  paired_with?: string;
+
+  // Cross-category image sharing (e.g., onboarding/foot ↔ worship-service/foot-worship)
+  /** UUID of scene from different category that shares the same images. */
+  shared_images_with?: string;
+
+  // Question type (for virtual scenes like body_map)
+  /** Type of question/interaction for this scene */
+  question_type?: 'scale' | 'multiple_choice' | 'yes_no' | 'trinary' | 'body_map';
+
+  // Virtual scene properties (used for body_map scenes created on-the-fly)
+  /** Scene version (1 for legacy, 2 for V2) */
+  version?: number;
+  /** Localized title for display */
+  title?: LocalizedString;
+  /** Localized subtitle for display */
+  subtitle?: LocalizedString;
+  /** Dimensions array for legacy scenes */
+  dimensions?: string[];
+  /** Question configuration for body_map scenes */
+  question_config?: Record<string, unknown>;
+  /** AI context for body_map scenes */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ai_context?: any;
 }
 
 // Question Types
@@ -400,15 +443,26 @@ export interface FollowUp {
 }
 
 // V3 Scene with full psychological profiling support
-export interface SceneV3 extends Scene {
+export interface SceneV3 {
+  id: string;
   slug: string;
   priority: number;
+  intensity: number;
+  version?: number;
+  category?: string;
+  tags?: string[];
+  title: LocalizedString;
+  subtitle?: LocalizedString;
+  image_url?: string | null;
+  image_variants?: ImageVariant[] | null;
   generation_prompt?: string;
   user_description: LocalizedString;
+  ai_description?: LocalizedString;
   ai_context: AIContext;
-  question_type: string;
+  question_type?: string;
   follow_up?: FollowUp | null;
   body_map_config?: BodyMapSceneConfig | null;
+  created_at: string;
 }
 
 // Psychological profile for user
@@ -503,17 +557,28 @@ export interface AIContextV4 {
 }
 
 // V4 Scene with question_config
-export interface SceneV4 extends Omit<Scene, 'participants'> {
+export interface SceneV4 {
+  id: string;
   slug: string;
   priority: number;
   schema_version: 4;
+  intensity: number;
+  version?: number;
+  category?: string;
+  tags?: string[];
+  title: LocalizedString;
+  subtitle?: LocalizedString;
+  image_url?: string | null;
+  image_variants?: ImageVariant[] | null;
   generation_prompt?: string;
   user_description: LocalizedString;
+  ai_description?: LocalizedString;
   question_config: QuestionConfig;
   ai_context: AIContextV4;
-  participants: string[]; // Simplified to string array in V4
+  participants: string[];
   follow_up?: FollowUp | null;
   body_map_config?: BodyMapSceneConfig | null;
+  created_at: string;
 }
 
 // Topic response record
@@ -673,4 +738,138 @@ export interface SceneV2 extends Scene {
 
   // Legacy field (still editable in admin)
   follow_up?: V2FollowUp[] | null;
+
+  /** Gate to set when user responds YES/VERY on this scene */
+  sets_gate?: string;
+}
+
+// ============================================
+// SCENE TYPE SYSTEM (NEW ARCHITECTURE)
+// ============================================
+
+/**
+ * Scene types for special rendering (non-swipe scenes).
+ *
+ * Regular scenes have scene_type = null and use swipe cards.
+ * Special scene types use different UI components.
+ */
+export type SceneType =
+  | 'multi_choice_text'   // Text selection + custom "Other" input (no image)
+  | 'image_selection'     // Selection from multiple small images
+  | 'body_map_activity'   // Body map for specific activity
+  | 'paired_text'         // Paired text questions (no image)
+  | 'scale_text';         // Scale question without image
+
+/**
+ * Context where scene should be shown
+ */
+export type SceneContext = 'onboarding' | 'discovery' | 'both';
+
+/**
+ * Extended SceneV2 with new scene type fields.
+ * This adds scene_type and clarification_for without breaking existing structure.
+ */
+export interface SceneV2Extended extends SceneV2 {
+  /** Type of scene - determines flow behavior. Defaults to 'composite' for existing scenes. */
+  scene_type?: SceneType;
+
+  /** For clarification scenes - which main_question(s) this clarifies */
+  clarification_for?: string[];  // Array of main_question slugs
+
+  /** Where this scene should be shown */
+  context?: SceneContext;
+
+  /** For body_map_activity - activity configuration */
+  body_map_activity_config?: {
+    activity: string;  // 'spanking', 'kissing', etc.
+    question: LocalizedString;
+  };
+
+  /** For paired_text - two related questions */
+  paired_questions?: {
+    give: LocalizedString;
+    receive: LocalizedString;
+  };
+
+  /** For image_selection - small image options */
+  image_options?: Array<{
+    id: string;
+    image_url: string;
+    label?: LocalizedString;
+    tag_ref?: string;
+  }>;
+
+  /** For multi_choice_text - options with topic refs */
+  text_options?: Array<{
+    id: string;
+    label: LocalizedString;
+    topic_ref?: string;
+  }>;
+
+  /** Allow custom "Other" input for multi_choice_text */
+  allow_other?: boolean;
+  other_placeholder?: LocalizedString;
+}
+
+/**
+ * Intro slide shown before clarification scenes.
+ * Generated at runtime, not stored in DB.
+ */
+export interface IntroSlide {
+  main_question_slug: string;
+  main_question_title: LocalizedString;
+  image_url: string;
+  image_variants?: Array<{ url: string }>;  // Additional image variants for carousel
+  intro_text: LocalizedString;  // "Тебе нравится X. Давай узнаем больше."
+  clarification_count: number;
+}
+
+/**
+ * Tracks which clarifications have been shown to prevent duplicates.
+ */
+export interface ClarificationTracking {
+  user_id: string;
+  clarification_slug: string;
+  triggered_by_main: string;  // First main_question that triggered it
+  shown_at: string;
+}
+
+// ============================================
+// ORIENTATION WISHLIST TYPES
+// ============================================
+
+/** Types of orientations users can request */
+export type RequestedOrientation = 'gay_male' | 'gay_female' | 'bisexual';
+
+/** Entry in orientation wishlist - for users wanting unavailable orientations */
+export interface OrientationWishlist {
+  id: string;
+  user_id: string;
+  requested_orientation: RequestedOrientation;
+  email?: string | null;
+  created_at: string;
+}
+
+// ============================================
+// ONBOARDING RESPONSE TYPES
+// ============================================
+
+/**
+ * Onboarding swipe response values:
+ * - 0 = NO (swipe left) - Not interested
+ * - 1 = YES (swipe right) - Interested
+ * - 2 = VERY (swipe up) - Very interested
+ * - 3 = PARTNER_REQUEST (swipe down) - Would do if partner asks
+ */
+export type OnboardingResponseValue = 0 | 1 | 2 | 3;
+
+/** Onboarding responses stored in DB */
+export interface OnboardingResponses {
+  user_id: string;
+  /** Category responses: key is category slug, value is 0-3 */
+  responses: Record<string, OnboardingResponseValue>;
+  completed: boolean;
+  current_index: number;
+  created_at: string;
+  updated_at: string;
 }

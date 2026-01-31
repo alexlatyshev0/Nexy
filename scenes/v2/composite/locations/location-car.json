@@ -1,0 +1,49 @@
+{
+  "id": "location-car",
+  "slug": "location-car",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "public",
+    "quickie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Машина",
+    "en": "Car"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Секс в машине. Заднее сиденье, запотевшие окна.",
+    "en": "Sex in car. Back seat, foggy windows."
+  },
+  "ai_description": {
+    "ru": "Секс в машине. На заднем сиденье или откинув переднее.",
+    "en": "Sex in a car. Back seat or reclined front."
+  },
+  "image_prompt": "couple in car back seat, steamy windows, parked car at night",
+  "intensity": 3,
+  "category": "locations",
+  "tags": [
+    "locations",
+    "car",
+    "public-adjacent",
+    "spontaneous"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "locations",
+      "car"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

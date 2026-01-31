@@ -1,0 +1,50 @@
+{
+  "id": "squirting-watch",
+  "slug": "squirting-watch",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "body_fluids"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "squirting",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Смотреть как она сквиртует",
+    "en": "Watching Her Squirt"
+  },
+  "subtitle": {
+    "ru": "Наблюдать фонтан",
+    "en": "Watching the fountain"
+  },
+  "user_description": {
+    "ru": "Тебе нравится смотреть как она кончает фонтаном. Наблюдать за её удовольствием.",
+    "en": "You like watching her cum hard. Observing her pleasure."
+  },
+  "ai_description": {
+    "ru": "Он смотрит как она сквиртует — наблюдает за её оргазмом, наслаждается видом.",
+    "en": "He watches her squirt — observes her orgasm, enjoys the view."
+  },
+  "image_prompt": "man watching woman squirt on bed, his eyes on her body, bedroom setting",
+  "intensity": 3,
+  "category": "body-fluids",
+  "tags": [
+    "squirting",
+    "watching",
+    "voyeurism",
+    "female_orgasm"
+  ],
+  "ai_context": {
+    "tests_primary": ["squirt_watching"],
+    "tests_secondary": ["voyeurism", "body_fluids"]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Смотреть как она сквиртует?",
+      "en": "Watch her squirt?"
+    }
+  }
+}

@@ -1,7 +1,14 @@
 {
-  "id": "feather_tickle",
+  "id": "feather-tickle",
   "slug": "feather-tickle",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Перо и щекотка",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Лёгкие прикосновения",
     "en": "Light touches"
+  },
+  "user_description": {
+    "ru": "Щекотка пером, мехом или пальцами.",
+    "en": "Tickling with feather, fur, or fingers."
   },
   "ai_description": {
     "ru": "Перо, мех, лёгкие прикосновения по коже. Щекотка, мурашки, нежная стимуляция. От расслабляющего до невыносимого.",
@@ -25,244 +36,6 @@
     "light_touch",
     "teasing"
   ],
-  "elements": [
-    {
-      "id": "tools",
-      "label": {
-        "ru": "Чем",
-        "en": "Tools"
-      },
-      "tag_ref": "tickle_tools",
-      "follow_ups": [
-        {
-          "id": "what",
-          "type": "multi_select",
-          "question": {
-            "ru": "Чем касаться?",
-            "en": "What to use?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "feather",
-                "label": {
-                  "ru": "Перо",
-                  "en": "Feather"
-                }
-              },
-              {
-                "id": "fur",
-                "label": {
-                  "ru": "Мех",
-                  "en": "Fur"
-                }
-              },
-              {
-                "id": "fingernails",
-                "label": {
-                  "ru": "Ногти",
-                  "en": "Fingernails"
-                }
-              },
-              {
-                "id": "fingertips",
-                "label": {
-                  "ru": "Кончики пальцев",
-                  "en": "Fingertips"
-                }
-              },
-              {
-                "id": "hair",
-                "label": {
-                  "ru": "Волосы",
-                  "en": "Hair"
-                }
-              },
-              {
-                "id": "brush",
-                "label": {
-                  "ru": "Кисточка",
-                  "en": "Brush"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "intensity",
-      "label": {
-        "ru": "Интенсивность",
-        "en": "Intensity"
-      },
-      "tag_ref": "tickle_intensity",
-      "follow_ups": [
-        {
-          "id": "level",
-          "type": "single_select",
-          "question": {
-            "ru": "Насколько интенсивно?",
-            "en": "How intense?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "gentle",
-                "label": {
-                  "ru": "Нежно, расслабляюще",
-                  "en": "Gentle, relaxing"
-                }
-              },
-              {
-                "id": "teasing",
-                "label": {
-                  "ru": "Дразняще",
-                  "en": "Teasing"
-                }
-              },
-              {
-                "id": "ticklish",
-                "label": {
-                  "ru": "Щекотно",
-                  "en": "Ticklish"
-                }
-              },
-              {
-                "id": "torture",
-                "label": {
-                  "ru": "Tickle torture",
-                  "en": "Tickle torture"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "context",
-      "label": {
-        "ru": "Контекст",
-        "en": "Context"
-      },
-      "tag_ref": "tickle_context",
-      "follow_ups": [
-        {
-          "id": "when",
-          "type": "multi_select",
-          "question": {
-            "ru": "Когда использовать?",
-            "en": "When to use?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "foreplay",
-                "label": {
-                  "ru": "Прелюдия",
-                  "en": "Foreplay"
-                }
-              },
-              {
-                "id": "blindfold",
-                "label": {
-                  "ru": "С завязанными глазами",
-                  "en": "With blindfold"
-                }
-              },
-              {
-                "id": "bondage",
-                "label": {
-                  "ru": "В бондаже",
-                  "en": "In bondage"
-                }
-              },
-              {
-                "id": "playful",
-                "label": {
-                  "ru": "Игриво",
-                  "en": "Playfully"
-                }
-              },
-              {
-                "id": "torture",
-                "label": {
-                  "ru": "Как пытка",
-                  "en": "As torture"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "tickle_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "anticipation",
-                "label": {
-                  "ru": "Предвкушение",
-                  "en": "Anticipation"
-                }
-              },
-              {
-                "id": "sensitivity",
-                "label": {
-                  "ru": "Повышенная чувствительность",
-                  "en": "Heightened sensitivity"
-                }
-              },
-              {
-                "id": "helplessness",
-                "label": {
-                  "ru": "Беспомощность",
-                  "en": "Helplessness"
-                }
-              },
-              {
-                "id": "laughter",
-                "label": {
-                  "ru": "Смех",
-                  "en": "Laughter"
-                }
-              },
-              {
-                "id": "teasing",
-                "label": {
-                  "ru": "Дразнение",
-                  "en": "Teasing"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в пере и щекотке?",
-      "en": "What appeals about feather and tickle?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "feather",
@@ -275,8 +48,11 @@
       "anticipation"
     ]
   },
-  "user_description": {
-    "ru": "Один партнёр щекочет тело другого пером, мехом или пальцами.",
-    "en": "One partner tickles the other's body with feather, fur or fingers."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в пере и щекотке?",
+      "en": "What appeals about feather and tickle?"
+    }
+      }
 }

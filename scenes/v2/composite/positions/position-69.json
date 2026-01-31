@@ -1,0 +1,49 @@
+{
+  "id": "position-69",
+  "slug": "position-69",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic",
+    "oral"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "69",
+    "en": "69"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Взаимный оральный секс одновременно. Давать и получать удовольствие вместе.",
+    "en": "Mutual oral sex simultaneously. Giving and receiving pleasure together."
+  },
+  "ai_description": {
+    "ru": "Взаимный оральный секс одновременно. Давать и получать удовольствие вместе.",
+    "en": "Mutual oral sex simultaneously. Giving and receiving pleasure together."
+  },
+  "image_prompt": "couple in 69 position on bed, mutual oral, bedroom",
+  "intensity": 2,
+  "category": "positions",
+  "tags": [
+    "positions",
+    "69",
+    "oral",
+    "mutual"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "positions",
+      "69"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

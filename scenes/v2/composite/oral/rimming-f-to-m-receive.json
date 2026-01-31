@@ -1,0 +1,58 @@
+{
+  "id": "rimming-f-to-m-receive",
+  "slug": "rimming-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "oral",
+    "anal"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "rimming-she-to-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Римминг",
+    "en": "Rimming"
+  },
+  "subtitle": {
+    "ru": "Она лижет тебе",
+    "en": "She rims you"
+  },
+  "user_description": {
+    "ru": "Она лижет твой анус языком.",
+    "en": "She licks your anus with her tongue."
+  },
+  "ai_description": {
+    "ru": "Её язык на его анусе. Он на четвереньках или на спине, ноги подняты. Она исследует его запретную зону. Близко к простате — невероятные ощущения.",
+    "en": "Her tongue on his anus. He's on all fours or on back, legs raised. She explores his forbidden zone. Close to prostate — incredible sensations."
+  },
+  "image_prompt": "man on all fours on bed, woman behind him with face near his bottom, both nude, bedroom setting",
+  "intensity": 3,
+  "category": "oral",
+  "tags": [
+    "rimming",
+    "analingus",
+    "receiving",
+    "prostate_area"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "rimming",
+      "analingus",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "taboo",
+      "prostate_area"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Римминг — она лижет тебе?",
+      "en": "Rimming — she rims you?"
+    }
+  }
+}

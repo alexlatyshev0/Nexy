@@ -1,0 +1,59 @@
+{
+  "id": "forced-orgasm-on-him-receive",
+  "slug": "forced-orgasm-on-him-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "forced-orgasm-on-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Вынужденный оргазм",
+    "en": "Forced Orgasm"
+  },
+  "subtitle": {
+    "ru": "Она заставляет тебя кончать",
+    "en": "She makes you cum"
+  },
+  "user_description": {
+    "ru": "Она продолжает стимулировать тебя после оргазма. Ты связан и не можешь остановить её.",
+    "en": "She continues stimulating you after orgasm. You are restrained and cannot stop her."
+  },
+  "ai_description": {
+    "ru": "Он связан. Она продолжает после его оргазма — чувствительность зашкаливает, но она не останавливается. Милкинг, овер-стимуляция.",
+    "en": "He's restrained. She continues after his orgasm — sensitivity overwhelming, but she doesn't stop. Milking, overstimulation."
+  },
+  "image_prompt": "woman stimulating restrained man on bed after climax, his hands bound, bedroom setting with bondage equipment",
+  "intensity": 4,
+  "category": "control-power",
+  "tags": [
+    "forced_orgasm",
+    "overstimulation",
+    "post_orgasm",
+    "femdom",
+    "milking"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "forced_orgasm_m",
+      "overstimulation",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "post_orgasm",
+      "milking",
+      "sensitivity"
+    ]
+  },
+  "question": {
+    "type": "boundary",
+    "text": {
+      "ru": "Когда она не останавливается после твоего оргазма?",
+      "en": "When she doesn't stop after your orgasm?"
+    }
+  }
+}

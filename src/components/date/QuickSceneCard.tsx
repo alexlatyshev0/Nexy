@@ -13,7 +13,7 @@ interface QuickSceneCardProps {
 
 export function QuickSceneCard({ scene, onAnswer, loading }: QuickSceneCardProps) {
   const getPlaceholderEmoji = () => {
-    const dim = scene.dimensions[0] || '';
+    const dim = scene.dimensions?.[0] || '';
     if (dim.includes('bondage')) return '🔗';
     if (dim.includes('blindfold')) return '🙈';
     if (dim.includes('dominance') || dim.includes('submission')) return '👑';

@@ -1,0 +1,56 @@
+{
+  "id": "degradation-m-to-f-receive",
+  "slug": "degradation-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "dirty_talk",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "degradation-he-degrades-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Унижение",
+    "en": "Degradation"
+  },
+  "subtitle": {
+    "ru": "Он унижает тебя",
+    "en": "He degrades you"
+  },
+  "user_description": {
+    "ru": "Он унижает тебя словами — «шлюха», «грязная девка», «на колени».",
+    "en": "He humiliates you with words — \"slut\", \"dirty whore\", \"on your knees\"."
+  },
+  "ai_description": {
+    "ru": "'Шлюха', — говорит он, и она чувствует волну возбуждения. Грязные слова, унижение — то, что включает её больше всего. Чем грязнее, тем горячее.",
+    "en": "'Slut,' he says, and she feels a wave of arousal. Dirty words, degradation — what turns her on most. The dirtier, the hotter."
+  },
+  "image_prompt": "man standing over kneeling woman, his hand gripping her chin, woman nude on knees, man clothed, bedroom setting",
+  "intensity": 4,
+  "category": "verbal",
+  "tags": [
+    "degradation",
+    "humiliation",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "degradation",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "humiliation",
+      "submission"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Он унижает тебя словами?",
+      "en": "He degrades you verbally?"
+    }
+  }
+}

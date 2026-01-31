@@ -1,0 +1,57 @@
+{
+  "id": "anal-sex-receive",
+  "slug": "anal-sex-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": ["anal"],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "anal-sex-give",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Анальный секс",
+    "en": "Anal Sex"
+  },
+  "subtitle": {
+    "ru": "Он в тебе",
+    "en": "Him inside you"
+  },
+  "user_description": {
+    "ru": "Он входит в твою попку членом.",
+    "en": "He enters your ass with his cock. Anal penetration."
+  },
+  "ai_description": {
+    "ru": "Полноценный анальный секс. Ощущение наполненности, другая интенсивность. Требует доверия и подготовки.",
+    "en": "Full anal sex. Fullness sensation, different intensity. Requires trust and preparation."
+  },
+  "image_prompt": "man and woman in anal sex position, he behind her penetrating, both nude on bed, bedroom setting",
+  "intensity": 4,
+  "category": "anal",
+  "tags": [
+    "anal",
+    "anal_sex",
+    "penetration",
+    "receiving",
+    "backdoor"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "anal_sex",
+      "anal_receiving"
+    ],
+    "tests_secondary": [
+      "fullness",
+      "taboo",
+      "intensity",
+      "trust"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Анальный секс — полное проникновение?",
+      "en": "Anal sex — full penetration?"
+    }
+  }
+}

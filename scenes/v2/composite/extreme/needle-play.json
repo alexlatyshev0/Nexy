@@ -1,7 +1,15 @@
 {
-  "id": "needle_play",
+  "id": "needle-play",
   "slug": "needle-play",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough",
+    "bondage"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Игры с иглами",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Временное пирсинг",
     "en": "Temporary piercing"
+  },
+  "user_description": {
+    "ru": "Ты вводишь стерильные иглы партнёру или он вводит тебе.",
+    "en": "You insert sterile needles into your partner or they insert into you."
   },
   "ai_description": {
     "ru": "Временное прокалывание кожи стерильными иглами. Эндорфиновый раш, эстетика, медитативный опыт. Требует обучения и стерильности.",
@@ -25,173 +37,6 @@
     "blood_play",
     "medical"
   ],
-  "elements": [
-    {
-      "id": "type",
-      "label": {
-        "ru": "Тип",
-        "en": "Type"
-      },
-      "tag_ref": "needle_type",
-      "follow_ups": [
-        {
-          "id": "what",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой тип?",
-            "en": "What type?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "surface",
-                "label": {
-                  "ru": "Поверхностный",
-                  "en": "Surface"
-                }
-              },
-              {
-                "id": "pattern",
-                "label": {
-                  "ru": "Узоры",
-                  "en": "Patterns"
-                }
-              },
-              {
-                "id": "corset",
-                "label": {
-                  "ru": "Корсетная шнуровка",
-                  "en": "Corset piercing"
-                }
-              },
-              {
-                "id": "play",
-                "label": {
-                  "ru": "Игровой",
-                  "en": "Play piercing"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "location",
-      "label": {
-        "ru": "Расположение",
-        "en": "Location"
-      },
-      "tag_ref": "needle_location",
-      "follow_ups": [
-        {
-          "id": "where",
-          "type": "multi_select",
-          "question": {
-            "ru": "Где?",
-            "en": "Where?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "back",
-                "label": {
-                  "ru": "Спина",
-                  "en": "Back"
-                }
-              },
-              {
-                "id": "chest",
-                "label": {
-                  "ru": "Грудь",
-                  "en": "Chest"
-                }
-              },
-              {
-                "id": "arms",
-                "label": {
-                  "ru": "Руки",
-                  "en": "Arms"
-                }
-              },
-              {
-                "id": "thighs",
-                "label": {
-                  "ru": "Бёдра",
-                  "en": "Thighs"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "needle_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "endorphins",
-                "label": {
-                  "ru": "Эндорфины",
-                  "en": "Endorphins"
-                }
-              },
-              {
-                "id": "aesthetic",
-                "label": {
-                  "ru": "Эстетика",
-                  "en": "Aesthetic"
-                }
-              },
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Контроль",
-                  "en": "Control"
-                }
-              },
-              {
-                "id": "trust",
-                "label": {
-                  "ru": "Доверие",
-                  "en": "Trust"
-                }
-              },
-              {
-                "id": "meditation",
-                "label": {
-                  "ru": "Медитация",
-                  "en": "Meditation"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в играх с иглами?",
-      "en": "What appeals about needle play?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "needle_play",
@@ -204,8 +49,11 @@
       "endorphins"
     ]
   },
-  "user_description": {
-    "ru": "Один партнёр вводит стерильные иглы в кожу другого партнёра.",
-    "en": "One partner inserts sterile needles into the other partner's skin."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в играх с иглами?",
+      "en": "What appeals about needle play?"
+    }
+      }
 }

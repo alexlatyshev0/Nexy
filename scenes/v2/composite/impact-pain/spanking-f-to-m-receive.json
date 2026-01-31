@@ -1,0 +1,59 @@
+{
+  "id": "spanking-f-to-m-receive",
+  "slug": "spanking-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "spanking-she-spanks-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Шлепки",
+    "en": "Spanking"
+  },
+  "subtitle": {
+    "ru": "Она шлёпает тебя",
+    "en": "She spanks you"
+  },
+  "user_description": {
+    "ru": "Ты лежишь у неё на коленях, она шлёпает тебя по заднице.",
+    "en": "You lie across her lap, she spanks your ass."
+  },
+  "ai_description": {
+    "ru": "Он перекинут через её колени, его ягодицы подняты. Её ладонь опускается — шлёп! Femdom дисциплина, он принимает наказание от госпожи.",
+    "en": "He's bent over her lap, his buttocks raised. Her palm comes down — smack! Femdom discipline, he accepts punishment from mistress."
+  },
+  "image_prompt": "man lying across womans lap nude, her hand raised to spank, his bottom exposed, she in lingerie on couch, living room setting",
+  "intensity": 3,
+  "category": "impact-pain",
+  "tags": [
+    "spanking",
+    "femdom",
+    "discipline",
+    "otk",
+    "submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "spanking",
+      "femdom",
+      "submission"
+    ],
+    "tests_secondary": [
+      "female_dominance",
+      "punishment",
+      "discipline"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда она шлёпает тебя?",
+      "en": "What appeals when she spanks you?"
+    }
+      }
+}

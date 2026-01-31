@@ -95,7 +95,11 @@ export async function POST(req: Request) {
 
   // Format preferences for AI
   const prefsContext = formatTagPreferencesForAI(tagPreferences || []);
-  const exclusionsContext = formatExclusionsForAI((partnerExclusions || []) as ExclusionRecord[]);
+  const exclusionsContext = formatExclusionsForAI((partnerExclusions || []).map(e => ({
+    category: Array.isArray(e.category) ? e.category[0] : e.category,
+    excluded_tag: e.excluded_tag,
+    exclusion_level: e.exclusion_level,
+  })) as ExclusionRecord[]);
   const archetypesContext = formatArchetypesForAI(archetypes);
   const intensityContext = avgIntensity !== null ? `Average preferred intensity: ${Math.round(avgIntensity)}/100` : null;
 

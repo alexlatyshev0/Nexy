@@ -1,8 +1,15 @@
 {
-  "id": "face_slapping_f_to_m",
+  "id": "face-slapping-she-slaps-him",
   "slug": "face-slapping-she-slaps-him",
   "version": 2,
-  "paired_scene": "face_slapping_m_to_f",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "face-slapping-f-to-m-receive",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Пощёчины",
@@ -11,6 +18,10 @@
   "subtitle": {
     "ru": "Она даёт ему пощёчину",
     "en": "She slaps him"
+  },
+  "user_description": {
+    "ru": "Ты даёшь ему пощёчину.",
+    "en": "You slap his face."
   },
   "ai_description": {
     "ru": "Её рука касается его щеки — резко, властно. Femdom, наказание, или просто проверка его реакции. Она контролирует.",
@@ -26,172 +37,30 @@
     "impact",
     "rough"
   ],
-  "elements": [
-    {
-      "id": "intensity",
-      "label": {
-        "ru": "Интенсивность",
-        "en": "Intensity"
-      },
-      "tag_ref": "slap_intensity_m",
-      "follow_ups": [
-        {
-          "id": "level",
-          "type": "single_select",
-          "question": {
-            "ru": "Насколько сильно?",
-            "en": "How hard?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "symbolic",
-                "label": {
-                  "ru": "Символически",
-                  "en": "Symbolic"
-                }
-              },
-              {
-                "id": "light",
-                "label": {
-                  "ru": "Лёгкая",
-                  "en": "Light"
-                }
-              },
-              {
-                "id": "moderate",
-                "label": {
-                  "ru": "Умеренная",
-                  "en": "Moderate"
-                }
-              },
-              {
-                "id": "hard",
-                "label": {
-                  "ru": "Сильная",
-                  "en": "Hard"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "context",
-      "label": {
-        "ru": "Контекст",
-        "en": "Context"
-      },
-      "tag_ref": "slap_context_m",
-      "follow_ups": [
-        {
-          "id": "when",
-          "type": "multi_select",
-          "question": {
-            "ru": "В каком контексте?",
-            "en": "In what context?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "femdom",
-                "label": {
-                  "ru": "Femdom сессия",
-                  "en": "Femdom session"
-                }
-              },
-              {
-                "id": "punishment",
-                "label": {
-                  "ru": "Наказание",
-                  "en": "Punishment"
-                }
-              },
-              {
-                "id": "attention",
-                "label": {
-                  "ru": "Привлечь внимание",
-                  "en": "Get attention"
-                }
-              },
-              {
-                "id": "during_sex",
-                "label": {
-                  "ru": "Во время секса",
-                  "en": "During sex"
-                }
-              },
-              {
-                "id": "humiliation",
-                "label": {
-                  "ru": "Унижение",
-                  "en": "Humiliation"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает",
-        "en": "What appeals"
-      },
-      "tag_ref": "slap_appeal_m",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "her_power",
-                "label": {
-                  "ru": "Её власть",
-                  "en": "Her power"
-                }
-              },
-              {
-                "id": "submission",
-                "label": {
-                  "ru": "Подчинение ей",
-                  "en": "Submitting to her"
-                }
-              },
-              {
-                "id": "shock",
-                "label": {
-                  "ru": "Шок",
-                  "en": "Shock"
-                }
-              },
-              {
-                "id": "humiliation",
-                "label": {
-                  "ru": "Унижение",
-                  "en": "Humiliation"
-                }
-              },
-              {
-                "id": "pain",
-                "label": {
-                  "ru": "Боль",
-                  "en": "Pain"
-                }
-              }
-            ]
-          }
-        }
+  "ai_context": {
+    "tests_primary": [
+      "face_slapping",
+      "femdom",
+      "impact"
+    ],
+    "tests_secondary": [
+      "humiliation",
+      "submission",
+      "rough"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys femdom",
+        "submission turn-on",
+        "shock arousing"
+      ],
+      "negative": [
+        "violence trigger",
+        "not interested",
+        "prefers gentle"
       ]
     }
-  ],
+  },
   "question": {
     "type": "boundary",
     "text": {
@@ -223,33 +92,5 @@
         }
       ]
     }
-  },
-  "ai_context": {
-    "tests_primary": [
-      "face_slapping",
-      "femdom",
-      "impact"
-    ],
-    "tests_secondary": [
-      "humiliation",
-      "submission",
-      "rough"
-    ],
-    "emotional_range": {
-      "positive": [
-        "enjoys femdom",
-        "submission turn-on",
-        "shock arousing"
-      ],
-      "negative": [
-        "violence trigger",
-        "not interested",
-        "prefers gentle"
-      ]
-    }
-  },
-  "user_description": {
-    "ru": "Она даёт ему пощёчину",
-    "en": "She slaps his face"
   }
 }

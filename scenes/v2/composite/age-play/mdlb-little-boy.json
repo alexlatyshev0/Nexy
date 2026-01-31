@@ -1,0 +1,60 @@
+{
+  "id": "mdlb-little-boy",
+  "slug": "mdlb-little-boy",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "roleplay",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "mdlb-mommy",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "MDlb — маленький",
+    "en": "MDlb — Little Boy"
+  },
+  "subtitle": {
+    "ru": "Ты её маленький мальчик",
+    "en": "You're her little boy"
+  },
+  "user_description": {
+    "ru": "Ты её мальчик, она твоя Mommy.",
+    "en": "You're her boy, she's your Mommy."
+  },
+  "ai_description": {
+    "ru": "Она — Mommy, он — её маленький мальчик. Забота, нежность, контроль, утешение. Мягкий femdom с материнской энергией.",
+    "en": "She's Mommy, he's her little boy. Care, tenderness, control, comfort. Soft femdom with maternal energy."
+  },
+  "image_prompt": "dominant woman sitting in armchair, submissive man kneeling beside her, she strokes his hair gently, cozy living room",
+  "intensity": 3,
+  "category": "age-play",
+  "tags": [
+    "mdlb",
+    "little_boy",
+    "submissive",
+    "femdom",
+    "nurturing"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "mdlb",
+      "little_boy",
+      "submissive"
+    ],
+    "tests_secondary": [
+      "femdom",
+      "nurturing",
+      "protected"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Роль маленького мальчика?",
+      "en": "Being a little boy?"
+    }
+  }
+}

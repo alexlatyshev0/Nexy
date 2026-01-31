@@ -1,7 +1,8 @@
 {
-  "id": "toys_interest",
+  "id": "toys-interest",
   "slug": "toys-interest",
   "version": 2,
+  "is_active": false,
   "role_direction": "mutual",
   "title": {
     "ru": "Секс-игрушки",
@@ -21,245 +22,33 @@
   "priority": 10,
   "tags": [
     "baseline",
-    "toys",
-    "vibrator",
-    "dildo",
-    "accessories"
-  ],
-  "elements": [
-    {
-      "id": "general",
-      "label": {
-        "ru": "Общее",
-        "en": "General"
-      },
-      "tag_ref": "toys_general",
-      "follow_ups": [
-        {
-          "id": "attitude",
-          "type": "single_select",
-          "question": {
-            "ru": "Секс-игрушки...",
-            "en": "Sex toys..."
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Не использую, не хочу",
-                  "en": "Don't use, don't want"
-                }
-              },
-              {
-                "id": "curious",
-                "label": {
-                  "ru": "Хочу попробовать",
-                  "en": "Want to try"
-                }
-              },
-              {
-                "id": "sometimes",
-                "label": {
-                  "ru": "Иногда используем",
-                  "en": "Use sometimes"
-                }
-              },
-              {
-                "id": "regularly",
-                "label": {
-                  "ru": "Регулярно",
-                  "en": "Regularly"
-                }
-              },
-              {
-                "id": "essential",
-                "label": {
-                  "ru": "Важная часть секса",
-                  "en": "Essential part of sex"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "types",
-      "label": {
-        "ru": "Типы",
-        "en": "Types"
-      },
-      "tag_ref": "toys_types",
-      "follow_ups": [
-        {
-          "id": "which",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие игрушки интересны?",
-            "en": "What toys interest you?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "vibrator",
-                "label": {
-                  "ru": "Вибратор",
-                  "en": "Vibrator"
-                }
-              },
-              {
-                "id": "dildo",
-                "label": {
-                  "ru": "Фаллоимитатор",
-                  "en": "Dildo"
-                }
-              },
-              {
-                "id": "plug",
-                "label": {
-                  "ru": "Анальная пробка",
-                  "en": "Butt plug"
-                }
-              },
-              {
-                "id": "cock_ring",
-                "label": {
-                  "ru": "Кольцо на член",
-                  "en": "Cock ring"
-                }
-              },
-              {
-                "id": "restraints",
-                "label": {
-                  "ru": "Наручники/верёвки",
-                  "en": "Restraints/ropes"
-                }
-              },
-              {
-                "id": "remote",
-                "label": {
-                  "ru": "С дистанционным управлением",
-                  "en": "Remote controlled"
-                }
-              },
-              {
-                "id": "machine",
-                "label": {
-                  "ru": "Секс-машина",
-                  "en": "Sex machine"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who",
-      "label": {
-        "ru": "Для кого",
-        "en": "For whom"
-      },
-      "tag_ref": "toys_who",
-      "follow_ups": [
-        {
-          "id": "target",
-          "type": "multi_select",
-          "question": {
-            "ru": "Для кого игрушки?",
-            "en": "Toys for whom?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "for_her",
-                "label": {
-                  "ru": "Для неё",
-                  "en": "For her"
-                }
-              },
-              {
-                "id": "for_him",
-                "label": {
-                  "ru": "Для него",
-                  "en": "For him"
-                }
-              },
-              {
-                "id": "both",
-                "label": {
-                  "ru": "Для обоих",
-                  "en": "For both"
-                }
-              },
-              {
-                "id": "together",
-                "label": {
-                  "ru": "Использовать вместе",
-                  "en": "Use together"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
+    "toys"
   ],
   "question": {
-    "type": "boundary",
+    "type": "swipe",
     "text": {
-      "ru": "Секс-игрушки — используете?",
-      "en": "Sex toys — do you use them?"
-    },
-    "config": {
-      "boundary_options": [
-        {
-          "id": "no",
-          "label": {
-            "ru": "Нет",
-            "en": "No"
-          }
-        },
-        {
-          "id": "curious",
-          "label": {
-            "ru": "Хочу попробовать",
-            "en": "Want to try"
-          }
-        },
-        {
-          "id": "yes",
-          "label": {
-            "ru": "Да",
-            "en": "Yes"
-          }
-        }
-      ]
+      "ru": "Секс-игрушки — интересно?",
+      "en": "Sex toys — interested?"
     }
   },
   "ai_context": {
     "tests_primary": [
-      "toys",
-      "vibrator",
-      "accessories"
-    ],
-    "tests_secondary": [
-      "dildo",
-      "plug",
-      "restraints"
+      "toys"
     ],
     "gates": {
       "no": [
         "skip_toy_scenes"
       ],
       "yes": [
-        "all_toy_scenes"
+        "show_toy_scenes"
       ]
     }
   },
   "user_description": {
-    "ru": "Секс-игрушки — вибраторы, пробки, наручники и другое.",
-    "en": "Sex toys — vibrators, plugs, restraints and more."
-  }
+    "ru": "Секс-игрушки — вибраторы, наручники и другое.",
+    "en": "Sex toys — vibrators, restraints and more."
+  },
+  "for_gender": null,
+  "is_onboarding": false,
+  "sets_gate": "toys"
 }

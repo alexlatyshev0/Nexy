@@ -1,0 +1,58 @@
+{
+  "id": "chastity-she-locked-wear",
+  "slug": "chastity-she-locked-wear",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "chastity-she-locked-keyholder",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Chastity",
+    "en": "Chastity"
+  },
+  "subtitle": {
+    "ru": "Ты заперта",
+    "en": "You're locked"
+  },
+  "user_description": {
+    "ru": "Ты носишь пояс верности. Ключ у него — он решает когда тебя освободить.",
+    "en": "You wear a chastity belt. He holds the key — he decides when to release you."
+  },
+  "ai_description": {
+    "ru": "На ней пояс верности, ключ у него. Она не может прикоснуться к себе без его разрешения. Полный контроль над её удовольствием.",
+    "en": "She wears a chastity belt, he holds the key. She can't touch herself without his permission. Complete control over her pleasure."
+  },
+  "image_prompt": "woman wearing chastity belt, man beside her holding small key, she nude except for device, bedroom setting",
+  "intensity": 4,
+  "category": "chastity",
+  "tags": [
+    "chastity",
+    "belt",
+    "denial",
+    "maledom",
+    "orgasm_control"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "chastity",
+      "belt",
+      "denial"
+    ],
+    "tests_secondary": [
+      "maledom",
+      "orgasm_control"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в ношении пояса верности?",
+      "en": "What appeals about wearing a chastity belt?"
+    }
+      }
+}

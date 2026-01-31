@@ -1,0 +1,57 @@
+{
+  "id": "cuckold-play",
+  "slug": "cuckold-play",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "group",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "cuckold-watch",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Cuckold",
+    "en": "Cuckold"
+  },
+  "subtitle": {
+    "ru": "Он смотрит на тебя",
+    "en": "He watches you"
+  },
+  "user_description": {
+    "ru": "Ты занимаешься сексом с другим мужчиной, пока твой партнёр смотрит. Его возбуждает ревность.",
+    "en": "You have sex with another man while your partner watches. His jealousy arouses him."
+  },
+  "ai_description": {
+    "ru": "Она с другим мужчиной, он смотрит. Смесь возбуждения, ревности, унижения. Сложная динамика, глубокие эмоции.",
+    "en": "She's with another man, he watches. Mix of arousal, jealousy, humiliation. Complex dynamic, deep emotions."
+  },
+  "image_prompt": "woman having sex with man on bed while second man sits in chair watching, bedroom",
+  "intensity": 5,
+  "category": "cuckold",
+  "tags": [
+    "cuckold",
+    "exhibition",
+    "power"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "cuckold",
+      "exhibition",
+      "power"
+    ],
+    "tests_secondary": [
+      "teasing",
+      "dominance"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда он смотрит?",
+      "en": "What appeals when he watches?"
+    }
+      }
+}

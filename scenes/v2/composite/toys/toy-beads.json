@@ -1,0 +1,55 @@
+{
+  "id": "toy-beads",
+  "slug": "toy-beads",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "toys",
+    "anal"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Шарики",
+    "en": "Beads"
+  },
+  "subtitle": {
+    "ru": "Анальные или вагинальные",
+    "en": "Anal or vaginal"
+  },
+  "user_description": {
+    "ru": "Ты используешь цепочку шариков — медленно вводишь и вытягиваешь.",
+    "en": "You use a string of beads — slowly insert and pull out."
+  },
+  "ai_description": {
+    "ru": "Цепочка шариков разного размера. Медленно вводить и вытягивать.",
+    "en": "String of beads of different sizes. Slowly insert and pull out."
+  },
+  "image_prompt": "silicone anal beads toy, bedroom setting",
+  "intensity": 2,
+  "category": "toys",
+  "tags": [
+    "toys",
+    "beads",
+    "anal",
+    "vaginal"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "toys",
+      "beads"
+    ],
+    "tests_secondary": []
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Анальные/вагинальные шарики?",
+      "en": "Anal/vaginal beads?"
+    }
+  },
+  "paired_with": null,
+  "priority": 50
+}

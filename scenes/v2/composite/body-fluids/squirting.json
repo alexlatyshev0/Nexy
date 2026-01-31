@@ -2,7 +2,15 @@
   "id": "squirting",
   "slug": "squirting",
   "version": 2,
-  "role_direction": "solo",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "body_fluids"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "squirting-watch",
+  "role_direction": "f_to_m",
   "title": {
     "ru": "Сквирт",
     "en": "Squirting"
@@ -11,13 +19,17 @@
     "ru": "Фонтан удовольствия",
     "en": "Fountain of pleasure"
   },
+  "user_description": {
+    "ru": "Ты кончаешь так сильно, что из тебя брызжет струя. Фонтан удовольствия.",
+    "en": "You cum so hard that you squirt. Fountain of pleasure."
+  },
   "ai_description": {
     "ru": "Она кончает так сильно, что брызжет. Фонтан удовольствия, потеря контроля, мокрые простыни. Интенсивный женский оргазм.",
     "en": "She cums so hard she squirts. Fountain of pleasure, loss of control, wet sheets. Intense female orgasm."
   },
   "image_prompt": "woman lying on bed with legs spread, liquid streaming from her body, wet sheets beneath, bedroom setting",
   "intensity": 3,
-  "category": "body_fluids",
+  "category": "body-fluids",
   "tags": [
     "squirting",
     "squirt",
@@ -26,371 +38,6 @@
     "wet",
     "intense_orgasm"
   ],
-  "elements": [
-    {
-      "id": "experience",
-      "label": {
-        "ru": "Опыт",
-        "en": "Experience"
-      },
-      "tag_ref": "squirt_experience",
-      "follow_ups": [
-        {
-          "id": "squirt_history",
-          "type": "single_select",
-          "question": {
-            "ru": "Твой опыт со сквиртом?",
-            "en": "Your squirting experience?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "regular",
-                "label": {
-                  "ru": "Регулярно сквирчу",
-                  "en": "Squirt regularly"
-                }
-              },
-              {
-                "id": "sometimes",
-                "label": {
-                  "ru": "Иногда получается",
-                  "en": "Sometimes happens"
-                }
-              },
-              {
-                "id": "once",
-                "label": {
-                  "ru": "Было пару раз",
-                  "en": "Happened once or twice"
-                }
-              },
-              {
-                "id": "never_want",
-                "label": {
-                  "ru": "Не было, но хочу",
-                  "en": "Never, but want to"
-                }
-              },
-              {
-                "id": "never_unsure",
-                "label": {
-                  "ru": "Не было, не уверена",
-                  "en": "Never, unsure"
-                }
-              },
-              {
-                "id": "partner_does",
-                "label": {
-                  "ru": "Партнёрша сквиртует",
-                  "en": "Partner squirts"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "how_trigger",
-      "label": {
-        "ru": "Как вызвать?",
-        "en": "How to trigger?"
-      },
-      "tag_ref": "squirt_trigger",
-      "follow_ups": [
-        {
-          "id": "trigger_methods",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что вызывает сквирт?",
-            "en": "What triggers squirting?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "gspot",
-                "label": {
-                  "ru": "Стимуляция G-точки",
-                  "en": "G-spot stimulation"
-                }
-              },
-              {
-                "id": "fingers",
-                "label": {
-                  "ru": "Пальцами (come hither)",
-                  "en": "Fingers (come hither)"
-                }
-              },
-              {
-                "id": "toy",
-                "label": {
-                  "ru": "Игрушкой",
-                  "en": "With toy"
-                }
-              },
-              {
-                "id": "cock",
-                "label": {
-                  "ru": "Членом в определённой позе",
-                  "en": "Cock in certain position"
-                }
-              },
-              {
-                "id": "clit_combo",
-                "label": {
-                  "ru": "G-точка + клитор",
-                  "en": "G-spot + clit combo"
-                }
-              },
-              {
-                "id": "relaxation",
-                "label": {
-                  "ru": "Расслабление + доверие",
-                  "en": "Relaxation + trust"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "amount",
-      "label": {
-        "ru": "Сколько?",
-        "en": "How much?"
-      },
-      "tag_ref": "squirt_amount",
-      "follow_ups": [
-        {
-          "id": "quantity",
-          "type": "scale",
-          "question": {
-            "ru": "Количество?",
-            "en": "Amount?"
-          },
-          "config": {
-            "min_label": {
-              "ru": "Немного, подтекает",
-              "en": "A little, drips"
-            },
-            "max_label": {
-              "ru": "Фонтан, всё мокрое",
-              "en": "Fountain, everything wet"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "where_squirt",
-      "label": {
-        "ru": "Куда?",
-        "en": "Where?"
-      },
-      "tag_ref": "squirt_target",
-      "follow_ups": [
-        {
-          "id": "target",
-          "type": "multi_select",
-          "question": {
-            "ru": "Куда сквиртовать?",
-            "en": "Where to squirt?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "bed",
-                "label": {
-                  "ru": "На кровать",
-                  "en": "On bed"
-                }
-              },
-              {
-                "id": "his_face",
-                "label": {
-                  "ru": "Ему в лицо",
-                  "en": "On his face"
-                }
-              },
-              {
-                "id": "his_mouth_swallow",
-                "label": {
-                  "ru": "Ему в рот — глотает",
-                  "en": "In his mouth — swallows"
-                }
-              },
-              {
-                "id": "his_mouth_spit_back",
-                "label": {
-                  "ru": "Ему в рот — выплёвывает на неё",
-                  "en": "In his mouth — spits back on her"
-                }
-              },
-              {
-                "id": "his_body",
-                "label": {
-                  "ru": "На его тело",
-                  "en": "On his body"
-                }
-              },
-              {
-                "id": "his_cock",
-                "label": {
-                  "ru": "На его член",
-                  "en": "On his cock"
-                }
-              },
-              {
-                "id": "her_own_face",
-                "label": {
-                  "ru": "Себе в лицо",
-                  "en": "On her own face"
-                }
-              },
-              {
-                "id": "her_own_mouth",
-                "label": {
-                  "ru": "Себе в рот",
-                  "en": "In her own mouth"
-                }
-              },
-              {
-                "id": "shower",
-                "label": {
-                  "ru": "В душе",
-                  "en": "In shower"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "his_reaction",
-      "label": {
-        "ru": "Его реакция",
-        "en": "His reaction"
-      },
-      "tag_ref": "partner_reaction",
-      "follow_ups": [
-        {
-          "id": "reaction",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какая реакция нравится?",
-            "en": "What reaction do you like?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "proud",
-                "label": {
-                  "ru": "Гордость (я сделал это)",
-                  "en": "Pride (I did this)"
-                }
-              },
-              {
-                "id": "drink",
-                "label": {
-                  "ru": "Пьёт/глотает",
-                  "en": "Drinks/swallows"
-                }
-              },
-              {
-                "id": "more",
-                "label": {
-                  "ru": "Хочет ещё",
-                  "en": "Wants more"
-                }
-              },
-              {
-                "id": "worship",
-                "label": {
-                  "ru": "Поклоняется",
-                  "en": "Worships"
-                }
-              },
-              {
-                "id": "turn_on",
-                "label": {
-                  "ru": "Сильно возбуждается",
-                  "en": "Gets very turned on"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "feeling",
-      "label": {
-        "ru": "Ощущения",
-        "en": "Sensations"
-      },
-      "tag_ref": "squirt_sensation",
-      "follow_ups": [
-        {
-          "id": "what_feels",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что ощущается?",
-            "en": "What does it feel like?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "release",
-                "label": {
-                  "ru": "Полное освобождение",
-                  "en": "Complete release"
-                }
-              },
-              {
-                "id": "intense",
-                "label": {
-                  "ru": "Очень интенсивный оргазм",
-                  "en": "Very intense orgasm"
-                }
-              },
-              {
-                "id": "loss_control",
-                "label": {
-                  "ru": "Потеря контроля",
-                  "en": "Loss of control"
-                }
-              },
-              {
-                "id": "vulnerability",
-                "label": {
-                  "ru": "Уязвимость",
-                  "en": "Vulnerability"
-                }
-              },
-              {
-                "id": "pride",
-                "label": {
-                  "ru": "Гордость за своё тело",
-                  "en": "Pride in body"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что тебя интересует в сквирте?",
-      "en": "What interests you about squirting?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "squirting",
@@ -415,8 +62,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Женщина испытывает сквирт во время оргазма — из неё выделяется струя жидкости",
-    "en": "Woman experiences squirting during orgasm — a stream of liquid comes from her"
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что тебя интересует в сквирте?",
+      "en": "What interests you about squirting?"
+    }
+      }
 }

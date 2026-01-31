@@ -1,0 +1,40 @@
+{
+  "id": "427fed4b-ea94-4ea0-8fbb-4c341ccd6ab8",
+  "slug": "onboarding-power-dom-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 8,
+  "for_gender": "male",
+  "paired_with": "onboarding-power-sub-f",
+  "title": {
+    "ru": "Доминирование",
+    "en": "Domination"
+  },
+  "subtitle": {
+    "ru": "Ты командуешь",
+    "en": "You're in charge"
+  },
+  "ai_description": {
+    "ru": "Интерес к доминированию над партнёром.",
+    "en": "Interest in dominating your partner."
+  },
+  "user_description": {
+    "ru": "Она на коленях перед тобой в ошейнике. Ты держишь поводок и указываешь, что делать.",
+    "en": "She kneels before you in a collar. You hold the leash and tell her what to do."
+  },
+  "image_prompt": "POV from above, naked woman kneeling looking up, wearing collar, man's hand holding leash, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "power-dom"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "power-dom"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "power_dynamic"
+}

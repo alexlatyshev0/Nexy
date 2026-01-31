@@ -45,6 +45,43 @@ const BASELINE_SCENE_SLUGS = [
 const NEUTRAL_ROLE_DIRECTIONS = ['mutual', 'universal', 'solo', 'group'];
 
 // ============================================================================
+// INTER-SCENE GATES (scene requires previous scene answer)
+// ============================================================================
+
+/**
+ * Scene prerequisites: advanced scenes require positive response on base scenes
+ * Key = scene slug pattern (matched with includes())
+ * Value = { requires: base scene patterns, minInterest: minimum interest level (0-100) }
+ *
+ * Logic: Scene is blocked until user answered positively on at least one required scene
+ */
+const SCENE_REQUIRES_SCENE: Record<string, { requires: string[]; minInterest: number }> = {
+  // Oral progression
+  'deepthroat': { requires: ['blowjob'], minInterest: 60 },
+  'facesitting': { requires: ['cunnilingus'], minInterest: 60 },
+
+  // Bondage progression
+  'mummification': { requires: ['bondage'], minInterest: 70 },
+
+  // Anal progression
+  'fisting': { requires: ['anal'], minInterest: 70 },
+  'double-penetration': { requires: ['anal', 'threesome'], minInterest: 60 },
+
+  // Power exchange progression
+  'pet-play': { requires: ['collar'], minInterest: 60 },
+
+  // Sensory progression
+  'electrostim': { requires: ['wax-play', 'ice-play'], minInterest: 60 },
+
+  // Verbal progression
+  'degradation': { requires: ['dirty-talk'], minInterest: 60 },
+
+  // Group progression
+  'gangbang': { requires: ['threesome'], minInterest: 70 },
+  'orgy': { requires: ['threesome'], minInterest: 70 },
+};
+
+// ============================================================================
 // DATA FETCHING
 // ============================================================================
 
@@ -79,6 +116,7 @@ export async function getAnsweredElementIds(
 
 /**
  * Get all tag_refs that user has already answered (from tag_preferences)
+ * Includes both positive (interested) and negative (rejected) preferences
  */
 export async function getAnsweredTagRefs(
   supabase: SupabaseClient,
@@ -86,12 +124,13 @@ export async function getAnsweredTagRefs(
 ): Promise<Set<string>> {
   const answeredTags = new Set<string>();
 
-  // Get all tag preferences with interest_level > 0 or experience_level set
+  // Get all tag preferences where user expressed an opinion (positive or negative)
+  // interest_level > 0: interested, interest_level < 0: rejected
   const { data: tagPrefs } = await supabase
     .from('tag_preferences')
     .select('tag_ref, interest_level, experience_level')
     .eq('user_id', userId)
-    .or('interest_level.gt.0,experience_level.not.is.null');
+    .or('interest_level.neq.0,experience_level.not.is.null');
 
   if (tagPrefs) {
     for (const pref of tagPrefs) {
@@ -106,39 +145,14 @@ export async function getAnsweredTagRefs(
 
 /**
  * Check if scene should be skipped based on dedupe_by_tag logic
- * Scene is skipped if all its elements have already been answered
- * 
- * Note: This is a conservative check - we only skip if ALL elements are answered
- * This prevents skipping scenes too aggressively for new users
+ * Currently disabled - always returns false
  */
 export function shouldSkipSceneByDedupe(
-  scene: SceneV2,
-  answeredElementIds: Set<string>,
-  answeredTagRefs: Set<string>
+  _scene: SceneV2,
+  _answeredElementIds: Set<string>,
+  _answeredTagRefs: Set<string>
 ): boolean {
-  if (!scene.elements || scene.elements.length === 0) {
-    return false; // Can't dedupe if no elements
-  }
-
-  // If user hasn't answered any elements yet, don't skip
-  if (answeredElementIds.size === 0 && answeredTagRefs.size === 0) {
-    return false;
-  }
-
-  // Check if all elements have been answered
-  const allElementsAnswered = scene.elements.every((element) => {
-    // Check by element ID
-    if (answeredElementIds.has(element.id)) {
-      return true;
-    }
-    // Check by tag_ref
-    if (element.tag_ref && answeredTagRefs.has(element.tag_ref)) {
-      return true;
-    }
-    return false;
-  });
-
-  return allElementsAnswered;
+  return false;
 }
 
 // ============================================================================
@@ -295,6 +309,80 @@ export function isSceneBlockedByGates(
   const primaryTag = scene.tags?.[0];
   if (primaryTag && gates.has(primaryTag) && !gates.get(primaryTag)) {
     return true;
+  }
+
+  return false;
+}
+
+// ============================================================================
+// INTER-SCENE GATES CHECKING
+// ============================================================================
+
+/**
+ * Get user's responses to required prerequisite scenes
+ * Returns map of scene slug pattern -> max interest level (0-100)
+ */
+export async function getSceneResponseInterests(
+  supabase: SupabaseClient,
+  userId: string
+): Promise<Map<string, number>> {
+  const interests = new Map<string, number>();
+
+  // Get all scene responses with elements selected
+  const { data: responses } = await supabase
+    .from('scene_responses')
+    .select('scene_slug, elements_selected, skipped')
+    .eq('user_id', userId)
+    .eq('skipped', false);
+
+  if (!responses) return interests;
+
+  for (const response of responses) {
+    if (!response.scene_slug) continue;
+
+    // Calculate interest based on number of elements selected
+    // More elements = higher interest (rough heuristic)
+    const elementsCount = response.elements_selected?.length || 0;
+    const interest = elementsCount > 0 ? Math.min(100, 40 + elementsCount * 20) : 0;
+
+    // Store max interest for this scene pattern
+    const currentInterest = interests.get(response.scene_slug) || 0;
+    if (interest > currentInterest) {
+      interests.set(response.scene_slug, interest);
+    }
+  }
+
+  return interests;
+}
+
+/**
+ * Check if scene is blocked by inter-scene prerequisites
+ * Scene is blocked if user hasn't shown enough interest in required base scenes
+ */
+export function isSceneBlockedByPrerequisites(
+  scene: SceneV2,
+  sceneInterests: Map<string, number>
+): boolean {
+  const sceneSlug = scene.slug;
+  if (!sceneSlug) return false;
+
+  // Find matching prerequisite rule
+  for (const [pattern, requirement] of Object.entries(SCENE_REQUIRES_SCENE)) {
+    if (sceneSlug.includes(pattern)) {
+      // Check if any required scene has sufficient interest
+      const hasPrerequisite = requirement.requires.some((reqPattern) => {
+        // Find any scene response matching the required pattern
+        const entries = Array.from(sceneInterests.entries());
+        return entries.some(([answeredSlug, interest]) =>
+          answeredSlug.includes(reqPattern) && interest >= requirement.minInterest
+        );
+      });
+
+      // Block if no prerequisite met
+      if (!hasPrerequisite) {
+        return true;
+      }
+    }
   }
 
   return false;
@@ -541,38 +629,39 @@ export function applyExplorationExploitation(
 // MAIN SCORING FUNCTION (Fixed & Enhanced)
 // ============================================================================
 
+interface TagPref {
+  tag_ref: string;
+  interest_level: number | null;
+  intensity_preference: number | null;
+  role_preference: string | null;
+}
+
 /**
- * Calculate scene score based on user preferences
- * Enhanced with proper role matching and additional signals
+ * Calculate scene score synchronously (no DB calls)
+ * All data must be pre-fetched and passed as parameters
  */
-export async function calculateSceneScore(
+export function calculateSceneScoreSync(
   scene: SceneV2,
-  supabase: SupabaseClient,
-  userId: string,
-  context?: {
+  tagPrefs: TagPref[],
+  context: {
     seenCategories?: Set<string>;
     answeredCount?: number;
-    userRolePreference?: 'give' | 'receive' | 'both' | null;
+    answeredElementIds?: Set<string>;
+    bodyMapGates?: Record<string, boolean>;
   }
-): Promise<number> {
+): number {
   let score = 0;
 
   // Base score from priority (lower priority = higher score)
   const baseScore = 100 - (scene.priority || 50);
   score += baseScore;
 
-  // Get user's tag preferences
-  const { data: tagPrefs } = await supabase
-    .from('tag_preferences')
-    .select('tag_ref, interest_level, intensity_preference, role_preference')
-    .eq('user_id', userId);
-
-  // Determine user's dominant role preference
-  let userRolePreference = context?.userRolePreference || null;
-  if (!userRolePreference && tagPrefs) {
+  // Determine user's dominant role preference from tagPrefs
+  let userRolePreference: 'give' | 'receive' | 'both' | null = null;
+  if (tagPrefs.length > 0) {
     const roleCounts = { give: 0, receive: 0, both: 0 };
     for (const pref of tagPrefs) {
-      if (pref.role_preference) {
+      if (pref.role_preference && pref.role_preference in roleCounts) {
         roleCounts[pref.role_preference as keyof typeof roleCounts]++;
       }
     }
@@ -585,7 +674,7 @@ export async function calculateSceneScore(
     }
   }
 
-  if (tagPrefs && scene.elements) {
+  if (tagPrefs.length > 0 && scene.elements) {
     const tagPrefMap = new Map(
       tagPrefs.map((pref) => [pref.tag_ref, pref])
     );
@@ -610,7 +699,7 @@ export async function calculateSceneScore(
     }
   }
 
-  // FIXED: Role preference match using proper logic
+  // Role preference match using proper logic
   if (userRolePreference && scene.role_direction) {
     if (matchesRolePreference(userRolePreference, scene.role_direction)) {
       score += 15; // Significant bonus for role match
@@ -620,7 +709,7 @@ export async function calculateSceneScore(
   }
 
   // Penalty for high intensity if user hasn't shown interest in intense scenes
-  const maxInterestLevel = tagPrefs
+  const maxInterestLevel = tagPrefs.length > 0
     ? Math.max(0, ...tagPrefs.map((p) => p.interest_level || 0))
     : 0;
   if (scene.intensity > 3 && maxInterestLevel < 50) {
@@ -628,21 +717,87 @@ export async function calculateSceneScore(
   }
 
   // Boost for scenes with elements user hasn't seen yet
-  const answeredElementIds = await getAnsweredElementIds(supabase, userId);
-  const newElementsCount = scene.elements?.filter(
-    (e) => !answeredElementIds.has(e.id)
-  ).length || 0;
-  if (newElementsCount > 0) {
-    score += newElementsCount * 5; // Bonus for new elements
+  if (context.answeredElementIds && scene.elements) {
+    const newElementsCount = scene.elements.filter(
+      (e) => !context.answeredElementIds!.has(e.id)
+    ).length;
+    if (newElementsCount > 0) {
+      score += newElementsCount * 5; // Bonus for new elements
+    }
+  }
+
+  // Body map gates boost - boost scenes that match body map preferences
+  if (context.bodyMapGates && Object.keys(context.bodyMapGates).length > 0) {
+    const sceneTags = scene.tags || [];
+    const sceneCategory = scene.category || '';
+
+    // Check if any scene tags match open body map gates
+    for (const tag of sceneTags) {
+      if (context.bodyMapGates[tag]) {
+        score += 15; // Significant bonus for body map match
+      }
+    }
+
+    // Check category match
+    if (context.bodyMapGates[sceneCategory]) {
+      score += 10; // Category match bonus
+    }
+
+    // Check specific mappings
+    const tagToGateMap: Record<string, string[]> = {
+      anal: ['anal', 'rimming', 'pegging'],
+      oral: ['oral', 'blowjob', 'cunnilingus'],
+      foot_worship: ['foot_worship', 'foot_fetish', 'feet'],
+      spanking: ['spanking', 'impact', 'discipline'],
+      nipple_play: ['nipple_play', 'nipple_clamps', 'breast_play'],
+    };
+
+    for (const [gate, matchTags] of Object.entries(tagToGateMap)) {
+      if (context.bodyMapGates[gate]) {
+        const hasMatchingTag = sceneTags.some(t => matchTags.includes(t)) || matchTags.includes(sceneCategory);
+        if (hasMatchingTag) {
+          score += 20; // Strong bonus for specific body map interest match
+        }
+      }
+    }
   }
 
   // Breadth-first bonus for category coverage
-  if (context?.seenCategories !== undefined && context?.answeredCount !== undefined) {
+  if (context.seenCategories !== undefined && context.answeredCount !== undefined) {
     score += calculateBreadthBonus(scene, context.seenCategories, context.answeredCount);
   }
 
   // Ensure score is non-negative
   return Math.max(0, score);
+}
+
+/**
+ * Calculate scene score based on user preferences (async version - DEPRECATED)
+ * Use calculateSceneScoreSync instead for better performance
+ */
+export async function calculateSceneScore(
+  scene: SceneV2,
+  supabase: SupabaseClient,
+  userId: string,
+  context?: {
+    seenCategories?: Set<string>;
+    answeredCount?: number;
+    userRolePreference?: 'give' | 'receive' | 'both' | null;
+  }
+): Promise<number> {
+  // Fetch data and delegate to sync version
+  const { data: tagPrefs } = await supabase
+    .from('tag_preferences')
+    .select('tag_ref, interest_level, intensity_preference, role_preference')
+    .eq('user_id', userId);
+
+  const answeredElementIds = await getAnsweredElementIds(supabase, userId);
+
+  return calculateSceneScoreSync(scene, tagPrefs || [], {
+    seenCategories: context?.seenCategories,
+    answeredCount: context?.answeredCount,
+    answeredElementIds,
+  });
 }
 
 /**
@@ -664,6 +819,7 @@ export async function getAdaptiveScenes(
     enableDedupe?: boolean;
     enableAdaptiveScoring?: boolean;
     enableBaselineGates?: boolean;
+    enableInterSceneGates?: boolean;
     enableComfortProgression?: boolean;
     enableExplorationExploitation?: boolean;
   } = {}
@@ -673,6 +829,7 @@ export async function getAdaptiveScenes(
     enableDedupe = true,
     enableAdaptiveScoring = true,
     enableBaselineGates = true,
+    enableInterSceneGates = true,
     enableComfortProgression = true,
     enableExplorationExploitation = true,
   } = options;
@@ -698,9 +855,9 @@ export async function getAdaptiveScenes(
     // Check via tags since question_type may not be in base Scene type
     if (s.tags?.includes('body_map')) return false;
 
-    const scene = s as SceneV2;
+    const scene = s as unknown as SceneV2;
     return scene.version === 2 && Array.isArray(scene.elements);
-  }) as SceneV2[];
+  }) as unknown as SceneV2[];
 
   // Filter by intensity (comfort-based)
   let filteredScenes = v2Scenes.filter((s) => s.intensity <= maxIntensity);
@@ -716,12 +873,23 @@ export async function getAdaptiveScenes(
   }
 
   // ========================================
-  // 4. DEDUPE BY TAG
+  // 3.5. INTER-SCENE GATES FILTERING
   // ========================================
-  if (enableDedupe) {
-    const answeredElementIds = await getAnsweredElementIds(supabase, userId);
-    const answeredTagRefs = await getAnsweredTagRefs(supabase, userId);
+  if (enableInterSceneGates) {
+    const sceneInterests = await getSceneResponseInterests(supabase, userId);
+    filteredScenes = filteredScenes.filter(
+      (scene) => !isSceneBlockedByPrerequisites(scene, sceneInterests)
+    );
+  }
 
+  // ========================================
+  // 4. PRE-FETCH DATA FOR DEDUPE AND SCORING
+  // ========================================
+  // Fetch once, use for both dedupe and scoring
+  const answeredElementIds = await getAnsweredElementIds(supabase, userId);
+  const answeredTagRefs = enableDedupe ? await getAnsweredTagRefs(supabase, userId) : new Set<string>();
+
+  if (enableDedupe) {
     filteredScenes = filteredScenes.filter(
       (scene) => !shouldSkipSceneByDedupe(scene, answeredElementIds, answeredTagRefs)
     );
@@ -731,18 +899,33 @@ export async function getAdaptiveScenes(
   // 5. SCORE SCENES
   // ========================================
   if (enableAdaptiveScoring) {
-    // Get context for scoring
+    // Get context for scoring - fetch ONCE, not per scene
     const seenCategories = await getSeenCategories(supabase, userId);
 
-    const scoredScenes = await Promise.all(
-      filteredScenes.map(async (scene) => ({
-        scene,
-        score: await calculateSceneScore(scene, supabase, userId, {
-          seenCategories,
-          answeredCount,
-        }),
-      }))
-    );
+    // Pre-fetch tag preferences ONCE (was being fetched 200+ times in calculateSceneScore!)
+    const { data: tagPrefs } = await supabase
+      .from('tag_preferences')
+      .select('tag_ref, interest_level, intensity_preference, role_preference')
+      .eq('user_id', userId);
+
+    // Fetch body_map_gates for scoring boost
+    const { data: userGatesData } = await supabase
+      .from('user_gates')
+      .select('body_map_gates')
+      .eq('user_id', userId)
+      .single();
+    const bodyMapGates = (userGatesData?.body_map_gates as Record<string, boolean>) || {};
+
+    // Calculate scores synchronously now that we have all data
+    const scoredScenes = filteredScenes.map((scene) => ({
+      scene,
+      score: calculateSceneScoreSync(scene, tagPrefs || [], {
+        seenCategories,
+        answeredCount,
+        answeredElementIds,
+        bodyMapGates,
+      }),
+    }));
 
     // ========================================
     // 6. EXPLORATION VS EXPLOITATION

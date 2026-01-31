@@ -1,0 +1,40 @@
+{
+  "id": "4ed51428-3ea5-4646-bfe5-2b5cd5eb7c06",
+  "slug": "onboarding-praise-receive-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 14.5,
+  "for_gender": "male",
+  "paired_with": "onboarding-praise-give-f",
+  "title": {
+    "ru": "Похвала",
+    "en": "Praise"
+  },
+  "subtitle": {
+    "ru": "Тебя хвалят",
+    "en": "They praise you"
+  },
+  "ai_description": {
+    "ru": "Интерес к получению похвалы.",
+    "en": "Interest in receiving praise."
+  },
+  "user_description": {
+    "ru": "«Ты такой красивый. Такой хороший мальчик. Молодец.» Она говорит тебе.",
+    "en": "\"You're so handsome. Such a good boy. Well done.\" She tells you."
+  },
+  "image_prompt": "naked woman caressing naked man's face, looking into his eyes, gentle expression, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "praise-receive"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "praise-receive"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "praise"
+}

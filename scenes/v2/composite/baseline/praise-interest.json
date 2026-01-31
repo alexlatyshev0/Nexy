@@ -1,0 +1,53 @@
+{
+  "id": "praise-interest",
+  "slug": "praise-interest",
+  "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Похвала",
+    "en": "Praise"
+  },
+  "subtitle": {
+    "ru": "Комплименты в постели",
+    "en": "Compliments in bed"
+  },
+  "user_description": {
+    "ru": "Похвала в постели: \"Какая ты красивая\", \"Хороший мальчик\", \"Молодец\".",
+    "en": "Praise in bed: \"You're so beautiful\", \"Good boy\", \"Well done\"."
+  },
+  "ai_description": {
+    "ru": "Похвала и комплименты во время секса — 'Хорошая девочка', 'Ты такой сильный'.",
+    "en": "Praise and compliments during sex — 'Good girl', 'You're so strong'."
+  },
+  "image_prompt": "couple in bed, man whispering into woman's ear, intimate close-up, bedroom setting",
+  "intensity": 1,
+  "category": "baseline",
+  "tags": [
+    "baseline",
+    "praise",
+    "verbal",
+    "compliments"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "praise",
+      "verbal"
+    ],
+    "gates": {
+      "yes": [
+        "praise_scenes"
+      ]
+    }
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Похвала в постели — нравится?",
+      "en": "Praise in bed — do you like it?"
+    }
+  },
+  "priority": 8
+}

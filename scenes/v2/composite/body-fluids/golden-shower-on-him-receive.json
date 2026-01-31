@@ -1,0 +1,60 @@
+{
+  "id": "golden-shower-f-to-m-receive",
+  "slug": "golden-shower-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "body_fluids"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "golden-shower-f-to-m",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Золотой дождь",
+    "en": "Golden Shower"
+  },
+  "subtitle": {
+    "ru": "Она на тебя",
+    "en": "She on you"
+  },
+  "user_description": {
+    "ru": "Она писает на тебя. Ты на коленях принимаешь её струю.",
+    "en": "She pees on you. You kneel and receive her stream."
+  },
+  "ai_description": {
+    "ru": "Она стоит над ним, он на коленях смотрит снизу вверх. Её власть абсолютна, он принимает всё. Женское доминирование в чистом виде.",
+    "en": "She stands over him, he kneels looking up. Her power absolute, he accepts everything. Pure female domination."
+  },
+  "image_prompt": "woman standing over kneeling man in bathroom, both nude, shower/bathroom tiles visible",
+  "intensity": 4,
+  "category": "body-fluids",
+  "tags": [
+    "watersports",
+    "golden_shower",
+    "urine",
+    "femdom",
+    "humiliation",
+    "female_domination"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "watersports",
+      "golden_shower",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "humiliation",
+      "toilet_slave",
+      "female_domination"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в этой сцене?",
+      "en": "What appeals in this scene?"
+    }
+      }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "bondage-she-ties-him-receive",
+  "slug": "bondage-she-ties-him-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic",
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "bondage-she-ties-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Бондаж",
+    "en": "Bondage"
+  },
+  "subtitle": {
+    "ru": "Она связывает тебя",
+    "en": "She ties you"
+  },
+  "user_description": {
+    "ru": "Она связывает твои руки — к кровати или за спиной.",
+    "en": "She ties your hands — to bed or behind your back."
+  },
+  "ai_description": {
+    "ru": "Его руки привязаны к изголовью, он полностью в её власти. Она садится сверху, улыбается. Он не может сопротивляться — только принимать.",
+    "en": "His hands tied to headboard, he's completely in her power. She straddles him, smiling. He cannot resist — only accept."
+  },
+  "image_prompt": "woman tying mans wrists to headboard with silk rope, he nude lying on bed, she in lingerie leaning over him, bedroom setting",
+  "intensity": 3,
+  "category": "control-power",
+  "tags": [
+    "bondage",
+    "femdom",
+    "restraint",
+    "tied",
+    "male_submission",
+    "female_control"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "bondage",
+      "femdom",
+      "restraints"
+    ],
+    "tests_secondary": [
+      "helplessness",
+      "male_submission",
+      "trust"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда она связывает тебя?",
+      "en": "What appeals when she ties you?"
+    }
+      }
+}

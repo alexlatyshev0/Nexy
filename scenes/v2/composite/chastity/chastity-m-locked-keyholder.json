@@ -1,0 +1,58 @@
+{
+  "id": "chastity-he-locked-keyholder",
+  "slug": "chastity-he-locked-keyholder",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "chastity-he-locked-wear",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Chastity",
+    "en": "Chastity"
+  },
+  "subtitle": {
+    "ru": "Он заперт, ключ у тебя",
+    "en": "He's locked, you hold the key"
+  },
+  "user_description": {
+    "ru": "Он носит клетку на члене. Ключ у тебя — ты решаешь когда его освободить.",
+    "en": "He wears a cage on his cock. You hold the key — you decide when to release him."
+  },
+  "ai_description": {
+    "ru": "На его члене клетка, ключ у неё. Он не может даже возбудиться без её разрешения. Полный контроль над его удовольствием.",
+    "en": "Cage on his cock, she holds the key. He can't even get aroused without her permission. Complete control over his pleasure."
+  },
+  "image_prompt": "man wearing chastity cage on penis, woman beside him holding small metal key in her fingers, bedroom setting",
+  "intensity": 4,
+  "category": "chastity",
+  "tags": [
+    "chastity",
+    "keyholder",
+    "denial",
+    "femdom",
+    "orgasm_control"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "chastity",
+      "keyholder",
+      "denial"
+    ],
+    "tests_secondary": [
+      "femdom",
+      "orgasm_control"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в контроле над его клеткой?",
+      "en": "What appeals about controlling his cage?"
+    }
+      }
+}

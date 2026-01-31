@@ -1,5 +1,5 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
-import profileAnalysis from '../../scenes/v2/profile-analysis.json';
+import { ARCHETYPES, tagMatchesPrefixes, type ArchetypeDefinition } from './archetype-definitions';
 
 interface TagPreference {
   tag_ref: string;
@@ -9,144 +9,145 @@ interface TagPreference {
   experience_level: 'tried' | 'want_to_try' | 'not_interested' | 'curious' | null;
 }
 
-interface TagScores {
-  [tag: string]: number;
-}
-
-interface Archetype {
+interface MatchedArchetype {
   id: string;
   name: { ru: string; en: string };
   description: { ru: string; en: string };
   score: number;
 }
 
-const ARCHETYPES = profileAnalysis.archetypes;
-const ARCHETYPE_THRESHOLD = 0.4;
+const ARCHETYPE_THRESHOLD = 0.35;
 const MAX_ARCHETYPES = 3;
+const MIN_INTEREST_LEVEL = 50; // Tag must have at least this interest level to count
 
 /**
- * Convert tag_preferences to TagScores format
- * Maps interest_level (0-100) to tag score (0-5 scale)
- */
-function tagPreferencesToTagScores(tagPrefs: TagPreference[]): TagScores {
-  const tagScores: TagScores = {};
-  
-  for (const pref of tagPrefs) {
-    if (pref.interest_level !== null) {
-      // Convert 0-100 to 0-5 scale
-      tagScores[pref.tag_ref] = (pref.interest_level / 100) * 5;
-    }
-  }
-  
-  return tagScores;
-}
-
-/**
- * Calculate give/receive balance from role preferences
- * Returns -1 (receive) to 1 (give)
+ * Calculate give/receive balance from role preferences.
+ * Returns -1 (all receive) to 1 (all give), 0 = balanced.
  */
 function calculateGiveReceiveBalance(tagPrefs: TagPreference[]): number {
   let giveCount = 0;
   let receiveCount = 0;
   let bothCount = 0;
-  
+
   for (const pref of tagPrefs) {
-    if (pref.role_preference === 'give') {
-      giveCount++;
-    } else if (pref.role_preference === 'receive') {
-      receiveCount++;
-    } else if (pref.role_preference === 'both') {
-      bothCount++;
+    if (pref.interest_level && pref.interest_level >= MIN_INTEREST_LEVEL) {
+      if (pref.role_preference === 'give') {
+        giveCount++;
+      } else if (pref.role_preference === 'receive') {
+        receiveCount++;
+      } else if (pref.role_preference === 'both') {
+        bothCount++;
+      }
     }
   }
-  
+
   const total = giveCount + receiveCount + bothCount;
   if (total === 0) return 0;
-  
-  // Calculate balance: positive = give, negative = receive
+
   const balance = (giveCount - receiveCount) / total;
   return Math.max(-1, Math.min(1, balance));
 }
 
 /**
- * Calculate archetype match score
+ * Count how many tags match the given prefixes with sufficient interest.
+ */
+function countMatchingTags(
+  tagPrefs: TagPreference[],
+  prefixes: string[],
+  minInterest: number = MIN_INTEREST_LEVEL
+): number {
+  return tagPrefs.filter(
+    (pref) =>
+      pref.interest_level !== null &&
+      pref.interest_level >= minInterest &&
+      tagMatchesPrefixes(pref.tag_ref, prefixes)
+  ).length;
+}
+
+/**
+ * Get average interest level for tags matching prefixes.
+ */
+function getAverageInterest(tagPrefs: TagPreference[], prefixes: string[]): number {
+  const matching = tagPrefs.filter(
+    (pref) =>
+      pref.interest_level !== null &&
+      pref.interest_level >= MIN_INTEREST_LEVEL &&
+      tagMatchesPrefixes(pref.tag_ref, prefixes)
+  );
+
+  if (matching.length === 0) return 0;
+
+  const sum = matching.reduce((acc, pref) => acc + (pref.interest_level || 0), 0);
+  return sum / matching.length;
+}
+
+/**
+ * Calculate archetype match score.
  */
 function calculateArchetypeScore(
-  archetypeId: string,
-  archetype: any,
-  tagScores: TagScores,
+  archetype: ArchetypeDefinition,
+  tagPrefs: TagPreference[],
   giveReceiveBalance: number
 ): number {
   let score = 0;
   let maxPossible = 0;
 
-  // Check high indicators
-  if (archetype.indicators?.high) {
-    for (const tag of archetype.indicators.high) {
-      const tagScore = tagScores[tag] || 0;
-      score += Math.min(tagScore, 5); // Cap at 5
-      maxPossible += 5;
+  // High indicators (weight: 3 points each)
+  if (archetype.indicators.high) {
+    const highMatches = countMatchingTags(tagPrefs, archetype.indicators.high);
+    const avgInterest = getAverageInterest(tagPrefs, archetype.indicators.high);
+
+    // Score based on how many high indicators match and their average interest
+    if (highMatches > 0) {
+      score += Math.min(highMatches, 4) * 3 * (avgInterest / 100);
     }
+    maxPossible += 4 * 3; // Max 4 high indicators counted
   }
 
-  // Check moderate indicators
-  if (archetype.indicators?.moderate) {
-    for (const tag of archetype.indicators.moderate) {
-      const tagScore = tagScores[tag] || 0;
-      score += Math.min(tagScore, 3); // Cap at 3
-      maxPossible += 3;
+  // Moderate indicators (weight: 1.5 points each)
+  if (archetype.indicators.moderate) {
+    const modMatches = countMatchingTags(tagPrefs, archetype.indicators.moderate);
+    const avgInterest = getAverageInterest(tagPrefs, archetype.indicators.moderate);
+
+    if (modMatches > 0) {
+      score += Math.min(modMatches, 3) * 1.5 * (avgInterest / 100);
     }
+    maxPossible += 3 * 1.5;
   }
 
-  // Check low indicators (penalize if present)
-  if (archetype.indicators?.low) {
-    for (const tag of archetype.indicators.low) {
-      const tagScore = tagScores[tag] || 0;
-      score -= tagScore * 0.5; // Penalty for having "low" tags high
-    }
+  // Low indicators (penalty for having them high)
+  if (archetype.indicators.low) {
+    const lowMatches = countMatchingTags(tagPrefs, archetype.indicators.low, 70);
+    score -= lowMatches * 1.5;
   }
 
-  // Check pattern
-  if (archetype.indicators?.pattern) {
-    const pattern = archetype.indicators.pattern as string;
+  // Role pattern matching (bonus: 4 points)
+  if (archetype.indicators.rolePattern) {
+    maxPossible += 4;
 
-    if (pattern.includes('give >> receive')) {
-      if (giveReceiveBalance > 0.3) {
-        score += 3;
-      } else if (giveReceiveBalance < -0.3) {
-        score -= 2;
-      }
-      maxPossible += 3;
+    switch (archetype.indicators.rolePattern) {
+      case 'give':
+        if (giveReceiveBalance > 0.2) {
+          score += 4 * giveReceiveBalance;
+        } else if (giveReceiveBalance < -0.2) {
+          score -= 2;
+        }
+        break;
+      case 'receive':
+        if (giveReceiveBalance < -0.2) {
+          score += 4 * Math.abs(giveReceiveBalance);
+        } else if (giveReceiveBalance > 0.2) {
+          score -= 2;
+        }
+        break;
+      case 'balanced':
+        if (Math.abs(giveReceiveBalance) < 0.3) {
+          score += 4;
+        } else {
+          score -= 1;
+        }
+        break;
     }
-
-    if (pattern.includes('receive >> give')) {
-      if (giveReceiveBalance < -0.3) {
-        score += 3;
-      } else if (giveReceiveBalance > 0.3) {
-        score -= 2;
-      }
-      maxPossible += 3;
-    }
-
-    if (pattern.includes('give ≈ receive')) {
-      if (Math.abs(giveReceiveBalance) < 0.3) {
-        score += 3;
-      } else {
-        score -= 1;
-      }
-      maxPossible += 3;
-    }
-  }
-
-  // Check high_any (any one of these is high)
-  if (archetype.indicators?.high_any) {
-    const anyHigh = archetype.indicators.high_any.some(
-      (tag: string) => (tagScores[tag] || 0) >= 3
-    );
-    if (anyHigh) {
-      score += 5;
-    }
-    maxPossible += 5;
   }
 
   // Normalize to 0-1
@@ -154,12 +155,12 @@ function calculateArchetypeScore(
 }
 
 /**
- * Calculate partner archetypes from tag_preferences
+ * Calculate partner archetypes from tag_preferences.
  */
 export async function calculatePartnerArchetypes(
   supabase: SupabaseClient,
   partnerId: string
-): Promise<Archetype[]> {
+): Promise<MatchedArchetype[]> {
   // Get all tag preferences for partner
   const { data: tagPrefs } = await supabase
     .from('tag_preferences')
@@ -170,27 +171,17 @@ export async function calculatePartnerArchetypes(
     return [];
   }
 
-  // Convert to TagScores format
-  const tagScores = tagPreferencesToTagScores(tagPrefs as TagPreference[]);
-  
   // Calculate give/receive balance
   const giveReceiveBalance = calculateGiveReceiveBalance(tagPrefs as TagPreference[]);
 
   // Calculate archetype scores
-  const archetypeScores: { id: string; archetype: any; score: number }[] = [];
+  const archetypeScores: { archetype: ArchetypeDefinition; score: number }[] = [];
 
-  for (const [archetypeId, archetype] of Object.entries(ARCHETYPES)) {
-    if (archetypeId === '_note') continue;
-
-    const score = calculateArchetypeScore(
-      archetypeId,
-      archetype,
-      tagScores,
-      giveReceiveBalance
-    );
+  for (const archetype of ARCHETYPES) {
+    const score = calculateArchetypeScore(archetype, tagPrefs as TagPreference[], giveReceiveBalance);
 
     if (score >= ARCHETYPE_THRESHOLD) {
-      archetypeScores.push({ id: archetypeId, archetype, score });
+      archetypeScores.push({ archetype, score });
     }
   }
 
@@ -198,8 +189,8 @@ export async function calculatePartnerArchetypes(
   archetypeScores.sort((a, b) => b.score - a.score);
   const topArchetypes = archetypeScores.slice(0, MAX_ARCHETYPES);
 
-  return topArchetypes.map(({ id, archetype, score }) => ({
-    id,
+  return topArchetypes.map(({ archetype, score }) => ({
+    id: archetype.id,
     name: archetype.name,
     description: archetype.description,
     score,
@@ -207,7 +198,7 @@ export async function calculatePartnerArchetypes(
 }
 
 /**
- * Get average intensity preference from tag_preferences
+ * Get average intensity preference from tag_preferences.
  */
 export async function getAverageIntensity(
   supabase: SupabaseClient,
@@ -226,9 +217,23 @@ export async function getAverageIntensity(
   const intensities = tagPrefs
     .map((p) => p.intensity_preference)
     .filter((v): v is number => v !== null);
-  
+
   if (intensities.length === 0) return null;
 
   const sum = intensities.reduce((acc, val) => acc + val, 0);
   return sum / intensities.length;
+}
+
+/**
+ * Get archetype by ID.
+ */
+export function getArchetypeById(id: string): ArchetypeDefinition | undefined {
+  return ARCHETYPES.find((a) => a.id === id);
+}
+
+/**
+ * Get all available archetypes.
+ */
+export function getAllArchetypes(): ArchetypeDefinition[] {
+  return ARCHETYPES;
 }

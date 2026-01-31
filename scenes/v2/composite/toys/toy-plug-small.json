@@ -1,0 +1,55 @@
+{
+  "id": "toy-plug-small",
+  "slug": "toy-plug-small",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "toys",
+    "anal"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Маленькая пробка",
+    "en": "Small Plug"
+  },
+  "subtitle": {
+    "ru": "Для начинающих",
+    "en": "For beginners"
+  },
+  "user_description": {
+    "ru": "Ты пробуешь небольшую анальную пробку. Идеальна для знакомства с ощущениями.",
+    "en": "You try a small anal plug. Perfect for exploring new sensations."
+  },
+  "ai_description": {
+    "ru": "Небольшая анальная пробка. Идеальна для знакомства с ощущениями.",
+    "en": "Small anal plug. Perfect for exploring new sensations."
+  },
+  "image_prompt": "small silicone anal plug, bedroom",
+  "intensity": 2,
+  "category": "toys",
+  "tags": [
+    "toys",
+    "plugs",
+    "anal",
+    "beginner"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "toys",
+      "plug"
+    ],
+    "tests_secondary": []
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Маленькая анальная пробка?",
+      "en": "Small butt plug?"
+    }
+  },
+  "paired_with": null,
+  "priority": 50
+}

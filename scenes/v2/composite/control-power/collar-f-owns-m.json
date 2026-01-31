@@ -1,8 +1,15 @@
 {
-  "id": "collar_f_owns_m",
+  "id": "collar-she-owns-him",
   "slug": "collar-she-owns-him",
   "version": 2,
-  "paired_scene": "collar_m_owns_f",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "collar-she-owns-him-receive",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Ошейник и владение",
@@ -12,13 +19,17 @@
     "ru": "Она его хозяйка",
     "en": "She owns him"
   },
+  "user_description": {
+    "ru": "Ты надеваешь ему ошейник и держишь поводок.",
+    "en": "You put a collar on his neck and hold the leash."
+  },
   "ai_description": {
     "ru": "Ошейник на его шее — он принадлежит ей. Госпожа держит поводок, он следует с гордостью. Femdom ownership в чистом виде.",
     "en": "Collar on his neck — he belongs to her. Mistress holds the leash, he follows with pride. Pure femdom ownership."
   },
   "image_prompt": "woman holding leash attached to collar on man's neck, woman standing in lingerie, man kneeling nude, bedroom setting",
   "intensity": 4,
-  "category": "control_power",
+  "category": "control-power",
   "tags": [
     "collar",
     "femdom",
@@ -27,379 +38,6 @@
     "mistress",
     "male_submission"
   ],
-  "elements": [
-    {
-      "id": "collar_type",
-      "label": {
-        "ru": "Тип ошейника",
-        "en": "Collar type"
-      },
-      "tag_ref": "collar_type_m",
-      "follow_ups": [
-        {
-          "id": "collars",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой ошейник?",
-            "en": "What collar?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "leather",
-                "label": {
-                  "ru": "Кожаный",
-                  "en": "Leather"
-                }
-              },
-              {
-                "id": "chain",
-                "label": {
-                  "ru": "Цепь",
-                  "en": "Chain"
-                }
-              },
-              {
-                "id": "heavy",
-                "label": {
-                  "ru": "Тяжёлый металлический",
-                  "en": "Heavy metal"
-                }
-              },
-              {
-                "id": "dog_collar",
-                "label": {
-                  "ru": "Собачий ошейник",
-                  "en": "Dog collar"
-                }
-              },
-              {
-                "id": "discrete",
-                "label": {
-                  "ru": "Дискретный (для публики)",
-                  "en": "Discrete (for public)"
-                }
-              },
-              {
-                "id": "locking",
-                "label": {
-                  "ru": "С замком",
-                  "en": "Locking"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "leash",
-      "label": {
-        "ru": "Поводок",
-        "en": "Leash"
-      },
-      "tag_ref": "femdom_leash",
-      "follow_ups": [
-        {
-          "id": "leash_use",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как использовать поводок?",
-            "en": "How to use leash?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "walk",
-                "label": {
-                  "ru": "Водить по дому",
-                  "en": "Walk around house"
-                }
-              },
-              {
-                "id": "pull",
-                "label": {
-                  "ru": "Тянуть к себе",
-                  "en": "Pull to her"
-                }
-              },
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Контролировать позицию",
-                  "en": "Control position"
-                }
-              },
-              {
-                "id": "tie",
-                "label": {
-                  "ru": "Привязать",
-                  "en": "Tie him"
-                }
-              },
-              {
-                "id": "display",
-                "label": {
-                  "ru": "Для демонстрации власти",
-                  "en": "Display power"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "meaning",
-      "label": {
-        "ru": "Значение",
-        "en": "Meaning"
-      },
-      "tag_ref": "male_collar_meaning",
-      "follow_ups": [
-        {
-          "id": "what_means",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что означает?",
-            "en": "What does it mean?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "her_property",
-                "label": {
-                  "ru": "Её собственность",
-                  "en": "Her property"
-                }
-              },
-              {
-                "id": "devotion",
-                "label": {
-                  "ru": "Преданность ей",
-                  "en": "Devotion to her"
-                }
-              },
-              {
-                "id": "submission",
-                "label": {
-                  "ru": "Моё подчинение",
-                  "en": "My submission"
-                }
-              },
-              {
-                "id": "pride",
-                "label": {
-                  "ru": "Гордость служить ей",
-                  "en": "Pride in serving her"
-                }
-              },
-              {
-                "id": "identity",
-                "label": {
-                  "ru": "Часть моей идентичности",
-                  "en": "Part of my identity"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "her_titles",
-      "label": {
-        "ru": "Её титул",
-        "en": "Her title"
-      },
-      "tag_ref": "femdom_titles",
-      "follow_ups": [
-        {
-          "id": "title",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как её называть?",
-            "en": "What to call her?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "mistress",
-                "label": {
-                  "ru": "Госпожа",
-                  "en": "Mistress"
-                }
-              },
-              {
-                "id": "goddess",
-                "label": {
-                  "ru": "Богиня",
-                  "en": "Goddess"
-                }
-              },
-              {
-                "id": "queen",
-                "label": {
-                  "ru": "Королева",
-                  "en": "Queen"
-                }
-              },
-              {
-                "id": "owner",
-                "label": {
-                  "ru": "Хозяйка",
-                  "en": "Owner"
-                }
-              },
-              {
-                "id": "mommy",
-                "label": {
-                  "ru": "Мамочка",
-                  "en": "Mommy"
-                }
-              },
-              {
-                "id": "name",
-                "label": {
-                  "ru": "По имени",
-                  "en": "By name"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "rules",
-      "label": {
-        "ru": "Правила",
-        "en": "Rules"
-      },
-      "tag_ref": "femdom_ownership_rules",
-      "follow_ups": [
-        {
-          "id": "what_rules",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие правила?",
-            "en": "What rules?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "kneel",
-                "label": {
-                  "ru": "Встать на колени",
-                  "en": "Kneel"
-                }
-              },
-              {
-                "id": "kiss_feet",
-                "label": {
-                  "ru": "Целовать ноги",
-                  "en": "Kiss feet"
-                }
-              },
-              {
-                "id": "thank",
-                "label": {
-                  "ru": "Благодарить госпожу",
-                  "en": "Thank mistress"
-                }
-              },
-              {
-                "id": "permission",
-                "label": {
-                  "ru": "Разрешение на всё",
-                  "en": "Permission for everything"
-                }
-              },
-              {
-                "id": "protocols",
-                "label": {
-                  "ru": "Протоколы поведения",
-                  "en": "Behavior protocols"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "male_collar_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "belonging",
-                "label": {
-                  "ru": "Принадлежать ей",
-                  "en": "Belonging to her"
-                }
-              },
-              {
-                "id": "her_power",
-                "label": {
-                  "ru": "Её власть",
-                  "en": "Her power"
-                }
-              },
-              {
-                "id": "visible",
-                "label": {
-                  "ru": "Видимый знак",
-                  "en": "Visible sign"
-                }
-              },
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Её контроль",
-                  "en": "Her control"
-                }
-              },
-              {
-                "id": "devotion",
-                "label": {
-                  "ru": "Выражение преданности",
-                  "en": "Expression of devotion"
-                }
-              },
-              {
-                "id": "humility",
-                "label": {
-                  "ru": "Смирение",
-                  "en": "Humility"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает когда она владеет?",
-      "en": "What appeals about her ownership?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "collar",
@@ -424,8 +62,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Она надевает ему на шею ошейник и держит поводок",
-    "en": "She puts a collar on his neck and holds the leash"
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда она владеет?",
+      "en": "What appeals about her ownership?"
+    }
+      }
 }

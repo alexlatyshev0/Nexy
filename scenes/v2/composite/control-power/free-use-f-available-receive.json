@@ -1,0 +1,58 @@
+{
+  "id": "free-use-f-available-receive",
+  "slug": "free-use-f-available-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "free-use-f-available",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Free use (ты доступна)",
+    "en": "Free Use (You're Available)"
+  },
+  "subtitle": {
+    "ru": "Он использует тебя когда хочет",
+    "en": "He uses you whenever he wants"
+  },
+  "user_description": {
+    "ru": "Ты доступна для секса в любой момент. Он может трахнуть тебя во время домашних дел, работы или сна без спроса.",
+    "en": "You're available for sex anytime. He can fuck you during housework, work, or sleep without asking."
+  },
+  "ai_description": {
+    "ru": "Она доступна для секса в любое время без спроса. Во время домашних дел, сна, работы. Тест на female submission, objectification.",
+    "en": "She's available for sex anytime without asking. During housework, sleep, work. Tests female submission, objectification."
+  },
+  "image_prompt": "woman bent over kitchen counter washing dishes, man behind her lifting her skirt and entering her, she continues task, kitchen with morning sunlight",
+  "intensity": 4,
+  "category": "control-power",
+  "tags": [
+    "free_use",
+    "access",
+    "control",
+    "female_submission",
+    "objectification"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "free_use",
+      "female_submission"
+    ],
+    "tests_secondary": [
+      "objectification",
+      "control",
+      "availability"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Free use — ты доступна для него в любой момент?",
+      "en": "Free use — you're available for him anytime?"
+    }
+  }
+}

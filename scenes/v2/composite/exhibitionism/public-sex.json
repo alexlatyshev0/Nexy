@@ -1,7 +1,15 @@
 {
-  "id": "public_sex",
+  "id": "public-sex",
   "slug": "public-sex",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "public",
+    "exhibitionism"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Секс в публичном месте",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Риск быть пойманным",
     "en": "Risk of getting caught"
+  },
+  "user_description": {
+    "ru": "Секс в публичном месте. Парк, примерочная, риск.",
+    "en": "Sex in public place. Park, fitting room, risk."
   },
   "ai_description": {
     "ru": "Секс там, где могут застать. В парке, примерочной, туалете. Адреналин, риск, острые ощущения от запретного.",
@@ -25,258 +37,6 @@
     "thrill",
     "forbidden"
   ],
-  "elements": [
-    {
-      "id": "location",
-      "label": {
-        "ru": "Место",
-        "en": "Location"
-      },
-      "tag_ref": "public_location",
-      "follow_ups": [
-        {
-          "id": "where",
-          "type": "multi_select",
-          "question": {
-            "ru": "Где?",
-            "en": "Where?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "park",
-                "label": {
-                  "ru": "Парк",
-                  "en": "Park"
-                }
-              },
-              {
-                "id": "car",
-                "label": {
-                  "ru": "Машина",
-                  "en": "Car"
-                }
-              },
-              {
-                "id": "fitting_room",
-                "label": {
-                  "ru": "Примерочная",
-                  "en": "Fitting room"
-                }
-              },
-              {
-                "id": "bathroom",
-                "label": {
-                  "ru": "Туалет",
-                  "en": "Bathroom"
-                }
-              },
-              {
-                "id": "beach",
-                "label": {
-                  "ru": "Пляж",
-                  "en": "Beach"
-                }
-              },
-              {
-                "id": "club",
-                "label": {
-                  "ru": "Клуб",
-                  "en": "Club"
-                }
-              },
-              {
-                "id": "office",
-                "label": {
-                  "ru": "Офис",
-                  "en": "Office"
-                }
-              },
-              {
-                "id": "elevator",
-                "label": {
-                  "ru": "Лифт",
-                  "en": "Elevator"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "risk_level",
-      "label": {
-        "ru": "Уровень риска",
-        "en": "Risk level"
-      },
-      "tag_ref": "public_risk",
-      "follow_ups": [
-        {
-          "id": "level",
-          "type": "single_select",
-          "question": {
-            "ru": "Насколько рискованно?",
-            "en": "How risky?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "low",
-                "label": {
-                  "ru": "Низкий (вряд ли застанут)",
-                  "en": "Low (unlikely to be caught)"
-                }
-              },
-              {
-                "id": "medium",
-                "label": {
-                  "ru": "Средний (возможно)",
-                  "en": "Medium (possible)"
-                }
-              },
-              {
-                "id": "high",
-                "label": {
-                  "ru": "Высокий (реальный шанс)",
-                  "en": "High (real chance)"
-                }
-              },
-              {
-                "id": "almost_certain",
-                "label": {
-                  "ru": "Почти наверняка увидят",
-                  "en": "Almost certain to be seen"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "type",
-      "label": {
-        "ru": "Тип активности",
-        "en": "Activity type"
-      },
-      "tag_ref": "public_activity",
-      "follow_ups": [
-        {
-          "id": "what",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что делать?",
-            "en": "What to do?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "quickie",
-                "label": {
-                  "ru": "Быстрый секс",
-                  "en": "Quickie"
-                }
-              },
-              {
-                "id": "oral",
-                "label": {
-                  "ru": "Оральный",
-                  "en": "Oral"
-                }
-              },
-              {
-                "id": "fingering",
-                "label": {
-                  "ru": "Руками",
-                  "en": "Fingering/handjob"
-                }
-              },
-              {
-                "id": "full",
-                "label": {
-                  "ru": "Полноценный секс",
-                  "en": "Full sex"
-                }
-              },
-              {
-                "id": "teasing",
-                "label": {
-                  "ru": "Только дразнить",
-                  "en": "Just teasing"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "public_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "adrenaline",
-                "label": {
-                  "ru": "Адреналин",
-                  "en": "Adrenaline"
-                }
-              },
-              {
-                "id": "risk",
-                "label": {
-                  "ru": "Риск",
-                  "en": "Risk"
-                }
-              },
-              {
-                "id": "forbidden",
-                "label": {
-                  "ru": "Запретность",
-                  "en": "Forbidden aspect"
-                }
-              },
-              {
-                "id": "spontaneous",
-                "label": {
-                  "ru": "Спонтанность",
-                  "en": "Spontaneity"
-                }
-              },
-              {
-                "id": "cant_wait",
-                "label": {
-                  "ru": "Не могу ждать",
-                  "en": "Can't wait"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в сексе в публичном месте?",
-      "en": "What appeals about public sex?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "public",
@@ -289,8 +49,11 @@
       "adrenaline"
     ]
   },
-  "user_description": {
-    "ru": "Пара занимается сексом в публичном месте — парк, машина, примерочная.",
-    "en": "A couple has sex in a public place — park, car, fitting room."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в сексе в публичном месте?",
+      "en": "What appeals about public sex?"
+    }
+      }
 }

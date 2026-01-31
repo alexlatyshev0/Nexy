@@ -1,7 +1,15 @@
 {
-  "id": "cock_worship",
+  "id": "cock-worship",
   "slug": "cock-worship",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "oral",
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Cock worship",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Она поклоняется его члену",
     "en": "She worships his cock"
+  },
+  "user_description": {
+    "ru": "Ты на коленях перед ним, поклоняешься его члену — целуешь, лижешь, ласкаешь руками с обожанием.",
+    "en": "You kneel before him, worship his cock — kissing, licking, caressing with your hands in adoration."
   },
   "ai_description": {
     "ru": "Cock worship — благоговейное отношение к члену. Не просто минет, а поклонение: восхищение, обожание, служение.",
@@ -25,193 +37,6 @@
     "devotion",
     "oral"
   ],
-  "elements": [
-    {
-      "id": "how",
-      "label": {
-        "ru": "Как",
-        "en": "How"
-      },
-      "tag_ref": "cock_worship_how",
-      "follow_ups": [
-        {
-          "id": "actions",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как выражается поклонение?",
-            "en": "How is worship expressed?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "kissing",
-                "label": {
-                  "ru": "Целовать",
-                  "en": "Kissing"
-                }
-              },
-              {
-                "id": "licking",
-                "label": {
-                  "ru": "Лизать",
-                  "en": "Licking"
-                }
-              },
-              {
-                "id": "nuzzling",
-                "label": {
-                  "ru": "Тереться лицом",
-                  "en": "Nuzzling"
-                }
-              },
-              {
-                "id": "verbal",
-                "label": {
-                  "ru": "Словесное восхищение",
-                  "en": "Verbal admiration"
-                }
-              },
-              {
-                "id": "gazing",
-                "label": {
-                  "ru": "Смотреть с обожанием",
-                  "en": "Gazing adoringly"
-                }
-              },
-              {
-                "id": "thanking",
-                "label": {
-                  "ru": "Благодарить за член",
-                  "en": "Thanking for his cock"
-                }
-              },
-              {
-                "id": "begging",
-                "label": {
-                  "ru": "Просить разрешения",
-                  "en": "Begging for permission"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "focus",
-      "label": {
-        "ru": "Фокус",
-        "en": "Focus"
-      },
-      "tag_ref": "cock_worship_focus",
-      "follow_ups": [
-        {
-          "id": "parts",
-          "type": "multi_select",
-          "question": {
-            "ru": "На чём фокус?",
-            "en": "What's the focus?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "shaft",
-                "label": {
-                  "ru": "Ствол",
-                  "en": "Shaft"
-                }
-              },
-              {
-                "id": "head",
-                "label": {
-                  "ru": "Головка",
-                  "en": "Head"
-                }
-              },
-              {
-                "id": "balls",
-                "label": {
-                  "ru": "Яички",
-                  "en": "Balls"
-                }
-              },
-              {
-                "id": "size",
-                "label": {
-                  "ru": "Размер",
-                  "en": "Size"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает",
-        "en": "What appeals"
-      },
-      "tag_ref": "cock_worship_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "devotion",
-                "label": {
-                  "ru": "Её преданность",
-                  "en": "Her devotion"
-                }
-              },
-              {
-                "id": "power",
-                "label": {
-                  "ru": "Его власть",
-                  "en": "His power"
-                }
-              },
-              {
-                "id": "submission",
-                "label": {
-                  "ru": "Её подчинение",
-                  "en": "Her submission"
-                }
-              },
-              {
-                "id": "size_worship",
-                "label": {
-                  "ru": "Восхищение размером",
-                  "en": "Size appreciation"
-                }
-              },
-              {
-                "id": "objectification",
-                "label": {
-                  "ru": "Она сведена к служению",
-                  "en": "She's reduced to service"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "interest_scale",
-    "text": {
-      "ru": "Cock worship — она поклоняется его члену?",
-      "en": "Cock worship — she worships his cock?"
-    }
-  },
   "ai_context": {
     "tests_primary": [
       "cock_worship",
@@ -223,8 +48,11 @@
       "female_submission"
     ]
   },
-  "user_description": {
-    "ru": "Она на коленях перед ним, поклоняется его члену — целует, лижет, ласкает руками с обожанием и благоговением",
-    "en": "She kneels before him, worships his cock — kisses, licks, caresses with hands in adoration and reverence"
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Cock worship — она поклоняется его члену?",
+      "en": "Cock worship — she worships his cock?"
+    }
   }
 }

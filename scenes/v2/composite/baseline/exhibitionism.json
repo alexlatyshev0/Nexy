@@ -1,0 +1,52 @@
+{
+  "id": "exhibitionism",
+  "slug": "exhibitionism",
+  "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Эксгибиционизм",
+    "en": "Exhibitionism"
+  },
+  "subtitle": {
+    "ru": "Показывать себя",
+    "en": "Showing yourself"
+  },
+  "user_description": {
+    "ru": "Показывать своё тело — партнёру, на камеру, или когда могут увидеть другие.",
+    "en": "Showing your body — to partner, on camera, or when others might see."
+  },
+  "ai_description": {
+    "ru": "Нравится показывать себя? Позировать, раздеваться на камеру, заниматься сексом у окна?",
+    "en": "Like showing yourself? Posing, undressing on camera, having sex by the window?"
+  },
+  "image_prompt": "woman posing by window, city lights outside, man watching her from bed",
+  "intensity": 2,
+  "category": "baseline",
+  "tags": [
+    "baseline",
+    "exhibitionism",
+    "showing"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "exhibitionism",
+      "showing"
+    ],
+    "gates": {
+      "yes": [
+        "exhibitionism_scenes"
+      ]
+    }
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Нравится показывать себя?",
+      "en": "Like showing yourself?"
+    }
+  },
+  "priority": 11
+}

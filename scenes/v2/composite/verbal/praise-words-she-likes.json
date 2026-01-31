@@ -1,0 +1,60 @@
+{
+  "id": "praise-words-she-likes",
+  "slug": "praise-words-she-likes",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": ["praise"],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "praise-words-he-likes",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Слова похвалы",
+    "en": "Praise words"
+  },
+  "subtitle": {
+    "ru": "Что ты хочешь слышать",
+    "en": "What you want to hear"
+  },
+  "user_description": {
+    "ru": "Какие слова похвалы тебя возбуждают?",
+    "en": "What praise words turn you on?"
+  },
+  "ai_description": {
+    "ru": "Похвала как награда. Какие слова заставляют тебя таять?",
+    "en": "Praise as reward. What words make you melt?"
+  },
+  "intensity": 1,
+  "category": "verbal",
+  "tags": ["praise", "verbal", "affirmation", "words"],
+  "ai_context": {
+    "tests_primary": ["praise_words"],
+    "tests_secondary": ["verbal_preference", "submission"]
+  },
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие слова тебе нравится слышать?",
+      "en": "What words do you like to hear?"
+    },
+    "options": [
+      { "id": "good_girl", "label": { "ru": "Хорошая девочка", "en": "Good girl" } },
+      { "id": "umnica", "label": { "ru": "Умница", "en": "Clever girl" } },
+      { "id": "molodec", "label": { "ru": "Молодец", "en": "Well done" } },
+      { "id": "krasavica", "label": { "ru": "Красавица", "en": "Beautiful" } },
+      { "id": "moya", "label": { "ru": "Моя", "en": "Mine" } },
+      { "id": "poslushnaya", "label": { "ru": "Послушная", "en": "Obedient" } },
+      { "id": "sladkaya", "label": { "ru": "Сладкая", "en": "Sweet" } },
+      { "id": "idealnaya", "label": { "ru": "Идеальная", "en": "Perfect" } },
+      { "id": "lyubimaya", "label": { "ru": "Любимая", "en": "Darling" } },
+      { "id": "princess", "label": { "ru": "Принцесса", "en": "Princess" } }
+    ],
+    "allow_other": true,
+    "other_placeholder": {
+      "ru": "Своё слово...",
+      "en": "Your own word..."
+    },
+    "min_selections": 0
+  }
+}

@@ -1,7 +1,10 @@
 {
-  "id": "power_dynamic",
+  "id": "power-dynamic",
   "slug": "power-dynamic",
   "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Динамика власти",
@@ -11,6 +14,10 @@
     "ru": "Кто главный в постели?",
     "en": "Who's in charge in bed?"
   },
+  "user_description": {
+    "ru": "Ты доминируешь, подчиняешься, или меняетесь ролями.",
+    "en": "You dominate, submit, or switch roles."
+  },
   "ai_description": {
     "ru": "Базовая ориентация: ты больше доминируешь, подчиняешься, или зависит от партнёра и настроения? Это определяет весь дальнейший тон.",
     "en": "Basic orientation: do you tend to dominate, submit, or does it depend on partner and mood? This sets the tone for everything else."
@@ -18,7 +25,6 @@
   "image_prompt": "man and woman in bed, one positioned above the other showing dominance, intense eye contact, bedroom with soft shadows",
   "intensity": 1,
   "category": "baseline",
-  "priority": 1,
   "tags": [
     "baseline",
     "power_dynamic",
@@ -27,165 +33,6 @@
     "switch",
     "orientation"
   ],
-  "elements": [
-    {
-      "id": "orientation",
-      "label": {
-        "ru": "Ориентация",
-        "en": "Orientation"
-      },
-      "tag_ref": "power_orientation",
-      "follow_ups": [
-        {
-          "id": "role",
-          "type": "single_select",
-          "question": {
-            "ru": "В постели ты обычно...",
-            "en": "In bed you usually..."
-          },
-          "config": {
-            "options": [
-              {
-                "id": "dominant",
-                "label": {
-                  "ru": "Доминирую, веду",
-                  "en": "Dominate, lead"
-                }
-              },
-              {
-                "id": "submissive",
-                "label": {
-                  "ru": "Подчиняюсь, отдаюсь",
-                  "en": "Submit, surrender"
-                }
-              },
-              {
-                "id": "switch",
-                "label": {
-                  "ru": "По-разному (switch)",
-                  "en": "Varies (switch)"
-                }
-              },
-              {
-                "id": "equal",
-                "label": {
-                  "ru": "На равных, без ролей",
-                  "en": "Equal, no roles"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "depth",
-      "label": {
-        "ru": "Глубина",
-        "en": "Depth"
-      },
-      "tag_ref": "power_depth",
-      "follow_ups": [
-        {
-          "id": "how_deep",
-          "type": "single_select",
-          "question": {
-            "ru": "Насколько выражена эта динамика?",
-            "en": "How pronounced is this dynamic?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "subtle",
-                "label": {
-                  "ru": "Лёгкие намёки",
-                  "en": "Subtle hints"
-                }
-              },
-              {
-                "id": "moderate",
-                "label": {
-                  "ru": "Заметная динамика",
-                  "en": "Noticeable dynamic"
-                }
-              },
-              {
-                "id": "strong",
-                "label": {
-                  "ru": "Явные роли",
-                  "en": "Clear roles"
-                }
-              },
-              {
-                "id": "total",
-                "label": {
-                  "ru": "Полный контроль/подчинение",
-                  "en": "Total control/submission"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "context",
-      "label": {
-        "ru": "Когда",
-        "en": "When"
-      },
-      "tag_ref": "power_context",
-      "follow_ups": [
-        {
-          "id": "when",
-          "type": "multi_select",
-          "question": {
-            "ru": "Когда хочется такой динамики?",
-            "en": "When do you want this dynamic?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "always",
-                "label": {
-                  "ru": "Всегда",
-                  "en": "Always"
-                }
-              },
-              {
-                "id": "mood",
-                "label": {
-                  "ru": "По настроению",
-                  "en": "Depends on mood"
-                }
-              },
-              {
-                "id": "partner",
-                "label": {
-                  "ru": "Зависит от партнёра",
-                  "en": "Depends on partner"
-                }
-              },
-              {
-                "id": "special",
-                "label": {
-                  "ru": "Только в особых случаях",
-                  "en": "Only on special occasions"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "single_select",
-    "text": {
-      "ru": "Какая твоя роль в постели?",
-      "en": "What's your role in bed?"
-    }
-  },
   "ai_context": {
     "tests_primary": [
       "power_dynamic",
@@ -214,8 +61,13 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Один партнёр доминирует над другим или они меняются ролями",
-    "en": "One partner dominates the other or they switch roles"
-  }
+  "question": {
+    "type": "single_select",
+    "text": {
+      "ru": "Какая твоя роль в постели?",
+      "en": "What's your role in bed?"
+    }
+  },
+  "priority": 1,
+  "sets_gate": "power_dynamic"
 }

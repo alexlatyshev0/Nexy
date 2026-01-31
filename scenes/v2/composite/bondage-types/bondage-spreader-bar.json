@@ -1,0 +1,47 @@
+{
+  "id": "bondage-spreader-bar",
+  "slug": "bondage-spreader-bar",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Распорка",
+    "en": "Spreader Bar"
+  },
+  "subtitle": {
+    "ru": "Ноги или руки разведены",
+    "en": "Legs or arms spread apart"
+  },
+  "user_description": {
+    "ru": "Распорка между ногами. Ноги разведены в стороны.",
+    "en": "Spreader bar. Legs spread apart."
+  },
+  "ai_description": {
+    "ru": "Металлическая или деревянная перекладина, держащая ноги или руки разведёнными.",
+    "en": "Metal or wooden bar keeping legs or arms spread apart."
+  },
+  "image_prompt": "legs held apart by metal spreader bar with ankle cuffs, bedroom",
+  "intensity": 3,
+  "category": "bondage",
+  "tags": [
+    "bondage",
+    "spreader-bar",
+    "restraint"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "bondage",
+      "spreader-bar"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

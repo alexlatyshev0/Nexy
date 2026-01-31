@@ -1,4 +1,5 @@
 import type { LocalizedString, Locale } from './types';
+export type { Locale };
 
 /**
  * Default locale for the application

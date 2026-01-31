@@ -1,0 +1,40 @@
+{
+  "id": "a87bef6a-40a3-44dd-822a-4b98b1f8ec7d",
+  "slug": "onboarding-extreme-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 20,
+  "for_gender": "male",
+  "paired_with": null,
+  "title": {
+    "ru": "Экстрим",
+    "en": "Extreme"
+  },
+  "subtitle": {
+    "ru": "Edge play",
+    "en": "Edge play"
+  },
+  "ai_description": {
+    "ru": "Интерес к экстремальным практикам. Гейтит: breath-play, knife-play, needle-play, fisting.",
+    "en": "Interest in extreme practices. Gates: breath-play, knife-play, needle-play, fisting."
+  },
+  "user_description": {
+    "ru": "Ты контролируешь её дыхание, сжимая горло. Игры на грани.",
+    "en": "You control her breath, squeezing her throat. Playing on the edge."
+  },
+  "image_prompt": "naked man's hand gently on naked woman's throat, woman's eyes closed, both on bed, dark bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "extreme"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "extreme"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "extreme"
+}

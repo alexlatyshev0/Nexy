@@ -1,7 +1,14 @@
 {
-  "id": "dirty_talk",
+  "id": "dirty-talk",
   "slug": "dirty-talk",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "dirty_talk"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Dirty Talk",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Грязные разговоры",
     "en": "Talking dirty"
+  },
+  "user_description": {
+    "ru": "Грязные слова во время секса. Описания, желания.",
+    "en": "Dirty talk during sex. Descriptions, desires."
   },
   "ai_description": {
     "ru": "Слова во время секса. Описывать что делаешь, что чувствуешь, что хочешь. От нежных слов до грязных.",
@@ -25,251 +36,6 @@
     "communication",
     "arousal"
   ],
-  "elements": [
-    {
-      "id": "style",
-      "label": {
-        "ru": "Стиль",
-        "en": "Style"
-      },
-      "tag_ref": "talk_style",
-      "follow_ups": [
-        {
-          "id": "type",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой стиль?",
-            "en": "What style?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "romantic",
-                "label": {
-                  "ru": "Романтичный",
-                  "en": "Romantic"
-                }
-              },
-              {
-                "id": "descriptive",
-                "label": {
-                  "ru": "Описательный",
-                  "en": "Descriptive"
-                }
-              },
-              {
-                "id": "commanding",
-                "label": {
-                  "ru": "Командный",
-                  "en": "Commanding"
-                }
-              },
-              {
-                "id": "filthy",
-                "label": {
-                  "ru": "Грязный",
-                  "en": "Filthy"
-                }
-              },
-              {
-                "id": "degrading",
-                "label": {
-                  "ru": "Унизительный",
-                  "en": "Degrading"
-                }
-              },
-              {
-                "id": "praising",
-                "label": {
-                  "ru": "Хвалящий",
-                  "en": "Praising"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "content",
-      "label": {
-        "ru": "Содержание",
-        "en": "Content"
-      },
-      "tag_ref": "talk_content",
-      "follow_ups": [
-        {
-          "id": "what",
-          "type": "multi_select",
-          "question": {
-            "ru": "О чём говорить?",
-            "en": "What to say?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "feelings",
-                "label": {
-                  "ru": "Что чувствую",
-                  "en": "What I feel"
-                }
-              },
-              {
-                "id": "doing",
-                "label": {
-                  "ru": "Что делаю",
-                  "en": "What I'm doing"
-                }
-              },
-              {
-                "id": "want",
-                "label": {
-                  "ru": "Чего хочу",
-                  "en": "What I want"
-                }
-              },
-              {
-                "id": "body",
-                "label": {
-                  "ru": "Про тело партнёра",
-                  "en": "About partner's body"
-                }
-              },
-              {
-                "id": "names",
-                "label": {
-                  "ru": "Называть по-разному",
-                  "en": "Call names"
-                }
-              },
-              {
-                "id": "fantasy",
-                "label": {
-                  "ru": "Фантазии вслух",
-                  "en": "Fantasies out loud"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who_talks",
-      "label": {
-        "ru": "Кто говорит",
-        "en": "Who talks"
-      },
-      "tag_ref": "talk_who",
-      "follow_ups": [
-        {
-          "id": "who",
-          "type": "single_select",
-          "question": {
-            "ru": "Кто говорит?",
-            "en": "Who talks?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "he",
-                "label": {
-                  "ru": "Он",
-                  "en": "He"
-                }
-              },
-              {
-                "id": "she",
-                "label": {
-                  "ru": "Она",
-                  "en": "She"
-                }
-              },
-              {
-                "id": "both",
-                "label": {
-                  "ru": "Оба",
-                  "en": "Both"
-                }
-              },
-              {
-                "id": "dominant",
-                "label": {
-                  "ru": "Доминантный",
-                  "en": "The dominant"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "talk_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "arousal",
-                "label": {
-                  "ru": "Усиливает возбуждение",
-                  "en": "Enhances arousal"
-                }
-              },
-              {
-                "id": "connection",
-                "label": {
-                  "ru": "Связь",
-                  "en": "Connection"
-                }
-              },
-              {
-                "id": "hearing",
-                "label": {
-                  "ru": "Слышать слова",
-                  "en": "Hearing words"
-                }
-              },
-              {
-                "id": "expressing",
-                "label": {
-                  "ru": "Выражать желания",
-                  "en": "Expressing desires"
-                }
-              },
-              {
-                "id": "taboo",
-                "label": {
-                  "ru": "Запретные слова",
-                  "en": "Taboo words"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в dirty talk?",
-      "en": "What appeals about dirty talk?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "dirty_talk",
@@ -282,8 +48,75 @@
       "expression"
     ]
   },
-  "user_description": {
-    "ru": "Один партнёр говорит грязные слова другому во время секса — описывает действия, желания, ощущения.",
-    "en": "One partner speaks dirty words to the other during sex — describing actions, desires, sensations."
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что тебе нравится в разговорах во время секса?",
+      "en": "What do you like about talking during sex?"
+    },
+    "options": [
+      {
+        "id": "opisanie",
+        "label": {
+          "ru": "Описание действий",
+          "en": "Describing actions"
+        }
+      },
+      {
+        "id": "zhelaniya",
+        "label": {
+          "ru": "Говорить о желаниях",
+          "en": "Talking about desires"
+        }
+      },
+      {
+        "id": "oshchushcheniya",
+        "label": {
+          "ru": "Делиться ощущениями",
+          "en": "Sharing sensations"
+        }
+      },
+      {
+        "id": "komandy",
+        "label": {
+          "ru": "Давать/получать команды",
+          "en": "Giving/receiving commands"
+        }
+      },
+      {
+        "id": "unizhenie",
+        "label": {
+          "ru": "Унизительные слова",
+          "en": "Degrading words"
+        }
+      },
+      {
+        "id": "pohvala",
+        "label": {
+          "ru": "Похвала",
+          "en": "Praise"
+        }
+      },
+      {
+        "id": "stony",
+        "label": {
+          "ru": "Стоны и звуки",
+          "en": "Moans and sounds"
+        }
+      },
+      {
+        "id": "mat",
+        "label": {
+          "ru": "Мат",
+          "en": "Swearing"
+        }
+      }
+    ],
+    "allow_other": true,
+    "other_placeholder": {
+      "ru": "Другое...",
+      "en": "Other..."
+    },
+    "min_selections": 0
   }
 }

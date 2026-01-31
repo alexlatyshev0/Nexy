@@ -1,0 +1,48 @@
+{
+  "id": "location-bedroom",
+  "slug": "location-bedroom",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "public",
+    "quickie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Спальня",
+    "en": "Bedroom"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Секс в спальне. Кровать, приглушённый свет.",
+    "en": "Sex in bedroom. Bed, dim lights."
+  },
+  "ai_description": {
+    "ru": "Секс в спальне. Кровать, приглушённый свет.",
+    "en": "Sex in the bedroom. Bed, dim lights."
+  },
+  "image_prompt": "romantic bedroom with large bed, dim lighting, candles, intimate atmosphere",
+  "intensity": 1,
+  "category": "locations",
+  "tags": [
+    "locations",
+    "bedroom",
+    "home"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "locations",
+      "bedroom"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

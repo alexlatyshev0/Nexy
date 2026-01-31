@@ -1,0 +1,47 @@
+{
+  "id": "position-cowgirl",
+  "slug": "position-cowgirl",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Наездница",
+    "en": "Cowgirl"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Один сверху, лицом к партнёру. Контроль темпа и глубины.",
+    "en": "One on top, facing partner. Control over pace and depth."
+  },
+  "ai_description": {
+    "ru": "Она сверху, лицом к нему. Контролирует ритм и глубину.",
+    "en": "She on top, facing him. Controls the rhythm and depth."
+  },
+  "image_prompt": "woman straddling man on bed, facing him, cowgirl position, bedroom",
+  "intensity": 2,
+  "category": "positions",
+  "tags": [
+    "positions",
+    "cowgirl",
+    "woman-on-top"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "positions",
+      "cowgirl"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

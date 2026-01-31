@@ -1,0 +1,59 @@
+{
+  "id": "truth-or-dare",
+  "slug": "truth-or-dare",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "roleplay"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Правда или действие",
+    "en": "Truth or Dare"
+  },
+  "subtitle": {
+    "ru": "Эротическая версия",
+    "en": "Erotic version"
+  },
+  "user_description": {
+    "ru": "Эротическая правда или действие. Откровенные вопросы, сексуальные вызовы.",
+    "en": "Erotic truth or dare. Intimate questions, sexual challenges."
+  },
+  "ai_description": {
+    "ru": "Эротическая версия игры. Откровенные вопросы о фантазиях и желаниях, или сексуальные действия как вызов.",
+    "en": "Erotic version of the game. Intimate questions about fantasies and desires, or sexual actions as dares."
+  },
+  "image_prompt": "couple sitting facing each other with drinks, playful daring expressions, living room cozy setting, card or bottle between them, game night atmosphere",
+  "intensity": 2,
+  "category": "roleplay",
+  "tags": [
+    "game",
+    "roleplay",
+    "teasing",
+    "communication",
+    "playful"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "game",
+      "roleplay",
+      "communication"
+    ],
+    "tests_secondary": [
+      "teasing",
+      "playful",
+      "challenge"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в игре Правда или Действие?",
+      "en": "What appeals about Truth or Dare?"
+    }
+      },
+  "context": "discovery"
+}

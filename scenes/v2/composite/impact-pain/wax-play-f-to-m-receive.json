@@ -1,0 +1,60 @@
+{
+  "id": "wax-play-f-to-m-receive",
+  "slug": "wax-play-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough",
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "wax-play-she-on-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Восковые игры",
+    "en": "Wax Play"
+  },
+  "subtitle": {
+    "ru": "Она капает на тебя",
+    "en": "She drips on you"
+  },
+  "user_description": {
+    "ru": "Она капает горячий воск свечи на твоё тело.",
+    "en": "She drips hot candle wax on your body."
+  },
+  "ai_description": {
+    "ru": "Он лежит связанный, она стоит над ним со свечой. Медленно наклоняет — капля горячего воска падает на его грудь. Он дёргается, но не может двигаться.",
+    "en": "He lies bound, she stands over him with a candle. Slowly tilts it — a drop of hot wax falls on his chest. He jerks, but cannot move."
+  },
+  "image_prompt": "woman dripping candle wax on mans chest, he nude lying on bed, she in lingerie holding candle above, red wax drops visible, bedroom setting, candlelit",
+  "intensity": 3,
+  "category": "impact-pain",
+  "tags": [
+    "wax_play",
+    "femdom",
+    "temperature_play",
+    "sensory",
+    "submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "wax_play",
+      "femdom",
+      "submission"
+    ],
+    "tests_secondary": [
+      "male_submission",
+      "pain_pleasure",
+      "sensory"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда она капает воск на тебя?",
+      "en": "What appeals when she drips wax on you?"
+    }
+      }
+}

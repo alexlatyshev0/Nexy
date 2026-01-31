@@ -1,0 +1,60 @@
+{
+  "id": "golden-shower-m-to-f-receive",
+  "slug": "golden-shower-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "body_fluids"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "golden-shower-m-to-f",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Золотой дождь",
+    "en": "Golden Shower"
+  },
+  "subtitle": {
+    "ru": "Он на тебя",
+    "en": "He on you"
+  },
+  "user_description": {
+    "ru": "Он писает на тебя. Ты на коленях принимаешь его струю.",
+    "en": "He pees on you. You kneel and receive his stream."
+  },
+  "ai_description": {
+    "ru": "Он стоит над ней, она на коленях в душе. Тёплые струи стекают по её телу. Табу, власть, полная отдача.",
+    "en": "He stands over her, she kneels in shower. Warm streams flow down her body. Taboo, power, complete surrender."
+  },
+  "image_prompt": "man standing over kneeling woman in shower, both nude, bathroom tiles background, warm lighting",
+  "intensity": 4,
+  "category": "body-fluids",
+  "tags": [
+    "watersports",
+    "golden_shower",
+    "urine",
+    "taboo",
+    "humiliation",
+    "submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "watersports",
+      "golden_shower",
+      "urine_play"
+    ],
+    "tests_secondary": [
+      "humiliation",
+      "taboo",
+      "submission"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в этой сцене?",
+      "en": "What appeals in this scene?"
+    }
+      }
+}

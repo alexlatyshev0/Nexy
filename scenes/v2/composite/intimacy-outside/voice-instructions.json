@@ -1,0 +1,60 @@
+{
+  "id": "voice-instructions",
+  "slug": "voice-instructions",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "dirty_talk",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Голосовые инструкции",
+    "en": "Voice Instructions"
+  },
+  "subtitle": {
+    "ru": "Управление по телефону",
+    "en": "Control over phone"
+  },
+  "user_description": {
+    "ru": "Голосовые инструкции по телефону. Говоришь что делать.",
+    "en": "Voice instructions by phone. Telling what to do."
+  },
+  "ai_description": {
+    "ru": "По телефону говорить партнёру что делать. Командовать удалённо, слышать реакцию, направлять к удовольствию.",
+    "en": "Tell partner what to do over the phone. Command remotely, hear their reactions, guide them to pleasure."
+  },
+  "image_prompt": "woman with phone to ear, eyes closed, hand moving down her body, following voice instructions, bedroom dim lighting, sensual expression, intimate phone call",
+  "intensity": 2,
+  "category": "intimacy-outside",
+  "tags": [
+    "sexting",
+    "voice",
+    "control",
+    "distance",
+    "instructions"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "voice",
+      "control",
+      "distance"
+    ],
+    "tests_secondary": [
+      "sexting",
+      "dominance",
+      "submission"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в голосовых инструкциях?",
+      "en": "What appeals about voice instructions?"
+    }
+      },
+  "context": "discovery"
+}

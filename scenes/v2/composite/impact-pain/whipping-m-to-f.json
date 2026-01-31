@@ -1,7 +1,15 @@
 {
-  "id": "whipping_m_to_f",
+  "id": "whipping-m-to-f",
   "slug": "whipping-m-to-f",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "whipping-m-to-f-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Плеть и трость (он бьёт её)",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Продвинутый impact play",
     "en": "Advanced impact play"
+  },
+  "user_description": {
+    "ru": "Ты бьёшь её плетью, тростью или флоггером по телу — ягодицы, спина, бёдра.",
+    "en": "You strike her with whip, cane or flogger on her body — butt, back, thighs."
   },
   "ai_description": {
     "ru": "M бьёт F плетью/тростью/флоггером. Требует навыка и доверия. Тест на sadism/masochism dynamic.",
@@ -27,129 +39,24 @@
     "bdsm",
     "m_dom"
   ],
-  "elements": [
-    {
-      "id": "implement",
-      "label": {
-        "ru": "Инструмент",
-        "en": "Implement"
-      },
-      "tag_ref": "impact_implement",
-      "follow_ups": [
-        {
-          "id": "which",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой инструмент?",
-            "en": "Which implement?"
-          },
-          "config": {
-            "options": [
-              { "id": "flogger", "label": { "ru": "Флоггер", "en": "Flogger" } },
-              { "id": "paddle", "label": { "ru": "Падл", "en": "Paddle" } },
-              { "id": "cane", "label": { "ru": "Трость", "en": "Cane" } },
-              { "id": "whip", "label": { "ru": "Плеть", "en": "Whip" } },
-              { "id": "crop", "label": { "ru": "Стек", "en": "Crop" } },
-              { "id": "belt", "label": { "ru": "Ремень", "en": "Belt" } }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "intensity",
-      "label": {
-        "ru": "Интенсивность",
-        "en": "Intensity"
-      },
-      "tag_ref": "impact_intensity",
-      "follow_ups": [
-        {
-          "id": "level",
-          "type": "single_select",
-          "question": {
-            "ru": "Насколько сильно?",
-            "en": "How hard?"
-          },
-          "config": {
-            "options": [
-              { "id": "light", "label": { "ru": "Лёгкие (розовеет)", "en": "Light (pinkens)" } },
-              { "id": "moderate", "label": { "ru": "Средние (краснеет)", "en": "Moderate (reddens)" } },
-              { "id": "hard", "label": { "ru": "Сильные (следы)", "en": "Hard (marks)" } },
-              { "id": "severe", "label": { "ru": "Очень сильные", "en": "Severe" } }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "where",
-      "label": {
-        "ru": "Куда",
-        "en": "Where"
-      },
-      "tag_ref": "impact_location",
-      "follow_ups": [
-        {
-          "id": "body",
-          "type": "multi_select",
-          "question": {
-            "ru": "Куда бить?",
-            "en": "Where to strike?"
-          },
-          "config": {
-            "options": [
-              { "id": "butt", "label": { "ru": "Ягодицы", "en": "Butt" } },
-              { "id": "thighs", "label": { "ru": "Бёдра", "en": "Thighs" } },
-              { "id": "back", "label": { "ru": "Спина", "en": "Back" } },
-              { "id": "breasts", "label": { "ru": "Грудь", "en": "Breasts" } },
-              { "id": "pussy", "label": { "ru": "Киска", "en": "Pussy" } }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает",
-        "en": "What appeals"
-      },
-      "tag_ref": "whipping_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              { "id": "power", "label": { "ru": "Его власть", "en": "His power" } },
-              { "id": "her_submission", "label": { "ru": "Её покорность", "en": "Her submission" } },
-              { "id": "marks", "label": { "ru": "Следы на её теле", "en": "Marks on her body" } },
-              { "id": "sounds", "label": { "ru": "Звуки ударов и стонов", "en": "Sounds of strikes and moans" } },
-              { "id": "endorphins", "label": { "ru": "Эндорфины", "en": "Endorphins" } }
-            ]
-          }
-        }
-      ]
-    }
-  ],
+  "ai_context": {
+    "tests_primary": [
+      "whip",
+      "cane",
+      "flogger",
+      "m_dom"
+    ],
+    "tests_secondary": [
+      "impact",
+      "sadism",
+      "female_submission"
+    ]
+  },
   "question": {
-    "type": "interest_scale",
+    "type": "swipe",
     "text": {
       "ru": "Он бьёт её плетью/тростью?",
       "en": "He strikes her with whip/cane?"
     }
-  },
-  "ai_context": {
-    "tests_primary": ["whip", "cane", "flogger", "m_dom"],
-    "tests_secondary": ["impact", "sadism", "female_submission"]
-  },
-  "user_description": {
-    "ru": "Он бьёт её плетью, тростью или флоггером по телу — ягодицы, спина, бёдра",
-    "en": "He strikes her with whip, cane or flogger on her body — butt, back, thighs"
   }
 }

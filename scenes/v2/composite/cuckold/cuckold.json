@@ -2,7 +2,15 @@
   "id": "cuckold",
   "slug": "cuckold",
   "version": 2,
-  "paired_scene": "hotwife",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "group",
+    "power_dynamic"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "paired_scene": "hotwife-vixen",
   "role_direction": "cuckold",
   "title": {
     "ru": "Cuckold",
@@ -11,6 +19,10 @@
   "subtitle": {
     "ru": "Он смотрит",
     "en": "He watches"
+  },
+  "user_description": {
+    "ru": "Ты смотришь как она занимается сексом с другим. Или ты с другим, пока партнёр смотрит.",
+    "en": "You watch her have sex with another man. Or you're with another while your partner watches."
   },
   "ai_description": {
     "ru": "Она с другим мужчиной, он смотрит. Смесь возбуждения, ревности, унижения. Сложная динамика, глубокие эмоции.",
@@ -26,258 +38,6 @@
     "hotwife",
     "sharing"
   ],
-  "elements": [
-    {
-      "id": "his_role",
-      "label": {
-        "ru": "Его роль",
-        "en": "His role"
-      },
-      "tag_ref": "cuckold_role",
-      "follow_ups": [
-        {
-          "id": "role",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что он делает?",
-            "en": "What does he do?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "watch_only",
-                "label": {
-                  "ru": "Только смотрит",
-                  "en": "Just watches"
-                }
-              },
-              {
-                "id": "in_room",
-                "label": {
-                  "ru": "В комнате",
-                  "en": "In the room"
-                }
-              },
-              {
-                "id": "hidden",
-                "label": {
-                  "ru": "Скрытно",
-                  "en": "Hidden"
-                }
-              },
-              {
-                "id": "cleanup",
-                "label": {
-                  "ru": "Cleanup (после)",
-                  "en": "Cleanup (after)"
-                }
-              },
-              {
-                "id": "fluffer",
-                "label": {
-                  "ru": "Fluffer (подготовка)",
-                  "en": "Fluffer (prep)"
-                }
-              },
-              {
-                "id": "chastity",
-                "label": {
-                  "ru": "В клетке",
-                  "en": "In cage"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "humiliation",
-      "label": {
-        "ru": "Унижение",
-        "en": "Humiliation"
-      },
-      "tag_ref": "cuckold_humiliation",
-      "follow_ups": [
-        {
-          "id": "level",
-          "type": "single_select",
-          "question": {
-            "ru": "Уровень унижения?",
-            "en": "Humiliation level?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "none",
-                "label": {
-                  "ru": "Без унижения",
-                  "en": "No humiliation"
-                }
-              },
-              {
-                "id": "light",
-                "label": {
-                  "ru": "Лёгкое подшучивание",
-                  "en": "Light teasing"
-                }
-              },
-              {
-                "id": "comparison",
-                "label": {
-                  "ru": "Сравнения (размер и т.д.)",
-                  "en": "Comparisons (size, etc.)"
-                }
-              },
-              {
-                "id": "verbal",
-                "label": {
-                  "ru": "Вербальное унижение",
-                  "en": "Verbal humiliation"
-                }
-              },
-              {
-                "id": "extreme",
-                "label": {
-                  "ru": "Экстремальное",
-                  "en": "Extreme"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "the_bull",
-      "label": {
-        "ru": "Бык",
-        "en": "The bull"
-      },
-      "tag_ref": "cuckold_bull",
-      "follow_ups": [
-        {
-          "id": "who",
-          "type": "multi_select",
-          "question": {
-            "ru": "Кто бык?",
-            "en": "Who's the bull?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "stranger",
-                "label": {
-                  "ru": "Незнакомец",
-                  "en": "Stranger"
-                }
-              },
-              {
-                "id": "friend",
-                "label": {
-                  "ru": "Знакомый/друг",
-                  "en": "Friend"
-                }
-              },
-              {
-                "id": "regular",
-                "label": {
-                  "ru": "Постоянный",
-                  "en": "Regular"
-                }
-              },
-              {
-                "id": "alpha",
-                "label": {
-                  "ru": "Альфа-тип",
-                  "en": "Alpha type"
-                }
-              },
-              {
-                "id": "bbc",
-                "label": {
-                  "ru": "BBC",
-                  "en": "BBC"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "cuckold_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "watching_her",
-                "label": {
-                  "ru": "Смотреть на неё",
-                  "en": "Watching her"
-                }
-              },
-              {
-                "id": "her_pleasure",
-                "label": {
-                  "ru": "Её удовольствие",
-                  "en": "Her pleasure"
-                }
-              },
-              {
-                "id": "humiliation",
-                "label": {
-                  "ru": "Унижение",
-                  "en": "Humiliation"
-                }
-              },
-              {
-                "id": "jealousy",
-                "label": {
-                  "ru": "Ревность",
-                  "en": "Jealousy"
-                }
-              },
-              {
-                "id": "compersion",
-                "label": {
-                  "ru": "Компереия (радость за неё)",
-                  "en": "Compersion"
-                }
-              },
-              {
-                "id": "taboo",
-                "label": {
-                  "ru": "Табу",
-                  "en": "Taboo"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в куколдинге?",
-      "en": "What appeals about cuckolding?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "cuckold",
@@ -290,8 +50,11 @@
       "voyeurism"
     ]
   },
-  "user_description": {
-    "ru": "Женщина занимается сексом с одним мужчиной, пока её партнёр наблюдает за ними.",
-    "en": "A woman has sex with one man while her partner watches them."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в куколдинге?",
+      "en": "What appeals about cuckolding?"
+    }
+      }
 }

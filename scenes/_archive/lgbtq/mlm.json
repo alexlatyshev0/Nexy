@@ -1,0 +1,289 @@
+{
+  "id": "mlm",
+  "slug": "men-loving-men",
+  "version": 2,
+  "role_direction": "mlm",
+  "title": {
+    "ru": "MLM",
+    "en": "MLM"
+  },
+  "subtitle": {
+    "ru": "Мужчины вместе",
+    "en": "Men together"
+  },
+  "ai_description": {
+    "ru": "Два мужчины вместе. Сила, страсть, понимание мужского тела. Другая энергия, другая динамика.",
+    "en": "Two men together. Strength, passion, understanding of male body. Different energy, different dynamic."
+  },
+  "image_prompt": "two men on bed, one man kissing other man's neck while embracing, both nude, bedroom with soft lamp",
+  "intensity": 2,
+  "category": "lgbtq",
+  "tags": [
+    "mlm",
+    "gay",
+    "men",
+    "queer",
+    "homosexual"
+  ],
+  "elements": [
+    {
+      "id": "position",
+      "label": {
+        "ru": "Позиция",
+        "en": "Position"
+      },
+      "tag_ref": "mlm_position",
+      "follow_ups": [
+        {
+          "id": "role",
+          "type": "single_select",
+          "question": {
+            "ru": "Предпочтительная роль?",
+            "en": "Preferred role?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "top",
+                "label": {
+                  "ru": "Top (активный)",
+                  "en": "Top"
+                }
+              },
+              {
+                "id": "bottom",
+                "label": {
+                  "ru": "Bottom (пассивный)",
+                  "en": "Bottom"
+                }
+              },
+              {
+                "id": "vers",
+                "label": {
+                  "ru": "Versatile",
+                  "en": "Versatile"
+                }
+              },
+              {
+                "id": "vers_top",
+                "label": {
+                  "ru": "Vers top",
+                  "en": "Vers top"
+                }
+              },
+              {
+                "id": "vers_bottom",
+                "label": {
+                  "ru": "Vers bottom",
+                  "en": "Vers bottom"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "activities",
+      "label": {
+        "ru": "Активности",
+        "en": "Activities"
+      },
+      "tag_ref": "mlm_activities",
+      "follow_ups": [
+        {
+          "id": "acts",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие активности?",
+            "en": "What activities?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "anal",
+                "label": {
+                  "ru": "Анальный секс",
+                  "en": "Anal sex"
+                }
+              },
+              {
+                "id": "oral",
+                "label": {
+                  "ru": "Оральный секс",
+                  "en": "Oral sex"
+                }
+              },
+              {
+                "id": "mutual_jo",
+                "label": {
+                  "ru": "Взаимная мастурбация",
+                  "en": "Mutual masturbation"
+                }
+              },
+              {
+                "id": "frotting",
+                "label": {
+                  "ru": "Frotting",
+                  "en": "Frotting"
+                }
+              },
+              {
+                "id": "rimming",
+                "label": {
+                  "ru": "Rimming",
+                  "en": "Rimming"
+                }
+              },
+              {
+                "id": "69",
+                "label": {
+                  "ru": "69",
+                  "en": "69"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "body_type",
+      "label": {
+        "ru": "Тип тела",
+        "en": "Body type"
+      },
+      "tag_ref": "mlm_body_pref",
+      "follow_ups": [
+        {
+          "id": "preference",
+          "type": "multi_select",
+          "question": {
+            "ru": "Предпочтения в типе тела?",
+            "en": "Body type preferences?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "twink",
+                "label": {
+                  "ru": "Twink",
+                  "en": "Twink"
+                }
+              },
+              {
+                "id": "jock",
+                "label": {
+                  "ru": "Jock",
+                  "en": "Jock"
+                }
+              },
+              {
+                "id": "bear",
+                "label": {
+                  "ru": "Bear",
+                  "en": "Bear"
+                }
+              },
+              {
+                "id": "otter",
+                "label": {
+                  "ru": "Otter",
+                  "en": "Otter"
+                }
+              },
+              {
+                "id": "daddy",
+                "label": {
+                  "ru": "Daddy",
+                  "en": "Daddy"
+                }
+              },
+              {
+                "id": "no_pref",
+                "label": {
+                  "ru": "Нет предпочтения",
+                  "en": "No preference"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom_sub",
+      "label": {
+        "ru": "D/s динамика",
+        "en": "D/s dynamic"
+      },
+      "tag_ref": "mlm_power",
+      "follow_ups": [
+        {
+          "id": "power",
+          "type": "single_select",
+          "question": {
+            "ru": "Динамика власти?",
+            "en": "Power dynamic?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "equal",
+                "label": {
+                  "ru": "Равные",
+                  "en": "Equal"
+                }
+              },
+              {
+                "id": "dom",
+                "label": {
+                  "ru": "Доминантный",
+                  "en": "Dominant"
+                }
+              },
+              {
+                "id": "sub",
+                "label": {
+                  "ru": "Сабмиссивный",
+                  "en": "Submissive"
+                }
+              },
+              {
+                "id": "switch",
+                "label": {
+                  "ru": "Switch",
+                  "en": "Switch"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что нравится в сексе с мужчинами?",
+      "en": "What do you like about sex with men?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "mlm",
+      "gay",
+      "queer"
+    ],
+    "tests_secondary": [
+      "top",
+      "bottom",
+      "versatile"
+    ]
+  },
+  "user_description": {
+    "ru": "Два мужчины целуются, ласкают друг друга, делают минет, занимаются анальным сексом.",
+    "en": "Two men kiss, caress each other, perform oral sex, have anal sex."
+  }
+}

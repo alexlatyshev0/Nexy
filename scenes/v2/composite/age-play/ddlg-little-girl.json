@@ -1,0 +1,60 @@
+{
+  "id": "ddlg-little-girl",
+  "slug": "ddlg-little-girl",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "roleplay",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "ddlg-daddy",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "DDlg — маленькая",
+    "en": "DDlg — Little Girl"
+  },
+  "subtitle": {
+    "ru": "Ты его маленькая девочка",
+    "en": "You're his little girl"
+  },
+  "user_description": {
+    "ru": "Он твой Daddy, ты его маленькая девочка.",
+    "en": "He's your Daddy, you're his little girl."
+  },
+  "ai_description": {
+    "ru": "Он — Daddy, она — его маленькая девочка. Забота, правила, защита, баловство. Не про возраст — про динамику отношений.",
+    "en": "He's Daddy, she's his little girl. Care, rules, protection, spoiling. Not about age — about relationship dynamic."
+  },
+  "image_prompt": "man sitting on bed, woman on his lap wearing white cotton panties and oversized t-shirt, cozy bedroom with soft warm light",
+  "intensity": 3,
+  "category": "age-play",
+  "tags": [
+    "ddlg",
+    "little",
+    "submissive",
+    "age_play",
+    "nurturing"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "ddlg",
+      "little",
+      "submissive"
+    ],
+    "tests_secondary": [
+      "age_play",
+      "nurturing",
+      "protected"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Роль маленькой девочки?",
+      "en": "Being a little girl?"
+    }
+  }
+}

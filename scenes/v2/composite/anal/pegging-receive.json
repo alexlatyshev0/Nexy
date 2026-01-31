@@ -1,0 +1,61 @@
+{
+  "id": "pegging-receive",
+  "slug": "pegging-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "anal",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "pegging",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Pegging",
+    "en": "Pegging"
+  },
+  "subtitle": {
+    "ru": "Она тебя страпоном",
+    "en": "She pegs you"
+  },
+  "user_description": {
+    "ru": "Она надевает страпон и входит в тебя сзади.",
+    "en": "She puts on a strap-on and enters you from behind. You bend over and receive her."
+  },
+  "ai_description": {
+    "ru": "Она надевает страпон и берёт тебя. Смена ролей, её контроль, твоя уязвимость. Интенсивные ощущения.",
+    "en": "She wears a strap-on and takes you. Role reversal, her control, your vulnerability. Intense sensations."
+  },
+  "image_prompt": "woman wearing strap-on harness positioned behind man who is bent over bed, both nude, bedroom with bed and nightstand",
+  "intensity": 4,
+  "category": "anal",
+  "tags": [
+    "pegging",
+    "strapon",
+    "femdom",
+    "role_reversal",
+    "anal",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "pegging",
+      "receiving_anal",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "vulnerability",
+      "prostate",
+      "submission"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Она трахает тебя страпоном?",
+      "en": "She pegs you with a strap-on?"
+    }
+  }
+}

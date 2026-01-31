@@ -1,7 +1,15 @@
 {
-  "id": "lingerie_f",
+  "id": "female-lingerie",
   "slug": "female-lingerie",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "lingerie-f-wear",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Женское бельё",
@@ -11,9 +19,13 @@
     "ru": "Красивое нижнее белье",
     "en": "Beautiful underwear"
   },
+  "user_description": {
+    "ru": "Ты смотришь как она надевает красивое бельё — кружевное, прозрачное, с подвязками.",
+    "en": "You watch her put on beautiful lingerie — lace, sheer, with garters."
+  },
   "ai_description": {
-    "ru": "Красивое бельё для возбуждения. Чулки, кружево, комплекты, корсеты. Чувствовать себя сексуальной и желанной.",
-    "en": "Beautiful lingerie for arousal. Stockings, lace, sets, corsets. Feeling sexy and desired."
+    "ru": "Красивое бельё. Чулки, кружево, комплекты, корсеты.",
+    "en": "Beautiful lingerie. Stockings, lace, sets, corsets."
   },
   "image_prompt": "woman in black lace lingerie set with garter belt and stockings, standing by bed, man sitting on bed watching her, bedroom interior",
   "intensity": 1,
@@ -25,258 +37,6 @@
     "lace",
     "corset"
   ],
-  "elements": [
-    {
-      "id": "type",
-      "label": {
-        "ru": "Тип белья",
-        "en": "Type"
-      },
-      "tag_ref": "lingerie_type",
-      "follow_ups": [
-        {
-          "id": "what",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какое бельё?",
-            "en": "What lingerie?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "matching_set",
-                "label": {
-                  "ru": "Комплект",
-                  "en": "Matching set"
-                }
-              },
-              {
-                "id": "stockings",
-                "label": {
-                  "ru": "Чулки",
-                  "en": "Stockings"
-                }
-              },
-              {
-                "id": "garter",
-                "label": {
-                  "ru": "Пояс для чулок",
-                  "en": "Garter belt"
-                }
-              },
-              {
-                "id": "corset",
-                "label": {
-                  "ru": "Корсет",
-                  "en": "Corset"
-                }
-              },
-              {
-                "id": "teddy",
-                "label": {
-                  "ru": "Боди/teddy",
-                  "en": "Teddy/bodysuit"
-                }
-              },
-              {
-                "id": "robe",
-                "label": {
-                  "ru": "Халат/пеньюар",
-                  "en": "Robe/peignoir"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "style",
-      "label": {
-        "ru": "Стиль",
-        "en": "Style"
-      },
-      "tag_ref": "lingerie_style",
-      "follow_ups": [
-        {
-          "id": "look",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой стиль?",
-            "en": "What style?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "elegant",
-                "label": {
-                  "ru": "Элегантное",
-                  "en": "Elegant"
-                }
-              },
-              {
-                "id": "slutty",
-                "label": {
-                  "ru": "Вульгарное",
-                  "en": "Slutty"
-                }
-              },
-              {
-                "id": "innocent",
-                "label": {
-                  "ru": "Невинное",
-                  "en": "Innocent"
-                }
-              },
-              {
-                "id": "latex",
-                "label": {
-                  "ru": "Латекс",
-                  "en": "Latex"
-                }
-              },
-              {
-                "id": "leather",
-                "label": {
-                  "ru": "Кожа",
-                  "en": "Leather"
-                }
-              },
-              {
-                "id": "sheer",
-                "label": {
-                  "ru": "Прозрачное",
-                  "en": "Sheer"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "color",
-      "label": {
-        "ru": "Цвет",
-        "en": "Color"
-      },
-      "tag_ref": "lingerie_color",
-      "follow_ups": [
-        {
-          "id": "colors",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие цвета?",
-            "en": "What colors?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "black",
-                "label": {
-                  "ru": "Чёрное",
-                  "en": "Black"
-                }
-              },
-              {
-                "id": "red",
-                "label": {
-                  "ru": "Красное",
-                  "en": "Red"
-                }
-              },
-              {
-                "id": "white",
-                "label": {
-                  "ru": "Белое",
-                  "en": "White"
-                }
-              },
-              {
-                "id": "nude",
-                "label": {
-                  "ru": "Нюд/телесное",
-                  "en": "Nude"
-                }
-              },
-              {
-                "id": "pink",
-                "label": {
-                  "ru": "Розовое",
-                  "en": "Pink"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "lingerie_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "visual",
-                "label": {
-                  "ru": "Визуальная красота",
-                  "en": "Visual beauty"
-                }
-              },
-              {
-                "id": "confidence",
-                "label": {
-                  "ru": "Уверенность в себе",
-                  "en": "Self-confidence"
-                }
-              },
-              {
-                "id": "surprise",
-                "label": {
-                  "ru": "Сюрприз для партнёра",
-                  "en": "Surprise for partner"
-                }
-              },
-              {
-                "id": "texture",
-                "label": {
-                  "ru": "Текстура ткани",
-                  "en": "Fabric texture"
-                }
-              },
-              {
-                "id": "anticipation",
-                "label": {
-                  "ru": "Предвкушение снятия",
-                  "en": "Anticipation of removal"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в красивом белье?",
-      "en": "What appeals about lingerie?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "lingerie",
@@ -289,8 +49,11 @@
       "visual"
     ]
   },
-  "user_description": {
-    "ru": "Женщина надевает красивое нижнее бельё — кружевное, из прозрачных тканей, с подвязками",
-    "en": "Woman wearing beautiful lingerie — lace, sheer fabrics, with garters"
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в красивом белье?",
+      "en": "What appeals about lingerie?"
+    }
+      }
 }

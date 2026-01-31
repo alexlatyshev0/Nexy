@@ -1,0 +1,53 @@
+{
+  "id": "dirty-talk-interest",
+  "slug": "dirty-talk-interest",
+  "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Грязные разговоры",
+    "en": "Dirty Talk"
+  },
+  "subtitle": {
+    "ru": "Слова в постели",
+    "en": "Words in bed"
+  },
+  "user_description": {
+    "ru": "Шёпот на ухо. Грубые слова. Описания того, что ты делаешь или хочешь.",
+    "en": "Whispers in your ear. Rough words. Describing what you're doing or want."
+  },
+  "ai_description": {
+    "ru": "Грязные разговоры во время секса — описания, команды, грубые слова.",
+    "en": "Dirty talk during sex — descriptions, commands, rough words."
+  },
+  "image_prompt": "couple in bed, intense eye contact, lips close together, bedroom setting",
+  "intensity": 1,
+  "category": "baseline",
+  "tags": [
+    "baseline",
+    "dirty_talk",
+    "verbal"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "dirty_talk",
+      "verbal"
+    ],
+    "gates": {
+      "yes": [
+        "dirty_talk_scenes"
+      ]
+    }
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Грязные разговоры в постели",
+      "en": "Dirty talk in bed"
+    }
+  },
+  "priority": 8,
+  "sets_gate": "dirty_talk"
+}

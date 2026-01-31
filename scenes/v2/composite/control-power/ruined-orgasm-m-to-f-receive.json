@@ -1,0 +1,56 @@
+{
+  "id": "ruined-orgasm-m-to-f-receive",
+  "slug": "ruined-orgasm-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "ruined-orgasm-m-to-f",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Испорченный оргазм",
+    "en": "Ruined Orgasm"
+  },
+  "subtitle": {
+    "ru": "Он портит тебе оргазм",
+    "en": "He ruins your orgasm"
+  },
+  "user_description": {
+    "ru": "Он стимулирует тебя до оргазма, затем в момент кульминации останавливается — оргазм происходит без стимуляции.",
+    "en": "He stimulates you until orgasm, then stops at climax — orgasm happens without stimulation."
+  },
+  "ai_description": {
+    "ru": "Он стимулирует её до момента оргазма, затем убирает руку или останавливается. Оргазм происходит без стимуляции. Контроль, фрустрация.",
+    "en": "He stimulates her until orgasm, then removes hand or stops. Orgasm happens without stimulation. Control, frustration."
+  },
+  "image_prompt": "man's hand pulling away from woman's pussy at crucial moment, woman lying on bed with tense expression, bedroom setting",
+  "intensity": 4,
+  "category": "control-power",
+  "tags": [
+    "ruined_orgasm",
+    "orgasm_control",
+    "denial",
+    "submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "ruined_orgasm",
+      "submission"
+    ],
+    "tests_secondary": [
+      "denial",
+      "orgasm_control"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Он портит тебе оргазм — останавливается в момент кульминации?",
+      "en": "He ruins your orgasm — stops at climax?"
+    }
+  }
+}

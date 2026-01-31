@@ -1,0 +1,40 @@
+{
+  "id": "8228cac1-27cf-4dd6-91a0-e28a93a135c7",
+  "slug": "onboarding-group-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 3,
+  "for_gender": "male",
+  "paired_with": null,
+  "title": {
+    "ru": "Групповой секс",
+    "en": "Group sex"
+  },
+  "subtitle": {
+    "ru": "Трое и больше",
+    "en": "Three or more"
+  },
+  "ai_description": {
+    "ru": "Интерес к сексу с несколькими партнёрами. Гейтит: threesome, gangbang, orgy, swinging.",
+    "en": "Interest in sex with multiple partners. Gates: threesome, gangbang, orgy, swinging."
+  },
+  "user_description": {
+    "ru": "Две женщины ласкают тебя одновременно. Или ты с другом — одну женщину.",
+    "en": "Two women pleasure you at once. Or you and a friend — one woman."
+  },
+  "image_prompt": "naked man lying on bed, two naked women on either side touching him, FMF threesome, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "group"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "group"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "group"
+}

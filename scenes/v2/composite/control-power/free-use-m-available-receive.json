@@ -1,0 +1,58 @@
+{
+  "id": "free-use-m-available-receive",
+  "slug": "free-use-m-available-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "free-use-m-available",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Free use (ты доступен)",
+    "en": "Free Use (You're Available)"
+  },
+  "subtitle": {
+    "ru": "Она использует тебя когда хочет",
+    "en": "She uses you whenever she wants"
+  },
+  "user_description": {
+    "ru": "Ты доступен для секса в любой момент. Она может использовать тебя во время игр, работы или сна без спроса.",
+    "en": "You're available for sex anytime. She can use you during games, work, or sleep without asking."
+  },
+  "ai_description": {
+    "ru": "Он доступен для секса в любое время без спроса. Во время игр, работы, сна. Тест на male submission, objectification.",
+    "en": "He's available for sex anytime without asking. During games, work, sleep. Tests male submission, objectification."
+  },
+  "image_prompt": "man sitting on couch playing video games, woman climbing onto his lap and lowering herself onto him, he continues playing, living room setting",
+  "intensity": 4,
+  "category": "control-power",
+  "tags": [
+    "free_use",
+    "access",
+    "control",
+    "male_submission",
+    "objectification"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "free_use",
+      "male_submission"
+    ],
+    "tests_secondary": [
+      "objectification",
+      "femdom",
+      "availability"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Free use — ты доступен для неё в любой момент?",
+      "en": "Free use — you're available for her anytime?"
+    }
+  }
+}

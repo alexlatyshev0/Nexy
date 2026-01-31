@@ -1,0 +1,55 @@
+{
+  "id": "body-worship-f-to-m-receive",
+  "slug": "body-worship-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "body-worship-she-worships-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Поклонение телу",
+    "en": "Body Worship"
+  },
+  "subtitle": {
+    "ru": "Она поклоняется твоему телу",
+    "en": "She worships your body"
+  },
+  "user_description": {
+    "ru": "Она целует твоё тело — грудь, живот, руки, ноги.",
+    "en": "She kisses your body — chest, stomach, arms, legs."
+  },
+  "ai_description": {
+    "ru": "Она целует его тело — грудь, руки, живот. Каждый мускул получает внимание. Cock worship, ball worship — полное обожание.",
+    "en": "She kisses his body — chest, arms, stomach. Every muscle gets attention. Cock worship, ball worship — complete adoration."
+  },
+  "image_prompt": "woman kissing along mans chest and abs, he lying back nude, she nude between his legs, bedroom setting",
+  "intensity": 2,
+  "category": "worship-service",
+  "tags": [
+    "body_worship",
+    "worship",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "body_worship",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "devotion",
+      "appreciation"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Она поклоняется твоему телу?",
+      "en": "She worships your body?"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "body-worship-m-to-f-receive",
+  "slug": "body-worship-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "body-worship-he-worships-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Поклонение телу",
+    "en": "Body Worship"
+  },
+  "subtitle": {
+    "ru": "Он поклоняется твоему телу",
+    "en": "He worships your body"
+  },
+  "user_description": {
+    "ru": "Он целует твоё тело — грудь, живот, бёдра, спину.",
+    "en": "He kisses your body — breasts, stomach, thighs, back."
+  },
+  "ai_description": {
+    "ru": "Он целует каждый сантиметр её тела. Руки, ноги, живот, грудь — всё достойно обожания. Она — богиня, он — преданный слуга.",
+    "en": "He kisses every inch of her body. Arms, legs, stomach, breasts — all worthy of adoration. She's a goddess, he's devoted servant."
+  },
+  "image_prompt": "man kissing woman's stomach and thighs, woman lying nude on bed, man kneeling beside her, bedroom with soft lamp light",
+  "intensity": 2,
+  "category": "worship-service",
+  "tags": [
+    "body_worship",
+    "worship",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "body_worship",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "devotion",
+      "adoration"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Он поклоняется твоему телу?",
+      "en": "He worships your body?"
+    }
+  }
+}

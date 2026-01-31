@@ -1,0 +1,47 @@
+{
+  "id": "position-spooning",
+  "slug": "position-spooning",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Ложки",
+    "en": "Spooning"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Оба на боку, один сзади. Интимно и расслабленно.",
+    "en": "Both on side, one behind. Intimate and relaxed."
+  },
+  "ai_description": {
+    "ru": "Оба на боку, он сзади. Нежная и интимная поза.",
+    "en": "Both on their side, him behind. Gentle and intimate position."
+  },
+  "image_prompt": "couple lying on their sides spooning position, him behind her, bedroom",
+  "intensity": 1,
+  "category": "positions",
+  "tags": [
+    "positions",
+    "spooning",
+    "intimate"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "positions",
+      "spooning"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

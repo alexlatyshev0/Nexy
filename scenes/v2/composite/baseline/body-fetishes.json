@@ -1,15 +1,22 @@
 {
-  "id": "body_fetishes",
+  "id": "body-fetishes",
   "slug": "body-fetishes",
   "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Части тела",
     "en": "Body Parts"
   },
   "subtitle": {
-    "ru": "Что особенно возбуждает?",
-    "en": "What especially excites?"
+    "ru": "Грудь, попа, ноги, ступни",
+    "en": "Breasts, butt, legs, feet"
+  },
+  "user_description": {
+    "ru": "Ты фокусируешься на определённых частях тела — груди, попе, ногах, ступнях.",
+    "en": "You focus on specific body parts — breasts, butt, legs, feet."
   },
   "ai_description": {
     "ru": "У всех есть любимые части тела партнёра. Грудь, попа, ноги, руки... А может что-то необычное — ступни, подмышки?",
@@ -18,222 +25,13 @@
   "image_prompt": "man touching woman's body parts, hands on curves, intimate bedroom setting",
   "intensity": 1,
   "category": "baseline",
-  "priority": 13,
   "tags": [
     "baseline",
     "body_parts",
     "fetish",
     "attraction",
-    "preferences"
+    "preference"
   ],
-  "elements": [
-    {
-      "id": "favorites",
-      "label": {
-        "ru": "Любимые",
-        "en": "Favorites"
-      },
-      "tag_ref": "body_favorites",
-      "follow_ups": [
-        {
-          "id": "parts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие части тела особенно возбуждают?",
-            "en": "What body parts especially excite?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "breasts",
-                "label": {
-                  "ru": "Грудь",
-                  "en": "Breasts"
-                }
-              },
-              {
-                "id": "ass",
-                "label": {
-                  "ru": "Попа",
-                  "en": "Butt"
-                }
-              },
-              {
-                "id": "legs",
-                "label": {
-                  "ru": "Ноги",
-                  "en": "Legs"
-                }
-              },
-              {
-                "id": "neck",
-                "label": {
-                  "ru": "Шея",
-                  "en": "Neck"
-                }
-              },
-              {
-                "id": "back",
-                "label": {
-                  "ru": "Спина",
-                  "en": "Back"
-                }
-              },
-              {
-                "id": "hands",
-                "label": {
-                  "ru": "Руки/кисти",
-                  "en": "Hands"
-                }
-              },
-              {
-                "id": "stomach",
-                "label": {
-                  "ru": "Живот",
-                  "en": "Stomach"
-                }
-              },
-              {
-                "id": "thighs",
-                "label": {
-                  "ru": "Бёдра",
-                  "en": "Thighs"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "unusual",
-      "label": {
-        "ru": "Необычные",
-        "en": "Unusual"
-      },
-      "tag_ref": "body_unusual",
-      "follow_ups": [
-        {
-          "id": "special",
-          "type": "multi_select",
-          "question": {
-            "ru": "Есть фетиш на что-то особенное?",
-            "en": "Any fetish for something special?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "feet",
-                "label": {
-                  "ru": "Ступни",
-                  "en": "Feet"
-                }
-              },
-              {
-                "id": "armpits",
-                "label": {
-                  "ru": "Подмышки",
-                  "en": "Armpits"
-                }
-              },
-              {
-                "id": "hair",
-                "label": {
-                  "ru": "Волосы",
-                  "en": "Hair"
-                }
-              },
-              {
-                "id": "navel",
-                "label": {
-                  "ru": "Пупок",
-                  "en": "Navel"
-                }
-              },
-              {
-                "id": "ears",
-                "label": {
-                  "ru": "Уши",
-                  "en": "Ears"
-                }
-              },
-              {
-                "id": "muscles",
-                "label": {
-                  "ru": "Мышцы",
-                  "en": "Muscles"
-                }
-              },
-              {
-                "id": "belly",
-                "label": {
-                  "ru": "Животик (мягкий)",
-                  "en": "Soft belly"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "worship",
-      "label": {
-        "ru": "Поклонение",
-        "en": "Worship"
-      },
-      "tag_ref": "body_worship_interest",
-      "follow_ups": [
-        {
-          "id": "worship_level",
-          "type": "single_select",
-          "question": {
-            "ru": "Поклонение частям тела...",
-            "en": "Body part worship..."
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Не моё",
-                  "en": "Not for me"
-                }
-              },
-              {
-                "id": "appreciate",
-                "label": {
-                  "ru": "Люблю целовать/ласкать",
-                  "en": "Love kissing/caressing"
-                }
-              },
-              {
-                "id": "worship",
-                "label": {
-                  "ru": "Именно поклонение",
-                  "en": "Actual worship"
-                }
-              },
-              {
-                "id": "receive",
-                "label": {
-                  "ru": "Хочу чтобы мне поклонялись",
-                  "en": "Want to be worshipped"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Какие части тела особенно возбуждают?",
-      "en": "What body parts especially excite?"
-    }
-  },
   "ai_context": {
     "tests_primary": [
       "body_parts",
@@ -257,8 +55,12 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Партнёр фокусируется на определённых частях тела — груди, попе, ногах, ступнях или других зонах",
-    "en": "Partner focuses on specific body parts — breasts, butt, legs, feet or other zones"
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Какие части тела особенно возбуждают?",
+      "en": "What body parts especially excite?"
+    }
+  },
+  "priority": 13
 }

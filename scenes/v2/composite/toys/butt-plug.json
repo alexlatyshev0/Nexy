@@ -1,7 +1,15 @@
 {
-  "id": "butt_plug",
+  "id": "butt-plug",
   "slug": "butt-plug",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "toys",
+    "anal"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Анальная пробка",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Ощущение наполненности",
     "en": "Feeling of fullness"
+  },
+  "user_description": {
+    "ru": "Анальная пробка. Во время секса или под одеждой.",
+    "en": "Butt plug. During sex or under clothes."
   },
   "ai_description": {
     "ru": "Анальная пробка для ощущения наполненности. Во время секса, соло, или под одеждой.",
@@ -24,230 +36,6 @@
     "anal",
     "fullness"
   ],
-  "elements": [
-    {
-      "id": "who_wears",
-      "label": {
-        "ru": "Кто носит",
-        "en": "Who wears"
-      },
-      "tag_ref": "plug_who",
-      "follow_ups": [
-        {
-          "id": "wearer",
-          "type": "single_select",
-          "question": {
-            "ru": "Кто носит пробку?",
-            "en": "Who wears the plug?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "she",
-                "label": {
-                  "ru": "Она",
-                  "en": "She"
-                }
-              },
-              {
-                "id": "he",
-                "label": {
-                  "ru": "Он",
-                  "en": "He"
-                }
-              },
-              {
-                "id": "both",
-                "label": {
-                  "ru": "Оба",
-                  "en": "Both"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "when",
-      "label": {
-        "ru": "Когда",
-        "en": "When"
-      },
-      "tag_ref": "plug_when",
-      "follow_ups": [
-        {
-          "id": "timing",
-          "type": "multi_select",
-          "question": {
-            "ru": "Когда носить?",
-            "en": "When to wear?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "during_sex",
-                "label": {
-                  "ru": "Во время секса",
-                  "en": "During sex"
-                }
-              },
-              {
-                "id": "foreplay",
-                "label": {
-                  "ru": "Прелюдия/подготовка",
-                  "en": "Foreplay/preparation"
-                }
-              },
-              {
-                "id": "public",
-                "label": {
-                  "ru": "На публике (под одеждой)",
-                  "en": "In public (under clothes)"
-                }
-              },
-              {
-                "id": "date",
-                "label": {
-                  "ru": "На свидании",
-                  "en": "On a date"
-                }
-              },
-              {
-                "id": "extended",
-                "label": {
-                  "ru": "Длительное ношение",
-                  "en": "Extended wear"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "type",
-      "label": {
-        "ru": "Тип",
-        "en": "Type"
-      },
-      "tag_ref": "plug_type",
-      "follow_ups": [
-        {
-          "id": "style",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой тип?",
-            "en": "What type?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "basic",
-                "label": {
-                  "ru": "Обычная",
-                  "en": "Basic"
-                }
-              },
-              {
-                "id": "jeweled",
-                "label": {
-                  "ru": "С камнем/украшением",
-                  "en": "Jeweled"
-                }
-              },
-              {
-                "id": "tail",
-                "label": {
-                  "ru": "С хвостом",
-                  "en": "With tail"
-                }
-              },
-              {
-                "id": "vibrating",
-                "label": {
-                  "ru": "Вибрирующая",
-                  "en": "Vibrating"
-                }
-              },
-              {
-                "id": "inflatable",
-                "label": {
-                  "ru": "Надувная",
-                  "en": "Inflatable"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "appeal",
-      "label": {
-        "ru": "Что привлекает",
-        "en": "What appeals"
-      },
-      "tag_ref": "plug_appeal",
-      "follow_ups": [
-        {
-          "id": "why",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "fullness",
-                "label": {
-                  "ru": "Ощущение наполненности",
-                  "en": "Fullness sensation"
-                }
-              },
-              {
-                "id": "taboo",
-                "label": {
-                  "ru": "Табу",
-                  "en": "Taboo"
-                }
-              },
-              {
-                "id": "secret",
-                "label": {
-                  "ru": "Тайна (никто не знает)",
-                  "en": "Secret (no one knows)"
-                }
-              },
-              {
-                "id": "preparation",
-                "label": {
-                  "ru": "Подготовка к аналу",
-                  "en": "Anal preparation"
-                }
-              },
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Партнёр контролирует",
-                  "en": "Partner controls"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в анальной пробке?",
-      "en": "What appeals about butt plugs?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "butt_plug",
@@ -260,8 +48,11 @@
       "public_play"
     ]
   },
-  "user_description": {
-    "ru": "Она или он носит анальную пробку — во время секса или под одеждой.",
-    "en": "She or he wears a butt plug — during sex or under clothes."
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Анальная пробка?",
+      "en": "Butt plug?"
+    }
   }
 }

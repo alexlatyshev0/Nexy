@@ -1,0 +1,61 @@
+{
+  "id": "ddlg-daddy",
+  "slug": "ddlg-daddy",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "roleplay",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "ddlg-little-girl",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "DDlg — Daddy",
+    "en": "DDlg — Daddy"
+  },
+  "subtitle": {
+    "ru": "Ты её Daddy",
+    "en": "You're her Daddy"
+  },
+  "user_description": {
+    "ru": "Ты её Daddy, она твоя маленькая девочка.",
+    "en": "You're her Daddy, she's your little girl."
+  },
+  "ai_description": {
+    "ru": "Он — Daddy, она — его маленькая девочка. Забота, правила, защита, баловство. Не про возраст — про динамику отношений.",
+    "en": "He's Daddy, she's his little girl. Care, rules, protection, spoiling. Not about age — about relationship dynamic."
+  },
+  "image_prompt": "man sitting on bed, woman on his lap wearing white cotton panties and oversized t-shirt, cozy bedroom with soft warm light",
+  "intensity": 3,
+  "category": "age-play",
+  "tags": [
+    "ddlg",
+    "daddy",
+    "little",
+    "age_play",
+    "caregiver",
+    "nurturing"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "ddlg",
+      "daddy",
+      "dominant"
+    ],
+    "tests_secondary": [
+      "caregiver",
+      "age_play",
+      "nurturing"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Роль Daddy?",
+      "en": "Being Daddy?"
+    }
+  }
+}

@@ -7,6 +7,13 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY!
 );
 
+interface ImageVariant {
+  url: string;
+  prompt: string;
+  created_at: string;
+  qa_status?: 'passed' | 'failed' | null;
+}
+
 export async function POST(req: Request) {
   try {
     const formData = await req.formData();
@@ -27,7 +34,8 @@ export async function POST(req: Request) {
     // Determine content type
     const contentType = file.type || 'image/webp';
     const extension = contentType.split('/')[1] || 'webp';
-    const fileName = `${sceneId}.${extension}`;
+    // Use unique filename with timestamp to avoid overwriting
+    const fileName = `${sceneId}_${Date.now()}.${extension}`;
 
     console.log('[UploadImage] Uploading:', {
       sceneId,
@@ -42,7 +50,7 @@ export async function POST(req: Request) {
       .upload(fileName, buffer, {
         contentType,
         cacheControl: '0',
-        upsert: true,
+        upsert: false, // Don't overwrite - each upload is unique
       });
 
     if (uploadError) {
@@ -55,12 +63,50 @@ export async function POST(req: Request) {
       .from('scenes')
       .getPublicUrl(fileName);
 
-    const imageUrl = `${publicUrl}?t=${Date.now()}`;
+    const imageUrl = publicUrl;
 
-    // Update scene in database
+    // Get current scene data
+    const { data: scene, error: selectError } = await supabase
+      .from('scenes')
+      .select('image_variants, generation_prompt')
+      .eq('id', sceneId)
+      .single();
+
+    if (selectError) {
+      console.error('[UploadImage] Select error:', selectError);
+      return NextResponse.json({ error: selectError.message }, { status: 500 });
+    }
+
+    // Add to image_variants (check for duplicates without query params)
+    const currentVariants: ImageVariant[] = scene?.image_variants || [];
+    const getBaseUrl = (url: string) => url.split('?')[0];
+    const baseImageUrl = getBaseUrl(imageUrl);
+
+    // Skip if already exists
+    if (currentVariants.some(v => getBaseUrl(v.url) === baseImageUrl)) {
+      return NextResponse.json({
+        success: true,
+        imageUrl,
+        variants: currentVariants,
+        message: 'Image already in gallery',
+      });
+    }
+
+    const newVariant: ImageVariant = {
+      url: imageUrl,
+      prompt: scene?.generation_prompt || 'Uploaded manually',
+      created_at: new Date().toISOString(),
+      qa_status: null,
+    };
+    const updatedVariants = [...currentVariants, newVariant];
+
+    // Update scene: set as main image AND add to variants
     const { error: updateError } = await supabase
       .from('scenes')
-      .update({ image_url: imageUrl })
+      .update({
+        image_url: imageUrl,
+        image_variants: updatedVariants,
+      })
       .eq('id', sceneId);
 
     if (updateError) {
@@ -73,6 +119,7 @@ export async function POST(req: Request) {
     return NextResponse.json({
       success: true,
       imageUrl,
+      variants: updatedVariants,
     });
   } catch (error) {
     console.error('[UploadImage] Exception:', error);

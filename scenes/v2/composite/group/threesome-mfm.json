@@ -1,8 +1,15 @@
 {
-  "id": "threesome_mfm",
+  "id": "threesome-mfm",
   "slug": "threesome-mfm",
   "version": 2,
-  "paired_scene": "threesome_fmf",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "group"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "paired_scene": "threesome-fmf",
   "role_direction": "group",
   "title": {
     "ru": "Тройка MFM",
@@ -11,6 +18,10 @@
   "subtitle": {
     "ru": "Два мужчины, одна женщина",
     "en": "Two men, one woman"
+  },
+  "user_description": {
+    "ru": "Тройка МЖМ. Одна женщина, два мужчины.",
+    "en": "MFM threesome. One woman, two men."
   },
   "ai_description": {
     "ru": "Она между двух мужчин. Всё внимание на ней, двойное удовольствие, двойное проникновение. Она — центр вселенной.",
@@ -27,280 +38,6 @@
     "dp",
     "spitroast"
   ],
-  "elements": [
-    {
-      "id": "men_dynamic",
-      "label": {
-        "ru": "Динамика между мужчинами",
-        "en": "Men's dynamic"
-      },
-      "tag_ref": "mfm_men",
-      "follow_ups": [
-        {
-          "id": "interaction",
-          "type": "single_select",
-          "question": {
-            "ru": "Взаимодействие мужчин?",
-            "en": "Men's interaction?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no_touch",
-                "label": {
-                  "ru": "Не касаются друг друга",
-                  "en": "No touching each other"
-                }
-              },
-              {
-                "id": "some",
-                "label": {
-                  "ru": "Минимальный контакт ок",
-                  "en": "Minimal contact ok"
-                }
-              },
-              {
-                "id": "bisexual",
-                "label": {
-                  "ru": "Бисексуальны",
-                  "en": "Bisexual"
-                }
-              },
-              {
-                "id": "focus_her",
-                "label": {
-                  "ru": "Полный фокус на ней",
-                  "en": "Full focus on her"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "activities",
-      "label": {
-        "ru": "Активности",
-        "en": "Activities"
-      },
-      "tag_ref": "mfm_activities",
-      "follow_ups": [
-        {
-          "id": "acts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие активности?",
-            "en": "What activities?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "spitroast",
-                "label": {
-                  "ru": "Spitroast (рот + сзади)",
-                  "en": "Spitroast"
-                }
-              },
-              {
-                "id": "dvp",
-                "label": {
-                  "ru": "DVP (два в одно)",
-                  "en": "DVP (double vaginal)"
-                }
-              },
-              {
-                "id": "dp",
-                "label": {
-                  "ru": "DP (вагина + анал)",
-                  "en": "DP (vaginal + anal)"
-                }
-              },
-              {
-                "id": "one_fucks",
-                "label": {
-                  "ru": "Один ебёт, другой смотрит",
-                  "en": "One fucks, one watches"
-                }
-              },
-              {
-                "id": "switch",
-                "label": {
-                  "ru": "Меняются",
-                  "en": "Switch"
-                }
-              },
-              {
-                "id": "both_oral",
-                "label": {
-                  "ru": "Двойной минет",
-                  "en": "Double blowjob"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "your_role",
-      "label": {
-        "ru": "Твоя роль",
-        "en": "Your role"
-      },
-      "tag_ref": "mfm_role",
-      "follow_ups": [
-        {
-          "id": "role",
-          "type": "single_select",
-          "question": {
-            "ru": "Какая роль?",
-            "en": "What role?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "the_woman",
-                "label": {
-                  "ru": "Женщина",
-                  "en": "The woman"
-                }
-              },
-              {
-                "id": "main_man",
-                "label": {
-                  "ru": "Основной мужчина (партнёр)",
-                  "en": "Main man (partner)"
-                }
-              },
-              {
-                "id": "third_man",
-                "label": {
-                  "ru": "Третий мужчина",
-                  "en": "Third man"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "hotwife_stag",
-      "label": {
-        "ru": "Hotwife/Stag?",
-        "en": "Hotwife/Stag?"
-      },
-      "tag_ref": "mfm_hotwife",
-      "follow_ups": [
-        {
-          "id": "dynamic",
-          "type": "single_select",
-          "question": {
-            "ru": "Элемент hotwife?",
-            "en": "Hotwife element?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Нет, просто тройка",
-                  "en": "No, just threesome"
-                }
-              },
-              {
-                "id": "stag_vixen",
-                "label": {
-                  "ru": "Stag/Vixen (он гордится)",
-                  "en": "Stag/Vixen (he's proud)"
-                }
-              },
-              {
-                "id": "cuckold",
-                "label": {
-                  "ru": "Куколд элемент",
-                  "en": "Cuckold element"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "mfm_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "all_attention",
-                "label": {
-                  "ru": "Всё внимание на ней",
-                  "en": "All attention on her"
-                }
-              },
-              {
-                "id": "filled",
-                "label": {
-                  "ru": "Быть заполненной",
-                  "en": "Being filled"
-                }
-              },
-              {
-                "id": "used",
-                "label": {
-                  "ru": "Быть использованной",
-                  "en": "Being used"
-                }
-              },
-              {
-                "id": "two_cocks",
-                "label": {
-                  "ru": "Два члена",
-                  "en": "Two cocks"
-                }
-              },
-              {
-                "id": "slutty",
-                "label": {
-                  "ru": "Чувствовать себя slutty",
-                  "en": "Feeling slutty"
-                }
-              },
-              {
-                "id": "sharing",
-                "label": {
-                  "ru": "Поделиться ей",
-                  "en": "Sharing her"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в тройке MFM?",
-      "en": "What appeals about MFM threesome?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "threesome",
@@ -313,8 +50,11 @@
       "sharing"
     ]
   },
-  "user_description": {
-    "ru": "Одна женщина занимается сексом с двумя мужчинами одновременно. Один мужчина входит в неё спереди, другой сзади.",
-    "en": "One woman has sex with two men simultaneously. One man enters her from the front, the other from behind."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в тройке MFM?",
+      "en": "What appeals about MFM threesome?"
+    }
+      }
 }

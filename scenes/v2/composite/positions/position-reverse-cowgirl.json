@@ -1,0 +1,47 @@
+{
+  "id": "position-reverse-cowgirl",
+  "slug": "position-reverse-cowgirl",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Обратная наездница",
+    "en": "Reverse Cowgirl"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Один сверху, спиной к партнёру. Вид сзади.",
+    "en": "One on top, back to partner. View from behind."
+  },
+  "ai_description": {
+    "ru": "Она сверху, спиной к нему. Отличный вид и новые ощущения.",
+    "en": "She on top, back to him. Great view and new sensations."
+  },
+  "image_prompt": "woman straddling man facing away, reverse cowgirl position, bedroom",
+  "intensity": 2,
+  "category": "positions",
+  "tags": [
+    "positions",
+    "reverse-cowgirl",
+    "woman-on-top"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "positions",
+      "reverse-cowgirl"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

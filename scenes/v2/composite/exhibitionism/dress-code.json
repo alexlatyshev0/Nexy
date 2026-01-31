@@ -1,0 +1,60 @@
+{
+  "id": "dress-code",
+  "slug": "dress-code",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "exhibitionism",
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Дресс-код",
+    "en": "Dress Code"
+  },
+  "subtitle": {
+    "ru": "Партнёр выбирает одежду",
+    "en": "Partner chooses outfit"
+  },
+  "user_description": {
+    "ru": "Партнёр выбирает что ты наденешь на свидание или выход. Элемент контроля и предвкушения.",
+    "en": "Partner chooses what you wear for a date or outing. Element of control and anticipation."
+  },
+  "ai_description": {
+    "ru": "Партнёр выбирает что ты наденешь. Юбка без белья, откровенное платье, определённый цвет. Элемент контроля и предвкушения.",
+    "en": "Partner chooses what you wear. Skirt without underwear, revealing dress, specific color. Element of control and anticipation."
+  },
+  "image_prompt": "man selecting outfit from wardrobe for woman, she stands waiting in underwear, bedroom, he holds revealing dress, control dynamic, intimate atmosphere",
+  "intensity": 2,
+  "category": "exhibitionism",
+  "tags": [
+    "control",
+    "exhibitionism",
+    "clothing",
+    "anticipation",
+    "power_exchange"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "control",
+      "clothing",
+      "exhibitionism"
+    ],
+    "tests_secondary": [
+      "anticipation",
+      "submission",
+      "teasing"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в том, что партнёр выбирает одежду?",
+      "en": "What appeals about partner choosing your outfit?"
+    }
+      },
+  "context": "discovery"
+}

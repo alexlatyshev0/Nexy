@@ -1,0 +1,48 @@
+{
+  "id": "lingerie-satin",
+  "slug": "lingerie-satin",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Атлас",
+    "en": "Satin"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Атласное бельё. Гладкое, скользит по коже.",
+    "en": "Satin lingerie. Smooth, slides on skin."
+  },
+  "ai_description": {
+    "ru": "Гладкий шелковистый атлас. Скользит по коже.",
+    "en": "Smooth silky satin. Slides on skin."
+  },
+  "image_prompt": "woman in red satin slip dress, luxurious fabric, bedroom",
+  "intensity": 1,
+  "category": "clothing",
+  "tags": [
+    "lingerie",
+    "satin",
+    "silk",
+    "elegant"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "lingerie",
+      "satin"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

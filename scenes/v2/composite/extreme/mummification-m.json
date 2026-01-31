@@ -1,36 +1,57 @@
 {
-  "id": "mummification_m",
+  "id": "mummification-m",
   "slug": "mummification-m",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "mummification-m-receive",
   "role_direction": "f_to_m",
-  "title": { "ru": "Мумификация (он)", "en": "Mummification (Him)" },
-  "subtitle": { "ru": "Он полностью обездвижен", "en": "He's fully immobilized" },
-  "ai_description": { "ru": "М полностью завёрнут — плёнка, бинты, вакуумная кровать. Сенсорная депривация и полная беспомощность.", "en": "M fully wrapped — plastic, bandages, vacuum bed. Sensory deprivation and total helplessness." },
+  "title": {
+    "ru": "Мумификация (он)",
+    "en": "Mummification (Him)"
+  },
+  "subtitle": {
+    "ru": "Он полностью обездвижен",
+    "en": "He's fully immobilized"
+  },
+  "user_description": {
+    "ru": "Ты полностью заворачиваешь его в плёнку или бинты, он не может пошевелиться.",
+    "en": "You fully wrap him in plastic or bandages, he can't move."
+  },
+  "ai_description": {
+    "ru": "М полностью завёрнут — плёнка, бинты, вакуумная кровать. Сенсорная депривация и полная беспомощность.",
+    "en": "M fully wrapped — plastic, bandages, vacuum bed. Sensory deprivation and total helplessness."
+  },
   "image_prompt": "man wrapped entirely in plastic wrap on padded table, only mouth and nose visible, woman standing beside him, dungeon room with dim lighting",
   "intensity": 5,
   "category": "extreme",
-  "tags": ["mummification", "bondage", "sensory_deprivation", "m_sub"],
-  "elements": [
-    {
-      "id": "what_appeals",
-      "label": { "ru": "Что привлекает", "en": "What appeals" },
-      "tag_ref": "mummy_appeal",
-      "follow_ups": [{
-        "id": "appeal",
-        "type": "multi_select",
-        "question": { "ru": "Что возбуждает?", "en": "What excites?" },
-        "config": {
-          "options": [
-            { "id": "helplessness", "label": { "ru": "Его беспомощность", "en": "His helplessness" } },
-            { "id": "control", "label": { "ru": "Полный контроль над ним", "en": "Total control over him" } },
-            { "id": "sensory", "label": { "ru": "Сенсорная депривация", "en": "Sensory deprivation" } },
-            { "id": "surrender", "label": { "ru": "Полная отдача", "en": "Total surrender" } }
-          ]
-        }
-      }]
-    }
+  "tags": [
+    "mummification",
+    "bondage",
+    "sensory_deprivation",
+    "m_sub"
   ],
-  "question": { "type": "interest_scale", "text": { "ru": "Он полностью обездвижен — плёнка, бинты?", "en": "He's fully immobilized — wrap, bandages?" } },
-  "ai_context": { "tests_primary": ["mummification", "bondage", "m_sub"], "tests_secondary": ["sensory_deprivation", "femdom"] },
-  "user_description": { "ru": "Он полностью завёрнут в плёнку или бинты, не может пошевелиться", "en": "He's fully wrapped in plastic or bandages, can't move" }
+  "ai_context": {
+    "tests_primary": [
+      "mummification",
+      "bondage",
+      "m_sub"
+    ],
+    "tests_secondary": [
+      "sensory_deprivation",
+      "femdom"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Он полностью обездвижен — плёнка, бинты?",
+      "en": "He's fully immobilized — wrap, bandages?"
+    }
+  }
 }

@@ -1,0 +1,58 @@
+{
+  "id": "knife-play-m-to-f-receive",
+  "slug": "knife-play-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "knife-play-m-to-f",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Ножевые игры",
+    "en": "Knife Play"
+  },
+  "subtitle": {
+    "ru": "Он водит лезвием по твоему телу",
+    "en": "He traces blade on your body"
+  },
+  "user_description": {
+    "ru": "Он водит лезвием ножа по твоей коже — шея, грудь, живот.",
+    "en": "He traces knife blade on your skin — neck, chest, belly."
+  },
+  "ai_description": {
+    "ru": "М водит ножом по коже Ж. Edge play с элементом страха и доверия.",
+    "en": "M traces knife on F's skin. Edge play with fear and trust element."
+  },
+  "image_prompt": "man holding knife blade against woman's skin on neck, bedroom setting, blade touching but not cutting skin",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": [
+    "knife_play",
+    "edge_play",
+    "fear",
+    "submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "knife_play",
+      "edge_play",
+      "submission"
+    ],
+    "tests_secondary": [
+      "danger",
+      "trust"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Он водит ножом по твоему телу?",
+      "en": "He traces knife on your body?"
+    }
+  }
+}

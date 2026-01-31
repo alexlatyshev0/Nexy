@@ -1,0 +1,58 @@
+{
+  "id": "somnophilia",
+  "slug": "somnophilia",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Сомнофилия",
+    "en": "Somnophilia"
+  },
+  "subtitle": {
+    "ru": "Секс со спящим",
+    "en": "Sleep play"
+  },
+  "user_description": {
+    "ru": "Один партнёр спит (или притворяется), другой занимается с ним сексом.",
+    "en": "One partner sleeps (or pretends to), the other has sex with them."
+  },
+  "ai_description": {
+    "ru": "Сексуальное возбуждение от прикосновений к спящему партнёру или притворства спящим. Требует предварительного согласия.",
+    "en": "Sexual arousal from touching a sleeping partner or pretending to be asleep. Requires prior consent."
+  },
+  "image_prompt": "woman sleeping in bed, man gently touching her, bedroom night setting, soft moonlight",
+  "intensity": 4,
+  "category": "cnc-rough",
+  "tags": [
+    "somnophilia",
+    "sleep_play",
+    "cnc",
+    "fantasy",
+    "passive"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "somnophilia",
+      "sleep_play",
+      "cnc"
+    ],
+    "tests_secondary": [
+      "passive",
+      "fantasy",
+      "surprise"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в сомнофилии?",
+      "en": "What appeals about somnophilia?"
+    }
+      }
+}

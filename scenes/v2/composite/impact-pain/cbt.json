@@ -2,6 +2,13 @@
   "id": "cbt",
   "slug": "cbt",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
   "role_direction": "f_to_m",
   "title": {
     "ru": "CBT",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Cock & Ball Torture",
     "en": "Cock & Ball Torture"
+  },
+  "user_description": {
+    "ru": "Ты причиняешь боль его гениталиям — сжимаешь, бьёшь, связываешь его член и яички.",
+    "en": "You inflict pain on his genitals — squeeze, hit, bind his cock and balls."
   },
   "ai_description": {
     "ru": "Боль для его гениталий — сжатие, удары, растяжение, связывание. Femdom классика. Его самое уязвимое место в её руках.",
@@ -25,200 +36,18 @@
     "femdom",
     "pain"
   ],
-  "elements": [
-    {
-      "id": "activities",
-      "label": {
-        "ru": "Действия",
-        "en": "Activities"
-      },
-      "tag_ref": "cbt_activities",
-      "follow_ups": [
-        {
-          "id": "what",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что включает?",
-            "en": "What does it include?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "squeezing",
-                "label": {
-                  "ru": "Сжатие",
-                  "en": "Squeezing"
-                }
-              },
-              {
-                "id": "slapping",
-                "label": {
-                  "ru": "Шлепки по яйцам",
-                  "en": "Ball slapping"
-                }
-              },
-              {
-                "id": "binding",
-                "label": {
-                  "ru": "Связывание яиц",
-                  "en": "Ball binding"
-                }
-              },
-              {
-                "id": "stretching",
-                "label": {
-                  "ru": "Растяжение",
-                  "en": "Stretching"
-                }
-              },
-              {
-                "id": "kicking",
-                "label": {
-                  "ru": "Удары ногой (ballbusting)",
-                  "en": "Kicking (ballbusting)"
-                }
-              },
-              {
-                "id": "weights",
-                "label": {
-                  "ru": "Грузы",
-                  "en": "Weights"
-                }
-              },
-              {
-                "id": "clamps",
-                "label": {
-                  "ru": "Зажимы",
-                  "en": "Clamps"
-                }
-              },
-              {
-                "id": "cock_ring_tight",
-                "label": {
-                  "ru": "Тугое кольцо",
-                  "en": "Tight cock ring"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "intensity",
-      "label": {
-        "ru": "Интенсивность",
-        "en": "Intensity"
-      },
-      "tag_ref": "cbt_intensity",
-      "follow_ups": [
-        {
-          "id": "level",
-          "type": "single_select",
-          "question": {
-            "ru": "Насколько интенсивно?",
-            "en": "How intense?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "light",
-                "label": {
-                  "ru": "Лёгкое (больше игра)",
-                  "en": "Light (more playful)"
-                }
-              },
-              {
-                "id": "moderate",
-                "label": {
-                  "ru": "Умеренное (ощутимо)",
-                  "en": "Moderate (noticeable)"
-                }
-              },
-              {
-                "id": "intense",
-                "label": {
-                  "ru": "Интенсивное (больно)",
-                  "en": "Intense (painful)"
-                }
-              },
-              {
-                "id": "extreme",
-                "label": {
-                  "ru": "Экстремальное",
-                  "en": "Extreme"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает",
-        "en": "What appeals"
-      },
-      "tag_ref": "cbt_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "her_power",
-                "label": {
-                  "ru": "Её власть над ним",
-                  "en": "Her power over him"
-                }
-              },
-              {
-                "id": "vulnerability",
-                "label": {
-                  "ru": "Его уязвимость",
-                  "en": "His vulnerability"
-                }
-              },
-              {
-                "id": "pain_pleasure",
-                "label": {
-                  "ru": "Боль-удовольствие",
-                  "en": "Pain-pleasure"
-                }
-              },
-              {
-                "id": "humiliation",
-                "label": {
-                  "ru": "Унижение",
-                  "en": "Humiliation"
-                }
-              },
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Контроль его удовольствия",
-                  "en": "Control his pleasure"
-                }
-              },
-              {
-                "id": "masochism",
-                "label": {
-                  "ru": "Мазохизм",
-                  "en": "Masochism"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
+  "ai_context": {
+    "tests_primary": [
+      "cbt",
+      "cock_torture",
+      "ball_torture"
+    ],
+    "tests_secondary": [
+      "femdom",
+      "pain",
+      "masochism"
+    ]
+  },
   "question": {
     "type": "boundary",
     "text": {
@@ -250,21 +79,5 @@
         }
       ]
     }
-  },
-  "ai_context": {
-    "tests_primary": [
-      "cbt",
-      "cock_torture",
-      "ball_torture"
-    ],
-    "tests_secondary": [
-      "femdom",
-      "pain",
-      "masochism"
-    ]
-  },
-  "user_description": {
-    "ru": "Женщина причиняет боль гениталиям мужчины — сжимает, бьёт, связывает его член и яички",
-    "en": "Woman inflicts pain on man's genitals — squeezes, hits, binds his cock and balls"
   }
 }

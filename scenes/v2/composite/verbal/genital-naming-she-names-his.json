@@ -1,0 +1,58 @@
+{
+  "id": "genital-naming-she-names-his",
+  "slug": "genital-naming-she-names-his",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": ["dirty_talk"],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "genital-naming-he-names-hers",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Как называть",
+    "en": "What to call it"
+  },
+  "subtitle": {
+    "ru": "Его интимное место",
+    "en": "His intimate parts"
+  },
+  "user_description": {
+    "ru": "Какими словами тебе нравится называть его интимное место?",
+    "en": "What words do you like using for his intimate parts?"
+  },
+  "ai_description": {
+    "ru": "Какими словами Ж называет член М. 'Член', 'хуй', или что-то своё.",
+    "en": "What words F uses for M's cock. 'Cock', 'dick', or something else."
+  },
+  "intensity": 2,
+  "category": "verbal",
+  "tags": ["dirty_talk", "verbal", "naming", "genitals"],
+  "ai_context": {
+    "tests_primary": ["genital_naming", "dirty_talk"],
+    "tests_secondary": ["verbal_preference"]
+  },
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие слова тебе нравится использовать?",
+      "en": "What words do you like to use?"
+    },
+    "options": [
+      { "id": "chlen", "label": { "ru": "Член", "en": "Cock" } },
+      { "id": "hui", "label": { "ru": "Хуй", "en": "Dick" } },
+      { "id": "bolt", "label": { "ru": "Болт", "en": "Rod" } },
+      { "id": "palka", "label": { "ru": "Палка", "en": "Stick" } },
+      { "id": "elda", "label": { "ru": "Елда", "en": "Shaft" } },
+      { "id": "tam", "label": { "ru": "Там", "en": "Down there" } },
+      { "id": "on", "label": { "ru": "Он", "en": "It" } },
+      { "id": "penis", "label": { "ru": "Пенис", "en": "Penis" } }
+    ],
+    "allow_other": true,
+    "other_placeholder": {
+      "ru": "Своё слово...",
+      "en": "Your own word..."
+    },
+    "min_selections": 0
+  }
+}

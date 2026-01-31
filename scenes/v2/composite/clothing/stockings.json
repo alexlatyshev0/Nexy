@@ -1,7 +1,14 @@
 {
-  "id": "stockings",
+  "id": "stockings-garters",
   "slug": "stockings-garters",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Чулки",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "С поясом или без",
     "en": "With garters or without"
+  },
+  "user_description": {
+    "ru": "Чулки с поясом. Гладить ноги, снимать чулки.",
+    "en": "Stockings with garters. Stroking legs, removing."
   },
   "ai_description": {
     "ru": "Чулки в сексе — классика фетиша. С поясом, hold-ups, колготки. Визуальное возбуждение от ног.",
@@ -25,230 +36,6 @@
     "legs",
     "fetish"
   ],
-  "elements": [
-    {
-      "id": "type",
-      "label": {
-        "ru": "Тип",
-        "en": "Type"
-      },
-      "tag_ref": "stocking_type",
-      "follow_ups": [
-        {
-          "id": "which",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие чулки?",
-            "en": "Which stockings?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "with_garters",
-                "label": {
-                  "ru": "С поясом",
-                  "en": "With garter belt"
-                }
-              },
-              {
-                "id": "hold_ups",
-                "label": {
-                  "ru": "На резинке (stay-ups)",
-                  "en": "Hold-ups / stay-ups"
-                }
-              },
-              {
-                "id": "pantyhose",
-                "label": {
-                  "ru": "Колготки",
-                  "en": "Pantyhose"
-                }
-              },
-              {
-                "id": "fishnet",
-                "label": {
-                  "ru": "Сетка",
-                  "en": "Fishnet"
-                }
-              },
-              {
-                "id": "seamed",
-                "label": {
-                  "ru": "Со швом сзади",
-                  "en": "Seamed"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "color",
-      "label": {
-        "ru": "Цвет",
-        "en": "Color"
-      },
-      "tag_ref": "stocking_color",
-      "follow_ups": [
-        {
-          "id": "which_color",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой цвет?",
-            "en": "What color?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "black",
-                "label": {
-                  "ru": "Чёрные",
-                  "en": "Black"
-                }
-              },
-              {
-                "id": "nude",
-                "label": {
-                  "ru": "Телесные",
-                  "en": "Nude"
-                }
-              },
-              {
-                "id": "white",
-                "label": {
-                  "ru": "Белые",
-                  "en": "White"
-                }
-              },
-              {
-                "id": "red",
-                "label": {
-                  "ru": "Красные",
-                  "en": "Red"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "during_sex",
-      "label": {
-        "ru": "Во время секса",
-        "en": "During sex"
-      },
-      "tag_ref": "stocking_sex",
-      "follow_ups": [
-        {
-          "id": "keep_on",
-          "type": "single_select",
-          "question": {
-            "ru": "Оставлять во время секса?",
-            "en": "Keep on during sex?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "yes",
-                "label": {
-                  "ru": "Да, обязательно",
-                  "en": "Yes, always"
-                }
-              },
-              {
-                "id": "sometimes",
-                "label": {
-                  "ru": "Иногда",
-                  "en": "Sometimes"
-                }
-              },
-              {
-                "id": "foreplay_only",
-                "label": {
-                  "ru": "Только для прелюдии",
-                  "en": "Foreplay only"
-                }
-              },
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Снимать",
-                  "en": "Take off"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "appeal",
-      "label": {
-        "ru": "Что привлекает",
-        "en": "What appeals"
-      },
-      "tag_ref": "stocking_appeal",
-      "follow_ups": [
-        {
-          "id": "why",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "legs",
-                "label": {
-                  "ru": "Как выглядят ноги",
-                  "en": "How legs look"
-                }
-              },
-              {
-                "id": "texture",
-                "label": {
-                  "ru": "Текстура на ощупь",
-                  "en": "Texture to touch"
-                }
-              },
-              {
-                "id": "undressing",
-                "label": {
-                  "ru": "Процесс раздевания",
-                  "en": "Undressing process"
-                }
-              },
-              {
-                "id": "elegance",
-                "label": {
-                  "ru": "Элегантность",
-                  "en": "Elegance"
-                }
-              },
-              {
-                "id": "contrast",
-                "label": {
-                  "ru": "Контраст голой кожи",
-                  "en": "Contrast with bare skin"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в чулках?",
-      "en": "What appeals about stockings?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "stockings",
@@ -261,8 +48,11 @@
       "elegance"
     ]
   },
-  "user_description": {
-    "ru": "Она в чулках с поясом. Он гладит её ноги и снимает чулки.",
-    "en": "She wears stockings with garters. He strokes her legs and removes the stockings."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в чулках?",
+      "en": "What appeals about stockings?"
+    }
+      }
 }

@@ -1,36 +1,58 @@
 {
-  "id": "glory_hole_f_gives",
+  "id": "glory-hole-f-gives",
   "slug": "glory-hole-f-gives",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "exhibitionism",
+    "oral",
+    "public"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "glory-hole-f-gives-receive",
   "role_direction": "f_to_m",
-  "title": { "ru": "Glory hole (она даёт)", "en": "Glory Hole (She Gives)" },
-  "subtitle": { "ru": "Анонимный минет", "en": "Anonymous blowjob" },
-  "ai_description": { "ru": "Ж даёт минет через отверстие в стене анонимному М. Анонимность и случайность.", "en": "F gives blowjob through hole in wall to anonymous M. Anonymity and randomness." },
+  "title": {
+    "ru": "Glory hole (она даёт)",
+    "en": "Glory Hole (She Gives)"
+  },
+  "subtitle": {
+    "ru": "Анонимный минет",
+    "en": "Anonymous blowjob"
+  },
+  "user_description": {
+    "ru": "Ты на коленях перед отверстием в стене. Делаешь минет анонимному члену.",
+    "en": "You kneel before hole in wall. Give blowjob to anonymous cock."
+  },
+  "ai_description": {
+    "ru": "Ж даёт минет через отверстие в стене анонимному М. Анонимность и случайность.",
+    "en": "F gives blowjob through hole in wall to anonymous M. Anonymity and randomness."
+  },
   "image_prompt": "man standing at glory hole in wall, woman kneeling on other side giving oral, bathroom stall setting, dim lighting",
   "intensity": 4,
   "category": "exhibitionism",
-  "tags": ["glory_hole", "anonymous", "oral", "exhibitionism"],
-  "elements": [
-    {
-      "id": "what_appeals",
-      "label": { "ru": "Что привлекает", "en": "What appeals" },
-      "tag_ref": "glory_appeal",
-      "follow_ups": [{
-        "id": "appeal",
-        "type": "multi_select",
-        "question": { "ru": "Что возбуждает?", "en": "What excites?" },
-        "config": {
-          "options": [
-            { "id": "anonymity", "label": { "ru": "Анонимность", "en": "Anonymity" } },
-            { "id": "stranger", "label": { "ru": "Незнакомец", "en": "Stranger" } },
-            { "id": "just_cock", "label": { "ru": "Только член, не человек", "en": "Just cock, not person" } },
-            { "id": "slutty", "label": { "ru": "Быть шлюхой", "en": "Being slutty" } }
-          ]
-        }
-      }]
-    }
+  "tags": [
+    "glory_hole",
+    "anonymous",
+    "oral",
+    "exhibitionism"
   ],
-  "question": { "type": "interest_scale", "text": { "ru": "Она сосёт через glory hole?", "en": "She sucks through glory hole?" } },
-  "ai_context": { "tests_primary": ["glory_hole", "anonymous"], "tests_secondary": ["exhibitionism", "stranger"] },
-  "user_description": { "ru": "Она на коленях перед отверстием в стене. Делает минет анонимному члену.", "en": "She kneels before hole in wall. Gives blowjob to anonymous cock." }
+  "ai_context": {
+    "tests_primary": [
+      "glory_hole",
+      "anonymous"
+    ],
+    "tests_secondary": [
+      "exhibitionism",
+      "stranger"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Она сосёт через glory hole?",
+      "en": "She sucks through glory hole?"
+    }
+  }
 }

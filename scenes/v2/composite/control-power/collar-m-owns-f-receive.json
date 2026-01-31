@@ -1,0 +1,59 @@
+{
+  "id": "collar-he-owns-her-receive",
+  "slug": "collar-he-owns-her-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "collar-he-owns-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Ошейник и владение",
+    "en": "Collar & Ownership"
+  },
+  "subtitle": {
+    "ru": "Он твой хозяин",
+    "en": "He owns you"
+  },
+  "user_description": {
+    "ru": "Он надевает на тебя ошейник и держит поводок. Ты принадлежишь ему.",
+    "en": "He puts a collar on you and holds the leash. You belong to him."
+  },
+  "ai_description": {
+    "ru": "D/s динамика с ошейником. Он — владелец, она — принадлежит ему. Тестирует: ownership, collaring, leash play.",
+    "en": "D/s dynamic with collar. He owns, she belongs. Tests: ownership, collaring, leash play."
+  },
+  "image_prompt": "man putting collar on woman's neck while holding leash, he standing shirtless, she kneeling nude, bedroom setting",
+  "intensity": 4,
+  "category": "control-power",
+  "tags": [
+    "collar",
+    "ownership",
+    "leash",
+    "belonging",
+    "d_s"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "collar",
+      "ownership",
+      "d_s"
+    ],
+    "tests_secondary": [
+      "belonging",
+      "leash",
+      "submission"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда он владеет тобой?",
+      "en": "What appeals about being owned by him?"
+    }
+      }
+}

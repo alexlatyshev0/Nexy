@@ -1,8 +1,15 @@
 {
-  "id": "golden_shower_m_to_f",
-  "slug": "golden-shower-he-on-her",
+  "id": "golden-shower-m-to-f",
+  "slug": "golden-shower-m-to-f",
   "version": 2,
-  "paired_scene": "golden_shower_f_to_m",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "body_fluids"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "golden-shower-m-to-f-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Золотой дождь",
@@ -12,13 +19,17 @@
     "ru": "Он на неё",
     "en": "He on her"
   },
+  "user_description": {
+    "ru": "Ты писаешь на неё. Она на коленях.",
+    "en": "You pee on her. She kneels and receives your stream."
+  },
   "ai_description": {
     "ru": "Он стоит над ней, она на коленях в душе. Тёплые струи стекают по её телу. Табу, власть, полная отдача.",
     "en": "He stands over her, she kneels in shower. Warm streams flow down her body. Taboo, power, complete surrender."
   },
   "image_prompt": "man standing over kneeling woman in shower, both nude, bathroom tiles background, warm lighting",
   "intensity": 4,
-  "category": "body_fluids",
+  "category": "body-fluids",
   "tags": [
     "watersports",
     "golden_shower",
@@ -27,350 +38,6 @@
     "humiliation",
     "submission"
   ],
-  "elements": [
-    {
-      "id": "where_body",
-      "label": {
-        "ru": "Куда на тело?",
-        "en": "Where on body?"
-      },
-      "tag_ref": "golden_shower_location",
-      "follow_ups": [
-        {
-          "id": "body_targets",
-          "type": "multi_select",
-          "question": {
-            "ru": "На какие части тела?",
-            "en": "On which body parts?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "chest",
-                "label": {
-                  "ru": "Грудь",
-                  "en": "Chest"
-                }
-              },
-              {
-                "id": "stomach",
-                "label": {
-                  "ru": "Живот",
-                  "en": "Stomach"
-                }
-              },
-              {
-                "id": "back",
-                "label": {
-                  "ru": "Спина",
-                  "en": "Back"
-                }
-              },
-              {
-                "id": "face",
-                "label": {
-                  "ru": "Лицо",
-                  "en": "Face"
-                }
-              },
-              {
-                "id": "mouth",
-                "label": {
-                  "ru": "В рот",
-                  "en": "In mouth"
-                }
-              },
-              {
-                "id": "genitals",
-                "label": {
-                  "ru": "На гениталии",
-                  "en": "On genitals"
-                }
-              },
-              {
-                "id": "full_body",
-                "label": {
-                  "ru": "Всё тело",
-                  "en": "Full body"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "setting",
-      "label": {
-        "ru": "Где?",
-        "en": "Where?"
-      },
-      "tag_ref": "watersports_location",
-      "follow_ups": [
-        {
-          "id": "location",
-          "type": "multi_select",
-          "question": {
-            "ru": "В каком месте?",
-            "en": "What location?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "shower",
-                "label": {
-                  "ru": "В душе",
-                  "en": "In shower"
-                }
-              },
-              {
-                "id": "bathtub",
-                "label": {
-                  "ru": "В ванной",
-                  "en": "In bathtub"
-                }
-              },
-              {
-                "id": "bed_protection",
-                "label": {
-                  "ru": "В постели (с защитой)",
-                  "en": "In bed (with protection)"
-                }
-              },
-              {
-                "id": "outdoor",
-                "label": {
-                  "ru": "На улице",
-                  "en": "Outdoors"
-                }
-              },
-              {
-                "id": "floor",
-                "label": {
-                  "ru": "На полу",
-                  "en": "On floor"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "watersports_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal_factors",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что именно возбуждает?",
-            "en": "What exactly excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "taboo",
-                "label": {
-                  "ru": "Табу, запретность",
-                  "en": "Taboo, forbidden"
-                }
-              },
-              {
-                "id": "humiliation",
-                "label": {
-                  "ru": "Унижение",
-                  "en": "Humiliation"
-                }
-              },
-              {
-                "id": "power",
-                "label": {
-                  "ru": "Власть/подчинение",
-                  "en": "Power/submission"
-                }
-              },
-              {
-                "id": "warmth",
-                "label": {
-                  "ru": "Тепло, ощущение",
-                  "en": "Warmth, sensation"
-                }
-              },
-              {
-                "id": "marking",
-                "label": {
-                  "ru": "Пометить как свою",
-                  "en": "Marking as his"
-                }
-              },
-              {
-                "id": "intimacy",
-                "label": {
-                  "ru": "Крайняя интимность",
-                  "en": "Extreme intimacy"
-                }
-              },
-              {
-                "id": "degradation",
-                "label": {
-                  "ru": "Деградация",
-                  "en": "Degradation"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "intensity_level",
-      "label": {
-        "ru": "Интенсивность",
-        "en": "Intensity"
-      },
-      "tag_ref": "watersports_intensity",
-      "follow_ups": [
-        {
-          "id": "intensity",
-          "type": "scale",
-          "question": {
-            "ru": "Насколько интенсивно?",
-            "en": "How intense?"
-          },
-          "config": {
-            "min_label": {
-              "ru": "Мягко, игриво",
-              "en": "Soft, playful"
-            },
-            "max_label": {
-              "ru": "Жёстко, унизительно",
-              "en": "Hard, degrading"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "drinking",
-      "label": {
-        "ru": "Пить?",
-        "en": "Drinking?"
-      },
-      "tag_ref": "urine_drinking",
-      "follow_ups": [
-        {
-          "id": "drink_level",
-          "type": "single_select",
-          "question": {
-            "ru": "Пить мочу?",
-            "en": "Drink urine?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Нет, только на тело",
-                  "en": "No, only on body"
-                }
-              },
-              {
-                "id": "taste",
-                "label": {
-                  "ru": "Попробовать немного",
-                  "en": "Taste a little"
-                }
-              },
-              {
-                "id": "some",
-                "label": {
-                  "ru": "Частично",
-                  "en": "Some"
-                }
-              },
-              {
-                "id": "full",
-                "label": {
-                  "ru": "Полностью, всё",
-                  "en": "Fully, everything"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "her_position",
-      "label": {
-        "ru": "Её поза",
-        "en": "Her position"
-      },
-      "tag_ref": "receiver_position",
-      "follow_ups": [
-        {
-          "id": "position",
-          "type": "multi_select",
-          "question": {
-            "ru": "В какой позе она?",
-            "en": "What position is she in?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "kneeling",
-                "label": {
-                  "ru": "На коленях",
-                  "en": "Kneeling"
-                }
-              },
-              {
-                "id": "lying",
-                "label": {
-                  "ru": "Лёжа",
-                  "en": "Lying down"
-                }
-              },
-              {
-                "id": "mouth_open",
-                "label": {
-                  "ru": "Рот открыт",
-                  "en": "Mouth open"
-                }
-              },
-              {
-                "id": "looking_up",
-                "label": {
-                  "ru": "Смотрит вверх на него",
-                  "en": "Looking up at him"
-                }
-              },
-              {
-                "id": "eyes_closed",
-                "label": {
-                  "ru": "Глаза закрыты",
-                  "en": "Eyes closed"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в этой сцене?",
-      "en": "What appeals in this scene?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "watersports",
@@ -395,8 +62,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Он писает на неё. Она на коленях принимает его струю.",
-    "en": "He pees on her. She kneels and receives his stream."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в этой сцене?",
+      "en": "What appeals in this scene?"
+    }
+      }
 }

@@ -1,0 +1,50 @@
+{
+  "id": "squirt-receiving-body",
+  "slug": "squirt-receiving-body",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "body_fluids"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "squirting-on-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Сквирт на тело",
+    "en": "Squirt on Body"
+  },
+  "subtitle": {
+    "ru": "На лицо, грудь",
+    "en": "On face, chest"
+  },
+  "user_description": {
+    "ru": "Она сквиртует тебе на лицо, на грудь, на тело.",
+    "en": "She squirts on your face, chest, body."
+  },
+  "ai_description": {
+    "ru": "Он принимает её сквирт на тело — лицо, грудь, живот.",
+    "en": "He receives her squirt on body — face, chest, stomach."
+  },
+  "image_prompt": "man lying back, liquid spraying onto his chest, woman above him squirting, bedroom setting",
+  "intensity": 3,
+  "category": "body-fluids",
+  "tags": [
+    "squirting",
+    "squirt",
+    "wet",
+    "body"
+  ],
+  "ai_context": {
+    "tests_primary": ["squirt_receiving"],
+    "tests_secondary": ["body_fluids", "wet_play"]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Принимать её сквирт на тело?",
+      "en": "Take her squirt on your body?"
+    }
+  }
+}

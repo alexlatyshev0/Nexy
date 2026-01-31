@@ -1,0 +1,47 @@
+{
+  "id": "bondage-suspension",
+  "slug": "bondage-suspension",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Подвешивание",
+    "en": "Suspension"
+  },
+  "subtitle": {
+    "ru": "Частичное или полное",
+    "en": "Partial or full"
+  },
+  "user_description": {
+    "ru": "Подвешивание на верёвках. От лёгкого до полного.",
+    "en": "Rope suspension. From light to full."
+  },
+  "ai_description": {
+    "ru": "Подвешивание тела на верёвках или ремнях. От лёгкого до полного отрыва от пола.",
+    "en": "Body suspended on ropes or straps. From light to full suspension."
+  },
+  "image_prompt": "person partially suspended by rope harness, feet barely touching floor, dim lighting",
+  "intensity": 5,
+  "category": "bondage",
+  "tags": [
+    "bondage",
+    "suspension",
+    "advanced"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "bondage",
+      "suspension"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

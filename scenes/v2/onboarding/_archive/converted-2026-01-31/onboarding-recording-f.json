@@ -1,0 +1,40 @@
+{
+  "id": "28ab3952-c5bf-49dc-89d6-a0ba64a25318",
+  "slug": "onboarding-recording-f",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 12.1,
+  "for_gender": "female",
+  "paired_with": null,
+  "title": {
+    "ru": "Съёмка",
+    "en": "Recording"
+  },
+  "subtitle": {
+    "ru": "Фото и видео для двоих",
+    "en": "Photos and videos for two"
+  },
+  "ai_description": {
+    "ru": "Интерес к съёмке интимного контента. Гейтит: filming, sexting, joi.",
+    "en": "Interest in recording intimate content. Gates: filming, sexting, joi."
+  },
+  "user_description": {
+    "ru": "Ты снимаешь на телефон, как он раздевается. Или он записывает видео для тебя.",
+    "en": "You film him undressing on your phone. Or he records a video for you."
+  },
+  "image_prompt": "woman holding phone, shirtless man posing on bed for camera, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "recording"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "recording"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "recording"
+}

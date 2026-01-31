@@ -1,0 +1,60 @@
+{
+  "id": "video-sex",
+  "slug": "video-sex",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "recording",
+    "exhibitionism"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Виртуальный секс",
+    "en": "Video Sex"
+  },
+  "subtitle": {
+    "ru": "По видеосвязи вместе",
+    "en": "Together on video"
+  },
+  "user_description": {
+    "ru": "По видеосвязи вместе мастурбировать, смотря друг на друга. Интимность на расстоянии.",
+    "en": "Masturbate together on video call, watching each other. Intimacy at a distance."
+  },
+  "ai_description": {
+    "ru": "По видеосвязи вместе мастурбировать, смотря друг на друга. Интимность на расстоянии, видеть реакции партнёра.",
+    "en": "Masturbate together on video call, watching each other. Intimacy at a distance, seeing partner's reactions."
+  },
+  "image_prompt": "laptop screen showing partner's face, person masturbating while watching, mutual video session, bedroom intimate setting, remote connection, soft lighting",
+  "intensity": 2,
+  "category": "intimacy-outside",
+  "tags": [
+    "sexting",
+    "video",
+    "mutual",
+    "distance",
+    "masturbation"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "video",
+      "mutual",
+      "distance"
+    ],
+    "tests_secondary": [
+      "sexting",
+      "exhibitionism",
+      "voyeurism"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в виртуальном сексе?",
+      "en": "What appeals about video sex?"
+    }
+      },
+  "context": "discovery"
+}

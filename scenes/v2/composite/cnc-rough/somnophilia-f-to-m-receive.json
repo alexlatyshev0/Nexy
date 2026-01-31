@@ -1,0 +1,59 @@
+{
+  "id": "somnophilia-f-to-m-receive",
+  "slug": "somnophilia-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "somnophilia-f-to-m",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Сомнофилия",
+    "en": "Somnophilia"
+  },
+  "subtitle": {
+    "ru": "Она трахает тебя пока ты спишь",
+    "en": "She fucks you while you sleep"
+  },
+  "user_description": {
+    "ru": "Она занимается с тобой сексом, пока ты спишь. Ты просыпаешься от того, что она уже на тебе.",
+    "en": "She has sex with you while you sleep. You wake up to her already on you."
+  },
+  "ai_description": {
+    "ru": "Она использует спящего его. Он просыпается от того, что она уже на нём. Free use во сне.",
+    "en": "She uses him while he sleeps. He wakes up to her already on him. Free use while sleeping."
+  },
+  "image_prompt": "woman climbing on top of sleeping man in bed, man lying on his back under blankets, dim bedroom with moonlight through window",
+  "intensity": 4,
+  "category": "cnc-rough",
+  "tags": [
+    "somnophilia",
+    "sleep_sex",
+    "cnc",
+    "free_use",
+    "f_dom"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "somnophilia",
+      "sleep_sex",
+      "f_dom"
+    ],
+    "tests_secondary": [
+      "cnc",
+      "free_use",
+      "vulnerability"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Она трахает тебя пока ты спишь?",
+      "en": "She fucks you while you sleep?"
+    }
+  }
+}

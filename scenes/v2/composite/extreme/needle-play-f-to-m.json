@@ -1,0 +1,57 @@
+{
+  "id": "needle-play-f-to-m",
+  "slug": "needle-play-f-to-m",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough",
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "needle-play-f-to-m-receive",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Игры с иглами",
+    "en": "Needle Play"
+  },
+  "subtitle": {
+    "ru": "Она вводит ему иглы",
+    "en": "She inserts needles into him"
+  },
+  "user_description": {
+    "ru": "Ты вводишь стерильные иглы в его кожу.",
+    "en": "You insert sterile needles into his skin."
+  },
+  "ai_description": {
+    "ru": "Ж вводит стерильные иглы в кожу М. Временный пирсинг.",
+    "en": "F inserts sterile needles into M's skin. Temporary piercing."
+  },
+  "image_prompt": "woman inserting thin sterile needle into man's skin, close-up view, clinical room setting",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": [
+    "needle_play",
+    "piercing",
+    "edge_play",
+    "femdom"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "needle_play",
+      "piercing"
+    ],
+    "tests_secondary": [
+      "edge_play",
+      "femdom"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Игры с иглами — ты вводишь ему?",
+      "en": "Needle play — you insert into him?"
+    }
+  }
+}

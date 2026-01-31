@@ -1,7 +1,14 @@
 {
-  "id": "stranger_roleplay",
+  "id": "stranger-roleplay",
   "slug": "stranger-roleplay",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "roleplay"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Незнакомцы",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Притворяемся что не знакомы",
     "en": "Pretending we don't know each other"
+  },
+  "user_description": {
+    "ru": "Вы встречаетесь в баре, притворяясь незнакомцами. Флирт, знакомство, секс как будто впервые.",
+    "en": "You meet at a bar, pretending to be strangers. Flirt, get acquainted, have sex as if for the first time."
   },
   "ai_description": {
     "ru": "Встретиться в баре как незнакомцы. Флирт, пикап, одноночный стенд с собственным партнёром. Волнение первой встречи.",
@@ -25,230 +36,6 @@
     "bar",
     "first_time"
   ],
-  "elements": [
-    {
-      "id": "location",
-      "label": {
-        "ru": "Место встречи",
-        "en": "Meeting place"
-      },
-      "tag_ref": "stranger_location",
-      "follow_ups": [
-        {
-          "id": "where",
-          "type": "multi_select",
-          "question": {
-            "ru": "Где встречаемся?",
-            "en": "Where to meet?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "bar",
-                "label": {
-                  "ru": "Бар",
-                  "en": "Bar"
-                }
-              },
-              {
-                "id": "hotel",
-                "label": {
-                  "ru": "Отель лобби",
-                  "en": "Hotel lobby"
-                }
-              },
-              {
-                "id": "party",
-                "label": {
-                  "ru": "Вечеринка",
-                  "en": "Party"
-                }
-              },
-              {
-                "id": "coffee",
-                "label": {
-                  "ru": "Кофейня",
-                  "en": "Coffee shop"
-                }
-              },
-              {
-                "id": "public",
-                "label": {
-                  "ru": "Парк/улица",
-                  "en": "Park/street"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who_approaches",
-      "label": {
-        "ru": "Кто подходит",
-        "en": "Who approaches"
-      },
-      "tag_ref": "stranger_approach",
-      "follow_ups": [
-        {
-          "id": "who",
-          "type": "single_select",
-          "question": {
-            "ru": "Кто инициирует?",
-            "en": "Who initiates?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "he",
-                "label": {
-                  "ru": "Он подходит к ней",
-                  "en": "He approaches her"
-                }
-              },
-              {
-                "id": "she",
-                "label": {
-                  "ru": "Она подходит к нему",
-                  "en": "She approaches him"
-                }
-              },
-              {
-                "id": "mutual",
-                "label": {
-                  "ru": "Взаимно",
-                  "en": "Mutual"
-                }
-              },
-              {
-                "id": "varies",
-                "label": {
-                  "ru": "По-разному",
-                  "en": "Varies"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "personas",
-      "label": {
-        "ru": "Персонажи",
-        "en": "Personas"
-      },
-      "tag_ref": "stranger_personas",
-      "follow_ups": [
-        {
-          "id": "who_are_we",
-          "type": "multi_select",
-          "question": {
-            "ru": "Кем притворяемся?",
-            "en": "Who do we pretend to be?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "ourselves",
-                "label": {
-                  "ru": "Собой (просто незнакомцы)",
-                  "en": "Ourselves (just strangers)"
-                }
-              },
-              {
-                "id": "fake_names",
-                "label": {
-                  "ru": "Другие имена",
-                  "en": "Fake names"
-                }
-              },
-              {
-                "id": "fake_lives",
-                "label": {
-                  "ru": "Другие жизни",
-                  "en": "Fake lives"
-                }
-              },
-              {
-                "id": "characters",
-                "label": {
-                  "ru": "Полные персонажи",
-                  "en": "Full characters"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "stranger_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "novelty",
-                "label": {
-                  "ru": "Новизна",
-                  "en": "Novelty"
-                }
-              },
-              {
-                "id": "chase",
-                "label": {
-                  "ru": "Охота/преследование",
-                  "en": "The chase"
-                }
-              },
-              {
-                "id": "mystery",
-                "label": {
-                  "ru": "Загадочность",
-                  "en": "Mystery"
-                }
-              },
-              {
-                "id": "first_time",
-                "label": {
-                  "ru": "Ощущение первого раза",
-                  "en": "First time feeling"
-                }
-              },
-              {
-                "id": "permission",
-                "label": {
-                  "ru": "Разрешение быть другим",
-                  "en": "Permission to be different"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в игре 'незнакомцы'?",
-      "en": "What appeals about strangers roleplay?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "roleplay",
@@ -261,8 +48,11 @@
       "fantasy"
     ]
   },
-  "user_description": {
-    "ru": "Пара встречается в баре, притворяясь незнакомцами. Один подходит к другому, флиртует, знакомится. Уходят заниматься сексом как будто встретились впервые.",
-    "en": "A couple meets at a bar, pretending to be strangers. One approaches the other, flirts, gets acquainted. They leave to have sex as if they met for the first time."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в игре 'незнакомцы'?",
+      "en": "What appeals about strangers roleplay?"
+    }
+      }
 }

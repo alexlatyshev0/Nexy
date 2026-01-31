@@ -1,0 +1,47 @@
+{
+  "id": "finish-preference-f",
+  "slug": "finish-preference-f",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "body_fluids"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Куда ему кончить",
+    "en": "Where he finishes"
+  },
+  "subtitle": {
+    "ru": "Её предпочтения",
+    "en": "Her preferences"
+  },
+  "user_description": {
+    "ru": "Куда тебе нравится когда он кончает — в попку, в рот, на лицо, грудь, внутрь?",
+    "en": "Where do you like him to finish — in your ass, mouth, on face, chest, inside?"
+  },
+  "ai_description": {
+    "ru": "Куда тебе нравится когда он кончает — в попку, в рот, на лицо, грудь, внутрь?",
+    "en": "Where do you like him to finish — in your ass, mouth, on face, chest, inside?"
+  },
+  "image_prompt": "abstract intimate moment, implied finish, bedroom",
+  "intensity": 2,
+  "category": "body-fluids",
+  "tags": [
+    "finish",
+    "cum",
+    "preference"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "finish",
+      "cum"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_scene": "finish-preference-m",
+  "priority": 50
+}

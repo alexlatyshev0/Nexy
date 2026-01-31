@@ -1,0 +1,57 @@
+{
+  "id": "massage-m-to-f-receive",
+  "slug": "massage-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "massage-he-massages-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Массаж",
+    "en": "Massage"
+  },
+  "subtitle": {
+    "ru": "Он массирует тебя",
+    "en": "He massages you"
+  },
+  "user_description": {
+    "ru": "Он массирует твоё тело маслом. Руки скользят к груди, между ног.",
+    "en": "He massages your body with oil. Hands slide to breasts, between legs."
+  },
+  "ai_description": {
+    "ru": "Она лежит на животе, он разминает её спину. Масло, свечи, медленные движения. Массаж перетекает в ласки, ласки — в секс.",
+    "en": "She lies face down, he kneads her back. Oil, candles, slow movements. Massage flows into caresses, caresses — into sex."
+  },
+  "image_prompt": "man massaging woman lying face down on bed, his hands on her back, she nude with towel over bottom, he shirtless, bedroom setting, soft warm lighting",
+  "intensity": 1,
+  "category": "massage",
+  "tags": [
+    "massage",
+    "oil_massage",
+    "sensual",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "massage",
+      "sensual_touch",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "oil",
+      "relaxation"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Массаж — он массирует тебя?",
+      "en": "Massage — he massages you?"
+    }
+  }
+}

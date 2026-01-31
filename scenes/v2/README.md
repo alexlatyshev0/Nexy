@@ -305,108 +305,73 @@ Without baseline scenes, the system would ask everyone about everything — incl
 
 ### Gate Logic
 
-Each baseline scene has an `ai_context.gates` object that maps answer options to scene filters:
+Сцены используют `sets_gate` для установки гейтов при ответе YES/VERY:
 
 ```json
 {
-  "ai_context": {
-    "gates": {
-      "no": ["skip_anal_scenes"],
-      "curious": ["light_anal_only"],
-      "yes": ["all_anal_scenes"]
-    }
-  }
+  "slug": "pain-tolerance",
+  "category": "baseline",
+  "sets_gate": "rough"
 }
 ```
 
-The runtime engine uses these gates to:
-1. **Skip** irrelevant scenes (user selected "no" on baseline)
-2. **Prioritize** relevant scenes (user selected "yes")
-3. **Partially unlock** for curious users (show lighter variants first)
+При YES → триггер `update_gates_from_scene_response()` устанавливает `rough: true` в `user_gates`.
+
+Затем `SCENE_GATES` в коде проверяет, можно ли показать сцену:
+```typescript
+// src/lib/onboarding-gates.ts
+'spanking-m-to-f': { gates: ['rough'], operator: 'AND' }
+```
 
 ### Baseline Scene Schema
-
-Baseline scenes have additional fields:
 
 ```json
 {
   "category": "baseline",
-  "priority": 1-14,           // Order within baseline (lower = earlier)
-  "ai_context": {
-    "gates": {                // Maps answers to scene filters
-      "answer_id": ["scene_filter_1", "scene_filter_2"]
-    }
-  }
+  "priority": 5,
+  "sets_gate": "rough"
 }
 ```
 
 ---
 
-## Follow-up Question Types
+## Question Types
 
-- `multi_select` - Multiple options can be selected
-- `single_select` - Only one option
-- `scale` - 1-5 or 1-10 slider
+- `swipe` - Картинка + свайп (влево/вправо/вверх/вниз)
+- `multi_select` - Выбор нескольких вариантов
+- `scale` - Шкала 1-5
 
 ## Usage Example
 
 ```typescript
-import { loadScene, getCategory } from './scene-loader';
+import { fetchUserGates, isSceneAllowed } from '@/lib/onboarding-gates';
 
-// Load single scene
-const spanking = await loadScene('impact-pain/spanking-m-to-f');
+// Fetch user's gates
+const gates = await fetchUserGates(supabase, userId);
+// { rough: true, anal: false, bondage: true }
 
-// Get paired scene for reverse dynamic
-const pairedSlug = spanking.paired_scene; // 'impact-pain/spanking-f-to-m'
+// Check if scene is allowed
+const allowed = isSceneAllowed('spanking-m-to-f', gates);
+// true (requires rough, user has rough: true)
 
-// Filter by role direction for user
-const userScenes = allScenes.filter(s =>
-  s.role_direction === 'mutual' ||
-  s.role_direction === userPreferredDirection
-);
-
-// Process elements and follow-ups
-for (const element of scene.elements) {
-  // Show element question
-  for (const followUp of element.follow_ups) {
-    // Show follow-up based on type
-  }
-}
+// Get paired scene
+const scene = await getScene('spanking-m-to-f');
+const pairedSlug = scene.paired_scene; // 'spanking-m-to-f-receive'
 ```
 
-### Baseline Processing Example
+### Gate Flow
 
 ```typescript
-// 1. Load baseline scenes first (sorted by priority)
-const baselineScenes = allScenes
-  .filter(s => s.category === 'baseline')
-  .sort((a, b) => a.priority - b.priority);
+// 1. User answers scene with sets_gate
+await saveSceneResponse(userId, sceneId, { value: 1 }); // YES
 
-// 2. Process user answers and collect active gates
-const activeGates: string[] = [];
+// 2. DB trigger reads scene.sets_gate and updates user_gates
+// INSERT scene_responses → trigger → UPDATE user_gates SET gates = gates || {rough: true}
 
-for (const scene of baselineScenes) {
-  const response = await showScene(scene);
-
-  // Get gates from ai_context based on user's answer
-  const gates = scene.ai_context.gates[response.selected];
-  if (gates) {
-    activeGates.push(...gates);
-  }
-}
-
-// 3. Filter detailed scenes based on gates
-const detailedScenes = allScenes
-  .filter(s => s.category !== 'baseline')
-  .filter(s => !shouldSkip(s, activeGates));
-
-function shouldSkip(scene: Scene, gates: string[]): boolean {
-  // Skip if gate says to skip this scene's tags
-  return gates.some(gate =>
-    gate.startsWith('skip_') &&
-    scene.tags.some(tag => gate.includes(tag))
-  );
-}
+// 3. When loading scenes, filter by gates
+const scenes = await getFilteredScenes(userId);
+// Only returns scenes where isSceneAllowed(slug, userGates) === true
+```
 ```
 
 ## Migration from v4
@@ -539,7 +504,7 @@ Config in `flow-rules.json`:
 
 | Cluster | Core Tags | Progression Path |
 |---------|-----------|------------------|
-| impact_play | spanking, slapping, whipping | light-slapping → spanking → whipping → caning |
+| impact_play | spanking, slapping | light-slapping → spanking (инструменты как follow_up внутри) |
 | primal | biting, scratching, hair_pulling | biting → scratching → primal → cnc |
 | bondage_restraint | bondage, rope, shibari | blindfold → light_restraints → full_bondage → shibari |
 | power_exchange | dominance, submission, service | light_dominance → collar → pet_play → TPE |
@@ -548,9 +513,9 @@ Config in `flow-rules.json`:
 
 See `flow-rules.json → tag_clusters` for full list.
 
-### Intensity Gates
+### Intensity Gates (flow-rules.json)
 
-Some scenes require prerequisite interests:
+Some scenes require prerequisite interests (defined in `flow-rules.json`):
 
 ```json
 "whipping": {
@@ -562,6 +527,25 @@ Some scenes require prerequisite interests:
   "require_explicit_consent": true
 }
 ```
+
+### Inter-Scene Gates (scene-progression.ts)
+
+> **Реализовано в:** `src/lib/scene-progression.ts`
+
+Дополнительно к intensity gates, есть **межсценовые гейты** — продвинутые сцены требуют положительного ответа на базовые:
+
+```typescript
+const SCENE_REQUIRES_SCENE = {
+  'deepthroat': { requires: ['blowjob'], minInterest: 60 },
+  'facesitting': { requires: ['cunnilingus'], minInterest: 60 },
+  'mummification': { requires: ['bondage'], minInterest: 70 },
+  'gangbang': { requires: ['threesome'], minInterest: 70 },
+  'orgy': { requires: ['threesome'], minInterest: 70 },
+  // ... см. полный список в scene-progression.ts
+};
+```
+
+**Подробнее:** [`docs/onboarding-integration.md` → §9](../../docs/onboarding-integration.md#9-межсценовые-гейты-inter-scene-gates)
 
 ### Body Map → Tag Mapping
 

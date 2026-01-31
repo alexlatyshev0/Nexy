@@ -13,7 +13,7 @@ interface DateResultsProps {
 
 export function DateResults({ bothYes, bothMaybe, partnerName }: DateResultsProps) {
   const getPlaceholderEmoji = (scene: Scene) => {
-    const dim = scene.dimensions[0] || '';
+    const dim = scene.dimensions?.[0] || '';
     if (dim.includes('bondage')) return '🔗';
     if (dim.includes('blindfold')) return '🙈';
     if (dim.includes('dominance') || dim.includes('submission')) return '👑';
@@ -63,7 +63,7 @@ export function DateResults({ bothYes, bothMaybe, partnerName }: DateResultsProp
                   <div className="flex-1">
                     <p className="text-sm line-clamp-1">{(scene.user_description?.ru || scene.ai_description?.ru || '').slice(0, 50)}...</p>
                     <div className="flex gap-1 mt-1">
-                      {scene.dimensions.slice(0, 2).map((dim) => (
+                      {(scene.dimensions || []).slice(0, 2).map((dim) => (
                         <Badge key={dim} variant="outline" className="text-xs">
                           {dim}
                         </Badge>

@@ -1,0 +1,49 @@
+{
+  "id": "location-hotel",
+  "slug": "location-hotel",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "public",
+    "quickie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Отель",
+    "en": "Hotel"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Секс в отеле. Большая кровать, можно шуметь.",
+    "en": "Sex in hotel. Big bed, can be loud."
+  },
+  "ai_description": {
+    "ru": "Секс в отеле. Большая кровать, нет соседей за стеной.",
+    "en": "Sex in a hotel. Big bed, no neighbors behind walls."
+  },
+  "image_prompt": "luxury hotel room with king bed, city view through window, romantic lighting",
+  "intensity": 2,
+  "category": "locations",
+  "tags": [
+    "locations",
+    "hotel",
+    "travel",
+    "romantic"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "locations",
+      "hotel"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

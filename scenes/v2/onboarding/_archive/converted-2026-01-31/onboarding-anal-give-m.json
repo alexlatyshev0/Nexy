@@ -1,0 +1,40 @@
+{
+  "id": "cbc3225f-ae89-4d9c-9d55-107a51e0a732",
+  "slug": "onboarding-anal-give-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 2,
+  "for_gender": "male",
+  "paired_with": "onboarding-anal-receive-f",
+  "title": {
+    "ru": "Анальный секс",
+    "en": "Anal sex"
+  },
+  "subtitle": {
+    "ru": "Ты проникаешь",
+    "en": "You penetrate"
+  },
+  "ai_description": {
+    "ru": "Интерес к анальному проникновению в партнёра (топ).",
+    "en": "Interest in anal penetration of partner (top)."
+  },
+  "user_description": {
+    "ru": "Ты входишь в неё сзади. Медленно или сразу глубоко.",
+    "en": "You enter her from behind. Slowly or all at once."
+  },
+  "image_prompt": "naked man behind naked woman on all fours, doggy style position, anal implied, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "anal-give"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "anal-give"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "anal"
+}

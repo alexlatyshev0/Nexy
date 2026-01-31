@@ -1,0 +1,59 @@
+{
+  "id": "harness-m-wear",
+  "slug": "harness-m-wear",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "male-harness",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Харнесс",
+    "en": "Harness"
+  },
+  "subtitle": {
+    "ru": "Ты в харнессе",
+    "en": "You wear a harness"
+  },
+  "user_description": {
+    "ru": "Ты в кожаном харнессе — ремешки на голом торсе, металлические кольца. Она смотрит на тебя.",
+    "en": "You're in a leather harness — straps on bare torso, metal rings. She watches you."
+  },
+  "ai_description": {
+    "ru": "Мужской харнесс — ремешки на торсе, chest harness, body chains. Подчёркивает мускулатуру или уязвимость.",
+    "en": "Male harness — straps on torso, chest harness, body chains. Emphasizes muscles or vulnerability."
+  },
+  "image_prompt": "man wearing leather chest harness with metal rings, woman's hands on his chest adjusting straps, bedroom setting",
+  "intensity": 3,
+  "category": "clothing",
+  "tags": [
+    "clothing",
+    "harness",
+    "male_harness",
+    "leather",
+    "straps"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "male_harness",
+      "straps",
+      "male_display"
+    ],
+    "tests_secondary": [
+      "leather",
+      "vulnerability",
+      "muscles"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в ношении харнесса?",
+      "en": "What appeals about wearing a harness?"
+    }
+      }
+}

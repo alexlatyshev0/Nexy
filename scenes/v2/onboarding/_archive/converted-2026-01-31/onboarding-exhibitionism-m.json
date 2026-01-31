@@ -1,0 +1,40 @@
+{
+  "id": "7d667ab2-69b3-4cd7-99f9-16ccfece5198",
+  "slug": "onboarding-exhibitionism-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 11,
+  "for_gender": "male",
+  "paired_with": null,
+  "title": {
+    "ru": "Показать себя",
+    "en": "Show yourself"
+  },
+  "subtitle": {
+    "ru": "Стриптиз, подглядывание",
+    "en": "Striptease, voyeurism"
+  },
+  "ai_description": {
+    "ru": "Интерес к показу себя или наблюдению. Гейтит: exhibitionism, voyeurism, striptease, glory-hole.",
+    "en": "Interest in showing off or watching. Gates: exhibitionism, voyeurism, striptease, glory-hole."
+  },
+  "user_description": {
+    "ru": "Она медленно раздевается перед тобой. Ты смотришь, не прикасаясь.",
+    "en": "She slowly undresses for you. You watch, not touching."
+  },
+  "image_prompt": "woman in lingerie removing bra, man sitting in chair watching, bedroom dim lighting",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "exhibitionism"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "exhibitionism"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "exhibitionism"
+}

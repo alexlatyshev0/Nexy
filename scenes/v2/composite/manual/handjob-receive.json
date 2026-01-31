@@ -1,0 +1,57 @@
+{
+  "id": "handjob-receive",
+  "slug": "handjob-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "handjob",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Ручная работа",
+    "en": "Handjob"
+  },
+  "subtitle": {
+    "ru": "Она ласкает тебя рукой",
+    "en": "She strokes you"
+  },
+  "user_description": {
+    "ru": "Она обхватывает твой член рукой и ласкает. Медленно или быстро.",
+    "en": "She wraps her hand around your cock and strokes. Slowly or fast."
+  },
+  "ai_description": {
+    "ru": "Её рука обхватывает его член. Медленно или быстро, сухо или со смазкой. Она чувствует каждую реакцию, контролирует его удовольствие.",
+    "en": "Her hand wraps around him. Slow or fast, dry or lubed. She feels every reaction, controls his pleasure."
+  },
+  "image_prompt": "woman lying beside man on bed, her hand wrapped around his penis stroking, man lying on back with eyes closed, bedroom with soft lighting",
+  "intensity": 2,
+  "category": "manual",
+  "tags": [
+    "handjob",
+    "manual",
+    "stroking",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "handjob",
+      "manual_stimulation",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "teasing",
+      "foreplay"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Ручная стимуляция — она ласкает тебя?",
+      "en": "Handjob — she strokes you?"
+    }
+  }
+}

@@ -1,36 +1,58 @@
 {
-  "id": "glory_hole_m_gives",
+  "id": "glory-hole-m-gives",
   "slug": "glory-hole-m-gives",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "exhibitionism",
+    "oral",
+    "public"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "glory-hole-m-gives-receive",
   "role_direction": "m_to_f",
-  "title": { "ru": "Glory hole (он даёт)", "en": "Glory Hole (He Gives)" },
-  "subtitle": { "ru": "Анонимный куни", "en": "Anonymous cunnilingus" },
-  "ai_description": { "ru": "М лижет через отверстие в стене анонимную Ж. Анонимность и случайность.", "en": "M licks through hole in wall anonymous F. Anonymity and randomness." },
+  "title": {
+    "ru": "Glory hole (он даёт)",
+    "en": "Glory Hole (He Gives)"
+  },
+  "subtitle": {
+    "ru": "Анонимный куни",
+    "en": "Anonymous cunnilingus"
+  },
+  "user_description": {
+    "ru": "Ты на коленях перед отверстием в стене. Лижешь анонимную киску.",
+    "en": "You kneel before hole in wall. Lick anonymous pussy."
+  },
+  "ai_description": {
+    "ru": "М лижет через отверстие в стене анонимную Ж. Анонимность и случайность.",
+    "en": "M licks through hole in wall anonymous F. Anonymity and randomness."
+  },
   "image_prompt": "woman standing at glory hole in wall pressing against it, man kneeling on other side giving oral, bathroom stall setting, dim lighting",
   "intensity": 4,
   "category": "exhibitionism",
-  "tags": ["glory_hole", "anonymous", "oral", "exhibitionism"],
-  "elements": [
-    {
-      "id": "what_appeals",
-      "label": { "ru": "Что привлекает", "en": "What appeals" },
-      "tag_ref": "glory_appeal",
-      "follow_ups": [{
-        "id": "appeal",
-        "type": "multi_select",
-        "question": { "ru": "Что возбуждает?", "en": "What excites?" },
-        "config": {
-          "options": [
-            { "id": "anonymity", "label": { "ru": "Анонимность", "en": "Anonymity" } },
-            { "id": "stranger", "label": { "ru": "Незнакомец", "en": "Stranger" } },
-            { "id": "just_pussy", "label": { "ru": "Только киска, не человек", "en": "Just pussy, not person" } },
-            { "id": "service", "label": { "ru": "Служить анонимно", "en": "Serve anonymously" } }
-          ]
-        }
-      }]
-    }
+  "tags": [
+    "glory_hole",
+    "anonymous",
+    "oral",
+    "exhibitionism"
   ],
-  "question": { "type": "interest_scale", "text": { "ru": "Он лижет через glory hole?", "en": "He licks through glory hole?" } },
-  "ai_context": { "tests_primary": ["glory_hole", "anonymous"], "tests_secondary": ["exhibitionism", "service"] },
-  "user_description": { "ru": "Он на коленях перед отверстием в стене. Лижет анонимную киску.", "en": "He kneels before hole in wall. Licks anonymous pussy." }
+  "ai_context": {
+    "tests_primary": [
+      "glory_hole",
+      "anonymous"
+    ],
+    "tests_secondary": [
+      "exhibitionism",
+      "service"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Он лижет через glory hole?",
+      "en": "He licks through glory hole?"
+    }
+  }
 }

@@ -25,8 +25,9 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY, {
   auth: { persistSession: false }
 });
 
-const SCENES_DIR = path.join(__dirname, '..', 'scenes', 'v2-ACTIVE-92-scenes', 'composite');
-const CONFIG_DIR = path.join(__dirname, '..', 'scenes', 'v2-ACTIVE-92-scenes');
+const SCENES_DIR = path.join(__dirname, '..', 'scenes', 'v2', 'composite');
+const ONBOARDING_SCENES_DIR = path.join(__dirname, '..', 'scenes', 'v2', 'onboarding', 'converted');
+const CONFIG_DIR = path.join(__dirname, '..', 'scenes', 'v2');
 
 interface Scene {
   id: string;
@@ -46,21 +47,23 @@ interface Scene {
     tests_primary: string[];
     tests_secondary: string[];
   };
+  // Paired scene (slug reference, will be resolved to UUID)
+  paired_scene?: string;
 }
 
 /**
- * Load all scenes from composite directory
+ * Load all scenes from a directory recursively
  */
-function loadAllScenes(): Scene[] {
+function loadScenesFromDir(dir: string): Scene[] {
   const scenes: Scene[] = [];
 
-  function loadDir(dir: string): void {
-    if (!fs.existsSync(dir)) return;
+  function loadDir(currentDir: string): void {
+    if (!fs.existsSync(currentDir)) return;
 
-    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    const entries = fs.readdirSync(currentDir, { withFileTypes: true });
 
     for (const entry of entries) {
-      const fullPath = path.join(dir, entry.name);
+      const fullPath = path.join(currentDir, entry.name);
 
       if (entry.isDirectory()) {
         loadDir(fullPath);
@@ -75,8 +78,21 @@ function loadAllScenes(): Scene[] {
     }
   }
 
-  loadDir(SCENES_DIR);
+  loadDir(dir);
   return scenes;
+}
+
+/**
+ * Load all scenes from composite and onboarding directories
+ */
+function loadAllScenes(): Scene[] {
+  const compositeScenes = loadScenesFromDir(SCENES_DIR);
+  console.log(`  Loaded ${compositeScenes.length} composite scenes`);
+
+  const onboardingScenes = loadScenesFromDir(ONBOARDING_SCENES_DIR);
+  console.log(`  Loaded ${onboardingScenes.length} onboarding scenes`);
+
+  return [...compositeScenes, ...onboardingScenes];
 }
 
 /**
@@ -92,61 +108,132 @@ function loadConfig(filename: string): any {
 }
 
 /**
- * Seed scenes into database
+ * Seed scenes into database using UPSERT to preserve image_url
  */
 async function seedScenes(scenes: Scene[]): Promise<void> {
   console.log(`\nSeeding ${scenes.length} scenes...`);
 
-  // Delete existing v2 scenes
-  const { error: deleteError } = await supabase
+  // First, get existing image_urls to preserve them
+  const { data: existingScenes } = await supabase
     .from('scenes')
-    .delete()
+    .select('slug, image_url')
     .gte('version', 2);
 
-  if (deleteError) {
-    console.error('Error deleting old scenes:', deleteError);
+  const existingImageUrls: Record<string, string> = {};
+  if (existingScenes) {
+    for (const scene of existingScenes) {
+      if (scene.image_url) {
+        existingImageUrls[scene.slug] = scene.image_url;
+      }
+    }
   }
+  console.log(`  Found ${Object.keys(existingImageUrls).length} existing image URLs to preserve`);
 
-  // Insert scenes in batches
+  // Upsert scenes in batches
   const batchSize = 20;
-  let inserted = 0;
+  let upserted = 0;
 
   for (let i = 0; i < scenes.length; i += batchSize) {
-    const batch = scenes.slice(i, i + batchSize).map(scene => ({
-      // Use slug as stable ID (or generate UUID)
+    const batch = scenes.slice(i, i + batchSize).map((scene: any) => ({
+      // Identifiers
       slug: scene.slug,
       version: scene.version || 2,
       role_direction: scene.role_direction || 'mutual',
-      description: scene.description,
+      // Content (localized JSONB)
+      title: scene.title,
       subtitle: scene.subtitle || { ru: '', en: '' },
-      image_url: '', // Will be set when images are uploaded
+      ai_description: scene.ai_description || { ru: '', en: '' },
+      user_description: scene.user_description || scene.ai_description || { ru: '', en: '' },
+      // Image - PRESERVE existing image_url if present
+      image_url: existingImageUrls[scene.slug] || scene.image_url || '',
       image_prompt: scene.image_prompt || '',
-      participants: { count: 2 }, // Default
-      dimensions: scene.ai_context.tests_primary,
-      tags: scene.tags,
+      // Classification
       intensity: scene.intensity,
-      relevant_for: { gender: 'any', interested_in: 'any' },
+      category: scene.category,
+      tags: scene.tags || [],
+      priority: scene.priority || 50,
+      // V2 structure
       elements: scene.elements || [],
       question: scene.question || null,
-      ai_context: scene.ai_context,
-      // Extra fields stored in JSONB
-      priority: 50,
-      user_description: scene.description,
-      category: scene.category,
-      title: scene.title,
+      ai_context: scene.ai_context || { tests_primary: [], tests_secondary: [] },
+      // V3 fields
+      scene_type: scene.scene_type || null,
+      clarification_for: scene.clarification_for || [],
+      context: scene.context || 'discovery',
+      // Unified scene structure fields
+      is_onboarding: scene.is_onboarding || false,
+      is_active: scene.is_active !== undefined ? scene.is_active : true,
+      for_gender: scene.for_gender || null,
+      onboarding_order: scene.onboarding_order || null,
+      paired_scene: scene.paired_scene || null,
+      sets_gate: scene.sets_gate || null,
     }));
 
-    const { error } = await supabase.from('scenes').insert(batch);
+    const { error } = await supabase
+      .from('scenes')
+      .upsert(batch, { onConflict: 'slug' });
 
     if (error) {
-      console.error(`Error inserting batch ${i / batchSize + 1}:`, error);
+      console.error(`Error upserting batch ${i / batchSize + 1}:`, error);
     } else {
-      inserted += batch.length;
-      console.log(`  Inserted ${inserted}/${scenes.length}`);
+      upserted += batch.length;
+      console.log(`  Upserted ${upserted}/${scenes.length}`);
     }
   }
 
-  console.log(`✓ Seeded ${inserted} scenes`);
+  console.log(`✓ Seeded ${upserted} scenes (preserved ${Object.keys(existingImageUrls).length} images)`);
+
+  // Resolve paired_scene slugs to paired_with UUIDs
+  await resolvePairedScenes();
+}
+
+/**
+ * Resolve paired_scene (slug) to paired_with (UUID)
+ * This runs after all scenes are inserted so we can look up IDs by slug
+ */
+async function resolvePairedScenes(): Promise<void> {
+  console.log('\nResolving paired_scene slugs to UUIDs...');
+
+  // Get all scenes with paired_scene set
+  const { data: scenesWithPairs, error: fetchError } = await supabase
+    .from('scenes')
+    .select('id, slug, paired_scene')
+    .not('paired_scene', 'is', null);
+
+  if (fetchError || !scenesWithPairs) {
+    console.error('Error fetching scenes with paired_scene:', fetchError);
+    return;
+  }
+
+  // Get all scenes to build slug->id map
+  const { data: allScenes } = await supabase
+    .from('scenes')
+    .select('id, slug');
+
+  const slugToId = new Map<string, string>();
+  for (const scene of allScenes || []) {
+    slugToId.set(scene.slug, scene.id);
+  }
+
+  // Update paired_with for each scene
+  let updated = 0;
+  for (const scene of scenesWithPairs) {
+    const pairedId = slugToId.get(scene.paired_scene);
+    if (pairedId) {
+      const { error: updateError } = await supabase
+        .from('scenes')
+        .update({ paired_with: pairedId })
+        .eq('id', scene.id);
+
+      if (!updateError) {
+        updated++;
+      }
+    } else {
+      console.warn(`  Warning: paired_scene "${scene.paired_scene}" not found for ${scene.slug}`);
+    }
+  }
+
+  console.log(`✓ Resolved ${updated}/${scenesWithPairs.length} paired_scene references`);
 }
 
 /**
@@ -218,7 +305,28 @@ async function main(): Promise<void> {
     await seedConfig('body_map', bodyMapData);
   }
 
-  // 4. Summary
+  // 4. Load onboarding categories (paired categories for swipe onboarding)
+  const onboardingCategories = loadConfig('onboarding/categories.json');
+  if (onboardingCategories) {
+    await seedConfig('onboarding_categories', onboardingCategories);
+  }
+
+  // 5. Load activities (sounds, clothing)
+  const activitiesDir = path.join(CONFIG_DIR, 'activities');
+  if (fs.existsSync(activitiesDir)) {
+    const activitiesFiles = fs.readdirSync(activitiesDir).filter(f => f.endsWith('.json') && !f.startsWith('_'));
+    const activitiesData: any = { activities: {} };
+
+    for (const file of activitiesFiles) {
+      const content = JSON.parse(fs.readFileSync(path.join(activitiesDir, file), 'utf-8'));
+      const activityId = path.basename(file, '.json');
+      activitiesData.activities[activityId] = content;
+    }
+
+    await seedConfig('activities', activitiesData);
+  }
+
+  // 6. Summary
   console.log('\n' + '='.repeat(50));
   console.log(' SEED COMPLETE');
   console.log('='.repeat(50));

@@ -192,7 +192,7 @@ export async function updatePsychologicalProfile(
   }
 
   // Detect new correlations
-  const correlations = scene.ai_context?.correlations;
+  const correlations = (scene.ai_context as any)?.correlations;
   if (correlations) {
     const newCorrelations = detectCorrelations(currentSignals, correlations);
     for (const corr of newCorrelations) {

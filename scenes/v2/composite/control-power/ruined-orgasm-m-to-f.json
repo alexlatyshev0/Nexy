@@ -1,7 +1,15 @@
 {
-  "id": "ruined_orgasm_m_to_f",
+  "id": "ruined-orgasm-m-to-f",
   "slug": "ruined-orgasm-m-to-f",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "ruined-orgasm-m-to-f-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Испорченный оргазм (он портит ей)",
@@ -11,6 +19,10 @@
     "ru": "Он останавливается в момент её кончания",
     "en": "He stops at the moment she cums"
   },
+  "user_description": {
+    "ru": "Ты стимулируешь её до оргазма, затем в момент кульминации останавливаешься — оргазм происходит без стимуляции.",
+    "en": "You stimulate her until orgasm, then stop at climax — orgasm happens without stimulation."
+  },
   "ai_description": {
     "ru": "Он стимулирует её до момента оргазма, затем убирает руку или останавливается. Оргазм происходит без стимуляции. Контроль, фрустрация.",
     "en": "He stimulates her until orgasm, then removes hand or stops. Orgasm happens without stimulation. Control, frustration."
@@ -18,79 +30,27 @@
   "image_prompt": "man's hand pulling away from woman's pussy at crucial moment, woman lying on bed with tense expression, bedroom setting",
   "intensity": 4,
   "category": "control-power",
-  "tags": ["ruined_orgasm", "orgasm_control", "denial", "m_dom"],
-  "elements": [
-    {
-      "id": "method",
-      "label": { "ru": "Метод", "en": "Method" },
-      "tag_ref": "ruined_method",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": { "ru": "Как он портит?", "en": "How does he ruin?" },
-          "config": {
-            "options": [
-              { "id": "hands_off", "label": { "ru": "Убрать руки", "en": "Hands off" } },
-              { "id": "stop_moving", "label": { "ru": "Перестать двигаться", "en": "Stop moving" } },
-              { "id": "pull_out", "label": { "ru": "Вытащить", "en": "Pull out" } },
-              { "id": "stop_licking", "label": { "ru": "Перестать лизать", "en": "Stop licking" } }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "aftermath",
-      "label": { "ru": "После", "en": "Aftermath" },
-      "tag_ref": "ruined_after",
-      "follow_ups": [
-        {
-          "id": "then",
-          "type": "multi_select",
-          "question": { "ru": "Что потом?", "en": "What then?" },
-          "config": {
-            "options": [
-              { "id": "continue_edge", "label": { "ru": "Продолжить эджинг", "en": "Continue edging" } },
-              { "id": "done", "label": { "ru": "Всё, на этом конец", "en": "Done, that's it" } },
-              { "id": "real_orgasm", "label": { "ru": "Потом настоящий оргазм", "en": "Then a real orgasm" } },
-              { "id": "multiple_ruined", "label": { "ru": "Несколько испорченных подряд", "en": "Multiple ruined in a row" } }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": { "ru": "Что привлекает", "en": "What appeals" },
-      "tag_ref": "ruined_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": { "ru": "Что возбуждает?", "en": "What excites?" },
-          "config": {
-            "options": [
-              { "id": "his_control", "label": { "ru": "Его контроль", "en": "His control" } },
-              { "id": "her_frustration", "label": { "ru": "Её фрустрация", "en": "Her frustration" } },
-              { "id": "cruelty", "label": { "ru": "Жестокость", "en": "Cruelty" } },
-              { "id": "begging", "label": { "ru": "Её мольба", "en": "Her begging" } }
-            ]
-          }
-        }
-      ]
-    }
+  "tags": [
+    "ruined_orgasm",
+    "orgasm_control",
+    "denial",
+    "m_dom"
   ],
-  "question": {
-    "type": "interest_scale",
-    "text": { "ru": "Он портит ей оргазм — останавливается в момент кульминации?", "en": "He ruins her orgasm — stops at climax?" }
-  },
   "ai_context": {
-    "tests_primary": ["ruined_orgasm", "m_dom"],
-    "tests_secondary": ["denial", "orgasm_control"]
+    "tests_primary": [
+      "ruined_orgasm",
+      "m_dom"
+    ],
+    "tests_secondary": [
+      "denial",
+      "orgasm_control"
+    ]
   },
-  "user_description": {
-    "ru": "Он стимулирует её до оргазма, затем в момент кульминации останавливается — оргазм происходит без стимуляции",
-    "en": "He stimulates her until orgasm, then stops at climax — orgasm happens without stimulation"
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Он портит ей оргазм — останавливается в момент кульминации?",
+      "en": "He ruins her orgasm — stops at climax?"
+    }
   }
 }

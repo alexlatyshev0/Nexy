@@ -1,0 +1,40 @@
+{
+  "id": "e9845735-090d-4245-8cc2-f615784a4caf",
+  "slug": "onboarding-toys-f",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 4.1,
+  "for_gender": "female",
+  "paired_with": null,
+  "title": {
+    "ru": "Игрушки",
+    "en": "Sex toys"
+  },
+  "subtitle": {
+    "ru": "Вибраторы, дилдо, кольца",
+    "en": "Vibrators, dildos, rings"
+  },
+  "ai_description": {
+    "ru": "Интерес к секс-игрушкам. Гейтит: vibrator, dildo, cock-ring, nipple-clamps, fucking-machine.",
+    "en": "Interest in sex toys. Gates: vibrator, dildo, cock-ring, nipple-clamps, fucking-machine."
+  },
+  "user_description": {
+    "ru": "Он использует вибратор на тебе. Ты надеваешь ему кольцо.",
+    "en": "He uses a vibrator on you. You put a ring on him."
+  },
+  "image_prompt": "clothed man holding vibrator, naked woman lying on bed with legs apart, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "toys"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "toys"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "toys"
+}

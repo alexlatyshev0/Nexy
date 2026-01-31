@@ -1,7 +1,15 @@
 {
-  "id": "striptease_m",
+  "id": "male-striptease",
   "slug": "male-striptease",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "exhibitionism"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "male-striptease-watch",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Мужской стриптиз",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Он раздевается для неё",
     "en": "He undresses for her"
+  },
+  "user_description": {
+    "ru": "Ты медленно раздеваешься перед ней, танцуешь, снимаешь рубашку и штаны.",
+    "en": "You slowly undress for her, dance, remove your shirt and pants."
   },
   "ai_description": {
     "ru": "Мужской стриптиз — он медленно раздевается для неё, танцует, показывает тело. Приватное шоу.",
@@ -25,258 +37,6 @@
     "undressing",
     "dance"
   ],
-  "elements": [
-    {
-      "id": "style",
-      "label": {
-        "ru": "Стиль",
-        "en": "Style"
-      },
-      "tag_ref": "male_strip_style",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой стиль?",
-            "en": "What style?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "slow_tease",
-                "label": {
-                  "ru": "Медленно, дразня",
-                  "en": "Slow, teasing"
-                }
-              },
-              {
-                "id": "dance",
-                "label": {
-                  "ru": "С танцем",
-                  "en": "With dance"
-                }
-              },
-              {
-                "id": "music",
-                "label": {
-                  "ru": "Под музыку",
-                  "en": "To music"
-                }
-              },
-              {
-                "id": "lap_dance",
-                "label": {
-                  "ru": "Лэп-данс для неё",
-                  "en": "Lap dance for her"
-                }
-              },
-              {
-                "id": "playful",
-                "label": {
-                  "ru": "Игриво",
-                  "en": "Playful"
-                }
-              },
-              {
-                "id": "confident",
-                "label": {
-                  "ru": "Уверенно, напоказ",
-                  "en": "Confident, showing off"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_removes",
-      "label": {
-        "ru": "Что снимает",
-        "en": "What he removes"
-      },
-      "tag_ref": "male_strip_removes",
-      "follow_ups": [
-        {
-          "id": "clothes",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что снимает?",
-            "en": "What does he remove?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "shirt",
-                "label": {
-                  "ru": "Рубашку",
-                  "en": "Shirt"
-                }
-              },
-              {
-                "id": "pants",
-                "label": {
-                  "ru": "Штаны",
-                  "en": "Pants"
-                }
-              },
-              {
-                "id": "belt",
-                "label": {
-                  "ru": "Ремень (медленно)",
-                  "en": "Belt (slowly)"
-                }
-              },
-              {
-                "id": "underwear",
-                "label": {
-                  "ru": "Бельё в конце",
-                  "en": "Underwear at end"
-                }
-              },
-              {
-                "id": "tie",
-                "label": {
-                  "ru": "Галстук",
-                  "en": "Tie"
-                }
-              },
-              {
-                "id": "suit",
-                "label": {
-                  "ru": "Костюм",
-                  "en": "Suit"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "rules",
-      "label": {
-        "ru": "Правила",
-        "en": "Rules"
-      },
-      "tag_ref": "male_strip_rules",
-      "follow_ups": [
-        {
-          "id": "touching",
-          "type": "single_select",
-          "question": {
-            "ru": "Она может трогать?",
-            "en": "Can she touch?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no_touch",
-                "label": {
-                  "ru": "Только смотреть",
-                  "en": "Look only"
-                }
-              },
-              {
-                "id": "limited",
-                "label": {
-                  "ru": "Немного можно",
-                  "en": "Limited touching"
-                }
-              },
-              {
-                "id": "yes",
-                "label": {
-                  "ru": "Можно трогать",
-                  "en": "Touching allowed"
-                }
-              },
-              {
-                "id": "at_end",
-                "label": {
-                  "ru": "Только в конце",
-                  "en": "Only at the end"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "appeal",
-      "label": {
-        "ru": "Что привлекает",
-        "en": "What appeals"
-      },
-      "tag_ref": "male_strip_appeal",
-      "follow_ups": [
-        {
-          "id": "why",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "watching",
-                "label": {
-                  "ru": "Смотреть на него",
-                  "en": "Watching him"
-                }
-              },
-              {
-                "id": "anticipation",
-                "label": {
-                  "ru": "Предвкушение",
-                  "en": "Anticipation"
-                }
-              },
-              {
-                "id": "being_watched",
-                "label": {
-                  "ru": "Быть в центре её внимания",
-                  "en": "Being center of her attention"
-                }
-              },
-              {
-                "id": "tease",
-                "label": {
-                  "ru": "Дразнить её",
-                  "en": "Teasing her"
-                }
-              },
-              {
-                "id": "body_reveal",
-                "label": {
-                  "ru": "Показать тело",
-                  "en": "Reveal body"
-                }
-              },
-              {
-                "id": "power",
-                "label": {
-                  "ru": "Власть над её желанием",
-                  "en": "Power over her desire"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в мужском стриптизе?",
-      "en": "What appeals about male striptease?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "male_striptease",
@@ -289,8 +49,11 @@
       "anticipation"
     ]
   },
-  "user_description": {
-    "ru": "Он медленно раздевается перед ней, танцует, снимает рубашку и штаны.",
-    "en": "He slowly undresses for her, dances, removes shirt and pants."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в мужском стриптизе?",
+      "en": "What appeals about male striptease?"
+    }
+      }
 }

@@ -1,0 +1,40 @@
+{
+  "id": "7f9fe4bc-d257-4c9f-88a9-6f505da06eaa",
+  "slug": "onboarding-roleplay-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 5,
+  "for_gender": "male",
+  "paired_with": null,
+  "title": {
+    "ru": "Ролевые игры",
+    "en": "Roleplay"
+  },
+  "subtitle": {
+    "ru": "Босс, учитель, незнакомец",
+    "en": "Boss, teacher, stranger"
+  },
+  "ai_description": {
+    "ru": "Интерес к ролевым сценариям. Гейтит: boss, teacher, doctor, stranger, pet-play, ddlg.",
+    "en": "Interest in roleplay scenarios. Gates: boss, teacher, doctor, stranger, pet-play, ddlg."
+  },
+  "user_description": {
+    "ru": "Ты — босс. Она — секретарша, которую ты вызвал в кабинет после работы.",
+    "en": "You're the boss. She's the secretary you called to your office after hours."
+  },
+  "image_prompt": "man in suit sitting at desk, woman in unbuttoned blouse standing nervously before him, office",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "roleplay"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "roleplay"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "roleplay"
+}

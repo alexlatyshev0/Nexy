@@ -1,0 +1,59 @@
+{
+  "id": "harness-f-wear",
+  "slug": "harness-f-wear",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "female-harness",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Харнесс",
+    "en": "Harness"
+  },
+  "subtitle": {
+    "ru": "Ты в портупее",
+    "en": "You wear a harness"
+  },
+  "user_description": {
+    "ru": "Ты в портупее — ремешки на голом теле, металлические кольца и цепочки. Он смотрит на тебя.",
+    "en": "You're in a harness — straps on naked body, metal rings and chains. He watches you."
+  },
+  "ai_description": {
+    "ru": "Портупеи, харнессы, body chains в стиле Maison Close. Ремешки, металл, украшения на теле. Визуальный акцент без скрытия.",
+    "en": "Harnesses, body chains, Maison Close style. Straps, metal, body jewelry. Visual accent without covering."
+  },
+  "image_prompt": "woman wearing black leather harness over naked body, metal rings and straps across chest and hips, man watching her from bed, bedroom with dim lighting",
+  "intensity": 3,
+  "category": "clothing",
+  "tags": [
+    "clothing",
+    "harness",
+    "body_chain",
+    "strappy",
+    "fetish"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "harness",
+      "body_chain",
+      "strappy_lingerie"
+    ],
+    "tests_secondary": [
+      "visual",
+      "fetish",
+      "power"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в ношении харнесса?",
+      "en": "What appeals about wearing a harness?"
+    }
+      }
+}

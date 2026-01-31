@@ -1,8 +1,15 @@
 {
-  "id": "body_worship_f_to_m",
+  "id": "body-worship-she-worships-him",
   "slug": "body-worship-she-worships-him",
   "version": 2,
-  "paired_scene": "body_worship_m_to_f",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "body-worship-f-to-m-receive",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Поклонение телу",
@@ -12,13 +19,17 @@
     "ru": "Она поклоняется ему",
     "en": "She worships him"
   },
+  "user_description": {
+    "ru": "Ты целуешь его тело — грудь, живот, руки, ноги.",
+    "en": "You kiss his body — chest, stomach, arms, legs."
+  },
   "ai_description": {
     "ru": "Она целует его тело — грудь, руки, живот. Каждый мускул получает внимание. Cock worship, ball worship — полное обожание.",
     "en": "She kisses his body — chest, arms, stomach. Every muscle gets attention. Cock worship, ball worship — complete adoration."
   },
   "image_prompt": "woman kissing along mans chest and abs, he lying back nude, she nude between his legs, bedroom setting",
   "intensity": 2,
-  "category": "worship_service",
+  "category": "worship-service",
   "tags": [
     "body_worship",
     "cock_worship",
@@ -26,258 +37,6 @@
     "adoration",
     "male_body"
   ],
-  "elements": [
-    {
-      "id": "body_parts",
-      "label": {
-        "ru": "Какие части?",
-        "en": "Which parts?"
-      },
-      "tag_ref": "male_worship_parts",
-      "follow_ups": [
-        {
-          "id": "parts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие части тела?",
-            "en": "What body parts?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "chest",
-                "label": {
-                  "ru": "Грудь",
-                  "en": "Chest"
-                }
-              },
-              {
-                "id": "abs",
-                "label": {
-                  "ru": "Пресс",
-                  "en": "Abs"
-                }
-              },
-              {
-                "id": "arms",
-                "label": {
-                  "ru": "Руки, бицепсы",
-                  "en": "Arms, biceps"
-                }
-              },
-              {
-                "id": "cock",
-                "label": {
-                  "ru": "Член (cock worship)",
-                  "en": "Cock (cock worship)"
-                }
-              },
-              {
-                "id": "balls",
-                "label": {
-                  "ru": "Яички",
-                  "en": "Balls"
-                }
-              },
-              {
-                "id": "ass",
-                "label": {
-                  "ru": "Попа",
-                  "en": "Ass"
-                }
-              },
-              {
-                "id": "thighs",
-                "label": {
-                  "ru": "Бёдра",
-                  "en": "Thighs"
-                }
-              },
-              {
-                "id": "everything",
-                "label": {
-                  "ru": "Всё тело",
-                  "en": "Whole body"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "cock_worship",
-      "label": {
-        "ru": "Cock worship",
-        "en": "Cock worship"
-      },
-      "tag_ref": "cock_worship",
-      "follow_ups": [
-        {
-          "id": "cock_acts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что с членом?",
-            "en": "What with cock?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "kiss",
-                "label": {
-                  "ru": "Целовать",
-                  "en": "Kiss"
-                }
-              },
-              {
-                "id": "lick",
-                "label": {
-                  "ru": "Лизать",
-                  "en": "Lick"
-                }
-              },
-              {
-                "id": "nuzzle",
-                "label": {
-                  "ru": "Тереться лицом",
-                  "en": "Nuzzle"
-                }
-              },
-              {
-                "id": "admire",
-                "label": {
-                  "ru": "Восхищаться вслух",
-                  "en": "Admire verbally"
-                }
-              },
-              {
-                "id": "gentle",
-                "label": {
-                  "ru": "Нежно, не для оргазма",
-                  "en": "Gentle, not for orgasm"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "dynamic",
-      "label": {
-        "ru": "Динамика",
-        "en": "Dynamic"
-      },
-      "tag_ref": "male_worship_dynamic",
-      "follow_ups": [
-        {
-          "id": "atmosphere",
-          "type": "single_select",
-          "question": {
-            "ru": "Какая атмосфера?",
-            "en": "What atmosphere?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "god",
-                "label": {
-                  "ru": "Он бог",
-                  "en": "He's a god"
-                }
-              },
-              {
-                "id": "romantic",
-                "label": {
-                  "ru": "Романтично",
-                  "en": "Romantic"
-                }
-              },
-              {
-                "id": "submissive",
-                "label": {
-                  "ru": "Она сабмиссивна",
-                  "en": "She's submissive"
-                }
-              },
-              {
-                "id": "appreciation",
-                "label": {
-                  "ru": "Благодарность, признательность",
-                  "en": "Appreciation"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "male_body_worship_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что нравится?",
-            "en": "What do you like?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "attention",
-                "label": {
-                  "ru": "Внимание к телу",
-                  "en": "Attention to body"
-                }
-              },
-              {
-                "id": "adored",
-                "label": {
-                  "ru": "Чувствовать себя желанным",
-                  "en": "Feeling desired"
-                }
-              },
-              {
-                "id": "her_devotion",
-                "label": {
-                  "ru": "Её преданность",
-                  "en": "Her devotion"
-                }
-              },
-              {
-                "id": "slow",
-                "label": {
-                  "ru": "Медленное удовольствие",
-                  "en": "Slow pleasure"
-                }
-              },
-              {
-                "id": "ego",
-                "label": {
-                  "ru": "Буст эго",
-                  "en": "Ego boost"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что нравится когда она поклоняется?",
-      "en": "What do you like when she worships?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "body_worship",
@@ -290,8 +49,11 @@
       "appreciation"
     ]
   },
-  "user_description": {
-    "ru": "Она целует его тело — грудь, живот, руки, ноги.",
-    "en": "She kisses his body — chest, stomach, arms, legs."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что нравится когда она поклоняется?",
+      "en": "What do you like when she worships?"
+    }
+      }
 }

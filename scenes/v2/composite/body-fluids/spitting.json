@@ -1,0 +1,59 @@
+{
+  "id": "spitting",
+  "slug": "spitting",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "dirty_talk",
+    "power_dynamic"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Плевки",
+    "en": "Spitting"
+  },
+  "subtitle": {
+    "ru": "Доминирование слюной",
+    "en": "Saliva domination"
+  },
+  "user_description": {
+    "ru": "Один партнёр плюёт на другого — акт доминирования.",
+    "en": "One partner spits on the other — an act of domination."
+  },
+  "ai_description": {
+    "ru": "Плевки на партнёра как акт доминирования или унижения. Может быть на лицо, тело или в рот.",
+    "en": "Spitting on partner as an act of domination or humiliation. Can be on face, body, or in mouth."
+  },
+  "image_prompt": "dominant partner standing over submissive partner, intense gaze, artistic intimate atmosphere",
+  "intensity": 3,
+  "category": "body-fluids",
+  "tags": [
+    "spitting",
+    "saliva",
+    "humiliation",
+    "dominance",
+    "degradation"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "spitting",
+      "saliva",
+      "humiliation"
+    ],
+    "tests_secondary": [
+      "dominance",
+      "degradation",
+      "power"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в плевках?",
+      "en": "What appeals about spitting?"
+    }
+      }
+}

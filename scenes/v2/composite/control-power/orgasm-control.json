@@ -1,0 +1,58 @@
+{
+  "id": "orgasm-control",
+  "slug": "orgasm-control",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Контроль оргазма",
+    "en": "Orgasm Control"
+  },
+  "subtitle": {
+    "ru": "Запрет и разрешение",
+    "en": "Denial and permission"
+  },
+  "user_description": {
+    "ru": "Ты решаешь, когда партнёр может кончить. Или он/она решает за тебя.",
+    "en": "You decide when your partner can cum. Or they decide for you."
+  },
+  "ai_description": {
+    "ru": "Один партнёр контролирует, когда другой может кончить. Разрешение на оргазм только по команде или запрет вообще.",
+    "en": "One partner controls when the other can cum. Permission to orgasm only on command or denial altogether."
+  },
+  "image_prompt": "dominant partner with hand on submissive partner's throat, intense eye contact, bedroom setting",
+  "intensity": 3,
+  "category": "control-power",
+  "tags": [
+    "orgasm_control",
+    "edging",
+    "denial",
+    "control",
+    "teasing"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "orgasm_control",
+      "edging",
+      "denial"
+    ],
+    "tests_secondary": [
+      "control",
+      "teasing",
+      "power"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в контроле оргазма?",
+      "en": "What appeals about orgasm control?"
+    }
+      }
+}

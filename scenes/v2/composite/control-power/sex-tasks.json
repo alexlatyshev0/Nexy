@@ -1,0 +1,59 @@
+{
+  "id": "sex-tasks",
+  "slug": "sex-tasks",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Секс-задания",
+    "en": "Sex Tasks"
+  },
+  "subtitle": {
+    "ru": "Задания на день",
+    "en": "Daily assignments"
+  },
+  "user_description": {
+    "ru": "Сексуальные задания. Фото, фантазии, прикосновения.",
+    "en": "Sexual tasks. Photos, fantasies, touches."
+  },
+  "ai_description": {
+    "ru": "Партнёр даёт задания на день: сделать фото, написать фантазию, потрогать себя в определённом месте. Элемент контроля на расстоянии.",
+    "en": "Partner gives daily tasks: take a photo, write a fantasy, touch yourself in a certain place. Element of remote control."
+  },
+  "image_prompt": "woman looking at phone with instructions, bathroom mirror selfie setup, slightly nervous excited expression, task assignment moment, intimate setting",
+  "intensity": 2,
+  "category": "control-power",
+  "tags": [
+    "control",
+    "tasks",
+    "distance",
+    "power_exchange",
+    "anticipation"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "control",
+      "tasks",
+      "distance"
+    ],
+    "tests_secondary": [
+      "submission",
+      "dominance",
+      "anticipation"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в секс-заданиях?",
+      "en": "What appeals about sex tasks?"
+    }
+      },
+  "context": "discovery"
+}

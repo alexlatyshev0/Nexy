@@ -1,0 +1,57 @@
+{
+  "id": "blowjob-receive",
+  "slug": "blowjob-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "oral"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "blowjob",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Минет",
+    "en": "Blowjob"
+  },
+  "subtitle": {
+    "ru": "Она сосёт тебя",
+    "en": "She sucks you"
+  },
+  "user_description": {
+    "ru": "Она на коленях перед тобой, берёт твой член в рот. Сосёт, лижет, ласкает языком.",
+    "en": "She kneels before you, takes your cock in her mouth. Sucks, licks, caresses with her tongue."
+  },
+  "ai_description": {
+    "ru": "Она на коленях перед ним, берёт в рот. Её губы обхватывают, язык ласкает. Он смотрит сверху, наслаждаясь её старанием.",
+    "en": "She kneels before him, takes him in her mouth. Her lips wrap around, tongue caresses. He watches from above, enjoying her effort."
+  },
+  "image_prompt": "woman kneeling before standing man, taking his penis in mouth, both nude, his hand on her head, bedroom setting",
+  "intensity": 2,
+  "category": "oral",
+  "tags": [
+    "blowjob",
+    "oral",
+    "fellatio",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "blowjob",
+      "oral_sex",
+      "fellatio"
+    ],
+    "tests_secondary": [
+      "receiving",
+      "finish_preference"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Минет — она сосёт тебя?",
+      "en": "Blowjob — she sucks you?"
+    }
+  }
+}

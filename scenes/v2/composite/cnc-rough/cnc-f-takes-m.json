@@ -1,8 +1,16 @@
 {
-  "id": "cnc_f_takes_m",
+  "id": "cnc-she-takes-him",
   "slug": "cnc-she-takes-him",
   "version": 2,
-  "paired_scene": "cnc_m_takes_f",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "cnc-she-takes-him-receive",
   "role_direction": "f_to_m",
   "title": {
     "ru": "CNC",
@@ -12,13 +20,17 @@
     "ru": "Она берёт его",
     "en": "She takes him"
   },
+  "user_description": {
+    "ru": "Ты прижимаешь его к кровати за запястья, садишься сверху. Он делает вид, что сопротивляется. По взаимному согласию.",
+    "en": "You pin him to bed by his wrists, mount him on top. He pretends to resist. Consensual."
+  },
   "ai_description": {
     "ru": "Она прижимает его к кровати, садится сверху. Он 'сопротивляется', но она сильнее. Amazon, forced riding — она берёт что хочет.",
     "en": "She pins him to bed, mounts him. He 'resists', but she's stronger. Amazon, forced riding — she takes what she wants."
   },
   "image_prompt": "woman straddling man on bed, holding his wrists down, both in underwear, bedroom with soft lamp light",
   "intensity": 5,
-  "category": "cnc_rough",
+  "category": "cnc-rough",
   "tags": [
     "cnc",
     "femdom",
@@ -26,244 +38,6 @@
     "forced_riding",
     "female_aggressor"
   ],
-  "elements": [
-    {
-      "id": "scenario",
-      "label": {
-        "ru": "Сценарий",
-        "en": "Scenario"
-      },
-      "tag_ref": "femdom_cnc_scenario",
-      "follow_ups": [
-        {
-          "id": "scenarios",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие сценарии?",
-            "en": "What scenarios?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "amazon",
-                "label": {
-                  "ru": "Amazon position (она сверху, силой)",
-                  "en": "Amazon position (forced)"
-                }
-              },
-              {
-                "id": "tie_use",
-                "label": {
-                  "ru": "Связать и использовать",
-                  "en": "Tie and use"
-                }
-              },
-              {
-                "id": "wake_up",
-                "label": {
-                  "ru": "Проснулся — она уже на нём",
-                  "en": "Wakes up to her on him"
-                }
-              },
-              {
-                "id": "drugged",
-                "label": {
-                  "ru": "Фантазия о drugging",
-                  "en": "Drugging fantasy"
-                }
-              },
-              {
-                "id": "blackmail",
-                "label": {
-                  "ru": "Шантаж",
-                  "en": "Blackmail"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "physical",
-      "label": {
-        "ru": "Физически",
-        "en": "Physical"
-      },
-      "tag_ref": "femdom_cnc_physical",
-      "follow_ups": [
-        {
-          "id": "elements",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие элементы?",
-            "en": "What elements?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "pin_down",
-                "label": {
-                  "ru": "Прижать к кровати",
-                  "en": "Pin to bed"
-                }
-              },
-              {
-                "id": "hold_wrists",
-                "label": {
-                  "ru": "Держать запястья",
-                  "en": "Hold wrists"
-                }
-              },
-              {
-                "id": "sit_on",
-                "label": {
-                  "ru": "Сесть на него",
-                  "en": "Sit on him"
-                }
-              },
-              {
-                "id": "force_erection",
-                "label": {
-                  "ru": "Заставить встать (он не хочет)",
-                  "en": "Force erection"
-                }
-              },
-              {
-                "id": "use_anyway",
-                "label": {
-                  "ru": "Использовать даже мягкого",
-                  "en": "Use even soft"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "his_response",
-      "label": {
-        "ru": "Его реакция",
-        "en": "His response"
-      },
-      "tag_ref": "male_cnc_response",
-      "follow_ups": [
-        {
-          "id": "response",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как он реагирует?",
-            "en": "How does he respond?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "struggle",
-                "label": {
-                  "ru": "Вырывается",
-                  "en": "Struggles"
-                }
-              },
-              {
-                "id": "no_stop",
-                "label": {
-                  "ru": "Нет, стой",
-                  "en": "No, stop"
-                }
-              },
-              {
-                "id": "shame",
-                "label": {
-                  "ru": "Стыд что возбуждается",
-                  "en": "Shame at arousal"
-                }
-              },
-              {
-                "id": "gives_in",
-                "label": {
-                  "ru": "Сдаётся",
-                  "en": "Gives in"
-                }
-              },
-              {
-                "id": "begs",
-                "label": {
-                  "ru": "Умоляет",
-                  "en": "Begs"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "male_cnc_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "her_power",
-                "label": {
-                  "ru": "Её сила",
-                  "en": "Her power"
-                }
-              },
-              {
-                "id": "no_choice",
-                "label": {
-                  "ru": "Нет выбора",
-                  "en": "No choice"
-                }
-              },
-              {
-                "id": "used",
-                "label": {
-                  "ru": "Быть использованным",
-                  "en": "Being used"
-                }
-              },
-              {
-                "id": "role_reversal",
-                "label": {
-                  "ru": "Смена ролей",
-                  "en": "Role reversal"
-                }
-              },
-              {
-                "id": "taboo",
-                "label": {
-                  "ru": "Табу",
-                  "en": "Taboo"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает когда она 'берёт'?",
-      "en": "What appeals when she 'takes'?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "cnc",
@@ -276,8 +50,11 @@
       "role_reversal"
     ]
   },
-  "user_description": {
-    "ru": "Женщина прижимает мужчину к кровати за запястья, садится на него сверху, он делает вид что сопротивляется. По взаимному согласию.",
-    "en": "Woman pins man to bed by his wrists, mounts him on top, he pretends to resist. Consensual."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда она 'берёт'?",
+      "en": "What appeals when she 'takes'?"
+    }
+      }
 }

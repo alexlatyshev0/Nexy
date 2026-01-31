@@ -1,0 +1,40 @@
+{
+  "id": "498a6008-cb8a-4164-9182-17d5ad63cd60",
+  "slug": "onboarding-anal-receive-f",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 2.6,
+  "for_gender": "female",
+  "paired_with": "onboarding-anal-give-m",
+  "title": {
+    "ru": "Анальный секс",
+    "en": "Anal sex"
+  },
+  "subtitle": {
+    "ru": "В тебя проникают",
+    "en": "You receive"
+  },
+  "ai_description": {
+    "ru": "Интерес к получению анального проникновения (боттом).",
+    "en": "Interest in receiving anal penetration (bottom)."
+  },
+  "user_description": {
+    "ru": "Он входит в тебя сзади. Медленно, давая привыкнуть.",
+    "en": "He enters you from behind. Slowly, letting you adjust."
+  },
+  "image_prompt": "naked man behind naked woman on all fours, doggy style position, anal implied, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "anal-receive"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "anal-receive"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "anal"
+}

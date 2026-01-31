@@ -2,6 +2,13 @@
   "id": "voyeurism",
   "slug": "voyeurism",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "exhibitionism"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Вуайеризм",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Наблюдать",
     "en": "Watching"
+  },
+  "user_description": {
+    "ru": "Наблюдать — как партнёр раздевается, мастурбирует, или как другие занимаются сексом.",
+    "en": "Watching — partner undressing, masturbating, or others having sex."
   },
   "ai_description": {
     "ru": "Возбуждение от наблюдения. Смотреть как другие занимаются сексом, подглядывать, наслаждаться зрелищем не участвуя напрямую.",
@@ -24,237 +35,6 @@
     "observation",
     "cuckold_adjacent"
   ],
-  "elements": [
-    {
-      "id": "what_watch",
-      "label": {
-        "ru": "Что смотреть",
-        "en": "What to watch"
-      },
-      "tag_ref": "voyeur_what",
-      "follow_ups": [
-        {
-          "id": "watch",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что хочется смотреть?",
-            "en": "What to watch?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "partner_solo",
-                "label": {
-                  "ru": "Партнёр мастурбирует",
-                  "en": "Partner masturbating"
-                }
-              },
-              {
-                "id": "partner_other",
-                "label": {
-                  "ru": "Партнёр с другим",
-                  "en": "Partner with another"
-                }
-              },
-              {
-                "id": "strangers",
-                "label": {
-                  "ru": "Незнакомцы",
-                  "en": "Strangers"
-                }
-              },
-              {
-                "id": "live_cam",
-                "label": {
-                  "ru": "Стримы/камы",
-                  "en": "Live cams"
-                }
-              },
-              {
-                "id": "porn",
-                "label": {
-                  "ru": "Порно",
-                  "en": "Porn"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "how_watch",
-      "label": {
-        "ru": "Как смотреть",
-        "en": "How to watch"
-      },
-      "tag_ref": "voyeur_how",
-      "follow_ups": [
-        {
-          "id": "method",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как?",
-            "en": "How?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "hidden",
-                "label": {
-                  "ru": "Скрытно (не знают)",
-                  "en": "Hidden (they don't know)"
-                }
-              },
-              {
-                "id": "known",
-                "label": {
-                  "ru": "Открыто (знают что смотрю)",
-                  "en": "Openly (they know)"
-                }
-              },
-              {
-                "id": "from_room",
-                "label": {
-                  "ru": "Из той же комнаты",
-                  "en": "Same room"
-                }
-              },
-              {
-                "id": "camera",
-                "label": {
-                  "ru": "Через камеру",
-                  "en": "Through camera"
-                }
-              },
-              {
-                "id": "directed",
-                "label": {
-                  "ru": "Управляя происходящим",
-                  "en": "Directing the action"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "during",
-      "label": {
-        "ru": "Во время просмотра",
-        "en": "While watching"
-      },
-      "tag_ref": "voyeur_during",
-      "follow_ups": [
-        {
-          "id": "activity",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что делаешь?",
-            "en": "What do you do?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "masturbate",
-                "label": {
-                  "ru": "Мастурбирую",
-                  "en": "Masturbate"
-                }
-              },
-              {
-                "id": "just_watch",
-                "label": {
-                  "ru": "Просто смотрю",
-                  "en": "Just watch"
-                }
-              },
-              {
-                "id": "with_partner",
-                "label": {
-                  "ru": "Секс с партнёром",
-                  "en": "Sex with partner"
-                }
-              },
-              {
-                "id": "denied",
-                "label": {
-                  "ru": "Не трогаю себя (denial)",
-                  "en": "Don't touch (denial)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "voyeur_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "visual",
-                "label": {
-                  "ru": "Визуальное возбуждение",
-                  "en": "Visual arousal"
-                }
-              },
-              {
-                "id": "forbidden",
-                "label": {
-                  "ru": "Запретность",
-                  "en": "Forbidden aspect"
-                }
-              },
-              {
-                "id": "learning",
-                "label": {
-                  "ru": "Узнать новое",
-                  "en": "Learning"
-                }
-              },
-              {
-                "id": "fantasy",
-                "label": {
-                  "ru": "Топливо для фантазий",
-                  "en": "Fantasy fuel"
-                }
-              },
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Контроль (если направляю)",
-                  "en": "Control (if directing)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в вуайеризме?",
-      "en": "What appeals about voyeurism?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "voyeurism",
@@ -267,8 +47,11 @@
       "spectator"
     ]
   },
-  "user_description": {
-    "ru": "Подглядывать за другими — как раздеваются, мастурбируют, трахаются.",
-    "en": "Watching others — undressing, masturbating, fucking."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в вуайеризме?",
+      "en": "What appeals about voyeurism?"
+    }
+      }
 }

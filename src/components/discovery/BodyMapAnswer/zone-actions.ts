@@ -13,11 +13,13 @@ export type ActionId =
   | 'scratch'
   | 'massage'
   | 'touch'
+  | 'touch_outside'
   | 'clamps'
   | 'wax'
   | 'ice'
   | 'finger'
   | 'penetrate'
+  | 'anal_sex'
   | 'toys'
   | 'whisper';
 
@@ -67,11 +69,13 @@ export const ACTIONS: Record<ActionId, ActionInfo> = {
   scratch: { id: 'scratch', label: { ru: 'Царапать', en: 'Scratch' } },
   massage: { id: 'massage', label: { ru: 'Массировать', en: 'Massage' } },
   touch: { id: 'touch', label: { ru: 'Трогать', en: 'Touch' } },
+  touch_outside: { id: 'touch_outside', label: { ru: 'Трогать снаружи', en: 'Touch outside' } },
   clamps: { id: 'clamps', label: { ru: 'Зажимы', en: 'Clamps' } },
   wax: { id: 'wax', label: { ru: 'Воск', en: 'Wax' } },
   ice: { id: 'ice', label: { ru: 'Лёд', en: 'Ice' } },
   finger: { id: 'finger', label: { ru: 'Пальцами', en: 'Finger' } },
   penetrate: { id: 'penetrate', label: { ru: 'Проникать', en: 'Penetrate' } },
+  anal_sex: { id: 'anal_sex', label: { ru: 'Анальный секс', en: 'Anal sex' } },
   toys: { id: 'toys', label: { ru: 'Игрушки', en: 'Toys' } },
   whisper: { id: 'whisper', label: { ru: 'Шептать', en: 'Whisper' } },
 };
@@ -113,7 +117,7 @@ export const ZONE_ACTIONS: Record<ZoneId, ActionId[]> = {
   shoulders: ['kiss', 'bite', 'massage', 'scratch'],
   chest: ['kiss', 'lick', 'touch', 'scratch', 'wax', 'ice'],
   breasts: ['kiss', 'lick', 'bite', 'squeeze', 'massage', 'spank', 'wax', 'ice'],
-  nipples: ['kiss', 'lick', 'bite', 'suck', 'pinch', 'twist', 'clamps', 'wax', 'ice'],
+  nipples: ['kiss', 'bite', 'suck', 'twist', 'clamps', 'wax', 'ice'],
   stomach: ['kiss', 'lick', 'touch', 'scratch', 'wax', 'ice'],
   navel: ['kiss', 'lick', 'touch', 'scratch', 'wax', 'ice'],
   back: ['kiss', 'lick', 'scratch', 'massage', 'wax', 'ice'],
@@ -122,7 +126,7 @@ export const ZONE_ACTIONS: Record<ZoneId, ActionId[]> = {
   hands: ['kiss', 'lick', 'bite', 'suck', 'massage'],
   fingers: ['kiss', 'lick', 'bite', 'suck', 'massage', 'touch'],
   buttocks: ['kiss', 'lick', 'bite', 'squeeze', 'spank', 'slap', 'scratch', 'massage'],
-  anus: ['kiss', 'lick', 'touch', 'finger', 'penetrate', 'toys'],
+  anus: ['lick', 'touch_outside', 'finger', 'toys', 'anal_sex'],
   groin: ['kiss', 'lick', 'touch', 'massage'],
   penis: ['kiss', 'lick', 'suck', 'squeeze', 'massage', 'slap', 'toys'],
   testicles: ['kiss', 'lick', 'suck', 'squeeze', 'massage', 'slap', 'wax', 'ice'],

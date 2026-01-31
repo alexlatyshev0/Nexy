@@ -1,0 +1,54 @@
+{
+  "id": "toy-wand",
+  "slug": "toy-wand",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "toys"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Вонд",
+    "en": "Wand Vibrator"
+  },
+  "subtitle": {
+    "ru": "Мощный массажёр",
+    "en": "Powerful massager"
+  },
+  "user_description": {
+    "ru": "Мощный вибромассажёр. Интенсивная стимуляция.",
+    "en": "Powerful wand vibrator. Intense stimulation."
+  },
+  "ai_description": {
+    "ru": "Мощный вибромассажёр на длинной ручке. Интенсивная стимуляция.",
+    "en": "Powerful vibrating massager on a long handle. Intense stimulation."
+  },
+  "image_prompt": "magic wand style vibrator, bedroom setting",
+  "intensity": 2,
+  "category": "toys",
+  "tags": [
+    "toys",
+    "wand",
+    "vibrator",
+    "powerful"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "toys",
+      "wand"
+    ],
+    "tests_secondary": []
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Мощный вибромассажёр?",
+      "en": "Powerful wand vibrator?"
+    }
+  },
+  "paired_with": null,
+  "priority": 50
+}

@@ -173,10 +173,14 @@ npx tsx scripts/remove-style-from-prompts.ts
 
 **Разрешённые поля:**
 - `user_description`
+- `user_description_alt`
+- `alt_for_gender`
 - `priority`
 - `prompt_instructions`
 - `generation_prompt`
 - `accepted`
+- `is_active`
+- `selected_variant_index`
 
 **Пример:**
 ```typescript
@@ -203,6 +207,76 @@ await fetch('/api/admin/reset-prompt', {
   })
 });
 ```
+
+---
+
+## Галерея изображений
+
+### Обзор
+
+Каждая сцена может иметь несколько изображений в галерее (`image_variants`). Пользователи могут листать изображения в приложении.
+
+### Функции админки
+
+#### Generate + (кнопка)
+Генерирует новое изображение и добавляет его в галерею, не заменяя текущее.
+
+#### Выбор изображения
+Клик на "Use" под изображением в галерее устанавливает его как основное (`image_url`).
+
+#### Удаление изображения
+Кнопка мусорки удаляет изображение из галереи.
+
+### Структура image_variants
+
+```typescript
+interface ImageVariant {
+  url: string;           // URL изображения
+  prompt: string;        // Промпт генерации
+  created_at: string;    // Дата создания
+  qa_status?: 'passed' | 'failed' | null;
+  qa_score?: number;
+  is_placeholder?: boolean;  // Зарезервировано для пустых слотов
+}
+```
+
+---
+
+## Dual Descriptions (М/Ж описания)
+
+### Обзор
+
+Одна сцена может иметь разные описания для мужчин и женщин. Это позволяет показывать контент с разных перспектив, используя одно изображение.
+
+### Поля
+
+| Поле | Описание |
+|------|----------|
+| `user_description` | Основное описание (по умолчанию) |
+| `user_description_alt` | Альтернативное описание |
+| `alt_for_gender` | Какой пол видит alt: `'male'`, `'female'` или `null` |
+
+### Логика показа
+
+```
+if (user.gender === scene.alt_for_gender) {
+  show(scene.user_description_alt)
+} else {
+  show(scene.user_description)
+}
+```
+
+### UI в админке (Expanded Row)
+
+При раскрытии строки сцены (кнопка Edit3):
+
+1. **Dual Descriptions секция:**
+   - Выбор `alt_for_gender` (dropdown)
+   - Основное описание (RU/EN)
+   - Альтернативное описание (RU/EN)
+   - Кнопки перевода для каждого
+
+2. Alt описание неактивно (greyed out) если `alt_for_gender` не выбран
 
 ---
 

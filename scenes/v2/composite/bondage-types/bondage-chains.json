@@ -1,0 +1,47 @@
+{
+  "id": "bondage-chains",
+  "slug": "bondage-chains",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Цепи",
+    "en": "Chains"
+  },
+  "subtitle": {
+    "ru": "Металлические оковы",
+    "en": "Metal shackles"
+  },
+  "user_description": {
+    "ru": "Металлические цепи. Холодные, звенят при движении.",
+    "en": "Metal chains. Cold, rattle with movement."
+  },
+  "ai_description": {
+    "ru": "Холодный металл цепей на запястьях или лодыжках. Звон при каждом движении.",
+    "en": "Cold metal chains on wrists or ankles. Clinking with every movement."
+  },
+  "image_prompt": "wrists bound by metal chains attached to wall, dungeon atmosphere",
+  "intensity": 4,
+  "category": "bondage",
+  "tags": [
+    "bondage",
+    "chains",
+    "metal"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "bondage",
+      "chains"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

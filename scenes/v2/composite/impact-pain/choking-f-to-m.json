@@ -1,8 +1,15 @@
 {
-  "id": "choking_f_to_m",
+  "id": "choking-she-chokes-him",
   "slug": "choking-she-chokes-him",
   "version": 2,
-  "paired_scene": "choking_m_to_f",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "choking-f-to-m-receive",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Удушение",
@@ -12,13 +19,17 @@
     "ru": "Она держит его горло",
     "en": "She holds his throat"
   },
+  "user_description": {
+    "ru": "Ты обхватываешь рукой его горло и слегка сжимаешь. Контролируешь его дыхание.",
+    "en": "You wrap your hand around his throat and squeeze slightly. Control his breathing."
+  },
   "ai_description": {
     "ru": "Её рука на его горле. Она сверху, контролирует его дыхание. Его глаза полны покорности. Femdom власть в чистом виде.",
     "en": "Her hand on his throat. She's on top, controlling his breathing. His eyes full of submission. Pure femdom power."
   },
   "image_prompt": "woman gripping mans throat with hand, man against wall, both in underwear, intense eye contact, bedroom setting",
   "intensity": 4,
-  "category": "impact_pain",
+  "category": "impact-pain",
   "tags": [
     "choking",
     "femdom",
@@ -26,329 +37,6 @@
     "female_dominance",
     "power_exchange"
   ],
-  "elements": [
-    {
-      "id": "pressure",
-      "label": {
-        "ru": "Давление",
-        "en": "Pressure"
-      },
-      "tag_ref": "choking_pressure",
-      "follow_ups": [
-        {
-          "id": "pressure_level",
-          "type": "scale",
-          "question": {
-            "ru": "Сила давления?",
-            "en": "Pressure level?"
-          },
-          "config": {
-            "min_label": {
-              "ru": "Символическое",
-              "en": "Symbolic"
-            },
-            "max_label": {
-              "ru": "Ограничение дыхания",
-              "en": "Breath restriction"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "position",
-      "label": {
-        "ru": "Позиция",
-        "en": "Position"
-      },
-      "tag_ref": "femdom_choking_position",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как она?",
-            "en": "Her position?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "on_top",
-                "label": {
-                  "ru": "Сверху на нём",
-                  "en": "On top of him"
-                }
-              },
-              {
-                "id": "straddling",
-                "label": {
-                  "ru": "Верхом на груди",
-                  "en": "Straddling chest"
-                }
-              },
-              {
-                "id": "standing",
-                "label": {
-                  "ru": "Он на коленях, она стоит",
-                  "en": "He kneeling, she standing"
-                }
-              },
-              {
-                "id": "from_behind",
-                "label": {
-                  "ru": "Сзади",
-                  "en": "From behind"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "context",
-      "label": {
-        "ru": "Контекст",
-        "en": "Context"
-      },
-      "tag_ref": "femdom_choking_context",
-      "follow_ups": [
-        {
-          "id": "when",
-          "type": "multi_select",
-          "question": {
-            "ru": "В какой момент?",
-            "en": "At what moment?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "during_riding",
-                "label": {
-                  "ru": "Когда она сверху",
-                  "en": "While riding"
-                }
-              },
-              {
-                "id": "during_pegging",
-                "label": {
-                  "ru": "Во время пеггинга",
-                  "en": "During pegging"
-                }
-              },
-              {
-                "id": "domination",
-                "label": {
-                  "ru": "Показать власть",
-                  "en": "Show dominance"
-                }
-              },
-              {
-                "id": "punishment",
-                "label": {
-                  "ru": "Наказание",
-                  "en": "Punishment"
-                }
-              },
-              {
-                "id": "his_orgasm",
-                "label": {
-                  "ru": "Контроль его оргазма",
-                  "en": "Control his orgasm"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "her_attitude",
-      "label": {
-        "ru": "Её настрой",
-        "en": "Her attitude"
-      },
-      "tag_ref": "femdom_choking_attitude",
-      "follow_ups": [
-        {
-          "id": "attitude",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как она ведёт себя?",
-            "en": "How does she behave?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "cruel",
-                "label": {
-                  "ru": "Жестоко",
-                  "en": "Cruel"
-                }
-              },
-              {
-                "id": "powerful",
-                "label": {
-                  "ru": "Властно",
-                  "en": "Powerful"
-                }
-              },
-              {
-                "id": "teasing",
-                "label": {
-                  "ru": "Дразнит",
-                  "en": "Teasing"
-                }
-              },
-              {
-                "id": "loving",
-                "label": {
-                  "ru": "Любяще-доминантно",
-                  "en": "Loving dominant"
-                }
-              },
-              {
-                "id": "cold",
-                "label": {
-                  "ru": "Холодно",
-                  "en": "Cold"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "verbal",
-      "label": {
-        "ru": "Что говорит?",
-        "en": "What does she say?"
-      },
-      "tag_ref": "femdom_choking_verbal",
-      "follow_ups": [
-        {
-          "id": "words",
-          "type": "multi_select",
-          "question": {
-            "ru": "Её слова?",
-            "en": "Her words?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "mine",
-                "label": {
-                  "ru": "Ты мой",
-                  "en": "You're mine"
-                }
-              },
-              {
-                "id": "breath",
-                "label": {
-                  "ru": "Я контролирую твоё дыхание",
-                  "en": "I control your breath"
-                }
-              },
-              {
-                "id": "ask",
-                "label": {
-                  "ru": "Проси разрешения дышать",
-                  "en": "Ask permission to breathe"
-                }
-              },
-              {
-                "id": "pathetic",
-                "label": {
-                  "ru": "Жалкий",
-                  "en": "Pathetic"
-                }
-              },
-              {
-                "id": "good_boy",
-                "label": {
-                  "ru": "Хороший мальчик",
-                  "en": "Good boy"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "choking_male_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "her_power",
-                "label": {
-                  "ru": "Её власть",
-                  "en": "Her power"
-                }
-              },
-              {
-                "id": "vulnerability",
-                "label": {
-                  "ru": "Уязвимость",
-                  "en": "Vulnerability"
-                }
-              },
-              {
-                "id": "trust",
-                "label": {
-                  "ru": "Доверие ей",
-                  "en": "Trusting her"
-                }
-              },
-              {
-                "id": "lightheaded",
-                "label": {
-                  "ru": "Лёгкость в голове",
-                  "en": "Lightheadedness"
-                }
-              },
-              {
-                "id": "submission",
-                "label": {
-                  "ru": "Подчинение",
-                  "en": "Submission"
-                }
-              },
-              {
-                "id": "life_in_hands",
-                "label": {
-                  "ru": "Жизнь в её руках",
-                  "en": "Life in her hands"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает когда она душит?",
-      "en": "What appeals about her choking?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "choking",
@@ -373,8 +61,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Женщина обхватывает рукой горло мужчины и слегка сжимает. Контролирует его дыхание.",
-    "en": "Woman wraps her hand around man's throat and squeezes slightly. Controls his breathing."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда она душит?",
+      "en": "What appeals about her choking?"
+    }
+      }
 }

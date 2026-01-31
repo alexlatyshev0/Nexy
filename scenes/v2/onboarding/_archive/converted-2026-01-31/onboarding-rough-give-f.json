@@ -1,0 +1,40 @@
+{
+  "id": "64e4a9bc-4735-4707-a0f6-096f35830156",
+  "slug": "onboarding-rough-give-f",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 9.1,
+  "for_gender": "female",
+  "paired_with": "onboarding-rough-receive-m",
+  "title": {
+    "ru": "Грубый секс",
+    "en": "Rough sex"
+  },
+  "subtitle": {
+    "ru": "Ты — сверху",
+    "en": "You're on top"
+  },
+  "ai_description": {
+    "ru": "Интерес к грубому обращению с партнёром.",
+    "en": "Interest in being rough with your partner."
+  },
+  "user_description": {
+    "ru": "Ты хватаешь его за волосы и прижимаешь лицом к подушке. Шлёпаешь по заднице.",
+    "en": "You grab his hair and push his face into the pillow. Spank his ass."
+  },
+  "image_prompt": "naked woman behind naked man, her hand gripping his hair, his face down on pillow, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "rough-give"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "rough-give"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "rough"
+}

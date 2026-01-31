@@ -1,0 +1,60 @@
+{
+  "id": "cnc-she-takes-him-receive",
+  "slug": "cnc-she-takes-him-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "cnc-she-takes-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "CNC",
+    "en": "CNC"
+  },
+  "subtitle": {
+    "ru": "Она берёт тебя",
+    "en": "She takes you"
+  },
+  "user_description": {
+    "ru": "Она прижимает тебя к кровати за запястья, садится сверху. Ты делаешь вид, что сопротивляешься. По взаимному согласию.",
+    "en": "She pins you to bed by your wrists, mounts you on top. You pretend to resist. Consensual."
+  },
+  "ai_description": {
+    "ru": "Она прижимает его к кровати, садится сверху. Он 'сопротивляется', но она сильнее. Amazon, forced riding — она берёт что хочет.",
+    "en": "She pins him to bed, mounts him. He 'resists', but she's stronger. Amazon, forced riding — she takes what she wants."
+  },
+  "image_prompt": "woman straddling man on bed, holding his wrists down, both in underwear, bedroom with soft lamp light",
+  "intensity": 5,
+  "category": "cnc-rough",
+  "tags": [
+    "cnc",
+    "femdom",
+    "amazon",
+    "forced_riding",
+    "female_aggressor"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "cnc",
+      "femdom",
+      "amazon"
+    ],
+    "tests_secondary": [
+      "forced",
+      "female_aggressor",
+      "role_reversal"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда она 'берёт'?",
+      "en": "What appeals when she 'takes'?"
+    }
+      }
+}

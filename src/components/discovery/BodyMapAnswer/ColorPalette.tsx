@@ -47,7 +47,6 @@ export function ColorPalette({
               borderColor: colorConfig.stroke,
               borderWidth: 2,
               color: colorConfig.stroke,
-              ringColor: isSelected ? colorConfig.stroke : undefined,
             }}
           >
             {icon}

@@ -1,0 +1,58 @@
+{
+  "id": "pain-tolerance-f",
+  "slug": "pain-tolerance-f",
+  "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "pain-tolerance-m",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Боль в сексе",
+    "en": "Pain in Sex"
+  },
+  "subtitle": {
+    "ru": "Когда он причиняет боль?",
+    "en": "When he causes pain?"
+  },
+  "user_description": {
+    "ru": "Тебе нравится когда он шлёпает тебя, кусает, причиняет боль во время секса?",
+    "en": "Do you like when he spanks you, bites, causes pain during sex?"
+  },
+  "ai_description": {
+    "ru": "Боль может быть частью удовольствия. Шлепки, укусы, царапины... Где твоя граница?",
+    "en": "Pain can be part of pleasure. Spanking, biting, scratching... Where's your line?"
+  },
+  "image_prompt": "man's hand raised above woman's body in spanking position, bedroom setting, intimate pose suggesting consensual impact play",
+  "intensity": 2,
+  "category": "baseline",
+  "tags": [
+    "baseline",
+    "pain",
+    "masochism",
+    "impact"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "pain",
+      "masochism"
+    ],
+    "gates": {
+      "no": [
+        "skip_pain_scenes"
+      ],
+      "yes": [
+        "all_pain_scenes"
+      ]
+    }
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Нравится когда он причиняет боль?",
+      "en": "Like when he causes pain?"
+    }
+  },
+  "priority": 3,
+  "sets_gate": "rough"
+}

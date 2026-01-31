@@ -1,0 +1,60 @@
+{
+  "id": "praise-words-he-likes",
+  "slug": "praise-words-he-likes",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": ["praise"],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "praise-words-she-likes",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Слова похвалы",
+    "en": "Praise words"
+  },
+  "subtitle": {
+    "ru": "Что ты хочешь слышать",
+    "en": "What you want to hear"
+  },
+  "user_description": {
+    "ru": "Какие слова похвалы тебя возбуждают?",
+    "en": "What praise words turn you on?"
+  },
+  "ai_description": {
+    "ru": "Одобрение, которое заводит. Какие слова ты хочешь слышать?",
+    "en": "Approval that arouses. What words do you want to hear?"
+  },
+  "intensity": 1,
+  "category": "verbal",
+  "tags": ["praise", "verbal", "affirmation", "words"],
+  "ai_context": {
+    "tests_primary": ["praise_words"],
+    "tests_secondary": ["verbal_preference"]
+  },
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие слова тебе нравится слышать?",
+      "en": "What words do you like to hear?"
+    },
+    "options": [
+      { "id": "good_boy", "label": { "ru": "Хороший мальчик", "en": "Good boy" } },
+      { "id": "molodec", "label": { "ru": "Молодец", "en": "Well done" } },
+      { "id": "silnyy", "label": { "ru": "Сильный", "en": "Strong" } },
+      { "id": "krasavchik", "label": { "ru": "Красавчик", "en": "Handsome" } },
+      { "id": "moy", "label": { "ru": "Мой", "en": "Mine" } },
+      { "id": "luchshiy", "label": { "ru": "Лучший", "en": "The best" } },
+      { "id": "umnyy", "label": { "ru": "Умный", "en": "Smart" } },
+      { "id": "lyubimyy", "label": { "ru": "Любимый", "en": "Darling" } },
+      { "id": "bolshoy", "label": { "ru": "Большой", "en": "Big" } },
+      { "id": "tak_horosho", "label": { "ru": "Так хорошо", "en": "So good" } }
+    ],
+    "allow_other": true,
+    "other_placeholder": {
+      "ru": "Своё слово...",
+      "en": "Your own word..."
+    },
+    "min_selections": 0
+  }
+}

@@ -2,6 +2,14 @@
   "id": "aftercare",
   "slug": "aftercare",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic",
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Aftercare",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Забота после",
     "en": "Care after"
+  },
+  "user_description": {
+    "ru": "Забота после секса. Обнимашки, разговоры, вода.",
+    "en": "Care after sex. Cuddles, talking, water."
   },
   "ai_description": {
     "ru": "Забота после интенсивной сессии. Объятия, нежность, вода, разговоры. Возвращение к реальности вместе, эмоциональная связь.",
@@ -25,237 +37,6 @@
     "emotional",
     "tenderness"
   ],
-  "elements": [
-    {
-      "id": "activities",
-      "label": {
-        "ru": "Что делать",
-        "en": "What to do"
-      },
-      "tag_ref": "aftercare_acts",
-      "follow_ups": [
-        {
-          "id": "acts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что важно?",
-            "en": "What matters?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "cuddles",
-                "label": {
-                  "ru": "Обнимашки",
-                  "en": "Cuddles"
-                }
-              },
-              {
-                "id": "water",
-                "label": {
-                  "ru": "Вода/питье",
-                  "en": "Water/drinks"
-                }
-              },
-              {
-                "id": "blanket",
-                "label": {
-                  "ru": "Укрыть одеялом",
-                  "en": "Blanket"
-                }
-              },
-              {
-                "id": "talking",
-                "label": {
-                  "ru": "Разговоры",
-                  "en": "Talking"
-                }
-              },
-              {
-                "id": "snacks",
-                "label": {
-                  "ru": "Еда/снеки",
-                  "en": "Snacks"
-                }
-              },
-              {
-                "id": "bath",
-                "label": {
-                  "ru": "Ванна вместе",
-                  "en": "Bath together"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "duration",
-      "label": {
-        "ru": "Длительность",
-        "en": "Duration"
-      },
-      "tag_ref": "aftercare_time",
-      "follow_ups": [
-        {
-          "id": "how_long",
-          "type": "single_select",
-          "question": {
-            "ru": "Как долго?",
-            "en": "How long?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "brief",
-                "label": {
-                  "ru": "Коротко",
-                  "en": "Brief"
-                }
-              },
-              {
-                "id": "extended",
-                "label": {
-                  "ru": "Долго",
-                  "en": "Extended"
-                }
-              },
-              {
-                "id": "until_ready",
-                "label": {
-                  "ru": "Пока не готовы",
-                  "en": "Until ready"
-                }
-              },
-              {
-                "id": "sleep",
-                "label": {
-                  "ru": "До сна",
-                  "en": "Until sleep"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who_needs",
-      "label": {
-        "ru": "Кому нужнее",
-        "en": "Who needs more"
-      },
-      "tag_ref": "aftercare_who",
-      "follow_ups": [
-        {
-          "id": "who",
-          "type": "single_select",
-          "question": {
-            "ru": "Кому нужнее?",
-            "en": "Who needs it more?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "sub",
-                "label": {
-                  "ru": "Сабу",
-                  "en": "The sub"
-                }
-              },
-              {
-                "id": "dom",
-                "label": {
-                  "ru": "Дому тоже",
-                  "en": "The dom too"
-                }
-              },
-              {
-                "id": "both",
-                "label": {
-                  "ru": "Обоим",
-                  "en": "Both equally"
-                }
-              },
-              {
-                "id": "varies",
-                "label": {
-                  "ru": "По-разному",
-                  "en": "Varies"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "aftercare_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что важно?",
-            "en": "What matters?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "connection",
-                "label": {
-                  "ru": "Эмоциональная связь",
-                  "en": "Emotional connection"
-                }
-              },
-              {
-                "id": "safety",
-                "label": {
-                  "ru": "Чувство безопасности",
-                  "en": "Feeling safe"
-                }
-              },
-              {
-                "id": "transition",
-                "label": {
-                  "ru": "Плавный переход",
-                  "en": "Smooth transition"
-                }
-              },
-              {
-                "id": "care",
-                "label": {
-                  "ru": "Забота",
-                  "en": "Being cared for"
-                }
-              },
-              {
-                "id": "closure",
-                "label": {
-                  "ru": "Завершение сессии",
-                  "en": "Session closure"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что важно в aftercare?",
-      "en": "What matters in aftercare?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "aftercare",
@@ -268,8 +49,11 @@
       "connection"
     ]
   },
-  "user_description": {
-    "ru": "Пара лежит в обнимку после секса или БДСМ-сессии. Они разговаривают, пьют воду, поглаживают друг друга.",
-    "en": "A couple lies cuddling after sex or BDSM session. They talk, drink water, caress each other."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что важно в aftercare?",
+      "en": "What matters in aftercare?"
+    }
+      }
 }

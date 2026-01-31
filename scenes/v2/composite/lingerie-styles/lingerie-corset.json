@@ -1,0 +1,47 @@
+{
+  "id": "lingerie-corset",
+  "slug": "lingerie-corset",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Корсет",
+    "en": "Corset"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Утягивающий корсет. Подчёркивает талию и грудь.",
+    "en": "Tight corset. Emphasizes waist and chest."
+  },
+  "ai_description": {
+    "ru": "Утягивающий корсет, подчёркивающий талию и грудь.",
+    "en": "Tight corset accentuating waist and bust."
+  },
+  "image_prompt": "woman in black lace-up corset, cinched waist, bedroom",
+  "intensity": 2,
+  "category": "clothing",
+  "tags": [
+    "lingerie",
+    "corset",
+    "structured"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "lingerie",
+      "corset"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

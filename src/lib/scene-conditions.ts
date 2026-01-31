@@ -104,7 +104,7 @@ function getValueFromPath(
 
   if (parts[0] === 'onboarding' && parts.length >= 2) {
     const category = parts[1];
-    return context.onboarding[category] ?? 0;
+    return (context.onboarding as Record<string, number>)[category] ?? 0;
   }
 
   return undefined;

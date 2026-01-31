@@ -2,6 +2,14 @@
   "id": "sexting",
   "slug": "sexting",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "recording",
+    "exhibitionism"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Секстинг",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "Сообщения на расстоянии",
     "en": "Messages from distance"
+  },
+  "user_description": {
+    "ru": "Вы обмениваетесь интимными сообщениями и фото в течение дня.",
+    "en": "You exchange intimate messages and photos throughout the day."
   },
   "ai_description": {
     "ru": "Горячие сообщения в течение дня. Фото, описания что хочется сделать, дразнение пока не вместе. Поддерживать огонь на расстоянии.",
@@ -25,237 +37,6 @@
     "teasing",
     "distance"
   ],
-  "elements": [
-    {
-      "id": "content_type",
-      "label": {
-        "ru": "Тип контента",
-        "en": "Content type"
-      },
-      "tag_ref": "sext_content",
-      "follow_ups": [
-        {
-          "id": "what",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что отправлять?",
-            "en": "What to send?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "text",
-                "label": {
-                  "ru": "Текст (описания)",
-                  "en": "Text (descriptions)"
-                }
-              },
-              {
-                "id": "photos",
-                "label": {
-                  "ru": "Фото",
-                  "en": "Photos"
-                }
-              },
-              {
-                "id": "videos",
-                "label": {
-                  "ru": "Видео",
-                  "en": "Videos"
-                }
-              },
-              {
-                "id": "voice",
-                "label": {
-                  "ru": "Голосовые сообщения",
-                  "en": "Voice messages"
-                }
-              },
-              {
-                "id": "reactions",
-                "label": {
-                  "ru": "Реакции на присланное",
-                  "en": "Reactions to received"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "explicitness",
-      "label": {
-        "ru": "Откровенность",
-        "en": "Explicitness"
-      },
-      "tag_ref": "sext_explicit",
-      "follow_ups": [
-        {
-          "id": "level",
-          "type": "single_select",
-          "question": {
-            "ru": "Насколько откровенно?",
-            "en": "How explicit?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "suggestive",
-                "label": {
-                  "ru": "Намёки",
-                  "en": "Suggestive"
-                }
-              },
-              {
-                "id": "teasing",
-                "label": {
-                  "ru": "Дразнящее",
-                  "en": "Teasing"
-                }
-              },
-              {
-                "id": "explicit",
-                "label": {
-                  "ru": "Откровенное",
-                  "en": "Explicit"
-                }
-              },
-              {
-                "id": "porn_level",
-                "label": {
-                  "ru": "Как порно",
-                  "en": "Porn level"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "timing",
-      "label": {
-        "ru": "Когда",
-        "en": "When"
-      },
-      "tag_ref": "sext_when",
-      "follow_ups": [
-        {
-          "id": "when",
-          "type": "multi_select",
-          "question": {
-            "ru": "Когда отправлять?",
-            "en": "When to send?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "workday",
-                "label": {
-                  "ru": "В рабочий день",
-                  "en": "During workday"
-                }
-              },
-              {
-                "id": "travel",
-                "label": {
-                  "ru": "Когда в разъездах",
-                  "en": "While traveling"
-                }
-              },
-              {
-                "id": "morning",
-                "label": {
-                  "ru": "Утром",
-                  "en": "Morning"
-                }
-              },
-              {
-                "id": "buildup",
-                "label": {
-                  "ru": "Накрутка перед встречей",
-                  "en": "Buildup before meeting"
-                }
-              },
-              {
-                "id": "random",
-                "label": {
-                  "ru": "Случайно в течение дня",
-                  "en": "Random throughout day"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "sext_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "anticipation",
-                "label": {
-                  "ru": "Предвкушение",
-                  "en": "Anticipation"
-                }
-              },
-              {
-                "id": "expression",
-                "label": {
-                  "ru": "Выражение желаний",
-                  "en": "Expressing desires"
-                }
-              },
-              {
-                "id": "visual",
-                "label": {
-                  "ru": "Визуальное возбуждение",
-                  "en": "Visual arousal"
-                }
-              },
-              {
-                "id": "connection",
-                "label": {
-                  "ru": "Связь на расстоянии",
-                  "en": "Connection at distance"
-                }
-              },
-              {
-                "id": "risk",
-                "label": {
-                  "ru": "Риск (кто-то увидит)",
-                  "en": "Risk (someone seeing)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в секстинге?",
-      "en": "What appeals about sexting?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "sexting",
@@ -268,8 +49,11 @@
       "distance"
     ]
   },
-  "user_description": {
-    "ru": "Пара обменивается интимными сообщениями и фото через телефон в течение дня",
-    "en": "A couple exchanges intimate messages and photos via phone throughout the day"
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в секстинге?",
+      "en": "What appeals about sexting?"
+    }
+      }
 }

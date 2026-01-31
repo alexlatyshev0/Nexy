@@ -1,0 +1,301 @@
+{
+  "id": "wlw",
+  "slug": "women-loving-women",
+  "version": 2,
+  "role_direction": "wlw",
+  "title": {
+    "ru": "WLW",
+    "en": "WLW"
+  },
+  "subtitle": {
+    "ru": "Женщины вместе",
+    "en": "Women together"
+  },
+  "ai_description": {
+    "ru": "Две женщины в постели. Мягкость, понимание тела, нежность. Другая энергия, другой темп, другое удовольствие.",
+    "en": "Two women in bed. Softness, body understanding, tenderness. Different energy, different pace, different pleasure."
+  },
+  "image_prompt": "two women on bed, both nude, kissing and touching each other, bedroom setting",
+  "intensity": 2,
+  "category": "lgbtq",
+  "tags": [
+    "wlw",
+    "lesbian",
+    "sapphic",
+    "women",
+    "queer"
+  ],
+  "elements": [
+    {
+      "id": "activities",
+      "label": {
+        "ru": "Активности",
+        "en": "Activities"
+      },
+      "tag_ref": "wlw_activities",
+      "follow_ups": [
+        {
+          "id": "acts",
+          "type": "multi_select",
+          "question": {
+            "ru": "Какие активности?",
+            "en": "What activities?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "oral",
+                "label": {
+                  "ru": "Оральный секс",
+                  "en": "Oral sex"
+                }
+              },
+              {
+                "id": "fingering",
+                "label": {
+                  "ru": "Пальцами",
+                  "en": "Fingering"
+                }
+              },
+              {
+                "id": "tribbing",
+                "label": {
+                  "ru": "Tribbing/scissoring",
+                  "en": "Tribbing/scissoring"
+                }
+              },
+              {
+                "id": "strap",
+                "label": {
+                  "ru": "Страпон",
+                  "en": "Strap-on"
+                }
+              },
+              {
+                "id": "toys",
+                "label": {
+                  "ru": "Игрушки",
+                  "en": "Toys"
+                }
+              },
+              {
+                "id": "mutual",
+                "label": {
+                  "ru": "Взаимная мастурбация",
+                  "en": "Mutual masturbation"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dynamic",
+      "label": {
+        "ru": "Динамика",
+        "en": "Dynamic"
+      },
+      "tag_ref": "wlw_dynamic",
+      "follow_ups": [
+        {
+          "id": "power",
+          "type": "single_select",
+          "question": {
+            "ru": "Динамика власти?",
+            "en": "Power dynamic?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "equal",
+                "label": {
+                  "ru": "Равные",
+                  "en": "Equal"
+                }
+              },
+              {
+                "id": "top",
+                "label": {
+                  "ru": "Я сверху/доминантная",
+                  "en": "I'm top/dominant"
+                }
+              },
+              {
+                "id": "bottom",
+                "label": {
+                  "ru": "Я снизу/сабмиссивная",
+                  "en": "I'm bottom/submissive"
+                }
+              },
+              {
+                "id": "switch",
+                "label": {
+                  "ru": "Switch",
+                  "en": "Switch"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "butch_femme",
+      "label": {
+        "ru": "Butch/Femme",
+        "en": "Butch/Femme"
+      },
+      "tag_ref": "butch_femme",
+      "follow_ups": [
+        {
+          "id": "presentation",
+          "type": "single_select",
+          "question": {
+            "ru": "Презентация?",
+            "en": "Presentation?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "femme",
+                "label": {
+                  "ru": "Femme",
+                  "en": "Femme"
+                }
+              },
+              {
+                "id": "butch",
+                "label": {
+                  "ru": "Butch",
+                  "en": "Butch"
+                }
+              },
+              {
+                "id": "andro",
+                "label": {
+                  "ru": "Androgynous",
+                  "en": "Androgynous"
+                }
+              },
+              {
+                "id": "fluid",
+                "label": {
+                  "ru": "Fluid",
+                  "en": "Fluid"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "partner_pref",
+          "type": "single_select",
+          "question": {
+            "ru": "Предпочтение в партнёре?",
+            "en": "Partner preference?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "femme",
+                "label": {
+                  "ru": "Femme",
+                  "en": "Femme"
+                }
+              },
+              {
+                "id": "butch",
+                "label": {
+                  "ru": "Butch",
+                  "en": "Butch"
+                }
+              },
+              {
+                "id": "no_pref",
+                "label": {
+                  "ru": "Нет предпочтения",
+                  "en": "No preference"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "strap_dynamic",
+      "label": {
+        "ru": "Страпон",
+        "en": "Strap-on"
+      },
+      "tag_ref": "wlw_strap",
+      "follow_ups": [
+        {
+          "id": "strap_role",
+          "type": "single_select",
+          "question": {
+            "ru": "Роль со страпоном?",
+            "en": "Strap-on role?"
+          },
+          "config": {
+            "options": [
+              {
+                "id": "wear",
+                "label": {
+                  "ru": "Надевать",
+                  "en": "Wear it"
+                }
+              },
+              {
+                "id": "receive",
+                "label": {
+                  "ru": "Принимать",
+                  "en": "Receive it"
+                }
+              },
+              {
+                "id": "both",
+                "label": {
+                  "ru": "Оба",
+                  "en": "Both"
+                }
+              },
+              {
+                "id": "no_strap",
+                "label": {
+                  "ru": "Не использую",
+                  "en": "Don't use"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что нравится в сексе с женщинами?",
+      "en": "What do you like about sex with women?"
+    },
+    "min_selections": 0
+  },
+  "ai_context": {
+    "tests_primary": [
+      "wlw",
+      "lesbian",
+      "sapphic"
+    ],
+    "tests_secondary": [
+      "queer",
+      "women",
+      "strap"
+    ]
+  },
+  "user_description": {
+    "ru": "Две женщины вместе — целуются, лижут, ласкают пальцами, используют игрушки.",
+    "en": "Two women together — kissing, licking, fingering, using toys."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "glory-hole-m-gives-receive",
+  "slug": "glory-hole-m-gives-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "exhibitionism",
+    "oral",
+    "public"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "glory-hole-m-gives",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Glory hole (он лижет тебя)",
+    "en": "Glory Hole (He Licks You)"
+  },
+  "subtitle": {
+    "ru": "Анонимный куни",
+    "en": "Anonymous cunnilingus"
+  },
+  "user_description": {
+    "ru": "Ты прижимаешься к отверстию в стене. Анонимный мужчина лижет тебя с другой стороны.",
+    "en": "You press against hole in wall. Anonymous man licks you from other side."
+  },
+  "ai_description": {
+    "ru": "М лижет через отверстие в стене анонимную Ж. Анонимность и случайность.",
+    "en": "M licks through hole in wall anonymous F. Anonymity and randomness."
+  },
+  "image_prompt": "woman standing at glory hole in wall pressing against it, man kneeling on other side giving oral, bathroom stall setting, dim lighting",
+  "intensity": 4,
+  "category": "exhibitionism",
+  "tags": [
+    "glory_hole",
+    "anonymous",
+    "oral",
+    "exhibitionism"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "glory_hole",
+      "anonymous"
+    ],
+    "tests_secondary": [
+      "exhibitionism",
+      "service"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Он лижет тебя через glory hole?",
+      "en": "He licks you through glory hole?"
+    }
+  }
+}

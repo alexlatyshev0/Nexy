@@ -1,334 +1,341 @@
 {
-  "version": 2,
-  "name": "Discovery 2 - Composite Scenes",
-  "description": "Reorganized scene system with proper role separation for asymmetric activities",
-  "total_scenes": 135,
+  "version": 2
+  "name": "Discovery 2 - Composite Scenes"
+  "description": "Reorganized scene system with proper role separation for asymmetric activities"
+  "total_scenes": 142
 
   "categories": {
     "baseline": {
-      "description": "Foundational scenes that determine the tone and direction of the survey",
-      "priority": 0,
+      "description": "Foundational scenes that determine the tone and direction of the survey"
+      "priority": 0
       "scenes": [
-        "power-dynamic",
-        "intensity",
-        "pain-tolerance",
-        "openness",
-        "anal-interest",
-        "oral-preference",
-        "group-interest",
-        "verbal-preference",
-        "roleplay-interest",
-        "toys-interest",
-        "watching-showing",
-        "clothing-preference",
-        "body-fetishes",
+        "power-dynamic"
+        "intensity"
+        "pain-tolerance"
+        "openness"
+        "anal-interest"
+        "oral-preference"
+        "group-interest"
+        "verbal-preference"
+        "roleplay-interest"
+        "toys-interest"
+        "watching-showing"
+        "clothing-preference"
+        "body-fetishes"
         "fantasy-reality"
       ]
-    },
+    }
     "manual": {
-      "description": "Manual stimulation - handjobs, fingering, titfuck",
+      "description": "Manual stimulation - handjobs, fingering, titfuck"
       "scenes": [
-        "handjob",
-        "fingering",
+        "handjob"
+        "fingering"
         "titfuck"
       ]
-    },
+    }
     "filming": {
-      "description": "Recording and photography",
+      "description": "Recording and photography"
       "scenes": [
         "filming"
       ]
-    },
+    }
     "solo-mutual": {
-      "description": "Solo and mutual masturbation activities",
+      "description": "Solo and mutual masturbation activities"
       "scenes": [
-        "joi",
+        "joi"
         "mutual-masturbation"
       ]
-    },
+    }
     "emotional-context": {
-      "description": "Sex driven by emotional states",
+      "description": "Sex driven by emotional states"
       "scenes": [
-        "emotional-sex",
+        "emotional-sex"
         "cheating-fantasy"
       ]
-    },
+    }
     "body-fluids": {
-      "description": "Body fluid related activities",
+      "description": "Body fluid related activities"
       "scenes": [
-        "golden-shower-m-to-f",
-        "golden-shower-f-to-m",
-        "spitting-m-to-f",
-        "spitting-f-to-m",
-        "cum-where-to-finish",
+        "golden-shower-m-to-f"
+        "golden-shower-f-to-m"
+        "spitting-m-to-f"
+        "spitting-f-to-m"
+        "cum-where-to-finish"
         "squirting"
       ]
-    },
+    }
     "oral": {
-      "description": "Oral sex activities",
+      "description": "Oral sex activities"
       "scenes": [
-        "blowjob",
-        "cunnilingus",
-        "deepthroat",
-        "facesitting-f-on-m",
-        "facesitting-m-on-f",
-        "rimming-m-to-f",
+        "blowjob"
+        "cunnilingus"
+        "deepthroat"
+        "facesitting-f-on-m"
+        "facesitting-m-on-f"
+        "rimming-m-to-f"
         "rimming-f-to-m"
       ]
-    },
+    }
     "impact-pain": {
-      "description": "Impact and pain play",
+      "description": "Impact and pain play"
       "scenes": [
-        "spanking-m-to-f",
-        "spanking-f-to-m",
-        "wax-play-m-to-f",
-        "wax-play-f-to-m",
-        "choking-m-to-f",
-        "choking-f-to-m",
-        "nipple-play-m-to-f",
-        "nipple-play-f-to-m",
-        "whipping-caning",
-        "face-slapping-m-to-f",
-        "face-slapping-f-to-m",
+        "spanking-m-to-f"
+        "spanking-f-to-m"
+        "wax-play-m-to-f"
+        "wax-play-f-to-m"
+        "choking-m-to-f"
+        "choking-f-to-m"
+        "nipple-play-m-to-f"
+        "nipple-play-f-to-m"
+        "whipping-caning"
+        "face-slapping-m-to-f"
+        "face-slapping-f-to-m"
         "cbt"
       ]
-    },
+    }
     "verbal": {
-      "description": "Verbal dynamics - praise, degradation, dirty talk",
+      "description": "Verbal dynamics - praise, degradation, dirty talk"
       "scenes": [
-        "praise-m-to-f",
-        "praise-f-to-m",
-        "degradation-m-to-f",
-        "degradation-f-to-m",
+        "praise-m-to-f"
+        "praise-f-to-m"
+        "degradation-m-to-f"
+        "degradation-f-to-m"
         "dirty-talk"
       ]
-    },
+    }
     "control-power": {
-      "description": "Power exchange and control",
+      "description": "Power exchange and control"
       "scenes": [
-        "bondage-m-ties-f",
-        "bondage-f-ties-m",
-        "collar-m-owns-f",
-        "collar-f-owns-m",
-        "edging-m-to-f",
-        "edging-f-to-m",
-        "feminization",
-        "free-use",
-        "forced-orgasm-m-to-f",
-        "forced-orgasm-f-to-m",
+        "bondage-m-ties-f"
+        "bondage-f-ties-m"
+        "collar-m-owns-f"
+        "collar-f-owns-m"
+        "edging-m-to-f"
+        "edging-f-to-m"
+        "feminization"
+        "free-use"
+        "forced-orgasm-m-to-f"
+        "forced-orgasm-f-to-m"
         "ruined-orgasm"
+        "sex-tasks"
       ]
-    },
+    }
     "cnc-rough": {
-      "description": "Consensual non-consent and rough play",
+      "description": "Consensual non-consent and rough play"
       "scenes": [
-        "cnc-m-takes-f",
-        "cnc-f-takes-m",
-        "primal",
+        "cnc-m-takes-f"
+        "cnc-f-takes-m"
+        "primal"
         "somnophilia"
       ]
-    },
+    }
     "worship-service": {
-      "description": "Body worship and service",
+      "description": "Body worship and service"
       "scenes": [
-        "foot-worship-m-to-f",
-        "foot-worship-f-to-m",
-        "body-worship-m-to-f",
-        "body-worship-f-to-m",
-        "armpit",
+        "foot-worship-m-to-f"
+        "foot-worship-f-to-m"
+        "body-worship-m-to-f"
+        "body-worship-f-to-m"
+        "armpit"
         "genital-worship"
       ]
-    },
+    }
     "massage": {
-      "description": "Sensual massage",
+      "description": "Sensual massage"
       "scenes": [
-        "massage-m-to-f",
+        "massage-m-to-f"
         "massage-f-to-m"
       ]
-    },
+    }
     "pet-play": {
-      "description": "Pet play dynamics",
+      "description": "Pet play dynamics"
       "scenes": [
-        "pet-play-f-is-pet",
+        "pet-play-f-is-pet"
         "pet-play-m-is-pet"
       ]
-    },
+    }
     "age-play": {
-      "description": "Age role dynamics",
+      "description": "Age role dynamics"
       "scenes": [
-        "ddlg",
+        "ddlg"
         "mdlb"
       ]
-    },
+    }
     "chastity": {
-      "description": "Orgasm denial and chastity",
+      "description": "Orgasm denial and chastity"
       "scenes": [
-        "chastity-m-locked",
+        "chastity-m-locked"
         "chastity-f-locked"
       ]
-    },
+    }
     "group": {
-      "description": "Group sex scenarios",
+      "description": "Group sex scenarios"
       "scenes": [
-        "threesome-fmf",
-        "threesome-mfm",
-        "gangbang",
-        "orgy",
-        "swinging",
+        "threesome-fmf"
+        "threesome-mfm"
+        "gangbang"
+        "orgy"
+        "swinging"
         "double-penetration"
       ]
-    },
+    }
     "lgbtq": {
-      "description": "Same-sex scenarios",
+      "description": "Same-sex scenarios"
       "scenes": [
-        "wlw",
+        "wlw"
         "mlm"
       ]
-    },
+    }
     "exhibitionism": {
-      "description": "Exhibitionism and voyeurism",
+      "description": "Exhibitionism and voyeurism"
       "scenes": [
-        "exhibitionism",
-        "voyeurism",
-        "public-sex",
+        "exhibitionism"
+        "voyeurism"
+        "public-sex"
         "glory-hole"
+        "no-panties-walk"
+        "dress-code"
       ]
-    },
+    }
     "anal": {
-      "description": "Anal play",
+      "description": "Anal play"
       "scenes": [
-        "anal-play-on-her",
-        "anal-play-on-him",
+        "anal-play-on-her"
+        "anal-play-on-him"
         "pegging"
       ]
-    },
+    }
     "cuckold": {
-      "description": "Cuckold and hotwife dynamics",
+      "description": "Cuckold and hotwife dynamics"
       "scenes": [
-        "cuckold",
+        "cuckold"
         "hotwife"
       ]
-    },
+    }
     "sensory": {
-      "description": "Sensory play",
+      "description": "Sensory play"
       "scenes": [
-        "blindfold",
-        "ice-play",
-        "feather-tickle",
+        "blindfold"
+        "ice-play"
+        "feather-tickle"
         "electrostim"
       ]
-    },
+    }
     "roleplay": {
-      "description": "Role-playing scenarios",
+      "description": "Role-playing scenarios"
       "scenes": [
-        "boss-secretary",
-        "stranger",
-        "teacher-student",
-        "doctor-patient",
-        "service-roleplay",
+        "boss-secretary"
+        "stranger"
+        "teacher-student"
+        "doctor-patient"
+        "service-roleplay"
         "taboo-roleplay"
+        "truth-or-dare"
       ]
-    },
+    }
     "toys": {
-      "description": "Sex toys",
+      "description": "Sex toys"
       "scenes": [
-        "vibrator",
+        "vibrator"
         "remote-control"
       ]
-    },
+    }
     "intimacy-outside": {
-      "description": "Intimacy in daily life",
+      "description": "Intimacy in daily life"
       "scenes": [
-        "casual-touch",
-        "morning-teasing",
-        "kitchen-counter",
+        "casual-touch"
+        "morning-teasing"
+        "kitchen-counter"
         "sexting"
+        "secret-touch"
+        "voice-instructions"
+        "video-sex"
       ]
-    },
+    }
     "symmetric": {
-      "description": "Role-neutral activities",
+      "description": "Role-neutral activities"
       "scenes": [
-        "positions",
+        "positions"
         "locations"
       ]
-    },
+    }
     "clothing": {
-      "description": "Clothing and attire",
+      "description": "Clothing and attire"
       "scenes": [
-        "lingerie",
-        "torn-clothes",
+        "lingerie"
+        "torn-clothes"
         "latex-leather"
       ]
-    },
+    }
     "romantic": {
-      "description": "Romantic and tender",
+      "description": "Romantic and tender"
       "scenes": [
-        "aftercare",
-        "romantic-sex",
+        "aftercare"
+        "romantic-sex"
         "quickie"
       ]
-    },
+    }
     "extreme": {
-      "description": "Extreme and edge play activities",
+      "description": "Extreme and edge play activities"
       "scenes": [
-        "needle-play",
-        "mummification",
-        "figging",
-        "lactation",
-        "fucking-machine",
-        "breeding-kink",
-        "knife-play",
-        "breath-play",
-        "objectification",
+        "needle-play"
+        "mummification"
+        "figging"
+        "lactation"
+        "fucking-machine"
+        "breeding-kink"
+        "knife-play"
+        "breath-play"
+        "objectification"
         "fisting"
       ]
     }
-  },
+  }
 
   "paired_scenes": {
-    "description": "Scenes that have M→F and F→M variants",
+    "description": "Scenes that have M→F and F→M variants"
     "pairs": [
-      ["golden-shower-m-to-f", "golden-shower-f-to-m"],
-      ["spitting-m-to-f", "spitting-f-to-m"],
-      ["rimming-m-to-f", "rimming-f-to-m"],
-      ["facesitting-f-on-m", "facesitting-m-on-f"],
-      ["spanking-m-to-f", "spanking-f-to-m"],
-      ["wax-play-m-to-f", "wax-play-f-to-m"],
-      ["choking-m-to-f", "choking-f-to-m"],
-      ["nipple-play-m-to-f", "nipple-play-f-to-m"],
-      ["praise-m-to-f", "praise-f-to-m"],
-      ["degradation-m-to-f", "degradation-f-to-m"],
-      ["bondage-m-ties-f", "bondage-f-ties-m"],
-      ["collar-m-owns-f", "collar-f-owns-m"],
-      ["edging-m-to-f", "edging-f-to-m"],
-      ["cnc-m-takes-f", "cnc-f-takes-m"],
-      ["foot-worship-m-to-f", "foot-worship-f-to-m"],
-      ["body-worship-m-to-f", "body-worship-f-to-m"],
-      ["massage-m-to-f", "massage-f-to-m"],
-      ["pet-play-f-is-pet", "pet-play-m-is-pet"],
-      ["chastity-m-locked", "chastity-f-locked"],
-      ["anal-play-on-her", "anal-play-on-him"],
-      ["cuckold", "hotwife"],
-      ["ddlg", "mdlb"],
-      ["threesome-fmf", "threesome-mfm"],
-      ["face-slapping-m-to-f", "face-slapping-f-to-m"],
+      ["golden-shower-m-to-f", "golden-shower-f-to-m"]
+      ["spitting-m-to-f", "spitting-f-to-m"]
+      ["rimming-m-to-f", "rimming-f-to-m"]
+      ["facesitting-f-on-m", "facesitting-m-on-f"]
+      ["spanking-m-to-f", "spanking-f-to-m"]
+      ["wax-play-m-to-f", "wax-play-f-to-m"]
+      ["choking-m-to-f", "choking-f-to-m"]
+      ["nipple-play-m-to-f", "nipple-play-f-to-m"]
+      ["praise-m-to-f", "praise-f-to-m"]
+      ["degradation-m-to-f", "degradation-f-to-m"]
+      ["bondage-m-ties-f", "bondage-f-ties-m"]
+      ["collar-m-owns-f", "collar-f-owns-m"]
+      ["edging-m-to-f", "edging-f-to-m"]
+      ["cnc-m-takes-f", "cnc-f-takes-m"]
+      ["foot-worship-m-to-f", "foot-worship-f-to-m"]
+      ["body-worship-m-to-f", "body-worship-f-to-m"]
+      ["massage-m-to-f", "massage-f-to-m"]
+      ["pet-play-f-is-pet", "pet-play-m-is-pet"]
+      ["chastity-m-locked", "chastity-f-locked"]
+      ["anal-play-on-her", "anal-play-on-him"]
+      ["cuckold", "hotwife"]
+      ["ddlg", "mdlb"]
+      ["threesome-fmf", "threesome-mfm"]
+      ["face-slapping-m-to-f", "face-slapping-f-to-m"]
       ["forced-orgasm-m-to-f", "forced-orgasm-f-to-m"]
     ]
-  },
+  }
 
   "role_directions": {
-    "m_to_f": "Male does to female",
-    "f_to_m": "Female does to male",
-    "mutual": "Either direction or symmetric",
-    "wlw": "Woman loving woman",
-    "mlm": "Man loving man",
-    "group": "Group scenario",
-    "m_dom_f_pet": "Male dominant, female pet/sub",
-    "f_dom_m_pet": "Female dominant, male pet/sub",
-    "m_keyholder_f_locked": "Male keyholder, female in chastity",
-    "f_keyholder_m_locked": "Female keyholder, male in chastity",
-    "cuckold": "Cuckold dynamic",
-    "hotwife": "Hotwife/stag-vixen dynamic",
+    "m_to_f": "Male does to female"
+    "f_to_m": "Female does to male"
+    "mutual": "Either direction or symmetric"
+    "wlw": "Woman loving woman"
+    "mlm": "Man loving man"
+    "group": "Group scenario"
+    "m_dom_f_pet": "Male dominant, female pet/sub"
+    "f_dom_m_pet": "Female dominant, male pet/sub"
+    "m_keyholder_f_locked": "Male keyholder, female in chastity"
+    "f_keyholder_m_locked": "Female keyholder, male in chastity"
+    "cuckold": "Cuckold dynamic"
+    "hotwife": "Hotwife/stag-vixen dynamic"
     "f_dom_m_sub": "Female dominant, male submissive"
   }
 }

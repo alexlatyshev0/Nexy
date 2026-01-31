@@ -1,0 +1,47 @@
+{
+  "id": "lingerie-lace",
+  "slug": "lingerie-lace",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Кружево",
+    "en": "Lace"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Нежное кружевное бельё. Прозрачное и женственное.",
+    "en": "Delicate lace lingerie. Sheer and feminine."
+  },
+  "ai_description": {
+    "ru": "Нежное кружевное бельё. Прозрачное и женственное.",
+    "en": "Delicate lace lingerie. Sheer and feminine."
+  },
+  "image_prompt": "woman in delicate black lace lingerie set, bra and panties, bedroom",
+  "intensity": 1,
+  "category": "clothing",
+  "tags": [
+    "lingerie",
+    "lace",
+    "feminine"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "lingerie",
+      "lace"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

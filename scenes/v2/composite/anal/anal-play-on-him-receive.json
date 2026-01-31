@@ -1,0 +1,57 @@
+{
+  "id": "anal-play-on-him-receive",
+  "slug": "anal-play-on-him-receive",
+  "version": 2,
+  "scene_type": null,
+  "sets_gate": "anal",
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 3,
+  "for_gender": "male",
+  "paired_scene": "anal-play-on-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Анальные игры",
+    "en": "Anal Play"
+  },
+  "subtitle": {
+    "ru": "Она тебе",
+    "en": "She does to you"
+  },
+  "user_description": {
+    "ru": "Она ласкает твою попку, проникает пальцем или игрушкой.",
+    "en": "She caresses your ass, penetrates with finger or toy."
+  },
+  "ai_description": {
+    "ru": "Внимание к его попке. Пальцы, пробки, массаж простаты. Другие ощущения, интенсивные оргазмы, исследование его тела.",
+    "en": "Attention to his ass. Fingers, plugs, prostate massage. Different sensations, intense orgasms, exploring his body."
+  },
+  "image_prompt": "woman and man on bed, he lying face down nude, she kneeling behind him with hand on his lower back, bedroom setting",
+  "intensity": 3,
+  "category": "anal",
+  "tags": [
+    "anal",
+    "prostate",
+    "plugs",
+    "male_pleasure"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "anal",
+      "prostate",
+      "male_anal"
+    ],
+    "tests_secondary": [
+      "milking",
+      "vulnerability",
+      "femdom"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Анальные игры когда она тебе?",
+      "en": "Anal play when she does to you?"
+    }
+  }
+}

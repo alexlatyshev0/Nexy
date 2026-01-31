@@ -1,7 +1,10 @@
 {
-  "id": "watching_showing",
+  "id": "watching-showing",
   "slug": "watching-showing",
   "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Смотреть и показывать",
@@ -11,6 +14,10 @@
     "ru": "Вуайеризм и эксгибиционизм",
     "en": "Voyeurism and exhibitionism"
   },
+  "user_description": {
+    "ru": "Ты наблюдаешь за партнёром или показываешь себя.",
+    "en": "You watch your partner or show yourself."
+  },
   "ai_description": {
     "ru": "Нравится смотреть на других? Или показывать себя? Публичный секс, видео, окна без штор...",
     "en": "Like watching others? Or showing yourself? Public sex, videos, windows without curtains..."
@@ -18,7 +25,6 @@
   "image_prompt": "man and woman by large window, woman posing while man watches, city lights visible outside, bedroom setting",
   "intensity": 2,
   "category": "baseline",
-  "priority": 11,
   "tags": [
     "baseline",
     "voyeurism",
@@ -26,186 +32,6 @@
     "watching",
     "showing"
   ],
-  "elements": [
-    {
-      "id": "voyeurism",
-      "label": {
-        "ru": "Смотреть",
-        "en": "Watching"
-      },
-      "tag_ref": "voyeurism_interest",
-      "follow_ups": [
-        {
-          "id": "watching",
-          "type": "single_select",
-          "question": {
-            "ru": "Смотреть как другие занимаются сексом...",
-            "en": "Watching others have sex..."
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Не интересует",
-                  "en": "Not interested"
-                }
-              },
-              {
-                "id": "porn",
-                "label": {
-                  "ru": "Только порно",
-                  "en": "Only porn"
-                }
-              },
-              {
-                "id": "curious",
-                "label": {
-                  "ru": "Интересно вживую",
-                  "en": "Curious about live"
-                }
-              },
-              {
-                "id": "enjoy",
-                "label": {
-                  "ru": "Нравится смотреть",
-                  "en": "Enjoy watching"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "exhibitionism",
-      "label": {
-        "ru": "Показывать",
-        "en": "Showing"
-      },
-      "tag_ref": "exhibitionism_interest",
-      "follow_ups": [
-        {
-          "id": "showing",
-          "type": "single_select",
-          "question": {
-            "ru": "Чтобы на тебя смотрели...",
-            "en": "Being watched..."
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Нет, приватность важна",
-                  "en": "No, privacy matters"
-                }
-              },
-              {
-                "id": "partner",
-                "label": {
-                  "ru": "Только для партнёра",
-                  "en": "Only for partner"
-                }
-              },
-              {
-                "id": "fantasy",
-                "label": {
-                  "ru": "Фантазия возбуждает",
-                  "en": "Fantasy excites"
-                }
-              },
-              {
-                "id": "thrill",
-                "label": {
-                  "ru": "Риск быть замеченным возбуждает",
-                  "en": "Risk of being seen excites"
-                }
-              },
-              {
-                "id": "love",
-                "label": {
-                  "ru": "Люблю показывать себя",
-                  "en": "Love showing myself"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "contexts",
-      "label": {
-        "ru": "Контексты",
-        "en": "Contexts"
-      },
-      "tag_ref": "watching_contexts",
-      "follow_ups": [
-        {
-          "id": "where",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие ситуации интересны?",
-            "en": "What situations interest you?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "window",
-                "label": {
-                  "ru": "Секс у окна",
-                  "en": "Sex by window"
-                }
-              },
-              {
-                "id": "public",
-                "label": {
-                  "ru": "В публичном месте",
-                  "en": "In public place"
-                }
-              },
-              {
-                "id": "club",
-                "label": {
-                  "ru": "Секс-клуб",
-                  "en": "Sex club"
-                }
-              },
-              {
-                "id": "filming",
-                "label": {
-                  "ru": "Снимать себя",
-                  "en": "Filming ourselves"
-                }
-              },
-              {
-                "id": "cam",
-                "label": {
-                  "ru": "Онлайн трансляция",
-                  "en": "Online streaming"
-                }
-              },
-              {
-                "id": "mirror",
-                "label": {
-                  "ru": "Смотреть на себя в зеркало",
-                  "en": "Watching in mirror"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Смотреть или показывать — что ближе?",
-      "en": "Watching or showing — what's closer?"
-    }
-  },
   "ai_context": {
     "tests_primary": [
       "voyeurism",
@@ -229,8 +55,13 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Один из партнеров наблюдает за другим или показывает себя для наблюдения.",
-    "en": "One partner watches the other or shows themselves for observation."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Смотреть или показывать — что ближе?",
+      "en": "Watching or showing — what's closer?"
+    }
+  },
+  "priority": 11,
+  "sets_gate": "exhibitionism"
 }

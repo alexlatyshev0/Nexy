@@ -1,0 +1,61 @@
+{
+  "id": "facesitting-f-on-m-receive",
+  "slug": "facesitting-f-on-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "oral",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "facesitting-she-on-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Фейсситтинг",
+    "en": "Facesitting"
+  },
+  "subtitle": {
+    "ru": "Она на твоём лице",
+    "en": "She on your face"
+  },
+  "user_description": {
+    "ru": "Она садится на твоё лицо. Ты лижешь её киску и попку снизу.",
+    "en": "She sits on your face. You lick her pussy and ass from below."
+  },
+  "ai_description": {
+    "ru": "Она сидит на его лице, он под ней. Его рот, нос, всё лицо — для её удовольствия. Она контролирует, он служит.",
+    "en": "She sits on his face, he beneath her. His mouth, nose, whole face — for her pleasure. She controls, he serves."
+  },
+  "image_prompt": "woman sitting on man's face, she nude straddling his head, he lying on back beneath her, bedroom with bed",
+  "intensity": 3,
+  "category": "oral",
+  "tags": [
+    "facesitting",
+    "queening",
+    "smothering",
+    "femdom",
+    "oral_service",
+    "face_riding"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "facesitting",
+      "queening",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "oral_service",
+      "smothering",
+      "female_pleasure"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Она на твоём лице — фейсситтинг?",
+      "en": "She on your face — facesitting?"
+    }
+  }
+}

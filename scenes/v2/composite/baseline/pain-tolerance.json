@@ -1,7 +1,10 @@
 {
-  "id": "pain_tolerance",
+  "id": "pain-tolerance",
   "slug": "pain-tolerance",
   "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Боль в сексе",
@@ -11,6 +14,10 @@
     "ru": "Как относишься к боли?",
     "en": "How do you feel about pain?"
   },
+  "user_description": {
+    "ru": "Шлепки по ягодицам, укусы, царапины во время секса.",
+    "en": "Spanking buttocks, biting, scratching during sex."
+  },
   "ai_description": {
     "ru": "Боль может быть частью удовольствия — или категорически нет. Шлепки, укусы, царапины... Где твоя граница?",
     "en": "Pain can be part of pleasure — or absolutely not. Spanking, biting, scratching... Where's your line?"
@@ -18,7 +25,6 @@
   "image_prompt": "man's hand raised above woman's body in spanking position, bedroom setting, intimate pose suggesting consensual impact play",
   "intensity": 2,
   "category": "baseline",
-  "priority": 3,
   "tags": [
     "baseline",
     "pain",
@@ -26,186 +32,29 @@
     "sadism",
     "impact"
   ],
-  "elements": [
-    {
-      "id": "receiving",
-      "label": {
-        "ru": "Получать боль",
-        "en": "Receiving pain"
-      },
-      "tag_ref": "pain_receiving",
-      "follow_ups": [
-        {
-          "id": "tolerance",
-          "type": "single_select",
-          "question": {
-            "ru": "Боль во время секса...",
-            "en": "Pain during sex..."
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Не хочу никакой боли",
-                  "en": "Don't want any pain"
-                }
-              },
-              {
-                "id": "light",
-                "label": {
-                  "ru": "Лёгкая боль ок (укусы, шлепки)",
-                  "en": "Light pain ok (bites, slaps)"
-                }
-              },
-              {
-                "id": "moderate",
-                "label": {
-                  "ru": "Умеренная боль возбуждает",
-                  "en": "Moderate pain excites me"
-                }
-              },
-              {
-                "id": "strong",
-                "label": {
-                  "ru": "Сильная боль — да",
-                  "en": "Strong pain — yes"
-                }
-              },
-              {
-                "id": "extreme",
-                "label": {
-                  "ru": "Чем больнее тем лучше",
-                  "en": "The more pain the better"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "giving",
-      "label": {
-        "ru": "Причинять боль",
-        "en": "Giving pain"
-      },
-      "tag_ref": "pain_giving",
-      "follow_ups": [
-        {
-          "id": "comfort",
-          "type": "single_select",
-          "question": {
-            "ru": "Причинять боль партнёру...",
-            "en": "Causing pain to partner..."
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Не хочу причинять боль",
-                  "en": "Don't want to cause pain"
-                }
-              },
-              {
-                "id": "if_asked",
-                "label": {
-                  "ru": "Только если просит",
-                  "en": "Only if they ask"
-                }
-              },
-              {
-                "id": "enjoy",
-                "label": {
-                  "ru": "Нравится причинять",
-                  "en": "Enjoy causing it"
-                }
-              },
-              {
-                "id": "need",
-                "label": {
-                  "ru": "Это важная часть секса",
-                  "en": "It's an important part of sex"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "types",
-      "label": {
-        "ru": "Виды",
-        "en": "Types"
-      },
-      "tag_ref": "pain_types",
-      "follow_ups": [
-        {
-          "id": "which",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие виды боли ок?",
-            "en": "What types of pain are ok?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "biting",
-                "label": {
-                  "ru": "Укусы",
-                  "en": "Biting"
-                }
-              },
-              {
-                "id": "scratching",
-                "label": {
-                  "ru": "Царапины",
-                  "en": "Scratching"
-                }
-              },
-              {
-                "id": "spanking",
-                "label": {
-                  "ru": "Шлепки",
-                  "en": "Spanking"
-                }
-              },
-              {
-                "id": "pinching",
-                "label": {
-                  "ru": "Щипки",
-                  "en": "Pinching"
-                }
-              },
-              {
-                "id": "hair_pulling",
-                "label": {
-                  "ru": "За волосы",
-                  "en": "Hair pulling"
-                }
-              },
-              {
-                "id": "slapping",
-                "label": {
-                  "ru": "Пощёчины",
-                  "en": "Face slapping"
-                }
-              },
-              {
-                "id": "impact",
-                "label": {
-                  "ru": "Удары (плеть, паддл)",
-                  "en": "Impact (whip, paddle)"
-                }
-              }
-            ]
-          }
-        }
+  "ai_context": {
+    "tests_primary": [
+      "pain",
+      "masochism",
+      "sadism"
+    ],
+    "tests_secondary": [
+      "impact_play",
+      "biting",
+      "rough"
+    ],
+    "gates": {
+      "no": [
+        "skip_pain_scenes"
+      ],
+      "light": [
+        "light_impact_only"
+      ],
+      "yes": [
+        "all_pain_scenes"
       ]
     }
-  ],
+  },
   "question": {
     "type": "boundary",
     "text": {
@@ -238,31 +87,6 @@
       ]
     }
   },
-  "ai_context": {
-    "tests_primary": [
-      "pain",
-      "masochism",
-      "sadism"
-    ],
-    "tests_secondary": [
-      "impact_play",
-      "biting",
-      "rough"
-    ],
-    "gates": {
-      "no": [
-        "skip_pain_scenes"
-      ],
-      "light": [
-        "light_impact_only"
-      ],
-      "yes": [
-        "all_pain_scenes"
-      ]
-    }
-  },
-  "user_description": {
-    "ru": "Один партнёр шлёпает другого по ягодицам, кусает за плечо или царапает спину",
-    "en": "One partner spanks the other's buttocks, bites their shoulder, or scratches their back"
-  }
+  "priority": 3,
+  "sets_gate": "rough"
 }

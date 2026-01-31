@@ -1,0 +1,60 @@
+{
+  "id": "dirty-words-he-likes",
+  "slug": "dirty-words-he-likes",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": ["dirty_talk", "power_dynamic"],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "dirty-words-she-likes",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Грязные слова",
+    "en": "Dirty words"
+  },
+  "subtitle": {
+    "ru": "Что ты хочешь слышать",
+    "en": "What you want to hear"
+  },
+  "user_description": {
+    "ru": "Какие грязные слова тебя заводят, когда она их говорит?",
+    "en": "What dirty words turn you on when she says them?"
+  },
+  "ai_description": {
+    "ru": "Слова, которые возбуждают. Что она должна говорить?",
+    "en": "Words that excite. What should she say?"
+  },
+  "intensity": 3,
+  "category": "verbal",
+  "tags": ["dirty_talk", "verbal", "words"],
+  "ai_context": {
+    "tests_primary": ["dirty_words"],
+    "tests_secondary": ["verbal_preference"]
+  },
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие слова тебя заводят?",
+      "en": "What words turn you on?"
+    },
+    "options": [
+      { "id": "hozyain", "label": { "ru": "Хозяин", "en": "Master" } },
+      { "id": "daddy", "label": { "ru": "Папочка / Daddy", "en": "Daddy" } },
+      { "id": "bolshoy", "label": { "ru": "Большой", "en": "Big" } },
+      { "id": "silnyy", "label": { "ru": "Сильный", "en": "Strong" } },
+      { "id": "luchshiy", "label": { "ru": "Лучший", "en": "The best" } },
+      { "id": "moy", "label": { "ru": "Мой", "en": "Mine" } },
+      { "id": "hochesh", "label": { "ru": "Хочу тебя", "en": "I want you" } },
+      { "id": "eshche", "label": { "ru": "Ещё", "en": "More" } },
+      { "id": "glubzhe", "label": { "ru": "Глубже", "en": "Deeper" } },
+      { "id": "ne_ostanavsya", "label": { "ru": "Не останавливайся", "en": "Don't stop" } }
+    ],
+    "allow_other": true,
+    "other_placeholder": {
+      "ru": "Своё слово...",
+      "en": "Your own word..."
+    },
+    "min_selections": 0
+  }
+}

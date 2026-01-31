@@ -1,7 +1,14 @@
 {
-  "id": "ice_play",
+  "id": "ice-play",
   "slug": "ice-play",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Игра со льдом",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Холодные ощущения",
     "en": "Cold sensations"
+  },
+  "user_description": {
+    "ru": "Кубик льда по телу. Контраст холода и тепла.",
+    "en": "Ice cube on body. Cold and warm contrast."
   },
   "ai_description": {
     "ru": "Кубик льда по горячей коже. Контраст температур, мурашки, неожиданные ощущения. Простой способ добавить остроты.",
@@ -25,244 +36,6 @@
     "cold",
     "sensation_play"
   ],
-  "elements": [
-    {
-      "id": "where_body",
-      "label": {
-        "ru": "Куда",
-        "en": "Where"
-      },
-      "tag_ref": "ice_location",
-      "follow_ups": [
-        {
-          "id": "body_parts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Куда прикладывать?",
-            "en": "Where to apply?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "nipples",
-                "label": {
-                  "ru": "Соски",
-                  "en": "Nipples"
-                }
-              },
-              {
-                "id": "neck",
-                "label": {
-                  "ru": "Шея",
-                  "en": "Neck"
-                }
-              },
-              {
-                "id": "stomach",
-                "label": {
-                  "ru": "Живот",
-                  "en": "Stomach"
-                }
-              },
-              {
-                "id": "inner_thighs",
-                "label": {
-                  "ru": "Внутренняя часть бёдер",
-                  "en": "Inner thighs"
-                }
-              },
-              {
-                "id": "genitals",
-                "label": {
-                  "ru": "Гениталии",
-                  "en": "Genitals"
-                }
-              },
-              {
-                "id": "back",
-                "label": {
-                  "ru": "Спина",
-                  "en": "Back"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "technique",
-      "label": {
-        "ru": "Техника",
-        "en": "Technique"
-      },
-      "tag_ref": "ice_technique",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как использовать?",
-            "en": "How to use?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "trace",
-                "label": {
-                  "ru": "Водить по коже",
-                  "en": "Trace on skin"
-                }
-              },
-              {
-                "id": "hold",
-                "label": {
-                  "ru": "Держать на месте",
-                  "en": "Hold in place"
-                }
-              },
-              {
-                "id": "mouth",
-                "label": {
-                  "ru": "Лёд во рту при оральном",
-                  "en": "Ice in mouth during oral"
-                }
-              },
-              {
-                "id": "drip",
-                "label": {
-                  "ru": "Капли воды",
-                  "en": "Water drips"
-                }
-              },
-              {
-                "id": "contrast",
-                "label": {
-                  "ru": "Чередовать с теплом",
-                  "en": "Alternate with warmth"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who_receives",
-      "label": {
-        "ru": "Кто получает",
-        "en": "Who receives"
-      },
-      "tag_ref": "ice_receiver",
-      "follow_ups": [
-        {
-          "id": "who",
-          "type": "single_select",
-          "question": {
-            "ru": "На ком?",
-            "en": "On whom?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "her",
-                "label": {
-                  "ru": "На ней",
-                  "en": "On her"
-                }
-              },
-              {
-                "id": "him",
-                "label": {
-                  "ru": "На нём",
-                  "en": "On him"
-                }
-              },
-              {
-                "id": "both",
-                "label": {
-                  "ru": "На обоих",
-                  "en": "On both"
-                }
-              },
-              {
-                "id": "switch",
-                "label": {
-                  "ru": "Меняемся",
-                  "en": "Switch"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "ice_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "contrast",
-                "label": {
-                  "ru": "Контраст температур",
-                  "en": "Temperature contrast"
-                }
-              },
-              {
-                "id": "surprise",
-                "label": {
-                  "ru": "Неожиданность",
-                  "en": "Surprise"
-                }
-              },
-              {
-                "id": "heightened",
-                "label": {
-                  "ru": "Обострённые ощущения",
-                  "en": "Heightened sensations"
-                }
-              },
-              {
-                "id": "teasing",
-                "label": {
-                  "ru": "Дразнение",
-                  "en": "Teasing"
-                }
-              },
-              {
-                "id": "simple",
-                "label": {
-                  "ru": "Простота",
-                  "en": "Simplicity"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в игре со льдом?",
-      "en": "What appeals about ice play?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "ice",
@@ -275,8 +48,11 @@
       "sensation"
     ]
   },
-  "user_description": {
-    "ru": "Один партнёр проводит кубиком льда по коже другого партнёра",
-    "en": "One partner runs an ice cube across the other partner's skin"
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в игре со льдом?",
+      "en": "What appeals about ice play?"
+    }
+      }
 }

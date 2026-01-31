@@ -1,0 +1,73 @@
+{
+  "id": "body-writing-he-writes-on-her",
+  "slug": "body-writing-he-writes-on-her",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "dirty_talk",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "body-writing-she-writes-on-him",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Надписи на теле",
+    "en": "Body Writing"
+  },
+  "subtitle": {
+    "ru": "Он пишет на ней",
+    "en": "He writes on her"
+  },
+  "user_description": {
+    "ru": "Ты пишешь на её теле маркером — слова, имя, стрелки.",
+    "en": "You write on her body with marker — words, name, arrows."
+  },
+  "ai_description": {
+    "ru": "Он берёт маркер и пишет на её теле — 'шлюха', своё имя, стрелки. Каждая надпись — знак принадлежности, напоминание о том, кому она принадлежит.",
+    "en": "He takes a marker and writes on her body — 'slut', his name, arrows. Each inscription is a mark of ownership, a reminder of who she belongs to."
+  },
+  "image_prompt": "man writing with marker on woman's body, she lying on bed nude, intimate bedroom setting, artistic angle showing writing on skin",
+  "intensity": 4,
+  "category": "verbal",
+  "tags": [
+    "body_writing",
+    "marking",
+    "degradation",
+    "ownership",
+    "humiliation",
+    "d_s"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "body_writing",
+      "marking",
+      "degradation"
+    ],
+    "tests_secondary": [
+      "ownership",
+      "humiliation",
+      "objectification"
+    ],
+    "emotional_range": {
+      "positive": [
+        "enjoys being marked",
+        "ownership turns on",
+        "degradation arousing"
+      ],
+      "negative": [
+        "too degrading",
+        "prefers respect",
+        "not into humiliation"
+      ]
+    }
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Надписи на теле — возбуждает?",
+      "en": "Body writing — arousing?"
+    }
+  }
+}

@@ -1,8 +1,16 @@
 {
-  "id": "pet_play_m_is_pet",
+  "id": "pet-play-he-is-pet",
   "slug": "pet-play-he-is-pet",
   "version": 2,
-  "paired_scene": "pet_play_f_is_pet",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "roleplay",
+    "power_dynamic"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "paired_scene": "pet-play-she-is-pet",
   "role_direction": "f_dom_m_pet",
   "title": {
     "ru": "Pet play",
@@ -12,13 +20,17 @@
     "ru": "Он — питомец",
     "en": "He is pet"
   },
+  "user_description": {
+    "ru": "Ты играешь роль домашнего животного. На тебе ошейник и ушки. Ползаешь на четвереньках, выполняешь команды партнёрши.",
+    "en": "You play the role of a pet. You wear collar and ears. Crawl on all fours, follow your partner's commands."
+  },
   "ai_description": {
     "ru": "На нём ошейник, возможно ушки. Он на четвереньках у ног госпожи. Puppy, pony — верный питомец, ждущий команд и похвалы.",
     "en": "He wears collar, maybe ears. On all fours at mistress's feet. Puppy, pony — loyal pet awaiting commands and praise."
   },
   "image_prompt": "man on all fours wearing dog ears and collar, woman standing beside him petting his head, bedroom setting",
   "intensity": 3,
-  "category": "pet_play",
+  "category": "pet-play",
   "tags": [
     "pet_play",
     "puppy",
@@ -27,293 +39,6 @@
     "collar",
     "leash"
   ],
-  "elements": [
-    {
-      "id": "animal",
-      "label": {
-        "ru": "Какой питомец?",
-        "en": "What pet?"
-      },
-      "tag_ref": "male_pet_type",
-      "follow_ups": [
-        {
-          "id": "type",
-          "type": "single_select",
-          "question": {
-            "ru": "Какой питомец?",
-            "en": "What type?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "puppy",
-                "label": {
-                  "ru": "Puppy (щенок)",
-                  "en": "Puppy"
-                }
-              },
-              {
-                "id": "pony",
-                "label": {
-                  "ru": "Pony (пони)",
-                  "en": "Pony"
-                }
-              },
-              {
-                "id": "dog",
-                "label": {
-                  "ru": "Dog (пёс)",
-                  "en": "Dog"
-                }
-              },
-              {
-                "id": "pig",
-                "label": {
-                  "ru": "Pig (свинка)",
-                  "en": "Pig"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "accessories",
-      "label": {
-        "ru": "Аксессуары",
-        "en": "Accessories"
-      },
-      "tag_ref": "male_pet_accessories",
-      "follow_ups": [
-        {
-          "id": "items",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие аксессуары?",
-            "en": "What accessories?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "collar",
-                "label": {
-                  "ru": "Ошейник",
-                  "en": "Collar"
-                }
-              },
-              {
-                "id": "leash",
-                "label": {
-                  "ru": "Поводок",
-                  "en": "Leash"
-                }
-              },
-              {
-                "id": "ears",
-                "label": {
-                  "ru": "Ушки",
-                  "en": "Ears"
-                }
-              },
-              {
-                "id": "tail",
-                "label": {
-                  "ru": "Хвост (плаг)",
-                  "en": "Tail plug"
-                }
-              },
-              {
-                "id": "paws",
-                "label": {
-                  "ru": "Лапки",
-                  "en": "Paw mitts"
-                }
-              },
-              {
-                "id": "cage",
-                "label": {
-                  "ru": "Клетка для члена",
-                  "en": "Chastity cage"
-                }
-              },
-              {
-                "id": "muzzle",
-                "label": {
-                  "ru": "Намордник",
-                  "en": "Muzzle"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "behaviors",
-      "label": {
-        "ru": "Поведение",
-        "en": "Behaviors"
-      },
-      "tag_ref": "male_pet_behaviors",
-      "follow_ups": [
-        {
-          "id": "acts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какое поведение?",
-            "en": "What behaviors?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "all_fours",
-                "label": {
-                  "ru": "На четвереньках",
-                  "en": "On all fours"
-                }
-              },
-              {
-                "id": "bark",
-                "label": {
-                  "ru": "Гавкать",
-                  "en": "Bark"
-                }
-              },
-              {
-                "id": "fetch",
-                "label": {
-                  "ru": "Приносить вещи",
-                  "en": "Fetch"
-                }
-              },
-              {
-                "id": "beg",
-                "label": {
-                  "ru": "Просить (как собачка)",
-                  "en": "Beg"
-                }
-              },
-              {
-                "id": "eat_bowl",
-                "label": {
-                  "ru": "Есть из миски",
-                  "en": "Eat from bowl"
-                }
-              },
-              {
-                "id": "heel",
-                "label": {
-                  "ru": "Идти у ноги",
-                  "en": "Heel"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "humiliation",
-      "label": {
-        "ru": "Унижение?",
-        "en": "Humiliation?"
-      },
-      "tag_ref": "pet_humiliation",
-      "follow_ups": [
-        {
-          "id": "level",
-          "type": "scale",
-          "question": {
-            "ru": "Уровень унижения?",
-            "en": "Humiliation level?"
-          },
-          "config": {
-            "min_label": {
-              "ru": "Ласково, мило",
-              "en": "Sweet, cute"
-            },
-            "max_label": {
-              "ru": "Унизительно",
-              "en": "Degrading"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "male_pet_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что нравится?",
-            "en": "What do you like?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "headspace",
-                "label": {
-                  "ru": "Pet space",
-                  "en": "Pet headspace"
-                }
-              },
-              {
-                "id": "simple",
-                "label": {
-                  "ru": "Простота, нет решений",
-                  "en": "Simplicity, no decisions"
-                }
-              },
-              {
-                "id": "her_control",
-                "label": {
-                  "ru": "Её контроль",
-                  "en": "Her control"
-                }
-              },
-              {
-                "id": "praise",
-                "label": {
-                  "ru": "Похвала ('хороший мальчик')",
-                  "en": "Praise ('good boy')"
-                }
-              },
-              {
-                "id": "humiliation",
-                "label": {
-                  "ru": "Унижение",
-                  "en": "Humiliation"
-                }
-              },
-              {
-                "id": "service",
-                "label": {
-                  "ru": "Служение",
-                  "en": "Service"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает когда он питомец?",
-      "en": "What appeals when he's pet?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "pet_play",
@@ -326,8 +51,11 @@
       "headspace"
     ]
   },
-  "user_description": {
-    "ru": "Он на четвереньках в ошейнике и ушках. Она стоит рядом, гладит его по голове.",
-    "en": "He is on all fours wearing a collar and ears. She stands nearby, petting his head."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда он питомец?",
+      "en": "What appeals when he's pet?"
+    }
+      }
 }

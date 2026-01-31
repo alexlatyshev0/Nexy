@@ -1,0 +1,40 @@
+{
+  "id": "824b8593-5006-457a-9903-df9b33596712",
+  "slug": "onboarding-power-sub-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 8.5,
+  "for_gender": "male",
+  "paired_with": "onboarding-power-dom-f",
+  "title": {
+    "ru": "Подчинение",
+    "en": "Submission"
+  },
+  "subtitle": {
+    "ru": "Тебе командуют",
+    "en": "They're in charge"
+  },
+  "ai_description": {
+    "ru": "Интерес к подчинению партнёру.",
+    "en": "Interest in submitting to your partner."
+  },
+  "user_description": {
+    "ru": "Ты на коленях перед ней в ошейнике. Она держит поводок и указывает, что делать.",
+    "en": "You kneel before her in a collar. She holds the leash and tells you what to do."
+  },
+  "image_prompt": "POV from below, clothed woman standing holding leash, looking down at camera, dominant pose, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "power-sub"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "power-sub"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "power_dynamic"
+}

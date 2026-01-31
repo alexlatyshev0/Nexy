@@ -2,6 +2,13 @@
   "id": "titfuck",
   "slug": "titfuck",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Титфак",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Секс между грудей",
     "en": "Breast sex"
+  },
+  "user_description": {
+    "ru": "Ты сжимаешь грудь вокруг его члена или он двигается между твоей грудью.",
+    "en": "You press your breasts around his cock or he moves between your breasts."
   },
   "ai_description": {
     "ru": "Она сжимает грудь вокруг его члена. Он двигается между ними, смотрит на неё сверху. Визуальное удовольствие, другие ощущения.",
@@ -24,230 +35,6 @@
     "visual",
     "alternative"
   ],
-  "elements": [
-    {
-      "id": "position",
-      "label": {
-        "ru": "Позиция",
-        "en": "Position"
-      },
-      "tag_ref": "titfuck_position",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какая позиция?",
-            "en": "What position?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "lying_back",
-                "label": {
-                  "ru": "Она на спине",
-                  "en": "She lying on back"
-                }
-              },
-              {
-                "id": "kneeling",
-                "label": {
-                  "ru": "Она на коленях",
-                  "en": "She kneeling"
-                }
-              },
-              {
-                "id": "sitting",
-                "label": {
-                  "ru": "Сидя друг напротив друга",
-                  "en": "Sitting facing"
-                }
-              },
-              {
-                "id": "he_straddles",
-                "label": {
-                  "ru": "Он сидит на ней",
-                  "en": "He straddles her"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "extras",
-      "label": {
-        "ru": "Дополнения",
-        "en": "Extras"
-      },
-      "tag_ref": "titfuck_extras",
-      "follow_ups": [
-        {
-          "id": "additions",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что добавить?",
-            "en": "What to add?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "lube_oil",
-                "label": {
-                  "ru": "Смазка/масло",
-                  "en": "Lube/oil"
-                }
-              },
-              {
-                "id": "mouth_tip",
-                "label": {
-                  "ru": "Лизать головку",
-                  "en": "Lick the tip"
-                }
-              },
-              {
-                "id": "eye_contact",
-                "label": {
-                  "ru": "Зрительный контакт",
-                  "en": "Eye contact"
-                }
-              },
-              {
-                "id": "dirty_talk",
-                "label": {
-                  "ru": "Dirty talk",
-                  "en": "Dirty talk"
-                }
-              },
-              {
-                "id": "nipple_play",
-                "label": {
-                  "ru": "Игра с сосками",
-                  "en": "Nipple play"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "finish",
-      "label": {
-        "ru": "Финиш",
-        "en": "Finish"
-      },
-      "tag_ref": "titfuck_finish",
-      "follow_ups": [
-        {
-          "id": "where",
-          "type": "single_select",
-          "question": {
-            "ru": "Куда кончить?",
-            "en": "Where to cum?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "on_chest",
-                "label": {
-                  "ru": "На грудь",
-                  "en": "On chest"
-                }
-              },
-              {
-                "id": "on_neck",
-                "label": {
-                  "ru": "На шею/лицо",
-                  "en": "On neck/face"
-                }
-              },
-              {
-                "id": "in_mouth",
-                "label": {
-                  "ru": "В рот",
-                  "en": "In mouth"
-                }
-              },
-              {
-                "id": "transition",
-                "label": {
-                  "ru": "Перейти к сексу",
-                  "en": "Transition to sex"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "titfuck_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "visual",
-                "label": {
-                  "ru": "Визуал",
-                  "en": "Visual"
-                }
-              },
-              {
-                "id": "his_pleasure",
-                "label": {
-                  "ru": "Его удовольствие",
-                  "en": "His pleasure"
-                }
-              },
-              {
-                "id": "breast_worship",
-                "label": {
-                  "ru": "Внимание к груди",
-                  "en": "Breast attention"
-                }
-              },
-              {
-                "id": "variety",
-                "label": {
-                  "ru": "Разнообразие",
-                  "en": "Variety"
-                }
-              },
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Контроль (она сжимает)",
-                  "en": "Control (she squeezes)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что нравится в титфаке?",
-      "en": "What do you like about titfuck?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "titfuck",
@@ -272,8 +59,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Она сжимает грудь вокруг его члена. Он двигается между ними.",
-    "en": "She presses her breasts around his penis. He moves between them."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что нравится в титфаке?",
+      "en": "What do you like about titfuck?"
+    }
+      }
 }

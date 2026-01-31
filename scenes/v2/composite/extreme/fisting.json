@@ -1,0 +1,58 @@
+{
+  "id": "fisting",
+  "slug": "fisting",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "anal"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Фистинг",
+    "en": "Fisting"
+  },
+  "subtitle": {
+    "ru": "Вся рука внутрь",
+    "en": "Whole hand inside"
+  },
+  "user_description": {
+    "ru": "Введение всей руки во влагалище или анус.",
+    "en": "Inserting the whole hand into vagina or anus."
+  },
+  "ai_description": {
+    "ru": "Введение всей руки (кулака) во влагалище или анус. Требует много смазки, терпения и доверия.",
+    "en": "Inserting the whole hand (fist) into vagina or anus. Requires lots of lube, patience, and trust."
+  },
+  "image_prompt": "intimate couple, woman lying back relaxed, man's hand near her lower body, romantic bedroom",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": [
+    "fisting",
+    "stretching",
+    "extreme",
+    "penetration",
+    "intense"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "fisting",
+      "stretching",
+      "extreme"
+    ],
+    "tests_secondary": [
+      "penetration",
+      "intense",
+      "trust"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в фистинге?",
+      "en": "What appeals about fisting?"
+    }
+      }
+}

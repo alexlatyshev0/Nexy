@@ -1,0 +1,58 @@
+{
+  "id": "anal-wording-he-says",
+  "slug": "anal-wording-he-says",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": ["anal", "dirty_talk"],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "anal-wording-she-says",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Как говорить про анал",
+    "en": "How to talk about anal"
+  },
+  "subtitle": {
+    "ru": "Какие слова использовать",
+    "en": "What words to use"
+  },
+  "user_description": {
+    "ru": "Какими словами тебе нравится говорить про анальный секс?",
+    "en": "What words do you like to use when talking about anal sex?"
+  },
+  "ai_description": {
+    "ru": "Грубо или мягко? Слова для анала.",
+    "en": "Rough or soft? Words for anal."
+  },
+  "intensity": 3,
+  "category": "verbal",
+  "tags": ["anal", "dirty_talk", "verbal", "wording"],
+  "ai_context": {
+    "tests_primary": ["anal_wording", "dirty_talk"],
+    "tests_secondary": ["verbal_preference"]
+  },
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие фразы тебе нравится использовать?",
+      "en": "What phrases do you like to use?"
+    },
+    "options": [
+      { "id": "v_popku", "label": { "ru": "Хочу в попку", "en": "I want your ass" } },
+      { "id": "v_zhopu", "label": { "ru": "В жопу", "en": "In the ass" } },
+      { "id": "szadi", "label": { "ru": "Возьму тебя сзади", "en": "Take you from behind" } },
+      { "id": "tesnaya", "label": { "ru": "Какая тесная", "en": "So tight" } },
+      { "id": "rasslabsya", "label": { "ru": "Расслабься", "en": "Relax" } },
+      { "id": "medlenno", "label": { "ru": "Медленно", "en": "Slowly" } },
+      { "id": "anal", "label": { "ru": "Анал", "en": "Anal" } },
+      { "id": "dyrochka", "label": { "ru": "Дырочка", "en": "Little hole" } }
+    ],
+    "allow_other": true,
+    "other_placeholder": {
+      "ru": "Своя фраза...",
+      "en": "Your own phrase..."
+    },
+    "min_selections": 0
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "lingerie-fishnet",
+  "slug": "lingerie-fishnet",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Сеточка",
+    "en": "Fishnet"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Бельё-сеточка. Крупная или мелкая сетка на теле.",
+    "en": "Fishnet lingerie. Large or small mesh on body."
+  },
+  "ai_description": {
+    "ru": "Бельё в крупную или мелкую сетку.",
+    "en": "Fishnet lingerie."
+  },
+  "image_prompt": "woman in black fishnet bodysuit, bedroom setting",
+  "intensity": 2,
+  "category": "clothing",
+  "tags": [
+    "lingerie",
+    "fishnet",
+    "bold"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "lingerie",
+      "fishnet"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

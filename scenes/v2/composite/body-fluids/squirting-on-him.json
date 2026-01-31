@@ -1,0 +1,49 @@
+{
+  "id": "squirting-on-him",
+  "slug": "squirting-on-him",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "body_fluids"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "squirt-receiving-body",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Сквирт на него",
+    "en": "Squirt on Him"
+  },
+  "subtitle": {
+    "ru": "На его лицо, тело",
+    "en": "On his face, body"
+  },
+  "user_description": {
+    "ru": "Ты сквиртуешь ему на лицо, на грудь, на тело.",
+    "en": "You squirt on his face, chest, body."
+  },
+  "ai_description": {
+    "ru": "Она сквиртует на него — лицо, грудь, тело.",
+    "en": "She squirts on him — face, chest, body."
+  },
+  "image_prompt": "man lying back, liquid spraying onto his chest, woman above him squirting, bedroom setting",
+  "intensity": 3,
+  "category": "body-fluids",
+  "tags": [
+    "squirting",
+    "squirt",
+    "wet"
+  ],
+  "ai_context": {
+    "tests_primary": ["squirting"],
+    "tests_secondary": ["body_fluids"]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Сквиртовать на него?",
+      "en": "Squirt on him?"
+    }
+  }
+}

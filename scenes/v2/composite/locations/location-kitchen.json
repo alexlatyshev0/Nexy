@@ -1,0 +1,49 @@
+{
+  "id": "location-kitchen",
+  "slug": "location-kitchen",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "public",
+    "quickie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Кухня",
+    "en": "Kitchen"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Спонтанный секс на кухне. На столе, на стойке.",
+    "en": "Spontaneous sex in kitchen. On table, on counter."
+  },
+  "ai_description": {
+    "ru": "Секс на кухне. На столе, у холодильника, на стойке.",
+    "en": "Sex in the kitchen. On the table, by the fridge, on the counter."
+  },
+  "image_prompt": "couple on kitchen counter, modern kitchen, passionate moment",
+  "intensity": 2,
+  "category": "locations",
+  "tags": [
+    "locations",
+    "kitchen",
+    "home",
+    "spontaneous"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "locations",
+      "kitchen"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

@@ -1,8 +1,16 @@
 {
-  "id": "ddlg",
+  "id": "daddy-dom-little-girl",
   "slug": "daddy-dom-little-girl",
   "version": 2,
-  "paired_scene": "mdlb",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "roleplay",
+    "power_dynamic"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "paired_scene": "mommy-dom-little-boy",
   "role_direction": "m_daddy_f_little",
   "title": {
     "ru": "DDlg",
@@ -12,13 +20,17 @@
     "ru": "Daddy Dom / Little Girl",
     "en": "Daddy Dom / Little Girl"
   },
+  "user_description": {
+    "ru": "Ты играешь роль Daddy или его маленькой девочки — забота, правила, защита.",
+    "en": "You play the role of Daddy or his little girl — care, rules, protection."
+  },
   "ai_description": {
     "ru": "Он — Daddy, она — его маленькая девочка. Забота, правила, защита, баловство. Не про возраст — про динамику отношений.",
     "en": "He's Daddy, she's his little girl. Care, rules, protection, spoiling. Not about age — about relationship dynamic."
   },
   "image_prompt": "man sitting on bed, woman on his lap wearing white cotton panties and oversized t-shirt, cozy bedroom with soft warm light",
   "intensity": 3,
-  "category": "age_play",
+  "category": "age-play",
   "tags": [
     "ddlg",
     "daddy",
@@ -27,315 +39,6 @@
     "caregiver",
     "nurturing"
   ],
-  "elements": [
-    {
-      "id": "daddy_role",
-      "label": {
-        "ru": "Роль Daddy",
-        "en": "Daddy role"
-      },
-      "tag_ref": "daddy_role",
-      "follow_ups": [
-        {
-          "id": "daddy_traits",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что важно в Daddy?",
-            "en": "What's important in Daddy?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "protective",
-                "label": {
-                  "ru": "Защищает",
-                  "en": "Protective"
-                }
-              },
-              {
-                "id": "rules",
-                "label": {
-                  "ru": "Устанавливает правила",
-                  "en": "Sets rules"
-                }
-              },
-              {
-                "id": "spoils",
-                "label": {
-                  "ru": "Балует",
-                  "en": "Spoils"
-                }
-              },
-              {
-                "id": "strict",
-                "label": {
-                  "ru": "Строгий",
-                  "en": "Strict"
-                }
-              },
-              {
-                "id": "gentle",
-                "label": {
-                  "ru": "Нежный",
-                  "en": "Gentle"
-                }
-              },
-              {
-                "id": "punishes",
-                "label": {
-                  "ru": "Наказывает",
-                  "en": "Punishes"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "little_space",
-      "label": {
-        "ru": "Little space",
-        "en": "Little space"
-      },
-      "tag_ref": "little_space",
-      "follow_ups": [
-        {
-          "id": "little_elements",
-          "type": "multi_select",
-          "question": {
-            "ru": "Элементы little space?",
-            "en": "Little space elements?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "stuffies",
-                "label": {
-                  "ru": "Мягкие игрушки",
-                  "en": "Stuffed animals"
-                }
-              },
-              {
-                "id": "coloring",
-                "label": {
-                  "ru": "Раскраски",
-                  "en": "Coloring books"
-                }
-              },
-              {
-                "id": "cartoons",
-                "label": {
-                  "ru": "Мультики",
-                  "en": "Cartoons"
-                }
-              },
-              {
-                "id": "pacifier",
-                "label": {
-                  "ru": "Соска",
-                  "en": "Pacifier"
-                }
-              },
-              {
-                "id": "cute_clothes",
-                "label": {
-                  "ru": "Милая одежда",
-                  "en": "Cute clothes"
-                }
-              },
-              {
-                "id": "baby_talk",
-                "label": {
-                  "ru": "Детская речь",
-                  "en": "Baby talk"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "rules_punishments",
-      "label": {
-        "ru": "Правила и наказания",
-        "en": "Rules & punishments"
-      },
-      "tag_ref": "ddlg_rules",
-      "follow_ups": [
-        {
-          "id": "types",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие правила/наказания?",
-            "en": "What rules/punishments?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "bedtime",
-                "label": {
-                  "ru": "Время сна",
-                  "en": "Bedtime"
-                }
-              },
-              {
-                "id": "chores",
-                "label": {
-                  "ru": "Обязанности",
-                  "en": "Chores"
-                }
-              },
-              {
-                "id": "corner",
-                "label": {
-                  "ru": "Угол",
-                  "en": "Corner time"
-                }
-              },
-              {
-                "id": "spanking",
-                "label": {
-                  "ru": "Шлепки",
-                  "en": "Spanking"
-                }
-              },
-              {
-                "id": "no_toys",
-                "label": {
-                  "ru": "Забрать игрушки",
-                  "en": "No toys"
-                }
-              },
-              {
-                "id": "rewards",
-                "label": {
-                  "ru": "Награды за хорошее",
-                  "en": "Rewards for good"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "sexual_or_not",
-      "label": {
-        "ru": "Сексуально?",
-        "en": "Sexual?"
-      },
-      "tag_ref": "ddlg_sexual",
-      "follow_ups": [
-        {
-          "id": "sexual_element",
-          "type": "single_select",
-          "question": {
-            "ru": "Сексуальный элемент?",
-            "en": "Sexual element?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "non_sexual",
-                "label": {
-                  "ru": "Нет, только динамика",
-                  "en": "No, just dynamic"
-                }
-              },
-              {
-                "id": "sometimes",
-                "label": {
-                  "ru": "Иногда, отдельно от little space",
-                  "en": "Sometimes, separate from little space"
-                }
-              },
-              {
-                "id": "integrated",
-                "label": {
-                  "ru": "Интегрировано",
-                  "en": "Integrated"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "ddlg_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что нравится?",
-            "en": "What do you like?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "care",
-                "label": {
-                  "ru": "Забота",
-                  "en": "Being cared for"
-                }
-              },
-              {
-                "id": "safety",
-                "label": {
-                  "ru": "Безопасность",
-                  "en": "Safety"
-                }
-              },
-              {
-                "id": "no_responsibility",
-                "label": {
-                  "ru": "Нет ответственности",
-                  "en": "No responsibility"
-                }
-              },
-              {
-                "id": "regression",
-                "label": {
-                  "ru": "Регрессия (отдых от взрослости)",
-                  "en": "Regression (break from adulting)"
-                }
-              },
-              {
-                "id": "structure",
-                "label": {
-                  "ru": "Структура, правила",
-                  "en": "Structure, rules"
-                }
-              },
-              {
-                "id": "innocence",
-                "label": {
-                  "ru": "Невинность",
-                  "en": "Innocence"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в DDlg?",
-      "en": "What appeals about DDlg?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "ddlg",
@@ -348,8 +51,11 @@
       "nurturing"
     ]
   },
-  "user_description": {
-    "ru": "Мужчина играет роль Daddy, женщина играет роль его маленькой девочки",
-    "en": "Man plays the role of Daddy, woman plays the role of his little girl"
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "DDlg — интересно?",
+      "en": "DDlg — interested?"
+    }
   }
 }

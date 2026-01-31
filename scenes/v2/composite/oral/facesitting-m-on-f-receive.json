@@ -1,0 +1,58 @@
+{
+  "id": "facesitting-m-on-f-receive",
+  "slug": "facesitting-m-on-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "oral",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "facesitting-he-on-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Facesitting",
+    "en": "Facesitting"
+  },
+  "subtitle": {
+    "ru": "Он на твоём лице",
+    "en": "He sits on your face"
+  },
+  "user_description": {
+    "ru": "Он садится на твоё лицо. Ты сосёшь его член и лижешь его яйца снизу.",
+    "en": "He sits on your face. You suck his cock and lick his balls from below."
+  },
+  "ai_description": {
+    "ru": "Он садится на её лицо, она делает ему минет или римминг снизу. Его контроль, её подчинение, необычный угол.",
+    "en": "He sits on her face, she gives oral or rimming from below. His control, her submission, unusual angle."
+  },
+  "image_prompt": "man sitting on woman's face, woman lying on back beneath him, both nude on bed, bedroom setting",
+  "intensity": 4,
+  "category": "oral",
+  "tags": [
+    "facesitting",
+    "oral",
+    "submission",
+    "control"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "facesitting",
+      "oral",
+      "submission"
+    ],
+    "tests_secondary": [
+      "control",
+      "service"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Он на твоём лице — фейсситтинг?",
+      "en": "He on your face — facesitting?"
+    }
+  }
+}

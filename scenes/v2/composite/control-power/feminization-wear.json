@@ -1,0 +1,57 @@
+{
+  "id": "feminization-wear",
+  "slug": "feminization-wear",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "feminization-do",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Феминизация",
+    "en": "Feminization"
+  },
+  "subtitle": {
+    "ru": "Ты становишься девочкой",
+    "en": "You become a girl"
+  },
+  "user_description": {
+    "ru": "Ты надеваешь женскую одежду, макияж. Она превращает тебя в девочку.",
+    "en": "You put on women's clothes, makeup. She transforms you into a girl."
+  },
+  "ai_description": {
+    "ru": "Когда он надевает женскую одежду, макияж, ведёт себя женственно. От лёгкого переодевания до полного образа.",
+    "en": "When he wears women's clothing, makeup, acts feminine. From light crossdressing to full transformation."
+  },
+  "image_prompt": "man wearing feminine lingerie and light makeup, sitting at vanity mirror, bedroom setting",
+  "intensity": 3,
+  "category": "control-power",
+  "tags": [
+    "feminization",
+    "crossdressing",
+    "sissy",
+    "gender_play"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "feminization",
+      "crossdressing",
+      "sissy"
+    ],
+    "tests_secondary": [
+      "gender_play",
+      "submission"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в ношении женского?",
+      "en": "What appeals about wearing feminine clothes?"
+    }
+      }
+}

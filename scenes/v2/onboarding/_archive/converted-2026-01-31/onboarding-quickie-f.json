@@ -1,0 +1,40 @@
+{
+  "id": "aea5b268-6544-4977-a8df-d31c9b6e23a0",
+  "slug": "onboarding-quickie-f",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 6.1,
+  "for_gender": "female",
+  "paired_with": null,
+  "title": {
+    "ru": "Быстрый секс",
+    "en": "Quickie"
+  },
+  "subtitle": {
+    "ru": "Здесь и сейчас",
+    "en": "Here and now"
+  },
+  "ai_description": {
+    "ru": "Интерес к спонтанному быстрому сексу. Гейтит: quickie, kitchen-counter, angry-sex.",
+    "en": "Interest in spontaneous quick sex. Gates: quickie, kitchen-counter, angry-sex."
+  },
+  "user_description": {
+    "ru": "Он прижимает тебя к стене в коридоре. Быстро, жадно, не раздеваясь полностью.",
+    "en": "He pins you against the hallway wall. Quick, hungry, clothes still half on."
+  },
+  "image_prompt": "man in jeans pressing woman in skirt against wall, both partially clothed, hallway",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "quickie"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "quickie"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "quickie"
+}

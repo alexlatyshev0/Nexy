@@ -1,8 +1,16 @@
 {
-  "id": "wax_play_m_to_f",
+  "id": "wax-play-he-on-her",
   "slug": "wax-play-he-on-her",
   "version": 2,
-  "paired_scene": "wax_play_f_to_m",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough",
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "wax-play-m-to-f-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Восковые игры",
@@ -12,13 +20,17 @@
     "ru": "Он капает на неё",
     "en": "He drips on her"
   },
+  "user_description": {
+    "ru": "Ты капаешь горячий воск свечи на её тело.",
+    "en": "You drip hot candle wax on her body."
+  },
   "ai_description": {
     "ru": "Она лежит связанная, с повязкой на глазах. Он держит свечу над ней. Капля горячего воска падает на её кожу — она вздрагивает от жгучего удовольствия.",
     "en": "She lies bound, blindfolded. He holds a candle above her. A drop of hot wax falls on her skin — she gasps from the burning pleasure."
   },
   "image_prompt": "man dripping candle wax on woman lying on bed, she nude bound with rope, he shirtless holding candle above her body, red wax drops falling on skin, bedroom setting with candles",
   "intensity": 3,
-  "category": "impact_pain",
+  "category": "impact-pain",
   "tags": [
     "wax_play",
     "hot_wax",
@@ -27,372 +39,6 @@
     "bdsm",
     "pain_pleasure"
   ],
-  "elements": [
-    {
-      "id": "body_areas",
-      "label": {
-        "ru": "Куда капать?",
-        "en": "Where to drip?"
-      },
-      "tag_ref": "wax_location",
-      "follow_ups": [
-        {
-          "id": "areas",
-          "type": "body_map",
-          "question": {
-            "ru": "На какие части тела?",
-            "en": "On which body parts?"
-          },
-          "config": {
-            "zones": [
-              {
-                "id": "stomach",
-                "label": {
-                  "ru": "Живот",
-                  "en": "Stomach"
-                }
-              },
-              {
-                "id": "breasts",
-                "label": {
-                  "ru": "Грудь",
-                  "en": "Breasts"
-                }
-              },
-              {
-                "id": "nipples",
-                "label": {
-                  "ru": "Соски",
-                  "en": "Nipples"
-                }
-              },
-              {
-                "id": "back",
-                "label": {
-                  "ru": "Спина",
-                  "en": "Back"
-                }
-              },
-              {
-                "id": "thighs",
-                "label": {
-                  "ru": "Бёдра",
-                  "en": "Thighs"
-                }
-              },
-              {
-                "id": "ass",
-                "label": {
-                  "ru": "Попа",
-                  "en": "Ass"
-                }
-              },
-              {
-                "id": "genitals",
-                "label": {
-                  "ru": "Гениталии",
-                  "en": "Genitals"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "temperature",
-      "label": {
-        "ru": "Температура",
-        "en": "Temperature"
-      },
-      "tag_ref": "wax_temperature",
-      "follow_ups": [
-        {
-          "id": "heat_level",
-          "type": "scale",
-          "question": {
-            "ru": "Насколько горячо?",
-            "en": "How hot?"
-          },
-          "config": {
-            "min_label": {
-              "ru": "Тёплый, нежный",
-              "en": "Warm, gentle"
-            },
-            "max_label": {
-              "ru": "Горячий, обжигающий",
-              "en": "Hot, burning"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "candle_type",
-      "label": {
-        "ru": "Тип свечи",
-        "en": "Candle type"
-      },
-      "tag_ref": "wax_candle",
-      "follow_ups": [
-        {
-          "id": "candle",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие свечи?",
-            "en": "What candles?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "massage_candle",
-                "label": {
-                  "ru": "Массажные (низкая температура)",
-                  "en": "Massage candles (low temp)"
-                }
-              },
-              {
-                "id": "soy",
-                "label": {
-                  "ru": "Соевые",
-                  "en": "Soy"
-                }
-              },
-              {
-                "id": "paraffin",
-                "label": {
-                  "ru": "Парафиновые (горячее)",
-                  "en": "Paraffin (hotter)"
-                }
-              },
-              {
-                "id": "colored",
-                "label": {
-                  "ru": "Цветные (для узоров)",
-                  "en": "Colored (for patterns)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "bondage_combo",
-      "label": {
-        "ru": "С бондажем?",
-        "en": "With bondage?"
-      },
-      "tag_ref": "wax_bondage",
-      "follow_ups": [
-        {
-          "id": "restraints",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как связана?",
-            "en": "How restrained?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "not_tied",
-                "label": {
-                  "ru": "Не связана",
-                  "en": "Not tied"
-                }
-              },
-              {
-                "id": "hands",
-                "label": {
-                  "ru": "Руки связаны",
-                  "en": "Hands tied"
-                }
-              },
-              {
-                "id": "spread",
-                "label": {
-                  "ru": "Растянута",
-                  "en": "Spread eagle"
-                }
-              },
-              {
-                "id": "blindfold",
-                "label": {
-                  "ru": "Повязка на глаза",
-                  "en": "Blindfolded"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "sensory",
-      "label": {
-        "ru": "Контраст",
-        "en": "Contrast"
-      },
-      "tag_ref": "temperature_contrast",
-      "follow_ups": [
-        {
-          "id": "contrast_play",
-          "type": "multi_select",
-          "question": {
-            "ru": "Контраст температур?",
-            "en": "Temperature contrast?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "just_wax",
-                "label": {
-                  "ru": "Только воск",
-                  "en": "Just wax"
-                }
-              },
-              {
-                "id": "ice_after",
-                "label": {
-                  "ru": "Лёд после воска",
-                  "en": "Ice after wax"
-                }
-              },
-              {
-                "id": "alternate",
-                "label": {
-                  "ru": "Чередовать горячее/холодное",
-                  "en": "Alternate hot/cold"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "removal",
-      "label": {
-        "ru": "Снятие воска",
-        "en": "Wax removal"
-      },
-      "tag_ref": "wax_removal",
-      "follow_ups": [
-        {
-          "id": "how_remove",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как снимать?",
-            "en": "How to remove?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "peel",
-                "label": {
-                  "ru": "Отклеивать медленно",
-                  "en": "Peel slowly"
-                }
-              },
-              {
-                "id": "scrape",
-                "label": {
-                  "ru": "Соскребать",
-                  "en": "Scrape off"
-                }
-              },
-              {
-                "id": "knife",
-                "label": {
-                  "ru": "Ножом (fear play)",
-                  "en": "With knife (fear play)"
-                }
-              },
-              {
-                "id": "leave",
-                "label": {
-                  "ru": "Оставить на время",
-                  "en": "Leave on"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "wax_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "sensation",
-                "label": {
-                  "ru": "Ощущение жжения",
-                  "en": "Burning sensation"
-                }
-              },
-              {
-                "id": "anticipation",
-                "label": {
-                  "ru": "Ожидание капли",
-                  "en": "Anticipation of drop"
-                }
-              },
-              {
-                "id": "vulnerability",
-                "label": {
-                  "ru": "Уязвимость",
-                  "en": "Vulnerability"
-                }
-              },
-              {
-                "id": "his_control",
-                "label": {
-                  "ru": "Его контроль",
-                  "en": "His control"
-                }
-              },
-              {
-                "id": "art",
-                "label": {
-                  "ru": "Узоры на коже",
-                  "en": "Patterns on skin"
-                }
-              },
-              {
-                "id": "pain_pleasure",
-                "label": {
-                  "ru": "Боль → удовольствие",
-                  "en": "Pain → pleasure"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в восковых играх?",
-      "en": "What appeals about wax play?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "wax_play",
@@ -417,8 +63,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Он капает горячий воск свечи на её тело.",
-    "en": "He drips hot candle wax on her body."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в восковых играх?",
+      "en": "What appeals about wax play?"
+    }
+      }
 }

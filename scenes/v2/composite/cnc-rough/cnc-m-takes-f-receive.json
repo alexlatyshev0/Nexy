@@ -1,0 +1,61 @@
+{
+  "id": "cnc-he-takes-her-receive",
+  "slug": "cnc-he-takes-her-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "cnc-he-takes-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "CNC",
+    "en": "CNC"
+  },
+  "subtitle": {
+    "ru": "Он берёт тебя",
+    "en": "He takes you"
+  },
+  "user_description": {
+    "ru": "Он прижимает тебя к стене, держит твои руки над головой, входит грубо. Ты изображаешь сопротивление. По обоюдному согласию.",
+    "en": "He pins you against the wall, holds your hands above your head, enters roughly. You act resistant. Consensual."
+  },
+  "ai_description": {
+    "ru": "Consensual non-consent. Она 'сопротивляется', он 'берёт силой'. Всё по согласию, но игра в принуждение. Первобытный инстинкт, контролируемый хаос.",
+    "en": "Consensual non-consent. She 'resists', he 'takes by force'. All consensual, but playing at coercion. Primal instinct, controlled chaos."
+  },
+  "image_prompt": "man pinning woman against wall, holding her wrists above head with one hand, she wearing torn lingerie, he shirtless, bedroom setting",
+  "intensity": 5,
+  "category": "cnc-rough",
+  "tags": [
+    "cnc",
+    "consensual_non_consent",
+    "rape_fantasy",
+    "primal",
+    "struggle",
+    "force"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "cnc",
+      "rape_fantasy",
+      "consensual_non_consent"
+    ],
+    "tests_secondary": [
+      "primal",
+      "struggle",
+      "force"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в CNC?",
+      "en": "What appeals about CNC?"
+    }
+      }
+}

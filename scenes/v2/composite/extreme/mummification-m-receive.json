@@ -1,0 +1,57 @@
+{
+  "id": "mummification-m-receive",
+  "slug": "mummification-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "mummification-m",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Мумификация",
+    "en": "Mummification"
+  },
+  "subtitle": {
+    "ru": "Ты полностью обездвижен",
+    "en": "You're fully immobilized"
+  },
+  "user_description": {
+    "ru": "Она полностью заворачивает тебя в плёнку или бинты, ты не можешь пошевелиться.",
+    "en": "She fully wraps you in plastic or bandages, you can't move."
+  },
+  "ai_description": {
+    "ru": "М полностью завёрнут — плёнка, бинты, вакуумная кровать. Сенсорная депривация и полная беспомощность.",
+    "en": "M fully wrapped — plastic, bandages, vacuum bed. Sensory deprivation and total helplessness."
+  },
+  "image_prompt": "man wrapped entirely in plastic wrap on padded table, only mouth and nose visible, woman standing beside him, dungeon room with dim lighting",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": [
+    "mummification",
+    "bondage",
+    "sensory_deprivation",
+    "submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "mummification",
+      "bondage",
+      "submission"
+    ],
+    "tests_secondary": [
+      "sensory_deprivation",
+      "femdom"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Ты полностью обездвижен — плёнка, бинты?",
+      "en": "You're fully immobilized — wrap, bandages?"
+    }
+  }
+}

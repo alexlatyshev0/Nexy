@@ -44,7 +44,7 @@ type GenerationStatus = 'idle' | 'pending' | 'generating' | 'completed' | 'error
 type QAStatus = 'passed' | 'failed' | null;
 
 // V3 fields that extend Scene (with optional overrides for admin UI)
-interface SceneWithStatus extends Omit<Scene, 'ai_description' | 'user_description' | 'participants'> {
+interface SceneWithStatus extends Omit<Scene, 'ai_description' | 'user_description' | 'participants' | 'question_type'> {
   selected: boolean;
   status: GenerationStatus;
   error?: string;
@@ -52,6 +52,9 @@ interface SceneWithStatus extends Omit<Scene, 'ai_description' | 'user_descripti
   // Core description fields (JSONB localized)
   ai_description?: { en: string; ru: string };
   user_description?: { en: string; ru: string };
+  // Dual descriptions for M/F perspectives
+  user_description_alt?: { en: string; ru: string };
+  alt_for_gender?: 'male' | 'female' | null;
   // V2 fields (legacy V3/V4 fields kept for compatibility)
   slug?: string;
   priority?: number;
@@ -84,6 +87,12 @@ interface SceneWithStatus extends Omit<Scene, 'ai_description' | 'user_descripti
   prompt_instructions?: string; // User notes for AI on how to modify prompt
   // Manual acceptance
   accepted?: boolean | null;
+  // Scene visibility
+  is_active?: boolean;
+  // Paired scene (give/receive perspectives)
+  paired_with?: string;
+  // Scene to share images with (uses their image_variants)
+  shared_images_with?: string;
   // Image variants for comparison
   image_variants?: ImageVariant[];
   // UI state
@@ -107,6 +116,8 @@ const RESOLUTION_PRESETS = [
   { id: '3:4', name: '3:4 Portrait', width: 768, height: 1024 },
 ];
 
+type QAEvaluator = 'replicate' | 'claude';
+
 interface GlobalSettings {
   service: ServiceType;
   styleVariant: keyof typeof STYLE_VARIANTS | 'default';
@@ -115,7 +126,9 @@ interface GlobalSettings {
   modelId: string;
   aspectRatio: string;
   enableQA: boolean;
+  qaEvaluator: QAEvaluator; // 'replicate' (LLaVA, NSFW-safe) or 'claude'
   useAiContext: boolean; // When false, only use generation_prompt (no ai_context)
+  modelStyles: Record<string, string>; // Saved style prefix per model
 }
 
 // Civitai models
@@ -161,7 +174,9 @@ const DEFAULT_SETTINGS: GlobalSettings = {
   modelId: '4201',
   aspectRatio: '3:2',
   enableQA: false,
+  qaEvaluator: 'replicate', // Default to Replicate (LLaVA) for NSFW support
   useAiContext: true, // Use ai_context by default
+  modelStyles: {}, // Saved style prefix per model
 };
 
 function loadSettings(): GlobalSettings {
@@ -330,10 +345,13 @@ export default function AdminScenesPage() {
   const [generating, setGenerating] = useState(false);
   const [settings, setSettings] = useState<GlobalSettings>(DEFAULT_SETTINGS);
   const [showSettings, setShowSettings] = useState(true);
-  const [filter, setFilter] = useState<'all' | 'no_image' | 'has_image' | 'qa_failed' | 'v2_only' | 'accepted' | 'rejected' | 'not_reviewed'>('all');
+  const [filter, setFilter] = useState<'all' | 'active' | 'inactive' | 'no_image' | 'has_image' | 'qa_failed' | 'v2_only' | 'accepted' | 'rejected' | 'not_reviewed' | 'paired'>('active');
   const [logs, setLogs] = useState<LogEntry[]>([]);
+  const [showLogs, setShowLogs] = useState(false);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   const [qaDetailScene, setQaDetailScene] = useState<SceneWithStatus | null>(null);
+  const [showV3Creator, setShowV3Creator] = useState(false);
+  const [v3CreatorLoading, setV3CreatorLoading] = useState(false);
 
   // Ref to access current scenes in callbacks (avoids stale closure)
   const scenesRef = useRef<SceneWithStatus[]>([]);
@@ -341,21 +359,85 @@ export default function AdminScenesPage() {
 
   const supabase = createClient();
 
-  // Load settings from localStorage on mount
+  // Ref to track if we've synced with server
+  const serverSyncedRef = useRef(false);
+  const saveTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Load settings from localStorage first, then sync with server
   useEffect(() => {
-    setSettings(loadSettings());
+    // Load from localStorage immediately
+    const localSettings = loadSettings();
+    setSettings(localSettings);
+
+    // Then load from server and merge
+    fetch('/api/admin/settings')
+      .then((res) => res.json())
+      .then(({ settings: serverSettings }) => {
+        if (serverSettings?.modelStyles) {
+          // Merge server modelStyles with local (server takes priority)
+          const mergedStyles = { ...localSettings.modelStyles, ...serverSettings.modelStyles };
+          const merged = { ...localSettings, modelStyles: mergedStyles };
+          setSettings(merged);
+          saveSettings(merged); // Update localStorage with merged data
+          console.log('[Settings] Synced with server:', Object.keys(mergedStyles).length, 'model styles');
+        }
+        serverSyncedRef.current = true;
+      })
+      .catch((err) => {
+        console.error('[Settings] Failed to load from server:', err);
+        serverSyncedRef.current = true; // Still mark as synced to allow saves
+      });
   }, []);
 
-  // Save settings when they change
+  // Save settings when they change (debounced save to server)
   const updateSettings = (newSettings: GlobalSettings) => {
     setSettings(newSettings);
-    saveSettings(newSettings);
+    saveSettings(newSettings); // Save to localStorage immediately
+
+    // Debounced save to server (only modelStyles)
+    if (saveTimeoutRef.current) {
+      clearTimeout(saveTimeoutRef.current);
+    }
+    saveTimeoutRef.current = setTimeout(() => {
+      fetch('/api/admin/settings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ settings: { modelStyles: newSettings.modelStyles } }),
+      })
+        .then(() => console.log('[Settings] Saved to server'))
+        .catch((err) => console.error('[Settings] Failed to save to server:', err));
+    }, 1000); // 1 second debounce
   };
 
   const addLog = (message: string, type: LogEntry['type'] = 'info') => {
     const time = new Date().toLocaleTimeString();
     setLogs((prev) => [...prev.slice(-50), { time, message, type }]);
   };
+
+  // Get effective image variants (from shared_images_with source if set, otherwise own)
+  const getEffectiveVariants = useCallback((scene: SceneWithStatus): ImageVariant[] => {
+    // If scene shares images with another scene, ALWAYS use source variants
+    if (scene.shared_images_with) {
+      const linkedScene = scenes.find(s => s.id === scene.shared_images_with);
+      if (linkedScene?.image_variants && linkedScene.image_variants.length > 0) {
+        return linkedScene.image_variants;
+      }
+    }
+    // Otherwise use own variants
+    if (scene.image_variants && scene.image_variants.length > 0) {
+      return scene.image_variants;
+    }
+    return [];
+  }, [scenes]);
+
+  // Get the source scene slug for shared images
+  const getSharedSourceSlug = useCallback((scene: SceneWithStatus): string | null => {
+    if (scene.shared_images_with) {
+      const linkedScene = scenes.find(s => s.id === scene.shared_images_with);
+      return linkedScene?.slug || null;
+    }
+    return null;
+  }, [scenes]);
 
   const loadScenes = useCallback(async () => {
     setLoading(true);
@@ -417,6 +499,13 @@ export default function AdminScenesPage() {
   }, [loadScenes]);
 
   const filteredScenes = scenes.filter((scene) => {
+    const isActive = scene.is_active !== false;
+    if (filter === 'active') return isActive;
+    if (filter === 'inactive') return !isActive;
+    if (filter === 'all') return true;
+    // All other filters only show active scenes
+    if (!isActive) return false;
+    if (filter === 'paired') return !!scene.paired_with;
     if (filter === 'no_image') return !scene.image_url;
     if (filter === 'has_image') return !!scene.image_url;
     if (filter === 'qa_failed') return scene.qa_status === 'failed';
@@ -632,6 +721,129 @@ export default function AdminScenesPage() {
     }
   };
 
+  // Save user_description_alt (alternative description for other gender)
+  const saveUserDescriptionAlt = async (id: string, locale: 'en' | 'ru', value: string) => {
+    const scene = scenesRef.current.find(s => s.id === id);
+    const user_description_alt = {
+      ...(scene?.user_description_alt || { en: '', ru: '' }),
+      [locale]: value,
+    };
+
+    // Update local state
+    setScenes((prev) =>
+      prev.map((s) => (s.id === id ? { ...s, user_description_alt } : s))
+    );
+
+    try {
+      const response = await fetch('/api/admin/update-scene', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sceneId: id,
+          field: 'user_description_alt',
+          value: user_description_alt,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        addLog(`Error saving alt description: ${result.error}`, 'error');
+      } else {
+        addLog(`Alt description updated`, 'success');
+      }
+    } catch (error) {
+      addLog(`Error: ${(error as Error).message}`, 'error');
+    }
+  };
+
+  // Translate alt RU description to EN
+  const translateDescriptionAlt = async (id: string) => {
+    const scene = scenes.find(s => s.id === id);
+    const ruText = scene?.user_description_alt?.ru;
+
+    if (!ruText) {
+      addLog('No Russian alt text to translate', 'error');
+      return;
+    }
+
+    addLog('Translating alt description...', 'info');
+
+    try {
+      const response = await fetch('/api/admin/translate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: ruText, targetLang: 'en' }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Translation failed');
+      }
+
+      const newDescription = {
+        ru: ruText,
+        en: result.translation,
+      };
+
+      // Update local state
+      setScenes((prev) =>
+        prev.map((s) => (s.id === id ? { ...s, user_description_alt: newDescription } : s))
+      );
+
+      // Save to DB
+      const saveResponse = await fetch('/api/admin/update-scene', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sceneId: id,
+          field: 'user_description_alt',
+          value: newDescription,
+        }),
+      });
+
+      if (!saveResponse.ok) {
+        const saveResult = await saveResponse.json();
+        throw new Error(saveResult.error || 'Save failed');
+      }
+
+      addLog('Alt translation complete', 'success');
+    } catch (error) {
+      addLog(`Translation error: ${(error as Error).message}`, 'error');
+    }
+  };
+
+  // Save alt_for_gender (which gender sees the alt description)
+  const saveAltForGender = async (id: string, value: 'male' | 'female' | null) => {
+    // Update local state
+    setScenes((prev) =>
+      prev.map((s) => (s.id === id ? { ...s, alt_for_gender: value } : s))
+    );
+
+    try {
+      const response = await fetch('/api/admin/update-scene', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sceneId: id,
+          field: 'alt_for_gender',
+          value,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        addLog(`Error saving alt_for_gender: ${result.error}`, 'error');
+      } else {
+        addLog(`Alt gender target updated to ${value || 'none'}`, 'success');
+      }
+    } catch (error) {
+      addLog(`Error: ${(error as Error).message}`, 'error');
+    }
+  };
+
   // V3: Update ai_context (JSON)
   const saveAiContext = async (id: string, jsonString: string) => {
     try {
@@ -779,7 +991,7 @@ export default function AdminScenesPage() {
     }
   };
 
-  // Set accepted status (manual approval)
+  // Set accepted status (manual approval) - syncs to paired scene too
   const setAccepted = async (id: string, accepted: boolean | null) => {
     // Use API route to bypass RLS
     try {
@@ -800,11 +1012,20 @@ export default function AdminScenesPage() {
         return;
       }
 
+      // Update local state for both the scene and its paired scene
+      const scene = scenes.find(s => s.id === id);
+      const pairedId = scene?.paired_with;
+
       setScenes((prev) =>
-        prev.map((s) => (s.id === id ? { ...s, accepted } : s))
+        prev.map((s) => {
+          if (s.id === id || s.id === pairedId) {
+            return { ...s, accepted };
+          }
+          return s;
+        })
       );
       const statusText = accepted === true ? 'accepted' : accepted === false ? 'rejected' : 'cleared';
-      addLog(`Scene ${statusText}`, 'success');
+      addLog(`Scene ${statusText}${pairedId ? ' (+ paired)' : ''}`, 'success');
     } catch (error) {
       addLog(`Error: ${(error as Error).message}`, 'error');
     }
@@ -867,9 +1088,17 @@ export default function AdminScenesPage() {
         return;
       }
 
-      setScenes((prev) =>
-        prev.map((s) => (s.id === sceneId ? { ...s, image_url: variantUrl } : s))
-      );
+      // Update current scene and its paired scene (API syncs to paired)
+      setScenes((prev) => {
+        const currentScene = prev.find(s => s.id === sceneId);
+        const pairedId = currentScene?.paired_with;
+        return prev.map((s) => {
+          if (s.id === sceneId || s.id === pairedId) {
+            return { ...s, image_url: variantUrl };
+          }
+          return s;
+        });
+      });
       addLog('Variant selected as main image', 'success');
     } catch (error) {
       addLog(`Error: ${(error as Error).message}`, 'error');
@@ -892,8 +1121,10 @@ export default function AdminScenesPage() {
         return;
       }
 
+      // Update the scene that was actually modified (may be source scene for shared images)
+      const modifiedId = result.modifiedSceneId || sceneId;
       setScenes((prev) =>
-        prev.map((s) => (s.id === sceneId ? { ...s, image_variants: result.variants } : s))
+        prev.map((s) => (s.id === modifiedId ? { ...s, image_variants: result.variants } : s))
       );
       addLog('Variant deleted', 'success');
     } catch (error) {
@@ -901,18 +1132,80 @@ export default function AdminScenesPage() {
     }
   };
 
-  // Keep & Retry: save current image as variant, then regenerate
-  const keepAndRetry = async (scene: SceneWithStatus) => {
-    // Capture current URL and prompt BEFORE generating new image
+  // Save current image to gallery
+  const saveToGallery = async (scene: SceneWithStatus) => {
     const currentUrl = scene.image_url;
     const currentPrompt = scene.generation_prompt;
 
-    // First save current image as variant (pass URL explicitly)
     if (currentUrl) {
       await saveAsVariant(scene.id, currentUrl, currentPrompt);
     }
-    // Then generate new image
-    await generateScene(scene);
+  };
+
+  // Generate new image and add to gallery (without replacing current)
+  const generateToGallery = async (scene: SceneWithStatus) => {
+    if (!scene.generation_prompt) {
+      addLog('No generation prompt', 'error');
+      return;
+    }
+
+    setScenes((prev) =>
+      prev.map((s) => (s.id === scene.id ? { ...s, status: 'generating' } : s))
+    );
+    addLog(`Generating new image for gallery...`, 'info');
+
+    try {
+      // Generate image
+      const generateResponse = await fetch('/api/admin/generate-image', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          prompt: scene.generation_prompt,
+          sceneId: scene.id,
+          service: settings.service,
+          modelId: settings.modelId,
+          aspectRatio: settings.aspectRatio,
+        }),
+      });
+
+      const generateResult = await generateResponse.json();
+
+      if (!generateResponse.ok) {
+        throw new Error(generateResult.error || 'Generation failed');
+      }
+
+      // Save generated image as variant
+      const saveResponse = await fetch('/api/admin/save-variant', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sceneId: scene.id,
+          action: 'save',
+          imageUrl: generateResult.imageUrl,
+          prompt: scene.generation_prompt,
+        }),
+      });
+
+      const saveResult = await saveResponse.json();
+
+      if (!saveResponse.ok) {
+        throw new Error(saveResult.error || 'Failed to save to gallery');
+      }
+
+      setScenes((prev) =>
+        prev.map((s) => (s.id === scene.id ? {
+          ...s,
+          status: 'completed',
+          image_variants: saveResult.variants,
+        } : s))
+      );
+      addLog(`Image added to gallery (${saveResult.variants.length} total)`, 'success');
+    } catch (error) {
+      setScenes((prev) =>
+        prev.map((s) => (s.id === scene.id ? { ...s, status: 'error', error: (error as Error).message } : s))
+      );
+      addLog(`Error: ${(error as Error).message}`, 'error');
+    }
   };
 
   // Upload image directly
@@ -937,7 +1230,11 @@ export default function AdminScenesPage() {
       }
 
       setScenes((prev) =>
-        prev.map((s) => (s.id === sceneId ? { ...s, image_url: result.imageUrl } : s))
+        prev.map((s) => (s.id === sceneId ? {
+          ...s,
+          image_url: result.imageUrl,
+          image_variants: result.variants,
+        } : s))
       );
       addLog('Image uploaded successfully', 'success');
     } catch (error) {
@@ -1042,17 +1339,44 @@ export default function AdminScenesPage() {
   const deleteScene = async (id: string) => {
     if (!confirm('Delete this scene?')) return;
 
-    await supabase.from('scenes').delete().eq('id', id);
-    setScenes((prev) => prev.filter((s) => s.id !== id));
+    try {
+      const res = await fetch('/api/admin/delete-scene', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id }),
+      });
+      const data = await res.json();
+
+      if (!res.ok || data.error) {
+        addLog(`Ошибка удаления: ${data.error}`, 'error');
+        return;
+      }
+
+      addLog('Сцена удалена', 'success');
+      setScenes((prev) => prev.filter((s) => s.id !== id));
+    } catch (e) {
+      addLog(`Ошибка: ${(e as Error).message}`, 'error');
+    }
   };
 
   const deleteSelected = async () => {
     const selected = scenes.filter((s) => s.selected);
     if (!confirm(`Delete ${selected.length} scenes?`)) return;
 
+    let deleted = 0;
     for (const scene of selected) {
-      await supabase.from('scenes').delete().eq('id', scene.id);
+      try {
+        const res = await fetch('/api/admin/delete-scene', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: scene.id }),
+        });
+        if (res.ok) deleted++;
+      } catch (e) {
+        console.error('Delete error:', e);
+      }
     }
+    addLog(`Удалено ${deleted} из ${selected.length} сцен`, deleted === selected.length ? 'success' : 'error');
     setScenes((prev) => prev.filter((s) => !s.selected));
   };
 
@@ -1115,6 +1439,7 @@ export default function AdminScenesPage() {
           height: resolution.height,
           aspectRatio: settings.aspectRatio,
           enableQA: qaEnabled,
+          qaEvaluator: settings.qaEvaluator, // 'replicate' or 'claude'
           qaContext: qaContext,
         }),
       });
@@ -1273,7 +1598,6 @@ export default function AdminScenesPage() {
     );
   }
 
-  const qaFailedCount = scenes.filter((s) => s.qa_status === 'failed').length;
 
   return (
     <div className="container mx-auto px-4 max-w-6xl">
@@ -1306,9 +1630,39 @@ export default function AdminScenesPage() {
             <Button
               variant="outline"
               size="sm"
+              onClick={() => setShowV3Creator(true)}
+            >
+              <Wand2 className="size-4 mr-1" />
+              V3 Scenes
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => window.open('/admin/link-images', '_blank')}
+            >
+              <ImageIcon className="size-4 mr-1" />
+              Link Images
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
               onClick={() => window.location.href = '/admin/users'}
             >
               Users Admin
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => window.location.href = '/admin/scene-structure'}
+            >
+              Scene Tree
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => window.location.href = '/admin/body-map-calibration'}
+            >
+              Body Map
             </Button>
           </div>
         </div>
@@ -1324,7 +1678,7 @@ export default function AdminScenesPage() {
             <span className="font-medium">Global Style Settings</span>
             {settings.enableQA && (
               <span className="ml-2 px-2 py-0.5 text-xs bg-green-100 text-green-700 rounded-full">
-                QA Enabled
+                QA: {settings.qaEvaluator === 'replicate' ? 'LLaVA' : 'Claude'}
               </span>
             )}
           </div>
@@ -1333,7 +1687,7 @@ export default function AdminScenesPage() {
 
         {showSettings && (
           <div className="p-4 border-t space-y-4">
-            {/* QA Toggle + Use ai_context */}
+            {/* QA Toggle + Evaluator + Use ai_context */}
             <div className="flex gap-4">
               <div className="flex items-center gap-3 p-3 border rounded-lg bg-muted/30 flex-1">
                 <Checkbox
@@ -1351,6 +1705,23 @@ export default function AdminScenesPage() {
                 </label>
                 <ShieldCheck className={`size-6 ${settings.enableQA ? 'text-green-500' : 'text-gray-300'}`} />
               </div>
+
+              {/* QA Evaluator selector - only show when QA is enabled */}
+              {settings.enableQA && (
+                <div className="p-3 border rounded-lg bg-muted/30">
+                  <label className="text-sm font-medium mb-2 block">QA Evaluator</label>
+                  <select
+                    value={settings.qaEvaluator}
+                    onChange={(e) =>
+                      updateSettings({ ...settings, qaEvaluator: e.target.value as QAEvaluator })
+                    }
+                    className="w-full h-9 rounded-md border px-3 text-sm"
+                  >
+                    <option value="replicate">LLaVA (Replicate) - NSFW OK</option>
+                    <option value="claude">Claude Vision - SFW only</option>
+                  </select>
+                </div>
+              )}
 
               <div className="flex items-center gap-3 p-3 border rounded-lg bg-muted/30 flex-1">
                 <Checkbox
@@ -1377,7 +1748,9 @@ export default function AdminScenesPage() {
                   onChange={(e) => {
                     const newService = e.target.value as ServiceType;
                     const defaultModel = newService === 'replicate' ? 'flux-schnell' : '4201';
-                    updateSettings({ ...settings, service: newService, modelId: defaultModel });
+                    // Load saved style for new model
+                    const savedStyle = settings.modelStyles[defaultModel] || '';
+                    updateSettings({ ...settings, service: newService, modelId: defaultModel, stylePrefix: savedStyle });
                   }}
                   className="w-full h-9 rounded-md border px-3 text-sm"
                 >
@@ -1390,9 +1763,12 @@ export default function AdminScenesPage() {
                 <label className="text-sm font-medium mb-2 block">Model</label>
                 <select
                   value={settings.modelId}
-                  onChange={(e) =>
-                    updateSettings({ ...settings, modelId: e.target.value })
-                  }
+                  onChange={(e) => {
+                    const newModelId = e.target.value;
+                    // Load saved style for new model
+                    const savedStyle = settings.modelStyles[newModelId] || '';
+                    updateSettings({ ...settings, modelId: newModelId, stylePrefix: savedStyle });
+                  }}
                   className="w-full h-9 rounded-md border px-3 text-sm"
                 >
                   {(settings.service === 'replicate' ? REPLICATE_MODELS : CIVITAI_MODELS).map((model) => (
@@ -1440,14 +1816,24 @@ export default function AdminScenesPage() {
             </div>
 
             <div>
-              <label className="text-sm font-medium mb-2 block">Additional Style Prefix</label>
+              <label className="text-sm font-medium mb-2 block">
+                Style Prefix for {(settings.service === 'replicate' ? REPLICATE_MODELS : CIVITAI_MODELS).find(m => m.id === settings.modelId)?.name || settings.modelId}
+              </label>
               <Input
                 placeholder="e.g., warm lighting, cozy bedroom..."
                 value={settings.stylePrefix}
-                onChange={(e) => updateSettings({ ...settings, stylePrefix: e.target.value })}
+                onChange={(e) => {
+                  const newPrefix = e.target.value;
+                  // Save style for current model
+                  updateSettings({
+                    ...settings,
+                    stylePrefix: newPrefix,
+                    modelStyles: { ...settings.modelStyles, [settings.modelId]: newPrefix }
+                  });
+                }}
               />
               <p className="text-xs text-muted-foreground mt-1">
-                Added to the beginning of every prompt
+                Saved per model. Switch model to use different style.
               </p>
             </div>
 
@@ -1465,36 +1851,49 @@ export default function AdminScenesPage() {
 
       {/* Activity Log */}
       <div className="mb-6 border rounded-lg">
-        <div className="p-3 border-b bg-muted/50 flex items-center justify-between">
-          <span className="font-medium text-sm">Activity Log</span>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => setLogs([])}
-          >
-            Clear
-          </Button>
-        </div>
-        <div className="h-32 overflow-y-auto p-3 font-mono text-xs space-y-1 bg-black/5">
-          {logs.length === 0 ? (
-            <p className="text-muted-foreground">No activity yet. Select scenes and click Generate.</p>
-          ) : (
-            logs.map((log, i) => (
-              <div
-                key={i}
-                className={
-                  log.type === 'error'
-                    ? 'text-red-600'
-                    : log.type === 'success'
-                    ? 'text-green-600'
-                    : 'text-foreground'
-                }
-              >
-                <span className="text-muted-foreground">[{log.time}]</span> {log.message}
-              </div>
-            ))
+        <div
+          className="p-3 border-b bg-muted/50 flex items-center justify-between cursor-pointer"
+          onClick={() => setShowLogs(!showLogs)}
+        >
+          <div className="flex items-center gap-2">
+            {showLogs ? <ChevronUp className="size-4" /> : <ChevronDown className="size-4" />}
+            <span className="font-medium text-sm">Activity Log</span>
+            {logs.length > 0 && (
+              <span className="text-xs text-muted-foreground">({logs.length})</span>
+            )}
+          </div>
+          {showLogs && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={(e) => { e.stopPropagation(); setLogs([]); }}
+            >
+              Clear
+            </Button>
           )}
         </div>
+        {showLogs && (
+          <div className="h-32 overflow-y-auto p-3 font-mono text-xs space-y-1 bg-black/5">
+            {logs.length === 0 ? (
+              <p className="text-muted-foreground">No activity yet. Select scenes and click Generate.</p>
+            ) : (
+              logs.map((log, i) => (
+                <div
+                  key={i}
+                  className={
+                    log.type === 'error'
+                      ? 'text-red-600'
+                      : log.type === 'success'
+                      ? 'text-green-600'
+                      : 'text-foreground'
+                  }
+                >
+                  <span className="text-muted-foreground">[{log.time}]</span> {log.message}
+                </div>
+              ))
+            )}
+          </div>
+        )}
       </div>
 
       {/* Toolbar */}
@@ -1505,14 +1904,17 @@ export default function AdminScenesPage() {
             onChange={(e) => setFilter(e.target.value as typeof filter)}
             className="h-9 rounded-md border px-3 text-sm"
           >
+            <option value="active">Active ({scenes.filter((s) => s.is_active !== false).length})</option>
+            <option value="inactive">Inactive ({scenes.filter((s) => s.is_active === false).length})</option>
             <option value="all">All scenes ({scenes.length})</option>
-            <option value="v2_only">V2 scenes ({scenes.filter((s) => s.version === 2).length})</option>
-            <option value="no_image">Without images ({scenes.filter((s) => !s.image_url).length})</option>
-            <option value="has_image">With images ({scenes.filter((s) => s.image_url).length})</option>
-            <option value="qa_failed">QA Failed ({qaFailedCount})</option>
-            <option value="accepted">✓ Accepted ({scenes.filter((s) => s.accepted === true).length})</option>
-            <option value="rejected">✗ Rejected ({scenes.filter((s) => s.accepted === false).length})</option>
-            <option value="not_reviewed">⏳ Not reviewed ({scenes.filter((s) => s.image_url && s.accepted === null).length})</option>
+            <option value="paired">Paired ({scenes.filter((s) => s.is_active !== false && !!s.paired_with).length})</option>
+            <option value="v2_only">V2 scenes ({scenes.filter((s) => s.is_active !== false && s.version === 2).length})</option>
+            <option value="no_image">Without images ({scenes.filter((s) => s.is_active !== false && !s.image_url).length})</option>
+            <option value="has_image">With images ({scenes.filter((s) => s.is_active !== false && s.image_url).length})</option>
+            <option value="qa_failed">QA Failed ({scenes.filter((s) => s.is_active !== false && s.qa_status === 'failed').length})</option>
+            <option value="accepted">✓ Accepted ({scenes.filter((s) => s.is_active !== false && s.accepted === true).length})</option>
+            <option value="rejected">✗ Rejected ({scenes.filter((s) => s.is_active !== false && s.accepted === false).length})</option>
+            <option value="not_reviewed">⏳ Not reviewed ({scenes.filter((s) => s.is_active !== false && s.image_url && s.accepted === null).length})</option>
           </select>
         </div>
 
@@ -1578,7 +1980,21 @@ export default function AdminScenesPage() {
             </tr>
           </thead>
           <tbody>
-            {filteredScenes.map((scene) => (
+            {filteredScenes
+              .filter((scene) => {
+                // Skip "receive" or "sub" scenes that have a paired "give"/"dom" scene - they'll be shown together
+                // Patterns: *-receive*, *-sub-*
+                const isSecondaryScene = scene.slug?.includes('-receive') || scene.slug?.includes('-sub-');
+                if (scene.paired_with && isSecondaryScene) {
+                  // Check if paired "give/dom" scene exists AND is visible in current filter
+                  const primarySceneInList = filteredScenes.some(s => s.id === scene.paired_with);
+                  if (primarySceneInList) {
+                    return false; // Skip - will be shown with give/dom scene
+                  }
+                }
+                return true;
+              })
+              .map((scene) => (
               <React.Fragment key={scene.id}>
               <tr className="border-t hover:bg-muted/30">
                 <td className="p-3">
@@ -1743,6 +2159,7 @@ export default function AdminScenesPage() {
                         <span className="px-1 py-0.5 rounded bg-blue-100 text-blue-700 text-[10px] mr-1">V2</span>
                         <span className="font-medium">{scene.title?.ru}</span>
                         {scene.category && <span className="ml-1 text-muted-foreground">• {scene.category}</span>}
+                        {scene.paired_with && <span className="ml-1 px-1 py-0.5 rounded bg-purple-100 text-purple-700 text-[10px]">Paired</span>}
                       </>
                     ) : (
                       scene.ai_description?.ru || scene.ai_description?.en || scene.slug || ''
@@ -1750,40 +2167,98 @@ export default function AdminScenesPage() {
                   </p>
 
                   {/* User Description RU/EN */}
-                  <div className="mt-2 space-y-1 max-w-full overflow-hidden">
-                    <div className="flex gap-2 items-start">
-                      <span className="text-xs text-muted-foreground font-medium w-6 shrink-0 pt-1">RU:</span>
-                      <textarea
-                        key={`ru-${scene.id}`}
-                        defaultValue={scene.user_description?.ru || ''}
-                        onBlur={(e) => saveUserDescription(scene.id, 'ru', e.target.value)}
-                        className="flex-1 min-w-0 text-xs p-1 rounded border bg-muted/30 resize-none min-h-[40px]"
-                        placeholder="Описание для пользователя (RU)..."
-                        rows={2}
-                      />
-                    </div>
-                    <div className="flex gap-2 items-start">
-                      <span className="text-xs text-muted-foreground font-medium w-6 shrink-0 pt-1">EN:</span>
-                      <textarea
-                        key={`en-${scene.id}-${scene.user_description?.en || ''}`}
-                        defaultValue={scene.user_description?.en || ''}
-                        onBlur={(e) => saveUserDescription(scene.id, 'en', e.target.value)}
-                        className="flex-1 min-w-0 text-xs p-1 rounded border bg-muted/30 resize-none min-h-[40px]"
-                        placeholder="User description (EN)..."
-                        rows={2}
-                      />
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className="h-6 px-2 text-xs shrink-0"
-                        onClick={() => translateDescription(scene.id)}
-                        disabled={!scene.user_description?.ru}
-                        title="Translate RU → EN"
-                      >
-                        <Languages className="size-3" />
-                      </Button>
-                    </div>
-                  </div>
+                  {(() => {
+                    const pairedScene = scene.paired_with ? scenes.find(s => s.id === scene.paired_with) : null;
+                    // Check patterns: *-give/*-receive and *-dom-*/*-sub-*
+                    const isGiveScene = scene.slug?.includes('-give');
+                    const isDomScene = scene.slug?.includes('-dom-');
+                    const isReceiveScene = scene.slug?.includes('-receive');
+                    const isSubScene = scene.slug?.includes('-sub-');
+                    const thisLabel = isGiveScene ? 'GIVE' : isDomScene ? 'DOM' : isReceiveScene ? 'RECEIVE' : isSubScene ? 'SUB' : 'DESC';
+                    const pairedLabel = pairedScene?.slug?.includes('-give') ? 'GIVE' : pairedScene?.slug?.includes('-dom-') ? 'DOM' : pairedScene?.slug?.includes('-sub-') ? 'SUB' : 'RECEIVE';
+
+                    return (
+                      <div className="mt-2 space-y-2 max-w-full overflow-hidden">
+                        {/* This scene's description */}
+                        <div className={`space-y-1 ${pairedScene ? 'p-2 border rounded bg-green-50/50' : ''}`}>
+                          {pairedScene && (
+                            <div className="text-xs font-medium text-green-700 mb-1">{thisLabel} ({scene.role_direction === 'm_to_f' ? 'HIM' : scene.role_direction === 'f_to_m' ? 'HER' : scene.role_direction?.toUpperCase() || '?'})</div>
+                          )}
+                          <div className="flex gap-2 items-start">
+                            <span className="text-xs text-muted-foreground font-medium w-6 shrink-0 pt-1">RU:</span>
+                            <textarea
+                              key={`ru-${scene.id}`}
+                              defaultValue={scene.user_description?.ru || ''}
+                              onBlur={(e) => saveUserDescription(scene.id, 'ru', e.target.value)}
+                              className="flex-1 min-w-0 text-xs p-1 rounded border bg-muted/30 resize-none min-h-[40px]"
+                              placeholder="Описание для пользователя (RU)..."
+                              rows={2}
+                            />
+                          </div>
+                          <div className="flex gap-2 items-start">
+                            <span className="text-xs text-muted-foreground font-medium w-6 shrink-0 pt-1">EN:</span>
+                            <textarea
+                              key={`en-${scene.id}-${scene.user_description?.en || ''}`}
+                              defaultValue={scene.user_description?.en || ''}
+                              onBlur={(e) => saveUserDescription(scene.id, 'en', e.target.value)}
+                              className="flex-1 min-w-0 text-xs p-1 rounded border bg-muted/30 resize-none min-h-[40px]"
+                              placeholder="User description (EN)..."
+                              rows={2}
+                            />
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="h-6 px-2 text-xs shrink-0"
+                              onClick={() => translateDescription(scene.id)}
+                              disabled={!scene.user_description?.ru}
+                              title="Translate RU → EN"
+                            >
+                              <Languages className="size-3" />
+                            </Button>
+                          </div>
+                        </div>
+
+                        {/* Paired scene's description */}
+                        {pairedScene && (
+                          <div className="space-y-1 p-2 border rounded bg-purple-50/50">
+                            <div className="text-xs font-medium text-purple-700 mb-1">{pairedLabel} ({pairedScene.role_direction === 'm_to_f' ? 'HIM' : pairedScene.role_direction === 'f_to_m' ? 'HER' : pairedScene.role_direction?.toUpperCase() || '?'})</div>
+                            <div className="flex gap-2 items-start">
+                              <span className="text-xs text-muted-foreground font-medium w-6 shrink-0 pt-1">RU:</span>
+                              <textarea
+                                key={`ru-${pairedScene.id}`}
+                                defaultValue={pairedScene.user_description?.ru || ''}
+                                onBlur={(e) => saveUserDescription(pairedScene.id, 'ru', e.target.value)}
+                                className="flex-1 min-w-0 text-xs p-1 rounded border bg-muted/30 resize-none min-h-[40px]"
+                                placeholder="Описание для пользователя (RU)..."
+                                rows={2}
+                              />
+                            </div>
+                            <div className="flex gap-2 items-start">
+                              <span className="text-xs text-muted-foreground font-medium w-6 shrink-0 pt-1">EN:</span>
+                              <textarea
+                                key={`en-${pairedScene.id}-${pairedScene.user_description?.en || ''}`}
+                                defaultValue={pairedScene.user_description?.en || ''}
+                                onBlur={(e) => saveUserDescription(pairedScene.id, 'en', e.target.value)}
+                                className="flex-1 min-w-0 text-xs p-1 rounded border bg-muted/30 resize-none min-h-[40px]"
+                                placeholder="User description (EN)..."
+                                rows={2}
+                              />
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                className="h-6 px-2 text-xs shrink-0"
+                                onClick={() => translateDescription(pairedScene.id)}
+                                disabled={!pairedScene.user_description?.ru}
+                                title="Translate RU → EN"
+                              >
+                                <Languages className="size-3" />
+                              </Button>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })()}
 
                   {/* QA Info */}
                   {scene.qa_attempts && (
@@ -1844,27 +2319,36 @@ export default function AdminScenesPage() {
                     <Button
                       variant="ghost"
                       size="icon-sm"
-                      onClick={() => keepAndRetry(scene)}
+                      onClick={() => saveToGallery(scene)}
                       disabled={!scene.image_url || generating}
-                      title="Keep current & Generate new"
+                      title="Save to gallery"
                       className="text-blue-600"
                     >
                       <Copy className="size-4" />
                     </Button>
-                    <Button
-                      variant="ghost"
-                      size="icon-sm"
-                      onClick={() => toggleShowVariants(scene.id)}
-                      title={`Show variants (${scene.image_variants?.length || 0})`}
-                      className={scene.showVariants ? 'text-primary' : ''}
-                    >
-                      <Layers className="size-4" />
-                      {(scene.image_variants?.length || 0) > 0 && (
-                        <span className="absolute -top-1 -right-1 text-[10px] bg-primary text-primary-foreground rounded-full w-4 h-4 flex items-center justify-center">
-                          {scene.image_variants?.length}
-                        </span>
-                      )}
-                    </Button>
+                    {(() => {
+                      const variants = getEffectiveVariants(scene);
+                      const variantUrls = new Set(variants.map(v => v.url));
+                      const count = variants.filter(v => !v.is_placeholder).length +
+                        (scene.image_url && !variantUrls.has(scene.image_url) ? 1 : 0);
+                      const isShared = !!scene.shared_images_with;
+                      return (
+                        <Button
+                          variant="ghost"
+                          size="icon-sm"
+                          onClick={() => toggleShowVariants(scene.id)}
+                          title={`Show gallery (${count}${isShared ? ' shared' : ''})`}
+                          className={scene.showVariants ? 'text-primary' : ''}
+                        >
+                          <Layers className="size-4" />
+                          {count > 0 && (
+                            <span className={`absolute -top-1 -right-1 text-[10px] ${isShared ? 'bg-purple-500' : 'bg-primary'} text-primary-foreground rounded-full w-4 h-4 flex items-center justify-center`}>
+                              {count}
+                            </span>
+                          )}
+                        </Button>
+                      );
+                    })()}
                     <Button
                       variant="ghost"
                       size="icon-sm"
@@ -1990,40 +2474,117 @@ export default function AdminScenesPage() {
               {scene.expanded && (
                 <tr className="border-t bg-muted/20">
                   <td colSpan={5} className="p-4">
-                    <div className="grid grid-cols-2 gap-4">
-                      {/* User Description */}
-                      <div className="space-y-2">
-                        <label className="text-sm font-medium">User Description (RU)</label>
-                        <textarea
-                          key={`exp-ru-${scene.id}`}
-                          defaultValue={scene.user_description?.ru || ''}
-                          onBlur={(e) => saveUserDescription(scene.id, 'ru', e.target.value)}
-                          placeholder="Описание для пользователя (RU)..."
-                          className="w-full min-h-[80px] text-sm p-2 rounded border resize-none"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <div className="flex items-center justify-between">
-                          <label className="text-sm font-medium">User Description (EN)</label>
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            className="h-6 px-2 text-xs"
-                            onClick={() => translateDescription(scene.id)}
-                            title="Translate from Russian"
+                    {/* Dual Descriptions Section */}
+                    <div className="mb-6">
+                      <div className="flex items-center gap-4 mb-3">
+                        <h4 className="text-sm font-semibold">Dual Descriptions</h4>
+                        <div className="flex items-center gap-2 text-xs">
+                          <span className="text-muted-foreground">Alt показывается для:</span>
+                          <select
+                            value={scene.alt_for_gender || ''}
+                            onChange={(e) => saveAltForGender(scene.id, e.target.value as 'male' | 'female' | null || null)}
+                            className="h-7 px-2 text-xs rounded border bg-background"
                           >
-                            <Languages className="size-3 mr-1" />
-                            Translate
-                          </Button>
+                            <option value="">Не используется</option>
+                            <option value="male">👨 Мужчины</option>
+                            <option value="female">👩 Женщины</option>
+                          </select>
                         </div>
-                        <textarea
-                          key={`exp-en-${scene.id}-${scene.user_description?.en || ''}`}
-                          defaultValue={scene.user_description?.en || ''}
-                          onBlur={(e) => saveUserDescription(scene.id, 'en', e.target.value)}
-                          placeholder="User description (EN)... Click Translate to auto-translate from RU"
-                          className="w-full min-h-[80px] text-sm p-2 rounded border resize-none"
-                        />
                       </div>
+
+                      <div className="grid grid-cols-2 gap-6">
+                        {/* Main Description (default) */}
+                        <div className="space-y-3 p-3 rounded-lg border bg-background">
+                          <div className="flex items-center gap-2">
+                            <span className="text-lg">{scene.alt_for_gender === 'male' ? '👩' : '👨'}</span>
+                            <span className="text-sm font-medium">
+                              Основное описание {scene.alt_for_gender === 'male' ? '(для Ж)' : scene.alt_for_gender === 'female' ? '(для М)' : '(по умолчанию)'}
+                            </span>
+                          </div>
+                          <div className="space-y-2">
+                            <div className="flex gap-2 items-center">
+                              <span className="text-xs text-muted-foreground w-6">RU:</span>
+                              <textarea
+                                key={`exp-ru-${scene.id}`}
+                                defaultValue={scene.user_description?.ru || ''}
+                                onBlur={(e) => saveUserDescription(scene.id, 'ru', e.target.value)}
+                                placeholder="Описание (RU)..."
+                                className="flex-1 min-h-[60px] text-sm p-2 rounded border resize-none"
+                              />
+                            </div>
+                            <div className="flex gap-2 items-center">
+                              <span className="text-xs text-muted-foreground w-6">EN:</span>
+                              <textarea
+                                key={`exp-en-${scene.id}-${scene.user_description?.en || ''}`}
+                                defaultValue={scene.user_description?.en || ''}
+                                onBlur={(e) => saveUserDescription(scene.id, 'en', e.target.value)}
+                                placeholder="Description (EN)..."
+                                className="flex-1 min-h-[60px] text-sm p-2 rounded border resize-none"
+                              />
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                className="h-8 px-2"
+                                onClick={() => translateDescription(scene.id)}
+                                disabled={!scene.user_description?.ru}
+                                title="Translate RU → EN"
+                              >
+                                <Languages className="size-4" />
+                              </Button>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Alt Description */}
+                        <div className={`space-y-3 p-3 rounded-lg border ${scene.alt_for_gender ? 'bg-background' : 'bg-muted/30 opacity-60'}`}>
+                          <div className="flex items-center gap-2">
+                            <span className="text-lg">{scene.alt_for_gender === 'female' ? '👩' : '👨'}</span>
+                            <span className="text-sm font-medium">
+                              Альтернативное описание {scene.alt_for_gender === 'female' ? '(для Ж)' : scene.alt_for_gender === 'male' ? '(для М)' : '(не активно)'}
+                            </span>
+                          </div>
+                          <div className="space-y-2">
+                            <div className="flex gap-2 items-center">
+                              <span className="text-xs text-muted-foreground w-6">RU:</span>
+                              <textarea
+                                key={`exp-alt-ru-${scene.id}`}
+                                defaultValue={scene.user_description_alt?.ru || ''}
+                                onBlur={(e) => saveUserDescriptionAlt(scene.id, 'ru', e.target.value)}
+                                placeholder="Альт. описание (RU)..."
+                                className="flex-1 min-h-[60px] text-sm p-2 rounded border resize-none"
+                                disabled={!scene.alt_for_gender}
+                              />
+                            </div>
+                            <div className="flex gap-2 items-center">
+                              <span className="text-xs text-muted-foreground w-6">EN:</span>
+                              <textarea
+                                key={`exp-alt-en-${scene.id}-${scene.user_description_alt?.en || ''}`}
+                                defaultValue={scene.user_description_alt?.en || ''}
+                                onBlur={(e) => saveUserDescriptionAlt(scene.id, 'en', e.target.value)}
+                                placeholder="Alt description (EN)..."
+                                className="flex-1 min-h-[60px] text-sm p-2 rounded border resize-none"
+                                disabled={!scene.alt_for_gender}
+                              />
+                              <Button
+                                variant="ghost"
+                                size="sm"
+                                className="h-8 px-2"
+                                onClick={() => translateDescriptionAlt(scene.id)}
+                                disabled={!scene.alt_for_gender || !scene.user_description_alt?.ru}
+                                title="Translate RU → EN"
+                              >
+                                <Languages className="size-4" />
+                              </Button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Divider */}
+                    <hr className="my-4 border-border" />
+
+                    <div className="grid grid-cols-2 gap-4">
                       {/* AI Context */}
                       <div className="space-y-2">
                         <label className="text-sm font-medium">AI Context (JSON)</label>
@@ -2049,97 +2610,133 @@ export default function AdminScenesPage() {
                 </tr>
               )}
               {/* Image Variants Gallery */}
-              {scene.showVariants && (
+              {scene.showVariants && (() => {
+                // Get effective variants (own or from shared scene)
+                const effectiveVariants = getEffectiveVariants(scene);
+                const sharedSource = getSharedSourceSlug(scene);
+
+                // Build gallery images: variants + current image_url if not in variants
+                const variantUrls = new Set(effectiveVariants.map(v => v.url));
+                const galleryImages = [...effectiveVariants.filter(v => !v.is_placeholder)];
+
+                // Add current image_url if it exists and isn't already in variants
+                if (scene.image_url && !variantUrls.has(scene.image_url)) {
+                  galleryImages.unshift({
+                    url: scene.image_url,
+                    prompt: scene.generation_prompt || '',
+                    created_at: new Date().toISOString(),
+                  });
+                }
+
+                return (
                 <tr className="border-t bg-blue-50/50 dark:bg-blue-950/20">
                   <td colSpan={5} className="p-4">
                     <div className="flex items-center gap-2 mb-3">
                       <Layers className="size-4 text-blue-600" />
-                      <span className="font-medium text-sm">Image Variants</span>
+                      <span className="font-medium text-sm">Gallery</span>
                       <span className="text-xs text-muted-foreground">
-                        ({scene.image_variants?.length || 0} saved)
+                        ({galleryImages.length} images)
                       </span>
-                      {scene.image_url && (
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="ml-auto h-7 text-xs"
-                          onClick={() => saveAsVariant(scene.id, scene.image_url || undefined, scene.generation_prompt || undefined)}
-                        >
-                          <Copy className="size-3 mr-1" />
-                          Save current as variant
-                        </Button>
+                      {sharedSource && (
+                        <span className="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded">
+                          shared from: {sharedSource}
+                        </span>
                       )}
                     </div>
-                    {(!scene.image_variants || scene.image_variants.length === 0) ? (
-                      <p className="text-sm text-muted-foreground">
-                        No variants saved yet. Click &quot;Keep &amp; Retry&quot; (copy icon) to save current image and generate a new one.
-                      </p>
-                    ) : (
-                      <div className="grid grid-cols-4 gap-3">
-                        {scene.image_variants.map((variant, idx) => (
-                          <div
-                            key={variant.url}
-                            className={`relative rounded-lg border-2 overflow-hidden group ${
-                              variant.url === scene.image_url
-                                ? 'border-primary ring-2 ring-primary/30'
-                                : 'border-transparent hover:border-muted-foreground/30'
-                            }`}
-                          >
-                            <img
-                              src={variant.url}
-                              alt={`Variant ${idx + 1}`}
-                              className="w-full h-24 object-cover cursor-pointer"
-                              onClick={() => setLightboxImage(variant.url)}
-                            />
-                            {/* Current indicator */}
-                            {variant.url === scene.image_url && (
-                              <div className="absolute top-1 left-1 bg-primary text-primary-foreground rounded-full p-0.5">
-                                <CheckCircle2 className="size-4" />
-                              </div>
-                            )}
-                            {/* QA status */}
-                            {variant.qa_status && (
-                              <div className="absolute top-1 right-1">
-                                {variant.qa_status === 'passed' ? (
-                                  <ShieldCheck className="size-4 text-green-500" />
-                                ) : (
-                                  <ShieldX className="size-4 text-red-500" />
-                                )}
-                              </div>
-                            )}
-                            {/* Hover overlay with actions */}
-                            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
-                              {variant.url !== scene.image_url && (
-                                <Button
-                                  variant="secondary"
-                                  size="sm"
-                                  className="h-7 text-xs"
-                                  onClick={() => selectVariant(scene.id, variant.url)}
-                                >
-                                  <Check className="size-3 mr-1" />
-                                  Use
-                                </Button>
+                    <div className="grid grid-cols-4 gap-3">
+                      {/* Real images */}
+                      {galleryImages.map((variant, idx) => (
+                        <div
+                          key={variant.url}
+                          className={`relative rounded-lg border-2 overflow-hidden group ${
+                            variant.url === scene.image_url
+                              ? 'border-primary ring-2 ring-primary/30'
+                              : 'border-transparent hover:border-muted-foreground/30'
+                          }`}
+                        >
+                          <img
+                            src={variant.url}
+                            alt={`Image ${idx + 1}`}
+                            className="w-full h-24 object-cover cursor-pointer"
+                            onClick={() => setLightboxImage(variant.url)}
+                          />
+                          {/* Current indicator */}
+                          {variant.url === scene.image_url && (
+                            <div className="absolute top-1 left-1 bg-primary text-primary-foreground rounded-full p-0.5">
+                              <CheckCircle2 className="size-4" />
+                            </div>
+                          )}
+                          {/* QA status */}
+                          {variant.qa_status && (
+                            <div className="absolute top-1 right-1">
+                              {variant.qa_status === 'passed' ? (
+                                <ShieldCheck className="size-4 text-green-500" />
+                              ) : (
+                                <ShieldX className="size-4 text-red-500" />
                               )}
+                            </div>
+                          )}
+                          {/* Hover overlay with actions */}
+                          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+                            {variant.url !== scene.image_url && (
                               <Button
-                                variant="destructive"
+                                variant="secondary"
                                 size="sm"
                                 className="h-7 text-xs"
-                                onClick={() => deleteVariant(scene.id, variant.url)}
+                                onClick={() => selectVariant(scene.id, variant.url)}
                               >
-                                <Trash2 className="size-3" />
+                                <Check className="size-3 mr-1" />
+                                Use
                               </Button>
-                            </div>
-                            {/* Info */}
-                            <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-[10px] px-1 py-0.5 truncate">
-                              {variant.qa_score ? `Score: ${variant.qa_score}/10` : `#${idx + 1}`}
-                            </div>
+                            )}
+                            <Button
+                              variant="secondary"
+                              size="sm"
+                              className="h-7 text-xs"
+                              onClick={() => setLightboxImage(variant.url)}
+                            >
+                              <Eye className="size-3" />
+                            </Button>
+                            <Button
+                              variant="destructive"
+                              size="sm"
+                              className="h-7 text-xs"
+                              onClick={() => deleteVariant(scene.id, variant.url)}
+                            >
+                              <Trash2 className="size-3" />
+                            </Button>
                           </div>
-                        ))}
-                      </div>
-                    )}
+                          {/* Info */}
+                          <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-[10px] px-1 py-0.5 truncate">
+                            {variant.qa_score ? `Score: ${variant.qa_score}/10` : `#${idx + 1}`}
+                          </div>
+                        </div>
+                      ))}
+
+                      {/* Add image button (upload) */}
+                      <label className="rounded-lg border-2 border-dashed border-muted-foreground/20 h-24 flex items-center justify-center cursor-pointer hover:border-primary/50 hover:bg-primary/5 transition-colors">
+                        <input
+                          type="file"
+                          accept="image/*"
+                          className="hidden"
+                          onChange={(e) => {
+                            const file = e.target.files?.[0];
+                            if (file) {
+                              uploadImage(scene.id, file);
+                              e.target.value = '';
+                            }
+                          }}
+                        />
+                        <div className="flex flex-col items-center text-muted-foreground">
+                          <Upload className="size-5" />
+                          <span className="text-xs">Add image</span>
+                        </div>
+                      </label>
+                    </div>
                   </td>
                 </tr>
-              )}
+                );
+              })()}
               </React.Fragment>
             ))}
           </tbody>
@@ -2297,8 +2894,347 @@ export default function AdminScenesPage() {
           })()}
 
           {!qaDetailScene?.qa_last_assessment && (
-            <p className="text-muted-foreground">Нет данных об оценке</p>
+            <div className="space-y-2">
+              <p className="text-muted-foreground">Нет данных об оценке</p>
+              {qaDetailScene?.qa_attempts && qaDetailScene.qa_attempts > 0 && (
+                <p className="text-xs text-red-500">
+                  QA выполнил {qaDetailScene.qa_attempts} попыток, но все оценки изображений провалились.
+                  Возможно Claude Vision отказался анализировать NSFW контент.
+                </p>
+              )}
+            </div>
           )}
+        </DialogContent>
+      </Dialog>
+
+      {/* V3 Scene Creator Dialog */}
+      <Dialog open={showV3Creator} onOpenChange={setShowV3Creator}>
+        <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2">
+              <Wand2 className="size-5" />
+              Создание V3 сцен
+            </DialogTitle>
+          </DialogHeader>
+
+          <div className="space-y-4">
+            <p className="text-sm text-muted-foreground">
+              Создайте новые сцены из готовых шаблонов с image_prompt для генерации картинок.
+            </p>
+
+            {/* Template Groups */}
+            <div className="space-y-4">
+              {/* Bondage Type */}
+              <div className="border rounded-lg p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <div>
+                    <h3 className="font-medium">Типы бондажа</h3>
+                    <p className="text-xs text-muted-foreground">6 свайп-карточек для выбора типа связывания</p>
+                  </div>
+                  <Button
+                    size="sm"
+                    disabled={v3CreatorLoading}
+                    onClick={async () => {
+                      setV3CreatorLoading(true);
+                      try {
+                        const res = await fetch('/api/admin/create-v3-scenes', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({ groupId: 'bondage-type' }),
+                        });
+                        const data = await res.json();
+                        if (data.success) {
+                          addLog(`Создано ${data.created} сцен bondage-type (пропущено: ${data.skipped})`, 'success');
+                          loadScenes();
+                        } else {
+                          addLog(`Ошибка: ${data.error}`, 'error');
+                        }
+                      } catch (e) {
+                        addLog(`Ошибка: ${(e as Error).message}`, 'error');
+                      }
+                      setV3CreatorLoading(false);
+                    }}
+                  >
+                    Создать 6 сцен
+                  </Button>
+                </div>
+                <p className="text-xs">Restrain, Шибари, St. Andrew's Cross, Spreader bar, Подвешивание, Цепи</p>
+              </div>
+
+              {/* Positions */}
+              <div className="border rounded-lg p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <div>
+                    <h3 className="font-medium">Любимые позы</h3>
+                    <p className="text-xs text-muted-foreground">8 свайп-карточек для выбора поз</p>
+                  </div>
+                  <Button
+                    size="sm"
+                    disabled={v3CreatorLoading}
+                    onClick={async () => {
+                      setV3CreatorLoading(true);
+                      try {
+                        const res = await fetch('/api/admin/create-v3-scenes', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({ groupId: 'positions-favorite' }),
+                        });
+                        const data = await res.json();
+                        if (data.success) {
+                          addLog(`Создано ${data.created} сцен positions (пропущено: ${data.skipped})`, 'success');
+                          loadScenes();
+                        } else {
+                          addLog(`Ошибка: ${data.error}`, 'error');
+                        }
+                      } catch (e) {
+                        addLog(`Ошибка: ${(e as Error).message}`, 'error');
+                      }
+                      setV3CreatorLoading(false);
+                    }}
+                  >
+                    Создать 8 сцен
+                  </Button>
+                </div>
+                <p className="text-xs">Миссионерская, Догги, Наездница, Обратная наездница, 69, Спуны, Стоя, Сидя</p>
+              </div>
+
+              {/* Lingerie */}
+              <div className="border rounded-lg p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <div>
+                    <h3 className="font-medium">Стиль белья</h3>
+                    <p className="text-xs text-muted-foreground">8 маленьких картинок для grid-выбора</p>
+                  </div>
+                  <Button
+                    size="sm"
+                    disabled={v3CreatorLoading}
+                    onClick={async () => {
+                      setV3CreatorLoading(true);
+                      try {
+                        const res = await fetch('/api/admin/create-v3-scenes', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({ groupId: 'lingerie-style' }),
+                        });
+                        const data = await res.json();
+                        if (data.success) {
+                          addLog(`Создано ${data.created} сцен lingerie (пропущено: ${data.skipped})`, 'success');
+                          loadScenes();
+                        } else {
+                          addLog(`Ошибка: ${data.error}`, 'error');
+                        }
+                      } catch (e) {
+                        addLog(`Ошибка: ${(e as Error).message}`, 'error');
+                      }
+                      setV3CreatorLoading(false);
+                    }}
+                  >
+                    Создать 8 сцен
+                  </Button>
+                </div>
+                <p className="text-xs">Кружево, Сеточка, Полупрозрачное, Чулки, Атлас, Латекс, Кожа, Корсет</p>
+              </div>
+
+              {/* Locations */}
+              <div className="border rounded-lg p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <div>
+                    <h3 className="font-medium">Любимые места</h3>
+                    <p className="text-xs text-muted-foreground">6 маленьких картинок для grid-выбора</p>
+                  </div>
+                  <Button
+                    size="sm"
+                    disabled={v3CreatorLoading}
+                    onClick={async () => {
+                      setV3CreatorLoading(true);
+                      try {
+                        const res = await fetch('/api/admin/create-v3-scenes', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({ groupId: 'locations-favorite' }),
+                        });
+                        const data = await res.json();
+                        if (data.success) {
+                          addLog(`Создано ${data.created} сцен locations (пропущено: ${data.skipped})`, 'success');
+                          loadScenes();
+                        } else {
+                          addLog(`Ошибка: ${data.error}`, 'error');
+                        }
+                      } catch (e) {
+                        addLog(`Ошибка: ${(e as Error).message}`, 'error');
+                      }
+                      setV3CreatorLoading(false);
+                    }}
+                  >
+                    Создать 6 сцен
+                  </Button>
+                </div>
+                <p className="text-xs">Спальня, Душ, Кухня, Машина, Природа, Отель</p>
+              </div>
+
+              {/* Toys Type */}
+              <div className="border rounded-lg p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <div>
+                    <h3 className="font-medium">Игрушки (image_selection)</h3>
+                    <p className="text-xs text-muted-foreground">11 картинок с парными plug/clamps/beads</p>
+                  </div>
+                  <Button
+                    size="sm"
+                    disabled={v3CreatorLoading}
+                    onClick={async () => {
+                      setV3CreatorLoading(true);
+                      try {
+                        const res = await fetch('/api/admin/create-v3-scenes', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({ groupId: 'toys-type' }),
+                        });
+                        const data = await res.json();
+                        if (data.success) {
+                          addLog(`Создано ${data.created} сцен (пропущено: ${data.skipped})`, 'success');
+                          loadScenes();
+                        } else {
+                          addLog(`Ошибка: ${data.error}`, 'error');
+                        }
+                      } catch (e) {
+                        addLog(`Ошибка: ${(e as Error).message}`, 'error');
+                      }
+                      setV3CreatorLoading(false);
+                    }}
+                  >
+                    Создать 11 сцен
+                  </Button>
+                </div>
+                <p className="text-xs">Вибратор, Дилдо, Пробка×2, Wand, Зажимы×2, Cock ring, Шарики×2, Клиторальная</p>
+              </div>
+
+              {/* Single Scenes */}
+              <div className="border rounded-lg p-4">
+                <div className="flex items-center justify-between mb-2">
+                  <div>
+                    <h3 className="font-medium">Отдельные сцены</h3>
+                    <p className="text-xs text-muted-foreground">Sex swing, Anal hook, Body writing + Finish preference (M/F paired)</p>
+                  </div>
+                  <Button
+                    size="sm"
+                    disabled={v3CreatorLoading}
+                    onClick={async () => {
+                      setV3CreatorLoading(true);
+                      try {
+                        const res = await fetch('/api/admin/create-v3-scenes', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({ groupId: 'single-scenes' }),
+                        });
+                        const data = await res.json();
+                        if (data.success) {
+                          addLog(`Создано ${data.created} сцен (пропущено: ${data.skipped})`, 'success');
+                          loadScenes();
+                        } else {
+                          addLog(`Ошибка: ${data.error}`, 'error');
+                        }
+                      } catch (e) {
+                        addLog(`Ошибка: ${(e as Error).message}`, 'error');
+                      }
+                      setV3CreatorLoading(false);
+                    }}
+                  >
+                    Создать 5 сцен
+                  </Button>
+                </div>
+                <p className="text-xs">sex-swing, anal-hook, body-writing, finish-preference-m, finish-preference-f</p>
+              </div>
+
+              {/* Create All */}
+              <div className="border-t pt-4 space-y-3">
+                <Button
+                  className="w-full"
+                  disabled={v3CreatorLoading}
+                  onClick={async () => {
+                    setV3CreatorLoading(true);
+                    try {
+                      const res = await fetch('/api/admin/create-v3-scenes', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ all: true }),
+                      });
+                      const data = await res.json();
+                      if (data.success) {
+                        addLog(`Создано ${data.created} V3 сцен (пропущено: ${data.skipped})`, 'success');
+                        loadScenes();
+                      } else {
+                        addLog(`Ошибка: ${data.error}`, 'error');
+                      }
+                    } catch (e) {
+                      addLog(`Ошибка: ${(e as Error).message}`, 'error');
+                    }
+                    setV3CreatorLoading(false);
+                  }}
+                >
+                  {v3CreatorLoading ? (
+                    <Loader2 className="size-4 animate-spin mr-2" />
+                  ) : (
+                    <Wand2 className="size-4 mr-2" />
+                  )}
+                  Создать ВСЕ (44 сцены)
+                </Button>
+
+                {/* Generate Images */}
+                <Button
+                  className="w-full"
+                  variant="secondary"
+                  disabled={v3CreatorLoading}
+                  onClick={async () => {
+                    setV3CreatorLoading(true);
+                    try {
+                      // First check status
+                      const statusRes = await fetch('/api/admin/generate-v3-batch');
+                      const status = await statusRes.json();
+
+                      if (status.needsCreation?.length > 0) {
+                        addLog(`Сначала создайте сцены: ${status.needsCreation.length} не созданы`, 'error');
+                        setV3CreatorLoading(false);
+                        return;
+                      }
+
+                      if (status.withoutImages === 0) {
+                        addLog('Все сцены уже имеют картинки!', 'info');
+                        setV3CreatorLoading(false);
+                        return;
+                      }
+
+                      addLog(`Генерация ${status.withoutImages} картинок... Это займёт время.`, 'info');
+
+                      const res = await fetch('/api/admin/generate-v3-batch', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ all: true }),
+                      });
+                      const data = await res.json();
+                      if (data.success) {
+                        addLog(`Сгенерировано ${data.generated} картинок (ошибок: ${data.failed})`, data.failed > 0 ? 'info' : 'success');
+                        loadScenes();
+                        setShowV3Creator(false);
+                      } else {
+                        addLog(`Ошибка: ${data.error}`, 'error');
+                      }
+                    } catch (e) {
+                      addLog(`Ошибка: ${(e as Error).message}`, 'error');
+                    }
+                    setV3CreatorLoading(false);
+                  }}
+                >
+                  {v3CreatorLoading ? (
+                    <Loader2 className="size-4 animate-spin mr-2" />
+                  ) : (
+                    <ImageIcon className="size-4 mr-2" />
+                  )}
+                  Сгенерировать картинки для всех
+                </Button>
+              </div>
+            </div>
+          </div>
         </DialogContent>
       </Dialog>
     </div>

@@ -1,0 +1,47 @@
+{
+  "id": "position-missionary",
+  "slug": "position-missionary",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Миссионерская",
+    "en": "Missionary"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Классическая позиция лицом к лицу. Один сверху, другой снизу.",
+    "en": "Classic face-to-face position. One on top, one below."
+  },
+  "ai_description": {
+    "ru": "Лицом к лицу, он сверху. Классика, позволяющая целоваться и смотреть в глаза.",
+    "en": "Face to face, him on top. Classic position for kissing and eye contact."
+  },
+  "image_prompt": "couple in missionary position on bed, man on top, intimate eye contact, bedroom",
+  "intensity": 1,
+  "category": "positions",
+  "tags": [
+    "positions",
+    "missionary",
+    "vanilla"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "positions",
+      "missionary"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

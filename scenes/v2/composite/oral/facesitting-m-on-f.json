@@ -1,8 +1,16 @@
 {
-  "id": "facesitting_m_on_f",
+  "id": "facesitting-he-on-her",
   "slug": "facesitting-he-on-her",
   "version": 2,
-  "paired_scene": "facesitting_f_on_m",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "oral",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "facesitting-m-on-f-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Facesitting",
@@ -11,6 +19,10 @@
   "subtitle": {
     "ru": "Он на её лице",
     "en": "He sits on her face"
+  },
+  "user_description": {
+    "ru": "Ты садишься на её лицо. Она сосёт твой член и лижет яйца снизу.",
+    "en": "You sit on her face. She sucks your cock and licks your balls from below."
   },
   "ai_description": {
     "ru": "Он садится на её лицо, она делает ему минет или римминг снизу. Его контроль, её подчинение, необычный угол.",
@@ -26,216 +38,6 @@
     "control",
     "rimming"
   ],
-  "elements": [
-    {
-      "id": "what_she_does",
-      "label": {
-        "ru": "Что она делает",
-        "en": "What she does"
-      },
-      "tag_ref": "m_facesit_act",
-      "follow_ups": [
-        {
-          "id": "act",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что делает?",
-            "en": "What does she do?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "blowjob",
-                "label": {
-                  "ru": "Минет",
-                  "en": "Blowjob"
-                }
-              },
-              {
-                "id": "balls",
-                "label": {
-                  "ru": "Яички",
-                  "en": "Balls"
-                }
-              },
-              {
-                "id": "rimming",
-                "label": {
-                  "ru": "Rimming",
-                  "en": "Rimming"
-                }
-              },
-              {
-                "id": "everything",
-                "label": {
-                  "ru": "Всё по очереди",
-                  "en": "Everything"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "intensity",
-      "label": {
-        "ru": "Интенсивность",
-        "en": "Intensity"
-      },
-      "tag_ref": "m_facesit_intensity",
-      "follow_ups": [
-        {
-          "id": "level",
-          "type": "single_select",
-          "question": {
-            "ru": "Насколько интенсивно?",
-            "en": "How intense?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "gentle",
-                "label": {
-                  "ru": "Нежно, она контролирует",
-                  "en": "Gentle, she controls"
-                }
-              },
-              {
-                "id": "moderate",
-                "label": {
-                  "ru": "Умеренно",
-                  "en": "Moderate"
-                }
-              },
-              {
-                "id": "dominant",
-                "label": {
-                  "ru": "Он контролирует",
-                  "en": "He controls"
-                }
-              },
-              {
-                "id": "rough",
-                "label": {
-                  "ru": "Грубо",
-                  "en": "Rough"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "breathing",
-      "label": {
-        "ru": "Дыхание",
-        "en": "Breathing"
-      },
-      "tag_ref": "m_facesit_breath",
-      "follow_ups": [
-        {
-          "id": "control",
-          "type": "single_select",
-          "question": {
-            "ru": "Контроль дыхания?",
-            "en": "Breath control?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "free",
-                "label": {
-                  "ru": "Свободно дышит",
-                  "en": "Breathes freely"
-                }
-              },
-              {
-                "id": "limited",
-                "label": {
-                  "ru": "Ограничено",
-                  "en": "Limited"
-                }
-              },
-              {
-                "id": "breath_play",
-                "label": {
-                  "ru": "Элемент breath play",
-                  "en": "Breath play element"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "m_facesit_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "dominance",
-                "label": {
-                  "ru": "Его доминирование",
-                  "en": "His dominance"
-                }
-              },
-              {
-                "id": "submission",
-                "label": {
-                  "ru": "Её подчинение",
-                  "en": "Her submission"
-                }
-              },
-              {
-                "id": "access",
-                "label": {
-                  "ru": "Полный доступ",
-                  "en": "Full access"
-                }
-              },
-              {
-                "id": "angle",
-                "label": {
-                  "ru": "Необычный угол",
-                  "en": "Unusual angle"
-                }
-              },
-              {
-                "id": "service",
-                "label": {
-                  "ru": "Служение",
-                  "en": "Service"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает когда он на её лице?",
-      "en": "What appeals about him on her face?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "facesitting",
@@ -248,8 +50,11 @@
       "service"
     ]
   },
-  "user_description": {
-    "ru": "Он садится на её лицо. Она сосёт его член и лижет яйца снизу.",
-    "en": "He sits on her face. She sucks his cock and licks balls from below."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда он на её лице?",
+      "en": "What appeals about him on her face?"
+    }
+      }
 }

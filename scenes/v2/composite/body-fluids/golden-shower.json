@@ -1,0 +1,58 @@
+{
+  "id": "golden-shower",
+  "slug": "golden-shower",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "body_fluids"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Золотой дождь",
+    "en": "Golden Shower"
+  },
+  "subtitle": {
+    "ru": "Urolagnia",
+    "en": "Watersports"
+  },
+  "user_description": {
+    "ru": "Один партнёр мочится на другого — интимный и табуированный акт.",
+    "en": "One partner urinates on the other — an intimate and taboo act."
+  },
+  "ai_description": {
+    "ru": "Сексуальное возбуждение от мочеиспускания на партнёра или получения мочи. Табуированная практика, связанная с властью, унижением или интимностью.",
+    "en": "Sexual arousal from urinating on a partner or receiving urine. Taboo practice related to power, humiliation, or intimacy."
+  },
+  "image_prompt": "intimate couple in shower, artistic sensual atmosphere, water drops, warm lighting",
+  "intensity": 4,
+  "category": "body-fluids",
+  "tags": [
+    "watersports",
+    "golden_shower",
+    "urine",
+    "taboo",
+    "humiliation"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "watersports",
+      "golden_shower",
+      "urine"
+    ],
+    "tests_secondary": [
+      "taboo",
+      "humiliation",
+      "power"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в золотом дожде?",
+      "en": "What appeals about golden shower?"
+    }
+      }
+}

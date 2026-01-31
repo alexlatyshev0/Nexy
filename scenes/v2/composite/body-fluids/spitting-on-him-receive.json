@@ -1,0 +1,61 @@
+{
+  "id": "spitting-f-to-m-receive",
+  "slug": "spitting-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "dirty_talk",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "spitting-f-to-m",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Плевки",
+    "en": "Spitting"
+  },
+  "subtitle": {
+    "ru": "Она на тебя",
+    "en": "She on you"
+  },
+  "user_description": {
+    "ru": "Она плюёт тебе в лицо или в рот. Ты покорно принимаешь.",
+    "en": "She spits in your face or mouth. You submissively accept."
+  },
+  "ai_description": {
+    "ru": "Она плюёт ему в лицо, он принимает покорно. Её слюна — знак её власти и его ничтожности. Femdom унижение.",
+    "en": "She spits in his face, he accepts submissively. Her saliva — a sign of her power and his worthlessness. Femdom humiliation."
+  },
+  "image_prompt": "woman close to man's face preparing to spit, man looking up at her with open mouth, both partially clothed, bedroom setting",
+  "intensity": 3,
+  "category": "body-fluids",
+  "tags": [
+    "spitting",
+    "spit",
+    "femdom",
+    "humiliation",
+    "female_domination",
+    "degradation"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "spitting",
+      "femdom",
+      "humiliation"
+    ],
+    "tests_secondary": [
+      "degradation",
+      "female_power",
+      "contempt"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в этой сцене?",
+      "en": "What appeals in this scene?"
+    }
+      }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "wax-play",
+  "slug": "wax-play",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough",
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Воск",
+    "en": "Wax Play"
+  },
+  "subtitle": {
+    "ru": "Горячий воск на кожу",
+    "en": "Hot wax on skin"
+  },
+  "user_description": {
+    "ru": "Горячий воск капает на кожу — жар и лёгкая боль.",
+    "en": "Hot wax drips on skin — heat and light pain."
+  },
+  "ai_description": {
+    "ru": "Капание горячего воска на тело партнёра. Ощущение жара, лёгкой боли и затвердевающего воска на коже.",
+    "en": "Dripping hot wax on partner's body. Sensation of heat, light pain, and hardening wax on skin."
+  },
+  "image_prompt": "candle dripping wax on woman's back, romantic dark setting, intimate atmosphere",
+  "intensity": 3,
+  "category": "impact-pain",
+  "tags": [
+    "wax_play",
+    "candle",
+    "temperature",
+    "sensation",
+    "pain_pleasure"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "wax_play",
+      "candle",
+      "temperature"
+    ],
+    "tests_secondary": [
+      "sensation",
+      "pain_pleasure",
+      "heat"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в воске?",
+      "en": "What appeals about wax play?"
+    }
+      }
+}

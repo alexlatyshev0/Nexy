@@ -1,0 +1,1476 @@
+{
+  "version": 3,
+  "description": "Topic-based discovery flow with multi-dimensional gate_keys on scenes. Scene shows if ANY gate_key=YES. Score = count of matching gate_keys. V3: gate_keys moved to scenes.",
+  "topics": [
+    {
+      "id": "oral",
+      "title": {
+        "ru": "Оральный секс",
+        "en": "Oral sex"
+      },
+      "intensity": 1,
+      "skip_if_body_map": {
+        "zones": [
+          "lips",
+          "groin",
+          "penis",
+          "vulva"
+        ],
+        "actions": [
+          "kiss",
+          "lick",
+          "suck"
+        ],
+        "condition": "all_no"
+      },
+      "scenes": [
+        {
+          "id": "blowjob",
+          "gate_keys": [
+            "oral"
+          ]
+        },
+        {
+          "id": "cunnilingus",
+          "gate_keys": [
+            "oral"
+          ]
+        },
+        {
+          "id": "deepthroat",
+          "gate_keys": [
+            "oral",
+            "rough"
+          ]
+        },
+        {
+          "id": "facesitting-f-on-m",
+          "gate_keys": [
+            "oral",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "facesitting-m-on-f",
+          "gate_keys": [
+            "oral",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "rimming-m-to-f",
+          "gate_keys": [
+            "oral",
+            "anal"
+          ]
+        },
+        {
+          "id": "rimming-f-to-m",
+          "gate_keys": [
+            "oral",
+            "anal"
+          ]
+        },
+        {
+          "id": "finger-sucking",
+          "gate_keys": [
+            "oral",
+            "romantic"
+          ]
+        },
+        {
+          "id": "glory-hole-f-gives",
+          "gate_keys": [
+            "oral",
+            "exhibitionism"
+          ]
+        },
+        {
+          "id": "glory-hole-m-gives",
+          "gate_keys": [
+            "oral",
+            "exhibitionism"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "romantic",
+      "title": {
+        "ru": "Романтика",
+        "en": "Romance"
+      },
+      "intensity": 1,
+      "scenes": [
+        {
+          "id": "romantic-sex",
+          "gate_keys": [
+            "romantic"
+          ]
+        },
+        {
+          "id": "emotional-sex",
+          "gate_keys": [
+            "romantic"
+          ]
+        },
+        {
+          "id": "first-time-together",
+          "gate_keys": [
+            "romantic"
+          ]
+        },
+        {
+          "id": "makeup-sex",
+          "gate_keys": [
+            "romantic",
+            "rough"
+          ]
+        },
+        {
+          "id": "aftercare",
+          "gate_keys": [
+            "romantic",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "massage-m-to-f",
+          "gate_keys": [
+            "romantic"
+          ]
+        },
+        {
+          "id": "massage-f-to-m",
+          "gate_keys": [
+            "romantic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quickie",
+      "title": {
+        "ru": "Быстрый секс",
+        "en": "Quickie"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "quickie",
+          "gate_keys": [
+            "quickie",
+            "public"
+          ]
+        },
+        {
+          "id": "angry-sex",
+          "gate_keys": [
+            "quickie",
+            "rough"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toys",
+      "title": {
+        "ru": "Игрушки",
+        "en": "Toys"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "vibrator",
+          "gate_keys": [
+            "toys"
+          ]
+        },
+        {
+          "id": "dildo",
+          "gate_keys": [
+            "toys"
+          ]
+        },
+        {
+          "id": "cock-ring",
+          "gate_keys": [
+            "toys"
+          ]
+        },
+        {
+          "id": "nipple-clamps",
+          "gate_keys": [
+            "toys",
+            "pain"
+          ]
+        },
+        {
+          "id": "remote-control",
+          "gate_keys": [
+            "toys",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "fucking-machine",
+          "gate_keys": [
+            "toys",
+            "rough"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anal",
+      "title": {
+        "ru": "Анальные игры",
+        "en": "Anal play"
+      },
+      "intensity": 2,
+      "skip_if_body_map": {
+        "zones": [
+          "anus"
+        ],
+        "actions": [
+          "touch",
+          "lick",
+          "penetrate"
+        ],
+        "condition": "all_no"
+      },
+      "scenes": [
+        {
+          "id": "anal-play-on-her",
+          "gate_keys": [
+            "anal"
+          ]
+        },
+        {
+          "id": "anal-play-on-him",
+          "gate_keys": [
+            "anal"
+          ]
+        },
+        {
+          "id": "pegging",
+          "gate_keys": [
+            "anal",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "butt-plug",
+          "gate_keys": [
+            "anal",
+            "toys"
+          ]
+        },
+        {
+          "id": "figging",
+          "gate_keys": [
+            "anal",
+            "pain"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roleplay",
+      "title": {
+        "ru": "Ролевые игры",
+        "en": "Roleplay"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "boss-m-secretary-f",
+          "gate_keys": [
+            "roleplay",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "boss-f-subordinate-m",
+          "gate_keys": [
+            "roleplay",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "teacher-m-student-f",
+          "gate_keys": [
+            "roleplay",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "teacher-f-student-m",
+          "gate_keys": [
+            "roleplay",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "doctor-patient",
+          "gate_keys": [
+            "roleplay"
+          ]
+        },
+        {
+          "id": "stranger-roleplay",
+          "gate_keys": [
+            "roleplay",
+            "exhibitionism"
+          ]
+        },
+        {
+          "id": "service-roleplay",
+          "gate_keys": [
+            "roleplay"
+          ]
+        },
+        {
+          "id": "pet-play-f-is-pet",
+          "gate_keys": [
+            "roleplay",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "pet-play-m-is-pet",
+          "gate_keys": [
+            "roleplay",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "ddlg",
+          "gate_keys": [
+            "roleplay",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "mdlb",
+          "gate_keys": [
+            "roleplay",
+            "power_dynamic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "locations",
+      "title": {
+        "ru": "Локации",
+        "en": "Locations"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "locations",
+          "gate_keys": [
+            "public",
+            "exhibitionism"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sensory",
+      "title": {
+        "ru": "Сенсорные игры",
+        "en": "Sensory play"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "blindfold",
+          "gate_keys": [
+            "romantic",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "ice-play",
+          "gate_keys": [
+            "romantic",
+            "sensory"
+          ]
+        },
+        {
+          "id": "feather-tickle",
+          "gate_keys": [
+            "romantic",
+            "sensory"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wax",
+      "title": {
+        "ru": "Воск",
+        "en": "Wax play"
+      },
+      "intensity": 3,
+      "scenes": [
+        {
+          "id": "wax-play-m-to-f",
+          "gate_keys": [
+            "pain",
+            "sensory"
+          ]
+        },
+        {
+          "id": "wax-play-f-to-m",
+          "gate_keys": [
+            "pain",
+            "sensory"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dirty_talk",
+      "title": {
+        "ru": "Грязные разговоры",
+        "en": "Dirty talk"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "dirty-talk",
+          "gate_keys": [
+            "dirty_talk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "praise",
+      "title": {
+        "ru": "Похвала",
+        "en": "Praise"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "praise-m-to-f",
+          "gate_keys": [
+            "romantic",
+            "dirty_talk"
+          ]
+        },
+        {
+          "id": "praise-f-to-m",
+          "gate_keys": [
+            "romantic",
+            "dirty_talk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "degradation",
+      "title": {
+        "ru": "Унижение",
+        "en": "Degradation"
+      },
+      "intensity": 3,
+      "scenes": [
+        {
+          "id": "degradation-m-to-f",
+          "gate_keys": [
+            "power_dynamic",
+            "dirty_talk"
+          ]
+        },
+        {
+          "id": "degradation-f-to-m",
+          "gate_keys": [
+            "power_dynamic",
+            "dirty_talk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "worship",
+      "title": {
+        "ru": "Поклонение телу",
+        "en": "Body worship"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "body-worship-m-to-f",
+          "gate_keys": [
+            "romantic",
+            "oral"
+          ]
+        },
+        {
+          "id": "body-worship-f-to-m",
+          "gate_keys": [
+            "romantic",
+            "oral"
+          ]
+        },
+        {
+          "id": "cock-worship",
+          "gate_keys": [
+            "romantic",
+            "oral",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "pussy-worship",
+          "gate_keys": [
+            "romantic",
+            "oral",
+            "power_dynamic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foot",
+      "title": {
+        "ru": "Ноги",
+        "en": "Feet"
+      },
+      "intensity": 2,
+      "skip_if_body_map": {
+        "zones": [
+          "feet"
+        ],
+        "actions": [
+          "kiss",
+          "lick",
+          "massage"
+        ],
+        "condition": "all_no"
+      },
+      "scenes": [
+        {
+          "id": "foot-worship-m-to-f",
+          "gate_keys": [
+            "foot"
+          ]
+        },
+        {
+          "id": "foot-worship-f-to-m",
+          "gate_keys": [
+            "foot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clothing",
+      "title": {
+        "ru": "Одежда и бельё",
+        "en": "Clothing & lingerie"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "lingerie-f",
+          "gate_keys": [
+            "lingerie"
+          ]
+        },
+        {
+          "id": "lingerie-m",
+          "gate_keys": [
+            "lingerie"
+          ]
+        },
+        {
+          "id": "stockings",
+          "gate_keys": [
+            "lingerie",
+            "foot"
+          ]
+        },
+        {
+          "id": "heels-only",
+          "gate_keys": [
+            "lingerie",
+            "foot"
+          ]
+        },
+        {
+          "id": "harness-f",
+          "gate_keys": [
+            "lingerie",
+            "bondage"
+          ]
+        },
+        {
+          "id": "harness-m",
+          "gate_keys": [
+            "lingerie",
+            "bondage"
+          ]
+        },
+        {
+          "id": "latex-leather",
+          "gate_keys": [
+            "lingerie",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "uniforms-f",
+          "gate_keys": [
+            "lingerie",
+            "roleplay"
+          ]
+        },
+        {
+          "id": "uniforms-m",
+          "gate_keys": [
+            "lingerie",
+            "roleplay"
+          ]
+        },
+        {
+          "id": "striptease-f",
+          "gate_keys": [
+            "lingerie",
+            "romantic"
+          ]
+        },
+        {
+          "id": "striptease-m",
+          "gate_keys": [
+            "lingerie",
+            "romantic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exhibitionism",
+      "title": {
+        "ru": "Эксгибиционизм",
+        "en": "Exhibitionism"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "exhibitionism",
+          "gate_keys": [
+            "exhibitionism",
+            "public"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "voyeurism",
+      "title": {
+        "ru": "Вуайеризм",
+        "en": "Voyeurism"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "voyeurism",
+          "gate_keys": [
+            "voyeurism"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recording",
+      "title": {
+        "ru": "Съёмка",
+        "en": "Recording"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "filming",
+          "gate_keys": [
+            "recording",
+            "exhibitionism"
+          ]
+        },
+        {
+          "id": "sexting",
+          "gate_keys": [
+            "recording",
+            "dirty_talk"
+          ]
+        },
+        {
+          "id": "joi",
+          "gate_keys": [
+            "recording",
+            "dirty_talk",
+            "power_dynamic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "domination",
+      "title": {
+        "ru": "Доминирование",
+        "en": "Domination"
+      },
+      "intensity": 3,
+      "scenes": [
+        {
+          "id": "collar-m-owns-f",
+          "gate_keys": [
+            "power_dynamic",
+            "lingerie"
+          ]
+        },
+        {
+          "id": "collar-f-owns-m",
+          "gate_keys": [
+            "power_dynamic",
+            "lingerie"
+          ]
+        },
+        {
+          "id": "free-use-f-available",
+          "gate_keys": [
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "free-use-m-available",
+          "gate_keys": [
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "objectification-f",
+          "gate_keys": [
+            "power_dynamic",
+            "degradation"
+          ]
+        },
+        {
+          "id": "objectification-m",
+          "gate_keys": [
+            "power_dynamic",
+            "degradation"
+          ]
+        },
+        {
+          "id": "feminization",
+          "gate_keys": [
+            "power_dynamic",
+            "roleplay"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chastity",
+      "title": {
+        "ru": "Пояс верности",
+        "en": "Chastity"
+      },
+      "intensity": 3,
+      "scenes": [
+        {
+          "id": "chastity-m-locked",
+          "gate_keys": [
+            "power_dynamic",
+            "toys"
+          ]
+        },
+        {
+          "id": "chastity-f-locked",
+          "gate_keys": [
+            "power_dynamic",
+            "toys"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bondage",
+      "title": {
+        "ru": "Связывание",
+        "en": "Bondage"
+      },
+      "intensity": 3,
+      "scenes": [
+        {
+          "id": "bondage-m-ties-f",
+          "gate_keys": [
+            "bondage",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "bondage-f-ties-m",
+          "gate_keys": [
+            "bondage",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "mummification-f",
+          "gate_keys": [
+            "bondage",
+            "sensory"
+          ]
+        },
+        {
+          "id": "mummification-m",
+          "gate_keys": [
+            "bondage",
+            "sensory"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rough",
+      "title": {
+        "ru": "Грубый секс",
+        "en": "Rough sex"
+      },
+      "intensity": 3,
+      "skip_if_body_map": {
+        "zones": [
+          "buttocks",
+          "neck"
+        ],
+        "actions": [
+          "spank",
+          "grab",
+          "bite"
+        ],
+        "condition": "all_no"
+      },
+      "scenes": [
+        {
+          "id": "spanking-m-to-f",
+          "gate_keys": [
+            "rough",
+            "pain"
+          ]
+        },
+        {
+          "id": "spanking-f-to-m",
+          "gate_keys": [
+            "rough",
+            "pain"
+          ]
+        },
+        {
+          "id": "choking-m-to-f",
+          "gate_keys": [
+            "rough",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "choking-f-to-m",
+          "gate_keys": [
+            "rough",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "primal",
+          "gate_keys": [
+            "rough"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pain",
+      "title": {
+        "ru": "Боль",
+        "en": "Pain play"
+      },
+      "intensity": 3,
+      "scenes": [
+        {
+          "id": "face-slapping-m-to-f",
+          "gate_keys": [
+            "pain",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "face-slapping-f-to-m",
+          "gate_keys": [
+            "pain",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "nipple-play-m-to-f",
+          "gate_keys": [
+            "pain",
+            "sensory"
+          ]
+        },
+        {
+          "id": "nipple-play-f-to-m",
+          "gate_keys": [
+            "pain",
+            "sensory"
+          ]
+        },
+        {
+          "id": "cbt",
+          "gate_keys": [
+            "pain",
+            "power_dynamic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orgasm_control",
+      "title": {
+        "ru": "Контроль оргазма",
+        "en": "Orgasm control"
+      },
+      "intensity": 3,
+      "scenes": [
+        {
+          "id": "edging-m-to-f",
+          "gate_keys": [
+            "power_dynamic",
+            "sensory"
+          ]
+        },
+        {
+          "id": "edging-f-to-m",
+          "gate_keys": [
+            "power_dynamic",
+            "sensory"
+          ]
+        },
+        {
+          "id": "forced-orgasm-m-to-f",
+          "gate_keys": [
+            "power_dynamic",
+            "toys"
+          ]
+        },
+        {
+          "id": "forced-orgasm-f-to-m",
+          "gate_keys": [
+            "power_dynamic",
+            "toys"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "threesome",
+      "title": {
+        "ru": "Тройничок",
+        "en": "Threesome"
+      },
+      "intensity": 3,
+      "scenes": [
+        {
+          "id": "threesome-fmf",
+          "gate_keys": [
+            "group"
+          ]
+        },
+        {
+          "id": "threesome-mfm",
+          "gate_keys": [
+            "group"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swinging",
+      "title": {
+        "ru": "Свинг",
+        "en": "Swinging"
+      },
+      "intensity": 3,
+      "scenes": [
+        {
+          "id": "swinging",
+          "gate_keys": [
+            "group",
+            "exhibitionism",
+            "voyeurism"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cuckold",
+      "title": {
+        "ru": "Куколд",
+        "en": "Cuckold"
+      },
+      "intensity": 3,
+      "scenes": [
+        {
+          "id": "cuckold",
+          "gate_keys": [
+            "group",
+            "voyeurism",
+            "power_dynamic"
+          ]
+        },
+        {
+          "id": "hotwife",
+          "gate_keys": [
+            "group",
+            "exhibitionism"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gangbang",
+      "title": {
+        "ru": "Гэнгбэнг",
+        "en": "Gangbang"
+      },
+      "intensity": 4,
+      "require_very": true,
+      "scenes": [
+        {
+          "id": "gangbang",
+          "gate_keys": [
+            "group"
+          ],
+          "require_very": true
+        },
+        {
+          "id": "orgy",
+          "gate_keys": [
+            "group"
+          ],
+          "require_very": true
+        },
+        {
+          "id": "double-penetration",
+          "gate_keys": [
+            "group",
+            "anal"
+          ],
+          "require_very": true
+        }
+      ]
+    },
+    {
+      "id": "cum",
+      "title": {
+        "ru": "Куда кончить",
+        "en": "Where to finish"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "cum-where-to-finish",
+          "gate_keys": [
+            "body_fluids"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "squirting",
+      "title": {
+        "ru": "Сквирт",
+        "en": "Squirting"
+      },
+      "intensity": 2,
+      "scenes": [
+        {
+          "id": "squirting",
+          "gate_keys": [
+            "body_fluids",
+            "oral"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "golden_shower",
+      "title": {
+        "ru": "Золотой дождь",
+        "en": "Golden shower"
+      },
+      "intensity": 4,
+      "require_very": true,
+      "scenes": [
+        {
+          "id": "golden-shower-m-to-f",
+          "gate_keys": [
+            "body_fluids",
+            "power_dynamic"
+          ],
+          "require_very": true
+        },
+        {
+          "id": "golden-shower-f-to-m",
+          "gate_keys": [
+            "body_fluids",
+            "power_dynamic"
+          ],
+          "require_very": true
+        },
+        {
+          "id": "golden-shower",
+          "gate_keys": [
+            "body_fluids"
+          ],
+          "require_very": true
+        }
+      ]
+    },
+    {
+      "id": "spitting",
+      "title": {
+        "ru": "Плевки",
+        "en": "Spitting"
+      },
+      "intensity": 3,
+      "scenes": [
+        {
+          "id": "spitting-m-to-f",
+          "gate_keys": [
+            "power_dynamic",
+            "body_fluids"
+          ]
+        },
+        {
+          "id": "spitting-f-to-m",
+          "gate_keys": [
+            "power_dynamic",
+            "body_fluids"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "breeding",
+      "title": {
+        "ru": "Бридинг",
+        "en": "Breeding"
+      },
+      "intensity": 3,
+      "scenes": [
+        {
+          "id": "breeding-kink",
+          "gate_keys": [
+            "body_fluids",
+            "power_dynamic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cnc",
+      "title": {
+        "ru": "CNC",
+        "en": "Consensual non-consent"
+      },
+      "intensity": 4,
+      "require_very": true,
+      "scenes": [
+        {
+          "id": "cnc-m-takes-f",
+          "gate_keys": [
+            "rough",
+            "power_dynamic"
+          ],
+          "require_very": true
+        },
+        {
+          "id": "cnc-f-takes-m",
+          "gate_keys": [
+            "rough",
+            "power_dynamic"
+          ],
+          "require_very": true
+        }
+      ]
+    },
+    {
+      "id": "somnophilia",
+      "title": {
+        "ru": "Сомнофилия",
+        "en": "Somnophilia"
+      },
+      "intensity": 4,
+      "require_very": true,
+      "scenes": [
+        {
+          "id": "somnophilia-m-to-f",
+          "gate_keys": [
+            "power_dynamic"
+          ],
+          "require_very": true
+        },
+        {
+          "id": "somnophilia-f-to-m",
+          "gate_keys": [
+            "power_dynamic"
+          ],
+          "require_very": true
+        }
+      ]
+    },
+    {
+      "id": "breath_play",
+      "title": {
+        "ru": "Удушение",
+        "en": "Breath play"
+      },
+      "intensity": 5,
+      "require_very": true,
+      "scenes": [
+        {
+          "id": "breath-play-m-to-f",
+          "gate_keys": [
+            "breath_play",
+            "power_dynamic"
+          ],
+          "require_very": true
+        },
+        {
+          "id": "breath-play-f-to-m",
+          "gate_keys": [
+            "breath_play",
+            "power_dynamic"
+          ],
+          "require_very": true
+        }
+      ]
+    },
+    {
+      "id": "knife_play",
+      "title": {
+        "ru": "Нож",
+        "en": "Knife play"
+      },
+      "intensity": 5,
+      "require_very": true,
+      "scenes": [
+        {
+          "id": "knife-play-m-to-f",
+          "gate_keys": [
+            "knife_play",
+            "power_dynamic"
+          ],
+          "require_very": true
+        },
+        {
+          "id": "knife-play-f-to-m",
+          "gate_keys": [
+            "knife_play",
+            "power_dynamic"
+          ],
+          "require_very": true
+        }
+      ]
+    },
+    {
+      "id": "fisting",
+      "title": {
+        "ru": "Фистинг",
+        "en": "Fisting"
+      },
+      "intensity": 5,
+      "require_very": true,
+      "scenes": [
+        {
+          "id": "fisting-m-to-f",
+          "gate_keys": [
+            "fisting",
+            "anal"
+          ],
+          "require_very": true
+        },
+        {
+          "id": "fisting-f-to-m",
+          "gate_keys": [
+            "fisting",
+            "anal"
+          ],
+          "require_very": true
+        }
+      ]
+    },
+    {
+      "id": "needle_play",
+      "title": {
+        "ru": "Иглы",
+        "en": "Needle play"
+      },
+      "intensity": 5,
+      "require_very": true,
+      "scenes": [
+        {
+          "id": "needle-play",
+          "gate_keys": [
+            "needle_play",
+            "pain"
+          ],
+          "require_very": true
+        }
+      ]
+    },
+    {
+      "id": "electrostim",
+      "title": {
+        "ru": "Электростимуляция",
+        "en": "Electrostimulation"
+      },
+      "intensity": 5,
+      "require_very": true,
+      "scenes": [
+        {
+          "id": "electrostim",
+          "gate_keys": [
+            "electrostim",
+            "sensory"
+          ],
+          "require_very": true
+        }
+      ]
+    }
+  ],
+  "body_map_to_topic": {
+    "feet": [
+      "foot"
+    ],
+    "anus": [
+      "anal"
+    ],
+    "buttocks": [
+      "rough",
+      "pain"
+    ],
+    "neck": [
+      "rough"
+    ],
+    "lips": [
+      "oral"
+    ],
+    "groin": [
+      "oral"
+    ],
+    "penis": [
+      "oral"
+    ],
+    "vulva": [
+      "oral"
+    ]
+  },
+  "gate_to_topics": {
+    "oral": [
+      "oral"
+    ],
+    "anal": [
+      "anal"
+    ],
+    "toys": [
+      "toys"
+    ],
+    "roleplay": [
+      "roleplay"
+    ],
+    "romantic": [
+      "romantic",
+      "sensory",
+      "praise",
+      "worship"
+    ],
+    "quickie": [
+      "quickie"
+    ],
+    "power_dynamic": [
+      "domination",
+      "chastity",
+      "orgasm_control",
+      "degradation",
+      "spitting",
+      "somnophilia"
+    ],
+    "bondage": [
+      "bondage"
+    ],
+    "rough": [
+      "rough",
+      "pain",
+      "cnc"
+    ],
+    "dirty_talk": [
+      "dirty_talk"
+    ],
+    "foot": [
+      "foot"
+    ],
+    "lingerie": [
+      "clothing"
+    ],
+    "exhibitionism": [
+      "exhibitionism"
+    ],
+    "voyeurism": [
+      "voyeurism"
+    ],
+    "recording": [
+      "recording"
+    ],
+    "group": [
+      "threesome",
+      "swinging",
+      "cuckold",
+      "gangbang"
+    ],
+    "body_fluids": [
+      "cum",
+      "squirting",
+      "golden_shower",
+      "breeding"
+    ],
+    "breath_play": [
+      "breath_play"
+    ],
+    "knife_play": [
+      "knife_play"
+    ],
+    "fisting": [
+      "fisting"
+    ],
+    "needle_play": [
+      "needle_play"
+    ],
+    "electrostim": [
+      "electrostim"
+    ],
+    "public": [
+      "locations"
+    ],
+    "pain": [
+      "pain",
+      "wax"
+    ]
+  }
+}

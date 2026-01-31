@@ -1,0 +1,58 @@
+{
+  "id": "power-dynamic-m",
+  "slug": "power-dynamic-m",
+  "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "power-dynamic-f",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Динамика власти",
+    "en": "Power Dynamic"
+  },
+  "subtitle": {
+    "ru": "Доминировать над ней?",
+    "en": "Dominate her?"
+  },
+  "user_description": {
+    "ru": "Тебе нравится доминировать, контролировать, командовать ей в постели?",
+    "en": "Do you like dominating, controlling, commanding her in bed?"
+  },
+  "ai_description": {
+    "ru": "Кто главный в постели? Ты доминируешь, она подчиняется — или наоборот? Или зависит от настроения?",
+    "en": "Who's in charge in bed? You dominate, she submits — or vice versa? Or depends on mood?"
+  },
+  "image_prompt": "man and woman in bed, one positioned above the other showing dominance, intense eye contact, bedroom with soft shadows",
+  "intensity": 1,
+  "category": "baseline",
+  "tags": [
+    "baseline",
+    "power_dynamic",
+    "dominant"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "power_dynamic",
+      "dominant"
+    ],
+    "gates": {
+      "dominant": [
+        "bondage_giving",
+        "control_scenes"
+      ],
+      "switch": [
+        "all_power_scenes"
+      ]
+    }
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Доминировать над ней в постели?",
+      "en": "Dominate her in bed?"
+    }
+  },
+  "priority": 1,
+  "sets_gate": "power_dynamic"
+}

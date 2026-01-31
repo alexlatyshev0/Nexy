@@ -1,15 +1,15 @@
 /**
  * Gates System - scene visibility based on user preferences
  *
- * ARCHITECTURE (as of migration 019_unified_gates.sql):
+ * ARCHITECTURE (as of migration 033_unified_responses.sql):
  * - Gates are computed AUTOMATICALLY by database triggers
  * - Single source of truth: user_gates.gates column
  * - Client should NOT compute gates - only read them from DB
  *
  * Sources:
- * - onboarding_responses.responses → onboarding gates
+ * - scene_responses (for scenes with sets_gate) → onboarding gates
  * - body_map_responses → body map gates
- * - Future: activity_gates (extensible)
+ * - activity_gates → manual/programmatic gates
  *
  * Response values:
  * - NO = 0: Not interested
@@ -158,22 +158,32 @@ export async function fetchUserGatesDetailed(
 // Gate requirement types
 type GateOperator = 'AND' | 'OR';
 
-interface GateRequirement {
+export interface GateRequirement {
   gates: string[];
   operator: GateOperator;
   level?: 'basic' | 'very'; // 'basic' = YES+, 'very' = VERY only
 }
 
+// All available gates
+export const ALL_GATES = [
+  'oral', 'anal', 'group', 'toys', 'roleplay', 'quickie', 'romantic',
+  'power_dynamic', 'rough', 'public', 'exhibitionism', 'recording',
+  'dirty_talk', 'praise', 'lingerie', 'foot', 'bondage', 'body_fluids',
+  'sexting', 'extreme'
+] as const;
+
+export type GateName = typeof ALL_GATES[number];
+
 // Scene to gate mapping (from onboarding-integration.md)
-const SCENE_GATES: Record<string, GateRequirement> = {
+export const SCENE_GATES: Record<string, GateRequirement> = {
   // ORAL
   blowjob: { gates: ['oral'], operator: 'AND' },
   cunnilingus: { gates: ['oral'], operator: 'AND' },
   deepthroat: { gates: ['oral'], operator: 'AND' },
-  'facesitting-f-on-m': { gates: ['oral'], operator: 'AND' },
-  'facesitting-m-on-f': { gates: ['oral'], operator: 'AND' },
-  'rimming-m-to-f': { gates: ['oral'], operator: 'AND' },
-  'rimming-f-to-m': { gates: ['oral'], operator: 'AND' },
+  'facesitting-she-on-him': { gates: ['oral'], operator: 'AND' },
+  'facesitting-he-on-her': { gates: ['oral'], operator: 'AND' },
+  'rimming-he-to-her': { gates: ['oral'], operator: 'AND' },
+  'rimming-she-to-him': { gates: ['oral'], operator: 'AND' },
   'cock-worship': { gates: ['oral'], operator: 'AND' },
   'pussy-worship': { gates: ['oral'], operator: 'AND' },
 
@@ -188,63 +198,60 @@ const SCENE_GATES: Record<string, GateRequirement> = {
   'cum-where-to-finish': { gates: ['body_fluids'], operator: 'AND' },
   squirting: { gates: ['body_fluids'], operator: 'AND' },
   'squirt-receiving': { gates: ['body_fluids', 'oral'], operator: 'AND' },
-  'golden-shower-m-to-f': { gates: ['body_fluids'], operator: 'AND' },
-  'golden-shower-f-to-m': { gates: ['body_fluids'], operator: 'AND' },
-  'spitting-m-to-f': { gates: ['body_fluids', 'power_dynamic'], operator: 'AND' },
-  'spitting-f-to-m': { gates: ['body_fluids', 'power_dynamic'], operator: 'AND' },
+  'golden-shower-he-on-her': { gates: ['body_fluids'], operator: 'AND' },
+  'golden-shower-she-on-him': { gates: ['body_fluids'], operator: 'AND' },
+  'spitting-he-on-her': { gates: ['body_fluids', 'power_dynamic'], operator: 'AND' },
+  'spitting-she-on-him': { gates: ['body_fluids', 'power_dynamic'], operator: 'AND' },
   'breeding-kink': { gates: ['body_fluids'], operator: 'AND' },
 
   // WORSHIP
-  'body-worship-m-to-f': { gates: ['romantic'], operator: 'AND' },
-  'body-worship-f-to-m': { gates: ['romantic'], operator: 'AND' },
-  'foot-worship-m-to-f': { gates: ['foot'], operator: 'AND' },
-  'foot-worship-f-to-m': { gates: ['foot'], operator: 'AND' },
+  'body-worship-he-worships-her': { gates: ['romantic'], operator: 'AND' },
+  'body-worship-she-worships-him': { gates: ['romantic'], operator: 'AND' },
+  'foot-worship-he-worships-her': { gates: ['foot'], operator: 'AND' },
+  'foot-worship-she-worships-his': { gates: ['foot'], operator: 'AND' },
   armpit: { gates: ['body_fluids', 'rough'], operator: 'OR' },
 
   // IMPACT/PAIN
-  'spanking-m-to-f': { gates: ['rough'], operator: 'AND' },
-  'spanking-f-to-m': { gates: ['rough'], operator: 'AND' },
-  'choking-m-to-f': { gates: ['rough'], operator: 'AND' },
-  'choking-f-to-m': { gates: ['rough'], operator: 'AND' },
-  'face-slapping-m-to-f': { gates: ['rough'], operator: 'AND', level: 'very' },
-  'face-slapping-f-to-m': { gates: ['rough'], operator: 'AND', level: 'very' },
-  'whipping-m-to-f': { gates: ['rough', 'bondage'], operator: 'AND' },
-  'whipping-f-to-m': { gates: ['rough', 'bondage'], operator: 'AND' },
-  'wax-play-m-to-f': { gates: ['rough', 'toys'], operator: 'OR' },
-  'wax-play-f-to-m': { gates: ['rough', 'toys'], operator: 'OR' },
-  'nipple-play-m-to-f': { gates: ['rough', 'toys'], operator: 'OR' },
-  'nipple-play-f-to-m': { gates: ['rough', 'toys'], operator: 'OR' },
+  'spanking-he-spanks-her': { gates: ['rough'], operator: 'AND' },
+  'spanking-she-spanks-him': { gates: ['rough'], operator: 'AND' },
+  'choking-he-chokes-her': { gates: ['rough'], operator: 'AND' },
+  'choking-she-chokes-him': { gates: ['rough'], operator: 'AND' },
+  'face-slapping-he-slaps-her': { gates: ['rough'], operator: 'AND', level: 'very' },
+  'face-slapping-she-slaps-him': { gates: ['rough'], operator: 'AND', level: 'very' },
+  'whipping-m-to-f': { gates: ['rough', 'bondage'], operator: 'AND' }, // exists in DB (inactive)
+  'whipping-f-to-m': { gates: ['rough', 'bondage'], operator: 'AND' }, // exists in DB (inactive)
+  'wax-play-he-on-her': { gates: ['rough', 'toys'], operator: 'OR' },
+  'wax-play-she-on-him': { gates: ['rough', 'toys'], operator: 'OR' },
+  'nipple-play-he-on-her': { gates: ['rough', 'toys'], operator: 'OR' },
+  'nipple-play-she-on-him': { gates: ['rough', 'toys'], operator: 'OR' },
   cbt: { gates: ['rough', 'power_dynamic'], operator: 'AND' },
 
   // VERBAL
   'dirty-talk': { gates: ['dirty_talk'], operator: 'AND' },
-  'degradation-m-to-f': { gates: ['dirty_talk', 'power_dynamic'], operator: 'AND' },
-  'degradation-f-to-m': { gates: ['dirty_talk', 'power_dynamic'], operator: 'AND' },
-  'praise-m-to-f': { gates: ['praise'], operator: 'AND' },
-  'praise-f-to-m': { gates: ['praise'], operator: 'AND' },
+  'degradation-he-degrades-her': { gates: ['dirty_talk', 'power_dynamic'], operator: 'AND' },
+  'degradation-she-degrades-him': { gates: ['dirty_talk', 'power_dynamic'], operator: 'AND' },
+  'praise-he-praises-her': { gates: ['praise'], operator: 'AND' },
+  'praise-she-praises-him': { gates: ['praise'], operator: 'AND' },
 
   // CONTROL/POWER
-  'bondage-m-ties-f': { gates: ['bondage'], operator: 'AND' },
-  'bondage-f-ties-m': { gates: ['bondage'], operator: 'AND' },
-  'collar-m-owns-f': { gates: ['power_dynamic'], operator: 'AND' },
-  'collar-f-owns-m': { gates: ['power_dynamic'], operator: 'AND' },
-  'edging-m-to-f': { gates: ['power_dynamic', 'toys'], operator: 'OR' },
-  'edging-f-to-m': { gates: ['power_dynamic', 'toys'], operator: 'OR' },
-  'forced-orgasm-m-to-f': { gates: ['power_dynamic'], operator: 'AND' },
-  'forced-orgasm-f-to-m': { gates: ['power_dynamic'], operator: 'AND' },
-  'ruined-orgasm-m-to-f': { gates: ['power_dynamic'], operator: 'AND' },
-  'ruined-orgasm-f-to-m': { gates: ['power_dynamic'], operator: 'AND' },
+  'bondage-he-ties-her': { gates: ['bondage'], operator: 'AND' },
+  'bondage-she-ties-him': { gates: ['bondage'], operator: 'AND' },
+  'collar-he-owns-her': { gates: ['power_dynamic'], operator: 'AND' },
+  'collar-she-owns-him': { gates: ['power_dynamic'], operator: 'AND' },
+  // Orgasm control (merged from edging/forced/ruined)
+  'orgasm-control-m-to-f': { gates: ['power_dynamic'], operator: 'AND' },
+  'orgasm-control-f-to-m': { gates: ['power_dynamic'], operator: 'AND' },
   'free-use-f-available': { gates: ['power_dynamic'], operator: 'AND' },
   'free-use-m-available': { gates: ['power_dynamic'], operator: 'AND' },
   'objectification-f': { gates: ['power_dynamic'], operator: 'AND' },
   'objectification-m': { gates: ['power_dynamic'], operator: 'AND' },
-  'chastity-m-locked': { gates: ['power_dynamic'], operator: 'AND' },
-  'chastity-f-locked': { gates: ['power_dynamic'], operator: 'AND' },
+  'chastity-he-locked': { gates: ['power_dynamic'], operator: 'AND' },
+  'chastity-she-locked': { gates: ['power_dynamic'], operator: 'AND' },
   feminization: { gates: ['power_dynamic'], operator: 'AND' },
 
   // CNC/ROUGH
-  'cnc-m-takes-f': { gates: ['rough'], operator: 'AND', level: 'very' },
-  'cnc-f-takes-m': { gates: ['rough'], operator: 'AND', level: 'very' },
+  'cnc-he-takes-her': { gates: ['rough'], operator: 'AND', level: 'very' },
+  'cnc-she-takes-him': { gates: ['rough'], operator: 'AND', level: 'very' },
   primal: { gates: ['rough'], operator: 'AND' },
   'somnophilia-m-to-f': { gates: ['power_dynamic'], operator: 'AND' },
   'somnophilia-f-to-m': { gates: ['power_dynamic'], operator: 'AND' },
@@ -261,27 +268,28 @@ const SCENE_GATES: Record<string, GateRequirement> = {
   'fisting-f-to-m': { gates: ['anal', 'power_dynamic'], operator: 'OR', level: 'very' },
   'fucking-machine': { gates: ['toys'], operator: 'AND' },
   electrostim: { gates: ['toys'], operator: 'AND' },
+  extreme: { gates: ['extreme'], operator: 'AND' },
 
   // GROUP
   'threesome-fmf': { gates: ['group'], operator: 'AND' },
   'threesome-mfm': { gates: ['group'], operator: 'AND' },
   gangbang: { gates: ['group'], operator: 'AND', level: 'very' },
   orgy: { gates: ['group'], operator: 'AND', level: 'very' },
-  swinging: { gates: ['group'], operator: 'AND' },
+  'swinging-partner-swap': { gates: ['group'], operator: 'AND' },
   'double-penetration': { gates: ['group', 'anal'], operator: 'AND' },
 
   // CUCKOLD
   cuckold: { gates: ['group', 'power_dynamic'], operator: 'AND' },
-  hotwife: { gates: ['group', 'power_dynamic'], operator: 'AND' },
+  'hotwife-vixen': { gates: ['group', 'power_dynamic'], operator: 'AND' },
 
   // EXHIBITIONISM
   exhibitionism: { gates: ['exhibitionism'], operator: 'AND' },
   voyeurism: { gates: ['exhibitionism'], operator: 'AND' },
   'public-sex': { gates: ['public'], operator: 'AND' },
-  'glory-hole-f-gives': { gates: ['exhibitionism', 'oral'], operator: 'AND' },
-  'glory-hole-m-gives': { gates: ['exhibitionism', 'oral'], operator: 'AND' },
-  'striptease-f': { gates: ['exhibitionism'], operator: 'AND' },
-  'striptease-m': { gates: ['exhibitionism'], operator: 'AND' },
+  'glory-hole-blowjob': { gates: ['exhibitionism', 'oral'], operator: 'AND' },
+  'glory-hole-cunnilingus': { gates: ['exhibitionism', 'oral'], operator: 'AND' },
+  'female-striptease': { gates: ['exhibitionism'], operator: 'AND' },
+  'male-striptease': { gates: ['exhibitionism'], operator: 'AND' },
 
   // ROLEPLAY
   'boss-m-secretary-f': { gates: ['roleplay'], operator: 'AND' },
@@ -289,15 +297,15 @@ const SCENE_GATES: Record<string, GateRequirement> = {
   'teacher-m-student-f': { gates: ['roleplay'], operator: 'AND' },
   'teacher-f-student-m': { gates: ['roleplay'], operator: 'AND' },
   'doctor-patient': { gates: ['roleplay'], operator: 'AND' },
-  stranger: { gates: ['roleplay'], operator: 'AND' },
+  'stranger-roleplay': { gates: ['roleplay'], operator: 'AND' },
   'service-roleplay': { gates: ['roleplay', 'power_dynamic'], operator: 'AND' },
   'taboo-roleplay': { gates: ['roleplay'], operator: 'AND', level: 'very' },
 
   // PET/AGE PLAY
-  'pet-play-f-is-pet': { gates: ['roleplay', 'power_dynamic'], operator: 'AND' },
-  'pet-play-m-is-pet': { gates: ['roleplay', 'power_dynamic'], operator: 'AND' },
-  ddlg: { gates: ['roleplay', 'power_dynamic'], operator: 'AND' },
-  mdlb: { gates: ['roleplay', 'power_dynamic'], operator: 'AND' },
+  'pet-play-she-is-pet': { gates: ['roleplay', 'power_dynamic'], operator: 'AND' },
+  'pet-play-he-is-pet': { gates: ['roleplay', 'power_dynamic'], operator: 'AND' },
+  'daddy-dom-little-girl': { gates: ['roleplay', 'power_dynamic'], operator: 'AND' },
+  'mommy-dom-little-boy': { gates: ['roleplay', 'power_dynamic'], operator: 'AND' },
 
   // SENSORY
   blindfold: { gates: ['power_dynamic', 'romantic'], operator: 'OR' },
@@ -305,22 +313,22 @@ const SCENE_GATES: Record<string, GateRequirement> = {
   'feather-tickle': { gates: ['romantic'], operator: 'AND' },
 
   // TOYS
-  vibrator: { gates: ['toys'], operator: 'AND' },
-  dildo: { gates: ['toys'], operator: 'AND' },
+  'vibrator-play': { gates: ['toys'], operator: 'AND' },
+  'dildo-play': { gates: ['toys'], operator: 'AND' },
   'cock-ring': { gates: ['toys'], operator: 'AND' },
   'nipple-clamps': { gates: ['toys', 'rough'], operator: 'AND' },
-  'remote-control': { gates: ['toys', 'public'], operator: 'AND' },
+  'remote-control-toy': { gates: ['toys', 'public'], operator: 'AND' },
 
   // CLOTHING
-  'lingerie-f': { gates: ['lingerie'], operator: 'AND' },
-  'lingerie-m': { gates: ['lingerie'], operator: 'AND' },
-  stockings: { gates: ['lingerie'], operator: 'AND' },
+  'female-lingerie': { gates: ['lingerie'], operator: 'AND' },
+  'male-lingerie': { gates: ['lingerie'], operator: 'AND' },
+  'stockings-garters': { gates: ['lingerie'], operator: 'AND' },
   'heels-only': { gates: ['lingerie'], operator: 'AND' },
-  'harness-f': { gates: ['lingerie'], operator: 'AND' },
-  'harness-m': { gates: ['lingerie'], operator: 'AND' },
+  'female-harness': { gates: ['lingerie'], operator: 'AND' },
+  'male-harness': { gates: ['lingerie'], operator: 'AND' },
   'latex-leather': { gates: ['lingerie'], operator: 'AND' },
-  'uniforms-f': { gates: ['lingerie', 'roleplay'], operator: 'AND' },
-  'uniforms-m': { gates: ['lingerie', 'roleplay'], operator: 'AND' },
+  'female-uniforms': { gates: ['lingerie', 'roleplay'], operator: 'AND' },
+  'male-uniforms': { gates: ['lingerie', 'roleplay'], operator: 'AND' },
   'torn-clothes': { gates: ['rough'], operator: 'AND' },
 
   // FILMING
@@ -337,14 +345,12 @@ const SCENE_GATES: Record<string, GateRequirement> = {
   'makeup-sex': { gates: ['romantic'], operator: 'AND' },
   'angry-sex': { gates: ['rough', 'quickie'], operator: 'OR' },
 
-  // INTIMACY (always available)
-  'casual-touch': { gates: [], operator: 'AND' },
-  'morning-teasing': { gates: [], operator: 'AND' },
-  'kitchen-counter': { gates: ['public', 'quickie'], operator: 'OR' },
+  // INTIMACY - merged into quickie with follow-up for context
+  // (casual-touch, morning-teasing, kitchen-counter deactivated)
 
   // MASSAGE
-  'massage-m-to-f': { gates: ['romantic'], operator: 'AND' },
-  'massage-f-to-m': { gates: ['romantic'], operator: 'AND' },
+  'massage-he-massages-her': { gates: ['romantic'], operator: 'AND' },
+  'massage-she-massages-him': { gates: ['romantic'], operator: 'AND' },
 };
 
 /**
@@ -355,7 +361,12 @@ export function isSceneAllowed(
   sceneSlug: string,
   gates: OnboardingGates
 ): boolean {
-  const requirement = SCENE_GATES[sceneSlug];
+  // Try direct lookup first, then strip -give/-receive suffix
+  let requirement = SCENE_GATES[sceneSlug];
+  if (!requirement && (sceneSlug.endsWith('-give') || sceneSlug.endsWith('-receive'))) {
+    const baseSlug = sceneSlug.replace(/-(give|receive)$/, '');
+    requirement = SCENE_GATES[baseSlug];
+  }
 
   // No requirement = always allowed
   if (!requirement || requirement.gates.length === 0) {
@@ -419,62 +430,4 @@ export function getSceneGateRequirement(
   return SCENE_GATES[sceneSlug] || null;
 }
 
-/**
- * Check which categories should be shown in onboarding
- * Based on conditional display rules
- */
-export function getVisibleOnboardingCategories(
-  responses: OnboardingResponses
-): string[] {
-  const baseCategories = [
-    'oral',
-    'anal',
-    'group',
-    'toys',
-    'roleplay',
-    'quickie',
-    'romantic',
-    'power_dynamic',
-    'rough',
-    'public',
-    'exhibitionism',
-    'recording',
-    'dirty_talk',
-    'praise',
-    'lingerie',
-    'foot',
-  ];
-
-  const conditionalCategories: string[] = [];
-
-  // bondage: show if power_dynamic ≠ vanilla OR rough = YES
-  if (
-    (responses.power_dynamic !== undefined && responses.power_dynamic >= RESPONSE.YES) ||
-    (responses.rough !== undefined && responses.rough >= RESPONSE.YES)
-  ) {
-    conditionalCategories.push('bondage');
-  }
-
-  // body_fluids: show if oral = YES
-  if (responses.oral !== undefined && responses.oral >= RESPONSE.YES) {
-    conditionalCategories.push('body_fluids');
-  }
-
-  // sexting: show if recording = YES OR exhibitionism = YES
-  if (
-    (responses.recording !== undefined && responses.recording >= RESPONSE.YES) ||
-    (responses.exhibitionism !== undefined && responses.exhibitionism >= RESPONSE.YES)
-  ) {
-    conditionalCategories.push('sexting');
-  }
-
-  // extreme: show if rough = VERY AND bondage = YES
-  if (
-    (responses.rough !== undefined && responses.rough >= RESPONSE.VERY) &&
-    (responses.bondage !== undefined && responses.bondage >= RESPONSE.YES)
-  ) {
-    conditionalCategories.push('extreme');
-  }
-
-  return [...baseCategories, ...conditionalCategories];
-}
+// REMOVED: getVisibleOnboardingCategories - conditional logic was unused

@@ -1,0 +1,59 @@
+{
+  "id": "knife-play",
+  "slug": "knife-play",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough",
+    "power_dynamic"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Knife Play",
+    "en": "Knife Play"
+  },
+  "subtitle": {
+    "ru": "Игра с лезвием",
+    "en": "Blade play"
+  },
+  "user_description": {
+    "ru": "Использование ножа для сенсорной стимуляции и ощущения опасности.",
+    "en": "Using a knife for sensory stimulation and sense of danger."
+  },
+  "ai_description": {
+    "ru": "Использование ножа или лезвия для сенсорной стимуляции и создания ощущения опасности. Не для порезов — для ощущений.",
+    "en": "Using a knife or blade for sensory stimulation and creating a sense of danger. Not for cutting — for sensation."
+  },
+  "image_prompt": "artistic shot of blade reflection, dominant figure holding knife, dramatic lighting",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": [
+    "knife_play",
+    "blade",
+    "fear_play",
+    "edge_play",
+    "danger"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "knife_play",
+      "blade",
+      "fear_play"
+    ],
+    "tests_secondary": [
+      "edge_play",
+      "danger",
+      "control"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в knife play?",
+      "en": "What appeals about knife play?"
+    }
+      }
+}

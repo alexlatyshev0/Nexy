@@ -1,8 +1,16 @@
 {
-  "id": "praise_f_to_m",
+  "id": "praise-she-praises-him",
   "slug": "praise-she-praises-him",
   "version": 2,
-  "paired_scene": "praise_m_to_f",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "praise",
+    "dirty_talk"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "praise-f-to-m-receive",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Похвала",
@@ -11,6 +19,10 @@
   "subtitle": {
     "ru": "Она хвалит его",
     "en": "She praises him"
+  },
+  "user_description": {
+    "ru": "Ты говоришь ему слова похвалы: «хороший мальчик», «молодец», «как ты меня радуешь».",
+    "en": "You speak words of praise to him: \"good boy\", \"well done\", \"you please me so\"."
   },
   "ai_description": {
     "ru": "'Хороший мальчик', — говорит она, и он светится от счастья. Её одобрение — лучшая награда. Он старается ради её похвалы.",
@@ -26,329 +38,6 @@
     "affirmation",
     "positive_reinforcement"
   ],
-  "elements": [
-    {
-      "id": "phrases",
-      "label": {
-        "ru": "Какие фразы?",
-        "en": "What phrases?"
-      },
-      "tag_ref": "praise_phrases_m",
-      "follow_ups": [
-        {
-          "id": "what_phrases",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие слова возбуждают?",
-            "en": "What words arouse?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "good_boy",
-                "label": {
-                  "ru": "Хороший мальчик",
-                  "en": "Good boy"
-                }
-              },
-              {
-                "id": "so_good",
-                "label": {
-                  "ru": "Ты так хорошо стараешься",
-                  "en": "You try so hard"
-                }
-              },
-              {
-                "id": "proud",
-                "label": {
-                  "ru": "Я довольна тобой",
-                  "en": "I'm pleased with you"
-                }
-              },
-              {
-                "id": "mine",
-                "label": {
-                  "ru": "Мой хороший",
-                  "en": "My good boy"
-                }
-              },
-              {
-                "id": "obedient",
-                "label": {
-                  "ru": "Послушный",
-                  "en": "Obedient"
-                }
-              },
-              {
-                "id": "useful",
-                "label": {
-                  "ru": "Полезный",
-                  "en": "Useful"
-                }
-              },
-              {
-                "id": "earned_it",
-                "label": {
-                  "ru": "Ты заслужил",
-                  "en": "You earned it"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "when",
-      "label": {
-        "ru": "Когда?",
-        "en": "When?"
-      },
-      "tag_ref": "praise_timing_m",
-      "follow_ups": [
-        {
-          "id": "timing",
-          "type": "multi_select",
-          "question": {
-            "ru": "В какой момент?",
-            "en": "At what moment?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "after_oral",
-                "label": {
-                  "ru": "После хорошего куни",
-                  "en": "After good cunnilingus"
-                }
-              },
-              {
-                "id": "for_obedience",
-                "label": {
-                  "ru": "За послушание",
-                  "en": "For obedience"
-                }
-              },
-              {
-                "id": "for_endurance",
-                "label": {
-                  "ru": "За терпение (BDSM)",
-                  "en": "For endurance"
-                }
-              },
-              {
-                "id": "after_service",
-                "label": {
-                  "ru": "После служения",
-                  "en": "After service"
-                }
-              },
-              {
-                "id": "for_orgasm_control",
-                "label": {
-                  "ru": "За контроль оргазма",
-                  "en": "For orgasm control"
-                }
-              },
-              {
-                "id": "random",
-                "label": {
-                  "ru": "Просто так",
-                  "en": "Just because"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "tone",
-      "label": {
-        "ru": "Тон",
-        "en": "Tone"
-      },
-      "tag_ref": "femdom_praise_tone",
-      "follow_ups": [
-        {
-          "id": "voice_tone",
-          "type": "multi_select",
-          "question": {
-            "ru": "Каким тоном?",
-            "en": "What tone?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "gentle",
-                "label": {
-                  "ru": "Нежный, материнский",
-                  "en": "Gentle, nurturing"
-                }
-              },
-              {
-                "id": "proud",
-                "label": {
-                  "ru": "Гордый, одобряющий",
-                  "en": "Proud, approving"
-                }
-              },
-              {
-                "id": "condescending",
-                "label": {
-                  "ru": "Снисходительный",
-                  "en": "Condescending"
-                }
-              },
-              {
-                "id": "surprised",
-                "label": {
-                  "ru": "Удивлённый (ты можешь!)",
-                  "en": "Surprised (you can!)"
-                }
-              },
-              {
-                "id": "rewarding",
-                "label": {
-                  "ru": "Как награду",
-                  "en": "As reward"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "male_praise_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "her_approval",
-                "label": {
-                  "ru": "Её одобрение",
-                  "en": "Her approval"
-                }
-              },
-              {
-                "id": "validation",
-                "label": {
-                  "ru": "Подтверждение что хороший",
-                  "en": "Validation he's good"
-                }
-              },
-              {
-                "id": "pleasing_her",
-                "label": {
-                  "ru": "Радовать её",
-                  "en": "Pleasing her"
-                }
-              },
-              {
-                "id": "submission",
-                "label": {
-                  "ru": "Подчинение",
-                  "en": "Submission"
-                }
-              },
-              {
-                "id": "motivation",
-                "label": {
-                  "ru": "Хотеть стараться больше",
-                  "en": "Want to try harder"
-                }
-              },
-              {
-                "id": "reward",
-                "label": {
-                  "ru": "Похвала как награда",
-                  "en": "Praise as reward"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "physical_combo",
-      "label": {
-        "ru": "С чем сочетать?",
-        "en": "Combine with?"
-      },
-      "tag_ref": "femdom_praise_combo",
-      "follow_ups": [
-        {
-          "id": "combo",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что усиливает?",
-            "en": "What enhances?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "head_pat",
-                "label": {
-                  "ru": "Погладить по голове",
-                  "en": "Head pat"
-                }
-              },
-              {
-                "id": "face_touch",
-                "label": {
-                  "ru": "Рука на лице",
-                  "en": "Hand on face"
-                }
-              },
-              {
-                "id": "kiss",
-                "label": {
-                  "ru": "Поцелуй",
-                  "en": "Kiss"
-                }
-              },
-              {
-                "id": "allow_orgasm",
-                "label": {
-                  "ru": "Разрешить кончить",
-                  "en": "Allow orgasm"
-                }
-              },
-              {
-                "id": "cuddle",
-                "label": {
-                  "ru": "Обнять к себе",
-                  "en": "Cuddle close"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что нравится в её похвале?",
-      "en": "What do you like about her praise?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "praise_kink",
@@ -372,8 +61,25 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Она говорит ему слова похвалы: \"хороший мальчик\", \"молодец\", \"как ты меня радуешь\"",
-    "en": "She speaks words of praise to him: \"good boy\", \"well done\", \"you please me so\""
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Что тебе нравится в похвале от неё?",
+      "en": "What do you like about her praise?"
+    },
+    "options": [
+      { "id": "odobrenie", "label": { "ru": "Чувство одобрения", "en": "Feeling of approval" } },
+      { "id": "motivaciya", "label": { "ru": "Мотивирует стараться", "en": "Motivates to try harder" } },
+      { "id": "nagrada", "label": { "ru": "Похвала как награда", "en": "Praise as reward" } },
+      { "id": "goloc", "label": { "ru": "Её голос", "en": "Her voice" } },
+      { "id": "vlast", "label": { "ru": "Её власть надо мной", "en": "Her power over me" } },
+      { "id": "nezhnost", "label": { "ru": "Нежность в словах", "en": "Tenderness in words" } }
+    ],
+    "allow_other": true,
+    "other_placeholder": {
+      "ru": "Другое...",
+      "en": "Other..."
+    },
+    "min_selections": 0
   }
 }

@@ -9,17 +9,31 @@ const supabase = createClient(
 
 export async function POST(req: Request) {
   try {
-    const { sceneId, field, value } = await req.json();
+    const { sceneId, slug, field, value } = await req.json();
 
-    if (!sceneId || !field) {
+    if ((!sceneId && !slug) || !field) {
       return NextResponse.json(
-        { error: 'Missing sceneId or field' },
+        { error: 'Missing sceneId/slug or field' },
         { status: 400 }
       );
     }
 
     // Only allow specific fields to be updated
-    const allowedFields = ['user_description', 'priority', 'prompt_instructions', 'generation_prompt', 'accepted'];
+    const allowedFields = [
+      'user_description',
+      'user_description_alt',
+      'alt_for_gender',
+      'priority',
+      'prompt_instructions',
+      'generation_prompt',
+      'accepted',
+      'is_active',
+      'selected_variant_index',
+      'elements',
+      'question',
+      'paired_with',
+      'role_direction',
+    ];
     if (!allowedFields.includes(field)) {
       return NextResponse.json(
         { error: `Field ${field} not allowed` },
@@ -27,11 +41,17 @@ export async function POST(req: Request) {
       );
     }
 
-    const { data, error } = await supabase
+    let query = supabase
       .from('scenes')
-      .update({ [field]: value })
-      .eq('id', sceneId)
-      .select();
+      .update({ [field]: value });
+
+    if (sceneId) {
+      query = query.eq('id', sceneId);
+    } else {
+      query = query.eq('slug', slug);
+    }
+
+    const { data, error } = await query.select('*, paired_with');
 
     if (error) {
       console.error('[UpdateScene] Error:', error);
@@ -45,7 +65,17 @@ export async function POST(req: Request) {
       );
     }
 
-    return NextResponse.json({ success: true, data: data[0] });
+    // Sync paired scene for accepted status
+    const scene = data[0];
+    if (field === 'accepted' && scene.paired_with) {
+      await supabase
+        .from('scenes')
+        .update({ accepted: value })
+        .eq('id', scene.paired_with);
+      console.log(`[UpdateScene] Synced accepted=${value} to paired scene ${scene.paired_with}`);
+    }
+
+    return NextResponse.json({ success: true, data: scene });
   } catch (error) {
     console.error('[UpdateScene] Exception:', error);
     return NextResponse.json(

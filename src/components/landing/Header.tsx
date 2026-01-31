@@ -1,12 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { createClient } from "@/lib/supabase/client";
+import type { User } from "@supabase/supabase-js";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const supabase = createClient();
+
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      setUser(user);
+      setLoading(false);
+    });
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -31,12 +50,22 @@ export function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" asChild>
-            <Link href="/login">Log In</Link>
-          </Button>
-          <Button asChild>
-            <Link href="/signup">Get Started</Link>
-          </Button>
+          {loading ? (
+            <div className="w-24 h-9" />
+          ) : user ? (
+            <Button asChild>
+              <Link href="/discover">Open App</Link>
+            </Button>
+          ) : (
+            <>
+              <Button variant="ghost" asChild>
+                <Link href="/login">Log In</Link>
+              </Button>
+              <Button asChild>
+                <Link href="/signup">Get Started</Link>
+              </Button>
+            </>
+          )}
         </div>
 
         {/* Mobile Menu Button */}
@@ -75,12 +104,22 @@ export function Header() {
               Pricing
             </Link>
             <div className="flex flex-col gap-2 pt-4 border-t border-border/40">
-              <Button variant="outline" asChild className="w-full">
-                <Link href="/login">Log In</Link>
-              </Button>
-              <Button asChild className="w-full">
-                <Link href="/signup">Get Started</Link>
-              </Button>
+              {loading ? (
+                <div className="h-10" />
+              ) : user ? (
+                <Button asChild className="w-full">
+                  <Link href="/discover">Open App</Link>
+                </Button>
+              ) : (
+                <>
+                  <Button variant="outline" asChild className="w-full">
+                    <Link href="/login">Log In</Link>
+                  </Button>
+                  <Button asChild className="w-full">
+                    <Link href="/signup">Get Started</Link>
+                  </Button>
+                </>
+              )}
             </div>
           </nav>
         </div>

@@ -1,0 +1,40 @@
+{
+  "id": "0ea8fa1a-427b-40e8-ad94-c04fc1606080",
+  "slug": "onboarding-praise-give-f",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 14.1,
+  "for_gender": "female",
+  "paired_with": "onboarding-praise-receive-m",
+  "title": {
+    "ru": "Похвала",
+    "en": "Praise"
+  },
+  "subtitle": {
+    "ru": "Ты хвалишь",
+    "en": "You praise"
+  },
+  "ai_description": {
+    "ru": "Интерес к тому чтобы хвалить партнёра.",
+    "en": "Interest in praising your partner."
+  },
+  "user_description": {
+    "ru": "«Ты такой красивый. Такой хороший мальчик. Молодец.» Ты говоришь ему.",
+    "en": "\"You're so handsome. Such a good boy. Well done.\" You tell him."
+  },
+  "image_prompt": "naked woman caressing naked man's face, looking into his eyes, gentle expression, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "praise-give"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "praise-give"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "praise"
+}

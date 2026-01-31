@@ -2,6 +2,13 @@
   "id": "gangbang",
   "slug": "gangbang",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "group"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "group",
   "title": {
     "ru": "Gangbang",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Много мужчин, одна женщина",
     "en": "Multiple men, one woman"
+  },
+  "user_description": {
+    "ru": "Ты участвуешь в gangbang — несколько мужчин с одной женщиной.",
+    "en": "You participate in a gangbang — multiple men with one woman."
   },
   "ai_description": {
     "ru": "Она в центре внимания нескольких мужчин. Все используют её, все отверстия заняты. Быть центром желания многих.",
@@ -25,237 +36,6 @@
     "all_holes",
     "extreme"
   ],
-  "elements": [
-    {
-      "id": "how_many",
-      "label": {
-        "ru": "Сколько мужчин",
-        "en": "How many men"
-      },
-      "tag_ref": "gb_count",
-      "follow_ups": [
-        {
-          "id": "count",
-          "type": "single_select",
-          "question": {
-            "ru": "Сколько?",
-            "en": "How many?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "3",
-                "label": {
-                  "ru": "3",
-                  "en": "3"
-                }
-              },
-              {
-                "id": "4-5",
-                "label": {
-                  "ru": "4-5",
-                  "en": "4-5"
-                }
-              },
-              {
-                "id": "6-10",
-                "label": {
-                  "ru": "6-10",
-                  "en": "6-10"
-                }
-              },
-              {
-                "id": "more",
-                "label": {
-                  "ru": "Больше",
-                  "en": "More"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "activities",
-      "label": {
-        "ru": "Активности",
-        "en": "Activities"
-      },
-      "tag_ref": "gb_activities",
-      "follow_ups": [
-        {
-          "id": "acts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие активности?",
-            "en": "What activities?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "all_holes",
-                "label": {
-                  "ru": "Все отверстия сразу",
-                  "en": "All holes at once"
-                }
-              },
-              {
-                "id": "train",
-                "label": {
-                  "ru": "По очереди",
-                  "en": "Taking turns"
-                }
-              },
-              {
-                "id": "dp",
-                "label": {
-                  "ru": "DP",
-                  "en": "DP"
-                }
-              },
-              {
-                "id": "dap",
-                "label": {
-                  "ru": "DAP",
-                  "en": "DAP"
-                }
-              },
-              {
-                "id": "cumshots",
-                "label": {
-                  "ru": "Много спермы",
-                  "en": "Multiple cumshots"
-                }
-              },
-              {
-                "id": "bukkake",
-                "label": {
-                  "ru": "Bukkake",
-                  "en": "Bukkake"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "role",
-      "label": {
-        "ru": "Чья роль",
-        "en": "Your role"
-      },
-      "tag_ref": "gb_role",
-      "follow_ups": [
-        {
-          "id": "who_am_i",
-          "type": "single_select",
-          "question": {
-            "ru": "Ты кто?",
-            "en": "Who are you?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "the_woman",
-                "label": {
-                  "ru": "Женщина (центр)",
-                  "en": "The woman (center)"
-                }
-              },
-              {
-                "id": "organizer",
-                "label": {
-                  "ru": "Организатор (её партнёр)",
-                  "en": "Organizer (her partner)"
-                }
-              },
-              {
-                "id": "participant",
-                "label": {
-                  "ru": "Один из мужчин",
-                  "en": "One of the men"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "gb_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "center",
-                "label": {
-                  "ru": "Быть центром",
-                  "en": "Being the center"
-                }
-              },
-              {
-                "id": "overwhelm",
-                "label": {
-                  "ru": "Быть переполненной",
-                  "en": "Being overwhelmed"
-                }
-              },
-              {
-                "id": "used",
-                "label": {
-                  "ru": "Быть использованной",
-                  "en": "Being used"
-                }
-              },
-              {
-                "id": "slutty",
-                "label": {
-                  "ru": "Чувствовать себя slutty",
-                  "en": "Feeling slutty"
-                }
-              },
-              {
-                "id": "cum",
-                "label": {
-                  "ru": "Много спермы",
-                  "en": "Lots of cum"
-                }
-              },
-              {
-                "id": "sharing",
-                "label": {
-                  "ru": "Поделиться ею",
-                  "en": "Sharing her"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в gangbang?",
-      "en": "What appeals about gangbang?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "gangbang",
@@ -268,8 +48,11 @@
       "extreme"
     ]
   },
-  "user_description": {
-    "ru": "Несколько мужчин одновременно занимаются сексом с одной женщиной. Один входит в её рот, другой в вагину, третий в анус. Остальные ждут своей очереди рядом.",
-    "en": "Multiple men simultaneously have sex with one woman. One enters her mouth, another her vagina, a third her anus. Others wait their turn nearby."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в gangbang?",
+      "en": "What appeals about gangbang?"
+    }
+      }
 }

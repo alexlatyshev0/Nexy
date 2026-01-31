@@ -1,0 +1,58 @@
+{
+  "id": "rimming-m-to-f-receive",
+  "slug": "rimming-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "oral",
+    "anal"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "rimming-he-to-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Римминг",
+    "en": "Rimming"
+  },
+  "subtitle": {
+    "ru": "Он лижет тебе",
+    "en": "He rims you"
+  },
+  "user_description": {
+    "ru": "Он лижет твой анус языком.",
+    "en": "He licks your anus with his tongue."
+  },
+  "ai_description": {
+    "ru": "Его язык на её анусе. Интимнее некуда. Она расслабляется и отдаётся ощущениям. Табу становится удовольствием.",
+    "en": "His tongue on her anus. As intimate as it gets. She relaxes and surrenders to sensations. Taboo becomes pleasure."
+  },
+  "image_prompt": "woman on all fours on bed, man behind her with face near her bottom, both nude, bedroom setting",
+  "intensity": 3,
+  "category": "oral",
+  "tags": [
+    "rimming",
+    "analingus",
+    "receiving",
+    "taboo"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "rimming",
+      "analingus",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "taboo",
+      "anal_oral"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Римминг — он лижет тебе?",
+      "en": "Rimming — he rims you?"
+    }
+  }
+}

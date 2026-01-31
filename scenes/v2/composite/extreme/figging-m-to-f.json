@@ -1,0 +1,57 @@
+{
+  "id": "figging-m-to-f",
+  "slug": "figging-m-to-f",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "anal"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "figging-m-to-f-receive",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Фиггинг",
+    "en": "Figging"
+  },
+  "subtitle": {
+    "ru": "Он вставляет ей имбирь",
+    "en": "He inserts ginger into her"
+  },
+  "user_description": {
+    "ru": "Ты вставляешь ей очищенный корень имбиря в анус.",
+    "en": "You insert peeled ginger root into her anus."
+  },
+  "ai_description": {
+    "ru": "М вставляет очищенный корень имбиря в анус Ж. Нарастающее жжение.",
+    "en": "M inserts peeled ginger root into F's anus. Building burning sensation."
+  },
+  "image_prompt": "woman bent over bed nude, man holding ginger root behind her, bedroom setting",
+  "intensity": 4,
+  "category": "extreme",
+  "tags": [
+    "figging",
+    "ginger",
+    "burning",
+    "edge_play",
+    "discipline"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "figging",
+      "ginger"
+    ],
+    "tests_secondary": [
+      "discipline",
+      "edge_play"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Фиггинг — имбирь в её анус?",
+      "en": "Figging — ginger in her anus?"
+    }
+  }
+}

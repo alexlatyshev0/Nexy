@@ -1,7 +1,10 @@
 {
-  "id": "fantasy_reality",
+  "id": "fantasy-reality",
   "slug": "fantasy-reality",
   "version": 2,
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Фантазии и реальность",
@@ -11,6 +14,10 @@
     "ru": "Мечтать или делать?",
     "en": "Dream or do?"
   },
+  "user_description": {
+    "ru": "Вы обсуждаете свои фантазии и решаете, какие из них воплотить.",
+    "en": "You discuss your fantasies and decide which ones to act out."
+  },
   "ai_description": {
     "ru": "Некоторые фантазии хочется воплотить, другие лучше оставить мечтами. Как у тебя с границей между фантазией и реальностью?",
     "en": "Some fantasies you want to act out, others are better left as dreams. Where's your line between fantasy and reality?"
@@ -18,7 +25,6 @@
   "image_prompt": "man and woman sitting on bed facing each other, talking intimately, bedroom setting with soft evening light",
   "intensity": 1,
   "category": "baseline",
-  "priority": 14,
   "tags": [
     "baseline",
     "fantasy",
@@ -26,175 +32,6 @@
     "boundaries",
     "imagination"
   ],
-  "elements": [
-    {
-      "id": "attitude",
-      "label": {
-        "ru": "Отношение",
-        "en": "Attitude"
-      },
-      "tag_ref": "fantasy_attitude",
-      "follow_ups": [
-        {
-          "id": "approach",
-          "type": "single_select",
-          "question": {
-            "ru": "Сексуальные фантазии...",
-            "en": "Sexual fantasies..."
-          },
-          "config": {
-            "options": [
-              {
-                "id": "private",
-                "label": {
-                  "ru": "Держу при себе",
-                  "en": "Keep to myself"
-                }
-              },
-              {
-                "id": "share",
-                "label": {
-                  "ru": "Делюсь с партнёром",
-                  "en": "Share with partner"
-                }
-              },
-              {
-                "id": "try",
-                "label": {
-                  "ru": "Хочу пробовать",
-                  "en": "Want to try"
-                }
-              },
-              {
-                "id": "do",
-                "label": {
-                  "ru": "Воплощаю в жизнь",
-                  "en": "Act them out"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "boundary",
-      "label": {
-        "ru": "Граница",
-        "en": "Boundary"
-      },
-      "tag_ref": "fantasy_boundary",
-      "follow_ups": [
-        {
-          "id": "line",
-          "type": "single_select",
-          "question": {
-            "ru": "Где граница фантазия/реальность?",
-            "en": "Where's the fantasy/reality line?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "strict",
-                "label": {
-                  "ru": "Фантазии отдельно, секс отдельно",
-                  "en": "Fantasies separate from sex"
-                }
-              },
-              {
-                "id": "some",
-                "label": {
-                  "ru": "Некоторые можно попробовать",
-                  "en": "Some can be tried"
-                }
-              },
-              {
-                "id": "most",
-                "label": {
-                  "ru": "Большинство хочу попробовать",
-                  "en": "Want to try most"
-                }
-              },
-              {
-                "id": "all",
-                "label": {
-                  "ru": "Хочу попробовать всё",
-                  "en": "Want to try everything"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "sharing",
-      "label": {
-        "ru": "Обсуждение",
-        "en": "Discussing"
-      },
-      "tag_ref": "fantasy_sharing",
-      "follow_ups": [
-        {
-          "id": "comfort",
-          "type": "single_select",
-          "question": {
-            "ru": "Обсуждать фантазии с партнёром...",
-            "en": "Discussing fantasies with partner..."
-          },
-          "config": {
-            "options": [
-              {
-                "id": "shy",
-                "label": {
-                  "ru": "Стесняюсь",
-                  "en": "Too shy"
-                }
-              },
-              {
-                "id": "some",
-                "label": {
-                  "ru": "Некоторые могу рассказать",
-                  "en": "Can share some"
-                }
-              },
-              {
-                "id": "open",
-                "label": {
-                  "ru": "Открыто обсуждаем",
-                  "en": "Openly discuss"
-                }
-              },
-              {
-                "id": "together",
-                "label": {
-                  "ru": "Вместе придумываем",
-                  "en": "Create together"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "scale",
-    "text": {
-      "ru": "Фантазии — мечтать или воплощать?",
-      "en": "Fantasies — dream or act out?"
-    },
-    "config": {
-      "min_label": {
-        "ru": "Только мечтать",
-        "en": "Just dream"
-      },
-      "max_label": {
-        "ru": "Воплощать",
-        "en": "Act out"
-      }
-    }
-  },
   "ai_context": {
     "tests_primary": [
       "fantasy",
@@ -215,8 +52,22 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Партнёры обсуждают свои фантазии и решают, какие из них воплотить",
-    "en": "Partners discuss their fantasies and decide which ones to act out"
-  }
+  "question": {
+    "type": "scale",
+    "text": {
+      "ru": "Фантазии — мечтать или воплощать?",
+      "en": "Fantasies — dream or act out?"
+    },
+    "config": {
+      "min_label": {
+        "ru": "Только мечтать",
+        "en": "Just dream"
+      },
+      "max_label": {
+        "ru": "Воплощать",
+        "en": "Act out"
+      }
+    }
+  },
+  "priority": 14
 }

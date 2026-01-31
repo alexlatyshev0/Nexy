@@ -1,0 +1,58 @@
+{
+  "id": "sex-initiation-he-says-dirty",
+  "slug": "sex-initiation-he-says-dirty",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": ["dirty_talk"],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "sex-initiation-she-says-dirty",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Как предложить секс",
+    "en": "How to initiate sex"
+  },
+  "subtitle": {
+    "ru": "Грязные фразы",
+    "en": "Dirty phrases"
+  },
+  "user_description": {
+    "ru": "Какими словами тебе нравится предлагать ей секс?",
+    "en": "What words do you like to use when initiating sex with her?"
+  },
+  "ai_description": {
+    "ru": "Слова-триггеры. Как начать? Прямо и грязно, или намёками?",
+    "en": "Trigger words. How to start? Direct and dirty, or with hints?"
+  },
+  "intensity": 3,
+  "category": "verbal",
+  "tags": ["dirty_talk", "verbal", "initiation", "dominance"],
+  "ai_context": {
+    "tests_primary": ["sex_initiation", "dirty_talk"],
+    "tests_secondary": ["dominance", "verbal_preference"]
+  },
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие фразы тебе нравится говорить?",
+      "en": "What phrases do you like to say?"
+    },
+    "options": [
+      { "id": "vyebu", "label": { "ru": "Хочу тебя выебать", "en": "I want to fuck you" } },
+      { "id": "razdvigai", "label": { "ru": "Раздвигай ноги", "en": "Spread your legs" } },
+      { "id": "na_koleni", "label": { "ru": "На колени", "en": "On your knees" } },
+      { "id": "moya", "label": { "ru": "Сейчас ты моя", "en": "Now you're mine" } },
+      { "id": "hochesh", "label": { "ru": "Хочешь мой член?", "en": "Want my cock?" } },
+      { "id": "budu_trahati", "label": { "ru": "Сейчас буду тебя трахать", "en": "I'm going to fuck you now" } },
+      { "id": "davai", "label": { "ru": "Давай, быстро", "en": "Come on, quick" } },
+      { "id": "snimay", "label": { "ru": "Снимай всё", "en": "Take it all off" } }
+    ],
+    "allow_other": true,
+    "other_placeholder": {
+      "ru": "Своя фраза...",
+      "en": "Your own phrase..."
+    },
+    "min_selections": 0
+  }
+}

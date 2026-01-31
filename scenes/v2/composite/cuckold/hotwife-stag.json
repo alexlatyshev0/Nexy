@@ -1,0 +1,58 @@
+{
+  "id": "hotwife-stag",
+  "slug": "hotwife-stag",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "group",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "hotwife-vixen-f",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Hotwife",
+    "en": "Hotwife"
+  },
+  "subtitle": {
+    "ru": "Она твоя hotwife",
+    "en": "She's your hotwife"
+  },
+  "user_description": {
+    "ru": "Она флиртует и трахается с другими мужчинами с твоего одобрения. Ты гордишься ей.",
+    "en": "She flirts and fucks other men with your approval. You're proud of her."
+  },
+  "ai_description": {
+    "ru": "Она встречается с другими мужчинами с его благословения. Он гордится, он поддерживает. Stag/Vixen динамика без унижения.",
+    "en": "She sees other men with his blessing. He's proud, he supports. Stag/Vixen dynamic without humiliation."
+  },
+  "image_prompt": "woman in sexy dress between two men at bar, one her partner one stranger, she flirting",
+  "intensity": 4,
+  "category": "hotwife",
+  "tags": [
+    "hotwife",
+    "stag",
+    "sharing",
+    "pride"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "hotwife",
+      "stag",
+      "sharing"
+    ],
+    "tests_secondary": [
+      "pride",
+      "compersion"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда она hotwife?",
+      "en": "What appeals when she's your hotwife?"
+    }
+  }
+}

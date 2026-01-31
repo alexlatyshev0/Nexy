@@ -1,0 +1,59 @@
+{
+  "id": "collar-she-owns-him-receive",
+  "slug": "collar-she-owns-him-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "collar-she-owns-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Ошейник и владение",
+    "en": "Collar & Ownership"
+  },
+  "subtitle": {
+    "ru": "Она твоя хозяйка",
+    "en": "She owns you"
+  },
+  "user_description": {
+    "ru": "Она надевает тебе ошейник и держит поводок. Ты принадлежишь ей.",
+    "en": "She puts a collar on you and holds the leash. You belong to her."
+  },
+  "ai_description": {
+    "ru": "Ошейник на его шее — он принадлежит ей. Госпожа держит поводок, он следует с гордостью. Femdom ownership в чистом виде.",
+    "en": "Collar on his neck — he belongs to her. Mistress holds the leash, he follows with pride. Pure femdom ownership."
+  },
+  "image_prompt": "woman holding leash attached to collar on man's neck, woman standing in lingerie, man kneeling nude, bedroom setting",
+  "intensity": 4,
+  "category": "control-power",
+  "tags": [
+    "collar",
+    "femdom",
+    "ownership",
+    "leash",
+    "male_submission"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "collar",
+      "femdom",
+      "ownership"
+    ],
+    "tests_secondary": [
+      "male_submission",
+      "devotion",
+      "belonging"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда она владеет тобой?",
+      "en": "What appeals about being owned by her?"
+    }
+      }
+}

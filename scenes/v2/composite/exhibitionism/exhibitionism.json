@@ -2,6 +2,13 @@
   "id": "exhibitionism",
   "slug": "exhibitionism",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "exhibitionism"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Эксгибиционизм",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Показать себя",
     "en": "Being watched"
+  },
+  "user_description": {
+    "ru": "Показывать своё тело — партнёру, на камеру, или когда могут увидеть другие.",
+    "en": "Showing your body — to partner, on camera, or when others might see."
   },
   "ai_description": {
     "ru": "Возбуждение от того, что тебя видят. Секс где могут застать, обнажение в рискованных местах, наслаждение от чужих взглядов.",
@@ -25,251 +36,6 @@
     "being_watched",
     "thrill"
   ],
-  "elements": [
-    {
-      "id": "what_show",
-      "label": {
-        "ru": "Что показывать",
-        "en": "What to show"
-      },
-      "tag_ref": "exhib_what",
-      "follow_ups": [
-        {
-          "id": "show",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что хочется показать?",
-            "en": "What to show?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "body",
-                "label": {
-                  "ru": "Тело/наготу",
-                  "en": "Body/nudity"
-                }
-              },
-              {
-                "id": "sex",
-                "label": {
-                  "ru": "Секс",
-                  "en": "Sex"
-                }
-              },
-              {
-                "id": "foreplay",
-                "label": {
-                  "ru": "Прелюдию",
-                  "en": "Foreplay"
-                }
-              },
-              {
-                "id": "masturbation",
-                "label": {
-                  "ru": "Мастурбацию",
-                  "en": "Masturbation"
-                }
-              },
-              {
-                "id": "kink",
-                "label": {
-                  "ru": "Кинк-активности",
-                  "en": "Kink activities"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "where",
-      "label": {
-        "ru": "Где",
-        "en": "Where"
-      },
-      "tag_ref": "exhib_location",
-      "follow_ups": [
-        {
-          "id": "location",
-          "type": "multi_select",
-          "question": {
-            "ru": "Где?",
-            "en": "Where?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "window",
-                "label": {
-                  "ru": "У окна",
-                  "en": "By window"
-                }
-              },
-              {
-                "id": "balcony",
-                "label": {
-                  "ru": "На балконе",
-                  "en": "On balcony"
-                }
-              },
-              {
-                "id": "public",
-                "label": {
-                  "ru": "В публичном месте",
-                  "en": "Public place"
-                }
-              },
-              {
-                "id": "car",
-                "label": {
-                  "ru": "В машине",
-                  "en": "In car"
-                }
-              },
-              {
-                "id": "club",
-                "label": {
-                  "ru": "В клубе/на вечеринке",
-                  "en": "Club/party"
-                }
-              },
-              {
-                "id": "cam",
-                "label": {
-                  "ru": "На камеру",
-                  "en": "On camera"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who_watches",
-      "label": {
-        "ru": "Кто смотрит",
-        "en": "Who watches"
-      },
-      "tag_ref": "exhib_audience",
-      "follow_ups": [
-        {
-          "id": "audience",
-          "type": "multi_select",
-          "question": {
-            "ru": "Кто?",
-            "en": "Who?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "strangers",
-                "label": {
-                  "ru": "Незнакомцы",
-                  "en": "Strangers"
-                }
-              },
-              {
-                "id": "friends",
-                "label": {
-                  "ru": "Знакомые",
-                  "en": "Friends"
-                }
-              },
-              {
-                "id": "online",
-                "label": {
-                  "ru": "Онлайн аудитория",
-                  "en": "Online audience"
-                }
-              },
-              {
-                "id": "accidental",
-                "label": {
-                  "ru": "Случайные (риск)",
-                  "en": "Accidental (risk)"
-                }
-              },
-              {
-                "id": "partner",
-                "label": {
-                  "ru": "Только партнёр (фантазия)",
-                  "en": "Just partner (fantasy)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "exhib_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "thrill",
-                "label": {
-                  "ru": "Острые ощущения",
-                  "en": "Thrill"
-                }
-              },
-              {
-                "id": "validation",
-                "label": {
-                  "ru": "Подтверждение привлекательности",
-                  "en": "Validation"
-                }
-              },
-              {
-                "id": "taboo",
-                "label": {
-                  "ru": "Нарушение табу",
-                  "en": "Breaking taboo"
-                }
-              },
-              {
-                "id": "power",
-                "label": {
-                  "ru": "Власть над зрителями",
-                  "en": "Power over viewers"
-                }
-              },
-              {
-                "id": "risk",
-                "label": {
-                  "ru": "Риск быть пойманным",
-                  "en": "Risk of getting caught"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в эксгибиционизме?",
-      "en": "What appeals about exhibitionism?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "exhibitionism",
@@ -282,8 +48,11 @@
       "validation"
     ]
   },
-  "user_description": {
-    "ru": "Показывать своё тело или заниматься сексом так, чтобы другие люди могли видеть.",
-    "en": "Showing your body or having sex where other people can see."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в эксгибиционизме?",
+      "en": "What appeals about exhibitionism?"
+    }
+      }
 }

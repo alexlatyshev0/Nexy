@@ -1,0 +1,47 @@
+{
+  "id": "bondage-restraint",
+  "slug": "bondage-restraint",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Фиксация",
+    "en": "Restraint"
+  },
+  "subtitle": {
+    "ru": "Наручники, ремни, липучки",
+    "en": "Cuffs, straps, velcro"
+  },
+  "user_description": {
+    "ru": "Связывание рук. Наручники, ремни, мягкие путы.",
+    "en": "Tying hands. Handcuffs, straps, soft bonds."
+  },
+  "ai_description": {
+    "ru": "Простая фиксация рук или ног. Наручники, ремни или мягкие путы.",
+    "en": "Simple hand or leg restraint. Cuffs, straps, or soft bonds."
+  },
+  "image_prompt": "hands bound with soft leather cuffs attached to bedpost, bedroom setting",
+  "intensity": 2,
+  "category": "bondage",
+  "tags": [
+    "bondage",
+    "restraint",
+    "cuffs"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "bondage",
+      "restraint"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

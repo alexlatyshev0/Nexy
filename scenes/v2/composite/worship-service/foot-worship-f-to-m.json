@@ -1,8 +1,16 @@
 {
-  "id": "foot_worship_f_to_m",
+  "id": "foot-worship-she-worships-his",
   "slug": "foot-worship-she-worships-his",
   "version": 2,
-  "paired_scene": "foot_worship_m_to_f",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "foot",
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "foot-worship-f-to-m-receive",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Поклонение ступням",
@@ -11,6 +19,10 @@
   "subtitle": {
     "ru": "Она целует его ноги",
     "en": "She worships his feet"
+  },
+  "user_description": {
+    "ru": "Ты на коленях у его ног, целуешь и лижешь его ступни и пальцы.",
+    "en": "You kneel at his feet, kissing and licking his soles and toes."
   },
   "ai_description": {
     "ru": "Она на коленях у его ног. Целует, лижет, массирует. Демонстрация преданности и подчинения через внимание к его ступням.",
@@ -26,230 +38,6 @@
     "devotion",
     "femdom_reverse"
   ],
-  "elements": [
-    {
-      "id": "activities",
-      "label": {
-        "ru": "Что делает",
-        "en": "What she does"
-      },
-      "tag_ref": "foot_worship_acts",
-      "follow_ups": [
-        {
-          "id": "acts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие действия?",
-            "en": "What actions?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "kissing",
-                "label": {
-                  "ru": "Целует",
-                  "en": "Kissing"
-                }
-              },
-              {
-                "id": "licking",
-                "label": {
-                  "ru": "Лижет",
-                  "en": "Licking"
-                }
-              },
-              {
-                "id": "sucking_toes",
-                "label": {
-                  "ru": "Сосёт пальцы",
-                  "en": "Sucking toes"
-                }
-              },
-              {
-                "id": "massage",
-                "label": {
-                  "ru": "Массаж",
-                  "en": "Massage"
-                }
-              },
-              {
-                "id": "sniffing",
-                "label": {
-                  "ru": "Нюхает",
-                  "en": "Sniffing"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "his_state",
-      "label": {
-        "ru": "Его состояние",
-        "en": "His state"
-      },
-      "tag_ref": "receiver_state",
-      "follow_ups": [
-        {
-          "id": "state",
-          "type": "single_select",
-          "question": {
-            "ru": "Как он себя ведёт?",
-            "en": "How does he behave?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "dominant",
-                "label": {
-                  "ru": "Доминантно командует",
-                  "en": "Dominantly commands"
-                }
-              },
-              {
-                "id": "relaxed",
-                "label": {
-                  "ru": "Расслабленно наслаждается",
-                  "en": "Relaxed enjoyment"
-                }
-              },
-              {
-                "id": "verbal",
-                "label": {
-                  "ru": "Хвалит или унижает",
-                  "en": "Praises or humiliates"
-                }
-              },
-              {
-                "id": "ignoring",
-                "label": {
-                  "ru": "Игнорирует её",
-                  "en": "Ignores her"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "context",
-      "label": {
-        "ru": "Контекст",
-        "en": "Context"
-      },
-      "tag_ref": "worship_context",
-      "follow_ups": [
-        {
-          "id": "situation",
-          "type": "single_select",
-          "question": {
-            "ru": "Ситуация?",
-            "en": "Situation?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "greeting",
-                "label": {
-                  "ru": "Приветствие когда он пришёл",
-                  "en": "Greeting when he arrives"
-                }
-              },
-              {
-                "id": "reward",
-                "label": {
-                  "ru": "Привилегия для неё",
-                  "en": "Privilege for her"
-                }
-              },
-              {
-                "id": "punishment",
-                "label": {
-                  "ru": "Наказание/искупление",
-                  "en": "Punishment/atonement"
-                }
-              },
-              {
-                "id": "daily_ritual",
-                "label": {
-                  "ru": "Ежедневный ритуал",
-                  "en": "Daily ritual"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "foot_worship_appeal_f",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "submission",
-                "label": {
-                  "ru": "Подчинение ему",
-                  "en": "Submitting to him"
-                }
-              },
-              {
-                "id": "devotion",
-                "label": {
-                  "ru": "Демонстрация преданности",
-                  "en": "Showing devotion"
-                }
-              },
-              {
-                "id": "his_pleasure",
-                "label": {
-                  "ru": "Его удовольствие",
-                  "en": "His pleasure"
-                }
-              },
-              {
-                "id": "degradation",
-                "label": {
-                  "ru": "Унижение",
-                  "en": "Degradation"
-                }
-              },
-              {
-                "id": "feet_fetish",
-                "label": {
-                  "ru": "Фетиш на ноги",
-                  "en": "Foot fetish"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в поклонении его ступням?",
-      "en": "What appeals about worshipping his feet?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "foot_worship",
@@ -262,8 +50,11 @@
       "worship"
     ]
   },
-  "user_description": {
-    "ru": "Она на коленях у его ног, целует и лижет его ступни и пальцы.",
-    "en": "She kneels at his feet, kisses and licks his soles and toes."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в поклонении его ступням?",
+      "en": "What appeals about worshipping his feet?"
+    }
+      }
 }

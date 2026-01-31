@@ -1,0 +1,56 @@
+{
+  "id": "deepthroat-receive",
+  "slug": "deepthroat-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "oral"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "deepthroat",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Глубокий минет",
+    "en": "Deepthroat"
+  },
+  "subtitle": {
+    "ru": "Она берёт тебя глубоко",
+    "en": "She takes you deep"
+  },
+  "user_description": {
+    "ru": "Она берёт твой член глубоко в горло. До упора, до слёз, до рвотного рефлекса.",
+    "en": "She takes your cock deep in her throat. All the way, to tears, to gag reflex."
+  },
+  "ai_description": {
+    "ru": "Она берёт его полностью, до самого горла. Слёзы на глазах, слюна течёт, но она не останавливается. Полное принятие, полное подчинение.",
+    "en": "She takes him completely, to the throat. Tears in eyes, saliva flowing, but she doesn't stop. Complete acceptance, complete submission."
+  },
+  "image_prompt": "woman taking man deep in throat, his hands in her hair, both nude, close angle, bedroom",
+  "intensity": 4,
+  "category": "oral",
+  "tags": [
+    "deepthroat",
+    "gagging",
+    "throat",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "deepthroat",
+      "throat_fucking"
+    ],
+    "tests_secondary": [
+      "gagging",
+      "receiving"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Глубокий минет — она берёт тебя глубоко?",
+      "en": "Deepthroat — she takes you deep?"
+    }
+  }
+}

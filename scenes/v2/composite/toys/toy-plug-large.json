@@ -1,0 +1,55 @@
+{
+  "id": "toy-plug-large",
+  "slug": "toy-plug-large",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "toys",
+    "anal"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Большая пробка",
+    "en": "Large Plug"
+  },
+  "subtitle": {
+    "ru": "Для опытных",
+    "en": "For experienced"
+  },
+  "user_description": {
+    "ru": "Ты носишь крупную анальную пробку. Ощущение наполненности.",
+    "en": "You wear a large anal plug. Feeling of fullness."
+  },
+  "ai_description": {
+    "ru": "Крупная анальная пробка. Ощущение наполненности.",
+    "en": "Large anal plug. Feeling of fullness."
+  },
+  "image_prompt": "large metal anal plug, bedroom",
+  "intensity": 3,
+  "category": "toys",
+  "tags": [
+    "toys",
+    "plugs",
+    "anal",
+    "advanced"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "toys",
+      "plug"
+    ],
+    "tests_secondary": []
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Большая анальная пробка?",
+      "en": "Large butt plug?"
+    }
+  },
+  "paired_with": null,
+  "priority": 50
+}

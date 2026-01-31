@@ -1,0 +1,57 @@
+{
+  "id": "fingering-receive",
+  "slug": "fingering-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "fingering",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Фингеринг",
+    "en": "Fingering"
+  },
+  "subtitle": {
+    "ru": "Он ласкает тебя пальцами",
+    "en": "He fingers you"
+  },
+  "user_description": {
+    "ru": "Он ласкает твой клитор пальцами и вводит пальцы внутрь. Стимулирует твою точку G.",
+    "en": "He caresses your clit with his fingers and inserts fingers inside. Stimulates your G-spot."
+  },
+  "ai_description": {
+    "ru": "Его пальцы скользят внутрь неё. Клитор, вход, точка G — он изучает её тело, находит то, что заставляет её стонать.",
+    "en": "His fingers slide inside her. Clit, entrance, G-spot — he explores her body, finds what makes her moan."
+  },
+  "image_prompt": "woman lying on back with legs spread, man kneeling beside her with hand between her legs, fingers touching intimate area, bedroom with soft lighting",
+  "intensity": 2,
+  "category": "manual",
+  "tags": [
+    "fingering",
+    "manual",
+    "g-spot",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "fingering",
+      "manual_stimulation",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "g_spot",
+      "foreplay"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Фингеринг — он ласкает тебя?",
+      "en": "Fingering — he fingers you?"
+    }
+  }
+}

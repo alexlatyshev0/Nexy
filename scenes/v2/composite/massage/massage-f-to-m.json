@@ -1,8 +1,15 @@
 {
-  "id": "massage_f_to_m",
+  "id": "massage-she-massages-him",
   "slug": "massage-she-massages-him",
   "version": 2,
-  "paired_scene": "massage_m_to_f",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "massage-f-to-m-receive",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Массаж",
@@ -11,6 +18,10 @@
   "subtitle": {
     "ru": "Она массирует его",
     "en": "She massages him"
+  },
+  "user_description": {
+    "ru": "Ты массируешь его тело маслом. Руки скользят всё ниже, к члену.",
+    "en": "You massage his body with oil. Hands slide lower, to his cock."
   },
   "ai_description": {
     "ru": "Он лежит, она над ним. Руки скользят по его телу, снимают напряжение. Массаж переходит ниже, к его члену — happy ending.",
@@ -26,237 +37,6 @@
     "sensual",
     "relaxation"
   ],
-  "elements": [
-    {
-      "id": "areas",
-      "label": {
-        "ru": "Какие зоны?",
-        "en": "What areas?"
-      },
-      "tag_ref": "male_massage_areas",
-      "follow_ups": [
-        {
-          "id": "body_areas",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие части тела?",
-            "en": "What body parts?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "back",
-                "label": {
-                  "ru": "Спина",
-                  "en": "Back"
-                }
-              },
-              {
-                "id": "shoulders",
-                "label": {
-                  "ru": "Плечи",
-                  "en": "Shoulders"
-                }
-              },
-              {
-                "id": "legs",
-                "label": {
-                  "ru": "Ноги",
-                  "en": "Legs"
-                }
-              },
-              {
-                "id": "butt",
-                "label": {
-                  "ru": "Попа",
-                  "en": "Butt"
-                }
-              },
-              {
-                "id": "chest",
-                "label": {
-                  "ru": "Грудь",
-                  "en": "Chest"
-                }
-              },
-              {
-                "id": "inner_thighs",
-                "label": {
-                  "ru": "Внутренняя часть бёдер",
-                  "en": "Inner thighs"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "happy_ending",
-      "label": {
-        "ru": "Happy ending",
-        "en": "Happy ending"
-      },
-      "tag_ref": "happy_ending",
-      "follow_ups": [
-        {
-          "id": "ending_type",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой финал?",
-            "en": "What ending?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "handjob",
-                "label": {
-                  "ru": "Рукой",
-                  "en": "Handjob"
-                }
-              },
-              {
-                "id": "blowjob",
-                "label": {
-                  "ru": "Минет",
-                  "en": "Blowjob"
-                }
-              },
-              {
-                "id": "sex",
-                "label": {
-                  "ru": "Секс",
-                  "en": "Sex"
-                }
-              },
-              {
-                "id": "prostate",
-                "label": {
-                  "ru": "Массаж простаты",
-                  "en": "Prostate massage"
-                }
-              },
-              {
-                "id": "tease",
-                "label": {
-                  "ru": "Дразнить без финиша",
-                  "en": "Tease without finish"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "nuru",
-      "label": {
-        "ru": "Нуру?",
-        "en": "Nuru?"
-      },
-      "tag_ref": "nuru_massage",
-      "follow_ups": [
-        {
-          "id": "nuru_interest",
-          "type": "single_select",
-          "question": {
-            "ru": "Нуру массаж (тело к телу)?",
-            "en": "Nuru massage (body to body)?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "love",
-                "label": {
-                  "ru": "Обожаю",
-                  "en": "Love it"
-                }
-              },
-              {
-                "id": "curious",
-                "label": {
-                  "ru": "Хочу попробовать",
-                  "en": "Want to try"
-                }
-              },
-              {
-                "id": "ok",
-                "label": {
-                  "ru": "Нормально",
-                  "en": "It's ok"
-                }
-              },
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Не интересует",
-                  "en": "Not interested"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "prostate",
-      "label": {
-        "ru": "Простата?",
-        "en": "Prostate?"
-      },
-      "tag_ref": "prostate_massage",
-      "follow_ups": [
-        {
-          "id": "prostate_interest",
-          "type": "single_select",
-          "question": {
-            "ru": "Массаж простаты?",
-            "en": "Prostate massage?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "love",
-                "label": {
-                  "ru": "Обожаю",
-                  "en": "Love it"
-                }
-              },
-              {
-                "id": "curious",
-                "label": {
-                  "ru": "Хочу попробовать",
-                  "en": "Want to try"
-                }
-              },
-              {
-                "id": "sometimes",
-                "label": {
-                  "ru": "Иногда",
-                  "en": "Sometimes"
-                }
-              },
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Нет",
-                  "en": "No"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что нравится когда она массирует?",
-      "en": "What do you like when she massages?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "massage",
@@ -269,8 +49,11 @@
       "nuru"
     ]
   },
-  "user_description": {
-    "ru": "Она массирует его тело маслом. Руки скользят всё ниже, к члену.",
-    "en": "She massages his body with oil. Hands slide lower, to his cock."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что нравится когда она массирует?",
+      "en": "What do you like when she massages?"
+    }
+      }
 }

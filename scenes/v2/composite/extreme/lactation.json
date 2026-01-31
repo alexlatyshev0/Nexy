@@ -2,6 +2,13 @@
   "id": "lactation",
   "slug": "lactation",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Лактация",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Грудное молоко",
     "en": "Breast milk"
+  },
+  "user_description": {
+    "ru": "Он сосёт твою грудь и пьёт твоё молоко.",
+    "en": "He sucks your breast and drinks your milk."
   },
   "ai_description": {
     "ru": "Эротизация грудного молока и кормления. Кормление грудью, сцеживание, ANR (Adult Nursing Relationship). Интимность и забота.",
@@ -25,173 +36,6 @@
     "nursing",
     "nurturing"
   ],
-  "elements": [
-    {
-      "id": "type",
-      "label": {
-        "ru": "Тип",
-        "en": "Type"
-      },
-      "tag_ref": "lactation_type",
-      "follow_ups": [
-        {
-          "id": "what",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что привлекает?",
-            "en": "What type?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "nursing",
-                "label": {
-                  "ru": "Кормление",
-                  "en": "Nursing"
-                }
-              },
-              {
-                "id": "expressing",
-                "label": {
-                  "ru": "Сцеживание",
-                  "en": "Expressing"
-                }
-              },
-              {
-                "id": "anr",
-                "label": {
-                  "ru": "ANR отношения",
-                  "en": "ANR relationship"
-                }
-              },
-              {
-                "id": "play",
-                "label": {
-                  "ru": "Игра с молоком",
-                  "en": "Milk play"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "dynamic",
-      "label": {
-        "ru": "Динамика",
-        "en": "Dynamic"
-      },
-      "tag_ref": "lactation_dynamic",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "single_select",
-          "question": {
-            "ru": "Какая динамика?",
-            "en": "What dynamic?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "nurturing",
-                "label": {
-                  "ru": "Заботливая",
-                  "en": "Nurturing"
-                }
-              },
-              {
-                "id": "erotic",
-                "label": {
-                  "ru": "Эротическая",
-                  "en": "Erotic"
-                }
-              },
-              {
-                "id": "domme",
-                "label": {
-                  "ru": "Доминирующая",
-                  "en": "Dominant"
-                }
-              },
-              {
-                "id": "infantilism",
-                "label": {
-                  "ru": "С элементами инфантилизма",
-                  "en": "With infantilism"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "lactation_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "intimacy",
-                "label": {
-                  "ru": "Интимность",
-                  "en": "Intimacy"
-                }
-              },
-              {
-                "id": "nurturing",
-                "label": {
-                  "ru": "Забота",
-                  "en": "Nurturing"
-                }
-              },
-              {
-                "id": "taboo",
-                "label": {
-                  "ru": "Табуированность",
-                  "en": "Taboo"
-                }
-              },
-              {
-                "id": "bonding",
-                "label": {
-                  "ru": "Связь",
-                  "en": "Bonding"
-                }
-              },
-              {
-                "id": "natural",
-                "label": {
-                  "ru": "Естественность",
-                  "en": "Natural"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в лактации?",
-      "en": "What appeals about lactation?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "lactation",
@@ -204,8 +48,11 @@
       "intimacy"
     ]
   },
-  "user_description": {
-    "ru": "Он сосёт её грудь и пьёт молоко.",
-    "en": "He sucks her breast and drinks milk."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в лактации?",
+      "en": "What appeals about lactation?"
+    }
+      }
 }

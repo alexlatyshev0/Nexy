@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback, use } from 'react';
 import { useRouter } from 'next/navigation';
 import { AnimatePresence } from 'framer-motion';
 import { createClient } from '@/lib/supabase/client';
-import { getMatchResults } from '@/lib/matching';
+import { getMatchResults, getTagBasedMatches, type TagPreference } from '@/lib/matching';
 import { QuickSceneCard } from '@/components/date/QuickSceneCard';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -52,18 +52,33 @@ export default function DateSessionPage({ params }: { params: Promise<{ dateId: 
         : partnership.user_id;
 
       // Get both users' preferences
-      const [myPrefs, partnerPrefs] = await Promise.all([
+      const [myPrefs, partnerPrefs, myTags, partnerTagsResult] = await Promise.all([
         supabase.from('preference_profiles').select('preferences').eq('user_id', user.id).single(),
         supabase.from('preference_profiles').select('preferences').eq('user_id', partnerId).single(),
+        supabase.from('tag_preferences').select('tag_ref, interest_level, role_preference').eq('user_id', user.id),
+        supabase.from('tag_preferences').select('tag_ref, interest_level, role_preference').eq('user_id', partnerId),
       ]);
 
-      // Get matches
-      const { matches } = getMatchResults(
+      // Legacy matching
+      const legacyResults = getMatchResults(
         (myPrefs.data?.preferences || {}) as Record<string, unknown>,
         (partnerPrefs.data?.preferences || {}) as Record<string, unknown>
       );
 
-      const matchDimensions = matches.map(m => m.dimension);
+      // Tag-based matching with role complementarity
+      const tagResults = getTagBasedMatches(
+        (myTags.data || []) as TagPreference[],
+        (partnerTagsResult.data || []) as TagPreference[]
+      );
+
+      // Combine matches
+      const tagMatchDimensions = new Set(tagResults.matches.map(m => m.dimension));
+      const combinedMatches = [
+        ...tagResults.matches,
+        ...legacyResults.matches.filter(m => !tagMatchDimensions.has(m.dimension)),
+      ];
+
+      const matchDimensions = combinedMatches.map(m => m.dimension);
 
       // Get already answered scenes for this date
       const { data: answered } = await supabase

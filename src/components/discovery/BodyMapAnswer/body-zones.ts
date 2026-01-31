@@ -251,53 +251,62 @@ export interface ZoneCoordinate {
 // ============================================
 // ZONE COORDINATES FOR ANIME DOLLS
 // ============================================
-// Images: man_front.jpg, man_back2.jpg, woman_front.jpeg, woman_back.jpeg
+// Images: man_front.jpg, man_back.jpg, woman_front.jpeg, woman_back.jpeg
 // ViewBox: 0 0 100 200 (adjusted for anime proportions - longer legs)
 
 export const ZONE_COORDINATES: Record<SilhouetteType, ZoneCoordinate[]> = {
-  // man_front.jpg - slight 3/4 angle, looking down
+  // man_front.jpg - новые координаты
   'male-front': [
-    { zoneId: 'hair', shapes: [{ type: 'ellipse', cx: 48, cy: 5, rx: 15, ry: 7 }] },
+    // Голова/Hair - from Head bounds
+    { zoneId: 'hair', shapes: [{ type: 'ellipse', cx: 48.4, cy: 17, rx: 12.2, ry: 8.4 }] },
+    // Лицо/Cheeks - from Face bounds, split into two
     { zoneId: 'cheeks', shapes: [
-      { type: 'ellipse', cx: 43, cy: 11, rx: 5, ry: 4 },
-      { type: 'ellipse', cx: 53, cy: 10, rx: 5, ry: 4 },
+      { type: 'ellipse', cx: 46, cy: 29.5, rx: 5, ry: 9 },
+      { type: 'ellipse', cx: 52, cy: 29.5, rx: 5, ry: 9 },
     ]},
-    { zoneId: 'lips', shapes: [{ type: 'ellipse', cx: 48, cy: 14, rx: 3, ry: 1.5 }] },
+    // Губы/Lips
+    { zoneId: 'lips', shapes: [{ type: 'ellipse', cx: 49, cy: 34, rx: 3.2, ry: 2.5 }] },
+    // Уши/Ears
     { zoneId: 'ears', shapes: [
-      { type: 'ellipse', cx: 36, cy: 9, rx: 2, ry: 3 },
-      { type: 'ellipse', cx: 58, cy: 8, rx: 2, ry: 3 },
+      { type: 'ellipse', cx: 41.9, cy: 29.5, rx: 2.3, ry: 4.3 },
+      { type: 'ellipse', cx: 55.7, cy: 27.7, rx: 2.1, ry: 3.8 },
     ]},
-    { zoneId: 'neck', shapes: [{ type: 'rect', x: 43, y: 16, width: 12, height: 5, rx: 2 }] },
-    { zoneId: 'shoulders', shapes: [
-      { type: 'rect', x: 22, y: 21, width: 16, height: 6, rx: 2 },
-      { type: 'rect', x: 58, y: 21, width: 14, height: 6, rx: 2 },
-    ]},
-    { zoneId: 'chest', shapes: [{ type: 'rect', x: 32, y: 26, width: 32, height: 14, rx: 3 }] },
+    // Шея/Neck
+    { zoneId: 'neck', shapes: [{ type: 'rect', x: 43.4, y: 35.5, width: 11.2, height: 7.4, rx: 2 }] },
+    // Плечи/Shoulders
+    { zoneId: 'shoulders', shapes: [{ type: 'rect', x: 28, y: 41.8, width: 40.2, height: 7.6, rx: 2 }] },
+    // Грудь/Chest
+    { zoneId: 'chest', shapes: [{ type: 'rect', x: 38.2, y: 49.5, width: 24.4, height: 19.4, rx: 3 }] },
+    // Соски/Nipples
     { zoneId: 'nipples', shapes: [
-      { type: 'circle', cx: 38, cy: 30, r: 2.5 },
-      { type: 'circle', cx: 56, cy: 30, r: 2.5 },
+      { type: 'circle', cx: 45, cy: 58.3, r: 2.9 },
+      { type: 'circle', cx: 61.6, cy: 58.6, r: 3 },
     ]},
-    { zoneId: 'belly', shapes: [{ type: 'ellipse', cx: 48, cy: 48, rx: 12, ry: 10 }] },
+    // Живот/Belly (Stomach + Navel area)
+    { zoneId: 'belly', shapes: [{ type: 'ellipse', cx: 51.4, cy: 77.9, rx: 11.8, ry: 8.5 }] },
+    // Руки/Arms → Кисти/Hands
     { zoneId: 'hands', shapes: [
-      { type: 'ellipse', cx: 28, cy: 62, rx: 4, ry: 5 },
-      { type: 'ellipse', cx: 68, cy: 64, rx: 4, ry: 5 },
+      { type: 'ellipse', cx: 34.3, cy: 97.5, rx: 5.3, ry: 5.3 },
+      { type: 'ellipse', cx: 70.5, cy: 102, rx: 4, ry: 5 },
     ]},
+    // Пальцы/Fingers
     { zoneId: 'fingers', shapes: [
-      { type: 'rect', x: 24, y: 67, width: 8, height: 6, rx: 1 },
-      { type: 'rect', x: 64, y: 69, width: 8, height: 6, rx: 1 },
+      { type: 'rect', x: 30.8, y: 101.6, width: 9.6, height: 11.6, rx: 1 },
+      { type: 'rect', x: 68.4, y: 101.2, width: 4.2, height: 11.2, rx: 1 },
     ]},
-    { zoneId: 'penis', shapes: [{ type: 'ellipse', cx: 50, cy: 66, rx: 4, ry: 10 }] },
-    { zoneId: 'testicles', shapes: [{ type: 'ellipse', cx: 50, cy: 74, rx: 5, ry: 3 }] },
-    { zoneId: 'inner_thighs', shapes: [
-      { type: 'rect', x: 40, y: 78, width: 8, height: 18, rx: 2 },
-      { type: 'rect', x: 52, y: 78, width: 8, height: 18, rx: 2 },
-    ]},
+    // Пенис/Penis
+    { zoneId: 'penis', shapes: [{ type: 'ellipse', cx: 57.5, cy: 96.7, rx: 4, ry: 9.3 }] },
+    // Яички/Testicles
+    { zoneId: 'testicles', shapes: [{ type: 'ellipse', cx: 58.3, cy: 103.6, rx: 3.7, ry: 4.6 }] },
+    // Бёдра/Thighs → inner_thighs
+    { zoneId: 'inner_thighs', shapes: [{ type: 'rect', x: 35.8, y: 109.7, width: 34.8, height: 19, rx: 2 }] },
+    // Стопы/Feet
     { zoneId: 'feet', shapes: [
-      { type: 'ellipse', cx: 38, cy: 188, rx: 8, ry: 5 },
-      { type: 'ellipse', cx: 58, cy: 190, rx: 8, ry: 5 },
+      { type: 'ellipse', cx: 38, cy: 185.6, rx: 10, ry: 9 },
+      { type: 'ellipse', cx: 64, cy: 185.6, rx: 10, ry: 9 },
     ]},
   ],
-  // man_back2.jpg - back view, legs spread
+  // man_back.jpg - back view, legs spread
   'male-back': [
     { zoneId: 'hair', shapes: [{ type: 'ellipse', cx: 50, cy: 5, rx: 14, ry: 7 }] },
     { zoneId: 'nape', shapes: [{ type: 'ellipse', cx: 50, cy: 14, rx: 6, ry: 4 }] },

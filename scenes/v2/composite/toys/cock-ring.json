@@ -1,7 +1,14 @@
 {
-  "id": "cock_ring",
+  "id": "cock-ring",
   "slug": "cock-ring",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "toys"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
   "role_direction": "f_to_m",
   "title": {
     "ru": "Эрекционное кольцо",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Усиление и продление",
     "en": "Enhancement and endurance"
+  },
+  "user_description": {
+    "ru": "Ты надеваешь на него эрекционное кольцо для усиления эрекции и продления секса.",
+    "en": "You put a cock ring on him for harder erection and longer sex."
   },
   "ai_description": {
     "ru": "Эрекционное кольцо для усиления эрекции и продления секса. С вибрацией или без.",
@@ -24,166 +35,6 @@
     "enhancement",
     "erection"
   ],
-  "elements": [
-    {
-      "id": "type",
-      "label": {
-        "ru": "Тип",
-        "en": "Type"
-      },
-      "tag_ref": "ring_type",
-      "follow_ups": [
-        {
-          "id": "style",
-          "type": "single_select",
-          "question": {
-            "ru": "Какой тип?",
-            "en": "What type?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "basic",
-                "label": {
-                  "ru": "Обычное",
-                  "en": "Basic"
-                }
-              },
-              {
-                "id": "vibrating",
-                "label": {
-                  "ru": "С вибрацией",
-                  "en": "Vibrating"
-                }
-              },
-              {
-                "id": "adjustable",
-                "label": {
-                  "ru": "Регулируемое",
-                  "en": "Adjustable"
-                }
-              },
-              {
-                "id": "with_clit_stim",
-                "label": {
-                  "ru": "Со стимулятором клитора",
-                  "en": "With clit stimulator"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "purpose",
-      "label": {
-        "ru": "Цель",
-        "en": "Purpose"
-      },
-      "tag_ref": "ring_purpose",
-      "follow_ups": [
-        {
-          "id": "why",
-          "type": "multi_select",
-          "question": {
-            "ru": "Для чего?",
-            "en": "For what?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "harder",
-                "label": {
-                  "ru": "Жёстче эрекция",
-                  "en": "Harder erection"
-                }
-              },
-              {
-                "id": "longer",
-                "label": {
-                  "ru": "Дольше продержаться",
-                  "en": "Last longer"
-                }
-              },
-              {
-                "id": "her_pleasure",
-                "label": {
-                  "ru": "Для её удовольствия (вибрация)",
-                  "en": "For her pleasure (vibration)"
-                }
-              },
-              {
-                "id": "visual",
-                "label": {
-                  "ru": "Визуально нравится",
-                  "en": "Looks appealing"
-                }
-              },
-              {
-                "id": "sensation",
-                "label": {
-                  "ru": "Ощущения для него",
-                  "en": "Sensation for him"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "who_puts",
-      "label": {
-        "ru": "Кто надевает",
-        "en": "Who puts on"
-      },
-      "tag_ref": "ring_who",
-      "follow_ups": [
-        {
-          "id": "applicator",
-          "type": "single_select",
-          "question": {
-            "ru": "Кто надевает?",
-            "en": "Who puts it on?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "he",
-                "label": {
-                  "ru": "Он сам",
-                  "en": "He himself"
-                }
-              },
-              {
-                "id": "she",
-                "label": {
-                  "ru": "Она надевает",
-                  "en": "She puts on"
-                }
-              },
-              {
-                "id": "together",
-                "label": {
-                  "ru": "Вместе",
-                  "en": "Together"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в эрекционном кольце?",
-      "en": "What appeals about cock rings?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "cock_ring",
@@ -196,8 +47,11 @@
       "vibration"
     ]
   },
-  "user_description": {
-    "ru": "Он надевает эрекционное кольцо для усиления эрекции и продления секса.",
-    "en": "He wears a cock ring for harder erection and longer sex."
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Эрекционное кольцо на нём?",
+      "en": "Cock ring on him?"
+    }
   }
 }

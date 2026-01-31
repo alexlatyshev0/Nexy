@@ -1,8 +1,15 @@
 {
-  "id": "forced_orgasm_m_to_f",
+  "id": "forced-orgasm-on-her",
   "slug": "forced-orgasm-on-her",
   "version": 2,
-  "paired_scene": "forced_orgasm_f_to_m",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "forced-orgasm-on-her-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Вынужденный оргазм",
@@ -11,6 +18,10 @@
   "subtitle": {
     "ru": "Он заставляет её кончать",
     "en": "He makes her cum"
+  },
+  "user_description": {
+    "ru": "Ты используешь вибратор, чтобы довести её до оргазма несколько раз подряд. Она связана и не может остановить тебя.",
+    "en": "You use a vibrator to make her orgasm multiple times in a row. She is restrained and cannot stop you."
   },
   "ai_description": {
     "ru": "Она связана или удерживается. Вибратор не выключается. Один оргазм, второй, третий. Она просит остановиться, но он продолжает.",
@@ -26,222 +37,30 @@
     "control",
     "restraint"
   ],
-  "elements": [
-    {
-      "id": "method",
-      "label": {
-        "ru": "Метод",
-        "en": "Method"
-      },
-      "tag_ref": "forced_o_method",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как?",
-            "en": "How?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "vibrator",
-                "label": {
-                  "ru": "Вибратор",
-                  "en": "Vibrator"
-                }
-              },
-              {
-                "id": "oral",
-                "label": {
-                  "ru": "Оральный (не останавливается)",
-                  "en": "Oral (doesn't stop)"
-                }
-              },
-              {
-                "id": "fingers",
-                "label": {
-                  "ru": "Пальцы",
-                  "en": "Fingers"
-                }
-              },
-              {
-                "id": "fucking",
-                "label": {
-                  "ru": "Сексом",
-                  "en": "Fucking"
-                }
-              },
-              {
-                "id": "combination",
-                "label": {
-                  "ru": "Комбинация",
-                  "en": "Combination"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "restraint",
-      "label": {
-        "ru": "Фиксация",
-        "en": "Restraint"
-      },
-      "tag_ref": "forced_o_restraint",
-      "follow_ups": [
-        {
-          "id": "tied",
-          "type": "single_select",
-          "question": {
-            "ru": "Связана?",
-            "en": "Tied up?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "not_tied",
-                "label": {
-                  "ru": "Нет, просто удерживает",
-                  "en": "No, just held"
-                }
-              },
-              {
-                "id": "light",
-                "label": {
-                  "ru": "Лёгкая фиксация",
-                  "en": "Light restraint"
-                }
-              },
-              {
-                "id": "full",
-                "label": {
-                  "ru": "Полностью связана",
-                  "en": "Fully restrained"
-                }
-              },
-              {
-                "id": "spread",
-                "label": {
-                  "ru": "Растянута (spread eagle)",
-                  "en": "Spread eagle"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "intensity",
-      "label": {
-        "ru": "Интенсивность",
-        "en": "Intensity"
-      },
-      "tag_ref": "forced_o_intensity",
-      "follow_ups": [
-        {
-          "id": "how_many",
-          "type": "single_select",
-          "question": {
-            "ru": "Сколько оргазмов?",
-            "en": "How many orgasms?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "one_extended",
-                "label": {
-                  "ru": "Один продлённый",
-                  "en": "One extended"
-                }
-              },
-              {
-                "id": "few",
-                "label": {
-                  "ru": "Несколько (2-3)",
-                  "en": "Few (2-3)"
-                }
-              },
-              {
-                "id": "many",
-                "label": {
-                  "ru": "Много (до изнеможения)",
-                  "en": "Many (to exhaustion)"
-                }
-              },
-              {
-                "id": "until_begging",
-                "label": {
-                  "ru": "Пока не начнёт умолять",
-                  "en": "Until she begs"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает",
-        "en": "What appeals"
-      },
-      "tag_ref": "forced_o_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Его контроль над удовольствием",
-                  "en": "His control over pleasure"
-                }
-              },
-              {
-                "id": "overwhelm",
-                "label": {
-                  "ru": "Быть переполненной",
-                  "en": "Being overwhelmed"
-                }
-              },
-              {
-                "id": "helpless",
-                "label": {
-                  "ru": "Беспомощность",
-                  "en": "Helplessness"
-                }
-              },
-              {
-                "id": "multiple",
-                "label": {
-                  "ru": "Множественные оргазмы",
-                  "en": "Multiple orgasms"
-                }
-              },
-              {
-                "id": "pushing_limits",
-                "label": {
-                  "ru": "Выход за пределы",
-                  "en": "Pushing limits"
-                }
-              }
-            ]
-          }
-        }
+  "ai_context": {
+    "tests_primary": [
+      "forced_orgasm",
+      "overstimulation",
+      "control"
+    ],
+    "tests_secondary": [
+      "multiple_orgasms",
+      "restraint",
+      "overwhelming"
+    ],
+    "emotional_range": {
+      "positive": [
+        "loves overstimulation",
+        "control is hot",
+        "multiple orgasms"
+      ],
+      "negative": [
+        "too intense",
+        "need control",
+        "not interested"
       ]
     }
-  ],
+  },
   "question": {
     "type": "boundary",
     "text": {
@@ -273,33 +92,5 @@
         }
       ]
     }
-  },
-  "ai_context": {
-    "tests_primary": [
-      "forced_orgasm",
-      "overstimulation",
-      "control"
-    ],
-    "tests_secondary": [
-      "multiple_orgasms",
-      "restraint",
-      "overwhelming"
-    ],
-    "emotional_range": {
-      "positive": [
-        "loves overstimulation",
-        "control is hot",
-        "multiple orgasms"
-      ],
-      "negative": [
-        "too intense",
-        "need control",
-        "not interested"
-      ]
-    }
-  },
-  "user_description": {
-    "ru": "Он использует вибратор, чтобы довести её до оргазма несколько раз подряд. Она связана или удерживается и не может остановить его.",
-    "en": "He uses a vibrator to make her orgasm multiple times in a row. She is restrained or held and cannot stop him."
   }
 }

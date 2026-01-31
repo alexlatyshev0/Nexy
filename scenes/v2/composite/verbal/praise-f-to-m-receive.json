@@ -1,0 +1,56 @@
+{
+  "id": "praise-f-to-m-receive",
+  "slug": "praise-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "praise",
+    "dirty_talk"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "praise-she-praises-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Похвала",
+    "en": "Praise"
+  },
+  "subtitle": {
+    "ru": "Она хвалит тебя",
+    "en": "She praises you"
+  },
+  "user_description": {
+    "ru": "Она говорит тебе слова похвалы: «хороший мальчик», «молодец», «как ты меня радуешь».",
+    "en": "She speaks words of praise to you: \"good boy\", \"well done\", \"you please me so\"."
+  },
+  "ai_description": {
+    "ru": "'Хороший мальчик', — говорит она, и он светится от счастья. Её одобрение — лучшая награда. Он старается ради её похвалы.",
+    "en": "'Good boy,' she says, and he glows with happiness. Her approval — the best reward. He tries for her praise."
+  },
+  "image_prompt": "woman stroking mans face, man nude looking up at her, woman in lingerie, bedroom setting",
+  "intensity": 1,
+  "category": "verbal",
+  "tags": [
+    "praise",
+    "good_boy",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "praise_kink",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "verbal",
+      "femdom"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Она хвалит тебя — «хороший мальчик»?",
+      "en": "She praises you — \"good boy\"?"
+    }
+  }
+}

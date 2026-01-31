@@ -1,0 +1,40 @@
+{
+  "id": "dea361ff-e38d-47b7-961d-403b2f45c161",
+  "slug": "onboarding-bondage-give-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 17,
+  "for_gender": "male",
+  "paired_with": "onboarding-bondage-receive-f",
+  "title": {
+    "ru": "Связывание",
+    "en": "Bondage"
+  },
+  "subtitle": {
+    "ru": "Ты связываешь",
+    "en": "You tie them up"
+  },
+  "ai_description": {
+    "ru": "Интерес к связыванию партнёра.",
+    "en": "Interest in tying up your partner."
+  },
+  "user_description": {
+    "ru": "Ты связываешь ей руки над головой. Она не может двигаться — только чувствовать.",
+    "en": "You tie her hands above her head. She can't move — only feel."
+  },
+  "image_prompt": "naked woman with hands tied to bedpost above head, clothed man standing behind her, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "bondage-give"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "bondage-give"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "bondage"
+}

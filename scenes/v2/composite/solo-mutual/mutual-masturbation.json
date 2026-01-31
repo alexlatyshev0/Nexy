@@ -1,7 +1,14 @@
 {
-  "id": "mutual_masturbation",
+  "id": "mutual-masturbation",
   "slug": "mutual-masturbation",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "exhibitionism"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Взаимная мастурбация",
@@ -11,9 +18,13 @@
     "ru": "Ласкать себя вместе",
     "en": "Touch yourselves together"
   },
+  "user_description": {
+    "ru": "Взаимная мастурбация. Смотреть друг на друга.",
+    "en": "Mutual masturbation. Watching each other."
+  },
   "ai_description": {
-    "ru": "Оба ласкают себя, глядя друг на друга. Показать партнёру как ты это делаешь, смотреть как делает он/она. Интимно и возбуждающе.",
-    "en": "Both touch themselves, watching each other. Show partner how you do it, watch how they do it. Intimate and arousing."
+    "ru": "Оба ласкают себя, глядя друг на друга.",
+    "en": "Both touch themselves, watching each other."
   },
   "image_prompt": "man and woman on bed facing each other, both nude masturbating, looking at each other, bedroom setting",
   "intensity": 2,
@@ -24,244 +35,6 @@
     "showing",
     "intimate"
   ],
-  "elements": [
-    {
-      "id": "dynamic",
-      "label": {
-        "ru": "Динамика",
-        "en": "Dynamic"
-      },
-      "tag_ref": "mutual_dynamic",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как это выглядит?",
-            "en": "What does it look like?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "facing",
-                "label": {
-                  "ru": "Лицом друг к другу",
-                  "en": "Facing each other"
-                }
-              },
-              {
-                "id": "side_by_side",
-                "label": {
-                  "ru": "Рядом, плечом к плечу",
-                  "en": "Side by side"
-                }
-              },
-              {
-                "id": "one_watches",
-                "label": {
-                  "ru": "Один смотрит, другой показывает",
-                  "en": "One watches, one performs"
-                }
-              },
-              {
-                "id": "race",
-                "label": {
-                  "ru": "Кто первый кончит",
-                  "en": "Race to finish"
-                }
-              },
-              {
-                "id": "mirror",
-                "label": {
-                  "ru": "Повторять друг за другом",
-                  "en": "Mirror each other"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "interaction",
-      "label": {
-        "ru": "Взаимодействие",
-        "en": "Interaction"
-      },
-      "tag_ref": "mutual_interaction",
-      "follow_ups": [
-        {
-          "id": "touch",
-          "type": "multi_select",
-          "question": {
-            "ru": "Касаться друг друга?",
-            "en": "Touch each other?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no_touch",
-                "label": {
-                  "ru": "Не касаться",
-                  "en": "No touching"
-                }
-              },
-              {
-                "id": "kissing",
-                "label": {
-                  "ru": "Целоваться",
-                  "en": "Kissing"
-                }
-              },
-              {
-                "id": "light_touch",
-                "label": {
-                  "ru": "Лёгкие касания",
-                  "en": "Light touches"
-                }
-              },
-              {
-                "id": "help_finish",
-                "label": {
-                  "ru": "Помочь кончить",
-                  "en": "Help each other finish"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "verbal",
-      "label": {
-        "ru": "Слова",
-        "en": "Verbal"
-      },
-      "tag_ref": "mutual_verbal",
-      "follow_ups": [
-        {
-          "id": "talk",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что говорить?",
-            "en": "What to say?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "silent",
-                "label": {
-                  "ru": "Молча, только смотреть",
-                  "en": "Silent, just watch"
-                }
-              },
-              {
-                "id": "encouragement",
-                "label": {
-                  "ru": "Подбадривать",
-                  "en": "Encouragement"
-                }
-              },
-              {
-                "id": "dirty_talk",
-                "label": {
-                  "ru": "Dirty talk",
-                  "en": "Dirty talk"
-                }
-              },
-              {
-                "id": "describe",
-                "label": {
-                  "ru": "Описывать что чувствуешь",
-                  "en": "Describe feelings"
-                }
-              },
-              {
-                "id": "instructions",
-                "label": {
-                  "ru": "Давать инструкции",
-                  "en": "Give instructions"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "mutual_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "watching",
-                "label": {
-                  "ru": "Смотреть на партнёра",
-                  "en": "Watching partner"
-                }
-              },
-              {
-                "id": "being_watched",
-                "label": {
-                  "ru": "Знать что смотрят на меня",
-                  "en": "Being watched"
-                }
-              },
-              {
-                "id": "learning",
-                "label": {
-                  "ru": "Узнать как партнёр это делает",
-                  "en": "Learn how partner does it"
-                }
-              },
-              {
-                "id": "showing",
-                "label": {
-                  "ru": "Показать что мне нравится",
-                  "en": "Show what I like"
-                }
-              },
-              {
-                "id": "sync_orgasm",
-                "label": {
-                  "ru": "Кончить вместе",
-                  "en": "Orgasm together"
-                }
-              },
-              {
-                "id": "intimate",
-                "label": {
-                  "ru": "Интимность без проникновения",
-                  "en": "Intimacy without penetration"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что нравится во взаимной мастурбации?",
-      "en": "What do you like about mutual masturbation?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "mutual_masturbation",
@@ -286,8 +59,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Мужчина и женщина мастурбируют друг перед другом. Каждый ласкает себя и наблюдает за партнёром.",
-    "en": "Man and woman masturbate in front of each other. Each touches themselves and watches their partner."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что нравится во взаимной мастурбации?",
+      "en": "What do you like about mutual masturbation?"
+    }
+      }
 }

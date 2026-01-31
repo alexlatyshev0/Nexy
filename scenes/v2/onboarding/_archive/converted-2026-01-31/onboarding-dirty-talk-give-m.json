@@ -1,0 +1,40 @@
+{
+  "id": "9d8e6f94-92c1-4234-83e2-96874ebc8ad1",
+  "slug": "onboarding-dirty-talk-give-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 13,
+  "for_gender": "male",
+  "paired_with": "onboarding-dirty-talk-receive-f",
+  "title": {
+    "ru": "Грязные разговоры",
+    "en": "Dirty talk"
+  },
+  "subtitle": {
+    "ru": "Ты говоришь",
+    "en": "You speak"
+  },
+  "ai_description": {
+    "ru": "Интерес к тому чтобы говорить грязно.",
+    "en": "Interest in talking dirty to your partner."
+  },
+  "user_description": {
+    "ru": "Ты шепчешь ей на ухо, что сделаешь с ней. Грубые, откровенные слова.",
+    "en": "You whisper in her ear what you'll do to her. Rough, explicit words."
+  },
+  "image_prompt": "naked man leaning close to naked woman's ear, whispering, both on bed, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "dirty-talk-give"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "dirty-talk-give"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "dirty_talk"
+}

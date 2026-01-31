@@ -23,7 +23,7 @@ export function MaleBack({
     <div className="relative w-full h-full flex items-center justify-center">
       {/* Background image */}
       <img
-        src="/images/dolls/man_back2.jpg"
+        src="/images/dolls/man_back.jpg"
         alt="Male body back"
         className="absolute inset-0 w-full h-full object-contain pointer-events-none"
       />

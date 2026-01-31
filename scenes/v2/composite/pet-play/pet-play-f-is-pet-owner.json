@@ -1,0 +1,58 @@
+{
+  "id": "pet-play-she-is-pet-owner",
+  "slug": "pet-play-she-is-pet-owner",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "roleplay",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "pet-play-she-is-pet-sub",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Pet play",
+    "en": "Pet Play"
+  },
+  "subtitle": {
+    "ru": "Она твой питомец",
+    "en": "She's your pet"
+  },
+  "user_description": {
+    "ru": "Она твой питомец — ушки, хвостик, ошейник. Ползает на четвереньках, выполняет твои команды, мурлычет.",
+    "en": "She's your pet — ears, tail, collar. Crawls on all fours, follows your commands, purrs."
+  },
+  "ai_description": {
+    "ru": "На ней ушки, хвостик, ошейник. Она мурлычет, ластится, ждёт команд. Kitten, puppy — милый зверёк в руках хозяина.",
+    "en": "She wears ears, tail, collar. She purrs, cuddles, waits for commands. Kitten, puppy — cute pet in master's hands."
+  },
+  "image_prompt": "woman on all fours wearing cat ears tail and collar, nude, looking up at standing man, his hand on her head, bedroom",
+  "intensity": 3,
+  "category": "pet-play",
+  "tags": [
+    "pet_play",
+    "kitten",
+    "owner",
+    "collar"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "pet_play",
+      "dominant",
+      "owner"
+    ],
+    "tests_secondary": [
+      "collar",
+      "control"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда она питомец?",
+      "en": "What appeals when she's your pet?"
+    }
+      }
+}

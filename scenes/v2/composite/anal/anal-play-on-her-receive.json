@@ -1,0 +1,56 @@
+{
+  "id": "anal-play-on-her-receive",
+  "slug": "anal-play-on-her-receive",
+  "version": 2,
+  "scene_type": null,
+  "sets_gate": "anal",
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 3,
+  "for_gender": "female",
+  "paired_scene": "anal-play-on-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Анальные игры",
+    "en": "Anal Play"
+  },
+  "subtitle": {
+    "ru": "Он тебе",
+    "en": "He does to you"
+  },
+  "user_description": {
+    "ru": "Он ласкает твою попку, проникает пальцами или игрушкой.",
+    "en": "He caresses your ass, penetrates with fingers or toy."
+  },
+  "ai_description": {
+    "ru": "Внимание к её попке. Пальцы, пробки, анальный секс. Другие ощущения, другая интенсивность, табуированное удовольствие.",
+    "en": "Attention to her ass. Fingers, plugs, anal sex. Different sensations, different intensity, taboo pleasure."
+  },
+  "image_prompt": "man and woman on bed, she lying face down nude with arched back, he behind her with hand near her bottom, bedroom setting",
+  "intensity": 3,
+  "category": "anal",
+  "tags": [
+    "anal",
+    "plugs",
+    "backdoor"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "anal",
+      "anal_sex",
+      "plugs"
+    ],
+    "tests_secondary": [
+      "backdoor",
+      "taboo",
+      "fullness"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Анальные игры когда он тебе?",
+      "en": "Anal play when he does to you?"
+    }
+  }
+}

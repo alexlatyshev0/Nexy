@@ -1,0 +1,57 @@
+{
+  "id": "cunnilingus-receive",
+  "slug": "cunnilingus-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "oral"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "cunnilingus",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Кунилингус",
+    "en": "Cunnilingus"
+  },
+  "subtitle": {
+    "ru": "Он лижет тебя",
+    "en": "He licks you"
+  },
+  "user_description": {
+    "ru": "Он между твоих ног, лижет твою киску. Его язык на твоём клиторе, губы на половых губах.",
+    "en": "He's between your legs, licking your pussy. His tongue on your clit, lips on your labia."
+  },
+  "ai_description": {
+    "ru": "Он между её ног, его язык исследует её. Она откидывается назад, хватается за простыни. Его рот дарит ей волны удовольствия.",
+    "en": "He's between her legs, his tongue exploring her. She leans back, gripping the sheets. His mouth gives her waves of pleasure."
+  },
+  "image_prompt": "man between woman's spread legs on bed, his face at her groin performing oral sex, woman lying back nude gripping bedsheets, bedroom setting",
+  "intensity": 2,
+  "category": "oral",
+  "tags": [
+    "cunnilingus",
+    "oral",
+    "pussy_licking",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "cunnilingus",
+      "oral_sex",
+      "pussy_licking"
+    ],
+    "tests_secondary": [
+      "receiving",
+      "orgasm_oral"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Кунилингус — он лижет тебя?",
+      "en": "Cunnilingus — he licks you?"
+    }
+  }
+}

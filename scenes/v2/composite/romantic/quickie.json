@@ -2,6 +2,13 @@
   "id": "quickie",
   "slug": "quickie",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "quickie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "mutual",
   "title": {
     "ru": "Быстрый секс",
@@ -10,6 +17,10 @@
   "subtitle": {
     "ru": "Когда нет времени",
     "en": "When there's no time"
+  },
+  "user_description": {
+    "ru": "Пара занимается сексом быстро в неожиданном месте — в лифте, коридоре, на работе во время перерыва",
+    "en": "A couple has sex quickly in an unexpected place — in elevator, hallway, at work during break"
   },
   "ai_description": {
     "ru": "Быстрый, срочный секс. Нет времени на прелюдию, только страсть. В лифте, перед выходом, в перерыве.",
@@ -25,244 +36,6 @@
     "spontaneous",
     "passion"
   ],
-  "elements": [
-    {
-      "id": "when",
-      "label": {
-        "ru": "Когда",
-        "en": "When"
-      },
-      "tag_ref": "quickie_when",
-      "follow_ups": [
-        {
-          "id": "timing",
-          "type": "multi_select",
-          "question": {
-            "ru": "В какой момент?",
-            "en": "When?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "before_leaving",
-                "label": {
-                  "ru": "Перед выходом",
-                  "en": "Before leaving"
-                }
-              },
-              {
-                "id": "lunch_break",
-                "label": {
-                  "ru": "В обеденный перерыв",
-                  "en": "Lunch break"
-                }
-              },
-              {
-                "id": "guests_coming",
-                "label": {
-                  "ru": "Гости скоро придут",
-                  "en": "Guests arriving soon"
-                }
-              },
-              {
-                "id": "spontaneous",
-                "label": {
-                  "ru": "Спонтанно",
-                  "en": "Spontaneously"
-                }
-              },
-              {
-                "id": "between_activities",
-                "label": {
-                  "ru": "Между делами",
-                  "en": "Between activities"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "where",
-      "label": {
-        "ru": "Где",
-        "en": "Where"
-      },
-      "tag_ref": "quickie_where",
-      "follow_ups": [
-        {
-          "id": "location",
-          "type": "multi_select",
-          "question": {
-            "ru": "Где?",
-            "en": "Where?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "bedroom",
-                "label": {
-                  "ru": "Спальня (быстро)",
-                  "en": "Bedroom (quickly)"
-                }
-              },
-              {
-                "id": "kitchen",
-                "label": {
-                  "ru": "Кухня",
-                  "en": "Kitchen"
-                }
-              },
-              {
-                "id": "bathroom",
-                "label": {
-                  "ru": "Ванная",
-                  "en": "Bathroom"
-                }
-              },
-              {
-                "id": "closet",
-                "label": {
-                  "ru": "Гардероб",
-                  "en": "Closet"
-                }
-              },
-              {
-                "id": "car",
-                "label": {
-                  "ru": "Машина",
-                  "en": "Car"
-                }
-              },
-              {
-                "id": "risky",
-                "label": {
-                  "ru": "Рискованное место",
-                  "en": "Risky place"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "style",
-      "label": {
-        "ru": "Стиль",
-        "en": "Style"
-      },
-      "tag_ref": "quickie_style",
-      "follow_ups": [
-        {
-          "id": "how",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как?",
-            "en": "How?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "clothes_on",
-                "label": {
-                  "ru": "Не раздеваясь",
-                  "en": "Clothes on"
-                }
-              },
-              {
-                "id": "standing",
-                "label": {
-                  "ru": "Стоя",
-                  "en": "Standing"
-                }
-              },
-              {
-                "id": "bent_over",
-                "label": {
-                  "ru": "Наклонившись",
-                  "en": "Bent over"
-                }
-              },
-              {
-                "id": "sitting",
-                "label": {
-                  "ru": "Сидя",
-                  "en": "Sitting"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "quickie_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "urgency",
-                "label": {
-                  "ru": "Срочность",
-                  "en": "Urgency"
-                }
-              },
-              {
-                "id": "spontaneity",
-                "label": {
-                  "ru": "Спонтанность",
-                  "en": "Spontaneity"
-                }
-              },
-              {
-                "id": "desire",
-                "label": {
-                  "ru": "Невозможность ждать",
-                  "en": "Can't wait"
-                }
-              },
-              {
-                "id": "efficiency",
-                "label": {
-                  "ru": "Эффективность",
-                  "en": "Efficiency"
-                }
-              },
-              {
-                "id": "thrill",
-                "label": {
-                  "ru": "Острота",
-                  "en": "Thrill"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в быстром сексе?",
-      "en": "What appeals about quickies?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "quickie",
@@ -275,8 +48,11 @@
       "time"
     ]
   },
-  "user_description": {
-    "ru": "Пара занимается сексом быстро в неожиданном месте — в лифте, коридоре, на работе во время перерыва",
-    "en": "A couple has sex quickly in an unexpected place — in elevator, hallway, at work during break"
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в быстром сексе?",
+      "en": "What appeals about quickies?"
+    }
+      }
 }

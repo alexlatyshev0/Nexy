@@ -1,0 +1,40 @@
+{
+  "id": "1e29b387-594e-4366-9cac-ede15cab2f4b",
+  "slug": "onboarding-body-fluids-give-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 18,
+  "for_gender": "male",
+  "paired_with": "onboarding-body-fluids-receive-f",
+  "title": {
+    "ru": "Жидкости",
+    "en": "Body fluids"
+  },
+  "subtitle": {
+    "ru": "Ты кончаешь на",
+    "en": "You cum on"
+  },
+  "ai_description": {
+    "ru": "Интерес к тому чтобы кончать на партнёра.",
+    "en": "Interest in cumming on your partner."
+  },
+  "user_description": {
+    "ru": "Ты кончаешь ей на лицо. Или на грудь. Или в рот.",
+    "en": "You cum on her face. Or on her chest. Or in her mouth."
+  },
+  "image_prompt": "naked woman on knees, face up with closed eyes and open mouth, naked man standing over her, implied facial, bedroom",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "body-fluids-give"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "body-fluids-give"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "body_fluids"
+}

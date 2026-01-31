@@ -1,0 +1,59 @@
+{
+  "id": "edging-she-controls-him-receive",
+  "slug": "edging-she-controls-him-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "edging-she-controls-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Эджинг",
+    "en": "Edging"
+  },
+  "subtitle": {
+    "ru": "Она контролирует твой оргазм",
+    "en": "She controls your orgasm"
+  },
+  "user_description": {
+    "ru": "Она стимулирует тебя до грани оргазма, затем останавливается. Повторяет это несколько раз.",
+    "en": "She stimulates you to near orgasm, then stops. Repeats this multiple times."
+  },
+  "ai_description": {
+    "ru": "Она доводит его до грани и останавливается. Снова и снова. Контроль над его оргазмом, накопление желания, мучительное удовольствие.",
+    "en": "She brings him to the edge and stops. Again and again. Control over his orgasm, building desire, torturous pleasure."
+  },
+  "image_prompt": "woman with hand on man's penis, man lying on bed with tense body position, woman kneeling beside him, both nude, bedroom with soft lamp light",
+  "intensity": 3,
+  "category": "control",
+  "tags": [
+    "edging",
+    "orgasm_control",
+    "denial",
+    "teasing",
+    "femdom"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "edging",
+      "orgasm_control",
+      "femdom"
+    ],
+    "tests_secondary": [
+      "teasing",
+      "denial",
+      "control"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда она контролирует твой оргазм?",
+      "en": "What appeals when she controls your orgasm?"
+    }
+      }
+}

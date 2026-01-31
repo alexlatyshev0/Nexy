@@ -32,7 +32,11 @@ export async function POST(req: Request) {
     .in('tag', scene.tags);
 
   const categories = [...new Set(
-    tagCats?.map(tc => (tc.category as { slug: string; name: string })?.slug).filter(Boolean)
+    tagCats?.map(tc => {
+      const cat = tc.category as { slug: string; name: string } | { slug: string; name: string }[] | null;
+      if (Array.isArray(cat)) return cat[0]?.slug;
+      return cat?.slug;
+    }).filter(Boolean)
   )];
 
   if (!categories.length) {

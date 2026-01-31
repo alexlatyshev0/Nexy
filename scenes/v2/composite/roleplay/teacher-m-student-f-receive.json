@@ -1,0 +1,57 @@
+{
+  "id": "teacher-m-student-f-receive",
+  "slug": "teacher-m-student-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "roleplay"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "teacher-m-student-f",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Учитель и ученица",
+    "en": "Teacher & Schoolgirl"
+  },
+  "subtitle": {
+    "ru": "Он — строгий учитель, ты — ученица",
+    "en": "He's teacher, you're student"
+  },
+  "user_description": {
+    "ru": "Он играет строгого учителя. Ты — ученица в форме. Наказания за плохое поведение.",
+    "en": "He plays strict teacher. You're student in uniform. Punishments for bad behavior."
+  },
+  "ai_description": {
+    "ru": "М-учитель, Ж-ученица. Ролеплей с наказаниями, rewards, властью через обучение.",
+    "en": "M-teacher, F-student. Roleplay with punishments, rewards, power through teaching."
+  },
+  "image_prompt": "woman in schoolgirl uniform bent over wooden desk, man in business suit holding ruler behind her, classroom with blackboard",
+  "intensity": 3,
+  "category": "roleplay",
+  "tags": [
+    "roleplay",
+    "teacher",
+    "student",
+    "submission",
+    "punishment"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "teacher_student",
+      "submission"
+    ],
+    "tests_secondary": [
+      "roleplay",
+      "punishment"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Он — строгий учитель, ты — непослушная ученица?",
+      "en": "He's strict teacher, you're naughty student?"
+    }
+  }
+}

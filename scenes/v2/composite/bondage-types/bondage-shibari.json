@@ -1,0 +1,47 @@
+{
+  "id": "bondage-shibari",
+  "slug": "bondage-shibari",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Шибари",
+    "en": "Shibari"
+  },
+  "subtitle": {
+    "ru": "Японское верёвочное искусство",
+    "en": "Japanese rope art"
+  },
+  "user_description": {
+    "ru": "Японское верёвочное искусство. Красивые узоры на теле.",
+    "en": "Japanese rope art. Beautiful patterns on body."
+  },
+  "ai_description": {
+    "ru": "Красивые узоры из верёвок на теле. Эстетика и ограничение движений.",
+    "en": "Beautiful rope patterns on the body. Aesthetics and restriction."
+  },
+  "image_prompt": "person with decorative rope bondage shibari pattern on torso, artistic japanese rope work, bedroom",
+  "intensity": 3,
+  "category": "bondage",
+  "tags": [
+    "bondage",
+    "shibari",
+    "rope"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "bondage",
+      "shibari"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

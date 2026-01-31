@@ -1,0 +1,47 @@
+{
+  "id": "position-standing",
+  "slug": "position-standing",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Стоя",
+    "en": "Standing"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Секс стоя. У стены, в душе, посреди комнаты.",
+    "en": "Sex while standing. Against wall, in shower, anywhere."
+  },
+  "ai_description": {
+    "ru": "Секс стоя. У стены, в душе, или просто посреди комнаты.",
+    "en": "Sex while standing. Against a wall, in shower, or just in the middle of the room."
+  },
+  "image_prompt": "couple having sex standing against wall, both standing, hallway",
+  "intensity": 2,
+  "category": "positions",
+  "tags": [
+    "positions",
+    "standing",
+    "athletic"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "positions",
+      "standing"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

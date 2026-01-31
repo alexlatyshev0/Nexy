@@ -1,8 +1,16 @@
 {
-  "id": "spitting_m_to_f",
-  "slug": "spitting-he-on-her",
+  "id": "spitting-m-to-f",
+  "slug": "spitting-m-to-f",
   "version": 2,
-  "paired_scene": "spitting_f_to_m",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "dirty_talk",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "spitting-m-to-f-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Плевки",
@@ -12,13 +20,17 @@
     "ru": "Он на неё",
     "en": "He on her"
   },
+  "user_description": {
+    "ru": "Ты плюёшь ей в рот или на лицо.",
+    "en": "You spit in her mouth or on her face. She accepts with open lips."
+  },
   "ai_description": {
     "ru": "Он плюёт ей в рот, она принимает с открытыми губами. Грубо, унизительно, но она хочет этого. Слюна как знак власти.",
     "en": "He spits in her mouth, she accepts with open lips. Rough, degrading, but she wants it. Saliva as a sign of power."
   },
   "image_prompt": "man close to woman face, he spitting, she looking up with open mouth, both partially clothed, bedroom setting",
   "intensity": 3,
-  "category": "body_fluids",
+  "category": "body-fluids",
   "tags": [
     "spitting",
     "spit",
@@ -27,251 +39,6 @@
     "dominance",
     "saliva"
   ],
-  "elements": [
-    {
-      "id": "where_spit",
-      "label": {
-        "ru": "Куда?",
-        "en": "Where?"
-      },
-      "tag_ref": "spit_target",
-      "follow_ups": [
-        {
-          "id": "spit_location",
-          "type": "multi_select",
-          "question": {
-            "ru": "Куда плевать?",
-            "en": "Where to spit?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "mouth",
-                "label": {
-                  "ru": "В рот",
-                  "en": "In mouth"
-                }
-              },
-              {
-                "id": "face",
-                "label": {
-                  "ru": "На лицо",
-                  "en": "On face"
-                }
-              },
-              {
-                "id": "tongue",
-                "label": {
-                  "ru": "На язык",
-                  "en": "On tongue"
-                }
-              },
-              {
-                "id": "body",
-                "label": {
-                  "ru": "На тело",
-                  "en": "On body"
-                }
-              },
-              {
-                "id": "pussy",
-                "label": {
-                  "ru": "На киску (как смазка)",
-                  "en": "On pussy (as lube)"
-                }
-              },
-              {
-                "id": "ass",
-                "label": {
-                  "ru": "На анус",
-                  "en": "On ass"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "context",
-      "label": {
-        "ru": "Контекст",
-        "en": "Context"
-      },
-      "tag_ref": "spit_context",
-      "follow_ups": [
-        {
-          "id": "when_spit",
-          "type": "multi_select",
-          "question": {
-            "ru": "В какой момент?",
-            "en": "At what moment?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "during_oral",
-                "label": {
-                  "ru": "Во время минета (sloppy)",
-                  "en": "During blowjob (sloppy)"
-                }
-              },
-              {
-                "id": "degradation",
-                "label": {
-                  "ru": "Как унижение",
-                  "en": "As degradation"
-                }
-              },
-              {
-                "id": "domination",
-                "label": {
-                  "ru": "Показать власть",
-                  "en": "Show dominance"
-                }
-              },
-              {
-                "id": "lube",
-                "label": {
-                  "ru": "Как смазка",
-                  "en": "As lubrication"
-                }
-              },
-              {
-                "id": "passionate",
-                "label": {
-                  "ru": "В порыве страсти",
-                  "en": "In passion"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "spit_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "degradation",
-                "label": {
-                  "ru": "Унижение",
-                  "en": "Degradation"
-                }
-              },
-              {
-                "id": "power",
-                "label": {
-                  "ru": "Власть",
-                  "en": "Power"
-                }
-              },
-              {
-                "id": "messy",
-                "label": {
-                  "ru": "Грязность, мокро",
-                  "en": "Messy, wet"
-                }
-              },
-              {
-                "id": "primal",
-                "label": {
-                  "ru": "Животное, первобытное",
-                  "en": "Primal, animalistic"
-                }
-              },
-              {
-                "id": "objectification",
-                "label": {
-                  "ru": "Использование как вещь",
-                  "en": "Being used as object"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "reaction",
-      "label": {
-        "ru": "Её реакция",
-        "en": "Her reaction"
-      },
-      "tag_ref": "receiver_reaction",
-      "follow_ups": [
-        {
-          "id": "she_reacts",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как она реагирует?",
-            "en": "How does she react?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "swallow",
-                "label": {
-                  "ru": "Глотает",
-                  "en": "Swallows"
-                }
-              },
-              {
-                "id": "thank",
-                "label": {
-                  "ru": "Благодарит",
-                  "en": "Thanks him"
-                }
-              },
-              {
-                "id": "beg_more",
-                "label": {
-                  "ru": "Просит ещё",
-                  "en": "Begs for more"
-                }
-              },
-              {
-                "id": "aroused",
-                "label": {
-                  "ru": "Возбуждается",
-                  "en": "Gets aroused"
-                }
-              },
-              {
-                "id": "humiliated",
-                "label": {
-                  "ru": "Унижена (и это заводит)",
-                  "en": "Humiliated (and aroused)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в плевках?",
-      "en": "What appeals about spitting?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "spitting",
@@ -296,8 +63,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Он плюёт ей в рот или на лицо. Она принимает с открытыми губами.",
-    "en": "He spits in her mouth or on face. She accepts with open lips."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в плевках?",
+      "en": "What appeals about spitting?"
+    }
+      }
 }

@@ -1,0 +1,47 @@
+{
+  "id": "bondage-st-andrews-cross",
+  "slug": "bondage-st-andrews-cross",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Андреевский крест",
+    "en": "St. Andrew's Cross"
+  },
+  "subtitle": {
+    "ru": "X-образная рама",
+    "en": "X-shaped frame"
+  },
+  "user_description": {
+    "ru": "Фиксация на X-образной раме. Руки и ноги разведены.",
+    "en": "Fixed to X-frame. Arms and legs spread."
+  },
+  "ai_description": {
+    "ru": "Фиксация на X-образной раме. Руки и ноги разведены в стороны.",
+    "en": "Fixed to an X-shaped frame. Arms and legs spread wide."
+  },
+  "image_prompt": "person standing against wooden X-shaped st andrews cross frame, arms spread, dungeon setting",
+  "intensity": 4,
+  "category": "bondage",
+  "tags": [
+    "bondage",
+    "st-andrews-cross",
+    "furniture"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "bondage",
+      "st-andrews-cross"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

@@ -1,0 +1,58 @@
+{
+  "id": "breath-play",
+  "slug": "breath-play",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Breath Play",
+    "en": "Breath Play"
+  },
+  "subtitle": {
+    "ru": "Ограничение дыхания",
+    "en": "Breath restriction"
+  },
+  "user_description": {
+    "ru": "Ограничение дыхания для усиления ощущений.",
+    "en": "Restricting breathing to intensify sensations."
+  },
+  "ai_description": {
+    "ru": "Ограничение дыхания партнёра для усиления ощущений. Крайне рискованная практика, требующая знаний и осторожности.",
+    "en": "Restricting partner's breathing to intensify sensations. Extremely risky practice requiring knowledge and caution."
+  },
+  "image_prompt": "dominant partner with hand near submissive partner's neck, intense eye contact, trust and control",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": [
+    "breath_play",
+    "choking",
+    "asphyxiation",
+    "extreme",
+    "edge_play"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "breath_play",
+      "choking",
+      "asphyxiation"
+    ],
+    "tests_secondary": [
+      "extreme",
+      "edge_play",
+      "control"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в breath play?",
+      "en": "What appeals about breath play?"
+    }
+      }
+}

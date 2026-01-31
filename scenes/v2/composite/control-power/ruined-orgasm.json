@@ -1,0 +1,58 @@
+{
+  "id": "ruined-orgasm",
+  "slug": "ruined-orgasm",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Испорченный оргазм",
+    "en": "Ruined Orgasm"
+  },
+  "subtitle": {
+    "ru": "Остановка на пике",
+    "en": "Stopped at the peak"
+  },
+  "user_description": {
+    "ru": "Стимуляция прекращается в момент оргазма — испорченный оргазм.",
+    "en": "Stimulation stops at the moment of orgasm — a ruined orgasm."
+  },
+  "ai_description": {
+    "ru": "Прекращение стимуляции в момент оргазма, что приводит к неудовлетворительному, испорченному оргазму. Форма контроля и лёгкого садизма.",
+    "en": "Stopping stimulation at the moment of orgasm, leading to an unsatisfying, ruined orgasm. A form of control and light sadism."
+  },
+  "image_prompt": "dominant partner pulling away from frustrated submissive, bedroom setting, intense atmosphere",
+  "intensity": 3,
+  "category": "control-power",
+  "tags": [
+    "ruined_orgasm",
+    "orgasm_control",
+    "denial",
+    "teasing",
+    "frustration"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "ruined_orgasm",
+      "orgasm_control",
+      "denial"
+    ],
+    "tests_secondary": [
+      "teasing",
+      "frustration",
+      "control"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в испорченном оргазме?",
+      "en": "What appeals about ruined orgasm?"
+    }
+      }
+}

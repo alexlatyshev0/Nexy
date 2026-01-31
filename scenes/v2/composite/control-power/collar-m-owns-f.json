@@ -1,8 +1,15 @@
 {
-  "id": "collar_m_owns_f",
+  "id": "collar-he-owns-her",
   "slug": "collar-he-owns-her",
   "version": 2,
-  "paired_scene": "collar_f_owns_m",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "collar-he-owns-her-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "Ошейник и владение",
@@ -12,13 +19,17 @@
     "ru": "Он её хозяин",
     "en": "He owns her"
   },
+  "user_description": {
+    "ru": "Ты надеваешь на неё ошейник и держишь поводок.",
+    "en": "You put a collar on her and hold the leash."
+  },
   "ai_description": {
     "ru": "D/s динамика с ошейником. Он — владелец, она — принадлежит ему. Тестирует: ownership, collaring, leash play.",
     "en": "D/s dynamic with collar. He owns, she belongs. Tests: ownership, collaring, leash play."
   },
   "image_prompt": "man putting collar on woman's neck while holding leash, he standing shirtless, she kneeling nude, bedroom setting",
   "intensity": 4,
-  "category": "control_power",
+  "category": "control-power",
   "tags": [
     "collar",
     "ownership",
@@ -28,429 +39,6 @@
     "d_s",
     "belonging"
   ],
-  "elements": [
-    {
-      "id": "collar_type",
-      "label": {
-        "ru": "Тип ошейника",
-        "en": "Collar type"
-      },
-      "tag_ref": "collar_type",
-      "follow_ups": [
-        {
-          "id": "collars",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какой ошейник?",
-            "en": "What collar?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "leather",
-                "label": {
-                  "ru": "Кожаный классический",
-                  "en": "Classic leather"
-                }
-              },
-              {
-                "id": "elegant",
-                "label": {
-                  "ru": "Элегантный (как украшение)",
-                  "en": "Elegant (like jewelry)"
-                }
-              },
-              {
-                "id": "day_collar",
-                "label": {
-                  "ru": "Day collar (для публики)",
-                  "en": "Day collar (for public)"
-                }
-              },
-              {
-                "id": "chain",
-                "label": {
-                  "ru": "Цепочка",
-                  "en": "Chain"
-                }
-              },
-              {
-                "id": "heavy",
-                "label": {
-                  "ru": "Тяжёлый, жёсткий",
-                  "en": "Heavy, rigid"
-                }
-              },
-              {
-                "id": "posture",
-                "label": {
-                  "ru": "Posture collar",
-                  "en": "Posture collar"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "leash",
-      "label": {
-        "ru": "Поводок?",
-        "en": "Leash?"
-      },
-      "tag_ref": "leash",
-      "follow_ups": [
-        {
-          "id": "leash_use",
-          "type": "multi_select",
-          "question": {
-            "ru": "Использовать поводок?",
-            "en": "Use leash?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no",
-                "label": {
-                  "ru": "Нет, только ошейник",
-                  "en": "No, collar only"
-                }
-              },
-              {
-                "id": "home",
-                "label": {
-                  "ru": "Дома",
-                  "en": "At home"
-                }
-              },
-              {
-                "id": "walk",
-                "label": {
-                  "ru": "Водить на поводке",
-                  "en": "Lead around"
-                }
-              },
-              {
-                "id": "during_sex",
-                "label": {
-                  "ru": "Во время секса (тянуть)",
-                  "en": "During sex (pull)"
-                }
-              },
-              {
-                "id": "public",
-                "label": {
-                  "ru": "На публике (дискретно)",
-                  "en": "In public (discrete)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "meaning",
-      "label": {
-        "ru": "Значение",
-        "en": "Meaning"
-      },
-      "tag_ref": "collar_meaning",
-      "follow_ups": [
-        {
-          "id": "what_means",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что означает ошейник?",
-            "en": "What does collar mean?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "ownership",
-                "label": {
-                  "ru": "Я принадлежу ему",
-                  "en": "I belong to him"
-                }
-              },
-              {
-                "id": "protection",
-                "label": {
-                  "ru": "Он защищает меня",
-                  "en": "He protects me"
-                }
-              },
-              {
-                "id": "commitment",
-                "label": {
-                  "ru": "Commitment (как кольцо)",
-                  "en": "Commitment (like ring)"
-                }
-              },
-              {
-                "id": "submission",
-                "label": {
-                  "ru": "Моё подчинение",
-                  "en": "My submission"
-                }
-              },
-              {
-                "id": "pride",
-                "label": {
-                  "ru": "Гордость быть его",
-                  "en": "Pride in being his"
-                }
-              },
-              {
-                "id": "play_only",
-                "label": {
-                  "ru": "Только для игры",
-                  "en": "Play only"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "when_wear",
-      "label": {
-        "ru": "Когда носить?",
-        "en": "When to wear?"
-      },
-      "tag_ref": "collar_wearing",
-      "follow_ups": [
-        {
-          "id": "wearing_time",
-          "type": "multi_select",
-          "question": {
-            "ru": "Когда носить?",
-            "en": "When to wear?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "play_only",
-                "label": {
-                  "ru": "Только во время игры",
-                  "en": "During play only"
-                }
-              },
-              {
-                "id": "home",
-                "label": {
-                  "ru": "Дома всегда",
-                  "en": "Always at home"
-                }
-              },
-              {
-                "id": "sleep",
-                "label": {
-                  "ru": "Спать в ошейнике",
-                  "en": "Sleep in collar"
-                }
-              },
-              {
-                "id": "day_collar",
-                "label": {
-                  "ru": "Day collar на работу",
-                  "en": "Day collar to work"
-                }
-              },
-              {
-                "id": "always",
-                "label": {
-                  "ru": "Всегда (разные виды)",
-                  "en": "Always (different types)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "collaring_ceremony",
-      "label": {
-        "ru": "Церемония",
-        "en": "Ceremony"
-      },
-      "tag_ref": "collaring_ceremony",
-      "follow_ups": [
-        {
-          "id": "ceremony",
-          "type": "single_select",
-          "question": {
-            "ru": "Церемония одевания?",
-            "en": "Collaring ceremony?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "important",
-                "label": {
-                  "ru": "Важный ритуал",
-                  "en": "Important ritual"
-                }
-              },
-              {
-                "id": "simple",
-                "label": {
-                  "ru": "Просто надевает",
-                  "en": "Just puts on"
-                }
-              },
-              {
-                "id": "stages",
-                "label": {
-                  "ru": "Этапы (training → permanent)",
-                  "en": "Stages (training → permanent)"
-                }
-              },
-              {
-                "id": "not_important",
-                "label": {
-                  "ru": "Не важно",
-                  "en": "Not important"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "rules",
-      "label": {
-        "ru": "Правила",
-        "en": "Rules"
-      },
-      "tag_ref": "ownership_rules",
-      "follow_ups": [
-        {
-          "id": "what_rules",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие правила с ошейником?",
-            "en": "What rules with collar?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "kneel",
-                "label": {
-                  "ru": "Встать на колени когда надевает",
-                  "en": "Kneel when he puts on"
-                }
-              },
-              {
-                "id": "thank",
-                "label": {
-                  "ru": "Благодарить",
-                  "en": "Thank him"
-                }
-              },
-              {
-                "id": "ask_remove",
-                "label": {
-                  "ru": "Просить разрешения снять",
-                  "en": "Ask permission to remove"
-                }
-              },
-              {
-                "id": "behaviors",
-                "label": {
-                  "ru": "Определённое поведение в ошейнике",
-                  "en": "Certain behaviors when collared"
-                }
-              },
-              {
-                "id": "none",
-                "label": {
-                  "ru": "Нет особых правил",
-                  "en": "No special rules"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "collar_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "belonging",
-                "label": {
-                  "ru": "Принадлежность",
-                  "en": "Belonging"
-                }
-              },
-              {
-                "id": "visible",
-                "label": {
-                  "ru": "Видимый знак",
-                  "en": "Visible sign"
-                }
-              },
-              {
-                "id": "feeling",
-                "label": {
-                  "ru": "Ощущение на шее",
-                  "en": "Feeling on neck"
-                }
-              },
-              {
-                "id": "ownership",
-                "label": {
-                  "ru": "Быть собственностью",
-                  "en": "Being owned"
-                }
-              },
-              {
-                "id": "control",
-                "label": {
-                  "ru": "Его контроль (поводок)",
-                  "en": "His control (leash)"
-                }
-              },
-              {
-                "id": "safety",
-                "label": {
-                  "ru": "Безопасность",
-                  "en": "Safety"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в ошейнике и владении?",
-      "en": "What appeals about collar and ownership?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "collar",
@@ -475,8 +63,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Он надевает на неё ошейник и держит поводок",
-    "en": "He puts a collar on her and holds the leash"
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в ошейнике и владении?",
+      "en": "What appeals about collar and ownership?"
+    }
+      }
 }

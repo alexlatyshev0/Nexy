@@ -1,0 +1,40 @@
+{
+  "id": "affc6628-6663-4906-8c92-b90285ea01a1",
+  "slug": "onboarding-public-m",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 10,
+  "for_gender": "male",
+  "paired_with": null,
+  "title": {
+    "ru": "Вне спальни",
+    "en": "Outside bedroom"
+  },
+  "subtitle": {
+    "ru": "Кухня, машина, лифт",
+    "en": "Kitchen, car, elevator"
+  },
+  "ai_description": {
+    "ru": "Интерес к сексу в необычных местах. Гейтит: public-sex, locations, kitchen-counter.",
+    "en": "Interest in sex in unusual places. Gates: public-sex, locations, kitchen-counter."
+  },
+  "user_description": {
+    "ru": "Ты сажаешь её на кухонный стол. Или прижимаешь к стеклу балкона.",
+    "en": "You sit her on the kitchen counter. Or press her against the balcony glass."
+  },
+  "image_prompt": "man in shirt lifting woman in dress onto kitchen counter, both partially clothed, modern kitchen",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "public"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "public"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "public"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "location-nature",
+  "slug": "location-nature",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "public",
+    "quickie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Природа",
+    "en": "Nature"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Секс на природе. Лес, пляж, поле.",
+    "en": "Sex outdoors. Forest, beach, field."
+  },
+  "ai_description": {
+    "ru": "Секс на природе. В лесу, на пляже, в поле.",
+    "en": "Sex outdoors. In the forest, on the beach, in a field."
+  },
+  "image_prompt": "couple on blanket in secluded forest clearing, nature setting, daylight",
+  "intensity": 3,
+  "category": "locations",
+  "tags": [
+    "locations",
+    "nature",
+    "outdoor",
+    "exhibitionism"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "locations",
+      "nature"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

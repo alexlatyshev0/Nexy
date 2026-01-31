@@ -1,0 +1,53 @@
+{
+  "id": "toy-clitoral",
+  "slug": "toy-clitoral",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "toys"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Клиторальный",
+    "en": "Clitoral Stimulator"
+  },
+  "subtitle": {
+    "ru": "Вакуумный или волновой",
+    "en": "Suction or wave"
+  },
+  "user_description": {
+    "ru": "Клиторальная игрушка. Вакуум или волны удовольствия.",
+    "en": "Clitoral toy. Suction or pleasure waves."
+  },
+  "ai_description": {
+    "ru": "Игрушка для прямой стимуляции клитора. Вакуум или волны удовольствия.",
+    "en": "Toy for direct clitoral stimulation. Suction or waves of pleasure."
+  },
+  "image_prompt": "clitoral suction toy, modern design, bedroom",
+  "intensity": 2,
+  "category": "toys",
+  "tags": [
+    "toys",
+    "clitoral",
+    "stimulator"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "toys",
+      "clitoral"
+    ],
+    "tests_secondary": []
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Клиторальная игрушка?",
+      "en": "Clitoral toy?"
+    }
+  },
+  "paired_with": null,
+  "priority": 50
+}

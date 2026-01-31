@@ -144,9 +144,9 @@ export function ZoneCalibrationTool({
   );
 
   const imageKey = `${gender}-${view}` as const;
-  const imageSrc = 
+  const imageSrc =
     gender === 'male' && view === 'front' ? '/images/dolls/man_front.jpg' :
-    gender === 'male' && view === 'back' ? '/images/dolls/man_back2.jpg' :
+    gender === 'male' && view === 'back' ? '/images/dolls/man_back.jpg' :
     gender === 'female' && view === 'front' ? '/images/dolls/woman_front.jpeg' :
     '/images/dolls/woman_back.jpeg';
 

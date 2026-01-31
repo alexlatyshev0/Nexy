@@ -1,0 +1,56 @@
+{
+  "id": "fisting-anal-m-to-f",
+  "slug": "fisting-anal-m-to-f",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "anal"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "fisting-anal-m-to-f-receive",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Анальный фистинг",
+    "en": "Anal Fisting"
+  },
+  "subtitle": {
+    "ru": "Его рука в её анусе",
+    "en": "His hand in her anus"
+  },
+  "user_description": {
+    "ru": "Ты вводишь руку в её анус.",
+    "en": "You insert your hand into her anus."
+  },
+  "ai_description": {
+    "ru": "М вводит руку в анус Ж. Анальный фистинг.",
+    "en": "M inserts hand into F's anus. Anal fisting."
+  },
+  "image_prompt": "man's hand entering woman's anus, abundant lubricant visible, intimate bedroom setting",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": [
+    "fisting",
+    "anal",
+    "penetration",
+    "stretch"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "fisting",
+      "anal_fisting"
+    ],
+    "tests_secondary": [
+      "stretch",
+      "extreme"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Анальный фистинг?",
+      "en": "Anal fisting?"
+    }
+  }
+}

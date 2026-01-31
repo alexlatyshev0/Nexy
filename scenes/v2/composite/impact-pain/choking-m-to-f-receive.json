@@ -1,0 +1,59 @@
+{
+  "id": "choking-m-to-f-receive",
+  "slug": "choking-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "choking-he-chokes-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Удушение",
+    "en": "Choking"
+  },
+  "subtitle": {
+    "ru": "Он держит твоё горло",
+    "en": "He holds your throat"
+  },
+  "user_description": {
+    "ru": "Он кладёт руку на твоё горло и слегка сжимает, контролируя твоё дыхание.",
+    "en": "He places his hand on your throat and squeezes slightly, controlling your breathing."
+  },
+  "ai_description": {
+    "ru": "Его рука на её горле. Не душит — контролирует. Лёгкое давление, её глаза закатываются от смеси страха и возбуждения. Полное доверие, полная власть.",
+    "en": "His hand on her throat. Not choking — controlling. Light pressure, her eyes roll back from mix of fear and arousal. Complete trust, complete power."
+  },
+  "image_prompt": "man with hand on woman throat, woman against wall, both in underwear, intense eye contact, bedroom",
+  "intensity": 4,
+  "category": "impact-pain",
+  "tags": [
+    "choking",
+    "breath_play",
+    "throat",
+    "submission",
+    "power_exchange"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "choking",
+      "breath_play",
+      "submission"
+    ],
+    "tests_secondary": [
+      "control",
+      "trust",
+      "intensity"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает когда он держит твоё горло?",
+      "en": "What appeals when he holds your throat?"
+    }
+      }
+}

@@ -10,6 +10,7 @@ import type {
   BodyMapAnswer as BodyMapAnswerType,
   BodyMapPassAnswer,
   Locale,
+  LocalizedString,
 } from '@/lib/types';
 import { BodySilhouette, type MarkerData } from './BodySilhouette';
 import { ColorPalette } from './ColorPalette';
@@ -57,8 +58,22 @@ export function BodyMapAnswer({
   const [zonePreferences, setZonePreferences] = useState<AllZonePreferences>({});
   const [configuredZones, setConfiguredZones] = useState<Set<ZoneId>>(new Set());
   const [showZoneBounds, setShowZoneBounds] = useState(false);
+  const [lastClickPosition, setLastClickPosition] = useState<{ x: number; y: number } | null>(null);
+
+  // Guard against empty passes array
+  if (!config.passes || config.passes.length === 0) {
+    console.error('[BodyMapAnswer] No passes configured');
+    return null;
+  }
 
   const currentPass = config.passes[currentPassIndex];
+
+  // Guard against undefined currentPass (index out of bounds)
+  if (!currentPass) {
+    console.error('[BodyMapAnswer] currentPass is undefined, index:', currentPassIndex, 'passes:', config.passes.length);
+    return null;
+  }
+
   const isLastPass = currentPassIndex === config.passes.length - 1;
 
   // Determine which body to show based on pass subject
@@ -79,6 +94,9 @@ export function BodyMapAnswer({
       }
 
       console.log('[BodyMapAnswer] Detected zone:', detected.name, 'at', x, y, 'confidence:', detected.confidence);
+
+      // Store click position for marker placement
+      setLastClickPosition({ x, y });
 
       // Map detected zone name to ZoneId
       const zoneId = ZONE_NAME_TO_ID[detected.name.ru] || ZONE_NAME_TO_ID[detected.name.en];
@@ -102,27 +120,41 @@ export function BodyMapAnswer({
       setConfiguredZones((prev) => new Set([...prev, zoneId]));
       setSelectedZone(null);
 
-      // Add a visual marker for the configured zone
-      // Find approximate center coordinates for the zone on the body
-      // For now, we'll add a marker at a default position - this could be improved
-      const zoneLabel = getZoneLabel(zoneId, locale);
-      const existingMarker = markers.find((m) => m.id === `zone-${zoneId}`);
-      if (!existingMarker) {
-        // Get approximate position for the zone from zone-detection
-        const testPositions = getApproximateZonePosition(zoneId, currentGender, currentView);
-        if (testPositions) {
-          const newMarker: MarkerData = {
-            id: `zone-${zoneId}`,
-            x: testPositions.x,
-            y: testPositions.y,
-            color: 'love', // Just for visual - actual preferences are in zonePreferences
-            view: currentView,
-          };
-          setMarkers((prev) => [...prev.filter((m) => m.id !== `zone-${zoneId}`), newMarker]);
+      // Determine marker color based on preferences
+      // Count how many actions have each preference level
+      const prefCounts = { love: 0, sometimes: 0, no: 0 };
+      Object.values(preferences).forEach((pref) => {
+        if (pref && prefCounts[pref] !== undefined) {
+          prefCounts[pref]++;
         }
+      });
+
+      // Choose color: love > sometimes > no (whichever has more selections)
+      let markerColor: ZonePreference = 'love';
+      if (prefCounts.no > prefCounts.love && prefCounts.no > prefCounts.sometimes) {
+        markerColor = 'no';
+      } else if (prefCounts.sometimes > prefCounts.love) {
+        markerColor = 'sometimes';
       }
+
+      // Use the actual click position, not approximate
+      const position = lastClickPosition || getApproximateZonePosition(zoneId, currentGender, currentView);
+
+      if (position) {
+        const newMarker: MarkerData = {
+          id: `zone-${zoneId}-${Date.now()}`,
+          x: position.x,
+          y: position.y,
+          color: markerColor,
+          view: currentView,
+        };
+        setMarkers((prev) => [...prev, newMarker]);
+      }
+
+      // Clear the stored click position
+      setLastClickPosition(null);
     },
-    [currentGender, currentView, locale, markers]
+    [currentGender, currentView, lastClickPosition]
   );
 
   // Legacy mode: add colored markers
@@ -297,7 +329,7 @@ export function BodyMapAnswer({
           gender={currentGender}
           view={currentView}
           markers={markers}
-          selectedColor={zoneFirstMode ? 'love' : selectedColor}
+          selectedColor={zoneFirstMode ? (selectedColor || 'love') : selectedColor}
           onAddMarker={handleAddMarker}
           onRemoveMarker={handleRemoveMarker}
           onMoveMarker={handleMoveMarker}

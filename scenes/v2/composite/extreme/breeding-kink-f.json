@@ -1,0 +1,57 @@
+{
+  "id": "breeding-kink-f",
+  "slug": "breeding-kink-f",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "body_fluids"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "breeding-kink-m",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Бридинг-кинк",
+    "en": "Breeding Kink"
+  },
+  "subtitle": {
+    "ru": "Он кончает в тебя",
+    "en": "He cums inside you"
+  },
+  "user_description": {
+    "ru": "Он кончает в тебя без контрацепции. Фантазия об оплодотворении.",
+    "en": "He cums inside you without contraception. Impregnation fantasy."
+  },
+  "ai_description": {
+    "ru": "М кончает внутрь Ж без защиты. Фантазия об оплодотворении, первобытное желание.",
+    "en": "M cums inside F without protection. Impregnation fantasy, primal urge."
+  },
+  "image_prompt": "man and woman in missionary position, him deep inside her, her legs wrapped around his waist, bedroom with soft lighting",
+  "intensity": 4,
+  "category": "extreme",
+  "tags": [
+    "breeding",
+    "impregnation",
+    "creampie",
+    "primal",
+    "bare"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "breeding_kink",
+      "impregnation"
+    ],
+    "tests_secondary": [
+      "primal",
+      "bare_sex"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Бридинг — он кончает в тебя?",
+      "en": "Breeding — he cums inside you?"
+    }
+  }
+}

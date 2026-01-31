@@ -1,0 +1,59 @@
+{
+  "id": "lingerie-f-wear",
+  "slug": "lingerie-f-wear",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "lingerie"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "female-lingerie",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Красивое бельё",
+    "en": "Lingerie"
+  },
+  "subtitle": {
+    "ru": "Ты в красивом белье",
+    "en": "You wear beautiful lingerie"
+  },
+  "user_description": {
+    "ru": "Ты надеваешь красивое бельё — кружевное, прозрачное, с подвязками. Он смотрит на тебя.",
+    "en": "You put on beautiful lingerie — lace, sheer, with garters. He watches you."
+  },
+  "ai_description": {
+    "ru": "Красивое бельё. Чулки, кружево, комплекты, корсеты.",
+    "en": "Beautiful lingerie. Stockings, lace, sets, corsets."
+  },
+  "image_prompt": "woman in black lace lingerie set with garter belt and stockings, standing by bed, man sitting on bed watching her, bedroom interior",
+  "intensity": 1,
+  "category": "clothing",
+  "tags": [
+    "lingerie",
+    "underwear",
+    "stockings",
+    "lace",
+    "corset"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "lingerie",
+      "underwear",
+      "clothing"
+    ],
+    "tests_secondary": [
+      "stockings",
+      "corset",
+      "visual"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в ношении красивого белья?",
+      "en": "What appeals about wearing lingerie?"
+    }
+      }
+}

@@ -1,8 +1,16 @@
 {
-  "id": "cnc_m_takes_f",
+  "id": "cnc-he-takes-her",
   "slug": "cnc-he-takes-her",
   "version": 2,
-  "paired_scene": "cnc_f_takes_m",
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "cnc-he-takes-her-receive",
   "role_direction": "m_to_f",
   "title": {
     "ru": "CNC",
@@ -12,13 +20,17 @@
     "ru": "Он берёт её",
     "en": "He takes her"
   },
+  "user_description": {
+    "ru": "Ты прижимаешь её к стене, держишь её руки над головой, входишь грубо. Она изображает сопротивление. По обоюдному согласию.",
+    "en": "You pin her against the wall, hold her hands above her head, enter roughly. She acts resistant. Consensual."
+  },
   "ai_description": {
     "ru": "Consensual non-consent. Она 'сопротивляется', он 'берёт силой'. Всё по согласию, но игра в принуждение. Первобытный инстинкт, контролируемый хаос.",
     "en": "Consensual non-consent. She 'resists', he 'takes by force'. All consensual, but playing at coercion. Primal instinct, controlled chaos."
   },
   "image_prompt": "man pinning woman against wall, holding her wrists above head with one hand, she wearing torn lingerie, he shirtless, bedroom setting",
   "intensity": 5,
-  "category": "cnc_rough",
+  "category": "cnc-rough",
   "tags": [
     "cnc",
     "consensual_non_consent",
@@ -27,478 +39,6 @@
     "struggle",
     "force"
   ],
-  "elements": [
-    {
-      "id": "scenario",
-      "label": {
-        "ru": "Сценарий",
-        "en": "Scenario"
-      },
-      "tag_ref": "cnc_scenario",
-      "follow_ups": [
-        {
-          "id": "scenarios",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие сценарии?",
-            "en": "What scenarios?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "intruder",
-                "label": {
-                  "ru": "Незнакомец/вломился",
-                  "en": "Intruder/break-in"
-                }
-              },
-              {
-                "id": "stalker",
-                "label": {
-                  "ru": "Преследователь",
-                  "en": "Stalker"
-                }
-              },
-              {
-                "id": "abduction",
-                "label": {
-                  "ru": "Похищение",
-                  "en": "Abduction"
-                }
-              },
-              {
-                "id": "surprise",
-                "label": {
-                  "ru": "Внезапно дома",
-                  "en": "Surprise at home"
-                }
-              },
-              {
-                "id": "park",
-                "label": {
-                  "ru": "В тёмном месте",
-                  "en": "Dark place"
-                }
-              },
-              {
-                "id": "no_scenario",
-                "label": {
-                  "ru": "Без сценария, просто сила",
-                  "en": "No scenario, just force"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "resistance",
-      "label": {
-        "ru": "Сопротивление",
-        "en": "Resistance"
-      },
-      "tag_ref": "cnc_resistance",
-      "follow_ups": [
-        {
-          "id": "how_resist",
-          "type": "scale",
-          "question": {
-            "ru": "Насколько сопротивляться?",
-            "en": "How much to resist?"
-          },
-          "config": {
-            "min_label": {
-              "ru": "Символически",
-              "en": "Token resistance"
-            },
-            "max_label": {
-              "ru": "Реально бороться",
-              "en": "Really fight"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "physical",
-      "label": {
-        "ru": "Физически",
-        "en": "Physical"
-      },
-      "tag_ref": "cnc_physical",
-      "follow_ups": [
-        {
-          "id": "physical_elements",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какие физические элементы?",
-            "en": "What physical elements?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "pinning",
-                "label": {
-                  "ru": "Прижимать к стене/полу",
-                  "en": "Pin to wall/floor"
-                }
-              },
-              {
-                "id": "holding_down",
-                "label": {
-                  "ru": "Держать руки",
-                  "en": "Hold down hands"
-                }
-              },
-              {
-                "id": "clothes_rip",
-                "label": {
-                  "ru": "Рвать одежду",
-                  "en": "Rip clothes"
-                }
-              },
-              {
-                "id": "carry",
-                "label": {
-                  "ru": "Нести/тащить",
-                  "en": "Carry/drag"
-                }
-              },
-              {
-                "id": "restrain",
-                "label": {
-                  "ru": "Связать быстро",
-                  "en": "Quick restraint"
-                }
-              },
-              {
-                "id": "cover_mouth",
-                "label": {
-                  "ru": "Закрыть рот рукой",
-                  "en": "Cover mouth"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "verbal",
-      "label": {
-        "ru": "Слова",
-        "en": "Words"
-      },
-      "tag_ref": "cnc_verbal",
-      "follow_ups": [
-        {
-          "id": "what_says",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что он говорит?",
-            "en": "What does he say?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "shut_up",
-                "label": {
-                  "ru": "Заткнись",
-                  "en": "Shut up"
-                }
-              },
-              {
-                "id": "no_escape",
-                "label": {
-                  "ru": "Не убежишь",
-                  "en": "No escape"
-                }
-              },
-              {
-                "id": "take_it",
-                "label": {
-                  "ru": "Терпи",
-                  "en": "Take it"
-                }
-              },
-              {
-                "id": "you_want",
-                "label": {
-                  "ru": "Ты сама этого хочешь",
-                  "en": "You want this"
-                }
-              },
-              {
-                "id": "mine",
-                "label": {
-                  "ru": "Ты моя",
-                  "en": "You're mine"
-                }
-              },
-              {
-                "id": "silent",
-                "label": {
-                  "ru": "Молча",
-                  "en": "Silent"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "her_response",
-      "label": {
-        "ru": "Её реакция",
-        "en": "Her response"
-      },
-      "tag_ref": "cnc_response",
-      "follow_ups": [
-        {
-          "id": "response",
-          "type": "multi_select",
-          "question": {
-            "ru": "Как она реагирует?",
-            "en": "How does she respond?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no_stop",
-                "label": {
-                  "ru": "Нет, стой (игра)",
-                  "en": "No, stop (play)"
-                }
-              },
-              {
-                "id": "struggle",
-                "label": {
-                  "ru": "Вырывается",
-                  "en": "Struggles"
-                }
-              },
-              {
-                "id": "cry",
-                "label": {
-                  "ru": "Плачет (постановка)",
-                  "en": "Cries (acting)"
-                }
-              },
-              {
-                "id": "gives_in",
-                "label": {
-                  "ru": "Сдаётся постепенно",
-                  "en": "Gradually gives in"
-                }
-              },
-              {
-                "id": "secret_enjoy",
-                "label": {
-                  "ru": "Тайно наслаждается",
-                  "en": "Secretly enjoys"
-                }
-              },
-              {
-                "id": "begging",
-                "label": {
-                  "ru": "Умоляет (отпустить или продолжить)",
-                  "en": "Begs (stop or continue)"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает?",
-        "en": "What appeals?"
-      },
-      "tag_ref": "cnc_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "no_responsibility",
-                "label": {
-                  "ru": "Нет ответственности",
-                  "en": "No responsibility"
-                }
-              },
-              {
-                "id": "primal",
-                "label": {
-                  "ru": "Первобытное",
-                  "en": "Primal"
-                }
-              },
-              {
-                "id": "power",
-                "label": {
-                  "ru": "Его сила",
-                  "en": "His power"
-                }
-              },
-              {
-                "id": "danger",
-                "label": {
-                  "ru": "Опасность (безопасная)",
-                  "en": "Danger (safe)"
-                }
-              },
-              {
-                "id": "struggle_feel",
-                "label": {
-                  "ru": "Ощущение борьбы",
-                  "en": "Struggle feeling"
-                }
-              },
-              {
-                "id": "taken",
-                "label": {
-                  "ru": "Быть взятой",
-                  "en": "Being taken"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "safety",
-      "label": {
-        "ru": "Безопасность",
-        "en": "Safety"
-      },
-      "tag_ref": "cnc_safety",
-      "follow_ups": [
-        {
-          "id": "safety_measures",
-          "type": "multi_select",
-          "question": {
-            "ru": "Меры безопасности?",
-            "en": "Safety measures?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "safeword",
-                "label": {
-                  "ru": "Стоп-слово",
-                  "en": "Safeword"
-                }
-              },
-              {
-                "id": "safe_signal",
-                "label": {
-                  "ru": "Сигнал рукой",
-                  "en": "Hand signal"
-                }
-              },
-              {
-                "id": "check_ins",
-                "label": {
-                  "ru": "Проверки во время",
-                  "en": "Check-ins during"
-                }
-              },
-              {
-                "id": "discuss_before",
-                "label": {
-                  "ru": "Обсуждение до",
-                  "en": "Discussion before"
-                }
-              },
-              {
-                "id": "aftercare",
-                "label": {
-                  "ru": "Aftercare после",
-                  "en": "Aftercare after"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "aftercare",
-      "label": {
-        "ru": "После",
-        "en": "After"
-      },
-      "tag_ref": "cnc_aftercare",
-      "follow_ups": [
-        {
-          "id": "after_needs",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что нужно после?",
-            "en": "What's needed after?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "cuddles",
-                "label": {
-                  "ru": "Обнимашки",
-                  "en": "Cuddles"
-                }
-              },
-              {
-                "id": "reassurance",
-                "label": {
-                  "ru": "Подтверждение любви",
-                  "en": "Love reassurance"
-                }
-              },
-              {
-                "id": "talk",
-                "label": {
-                  "ru": "Обсудить",
-                  "en": "Talk about it"
-                }
-              },
-              {
-                "id": "stay_role",
-                "label": {
-                  "ru": "Остаться в роли",
-                  "en": "Stay in role"
-                }
-              },
-              {
-                "id": "space",
-                "label": {
-                  "ru": "Пространство",
-                  "en": "Space"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "question": {
-    "type": "multi_select",
-    "text": {
-      "ru": "Что привлекает в CNC?",
-      "en": "What appeals about CNC?"
-    },
-    "min_selections": 0
-  },
   "ai_context": {
     "tests_primary": [
       "cnc",
@@ -523,8 +63,11 @@
       ]
     }
   },
-  "user_description": {
-    "ru": "Он прижимает её к стене, держит её руки над головой, входит в неё грубо. Она изображает сопротивление. По обоюдному согласию.",
-    "en": "He pins her against the wall, holds her hands above her head, enters her roughly. She acts resistant. Consensual."
-  }
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в CNC?",
+      "en": "What appeals about CNC?"
+    }
+      }
 }

@@ -1,0 +1,58 @@
+{
+  "id": "nipple-play",
+  "slug": "nipple-play",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "rough"
+  ],
+  "is_active": false,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Игра с сосками",
+    "en": "Nipple Play"
+  },
+  "subtitle": {
+    "ru": "Стимуляция сосков",
+    "en": "Nipple stimulation"
+  },
+  "user_description": {
+    "ru": "Стимуляция сосков — от нежных ласк до зажимов.",
+    "en": "Nipple stimulation — from gentle caresses to clamps."
+  },
+  "ai_description": {
+    "ru": "Стимуляция сосков различными способами — пальцами, ртом, зажимами. От нежных ласк до интенсивной боли.",
+    "en": "Nipple stimulation in various ways — fingers, mouth, clamps. From gentle caresses to intense pain."
+  },
+  "image_prompt": "intimate couple, focus on chest area, tender touching, soft bedroom lighting",
+  "intensity": 2,
+  "category": "impact-pain",
+  "tags": [
+    "nipple_play",
+    "nipples",
+    "stimulation",
+    "sensation",
+    "pain_pleasure"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "nipple_play",
+      "nipples",
+      "stimulation"
+    ],
+    "tests_secondary": [
+      "sensation",
+      "pain_pleasure",
+      "sensitive"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что привлекает в игре с сосками?",
+      "en": "What appeals about nipple play?"
+    }
+      }
+}

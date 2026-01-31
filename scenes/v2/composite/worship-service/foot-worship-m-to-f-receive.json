@@ -1,0 +1,56 @@
+{
+  "id": "foot-worship-m-to-f-receive",
+  "slug": "foot-worship-m-to-f-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "foot",
+    "romantic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "female",
+  "paired_scene": "foot-worship-he-worships-her",
+  "role_direction": "m_to_f",
+  "title": {
+    "ru": "Поклонение ногам",
+    "en": "Foot Worship"
+  },
+  "subtitle": {
+    "ru": "Он поклоняется твоим ногам",
+    "en": "He worships your feet"
+  },
+  "user_description": {
+    "ru": "Он на коленях у твоих ног, целует и лижет твои ступни и пальцы.",
+    "en": "He kneels at your feet, kissing and licking your soles and toes."
+  },
+  "ai_description": {
+    "ru": "Она сидит как королева, он у её ног. Целует, лижет, массирует. Её ступни — объект его поклонения и возбуждения.",
+    "en": "She sits like a queen, he at her feet. Kissing, licking, massaging. Her feet — object of his worship and arousal."
+  },
+  "image_prompt": "man kneeling at woman's feet, kissing her bare foot and toes, woman sitting relaxed in chair, her feet bare with polished nails, man nude, bedroom setting",
+  "intensity": 3,
+  "category": "worship-service",
+  "tags": [
+    "foot_worship",
+    "feet",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "foot_worship",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "worship",
+      "femdom"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Он поклоняется твоим ногам?",
+      "en": "He worships your feet?"
+    }
+  }
+}

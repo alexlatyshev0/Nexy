@@ -1,0 +1,56 @@
+{
+  "id": "degradation-f-to-m-receive",
+  "slug": "degradation-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "dirty_talk",
+    "power_dynamic"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "degradation-she-degrades-him",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Унижение",
+    "en": "Degradation"
+  },
+  "subtitle": {
+    "ru": "Она унижает тебя",
+    "en": "She degrades you"
+  },
+  "user_description": {
+    "ru": "Она унижает тебя словами — «жалкий», «ничтожество», «лизать мои ноги».",
+    "en": "She humiliates you with words — \"pathetic\", \"worthless\", \"lick my feet\"."
+  },
+  "ai_description": {
+    "ru": "'Жалкий', — произносит она с презрением. Он опускает глаза, но его член твердеет. Её слова режут — и это возбуждает невероятно.",
+    "en": "'Pathetic,' she says with contempt. He lowers his eyes, but his cock hardens. Her words cut — and it arouses incredibly."
+  },
+  "image_prompt": "woman standing over kneeling man, she pointing down at him with stern expression, he looking down submissively, she wearing lingerie, he nude, bedroom",
+  "intensity": 4,
+  "category": "verbal",
+  "tags": [
+    "degradation",
+    "femdom",
+    "receiving"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "degradation",
+      "receiving"
+    ],
+    "tests_secondary": [
+      "femdom",
+      "humiliation"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Она унижает тебя словами?",
+      "en": "She degrades you verbally?"
+    }
+  }
+}

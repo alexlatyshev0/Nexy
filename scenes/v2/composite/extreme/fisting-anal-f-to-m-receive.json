@@ -1,0 +1,58 @@
+{
+  "id": "fisting-anal-f-to-m-receive",
+  "slug": "fisting-anal-f-to-m-receive",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "anal"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": "male",
+  "paired_scene": "fisting-anal-f-to-m",
+  "role_direction": "f_to_m",
+  "title": {
+    "ru": "Фистинг (она тебе)",
+    "en": "Fisting (She Does You)"
+  },
+  "subtitle": {
+    "ru": "Её рука внутри тебя",
+    "en": "Her hand inside you"
+  },
+  "user_description": {
+    "ru": "Она вводит руку внутрь тебя анально.",
+    "en": "She inserts her hand inside you anally."
+  },
+  "ai_description": {
+    "ru": "Ж вводит руку в М. Анальный фистинг. Требует много смазки и доверия.",
+    "en": "F inserts hand into M. Anal fisting. Requires much lube and trust."
+  },
+  "image_prompt": "woman's hand entering man's body anally, abundant lubricant visible, man on all fours, intimate bedroom setting",
+  "intensity": 5,
+  "category": "extreme",
+  "tags": [
+    "fisting",
+    "penetration",
+    "stretch",
+    "submission",
+    "anal"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "fisting",
+      "submission",
+      "anal"
+    ],
+    "tests_secondary": [
+      "penetration",
+      "prostate"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Её рука внутри тебя — анальный фистинг?",
+      "en": "Her hand inside you — anal fisting?"
+    }
+  }
+}

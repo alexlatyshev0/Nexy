@@ -1,0 +1,49 @@
+{
+  "id": "anal-hook",
+  "slug": "anal-hook",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "anal",
+    "bondage"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Анальный крюк",
+    "en": "Anal Hook"
+  },
+  "subtitle": {
+    "ru": "",
+    "en": ""
+  },
+  "user_description": {
+    "ru": "Анальный крюк с шариком. Привязывается к верёвкам.",
+    "en": "Anal hook with ball. Tied to ropes."
+  },
+  "ai_description": {
+    "ru": "Металлический крюк с шариком. Часто используется в бондаже, привязывается к верёвкам.",
+    "en": "Metal hook with a ball. Often used in bondage, tied to ropes."
+  },
+  "image_prompt": "stainless steel anal hook bondage device",
+  "intensity": 4,
+  "category": "bondage",
+  "tags": [
+    "bondage",
+    "anal-hook",
+    "metal",
+    "advanced"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "bondage",
+      "anal-hook"
+    ],
+    "tests_secondary": []
+  },
+  "question": null,
+  "paired_with": null,
+  "priority": 50
+}

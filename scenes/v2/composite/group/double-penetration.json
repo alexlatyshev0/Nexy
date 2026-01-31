@@ -1,7 +1,15 @@
 {
-  "id": "double_penetration",
+  "id": "double-penetration",
   "slug": "double-penetration",
   "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "group",
+    "anal"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
   "role_direction": "group",
   "title": {
     "ru": "Двойное проникновение",
@@ -10,6 +18,10 @@
   "subtitle": {
     "ru": "DP — два одновременно",
     "en": "DP — two at once"
+  },
+  "user_description": {
+    "ru": "Двойное проникновение. Два члена одновременно.",
+    "en": "Double penetration. Two cocks at once."
   },
   "ai_description": {
     "ru": "Она принимает двоих одновременно. Спереди и сзади, или оба в одно место. Наполненность, интенсивность, быть центром внимания.",
@@ -26,172 +38,18 @@
     "threesome",
     "group"
   ],
-  "elements": [
-    {
-      "id": "type",
-      "label": {
-        "ru": "Тип",
-        "en": "Type"
-      },
-      "tag_ref": "dp_type",
-      "follow_ups": [
-        {
-          "id": "configuration",
-          "type": "multi_select",
-          "question": {
-            "ru": "Какая конфигурация?",
-            "en": "What configuration?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "vaginal_anal",
-                "label": {
-                  "ru": "Вагинально + анально",
-                  "en": "Vaginal + anal"
-                }
-              },
-              {
-                "id": "dvp",
-                "label": {
-                  "ru": "DVP (два вагинально)",
-                  "en": "DVP (two vaginal)"
-                }
-              },
-              {
-                "id": "dap",
-                "label": {
-                  "ru": "DAP (два анально)",
-                  "en": "DAP (two anal)"
-                }
-              },
-              {
-                "id": "with_toy",
-                "label": {
-                  "ru": "Один партнёр + игрушка",
-                  "en": "One partner + toy"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "partners",
-      "label": {
-        "ru": "Партнёры",
-        "en": "Partners"
-      },
-      "tag_ref": "dp_partners",
-      "follow_ups": [
-        {
-          "id": "who",
-          "type": "single_select",
-          "question": {
-            "ru": "С кем?",
-            "en": "With whom?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "two_men",
-                "label": {
-                  "ru": "Два мужчины",
-                  "en": "Two men"
-                }
-              },
-              {
-                "id": "partner_and_toy",
-                "label": {
-                  "ru": "Партнёр + игрушка",
-                  "en": "Partner + toy"
-                }
-              },
-              {
-                "id": "partner_and_stranger",
-                "label": {
-                  "ru": "Партнёр + незнакомец",
-                  "en": "Partner + stranger"
-                }
-              },
-              {
-                "id": "two_strangers",
-                "label": {
-                  "ru": "Два незнакомца",
-                  "en": "Two strangers"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "what_appeals",
-      "label": {
-        "ru": "Что привлекает",
-        "en": "What appeals"
-      },
-      "tag_ref": "dp_appeal",
-      "follow_ups": [
-        {
-          "id": "appeal",
-          "type": "multi_select",
-          "question": {
-            "ru": "Что возбуждает?",
-            "en": "What excites?"
-          },
-          "config": {
-            "options": [
-              {
-                "id": "fullness",
-                "label": {
-                  "ru": "Максимальная наполненность",
-                  "en": "Maximum fullness"
-                }
-              },
-              {
-                "id": "center_attention",
-                "label": {
-                  "ru": "Быть центром внимания",
-                  "en": "Being center of attention"
-                }
-              },
-              {
-                "id": "overwhelm",
-                "label": {
-                  "ru": "Быть переполненной",
-                  "en": "Being overwhelmed"
-                }
-              },
-              {
-                "id": "taboo",
-                "label": {
-                  "ru": "Табуированность",
-                  "en": "Taboo"
-                }
-              },
-              {
-                "id": "slutty",
-                "label": {
-                  "ru": "Чувствовать себя развратной",
-                  "en": "Feeling slutty"
-                }
-              },
-              {
-                "id": "intensity",
-                "label": {
-                  "ru": "Интенсивность",
-                  "en": "Intensity"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
+  "ai_context": {
+    "tests_primary": [
+      "double_penetration",
+      "dp",
+      "group_sex"
+    ],
+    "tests_secondary": [
+      "fullness",
+      "overwhelm",
+      "slutty"
+    ]
+  },
   "question": {
     "type": "boundary",
     "text": {
@@ -230,21 +88,5 @@
         }
       ]
     }
-  },
-  "ai_context": {
-    "tests_primary": [
-      "double_penetration",
-      "dp",
-      "group_sex"
-    ],
-    "tests_secondary": [
-      "fullness",
-      "overwhelm",
-      "slutty"
-    ]
-  },
-  "user_description": {
-    "ru": "Женщина занимается сексом с двумя мужчинами одновременно. Один мужчина входит спереди, второй сзади. Или оба входят в одно отверстие.",
-    "en": "Woman has sex with two men simultaneously. One man enters from front, second from behind. Or both enter same hole."
   }
 }

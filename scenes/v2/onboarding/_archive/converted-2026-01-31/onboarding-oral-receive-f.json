@@ -1,0 +1,40 @@
+{
+  "id": "7e1a187e-93e2-456a-b86d-556d15debc94",
+  "slug": "onboarding-oral-receive-f",
+  "version": 2,
+  "is_active": true,
+  "is_onboarding": true,
+  "onboarding_order": 1.6,
+  "for_gender": "female",
+  "paired_with": "onboarding-oral-give-m",
+  "title": {
+    "ru": "Оральный секс",
+    "en": "Oral sex"
+  },
+  "subtitle": {
+    "ru": "Тебя ласкают ртом",
+    "en": "They pleasure you with mouth"
+  },
+  "ai_description": {
+    "ru": "Интерес к получению орального секса.",
+    "en": "Interest in receiving oral sex."
+  },
+  "user_description": {
+    "ru": "Он ласкает тебя языком. Ты стонешь от его прикосновений.",
+    "en": "He pleasures you with his tongue. You moan from his touch."
+  },
+  "image_prompt": "naked man lying between naked woman's spread legs, giving oral, woman on back on bed, bedroom soft lighting",
+  "intensity": 2,
+  "category": "onboarding",
+  "tags": [
+    "onboarding",
+    "oral-receive"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "oral-receive"
+    ],
+    "tests_secondary": []
+  },
+  "sets_gate": "oral"
+}

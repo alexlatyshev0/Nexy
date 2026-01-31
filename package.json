@@ -11,6 +11,7 @@
     "delete-all-users": "npx tsx scripts/delete-all-users.ts --force"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
     "@radix-ui/react-avatar": "^1.1.11",
     "@radix-ui/react-checkbox": "^1.3.3",
     "@radix-ui/react-dialog": "^1.1.15",
@@ -32,6 +33,7 @@
     "lucide-react": "^0.562.0",
     "next": "16.1.1",
     "openai": "^6.16.0",
+    "pg": "^8.17.2",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "replicate": "^1.4.0",

@@ -1,0 +1,58 @@
+{
+  "id": "finger-sucking",
+  "slug": "finger-sucking",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "oral"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Сосать пальцы",
+    "en": "Finger Sucking"
+  },
+  "subtitle": {
+    "ru": "Нежная чувственность",
+    "en": "Tender sensuality"
+  },
+  "user_description": {
+    "ru": "Пальцы во рту. Нежно облизывать и посасывать.",
+    "en": "Fingers in mouth. Gently licking and sucking."
+  },
+  "ai_description": {
+    "ru": "Взять пальцы партнёра в рот, нежно облизать, посасывать. Чувственный, интимный жест — прелюдия или часть игры.",
+    "en": "Take partner's fingers in mouth, gently lick, suck. Sensual, intimate gesture — foreplay or part of play."
+  },
+  "image_prompt": "intimate couple, one partner gently kissing other's fingers, sensual tender moment, soft lighting",
+  "intensity": 1,
+  "category": "oral",
+  "tags": [
+    "oral",
+    "finger_sucking",
+    "licking",
+    "sensual",
+    "teasing"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "oral",
+      "finger_sucking",
+      "sensual"
+    ],
+    "tests_secondary": [
+      "teasing",
+      "intimacy",
+      "foreplay"
+    ]
+  },
+  "question": {
+    "type": "swipe",
+    "text": {
+      "ru": "Что нравится в сосании пальцев?",
+      "en": "What do you like about finger sucking?"
+    }
+      }
+}

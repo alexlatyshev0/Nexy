@@ -1,0 +1,118 @@
+{
+  "id": "body-writing-words",
+  "slug": "body-writing-words",
+  "version": 2,
+  "scene_type": "clarification",
+  "clarification_for": [
+    "dirty_talk"
+  ],
+  "is_active": true,
+  "is_onboarding": false,
+  "for_gender": null,
+  "role_direction": "mutual",
+  "title": {
+    "ru": "Какие надписи?",
+    "en": "What to write?"
+  },
+  "subtitle": {
+    "ru": "Что писать на теле",
+    "en": "What to write on body"
+  },
+  "user_description": {
+    "ru": "Надписи на теле. Грязные слова маркером на коже.",
+    "en": "Writing on body. Dirty words with marker on skin."
+  },
+  "ai_description": {
+    "ru": "Выбор надписей для написания на теле партнёра - унизительные слова, имена, указатели.",
+    "en": "Choosing inscriptions to write on partner's body - degrading words, names, arrows."
+  },
+  "intensity": 3,
+  "category": "verbal",
+  "tags": [
+    "body_writing",
+    "marking",
+    "degradation_words"
+  ],
+  "ai_context": {
+    "tests_primary": [
+      "body_writing",
+      "degradation_words"
+    ],
+    "tests_secondary": [
+      "ownership",
+      "objectification"
+    ]
+  },
+  "question": {
+    "type": "multi_select",
+    "text": {
+      "ru": "Какие надписи возбуждают?",
+      "en": "What inscriptions turn you on?"
+    },
+    "options": [
+      {
+        "id": "slut",
+        "label": {
+          "ru": "Шлюха",
+          "en": "Slut"
+        }
+      },
+      {
+        "id": "whore",
+        "label": {
+          "ru": "Шалава",
+          "en": "Whore"
+        }
+      },
+      {
+        "id": "owned",
+        "label": {
+          "ru": "Собственность",
+          "en": "Owned"
+        }
+      },
+      {
+        "id": "name",
+        "label": {
+          "ru": "Имя владельца",
+          "en": "Owner's name"
+        }
+      },
+      {
+        "id": "arrows",
+        "label": {
+          "ru": "Стрелки",
+          "en": "Arrows"
+        }
+      },
+      {
+        "id": "cum_here",
+        "label": {
+          "ru": "Кончи сюда",
+          "en": "Cum here"
+        }
+      },
+      {
+        "id": "toy",
+        "label": {
+          "ru": "Игрушка",
+          "en": "Toy"
+        }
+      },
+      {
+        "id": "free_use",
+        "label": {
+          "ru": "Свободное использование",
+          "en": "Free use"
+        }
+      }
+    ],
+    "allow_other": true,
+    "other_placeholder": {
+      "ru": "Своя надпись...",
+      "en": "Custom text..."
+    },
+    "min_selections": 0
+  },
+  "context": "discovery"
+}
